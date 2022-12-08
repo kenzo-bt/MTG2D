@@ -6,6 +6,7 @@ public class Hand : MonoBehaviour
 {
     private List<string> hand = new List<string>();
     private int handSize = 7;
+    private int mulligans = 0;
     public GameObject deckObject;
     public GameObject cardPrefab;
     private Deck deck;
@@ -22,16 +23,22 @@ public class Hand : MonoBehaviour
     {
       if (!isInitialized && deck.isInitialized)
       {
-        generateStartingHand();
+        generateHand(handSize);
         showHand();
         isInitialized = true;
       }
     }
 
-    // Draw 7 cards from deck
-    private void generateStartingHand()
+    // Get number of cards in hand
+    public int getNumberOfCards()
     {
-      for (int i = 0; i < handSize; i++)
+      return hand.Count;
+    }
+
+    // Draw 7 cards from deck
+    private void generateHand(int numCards)
+    {
+      for (int i = 0; i < numCards; i++)
       {
         hand.Add(deck.drawCard());
       }
@@ -59,12 +66,9 @@ public class Hand : MonoBehaviour
 
       foreach (Transform child in transform)
       {
-        //Debug.Log(positionX);
         child.localPosition = new Vector3(positionX, child.localPosition.y, child.localPosition.z);
         positionX += individualSpace;
       }
-
-      //Debug.Log("Height: " + GetComponent<Rect>().height);
     }
 
     // Empty hand
@@ -82,8 +86,18 @@ public class Hand : MonoBehaviour
     // Reset hand
     public void resetHand()
     {
+      mulligans = 0;
       emptyHand();
-      generateStartingHand();
+      generateHand(handSize);
+      showHand();
+    }
+
+    // Mulligan
+    public void mulligan()
+    {
+      mulligans += 1;
+      emptyHand();
+      generateHand(handSize - mulligans);
       showHand();
     }
 
