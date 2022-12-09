@@ -1,7 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Decklist {
   public string name;
-  public Dictionary<string, int> list;
+  public List<string> cards;
+  public List<int> cardFrequencies;
+
+  public void printDeck()
+  {
+    Debug.Log("------");
+    Debug.Log("Deck name: " + name);
+    for (int i = 0; i < cards.Count; i++)
+    {
+      Debug.Log(cards[i] + " x" + cardFrequencies[i]);
+    }
+  }
 }

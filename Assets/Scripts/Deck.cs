@@ -26,17 +26,13 @@ public class Deck : MonoBehaviour
     // Read decklist and generate deck
     private void generateDeck()
     {
-      TextAsset listFile = Resources.Load("Decklist") as TextAsset;
-      string[] decklist = listFile.text.Split('\n');
+      Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
 
-      foreach (var line in decklist)
+      for (int i = 0; i < selectedDeck.cards.Count; i++)
       {
-        string cardName = line.Split(' ')[0];
-        int cardFrequency = Int32.Parse(line.Split(' ')[1]);
-
-        for (int i = 0; i < cardFrequency; i++)
+        for (int n = 0; n < selectedDeck.cardFrequencies[i]; n++)
         {
-          deck.Add(cardName);
+          deck.Add(selectedDeck.cards[i]);
         }
       }
     }
