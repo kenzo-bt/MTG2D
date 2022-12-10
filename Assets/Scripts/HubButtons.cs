@@ -20,7 +20,7 @@ public class HubButtons : MonoBehaviour
     // Enter decks scene
     public void enterDecks()
     {
-      Debug.Log("enterDecks() invoked");
+      SceneManager.LoadScene("DeckBrowser");
     }
 
     // Enter user scene
@@ -32,7 +32,6 @@ public class HubButtons : MonoBehaviour
     // Enter play scene
     public void enterPlay()
     {
-      Debug.Log("enterPlay() invoked");
       SceneManager.LoadScene("GameSession");
     }
 }

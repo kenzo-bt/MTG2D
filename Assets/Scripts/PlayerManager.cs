@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 using System;
 
@@ -9,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
+    string decksFilePath;
 
     private void Awake()
     {
@@ -20,6 +22,7 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
+      decksFilePath = Application.persistentDataPath + "/AllDecks.txt";
       loadPlayerDecks();
     }
 
@@ -27,12 +30,14 @@ public class PlayerManager : MonoBehaviour
     private void loadPlayerDecks()
     {
       allDecks = new List<Decklist>();
-      string filePath = Application.persistentDataPath + "/AllDecks.txt";
       string fileContents = "";
 
-      if (!System.IO.File.Exists(filePath))
+      // If file doesnt exist, create a file in persistent data storage and load starter decks into it
+      if (!System.IO.File.Exists(decksFilePath))
       {
-        using (File.Create(filePath));
+        using (File.Create(decksFilePath));
+        TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
+        File.WriteAllText(decksFilePath, starterDeckFile.text);
       }
 
       fileContents = File.ReadAllText(Application.persistentDataPath + "/AllDecks.txt");
@@ -62,6 +67,25 @@ public class PlayerManager : MonoBehaviour
       if (allDecks.Count > 0)
       {
         selectedDeck = allDecks[allDecks.Count - 1];
+      }
+    }
+
+    // Save decks to persistent storage
+    public void savePlayerDecks()
+    {
+      int deckCount = allDecks.Count;
+      if (deckCount > 0)
+      {
+        string allDecksString = "";
+        for (int i = 0; i < deckCount; i++)
+        {
+            allDecksString += allDecks[i].getDecklistString();
+            if (i < (deckCount - 1))
+            {
+              allDecksString += "\n---\n";
+            }
+        }
+        File.WriteAllText(decksFilePath, allDecksString);
       }
     }
 }

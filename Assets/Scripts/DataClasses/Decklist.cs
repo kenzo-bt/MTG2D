@@ -7,7 +7,17 @@ public class Decklist {
   public List<string> cards;
   public List<int> cardFrequencies;
 
-  public void printDeck()
+  public string getDecklistString()
+  {
+    string decklistString = name + "\n%\n";
+    for (int i = 0; i < cards.Count; i++)
+    {
+      decklistString += cards[i] + " " + cardFrequencies[i] + "\n";
+    }
+    return decklistString.Trim();
+  }
+
+  public void debugPrintDeck()
   {
     Debug.Log("------");
     Debug.Log("Deck name: " + name);
