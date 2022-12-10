@@ -34,4 +34,34 @@ public class DeckDisplay : MonoBehaviour
       Texture2D cardTexture = Resources.Load("Images/Cards/" + coverCard) as Texture2D;
       image.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
+
+    // Set this deck as the user selectedDeck
+    public void setAsSelectedDeck()
+    {
+      Debug.Log(deckName);
+      foreach (Decklist deck in PlayerManager.Instance.allDecks)
+      {
+        if (deck.name == deckName)
+        {
+          PlayerManager.Instance.selectedDeck = deck;
+          break;
+        }
+      }
+
+      DeckDisplay selectPanelDeck = GameObject.Find("SelectPanelDeck").GetComponent<DeckDisplay>();
+      string selectedName = PlayerManager.Instance.selectedDeck.name;
+      string selectedCover = PlayerManager.Instance.selectedDeck.cards[0];
+      selectPanelDeck.setDisplayData(selectedName, selectedCover);
+      selectPanelDeck.debugDeckName();
+      // Hide the deck add button
+      GameObject.Find("AddDeckButton").GetComponent<CanvasGroup>().alpha = 0;
+    }
+
+    // Debug deck name
+    public void debugDeckName()
+    {
+      Debug.Log(deckName);
+    }
+
+    //
 }

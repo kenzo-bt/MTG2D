@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayMenu : MonoBehaviour
 {
@@ -37,6 +38,12 @@ public class PlayMenu : MonoBehaviour
       playMenu.blocksRaycasts = false;
       selectPanel.GetComponent<SelectPanel>().hidePanel();
       deckSelector.GetComponent<DeckSelector>().hide();
+    }
+
+    // Enter game session with selected deck
+    public void enterGameSession()
+    {
+      SceneManager.LoadScene("GameSession");
     }
 
 }

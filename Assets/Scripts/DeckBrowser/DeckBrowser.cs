@@ -64,7 +64,6 @@ public class DeckBrowser : MonoBehaviour
 
       foreach (Transform child in transform)
       {
-        Debug.Log(child.gameObject.GetComponent<DeckDisplay>().deckName);
         child.localPosition = new Vector3(positionX, child.localPosition.y, child.localPosition.z);
         positionX += individualSpace;
       }

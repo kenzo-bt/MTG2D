@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SelectPanel : MonoBehaviour
 {
-    Vector3 targetPosition;
+    public GameObject deckDisplayObject;
+    private Vector3 targetPosition;
     private float speed;
     private float showPosX;
     private float hidePosX;

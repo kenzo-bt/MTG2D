@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 397262885}
   - component: {fileID: 397262884}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,7 +709,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 397262885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1937213020}
+        m_TargetAssemblyTypeName: PlayMenu, Assembly-CSharp
+        m_MethodName: enterGameSession
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &397262885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,6 +1136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeckBrowser
       objectReference: {fileID: 0}
+    - target: {fileID: 1834958111289764730, guid: 9f27e83c4f6eb9548a5f5a1fc0359617, type: 3}
+      propertyPath: deckDisplayPrefab
+      value: 
+      objectReference: {fileID: 280008124944804384, guid: 9626c0a40a3cd9649b6b0928c6ea899d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f27e83c4f6eb9548a5f5a1fc0359617, type: 3}
 --- !u!1 &713596906
@@ -1597,6 +1613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e98ced4d611640409b2e895d327062b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deckDisplayObject: {fileID: 0}
 --- !u!1 &1171015072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,8 +1949,9 @@ GameObject:
   - component: {fileID: 1319262309}
   - component: {fileID: 1319262308}
   - component: {fileID: 1319262307}
+  - component: {fileID: 1319262310}
   m_Layer: 5
-  m_Name: AddDeck
+  m_Name: AddDeckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,6 +2072,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319262305}
   m_CullTransparentMesh: 1
+--- !u!225 &1319262310
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319262305}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1548636392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,9 +2135,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1062261500}
     m_Modifications:
+    - target: {fileID: 280008124180435464, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 280008124944804384, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
       propertyPath: m_Name
-      value: DeckDisplay
+      value: SelectPanelDeck
       objectReference: {fileID: 0}
     - target: {fileID: 280008124944804385, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
       propertyPath: m_Pivot.x
@@ -2192,6 +2226,34 @@ PrefabInstance:
     - target: {fileID: 280008124944804385, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1062261503}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: updateDeckDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SelectPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153805494065502766, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2418e4fabb915b4dbdeebcbc9587798, type: 3}
@@ -2359,7 +2421,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720240221}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0

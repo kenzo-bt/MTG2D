@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 280008124944804385}
   - component: {fileID: 3412298463885227434}
   m_Layer: 0
-  m_Name: DeckDisplay
+  m_Name: DeckDisplaySelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 5157173377456515053}
   - component: {fileID: 2153805494065502766}
   m_Layer: 0
-  m_Name: Button
+  m_Name: SelectDeckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3412298463885227434}
         m_TargetAssemblyTypeName: DeckDisplay, Assembly-CSharp
-        m_MethodName: debugDeckName
+        m_MethodName: setAsSelectedDeck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
