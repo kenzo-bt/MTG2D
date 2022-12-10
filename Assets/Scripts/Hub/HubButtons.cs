@@ -28,10 +28,4 @@ public class HubButtons : MonoBehaviour
     {
       Debug.Log("enterUser() invoked");
     }
-
-    // Enter play scene
-    public void enterPlay()
-    {
-      SceneManager.LoadScene("GameSession");
-    }
 }
