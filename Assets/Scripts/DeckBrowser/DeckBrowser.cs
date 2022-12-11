@@ -58,8 +58,14 @@ public class DeckBrowser : MonoBehaviour
     // Order decks centered around deckbrowser width
     private void orderDecks()
     {
-      float browserWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
-      float individualSpace = browserWidth / decksPerPage;
+      float deckDisplayWidth = deckDisplayPrefab.GetComponent<RectTransform>().sizeDelta.x;
+      float browserWidth = deckDisplayWidth * transform.childCount;
+      float maxBrowserWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
+      if (browserWidth >= maxBrowserWidth)
+      {
+        browserWidth = maxBrowserWidth;
+      }
+      float individualSpace = browserWidth / transform.childCount;
       float positionX = 0 - (browserWidth / 2) + (individualSpace / 2);
 
       foreach (Transform child in transform)

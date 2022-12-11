@@ -38,7 +38,6 @@ public class DeckDisplay : MonoBehaviour
     // Set this deck as the user selectedDeck
     public void setAsSelectedDeck()
     {
-      Debug.Log(deckName);
       foreach (Decklist deck in PlayerManager.Instance.allDecks)
       {
         if (deck.name == deckName)
@@ -47,14 +46,26 @@ public class DeckDisplay : MonoBehaviour
           break;
         }
       }
+    }
 
+    // Show selected deck in selector screen (Main hub)
+    public void showSelectedInHub()
+    {
+      setAsSelectedDeck();
+      // Update the deck display in the selector screen
       DeckDisplay selectPanelDeck = GameObject.Find("SelectPanelDeck").GetComponent<DeckDisplay>();
       string selectedName = PlayerManager.Instance.selectedDeck.name;
       string selectedCover = PlayerManager.Instance.selectedDeck.cards[0];
       selectPanelDeck.setDisplayData(selectedName, selectedCover);
-      selectPanelDeck.debugDeckName();
-      // Hide the deck add button
+      // Hide the add deck button
       GameObject.Find("AddDeckButton").GetComponent<CanvasGroup>().alpha = 0;
+    }
+
+    // Enter deck editor
+    public void editCurrentDeck()
+    {
+      setAsSelectedDeck();
+      Debug.Log("Enter editor for " + deckName);
     }
 
     // Debug deck name
@@ -62,6 +73,4 @@ public class DeckDisplay : MonoBehaviour
     {
       Debug.Log(deckName);
     }
-
-    //
 }
