@@ -9,7 +9,7 @@ public class DeckDisplay : MonoBehaviour
     private GameObject displayImage;
     private GameObject displayText;
     public string deckName;
-    public string coverCard;
+    public CardInfo coverCard;
 
     // Awake is called on instantiation
     void Awake()
@@ -25,13 +25,13 @@ public class DeckDisplay : MonoBehaviour
     }
 
     // Sets and shows the display cover and deckname
-    public void setDisplayData(string deckName, string coverCard)
+    public void setDisplayData(string deckName, CardInfo coverCard)
     {
       this.deckName = deckName;
       this.coverCard = coverCard;
       displayText.GetComponent<TMP_Text>().text = deckName;
       Image image = displayImage.GetComponent<Image>();
-      Texture2D cardTexture = Resources.Load("Images/Cards/" + coverCard) as Texture2D;
+      Texture2D cardTexture = Resources.Load("Images/Cards/" + coverCard.set + "/" + coverCard.id) as Texture2D;
       image.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 
@@ -55,7 +55,7 @@ public class DeckDisplay : MonoBehaviour
       // Update the deck display in the selector screen
       DeckDisplay selectPanelDeck = GameObject.Find("SelectPanelDeck").GetComponent<DeckDisplay>();
       string selectedName = PlayerManager.Instance.selectedDeck.name;
-      string selectedCover = PlayerManager.Instance.selectedDeck.cards[0];
+      CardInfo selectedCover = PlayerManager.Instance.selectedDeck.cards[0];
       selectPanelDeck.setDisplayData(selectedName, selectedCover);
       // Hide the add deck button
       GameObject.Find("AddDeckButton").GetComponent<CanvasGroup>().alpha = 0;

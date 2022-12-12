@@ -20,11 +20,11 @@ public class Card : MonoBehaviour
     }
 
     // Texture card
-    public void texturizeCard(string name)
+    public void texturizeCard(CardInfo card)
     {
-      cardName = name;
+      cardName = card.name;
       Image cardImage = GetComponent<Image>();
-      Texture2D cardTexture = Resources.Load("Images/Cards/" + name) as Texture2D;
+      Texture2D cardTexture = Resources.Load("Images/Cards/" + card.set + "/" + card.id) as Texture2D;
       cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 }

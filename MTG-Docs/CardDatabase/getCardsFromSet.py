@@ -60,9 +60,10 @@ for card in cards:
         "colours": card["colors"],
         "convertedManaCost": card["convertedManaCost"],
         "types": card["types"],
-        "rarity": card["rarity"]
+        "rarity": card["rarity"],
+        "set": card["setCode"]
     }
-    outputSet["cards"].append(thisCard)
+    outputSet["cards"].append(thisCard);
 
     if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
         # Get image URL from Scryfall API (https://scryfall.com/docs/api)

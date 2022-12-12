@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -159}
+  m_AnchoredPosition: {x: 0, y: -185}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &280008124180435465
@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00000095367}
+  m_AnchoredPosition: {x: 0, y: 6.3109}
   m_SizeDelta: {x: 178.21, y: 249.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &280008124514902213
@@ -249,7 +249,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 550}
+  m_SizeDelta: {x: 310.7517, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3412298463885227434
 MonoBehaviour:
@@ -264,7 +264,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckName: 
-  coverCard: 
+  coverCard:
+    id: 
+    name: 
+    text: 
+    colours: []
+    convertedManaCost: 0
+    types: []
+    rarity: 
+    set: 
 --- !u!1 &7429632404269371891
 GameObject:
   m_ObjectHideFlags: 0

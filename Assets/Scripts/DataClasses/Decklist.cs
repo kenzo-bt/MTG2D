@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Decklist {
   public string name;
-  public List<string> cards;
+  public List<CardInfo> cards;
   public List<int> cardFrequencies;
 
   public string getDecklistString()
@@ -12,7 +12,7 @@ public class Decklist {
     string decklistString = name + "\n%\n";
     for (int i = 0; i < cards.Count; i++)
     {
-      decklistString += cards[i] + " " + cardFrequencies[i] + "\n";
+      decklistString += cards[i].id + " " + cardFrequencies[i] + "\n";
     }
     return decklistString.Trim();
   }
@@ -23,7 +23,7 @@ public class Decklist {
     Debug.Log("Deck name: " + name);
     for (int i = 0; i < cards.Count; i++)
     {
-      Debug.Log(cards[i] + " x" + cardFrequencies[i]);
+      Debug.Log(cards[i].name + " x" + cardFrequencies[i]);
     }
   }
 }

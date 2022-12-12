@@ -264,7 +264,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckName: 
-  coverCard: 
+  coverCard:
+    id: 
+    name: 
+    text: 
+    colours: []
+    convertedManaCost: 0
+    types: []
+    rarity: 
+    set: 
 --- !u!1 &7429632404269371891
 GameObject:
   m_ObjectHideFlags: 0

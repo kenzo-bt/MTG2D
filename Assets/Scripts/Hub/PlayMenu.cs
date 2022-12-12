@@ -39,11 +39,4 @@ public class PlayMenu : MonoBehaviour
       selectPanel.GetComponent<SelectPanel>().hidePanel();
       deckSelector.GetComponent<DeckSelector>().hide();
     }
-
-    // Enter game session with selected deck
-    public void enterGameSession()
-    {
-      SceneManager.LoadScene("GameSession");
-    }
-
 }

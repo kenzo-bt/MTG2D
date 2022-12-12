@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deck : MonoBehaviour
 {
-    private List<string> deck = new List<string>();
+    private List<CardInfo> deck = new List<CardInfo>();
     public bool isInitialized = false;
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class Deck : MonoBehaviour
     // Shuffle deck
     public void shuffleDeck()
     {
-      List<string> shuffledDeck = new List<string>();
+      List<CardInfo> shuffledDeck = new List<CardInfo>();
       int numCards = deck.Count;
       for (int i = 0; i < numCards; i++)
       {
@@ -52,17 +52,25 @@ public class Deck : MonoBehaviour
     }
 
     // Draws a card from deck. Remove from deck and return card name.
-    public string drawCard()
+    public CardInfo drawCard()
     {
-      string card = deck[deck.Count - 1];
-      deck.RemoveAt(deck.Count - 1);
-      return card;
+      if (deck.Count > 0)
+      {
+        CardInfo card = deck[deck.Count - 1];
+        deck.RemoveAt(deck.Count - 1);
+        return card;
+      }
+      else
+      {
+        Debug.Log("CANT DRAW! Deck size is currently " + deck.Count);
+        return null;
+      }
     }
 
     // Reset deck
     public void resetDeck()
     {
-      deck = new List<string>();
+      deck = new List<CardInfo>();
       generateDeck();
       shuffleDeck();
     }
@@ -70,9 +78,9 @@ public class Deck : MonoBehaviour
     // Debug deck info
     private void debugPrintDeck()
     {
-      foreach (var card in deck)
+      foreach (CardInfo card in deck)
       {
-        Debug.Log(card);
+        Debug.Log(card.name);
       }
 
       Debug.Log("Card count: " + deck.Count);

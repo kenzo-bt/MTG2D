@@ -8,6 +8,8 @@ using System;
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
+    public List<CardSet> cardCollection;
+    public Dictionary<string, CardInfo> cardLookup;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
     string decksFilePath;
@@ -22,8 +24,40 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
+      cardCollection = new List<CardSet>();
+      loadCardCollection();
+
+      cardLookup = new Dictionary<string, CardInfo>();
+      createCardLookup();
+
       decksFilePath = Application.persistentDataPath + "/AllDecks.txt";
       loadPlayerDecks();
+    }
+
+    // Load in card collection
+    private void loadCardCollection()
+    {
+
+      TextAsset activeSetsFile = Resources.Load("ActiveSets") as TextAsset;
+      string[] activeSets = activeSetsFile.text.Split('\n');
+      for (int i = 0; i < activeSets.Length; i++)
+      {
+        TextAsset setFile = Resources.Load("Sets/" + activeSets[i].Trim()) as TextAsset;
+        CardSet set = JsonUtility.FromJson<CardSet>(setFile.text);
+        cardCollection.Add(set);
+      }
+    }
+
+    // Create lookup dictionary for all cards
+    private void createCardLookup()
+    {
+      foreach (CardSet set in cardCollection)
+      {
+        foreach (CardInfo card in set.cards)
+        {
+          cardLookup.Add(card.id, card);
+        }
+      }
     }
 
     // Read in player decks from disk
@@ -36,7 +70,7 @@ public class PlayerManager : MonoBehaviour
       if (!System.IO.File.Exists(decksFilePath))
       {
         using (File.Create(decksFilePath));
-        TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
+        TextAsset starterDeckFile = Resources.Load("TestDecks") as TextAsset;
         File.WriteAllText(decksFilePath, starterDeckFile.text);
       }
 
@@ -44,14 +78,16 @@ public class PlayerManager : MonoBehaviour
       foreach (string deck in fileContents.Split("---"))
       {
         Decklist individualDeck = new Decklist();
-        List<string> cards = new List<string>();
+        List<CardInfo> cards = new List<CardInfo>();
         List<int> cardFrequencies = new List<int>();
 
         foreach (string card in deck.Split("%")[1].Split('\n'))
         {
           if (!string.IsNullOrWhiteSpace(card))
           {
-            cards.Add(card.Split(" ")[0]);
+            // Add cardinfo instead of cardName
+            cards.Add(getCardFromLookup(card.Split(" ")[0]));
+            //cards.Add(card.Split(" ")[0]);
             cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
           }
         }
@@ -87,5 +123,22 @@ public class PlayerManager : MonoBehaviour
         }
         File.WriteAllText(decksFilePath, allDecksString);
       }
+    }
+
+    public CardInfo getCardFromLookup(string id)
+    {
+      //Debug.Log("Find: " + id);
+      CardInfo targetCard = new CardInfo();
+      try
+      {
+        targetCard = cardLookup[id];
+        return targetCard;
+      }
+      catch (KeyNotFoundException)
+      {
+
+      }
+      Debug.Log("Card not found in collection!");
+      return targetCard;
     }
 }

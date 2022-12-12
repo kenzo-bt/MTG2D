@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
-    private List<string> hand = new List<string>();
+    private List<CardInfo> hand = new List<CardInfo>();
     private int handSize = 7;
     private int mulligans = 0;
     public GameObject deckObject;
@@ -23,9 +23,9 @@ public class Hand : MonoBehaviour
     {
       if (!isInitialized && deck.isInitialized)
       {
+        isInitialized = true;
         generateHand(handSize);
         showHand();
-        isInitialized = true;
       }
     }
 
@@ -47,7 +47,7 @@ public class Hand : MonoBehaviour
     // Show hand (Generate the UI card images)
     private void showHand()
     {
-      foreach (string card in hand)
+      foreach (CardInfo card in hand)
       {
         GameObject cardInstance = Instantiate(cardPrefab, transform);
         Card cardScript = cardInstance.GetComponent<Card>();
@@ -80,7 +80,7 @@ public class Hand : MonoBehaviour
     // Empty hand
     private void emptyHand()
     {
-      hand = new List<string>();
+      hand = new List<CardInfo>();
       int numChildren = transform.childCount;
 
       for (int i = 0; i < numChildren; i++)
@@ -112,7 +112,7 @@ public class Hand : MonoBehaviour
     {
       foreach (var card in hand)
       {
-        Debug.Log(card);
+        Debug.Log(card.name);
       }
 
       Debug.Log("Cards in hand: " + hand.Count);
