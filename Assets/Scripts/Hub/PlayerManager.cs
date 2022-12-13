@@ -75,7 +75,7 @@ public class PlayerManager : MonoBehaviour
       if (!System.IO.File.Exists(decksFilePath))
       {
         using (File.Create(decksFilePath));
-        TextAsset starterDeckFile = Resources.Load("TestDecks") as TextAsset;
+        TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
         File.WriteAllText(decksFilePath, starterDeckFile.text);
       }
 

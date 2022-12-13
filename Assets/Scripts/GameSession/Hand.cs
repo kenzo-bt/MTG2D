@@ -50,7 +50,7 @@ public class Hand : MonoBehaviour
       foreach (CardInfo card in hand)
       {
         GameObject cardInstance = Instantiate(cardPrefab, transform);
-        Card cardScript = cardInstance.GetComponent<Card>();
+        WebCard cardScript = cardInstance.GetComponent<WebCard>();
         cardScript.texturizeCard(card);
       }
 

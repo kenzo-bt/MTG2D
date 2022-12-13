@@ -11,6 +11,7 @@ public class WebCard : MonoBehaviour
     private string cardName;
     private string cachePath;
     private string fileExtension;
+    private TextureFormat textureFormat;
 
     void Awake()
     {
@@ -60,6 +61,8 @@ public class WebCard : MonoBehaviour
 
     // Save image to cache
     private void saveImageToCache(Texture2D texture, string id) {
+      textureFormat = texture.format;
+      Debug.Log(textureFormat);
       Debug.Log("Saving image to cache...");
       string fileName = id + fileExtension;
       string savePath = cachePath;
@@ -68,7 +71,7 @@ public class WebCard : MonoBehaviour
         if (!Directory.Exists(savePath)) {
           Directory.CreateDirectory(savePath);
         }
-        File.WriteAllBytes(savePath + fileName, texture.EncodeToJPG());
+        File.WriteAllBytes(savePath + fileName, texture.EncodeToJPG(100));
       } catch (Exception e) {
         Debug.Log(e.Message);
       }
@@ -85,8 +88,9 @@ public class WebCard : MonoBehaviour
 
       if (File.Exists(filePath))     {
         fileData = File.ReadAllBytes(filePath);
-        texture = new Texture2D(2, 2);
+        texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
         texture.LoadImage(fileData);
+        Debug.Log(texture.format);
       }
       return texture;
     }
