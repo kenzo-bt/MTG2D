@@ -20,4 +20,4 @@ MTG simulator in 2D made in Unity
 - To add a new set one would need to run the `getCardsFromSet.py` script with the set code as its only argument. E.g. `python getCardsFromSet.py USG`
 - Then move the generated file E.g. `ReducedSets/USG.json` into the game's `Assets/Resources/Sets` folder.
 - Edit the game's `Assets/Resources/ActiveSets.txt` file and add the new set.
-- Upload the images to a remote server and configure the `PlayerManager.cs` variables (`serverUrl` / `serverImageFileExtension`) to fetch from it.
+- Upload the images to a remote server and configure the relevant `PlayerManager.cs` variables (`serverUrl` / `serverImageFileExtension`) to fetch from it.
