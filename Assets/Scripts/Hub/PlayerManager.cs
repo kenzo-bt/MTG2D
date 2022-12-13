@@ -12,7 +12,9 @@ public class PlayerManager : MonoBehaviour
     public Dictionary<string, CardInfo> cardLookup;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
-    string decksFilePath;
+    private string decksFilePath;
+    public string serverUrl;
+    public string serverImageFileExtension;
 
     private void Awake()
     {
@@ -23,6 +25,9 @@ public class PlayerManager : MonoBehaviour
       }
       Instance = this;
       DontDestroyOnLoad(gameObject);
+
+      serverUrl = "http://myxos.live/MTG/";
+      serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
       loadCardCollection();
@@ -85,9 +90,7 @@ public class PlayerManager : MonoBehaviour
         {
           if (!string.IsNullOrWhiteSpace(card))
           {
-            // Add cardinfo instead of cardName
             cards.Add(getCardFromLookup(card.Split(" ")[0]));
-            //cards.Add(card.Split(" ")[0]);
             cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
           }
         }

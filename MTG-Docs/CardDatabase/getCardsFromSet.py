@@ -72,7 +72,7 @@ for card in cards:
         time.sleep(0.1)
         data = scryfallResponse.text
         parse_json = json.loads(data)
-        imageUrl = parse_json["image_uris"]["large"]
+        imageUrl = parse_json["image_uris"]["normal"]
 
         # Save image to the image output directory
         image = requests.get(imageUrl)

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectPanel : MonoBehaviour
 {
-    public GameObject deckDisplayObject;
     private Vector3 targetPosition;
     private float speed;
     private float showPosX;
@@ -14,8 +14,8 @@ public class SelectPanel : MonoBehaviour
     void Start()
     {
       speed = 500f;
-      showPosX = 528.76f;
-      hidePosX = 837.24f;
+      showPosX = transform.localPosition.x;
+      hidePosX = transform.localPosition.x + GetComponent<RectTransform>().sizeDelta.x;
       transform.localPosition = new Vector3(hidePosX, 0f, 0f);
       targetPosition = transform.localPosition;
     }

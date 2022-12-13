@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DeckDisplay : MonoBehaviour
 {
-    private GameObject displayImage;
-    private GameObject displayText;
+    public GameObject displayText;
+    public GameObject displayCard;
     public string deckName;
     public CardInfo coverCard;
 
     // Awake is called on instantiation
     void Awake()
     {
-      displayImage = transform.GetChild(0).gameObject;
-      displayText = transform.GetChild(1).gameObject;
+
     }
 
     // Update is called once per frame
@@ -30,9 +30,13 @@ public class DeckDisplay : MonoBehaviour
       this.deckName = deckName;
       this.coverCard = coverCard;
       displayText.GetComponent<TMP_Text>().text = deckName;
+      // Texturize card
+      displayCard.GetComponent<WebCard>().texturizeCard(coverCard);
+      /*
       Image image = displayImage.GetComponent<Image>();
       Texture2D cardTexture = Resources.Load("Images/Cards/" + coverCard.set + "/" + coverCard.id) as Texture2D;
       image.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+      */
     }
 
     // Set this deck as the user selectedDeck
@@ -65,7 +69,7 @@ public class DeckDisplay : MonoBehaviour
     public void editCurrentDeck()
     {
       setAsSelectedDeck();
-      Debug.Log("Enter editor for " + deckName);
+      SceneManager.LoadScene("DeckEditor");
     }
 
     // Debug deck name

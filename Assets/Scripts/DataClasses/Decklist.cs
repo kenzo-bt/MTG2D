@@ -26,4 +26,15 @@ public class Decklist {
       Debug.Log(cards[i].name + " x" + cardFrequencies[i]);
     }
   }
+
+  // Get number of cards in deck
+  public int getNumCards()
+  {
+    int total = 0;
+    foreach (int freq in cardFrequencies)
+    {
+      total += freq;
+    }
+    return total;
+  }
 }

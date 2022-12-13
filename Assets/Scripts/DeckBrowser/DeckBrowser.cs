@@ -6,13 +6,12 @@ public class DeckBrowser : MonoBehaviour
 {
     public GameObject deckDisplayPrefab;
     public int currentPage;
-    private int decksPerPage;
+    public int decksPerPage;
 
     // Start is called before the first frame update
     void Start()
     {
       currentPage = 0;
-      decksPerPage = 3;
       showDecks(currentPage);
     }
 
