@@ -11,23 +11,26 @@ public class WebCard : MonoBehaviour
     private string cardName;
     private string cachePath;
     private string fileExtension;
-    private TextureFormat textureFormat;
+    public GameObject cardImageObject;
+    public GameObject imageMaskObject;
+    private Image cardImage;
+    private Image maskImage;
 
     void Awake()
     {
-
+      cardImage = cardImageObject.GetComponent<Image>();
+      maskImage = imageMaskObject.GetComponent<Image>();
     }
 
     IEnumerator fetchCardFromServer(string serverUrl, string cardId)
     {
-      Image cardImage = GetComponent<Image>();
       UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
         // Set fallback image
-        Texture2D cardTexture = Resources.Load("Images/cardFallback.png") as Texture2D;
+        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
       else
@@ -45,10 +48,14 @@ public class WebCard : MonoBehaviour
       fileExtension = PlayerManager.Instance.serverImageFileExtension;
       string cardId = card.id;
       string set = card.set;
+      // Use old border mask if card is of the Alpha set
+      if (card.set == "LEA")
+      {
+        setOldBorder();
+      }
       // Check if image already exists in cache
       if (File.Exists(cachePath + cardId + fileExtension))
       {
-        Image cardImage = GetComponent<Image>();
         Texture2D cardTexture = loadImageFromCache(cardId);
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
@@ -61,9 +68,6 @@ public class WebCard : MonoBehaviour
 
     // Save image to cache
     private void saveImageToCache(Texture2D texture, string id) {
-      textureFormat = texture.format;
-      Debug.Log(textureFormat);
-      Debug.Log("Saving image to cache...");
       string fileName = id + fileExtension;
       string savePath = cachePath;
       try {
@@ -80,7 +84,6 @@ public class WebCard : MonoBehaviour
     // Load image from cache
     private Texture2D loadImageFromCache(string id)
     {
-      Debug.Log("Loading image from cache...");
       Texture2D texture = null;
       byte[] fileData;
       string fileName = id + fileExtension;
@@ -90,8 +93,14 @@ public class WebCard : MonoBehaviour
         fileData = File.ReadAllBytes(filePath);
         texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
         texture.LoadImage(fileData);
-        Debug.Log(texture.format);
       }
       return texture;
+    }
+
+    // If image is Alpha set utilize the old border as mask
+    private void setOldBorder()
+    {
+      Texture2D cardTexture = Resources.Load("Images/OldBorder") as Texture2D;
+      maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 }
