@@ -29,9 +29,6 @@ public class WebCard : MonoBehaviour
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
-        // Set fallback image
-        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
-        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
       else
       {
@@ -53,6 +50,10 @@ public class WebCard : MonoBehaviour
       {
         setOldBorder();
       }
+      else
+      {
+        setNewBorder();
+      }
       // Check if image already exists in cache
       if (File.Exists(cachePath + cardId + fileExtension))
       {
@@ -61,6 +62,9 @@ public class WebCard : MonoBehaviour
       }
       else // If not in cache, proceed to download from server
       {
+        // Set fallback image
+        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
         StartCoroutine(fetchCardFromServer(serverUrl, cardId));
       }
@@ -94,6 +98,7 @@ public class WebCard : MonoBehaviour
         texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
         texture.LoadImage(fileData);
       }
+
       return texture;
     }
 
@@ -101,6 +106,13 @@ public class WebCard : MonoBehaviour
     private void setOldBorder()
     {
       Texture2D cardTexture = Resources.Load("Images/OldBorder") as Texture2D;
+      maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+    }
+
+    // If image is Alpha set utilize the old border as mask
+    private void setNewBorder()
+    {
+      Texture2D cardTexture = Resources.Load("Images/NewBorder") as Texture2D;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 }
