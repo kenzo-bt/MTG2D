@@ -66,13 +66,13 @@ public class ManaCurveDisplay : MonoBehaviour
 
       for (int i = 0; i < deck.cards.Count; i++)
       {
-        int cmc = deck.cards[i].convertedManaCost;
+        int manaValue = deck.cards[i].manaValue;
         int frequency = deck.cardFrequencies[i];
-        if (cmc > 0 && cmc < 6)
+        if (manaValue > 0 && manaValue < 6)
         {
-          manaFrequencies[cmc - 1] += frequency;
+          manaFrequencies[manaValue - 1] += frequency;
         }
-        else if(cmc >= 6)
+        else if(manaValue >= 6)
         {
           manaFrequencies[5] += frequency;
         }

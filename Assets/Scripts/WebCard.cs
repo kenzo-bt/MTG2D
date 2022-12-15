@@ -115,4 +115,11 @@ public class WebCard : MonoBehaviour
       Texture2D cardTexture = Resources.Load("Images/NewBorder") as Texture2D;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
+
+    // Make the card transparent
+    public void makeTransparent()
+    {
+      Texture2D cardTexture = Resources.Load("Images/CardTransparent") as Texture2D;
+      maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+    }
 }

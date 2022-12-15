@@ -9,7 +9,8 @@ public class CardInfo
     public string name;
     public string text;
     public List<string> colours;
-    public int convertedManaCost;
+    public List<string> colourIdentity;
+    public int manaValue;
     public List<string> types;
     public string rarity;
     public string set;

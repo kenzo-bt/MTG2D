@@ -26,15 +26,18 @@ public class IconFilter : MonoBehaviour
 
     public void filterClicked()
     {
+      Debug.Log("Filter clicked!");
       Color filterColor = selectedFilter.color;
       Color iconColor = icon.color;
       if (amSelected)
       {
+        // Turn off
         filterColor.a = 0f;
         iconColor.a = 0.5f;
       }
       else
       {
+        // Turn on
         filterColor.a = 1f;
         iconColor.a = 1f;
       }

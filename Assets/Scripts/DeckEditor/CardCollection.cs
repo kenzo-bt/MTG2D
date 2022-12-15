@@ -10,14 +10,24 @@ public class CardCollection : MonoBehaviour
     private List<string> filteredIds;
     private int cardsPerPage;
     private int currentPage;
+    private static List<string> colourFilters; // B, G, R, W, bl(U)e
+    private bool onlyLands;
+    private bool onlyMultiColoured;
+    private bool onlyColourless;
 
     // Start is called before the first frame update
     void Start()
     {
       currentPage = 0;
       cardsPerPage = 10;
+      colourFilters = new List<string>();
       allCardIds = new List<string>();
       loadCollection();
+      // TODO: pre-apply filters based on the selected deck's colours
+      onlyLands = false;
+      onlyMultiColoured = false;
+      onlyColourless = false;
+
       filteredIds = new List<string>(allCardIds);
       updateCollectionDisplay();
     }
@@ -31,6 +41,7 @@ public class CardCollection : MonoBehaviour
     // Update the display
     public void updateCollectionDisplay()
     {
+      hideAllCards();
       List<CardInfo> cardsToDisplay = new List<CardInfo>();
       int index = currentPage * cardsPerPage;
       for (int i = index; i < (index + cardsPerPage); i++)
@@ -53,6 +64,15 @@ public class CardCollection : MonoBehaviour
       }
     }
 
+    // Make all cards in the display transparent
+    private void hideAllCards()
+    {
+      foreach (Transform child in displayObject.transform)
+      {
+        child.GetChild(0).GetComponent<WebCard>().makeTransparent();
+      }
+    }
+
     // Load all card ids in collection into the filteredIds list
     public void loadCollection()
     {
@@ -63,7 +83,6 @@ public class CardCollection : MonoBehaviour
           allCardIds.Add(card.id);
         }
       }
-      //Debug.Log(filteredIds.Count + " card IDs loaded.");
     }
 
     // Browse to the next page of the collection
@@ -84,5 +103,117 @@ public class CardCollection : MonoBehaviour
         currentPage--;
         updateCollectionDisplay();
       }
+    }
+
+    // Filter down the collection based on the selected filters
+    private void filterCollection()
+    {
+      // Reset filteredIds to include all cards
+      filteredIds = new List<string>(allCardIds);
+
+      // Apply filters
+      if (onlyLands)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(isLand));
+      }
+      else
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(notLand));
+      }
+
+      if (onlyMultiColoured)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(isMultiColour));
+      }
+
+      if (onlyColourless)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(isColourless));
+      }
+      else
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
+      }
+
+      // Go back to page one on the display
+      currentPage = 0;
+      // Update the display with the filtered cards
+      updateCollectionDisplay();
+    }
+
+    //// Filter togglers
+
+    public void toggleColourFilter(string colour)
+    {
+      if (colourFilters.Contains(colour))
+      {
+        colourFilters.Remove(colour);
+      }
+      else
+      {
+        colourFilters.Add(colour);
+      }
+      filterCollection();
+    }
+
+    public void toggleLands()
+    {
+      onlyLands = !onlyLands;
+      filterCollection();
+    }
+
+    public void toggleMulticolor()
+    {
+      onlyMultiColoured = !onlyMultiColoured;
+      filterCollection();
+    }
+
+    public void toggleColourless()
+    {
+      onlyColourless = !onlyColourless;
+      filterCollection();
+    }
+
+    //// Filter predicates
+
+    private static bool isLand(string id)
+    {
+      return PlayerManager.Instance.getCardFromLookup(id).types.Contains("Land");
+    }
+
+    private static bool notLand(string id)
+    {
+      return !PlayerManager.Instance.getCardFromLookup(id).types.Contains("Land");
+    }
+
+    private static bool isMultiColour(string id)
+    {
+      if (PlayerManager.Instance.getCardFromLookup(id).colours.Count > 1 || PlayerManager.Instance.getCardFromLookup(id).colourIdentity.Count > 1)
+      {
+        return true;
+      }
+      return false;
+    }
+
+    private static bool isColourless(string id)
+    {
+      if (PlayerManager.Instance.getCardFromLookup(id).colours.Count == 0 || PlayerManager.Instance.getCardFromLookup(id).colourIdentity.Count == 0)
+      {
+        return true;
+      }
+      return false;
+    }
+
+    private static bool hasSelectedColours(string id)
+    {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      foreach (string colour in colourFilters)
+      {
+        if (!targetCard.colours.Contains(colour) && !targetCard.colourIdentity.Contains(colour))
+        {
+          return false;
+        }
+      }
+      return true;
     }
 }

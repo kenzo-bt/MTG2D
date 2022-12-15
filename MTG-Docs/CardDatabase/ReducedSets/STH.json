@@ -1,0 +1,2410 @@
+{
+    "setCode": "STH",
+    "setName": "Stronghold",
+    "cards": [
+        {
+            "id": "675bebc5-f1bd-5afb-9fd8-6539d4fefb7a",
+            "name": "Bandage",
+            "text": "Prevent 1 damage to any creature or player.\nDraw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "b2e435b3-11f6-564a-8945-41a51581a960",
+            "name": "Calming Licid",
+            "text": "o\nW, oc\nT: Calming Licid loses this ability and becomes a creature enchantment that reads \"Enchanted creature cannot attack\" instead of a creature. Move Calming Licid onto target creature. You may pay o\nW to end this effect.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "e0f32f03-8dfc-5ae7-8027-4b74d0a759a9",
+            "name": "Change of Heart",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTarget creature cannot attack this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "933cbf49-c2d5-5c7c-a918-4c4e0e4b05ad",
+            "name": "Contemplation",
+            "text": "Whenever you successfully cast a spell, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "ce2f567b-34db-5dda-ad8e-38b30e070b03",
+            "name": "Conviction",
+            "text": "Enchanted creature gets +1/+3.\noo\nW Return Conviction to owner's hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "75085e3d-ed0b-578c-9e47-2f621405d7a3",
+            "name": "Hidden Retreat",
+            "text": "Choose a card in your hand and put it on top of your library: Prevent all damage from an instant or sorcery. (Treat further damage from that source normally.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "b2e74650-cf80-553b-851c-bf97aedc2c6e",
+            "name": "Honor Guard",
+            "text": "oo\nW Honor Guard gets +0/+1 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "810874fa-d086-55bd-814a-5469f6f928a4",
+            "name": "Lancers en-Kor",
+            "text": "Trample\no0: Redirect 1 damage from Lancers en-Kor to a creature you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "7e43fde6-6164-52f6-8e55-05733aaea941",
+            "name": "Nomads en-Kor",
+            "text": "o0: Redirect 1 damage from Nomads\nen-Kor to a creature you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "f222e812-013d-5251-bdd5-12217fa71a86",
+            "name": "Pursuit of Knowledge",
+            "text": "Skip drawing a card: Put a study counter on Pursuit of Knowledge.\nRemove three study counters from Pursuit of Knowledge, Sacrifice Pursuit of Knowledge: Draw seven cards.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "9120f6dd-1fa6-570d-a6fd-6577d145e1e1",
+            "name": "Rolling Stones",
+            "text": "Walls can attack as though they were not Walls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "186d626a-0758-5658-9a54-b469ff712e61",
+            "name": "Sacred Ground",
+            "text": "Whenever an effect controlled by any opponent puts a land into your graveyard from play, put that land into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "2c73e61e-a1e3-5154-8f93-b82ea14fc687",
+            "name": "Samite Blessing",
+            "text": "Enchanted creature gains \"oc\nT: Prevent all damage to any creature from any one source.\" (Treat further damage from that source normally.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "8fba3d96-0973-5145-98ab-d488c71793f5",
+            "name": "Scapegoat",
+            "text": "Sacrifice a creature: Return any number of target creatures you control to owner's hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "9225312b-0bc4-5731-81c4-ba550d7cdece",
+            "name": "Shaman en-Kor",
+            "text": "o0: Redirect 1 damage from Shaman en-Kor to a creature you control.\no1oo\nW Redirect to Shaman en-Kor all damage dealt to any one creature from any one source.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "708332d1-35b0-53db-ab76-c23defb855a9",
+            "name": "Skyshroud Falcon",
+            "text": "Flying\nAttacking does not cause Skyshroud Falcon to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "eb74fc17-bf66-5a4d-b611-f0669e1dcbd9",
+            "name": "Smite",
+            "text": "Destroy target blocked creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "2c0ef642-0713-5393-bbeb-a23383b8c319",
+            "name": "Soltari Champion",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nIf Soltari Champion attacks, all other creatures you control get +1/+1 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "26f8edd8-f69a-5e49-988c-764aab89b319",
+            "name": "Spirit en-Kor",
+            "text": "Flying\no0: Redirect 1 damage from Spirit en-Kor to a creature you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "92a3aa8d-9893-531d-a889-e97c5350c0a3",
+            "name": "Temper",
+            "text": "Prevent up to X damage to target creature. For each 1 damage prevented in this way, put a +1/+1 counter on that creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "b615becb-2e05-5634-9e79-89280b090134",
+            "name": "Venerable Monk",
+            "text": "When Venerable Monk comes into play, gain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "418f7715-2e6e-5205-a2b2-76f762188919",
+            "name": "Wall of Essence",
+            "text": "(Walls cannot attack.)\nFor each 1 combat damage dealt to Wall of Essence, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "62bca95c-03f4-5226-96b9-0315db43adb1",
+            "name": "Warrior en-Kor",
+            "text": "o0: Redirect 1 damage from Warrior en-Kor to a creature you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "bb9be985-8890-5773-93a1-e859e2ff4270",
+            "name": "Warrior Angel",
+            "text": "Flying\nFor each 1 damage Warrior Angel deals, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "f5b894d4-cf06-513f-afdd-38711427b399",
+            "name": "Youthful Knight",
+            "text": "First strike",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "2b1d303c-14a8-541a-911e-c717d302d8d5",
+            "name": "Cloud Spirit",
+            "text": "Flying\nCloud Spirit can block only creatures with flying.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "ef342c7d-9d56-57d3-82cc-6bee47b9c745",
+            "name": "Contempt",
+            "text": "If enchanted creature attacks, return that creature and Contempt to owner's hand at end of combat.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "5c6b0226-1c2d-508c-a460-31cf3c2f41f7",
+            "name": "Dream Halls",
+            "text": "Instead of paying the casting cost for a spell of any color, its caster may choose and discard a card that shares at least one color with that spell. If the spell has o\nX in its casting cost, X is 0.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "4dc92ace-d99d-5ea2-afb1-aff99dc1fb61",
+            "name": "Dream Prowler",
+            "text": "Dream Prowler is unblockable as long as no other creatures are attacking.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "f4eb5e64-6ab1-5c3c-8bcb-b74750b9d840",
+            "name": "Evacuation",
+            "text": "Return all creatures to owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "cafe8b4e-1311-5e8a-a056-f715222abf8d",
+            "name": "Gliding Licid",
+            "text": "o\nU, oc\nT: Gliding Licid loses this ability and becomes a creature enchantment that reads \"Enchanted creature gains flying\" instead of a creature. Move Gliding Licid onto target creature. You may pay o\nU to end this effect.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "86664b5b-f1ae-5d45-b0fa-b01c40af163c",
+            "name": "Hammerhead Shark",
+            "text": "Hammerhead Shark cannot attack unless defending player controls any islands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "55d1ca21-c94e-5ee1-8388-bcb1bc51e28e",
+            "name": "Hesitation",
+            "text": "If any spell is played, counter that spell and sacrifice Hesitation.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "7eca4342-5eb0-5d72-96b3-de3bb5015555",
+            "name": "Intruder Alarm",
+            "text": "Creatures do not untap during their controllers' untap phases.\nWhenever any creature comes into play, untap all creatures.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "9c899942-cbf5-5b17-b229-c64917490240",
+            "name": "Leap",
+            "text": "Target creature gains flying until end of turn.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "617799a8-2f8f-50a4-98fe-f2537f5c1563",
+            "name": "Mana Leak",
+            "text": "Counter target spell unless its caster pays an additional o3.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "36ca89b7-ada5-5906-9015-fca253ffc7c5",
+            "name": "Mask of the Mimic",
+            "text": "Sacrifice a creature: Search your library for any copy of target creature card and put it into play. Shuffle your library afterwards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "81ae7143-71fe-5f80-84c0-c5a237afb57f",
+            "name": "Mind Games",
+            "text": "Buyback o2o\nU (You may pay an additional o2o\nU when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTap target artifact, creature, or land.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "6d2ebf2f-0602-5945-b9dc-cf2321f803c1",
+            "name": "Ransack",
+            "text": "Look at the top five cards of target player's library. Put any number of those cards on the bottom of that library in any order and the rest on top of the library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "bfc7396c-7bbd-504f-883e-70e679e310e9",
+            "name": "Rebound",
+            "text": "Target spell, which targets only a single player, targets another player of your choice instead.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "7f9037ae-3986-56f3-8300-75312e0296fd",
+            "name": "Reins of Power",
+            "text": "You and target opponent each untap and gain control of all creatures the other controls until end of turn. Those creatures are unaffected by summoning sickness this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "08176bc3-2707-53aa-ac1e-6ff5153d8965",
+            "name": "Sift",
+            "text": "Draw three cards, then choose and discard a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "68602373-23d5-5cc6-8ae2-2383003fcb6e",
+            "name": "Silver Wyvern",
+            "text": "Flying\noo\nU Target spell or ability, which targets only Silver Wyvern, targets another creature of your choice instead. Play this ability as an interrupt.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "82b756c1-7c31-5d6f-9eb7-0dfd4f51fde6",
+            "name": "Spindrift Drake",
+            "text": "Flying\nDuring your upkeep, pay o\nU or sacrifice Spindrift Drake.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "7e8c8da9-ecb2-5aad-8048-e6128ec5cfaf",
+            "name": "Thalakos Deceiver",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nSacrifice Thalakos Deceiver: Gain control of target creature permanently. Use this ability only if Thalakos Deceiver is attacking and unblocked.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "8b981db6-4480-5bf6-ab9c-31aacbfd7bce",
+            "name": "Tidal Surge",
+            "text": "Tap up to three target creatures without flying.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "cfd2004e-5849-5253-bd00-7973e996d7db",
+            "name": "Tidal Warrior",
+            "text": "oc\nT: Target land is an island until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "1f38c990-914f-5ee1-908e-7d5f97c8bc6d",
+            "name": "Volrath's Shapeshifter",
+            "text": "As long as the top card of your graveyard is a creature card, Volrath's Shapeshifter is a copy of that card, except that Volrath's Shapeshifter retains its abilities.\no2: Choose and discard a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "d83138d3-7134-59a1-b595-3588049e892a",
+            "name": "Walking Dream",
+            "text": "Walking Dream is unblockable.\nWalking Dream does not untap during your untap phase if any opponent controls two or more creatures.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "b0120f4d-a14c-5cd6-931d-5259e08b8086",
+            "name": "Wall of Tears",
+            "text": "(Walls cannot attack.)\nIf Wall of Tears blocks any creatures, return each of those creatures to owner's hand at end of combat.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "fb9d985f-65da-51e6-ba2e-d644592af2ed",
+            "name": "Bottomless Pit",
+            "text": "During each player's upkeep, that player discards a card at random.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "12e89573-7164-58c8-9cc7-e09824810855",
+            "name": "Brush with Death",
+            "text": "Buyback o2o\nBo\nB (You may pay an additional o2o\nBo\nB when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTarget opponent loses 2 life. You gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "e8105f21-8e30-53e6-85f9-6f7ab9552402",
+            "name": "Cannibalize",
+            "text": "Choose two target creatures controlled by any one player. Remove one of those creatures from the game and put two +1/+1 counters on the other.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "8987f955-a2d2-5880-8581-ab2d47ab58d1",
+            "name": "Corrupting Licid",
+            "text": "o\nB, oc\nT: Corrupting Licid loses this ability and becomes a creature enchantment that reads \"Enchanted creature cannot be blocked except by artifact creatures and black creatures\" instead of a creature. Move Corrupting Licid onto target creature. You may pay o\nB to end this effect.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "e18cfffd-dd92-55a2-92e7-fd9ef0531ec2",
+            "name": "Crovax the Cursed",
+            "text": "Crovax the Cursed counts as a Vampire.\nCrovax comes into play with four +1/+1 counters on it.\nDuring your upkeep, sacrifice a creature and put a +1/+1 counter on Crovax, or remove a +1/+1 counter from Crovax.\noo\nB Crovax gains flying until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "326d810e-2c26-545c-a4a6-d4ce2325e030",
+            "name": "Dauthi Trapper",
+            "text": "oc\nT: Target creature gains shadow until end of turn. (This creature can block or be blocked by only creatures with shadow.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "8b780dbd-2c72-57e5-b2e8-5f0690034ab7",
+            "name": "Death Stroke",
+            "text": "Destroy target tapped creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "bb7ff696-9066-510f-8366-5fca6bfc1abd",
+            "name": "Dungeon Shade",
+            "text": "Flying\noo\nB Dungeon Shade gets +1/+1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "dd04b71b-216b-5295-8da1-3bcd90d15eba",
+            "name": "Foul Imp",
+            "text": "Flying\nWhen Foul Imp comes into play, lose 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "cc027aeb-669d-5ea8-b577-4c94bdb952eb",
+            "name": "Grave Pact",
+            "text": "Whenever any creature you control is put into any graveyard, each other player sacrifices a creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "405bfda4-8c81-5753-9624-808884938d4b",
+            "name": "Lab Rats",
+            "text": "Buyback o4 (You may pay an additional o4 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nPut a Rat token into play. Treat this token as a 1/1 black creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "6d0672da-0a20-5c9b-a5e5-3acc27859aa4",
+            "name": "Megrim",
+            "text": "Whenever any opponent discards a card, Megrim deals 2 damage to him or her.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "fb175e29-7c19-5553-94b2-e636b9870ee1",
+            "name": "Mind Peel",
+            "text": "Buyback o2o\nBo\nB (You may pay an additional o2o\nBo\nB when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTarget player chooses and discards a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "3afbccc7-5229-53dc-93f4-313b32a6c3c9",
+            "name": "Mindwarper",
+            "text": "Mindwarper comes into play with three +1/+1 counters on it.\no2o\nB, Remove a +1/+1 counter from Mindwarper: Target player chooses and discards a card. Play this ability as a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "b4c42f35-6d39-5583-9b45-e9a3dbd26bed",
+            "name": "Morgue Thrull",
+            "text": "Sacrifice Morgue Thrull: Put the top three cards of your library into your graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "3813f06b-052c-5657-af38-57a19217ad1c",
+            "name": "Mortuary",
+            "text": "Whenever any creature is put into your graveyard from play, put that creature on top of your library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "f27fa1bf-8cc5-5c79-80d9-28af7f22cb3c",
+            "name": "Rabid Rats",
+            "text": "oc\nT: Target blocking creature gets -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "8974d8ac-714c-55d2-8f76-8d31fda79e98",
+            "name": "Revenant",
+            "text": "Flying\nRevenant has power and toughness each equal to the number of creature cards in your graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "090983e9-557b-5c7c-aba5-07375e74f2c3",
+            "name": "Serpent Warrior",
+            "text": "When Serpent Warrior comes into play, lose 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "67de1458-f311-58b9-b700-22233353336a",
+            "name": "Skeleton Scavengers",
+            "text": "Skeleton Scavengers comes into play with one +1/+1 counter on it.\nPay o1 for each +1/+1 counter on Skeleton Scavengers: Regenerate Skeleton Scavengers and put a +1/+1 counter on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "40e75e1f-f2e7-55cf-a17a-14445d18380f",
+            "name": "Stronghold Assassin",
+            "text": "oc\nT, Sacrifice a creature: Destroy target nonblack creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "dffe1042-6537-5186-93bb-bcb7f2fe9e77",
+            "name": "Stronghold Taskmaster",
+            "text": "All other black creatures get -1/-1.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "ea01e34d-ad39-5299-9c99-31f96ba2a225",
+            "name": "Torment",
+            "text": "Enchanted creature gets -3/-0.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "d5d40677-5087-5f5d-9a7a-9b1597160b60",
+            "name": "Tortured Existence",
+            "text": "o\nB, Choose and discard a creature card: Return target creature card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "f461a63e-d443-521f-bc72-f20587ec234d",
+            "name": "Wall of Souls",
+            "text": "(Walls cannot attack.)\nWhenever Wall of Souls is dealt combat damage, it deals an equal amount of damage to target opponent.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "5b740c6e-e20f-528a-a2bf-fbc205953503",
+            "name": "Amok",
+            "text": "o1, Discard a card at random: Put a +1/+1 counter on target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "8d8824a0-2522-585d-8afb-d22a1263626b",
+            "name": "Convulsing Licid",
+            "text": "o\nR, oc\nT: Convulsing Licid loses this ability and becomes a creature enchantment that reads \"Enchanted creature cannot block\" instead of a creature. Move Convulsing Licid onto target creature. You may pay o\nR to end this effect.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "6e57cfe4-0d2a-5bd9-b773-e77161a9f814",
+            "name": "Craven Giant",
+            "text": "Craven Giant cannot block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "df310d27-3c6b-511a-9bf2-fec7615a4637",
+            "name": "Duct Crawler",
+            "text": "o1oo\nR Target creature cannot block Duct Crawler this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "33bbb19d-0117-5324-9996-2a17e5379130",
+            "name": "Fanning the Flames",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nFanning the Flames deals X damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "47524893-6553-5830-ac36-05ac49bf74e0",
+            "name": "Flame Wave",
+            "text": "Flame Wave deals 4 damage to target player and each creature he or she controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "927a1f22-5275-5f05-a262-83e9b30f55e4",
+            "name": "Fling",
+            "text": "Sacrifice a creature: Fling deals damage equal to the sacrificed creature's power to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "b1a4233e-d7aa-540d-879d-af6e981c1a03",
+            "name": "Flowstone Blade",
+            "text": "oo\nR Enchanted creature gets +1/-1 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "44f821eb-d309-521c-b74d-664bb8af5864",
+            "name": "Flowstone Hellion",
+            "text": "Flowstone Hellion is unaffected by summoning sickness.\no0: Flowstone Hellion gets +1/-1 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "7c655ac8-a5ce-5fd2-bac4-5340f7468719",
+            "name": "Flowstone Mauler",
+            "text": "Trample\noo\nR Flowstone Mauler gets +1/-1 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "95289db7-c1b6-5690-a5a1-0b2a0bebfe97",
+            "name": "Flowstone Shambler",
+            "text": "oo\nR Flowstone Shambler gets +1/-1 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "ea81d2ed-8292-55f5-bceb-32b5f48398cc",
+            "name": "Furnace Spirit",
+            "text": "Furnace Spirit is unaffected by summoning sickness.\noo\nR Furnace Spirit gets +1/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "64465711-b806-50cc-8f28-ec571f683c7a",
+            "name": "Heat of Battle",
+            "text": "Whenever any creature blocks, Heat of Battle deals 1 damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "3f39f757-9d7f-52e3-a45f-ca45b0a6c16a",
+            "name": "Invasion Plans",
+            "text": "Each creature blocks whenever able.\nAttacking player chooses how each creature blocks. (All blocking assignments must still be legal.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "ab9a1ca9-513c-5e63-be64-d43efa449e3e",
+            "name": "Mob Justice",
+            "text": "Mob Justice deals 1 damage to target player for each creature you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "855c7bf1-b53a-5f38-8b89-968221645d3b",
+            "name": "Mogg Bombers",
+            "text": "If any other creature comes into play, sacrifice Mogg Bombers and it deals 3 damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "a53d9cfa-b060-5d87-9599-77dc2e832c04",
+            "name": "Mogg Flunkies",
+            "text": "Mogg Flunkies cannot attack or block during a turn in which no other creature you control attacks or blocks.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "c464fb45-f2e1-5c44-9457-2cc74d1d7942",
+            "name": "Mogg Infestation",
+            "text": "Destroy all creatures target player controls. For each creature put into any graveyard in this way, put two Goblin tokens into play under that player's control. Treat these tokens as 1/1 red creatures.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "efd5c31d-9cd1-5ef5-a3dd-249ddc81c6a6",
+            "name": "Mogg Maniac",
+            "text": "Whenever Mogg Maniac is dealt damage, it deals an equal amount of damage to target opponent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "ae00a93a-c62d-5e1c-ba75-315e6bbef400",
+            "name": "Ruination",
+            "text": "Destroy all nonbasic lands.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "27ed30e6-feac-58cf-8a84-552031878aae",
+            "name": "Seething Anger",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTarget creature gets +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "84746f0b-116a-598a-9386-034ddba4ae8a",
+            "name": "Shard Phoenix",
+            "text": "Flying\no\nRo\nRoo\nR Put Shard Phoenix into your hand. Use this ability only if Shard Phoenix is in your graveyard and only during your upkeep.\nSacrifice Shard Phoenix: Shard Phoenix deals 2 damage to each creature without flying.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "84df7699-c0f1-571d-9a42-6cea0617d0cb",
+            "name": "Shock",
+            "text": "Shock deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "a4d6ebf6-186b-56b1-af1f-81a9a7dde8e6",
+            "name": "Spitting Hydra",
+            "text": "Spitting Hydra comes into play with four +1/+1 counters on it.\no1o\nR, Remove a +1/+1 counter from Spitting Hydra: Spitting Hydra deals 1 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "a489fb53-f732-586f-ba95-55dd5db7d51a",
+            "name": "Wall of Razors",
+            "text": "(Walls cannot attack.)\nFirst strike",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "e3c82961-faa3-5aeb-9d72-50f738c370c9",
+            "name": "Awakening",
+            "text": "At the beginning of each player's upkeep, untap all creatures and lands.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "a93741d6-2baf-5ab0-a6a1-45fc0a06df37",
+            "name": "Burgeoning",
+            "text": "Whenever any opponent plays a land, you may choose a land card from your hand and put it into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "c7fa0286-d0af-53bf-a238-68e4c4218dec",
+            "name": "Carnassid",
+            "text": "Trample\no1oo\nG Regenerate Carnassid.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "209cba73-dc37-5761-9648-370fd070e9c8",
+            "name": "Constant Mists",
+            "text": "Buyback\u2014\nSacrifice a land (You may sacrifice a land in addition to any other costs when you play this spell. If you do, put Constant Mists into your hand instead of your graveyard as part of the spell's effect.)\nCreatures deal no combat damage this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "56e4dc71-29c7-58e3-b386-812d48a6fdc8",
+            "name": "Crossbow Ambush",
+            "text": "All creatures you control can block creatures with flying until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "0bcfaab6-31a4-53a4-8ef3-1421b5ad227a",
+            "name": "Elven Rite",
+            "text": "Put two +1/+1 counters, distributed any way you choose, on any number of target creatures.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "5c98d14d-06e5-53a4-964f-5748f052c2d6",
+            "name": "Endangered Armodon",
+            "text": "If you control any creature with toughness 2 or less, sacrifice Endangered Armodon.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "02267816-b923-55cc-a0ae-797f7d03e3c1",
+            "name": "Hermit Druid",
+            "text": "o\nG, oc\nT: Reveal cards from the top of your library until you reveal a basic land card. Put that card into your hand and put all other revealed cards into your graveyard.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "f30e0af3-fc64-5917-9882-e8aa7175e268",
+            "name": "Lowland Basilisk",
+            "text": "Whenever Lowland Basilisk damages any creature, destroy that creature at end of combat.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "d805aa76-def2-5af6-b2ec-c01a9613c902",
+            "name": "Mulch",
+            "text": "Reveal the top four cards of your library to all players. Put any of those cards that are lands into your hand and the rest into your graveyard.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "4c23990e-fce2-5b9c-b106-024cc63b2f65",
+            "name": "Overgrowth",
+            "text": "Whenever enchanted land is tapped for mana, it produces an additional o\nGo\nG.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "dcc9b660-8144-5d04-84e3-88f554c8c596",
+            "name": "Primal Rage",
+            "text": "All creatures you control gain trample.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "1eda3cb8-f846-5898-8a48-66193deaf5bb",
+            "name": "Provoke",
+            "text": "Untap target creature you do not control. That creature blocks this turn if able.\nDraw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "7bd425fd-b017-5b60-a51a-b309ceefa7b9",
+            "name": "Skyshroud Archer",
+            "text": "oc\nT: Target creature with flying gets -1/-1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "d144b3a4-d232-5307-a109-e6e294e3186b",
+            "name": "Skyshroud Troopers",
+            "text": "oc\nT: Add o\nG to your mana pool. Play this ability as a mana source.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "2ff18fd6-55b2-522a-92e0-d9bba571f0ef",
+            "name": "Spike Breeder",
+            "text": "Spike Breeder comes into play with three +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Breeder: Put a +1/+1 counter on target creature.\no2, Remove a +1/+1 counter from Spike Breeder: Put a Spike token into play. Treat this token as a 1/1 green creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "46d6301b-b0c2-50dc-9809-0f96c23a37c2",
+            "name": "Spike Colony",
+            "text": "Spike Colony comes into play with four +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Colony: Put a +1/+1 counter on target creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "d659a572-59c4-55c0-bb53-5e84585d5f53",
+            "name": "Spike Feeder",
+            "text": "Spike Feeder comes into play with two +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Feeder: Put a +1/+1 counter on target creature.\nRemove a +1/+1 counter from Spike Feeder: Gain 2 life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "2f2aebc2-f70a-5ccc-bb57-df71dca59171",
+            "name": "Spike Soldier",
+            "text": "Spike Soldier comes into play with three +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Soldier: Put a +1/+1 counter on target creature.\nRemove a +1/+1 counter from Spike Soldier: Spike Soldier gets +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "2f27b2d0-f938-595e-b9f6-0801523e19da",
+            "name": "Spike Worker",
+            "text": "Spike Worker comes into play with two +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Worker: Put a +1/+1 counter on target creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "0cd1b205-e1ec-5291-98b6-0154bb7888b0",
+            "name": "Spined Wurm",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "STH"
+        },
+        {
+            "id": "bc0fae69-5eed-5dcc-8ccb-75b023a07fcc",
+            "name": "Tempting Licid",
+            "text": "o\nG, oc\nT: Tempting Licid loses ability and becomes a creature enchantment that reads \"All creatures able to block enchanted creature do so\" instead of a creature. Move Tempting Licid onto target creature. You may pay o\nG to end this effect.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "30864f09-78bc-5d63-8839-520884c4649c",
+            "name": "Verdant Touch",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nTarget land becomes a 2/2 creature permanently. (This creature still counts as a land.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "6ef0c72f-3f9a-5d54-95e3-de7dee1cca2a",
+            "name": "Volrath's Gardens",
+            "text": "o2, Tap a creature you control: Gain 2 life. Play this ability as a sorcery.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "bfa2a700-1b2a-5436-a7aa-fe0795f5c033",
+            "name": "Wall of Blossoms",
+            "text": "(Walls cannot attack.)\nWhen Wall of Blossoms comes into play, draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "eac4d995-632d-53f7-a8d6-c2817c24bee1",
+            "name": "Acidic Sliver",
+            "text": "Each Sliver gains \"o2, Sacrifice this creature: This creature deals 2 damage to target creature or player.\"",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "1cdfde14-5af8-5d6a-98c9-58106cf45aae",
+            "name": "Crystalline Sliver",
+            "text": "Slivers cannot be the target of spells or abilities.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "9eaa67cd-e4b5-545c-a693-a5836ca622dc",
+            "name": "Hibernation Sliver",
+            "text": "Each Sliver gains \"Pay 2 life: Return this creature to owner's hand.\"",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "d1c0b29b-b820-5679-b7d8-e1caf25cdf75",
+            "name": "Sliver Queen",
+            "text": "Sliver Queen counts as a Sliver.\no2: Put a Sliver token into play. Treat this token as a 1/1 colorless creature.",
+            "colours": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "311efb31-04fe-5c65-ade2-a6bf4b53e784",
+            "name": "Spined Sliver",
+            "text": "If any Sliver is blocked, it gets +1/+1 until end of turn for each creature blocking it.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "aef5604a-84b4-59e0-8849-0bffa93e64f8",
+            "name": "Victual Sliver",
+            "text": "Each Sliver gains \"o2, Sacrifice this creature: Gain 4 life.\"",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "34b1d2f2-e6d4-5b13-9199-a286218ce6b4",
+            "name": "Bullwhip",
+            "text": "o2, oc\nT: Bullwhip deals 1 damage to target creature. That creature attacks this turn if able.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "b9feac79-3880-57e6-94b3-6d6cef2e5b20",
+            "name": "Ensnaring Bridge",
+            "text": "Each creature with power greater than the number of cards in your hand cannot attack.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "29fa5147-7b21-5c7b-aec2-f5277792895f",
+            "name": "Heartstone",
+            "text": "The cost of each creature ability requiring an activation cost is reduced by o1. This cannot reduce an ability's generic mana cost to less then o1.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "03101362-e8cc-5864-9023-43d91e7d27a1",
+            "name": "Horn of Greed",
+            "text": "Whenever any player plays a land, that player draws a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "13845a3d-f3b9-52a1-90e5-b6afca6fd8fa",
+            "name": "Hornet Cannon",
+            "text": "o3, oc\nT: Put a Hornet token into play. Treat this token as a 1/1 artifact creature with flying that is unaffected by summoning sickness. At end of turn, destroy the token.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "26920490-e5ee-50b2-8991-5bbb37211745",
+            "name": "Jinxed Ring",
+            "text": "Whenever any card is put into your graveyard from play, Jinxed Ring deals 1 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Ring permanently",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "d13aede2-f106-5d02-b52e-47d3a6871071",
+            "name": "Mox Diamond",
+            "text": "When Mox Diamond comes into play, choose and discard a land card or sacrifice Mox Diamond.\noc\nT: Add one mana of any color to your mana pool. Play this ability as a mana source.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "6e65d7d4-8eac-5191-a516-9a5a7d1a8850",
+            "name": "Portcullis",
+            "text": "Whenever any creature comes into play, if there are two or more other creatures in play, set that creature aside. If Portcullis leaves play, put the creature into play under its owner's control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "035db611-b24d-542b-b843-41e74c260a4b",
+            "name": "Shifting Wall",
+            "text": "Shifting Wall counts as a Wall. (Walls cannot attack.)\nShifting Wall comes into play with X +1/+1 counters on it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "STH"
+        },
+        {
+            "id": "9d184eaa-4752-54e1-8d4e-74fa4cb71331",
+            "name": "Sword of the Chosen",
+            "text": "oc\nT: Target legend gets +2/+2 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "75fa03eb-7d51-501a-aa43-a9aca3cfbda1",
+            "name": "Volrath's Laboratory",
+            "text": "When you play Volrath's Laboratory, choose a color and a creature type.\no5, oc\nT: Put a token creature into play. Treat this token as a 2/2 creature of the chosen color and creature type.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        },
+        {
+            "id": "c5c88002-3a6d-50fa-9c80-fcb8e2623512",
+            "name": "Volrath's Stronghold",
+            "text": "oc\nT: Add one colorless mana to your mana pool.\no1o\nB, oc\nT: Put target creature card from your graveyard on top of your library.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "STH"
+        }
+    ]
+}

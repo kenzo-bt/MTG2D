@@ -1,6 +1,6 @@
 # Utility script to read from a set's JSON file (downloaded from https://mtgjson.com/)
 # Gets relevant set/card data only and produce a significantly smaller JSON file for better game performance
-# Downloads the card images using the scryfall API
+# Optionally downloads the card images using the scryfall API
 
 import os
 import sys
@@ -9,9 +9,10 @@ import requests
 import time
 
 # Verify that the script is run with correct arguments
-if len(sys.argv) != 2:
-    print("ERROR: Expected exactly 1 argument (Set code)")
-    print("USAGE: python getCardsFromSet.py <setCode>")
+if len(sys.argv) < 2 or len(sys.argv) > 3:
+    print("ERROR: Invalid number of arguments")
+    print("USAGE: python getCardsFromSet.py <setCode> [-p]")
+    print("Use the -p flag to download the card images")
     sys.exit()
 
 # Define input/output paths for JSON files
@@ -58,27 +59,29 @@ for card in cards:
         "name": card["name"],
         "text": text,
         "colours": card["colors"],
-        "convertedManaCost": card["convertedManaCost"],
+        "colourIdentity": card["colorIdentity"],
+        "manaValue": card["manaValue"],
         "types": card["types"],
         "rarity": card["rarity"],
         "set": card["setCode"]
     }
     outputSet["cards"].append(thisCard);
 
-    if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
-        # Get image URL from Scryfall API (https://scryfall.com/docs/api)
-        # ! IMPORTANT ! Using sleep method to stay compliant with Scryfall API request limits (Max 10 request per second)
-        scryfallResponse = requests.get('https://api.scryfall.com/cards/' + card["identifiers"]["scryfallId"])
-        time.sleep(0.1)
-        data = scryfallResponse.text
-        parse_json = json.loads(data)
-        imageUrl = parse_json["image_uris"]["normal"]
+    if len(sys.argv) == 3 and sys.argv[2] == "-p":
+        if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
+            # Get image URL from Scryfall API (https://scryfall.com/docs/api)
+            # ! IMPORTANT ! Using sleep method to stay compliant with Scryfall API request limits (Max 10 request per second)
+            scryfallResponse = requests.get('https://api.scryfall.com/cards/' + card["identifiers"]["scryfallId"])
+            time.sleep(0.1)
+            data = scryfallResponse.text
+            parse_json = json.loads(data)
+            imageUrl = parse_json["image_uris"]["normal"]
 
-        # Save image to the image output directory
-        image = requests.get(imageUrl)
-        file = open(setImageDirectory + card["uuid"] + ".jpg", "wb")
-        file.write(image.content)
-        file.close()
+            # Save image to the image output directory
+            image = requests.get(imageUrl)
+            file = open(setImageDirectory + card["uuid"] + ".jpg", "wb")
+            file.write(image.content)
+            file.close()
 
 # Encode outputSet into JSON format and write to output JSON file
 outputJSON = json.dumps(outputSet, indent=4)
