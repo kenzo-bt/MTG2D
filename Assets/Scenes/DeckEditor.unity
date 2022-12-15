@@ -625,7 +625,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1118635332}
+        m_TargetAssemblyTypeName: CardCollection, Assembly-CSharp
+        m_MethodName: updateSearchText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -2595,7 +2607,7 @@ GameObject:
   - component: {fileID: 974176064}
   - component: {fileID: 974176063}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SearchInputText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2928,6 +2940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filtersObject: {fileID: 936134907}
   displayObject: {fileID: 85281903}
+  searchInputObject: {fileID: 135980946}
 --- !u!1001 &1137165210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3005,11 +3018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -416.2
+      value: -209.10005
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161.00005
+      value: -161.00006
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4124,11 +4137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -209.1
+      value: -416.2
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161.00005
+      value: -161.00006
       objectReference: {fileID: 0}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

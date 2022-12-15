@@ -26,7 +26,6 @@ public class IconFilter : MonoBehaviour
 
     public void filterClicked()
     {
-      Debug.Log("Filter clicked!");
       Color filterColor = selectedFilter.color;
       Color iconColor = icon.color;
       if (amSelected)

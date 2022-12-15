@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardCollection : MonoBehaviour
 {
     public GameObject filtersObject;
     public GameObject displayObject;
+    public GameObject searchInputObject;
     private List<string> allCardIds;
     private List<string> filteredIds;
     private int cardsPerPage;
@@ -14,6 +16,8 @@ public class CardCollection : MonoBehaviour
     private bool onlyLands;
     private bool onlyMultiColoured;
     private bool onlyColourless;
+    private string searchInputText;
+    private static List<string> searchKeywords;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,8 @@ public class CardCollection : MonoBehaviour
       onlyLands = false;
       onlyMultiColoured = false;
       onlyColourless = false;
+      searchKeywords = new List<string>();
+      searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
       filteredIds = new List<string>(allCardIds);
       updateCollectionDisplay();
@@ -135,6 +141,11 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
       }
 
+      if (searchInputText != "")
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(matchesSearchText));
+      }
+
       // Go back to page one on the display
       currentPage = 0;
       // Update the display with the filtered cards
@@ -174,6 +185,18 @@ public class CardCollection : MonoBehaviour
       filterCollection();
     }
 
+    public void updateSearchText()
+    {
+      searchInputText = searchInputObject.GetComponent<TMP_InputField>().text.ToLower();
+      searchKeywords = new List<string>(searchInputText.Split(','));
+      for (int i = 0; i < searchKeywords.Count; i++)
+      {
+        searchKeywords[i] = searchKeywords[i].Trim();
+        Debug.Log(searchKeywords[i] + " -> " + searchKeywords[i].Length);
+      }
+      filterCollection();
+    }
+
     //// Filter predicates
 
     private static bool isLand(string id)
@@ -209,7 +232,20 @@ public class CardCollection : MonoBehaviour
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
       foreach (string colour in colourFilters)
       {
-        if (!targetCard.colours.Contains(colour) && !targetCard.colourIdentity.Contains(colour))
+        if (targetCard.colours.Contains(colour) || targetCard.colourIdentity.Contains(colour))
+        {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    private static bool matchesSearchText(string id)
+    {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      foreach (string keyword in searchKeywords)
+      {
+        if (!targetCard.text.ToLower().Contains(keyword) && !targetCard.name.ToLower().Contains(keyword))
         {
           return false;
         }
