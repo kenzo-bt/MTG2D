@@ -130,7 +130,6 @@ public class PlayerManager : MonoBehaviour
 
     public CardInfo getCardFromLookup(string id)
     {
-      //Debug.Log("Find: " + id);
       CardInfo targetCard = new CardInfo();
       try
       {

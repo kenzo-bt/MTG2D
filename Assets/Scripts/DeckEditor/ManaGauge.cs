@@ -19,9 +19,8 @@ public class ManaGauge : MonoBehaviour
         fill = fillObject.GetComponent<RectTransform>();
         bg = bgObject.GetComponent<RectTransform>();
         // Set bg/fill width and initial height
-        bg.sizeDelta = new Vector2(gauge.sizeDelta.x - 2, gauge.sizeDelta.y -2);
-        fill.sizeDelta = new Vector2(bg.sizeDelta.x, 0);
-        gaugeHeight = bg.sizeDelta.y;
+        fill.sizeDelta = new Vector2(fill.sizeDelta.x, 0);
+        gaugeHeight = gauge.sizeDelta.y - 1;
     }
 
     // Update is called once per frame

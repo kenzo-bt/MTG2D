@@ -13,11 +13,12 @@ public class CardCollection : MonoBehaviour
     private int cardsPerPage;
     private int currentPage;
     private static List<string> colourFilters; // B, G, R, W, bl(U)e
+    private static List<int> manaFilters; // 0 -> 7+ mana value
+    private static List<string> searchKeywords;
     private bool onlyLands;
     private bool onlyMultiColoured;
     private bool onlyColourless;
     private string searchInputText;
-    private static List<string> searchKeywords;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,11 @@ public class CardCollection : MonoBehaviour
       currentPage = 0;
       cardsPerPage = 10;
       colourFilters = new List<string>();
+      int[] manaLiterals = { 0, 1, 2, 3, 4, 5, 6, 7 };
+      manaFilters = new List<int>(manaLiterals);
       allCardIds = new List<string>();
       loadCollection();
-      // TODO: pre-apply filters based on the selected deck's colours
+      // TODO: pre-apply filters based on the selected deck's colours OR load deck (less computation + more intuitive)
       onlyLands = false;
       onlyMultiColoured = false;
       onlyColourless = false;
@@ -117,7 +120,7 @@ public class CardCollection : MonoBehaviour
       // Reset filteredIds to include all cards
       filteredIds = new List<string>(allCardIds);
 
-      // Apply filters
+      // Apply filters in waterfall fashion. Start with broadest filter, end with most computationally expensive
       if (onlyLands)
       {
         filteredIds = new List<string>(filteredIds.FindAll(isLand));
@@ -141,6 +144,8 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
       }
 
+      filteredIds = new List<string>(filteredIds.FindAll(hasSelectedManaValues));
+
       if (searchInputText != "")
       {
         filteredIds = new List<string>(filteredIds.FindAll(matchesSearchText));
@@ -163,6 +168,18 @@ public class CardCollection : MonoBehaviour
       else
       {
         colourFilters.Add(colour);
+      }
+      filterCollection();
+    }
+
+    public void toggleManaFilter(int manaValue)
+    {
+      if (manaFilters.Contains(manaValue))
+      {
+        manaFilters.Remove(manaValue);
+      }
+      else {
+        manaFilters.Add(manaValue);
       }
       filterCollection();
     }
@@ -238,6 +255,17 @@ public class CardCollection : MonoBehaviour
         }
       }
       return false;
+    }
+
+    private static bool hasSelectedManaValues(string id)
+    {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      int cardValue = targetCard.manaValue;
+      if (cardValue > 7)
+      {
+        cardValue = 7;
+      }
+      return manaFilters.Contains(cardValue);
     }
 
     private static bool matchesSearchText(string id)
