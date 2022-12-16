@@ -43,7 +43,12 @@ public class CardCollection : MonoBehaviour
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
-      filteredIds = new List<string>(allCardIds);
+      List<string> selectedDeckIds = new List<string>();
+      foreach (CardInfo card in PlayerManager.Instance.selectedDeck.cards)
+      {
+        selectedDeckIds.Add(card.id);
+      }
+      filteredIds = new List<string>(selectedDeckIds);
       updateCollectionDisplay();
     }
 
