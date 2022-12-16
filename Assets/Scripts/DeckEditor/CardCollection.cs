@@ -80,6 +80,7 @@ public class CardCollection : MonoBehaviour
       {
         // Texturize the card display card
         WebCard card = displayObject.transform.GetChild(i).GetChild(0).GetComponent<WebCard>();
+        card.makeVisible();
         card.texturizeCard(cardsToDisplay[i]);
       }
     }
@@ -128,6 +129,7 @@ public class CardCollection : MonoBehaviour
     // Filter down the collection based on the selected filters
     public void filterCollection()
     {
+      //debugAllFilters();
       // Reset filteredIds to include all cards
       filteredIds = new List<string>(allCardIds);
 
@@ -375,5 +377,17 @@ public class CardCollection : MonoBehaviour
       {
         setFilters = new List<string>(setString.Split(','));
       }
+    }
+
+    // Debug all filters
+    private void debugAllFilters()
+    {
+      Debug.Log("---------------------------");
+      Debug.Log("Sets: [" + string.Join(",", setFilters) + "]");
+      Debug.Log("Colours: [" + string.Join(",", colourFilters) + "]");
+      Debug.Log("Mana: [" + string.Join(",", manaFilters) + "]");
+      Debug.Log("Rarities: [" + string.Join(",", rarities) + "]");
+      Debug.Log("Types: [" + string.Join(",", typeFilters) + "]");
+      Debug.Log("Keywords: [" + string.Join(",", searchKeywords) + "]");
     }
 }
