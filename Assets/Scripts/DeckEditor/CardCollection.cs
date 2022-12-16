@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class CardCollection : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class CardCollection : MonoBehaviour
     private static List<string> colourFilters; // B, G, R, W, bl(U)e
     private static List<int> manaFilters; // 0 -> 7+ mana value
     private static List<string> searchKeywords;
+    private static List<string> rarities;
     private bool onlyLands;
     private bool onlyMultiColoured;
     private bool onlyColourless;
@@ -26,8 +28,7 @@ public class CardCollection : MonoBehaviour
       currentPage = 0;
       cardsPerPage = 10;
       colourFilters = new List<string>();
-      int[] manaLiterals = { 0, 1, 2, 3, 4, 5, 6, 7 };
-      manaFilters = new List<int>(manaLiterals);
+      manaFilters = new List<int>();
       allCardIds = new List<string>();
       loadCollection();
       // TODO: pre-apply filters based on the selected deck's colours OR load deck (less computation + more intuitive)
@@ -35,6 +36,7 @@ public class CardCollection : MonoBehaviour
       onlyMultiColoured = false;
       onlyColourless = false;
       searchKeywords = new List<string>();
+      rarities = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
       filteredIds = new List<string>(allCardIds);
@@ -115,7 +117,7 @@ public class CardCollection : MonoBehaviour
     }
 
     // Filter down the collection based on the selected filters
-    private void filterCollection()
+    public void filterCollection()
     {
       // Reset filteredIds to include all cards
       filteredIds = new List<string>(allCardIds);
@@ -144,7 +146,10 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
       }
 
-      filteredIds = new List<string>(filteredIds.FindAll(hasSelectedManaValues));
+      if (manaFilters.Count > 0)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedManaValues));
+      }
 
       if (searchInputText != "")
       {
@@ -168,18 +173,6 @@ public class CardCollection : MonoBehaviour
       else
       {
         colourFilters.Add(colour);
-      }
-      filterCollection();
-    }
-
-    public void toggleManaFilter(int manaValue)
-    {
-      if (manaFilters.Contains(manaValue))
-      {
-        manaFilters.Remove(manaValue);
-      }
-      else {
-        manaFilters.Add(manaValue);
       }
       filterCollection();
     }
@@ -209,7 +202,6 @@ public class CardCollection : MonoBehaviour
       for (int i = 0; i < searchKeywords.Count; i++)
       {
         searchKeywords[i] = searchKeywords[i].Trim();
-        Debug.Log(searchKeywords[i] + " -> " + searchKeywords[i].Length);
       }
       filterCollection();
     }
@@ -279,5 +271,37 @@ public class CardCollection : MonoBehaviour
         }
       }
       return true;
+    }
+
+    //// Receiving extra filters from Advanced filters
+
+    public void addRarities(string rarityString)
+    {
+      rarities = new List<string>();
+      if (rarityString.Length > 0)
+      {
+        rarities = new List<string>(rarityString.Split(','));
+      }
+    }
+
+    public void addManaValues(string manaString)
+    {
+      manaFilters = new List<int>();
+      if (manaString.Length > 0)
+      {
+        foreach (string value in manaString.Split(','))
+        {
+          manaFilters.Add(Int32.Parse(value));
+        }
+      }
+    }
+
+    public void addColours(string colourString)
+    {
+      colourFilters = new List<string>();
+      if (colourString.Length > 0)
+      {
+        colourFilters = new List<string>(colourString.Split(','));
+      }
     }
 }

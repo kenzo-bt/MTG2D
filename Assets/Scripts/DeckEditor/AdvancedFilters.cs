@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class AdvancedFilters : MonoBehaviour
 {
-    public GameObject[] manaToggles;
+    public GameObject cardCollectionObject;
     private RectTransform rect;
     private Vector3 targetPosition;
     private float speed;
     private float hiddenPos;
     private float shownPos;
+    private List<string> rarities;
+    private List<int> manaFilters;
+    private List<string> colours;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +20,10 @@ public class AdvancedFilters : MonoBehaviour
       rect = GetComponent<RectTransform>();
       hiddenPos = rect.localPosition.y;
       shownPos = rect.localPosition.y + rect.sizeDelta.y;
+      rarities = new List<string>();
+      manaFilters = new List<int>();
+      colours = new List<string>();
       hide();
-      selectAllManaFilters();
     }
 
     // Update is called once per frame
@@ -38,11 +43,45 @@ public class AdvancedFilters : MonoBehaviour
       targetPosition = new Vector3(rect.localPosition.x, hiddenPos, rect.localPosition.z);
     }
 
-    public void selectAllManaFilters()
+    public void toggleMana(int value)
     {
-      foreach (GameObject filter in manaToggles)
+      if (manaFilters.Contains(value))
       {
-        filter.GetComponent<IconFilter>().filterClicked();
+        manaFilters.Remove(value);
       }
+      else {
+        manaFilters.Add(value);
+      }
+    }
+
+    public void toggleRarity(string rarity)
+    {
+      if (rarities.Contains(rarity))
+      {
+        rarities.Remove(rarity);
+      }
+      else {
+        rarities.Add(rarity);
+      }
+    }
+
+    public void toggleColour(string colour)
+    {
+      if (colours.Contains(colour))
+      {
+        colours.Remove(colour);
+      }
+      else {
+        colours.Add(colour);
+      }
+    }
+
+    public void sendFiltersToCollection()
+    {
+      CardCollection collection = cardCollectionObject.GetComponent<CardCollection>();
+      collection.addRarities(string.Join(",", rarities));
+      collection.addManaValues(string.Join(",", manaFilters));
+      collection.addColours(string.Join(",", colours));
+      collection.filterCollection();
     }
 }
