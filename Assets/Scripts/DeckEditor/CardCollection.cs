@@ -137,6 +137,11 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(inSelectedSets));
       }
 
+      if (rarities.Count > 0)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedRarities));
+      }
+
       if (onlyLands)
       {
         filteredIds = new List<string>(filteredIds.FindAll(isLand));
@@ -313,6 +318,11 @@ public class CardCollection : MonoBehaviour
       return setFilters.Contains(PlayerManager.Instance.getCardFromLookup(id).set);
     }
 
+    private static bool hasSelectedRarities(string id)
+    {
+      return rarities.Contains(PlayerManager.Instance.getCardFromLookup(id).rarity);
+    }
+
     //// Receiving extra filters from Advanced filters
 
     public void addRarities(string rarityString)
@@ -321,6 +331,10 @@ public class CardCollection : MonoBehaviour
       if (rarityString.Length > 0)
       {
         rarities = new List<string>(rarityString.Split(','));
+      }
+      foreach (string r in rarities)
+      {
+        Debug.Log(r);
       }
     }
 
