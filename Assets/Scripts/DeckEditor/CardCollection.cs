@@ -17,6 +17,8 @@ public class CardCollection : MonoBehaviour
     private static List<int> manaFilters; // 0 -> 7+ mana value
     private static List<string> searchKeywords;
     private static List<string> rarities;
+    private static List<string> typeFilters;
+    private static List<string> setFilters;
     private bool onlyLands;
     private bool onlyMultiColoured;
     private bool onlyColourless;
@@ -37,6 +39,8 @@ public class CardCollection : MonoBehaviour
       onlyColourless = false;
       searchKeywords = new List<string>();
       rarities = new List<string>();
+      typeFilters = new List<string>();
+      setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
       filteredIds = new List<string>(allCardIds);
@@ -123,6 +127,11 @@ public class CardCollection : MonoBehaviour
       filteredIds = new List<string>(allCardIds);
 
       // Apply filters in waterfall fashion. Start with broadest filter, end with most computationally expensive
+      if (setFilters.Count > 0)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(inSelectedSets));
+      }
+
       if (onlyLands)
       {
         filteredIds = new List<string>(filteredIds.FindAll(isLand));
@@ -143,7 +152,10 @@ public class CardCollection : MonoBehaviour
       }
       else
       {
-        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
+        if (colourFilters.Count > 0)
+        {
+          filteredIds = new List<string>(filteredIds.FindAll(hasSelectedColours));
+        }
       }
 
       if (manaFilters.Count > 0)
@@ -154,6 +166,11 @@ public class CardCollection : MonoBehaviour
       if (searchInputText != "")
       {
         filteredIds = new List<string>(filteredIds.FindAll(matchesSearchText));
+      }
+
+      if (typeFilters.Count > 0)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedTypes));
       }
 
       // Go back to page one on the display
@@ -273,6 +290,24 @@ public class CardCollection : MonoBehaviour
       return true;
     }
 
+    private static bool hasSelectedTypes(string id)
+    {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      foreach (string type in targetCard.types)
+      {
+        if (typeFilters.Contains(type))
+        {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    private static bool inSelectedSets(string id)
+    {
+      return setFilters.Contains(PlayerManager.Instance.getCardFromLookup(id).set);
+    }
+
     //// Receiving extra filters from Advanced filters
 
     public void addRarities(string rarityString)
@@ -302,6 +337,24 @@ public class CardCollection : MonoBehaviour
       if (colourString.Length > 0)
       {
         colourFilters = new List<string>(colourString.Split(','));
+      }
+    }
+
+    public void addTypes(string typeString)
+    {
+      typeFilters = new List<string>();
+      if (typeString.Length > 0)
+      {
+        typeFilters = new List<string>(typeString.Split(','));
+      }
+    }
+
+    public void addSets(string setString)
+    {
+      setFilters = new List<string>();
+      if (setString.Length > 0)
+      {
+        setFilters = new List<string>(setString.Split(','));
       }
     }
 }

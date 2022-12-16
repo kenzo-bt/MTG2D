@@ -11,8 +11,8 @@ public class FilterExpander : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      isExpanded = false;
-      collapse();
+      isExpanded = true;
+      expand();
     }
 
     // Update is called once per frame

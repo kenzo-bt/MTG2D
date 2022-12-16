@@ -13,6 +13,9 @@ public class AdvancedFilters : MonoBehaviour
     private List<string> rarities;
     private List<int> manaFilters;
     private List<string> colours;
+    private List<string> types;
+    private List<string> sets;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,8 @@ public class AdvancedFilters : MonoBehaviour
       rarities = new List<string>();
       manaFilters = new List<int>();
       colours = new List<string>();
+      types = new List<string>();
+      sets = new List<string>();
       hide();
     }
 
@@ -76,12 +81,36 @@ public class AdvancedFilters : MonoBehaviour
       }
     }
 
+    public void toggleType(string type)
+    {
+      if (types.Contains(type))
+      {
+        types.Remove(type);
+      }
+      else {
+        types.Add(type);
+      }
+    }
+
+    public void toggleSet(string set)
+    {
+      if (sets.Contains(set))
+      {
+        sets.Remove(set);
+      }
+      else {
+        sets.Add(set);
+      }
+    }
+
     public void sendFiltersToCollection()
     {
       CardCollection collection = cardCollectionObject.GetComponent<CardCollection>();
       collection.addRarities(string.Join(",", rarities));
       collection.addManaValues(string.Join(",", manaFilters));
       collection.addColours(string.Join(",", colours));
+      collection.addTypes(string.Join(",", types));
+      collection.addSets(string.Join(",", sets));
       collection.filterCollection();
     }
 }
