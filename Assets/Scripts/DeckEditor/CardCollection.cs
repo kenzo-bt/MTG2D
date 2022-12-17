@@ -379,12 +379,6 @@ public class CardCollection : MonoBehaviour
       }
     }
 
-    // Save deck changes
-    public void saveDeck()
-    {
-      PlayerManager.Instance.savePlayerDecks();
-    }
-
     // Debug all filters
     private void debugAllFilters()
     {

@@ -69,12 +69,26 @@ public class Decklist {
   }
 
   // Default constructor
-  public Decklist() {}
+  public Decklist() {
+    this.name = "";
+    this.cards = new List<CardInfo>();
+    this.cardFrequencies = new List<int>();
+  }
 
   // Copy constructor
   public Decklist (Decklist deckToCopy) {
     this.name = deckToCopy.name;
     this.cards = new List<CardInfo>(deckToCopy.cards);
     this.cardFrequencies = new List<int>(deckToCopy.cardFrequencies);
+  }
+
+  // Get selected card
+  public CardInfo getCoverCard()
+  {
+    if (cards.Count > 0)
+    {
+      return cards[0];
+    }
+    return PlayerManager.Instance.cardCollection[0].cards[0];
   }
 }

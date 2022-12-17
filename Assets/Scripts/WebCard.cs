@@ -71,9 +71,9 @@ public class WebCard : MonoBehaviour
       else // If not in cache, proceed to download from server
       {
         // Set fallback image
-        //Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
-        //cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-        //fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
         StartCoroutine(fetchCardFromServer(serverUrl, cardId));
       }

@@ -59,8 +59,7 @@ public class DeckDisplay : MonoBehaviour
       // Update the deck display in the selector screen
       DeckDisplay selectPanelDeck = GameObject.Find("SelectPanelDeck").GetComponent<DeckDisplay>();
       string selectedName = PlayerManager.Instance.selectedDeck.name;
-      CardInfo selectedCover = PlayerManager.Instance.selectedDeck.cards[0];
-      selectPanelDeck.setDisplayData(selectedName, selectedCover);
+      selectPanelDeck.setDisplayData(selectedName, PlayerManager.Instance.selectedDeck.getCoverCard());
       // Hide the add deck button
       GameObject.Find("AddDeckButton").GetComponent<CanvasGroup>().alpha = 0;
     }
