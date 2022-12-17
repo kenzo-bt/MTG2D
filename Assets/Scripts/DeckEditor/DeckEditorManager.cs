@@ -34,6 +34,12 @@ public class DeckEditorManager : MonoBehaviour
       List<Decklist> allDecks = PlayerManager.Instance.allDecks;
 
       int nameHit = 0;
+      if (name == "")
+      {
+        name = "NoName";
+        nameHit += 1;
+      }
+
       for (int i = 0; i < allDecks.Count; i++)
       {
         if (allDecks[i].name == name)
@@ -71,7 +77,7 @@ public class DeckEditorManager : MonoBehaviour
 
     public void exitNoChange()
     {
-      PlayerManager.Instance.selectedDeck.name = initialDeck.name;
+      PlayerManager.Instance.selectedDeck.name = getValidName(initialDeck.name);
       PlayerManager.Instance.selectedDeck.cards = new List<CardInfo>(initialDeck.cards);
       PlayerManager.Instance.selectedDeck.cardFrequencies = new List<int>(initialDeck.cardFrequencies);
       SceneManager.LoadScene("DeckBrowser");
