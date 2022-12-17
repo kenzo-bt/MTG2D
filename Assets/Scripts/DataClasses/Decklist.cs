@@ -37,4 +37,44 @@ public class Decklist {
     }
     return total;
   }
+
+  // Add card to deck
+  public void addCard(CardInfo card)
+  {
+    if (cards.Contains(card))
+    {
+      int index = cards.IndexOf(card);
+      cardFrequencies[index] += 1;
+    }
+    else
+    {
+      cards.Add(card);
+      cardFrequencies.Add(1);
+    }
+  }
+
+  // Remove card (Remove 1 instance of the passed card)
+  public void removeCard(CardInfo card)
+  {
+    if (cards.Contains(card))
+    {
+      int index = cards.IndexOf(card);
+      cardFrequencies[index] -= 1;
+      if (cardFrequencies[index] <= 0)
+      {
+        cards.RemoveAt(index);
+        cardFrequencies.RemoveAt(index);
+      }
+    }
+  }
+
+  // Default constructor
+  public Decklist() {}
+
+  // Copy constructor
+  public Decklist (Decklist deckToCopy) {
+    this.name = deckToCopy.name;
+    this.cards = new List<CardInfo>(deckToCopy.cards);
+    this.cardFrequencies = new List<int>(deckToCopy.cardFrequencies);
+  }
 }

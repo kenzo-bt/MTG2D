@@ -41,6 +41,20 @@ public class DeckListPanel : MonoBehaviour
       manaCurve.updateManaCurve(deck);
     }
 
+    public void updatePanel()
+    {
+      // Remove all previous entries
+      int numInstances = cardList.transform.childCount;
+      for (int i = 0; i < numInstances; i++)
+      {
+        DestroyImmediate(cardList.transform.GetChild(0).gameObject);
+      }
+      // Rebuild list
+      cardCountText.text = "Cards: " + deck.getNumCards();
+      populateCardList();
+      manaCurve.updateManaCurve(deck);
+    }
+
     // populate the cardList with the selected deck
     public void populateCardList()
     {
@@ -48,7 +62,7 @@ public class DeckListPanel : MonoBehaviour
       {
         // Instantiate a list entry prefab in the card list
         GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
-        entryInstance.GetComponent<CardListEntry>().setValues(deck.cards[i].name, deck.cardFrequencies[i]);
+        entryInstance.GetComponent<CardListEntry>().setValues(deck.cards[i].id, deck.cardFrequencies[i]);
       }
     }
 }

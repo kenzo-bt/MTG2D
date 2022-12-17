@@ -79,7 +79,11 @@ public class CardCollection : MonoBehaviour
       for (int i = 0; i < cardsToDisplay.Count; i++)
       {
         // Texturize the card display card
-        WebCard card = displayObject.transform.GetChild(i).GetChild(0).GetComponent<WebCard>();
+        GameObject collectionCardObject = displayObject.transform.GetChild(i).gameObject;
+        WebCard card = collectionCardObject.transform.GetChild(0).GetComponent<WebCard>();
+        CollectionCard collectionCard = collectionCardObject.GetComponent<CollectionCard>();
+
+        collectionCard.setId(cardsToDisplay[i].id);
         card.makeVisible();
         card.texturizeCard(cardsToDisplay[i]);
       }
@@ -334,10 +338,6 @@ public class CardCollection : MonoBehaviour
       {
         rarities = new List<string>(rarityString.Split(','));
       }
-      foreach (string r in rarities)
-      {
-        Debug.Log(r);
-      }
     }
 
     public void addManaValues(string manaString)
@@ -377,6 +377,12 @@ public class CardCollection : MonoBehaviour
       {
         setFilters = new List<string>(setString.Split(','));
       }
+    }
+
+    // Save deck changes
+    public void saveDeck()
+    {
+      PlayerManager.Instance.savePlayerDecks();
     }
 
     // Debug all filters

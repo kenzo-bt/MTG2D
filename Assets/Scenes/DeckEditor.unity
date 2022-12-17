@@ -1184,7 +1184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 299.655, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &134459525
@@ -4125,6 +4125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4892,7 +4896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 299.655
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7522,8 +7526,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 215d0d6525d561048b785cd90bb2b195, type: 2}
-  m_sharedMaterial: {fileID: -4356058448470030826, guid: 215d0d6525d561048b785cd90bb2b195, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 00f04592330583549b4b02328329cc69, type: 2}
+  m_sharedMaterial: {fileID: 1850010685738160619, guid: 00f04592330583549b4b02328329cc69, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7547,8 +7551,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7608,6 +7612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8617,7 +8625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 299.655
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9016,6 +9024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10028,7 +10040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 898.96497, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1181797336
@@ -10974,14 +10986,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1442167032}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1309346974}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
@@ -10989,19 +11009,39 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: exitNoChanges
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: changeScene
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DeckEditorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SceneChanger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: DeckBrowser
       objectReference: {fileID: 0}
     - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233460052050801239, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5331843440330738948, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
@@ -11581,6 +11621,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2465e27317942914a82d0c7adef67c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1442167031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442167033}
+  - component: {fileID: 1442167032}
+  m_Layer: 0
+  m_Name: DeckEditorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1442167032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442167031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8fd442ef0e15b418085d7579a48f13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1442167033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442167031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5247953, y: -1.2363664, z: 47.04603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1446707787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12361,6 +12445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12846,6 +12934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13395,6 +13487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13907,6 +14003,62 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 4.8
       objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1118635332}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1736127767}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: saveDeck
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CardCollection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: DeckBrowser
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228358, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14058,6 +14210,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4845584142076228358, guid: ae3fa9290922a3b418079f3576357652, type: 3}
   m_PrefabInstance: {fileID: 1736127764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1736127766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+  m_PrefabInstance: {fileID: 1736127764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1736127767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736127766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a71880351760a4ba5854c4fb6a6dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1746504266
 GameObject:
   m_ObjectHideFlags: 0
@@ -14186,11 +14355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: hide
+      value: sendFiltersToCollection
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: sendFiltersToCollection
+      value: hide
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -14506,6 +14675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14861,8 +15034,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Search...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 215d0d6525d561048b785cd90bb2b195, type: 2}
-  m_sharedMaterial: {fileID: -4356058448470030826, guid: 215d0d6525d561048b785cd90bb2b195, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 00f04592330583549b4b02328329cc69, type: 2}
+  m_sharedMaterial: {fileID: 1850010685738160619, guid: 00f04592330583549b4b02328329cc69, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14886,8 +15059,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14960,6 +15133,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15528,6 +15705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16677,6 +16858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionCard (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2823470143781092563, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
+      propertyPath: DeckListPanelObject
+      value: 
+      objectReference: {fileID: 2034659554}
     - target: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16920,7 +17105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 299.655
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8072138862798289627, guid: fac25828450fec146a29333efcbb8627, type: 3}
       propertyPath: m_AnchoredPosition.y

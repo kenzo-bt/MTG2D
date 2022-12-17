@@ -5,6 +5,7 @@ using TMPro;
 
 public class CardListEntry : MonoBehaviour
 {
+    private string cardId;
     private string cardName;
     private int quantity;
     public GameObject nameObject;
@@ -16,6 +17,7 @@ public class CardListEntry : MonoBehaviour
     void Awake()
     {
         cardName = "";
+        cardId = "";
         quantity = 0;
         nameText = nameObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>();
         quantityText = quantityObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>();
@@ -28,9 +30,11 @@ public class CardListEntry : MonoBehaviour
     }
 
     // Set the name and quantity properties
-    public void setValues(string name, int num)
+    public void setValues(string id, int num)
     {
-      cardName = name;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
+      cardId = card.id;
+      cardName = card.name;
       quantity = num;
       updateEntry();
     }
@@ -40,5 +44,27 @@ public class CardListEntry : MonoBehaviour
     {
       nameText.text = cardName;
       quantityText.text = quantity + "x";
+    }
+
+    // Increase card frequency
+    public void addFrequency()
+    {
+      // Update master data
+      Decklist deck = PlayerManager.Instance.selectedDeck;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      deck.addCard(card);
+      // Refresh decklist panel
+      transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
+    }
+
+    // Decrease card frequency
+    public void removeFrequency()
+    {
+      // Update master data
+      Decklist deck = PlayerManager.Instance.selectedDeck;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      deck.removeCard(card);
+      // Refresh decklist panel
+      transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
     }
 }
