@@ -8,10 +8,10 @@ public class DeckListPanel : MonoBehaviour
     private Decklist deck;
     public GameObject entryPrefab;
     public GameObject cardList;
-    public GameObject deckName;
+    public GameObject deckNameInputObject;
     public GameObject cardCount;
     public GameObject manaCurveObject;
-    private TMP_Text deckNameText;
+    private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
 
@@ -19,7 +19,7 @@ public class DeckListPanel : MonoBehaviour
     void Start()
     {
       deck = PlayerManager.Instance.selectedDeck;
-      deckNameText = deckName.GetComponent<TMP_Text>();
+      deckNameInput = deckNameInputObject.GetComponent<TMP_InputField>();
       cardCountText = cardCount.GetComponent<TMP_Text>();
       manaCurve = manaCurveObject.GetComponent<ManaCurveDisplay>();
 
@@ -35,7 +35,7 @@ public class DeckListPanel : MonoBehaviour
     // Set the initial values for the panel (name / card count / card list / mana curve)
     private void initializePanel()
     {
-      deckNameText.text = deck.name;
+      deckNameInput.text = deck.name;
       cardCountText.text = "Cards: " + deck.getNumCards();
       populateCardList();
       manaCurve.updateManaCurve(deck);
@@ -64,5 +64,17 @@ public class DeckListPanel : MonoBehaviour
         GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
         entryInstance.GetComponent<CardListEntry>().setValues(deck.cards[i].id, deck.cardFrequencies[i]);
       }
+    }
+
+    // Update deck name
+    public void updateDeckName()
+    {
+      if (deckNameInput.text == "")
+      {
+        deckNameInput.text = "No Name";
+      }
+      PlayerManager.Instance.selectedDeck.name = deckNameInput.text;
+
+      updatePanel();
     }
 }

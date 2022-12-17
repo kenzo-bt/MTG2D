@@ -1,0 +1,4723 @@
+{
+    "setCode": "MRD",
+    "setName": "Mirrodin",
+    "cards": [
+        {
+            "id": "ca851196-6344-5b10-82a0-ef1cba6a921a",
+            "name": "Altar's Light",
+            "text": "Remove target artifact or enchantment from the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "ce8578ff-7446-5af1-81fd-162b8e02e01d",
+            "name": "Arrest",
+            "text": "Enchanted creature can't attack or block, and its activated abilities can't be played.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "abd0d2bb-01f6-5a8a-b491-7f52250b85c9",
+            "name": "Auriok Bladewarden",
+            "text": "{T}: Target creature gets +X/+X until end of turn, where X is Auriok Bladewarden's power.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "f2b80e4f-4f3f-5fe8-bf7d-7c014a301b9f",
+            "name": "Auriok Steelshaper",
+            "text": "Equip costs you pay cost {1} less.\nAs long as Auriok Steelshaper is equipped, Soldiers and Knights you control get +1/+1.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "083d2026-6a66-5b86-9738-1557873b5c26",
+            "name": "Auriok Transfixer",
+            "text": "{W}, {T}: Tap target artifact.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a3bb66d9-2327-59cd-adfa-4b14e8da1255",
+            "name": "Awe Strike",
+            "text": "The next time target creature would deal damage this turn, prevent that damage. You gain life equal to the damage prevented this way.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a5b02fbc-0908-5d82-a4db-c97e3b13c0dc",
+            "name": "Blinding Beam",
+            "text": "Choose one Tap two target creatures; or creatures don't untap during target player's next untap step.\nEntwine {1} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cbdd916f-11ef-5ce1-ac75-c149934a3525",
+            "name": "Leonin Abunas",
+            "text": "Artifacts you control can't be the targets of spells or abilities your opponents control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6d5e91b0-da0a-5ef1-b269-6057dc339486",
+            "name": "Leonin Den-Guard",
+            "text": "As long as Leonin Den-Guard is equipped, it gets +1/+1 and attacking doesn't cause it to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "d53968f1-4971-5d35-88d7-1477e9cd90ab",
+            "name": "Leonin Elder",
+            "text": "Whenever an artifact comes into play, you may gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "4e3dec9d-c032-5a83-a0fd-85789a0f45bb",
+            "name": "Leonin Skyhunter",
+            "text": "Flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "5c4e569e-75ab-5c2c-b42d-6b24bf2f595e",
+            "name": "Loxodon Mender",
+            "text": "{W}, {T}: Regenerate target artifact.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1a87ceaa-f28a-5bf6-9d7f-baa64a8c5c52",
+            "name": "Loxodon Peacekeeper",
+            "text": "At the beginning of your upkeep, the player with the lowest life total gains control of Loxodon Peacekeeper. If two or more players are tied for lowest life total, you choose one of them, and that player gains control of Loxodon Peacekeeper.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "67628edb-2fef-5b6b-8e8f-619991a5b671",
+            "name": "Loxodon Punisher",
+            "text": "Loxodon Punisher gets +2/+2 for each Equipment attached to it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "b3744e7e-3f9f-5f55-b3d7-62f81efebb74",
+            "name": "Luminous Angel",
+            "text": "Flying\nAt the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "f3766d63-daf4-5841-9438-c124142c2784",
+            "name": "Raise the Alarm",
+            "text": "Put two 1/1 white Soldier creature tokens into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c99da938-e268-52fb-a300-7fc76ca14ebe",
+            "name": "Razor Barrier",
+            "text": "Target permanent you control gains protection from artifacts or from the color of your choice until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "f50077fa-e8bf-5543-b742-748bf3fd04bd",
+            "name": "Roar of the Kha",
+            "text": "Choose one Creatures you control get +1/+1 until end of turn; or untap all creatures you control.\nEntwine {1}{W} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "d6968813-2b39-5e6c-9e2b-9065c7e16e38",
+            "name": "Rule of Law",
+            "text": "Each player can't play more than one spell each turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "11c2e5a1-cfe9-549f-a32a-b2d60491ce72",
+            "name": "Second Sunrise",
+            "text": "Each player returns to play all artifact, creature, enchantment, and land cards that were put into his or her graveyard from play this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "cb5b7c69-f62a-50ed-886e-da8c01dbd940",
+            "name": "Skyhunter Cub",
+            "text": "As long as Skyhunter Cub is equipped, it gets +1/+1 and has flying.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "f0a15fa2-b077-5f78-940d-2e1e54af3daa",
+            "name": "Skyhunter Patrol",
+            "text": "Flying, first strike",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a5e31eb7-42b9-5e38-804b-c1237262d750",
+            "name": "Slith Ascendant",
+            "text": "Flying\nWhenever Slith Ascendant deals combat damage to a player, put a +1/+1 counter on it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "97e6c970-4b67-568f-a62c-01914b286cc4",
+            "name": "Solar Tide",
+            "text": "Choose one Destroy all creatures with power 2 or less; or destroy all creatures with power 3 or greater.\nEntwine\u2014\nSacrifice two lands. (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "17547075-f07e-5cff-a8f4-2adcedf8fe5d",
+            "name": "Soul Nova",
+            "text": "Remove target attacking creature and all Equipment attached to it from the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "42533543-d748-59f4-93e4-f33481770c1b",
+            "name": "Sphere of Purity",
+            "text": "If an artifact would deal damage to you, prevent 1 of that damage.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "32727caf-24e4-584b-9bef-e80a68149369",
+            "name": "Taj-Nar Swordsmith",
+            "text": "When Taj-Nar Swordsmith comes into play, you may pay {X}. If you do, search your library for an Equipment card with converted mana cost X or less and put that card into play. Then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "83204ed4-53da-5880-bbab-a2b16f54a102",
+            "name": "Tempest of Light",
+            "text": "Destroy all enchantments.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "8592440a-ee14-5312-9353-7d7419e7c036",
+            "name": "Annul",
+            "text": "Counter target artifact or enchantment spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "8bac1c12-e490-53da-950f-56f18575ef67",
+            "name": "Assert Authority",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nCounter target spell. If it's countered this way, remove it from the game instead of putting it into its owner's graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "5cb0855e-38d4-5dbf-af8d-19da6294311e",
+            "name": "Broodstar",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nFlying\nBroodstar's power and toughness are each equal to the number of artifacts you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 10.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "e0f49a68-4681-519d-bdaa-c4f1a9ee510c",
+            "name": "Disarm",
+            "text": "Unattach all Equipment from target creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "d3a3bb98-5f4c-51ea-87e3-f9f56b09448a",
+            "name": "Domineer",
+            "text": "You control enchanted artifact creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "23a68ba3-d4f2-5987-9c9e-befc463249a7",
+            "name": "Dream's Grip",
+            "text": "Choose one Tap target permanent; or untap target permanent.\nEntwine {1} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "35fc5261-176b-5c13-acb4-fdc4601aef6d",
+            "name": "Fabricate",
+            "text": "Search your library for an artifact card, reveal it, and put it into your hand. Then shuffle your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "cb378311-e382-5d29-8a80-6703de57f55b",
+            "name": "Fatespinner",
+            "text": "At the beginning of each opponent's upkeep, that player chooses draw step, main phase, or combat phase. The player skips each instance of the chosen step or phase this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6b932420-9870-5fb0-85a2-61918f8ae8ad",
+            "name": "Inertia Bubble",
+            "text": "Enchanted artifact doesn't untap during its controller's untap step.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c54a6018-7d37-5e99-a255-da0cdef50f7a",
+            "name": "Looming Hoverguard",
+            "text": "Flying\nWhen Looming Hoverguard comes into play, put target artifact on top of its owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "11c64f80-0df1-59c3-8869-7a90da4d0c3f",
+            "name": "Lumengrid Augur",
+            "text": "{1}, {T}: Target player draws a card, then discards a card from his or her hand. If that player discards an artifact card this way, untap Lumengrid Augur.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "18e95a19-f035-5f84-8f33-b742bb831d75",
+            "name": "Lumengrid Sentinel",
+            "text": "Flying\nWhenever an artifact comes into play under your control, you may tap target permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "26bde397-a503-5bab-82f2-b781a024f05e",
+            "name": "Lumengrid Warden",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "720bfb82-f437-5307-b18e-a920ac4f3ffe",
+            "name": "March of the Machines",
+            "text": "Each noncreature artifact is an artifact creature with power and toughness each equal to its converted mana cost. (Equipment that's a creature can't equip a creature.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6af72e5f-d7b7-5c42-a56e-4c136b56bc69",
+            "name": "Neurok Familiar",
+            "text": "Flying\nWhen Neurok Familiar comes into play, reveal the top card of your library. If it's an artifact card, put it into your hand. Otherwise, put it into your graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "3df70f69-5f34-5ddc-a0a0-61b57c819b5e",
+            "name": "Neurok Spy",
+            "text": "Neurok Spy is unblockable as long as defending player controls an artifact.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "d5dfbacd-ddc0-5aa9-b331-c188f0d46a9d",
+            "name": "Override",
+            "text": "Counter target spell unless its controller pays {1} for each artifact you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "d665dad2-b054-5cf1-90d5-b0ddfaf56e51",
+            "name": "Psychic Membrane",
+            "text": "(Walls can't attack.)\nWhenever Psychic Membrane blocks, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "8a2698ef-19c3-5997-92c6-ba8506f36876",
+            "name": "Quicksilver Elemental",
+            "text": "{U}: Quicksilver Elemental gains all activated abilities of target creature until end of turn. (If any of the abilities use that creature's name, use this creature's name instead.)\nYou may spend blue mana as though it were mana of any color to pay the activation costs of Quicksilver Elemental's abilities.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "15131557-224d-5fd2-905f-159d26981198",
+            "name": "Regress",
+            "text": "Return target permanent to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "881f48d0-870a-5c40-af38-aac6b3e5faa8",
+            "name": "Shared Fate",
+            "text": "If a player would draw a card, that player removes the top card of an opponent's library from the game face down instead.\nEach player may look at and play cards he or she removed from the game with Shared Fate as though they were in his or her hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "5a2712fb-264c-588f-aae3-93fea68252de",
+            "name": "Slith Strider",
+            "text": "Whenever Slith Strider becomes blocked, draw a card.\nWhenever Slith Strider deals combat damage to a player, put a +1/+1 counter on it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "cce0a90a-9cea-5ba1-8529-dead44ee59dd",
+            "name": "Somber Hoverguard",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nFlying",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7c225686-3cb3-5798-b0d5-b282d123ea30",
+            "name": "Temporal Cascade",
+            "text": "Choose one Each player shuffles his or her hand and graveyard into his or her library; or each player draws seven cards.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "e4e0fb33-fd90-5b1d-9072-e06d98e2a9de",
+            "name": "Thirst for Knowledge",
+            "text": "Draw three cards. Then discard two cards from your hand unless you discard an artifact card from your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "0a2506d5-0ef8-5eb8-be55-6c98e8ad0364",
+            "name": "Thoughtcast",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nDraw two cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "0f911e87-c597-5d22-8f74-612d3fac1824",
+            "name": "Vedalken Archmage",
+            "text": "Whenever you play an artifact spell, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "779ffcd6-d98b-5637-b015-02ffa9104831",
+            "name": "Wanderguard Sentry",
+            "text": "When Wanderguard Sentry comes into play, look at target opponent's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "bf4577fc-a174-5f47-af4c-e9d895a04d39",
+            "name": "Barter in Blood",
+            "text": "Each player sacrifices two creatures.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "dca63274-7322-5350-8dd9-f464373f02b4",
+            "name": "Betrayal of Flesh",
+            "text": "Choose one Destroy target creature; or return target creature card from your graveyard to play.\nEntwine\u2014\nSacrifice three lands. (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "ff68ec8d-13b7-5387-882b-ff3f8822e21f",
+            "name": "Chimney Imp",
+            "text": "Flying\nWhen Chimney Imp is put into a graveyard from play, target opponent puts a card from his or her hand on top of his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7102f022-452a-5e4e-865d-60ab7432c873",
+            "name": "Consume Spirit",
+            "text": "Spend only black mana on X.\nConsume Spirit deals X damage to target creature or player. You gain X life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "13a5c287-f991-50b1-9a3f-fd3e086998af",
+            "name": "Contaminated Bond",
+            "text": "Whenever enchanted creature attacks or blocks, its controller loses 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "92f2e2b2-894f-5e64-841b-c982455b2448",
+            "name": "Disciple of the Vault",
+            "text": "Whenever an artifact is put into a graveyard from play, you may have target opponent lose 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "ee45440a-2ba9-5e50-9553-73b7e59bc9ca",
+            "name": "Dross Harvester",
+            "text": "Protection from white\nAt the end of your turn, you lose 4 life.\nWhenever a creature is put into a graveyard from play, you gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "967d38f8-e73f-56fc-bd1d-48d5b2dd4180",
+            "name": "Dross Prowler",
+            "text": "Fear",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "5c539309-690a-5181-8d9e-0327cd7abc4b",
+            "name": "Flayed Nim",
+            "text": "Whenever Flayed Nim deals combat damage to a creature, that creature's controller loses that much life.\n{2}{B}: Regenerate Flayed Nim.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "736e764a-074c-540e-8630-f1f3ea2288e9",
+            "name": "Grim Reminder",
+            "text": "Search your library for a nonland card and reveal it. Each opponent who played a card this turn with the same name as that card loses 6 life. Then shuffle the revealed card back into your library.\n{B}{B}: Return Grim Reminder from your graveyard to your hand. Play this ability only during your upkeep.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "eecc43a9-88e2-587e-a37f-ec8b7268eab4",
+            "name": "Irradiate",
+            "text": "Target creature gets -1/-1 until end of turn for each artifact you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cfe562f2-09b7-5ff9-b209-3099c338371e",
+            "name": "Moriok Scavenger",
+            "text": "When Moriok Scavenger comes into play, you may return target artifact creature card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "11c9e1ee-6f83-537d-8d36-5d01980b2b09",
+            "name": "Necrogen Mists",
+            "text": "At the beginning of each player's upkeep, that player discards a card from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "93e14b44-10fb-5d30-94f7-1294f65bf04f",
+            "name": "Nim Devourer",
+            "text": "Nim Devourer gets +1/+0 for each artifact you control.\n{B}{B}: Return Nim Devourer from your graveyard to play, then sacrifice a creature. Play this ability only during your upkeep.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "f8cd3e57-5c63-5571-846b-c5e5eec97381",
+            "name": "Nim Lasher",
+            "text": "Nim Lasher gets +1/+0 for each artifact you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "fb89a5f5-ef81-547c-842a-53477a54469f",
+            "name": "Nim Shambler",
+            "text": "Nim Shambler gets +1/+0 for each artifact you control.\nSacrifice a creature: Regenerate Nim Shambler.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "3ea6d665-0a7b-516f-9e32-0fc76a86e75b",
+            "name": "Nim Shrieker",
+            "text": "Flying\nNim Shrieker gets +1/+0 for each artifact you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7ccfaf6d-50b1-51b7-886c-af38569f8829",
+            "name": "Promise of Power",
+            "text": "Choose one You draw five cards and you lose 5 life; or put a black Demon creature token with flying into play with power and toughness each equal to the number of cards in your hand as the token comes into play.\nEntwine {4} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "5c59a293-4022-5b9e-90c7-04de82cae2c4",
+            "name": "Reiver Demon",
+            "text": "Flying\nWhen Reiver Demon comes into play, if you played it from your hand, destroy all nonartifact, nonblack creatures. They can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "5e6b214f-ab14-548e-a220-da0309681130",
+            "name": "Relic Bane",
+            "text": "Enchanted artifact has \"At the beginning of your upkeep, you lose 2 life.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "81ec8466-d1d7-5a95-a519-6c5e567a062e",
+            "name": "Slith Bloodletter",
+            "text": "Whenever Slith Bloodletter deals combat damage to a player, put a +1/+1 counter on it.\n{1}{B}: Regenerate Slith Bloodletter.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "f17b171c-4c8c-5a95-9639-7c904d08adab",
+            "name": "Spoils of the Vault",
+            "text": "Name a card. Reveal cards from the top of your library until you reveal the named card, then put that card into your hand. Remove all other cards revealed this way from the game, and you lose 1 life for each of the removed cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "bee16d9c-a26f-5358-9829-21b03dd49eed",
+            "name": "Terror",
+            "text": "Destroy target nonartifact, nonblack creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7dc00114-d2c5-5373-9ad0-c5c34ffea4ed",
+            "name": "Vermiculos",
+            "text": "Whenever an artifact comes into play, Vermiculos gets +4/+4 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "4fd5b63b-fbfb-5592-96db-944835562bfd",
+            "name": "Wail of the Nim",
+            "text": "Choose one Regenerate each creature you control; or Wail of the Nim deals 1 damage to each creature and each player.\nEntwine {B} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1cdc7f00-062f-5b5b-a77e-1c5067aac2af",
+            "name": "Wall of Blood",
+            "text": "(Walls can't attack.)\nPay 1 life: Wall of Blood gets +1/+1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "fea2a4a3-7aff-53b2-96c2-e362b41d61ba",
+            "name": "Woebearer",
+            "text": "Fear\nWhenever Woebearer deals combat damage to a player, you may return target creature card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "452464b5-0fe5-5164-a547-bc65ab9818e3",
+            "name": "Wrench Mind",
+            "text": "Target player discards two cards from his or her hand unless he or she discards an artifact card from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "dbf99b19-1209-57bd-9b16-3c9805b447a5",
+            "name": "Arc-Slogger",
+            "text": "{R}, Remove the top ten cards of your library from the game: Arc-Slogger deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "3dfe1802-c210-53ee-a342-a96f6daf9a50",
+            "name": "Atog",
+            "text": "Sacrifice an artifact: Atog gets +2/+2 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "c31098a0-2d77-50cd-89f1-2e242b48f2ea",
+            "name": "Confusion in the Ranks",
+            "text": "Whenever an artifact, creature, or enchantment comes into play, its controller chooses target permanent another player controls that shares a type with it. Exchange control of those permanents.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "e944b4e6-835f-5d23-b988-42b94b089047",
+            "name": "Detonate",
+            "text": "Destroy target artifact with converted mana cost X. It can't be regenerated. Detonate deals X damage to that artifact's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "70ddb182-17b1-53ba-84ac-5a8229d22967",
+            "name": "Electrostatic Bolt",
+            "text": "Electrostatic Bolt deals 2 damage to target creature. If it's an artifact creature, Electrostatic Bolt deals 4 damage to it instead.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "e251a438-1100-519f-857a-d41fde44bdbf",
+            "name": "Fiery Gambit",
+            "text": "Flip a coin until you lose a flip or choose to stop flipping. If you lose a flip, Fiery Gambit has no effect. If you win one or more flips, Fiery Gambit deals 3 damage to target creature. If you win two or more flips, Fiery Gambit deals 6 damage to each opponent. If you win three or more flips, draw nine cards and untap all lands you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "49bf94a1-f7aa-5893-9c9a-cbfc28569549",
+            "name": "Fists of the Anvil",
+            "text": "Target creature gets +4/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "716dd69a-dffa-50f5-a8ab-17cc9cc45154",
+            "name": "Forge Armor",
+            "text": "As an additional cost to play Forge Armor, sacrifice an artifact.\nPut X +1/+1 counters on target creature, where X is the sacrificed artifact's converted mana cost.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "db541004-d404-5ce2-8de1-3063ffe5d9b4",
+            "name": "Fractured Loyalty",
+            "text": "Whenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of enchanted creature. (This effect doesn't end at end of turn.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "0421be4a-ebf3-5a3c-828b-e9fdea4cc053",
+            "name": "Goblin Striker",
+            "text": "First strike, haste",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1686a5d1-ab63-53dc-a76a-1881e04df7db",
+            "name": "Grab the Reins",
+            "text": "Choose one Until end of turn, you gain control of target creature and it gains haste; or sacrifice a creature, then Grab the Reins deals damage equal to that creature's power to target creature or player.\nEntwine {2}{R} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "43f364aa-7c2c-5600-8b5e-a60243e9b6f1",
+            "name": "Incite War",
+            "text": "Choose one Creatures target player controls attack this turn if able; or creatures you control gain first strike until end of turn.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "e2fec47e-46a4-5357-93c9-a3b7e268f343",
+            "name": "Krark-Clan Grunt",
+            "text": "Sacrifice an artifact: Krark-Clan Grunt gets +1/+0 and gains first strike until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cd9aa095-f999-5a2c-91e5-4acd94d45416",
+            "name": "Krark-Clan Shaman",
+            "text": "Sacrifice an artifact: Krark-Clan Shaman deals 1 damage to each creature without flying.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "8fbcf505-3189-5011-8918-b94d259762ef",
+            "name": "Mass Hysteria",
+            "text": "All creatures have haste.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "20f60883-8f56-56e9-b2e2-2f60ee5fd792",
+            "name": "Megatog",
+            "text": "Sacrifice an artifact: Megatog gets +3/+3 and gains trample until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "0c97e000-1408-5558-ae4e-fbea0d4600c2",
+            "name": "Molten Rain",
+            "text": "Destroy target land. If that land is nonbasic, Molten Rain deals 2 damage to the land's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "254f04c7-eccf-5336-b648-5aa7420319a5",
+            "name": "Ogre Leadfoot",
+            "text": "Whenever Ogre Leadfoot becomes blocked by an artifact creature, destroy that creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "da003b46-f9b7-5c6f-a5ec-5b90b1303467",
+            "name": "Rustmouth Ogre",
+            "text": "Whenever Rustmouth Ogre deals combat damage to a player, you may destroy target artifact that player controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "6ad62466-e9c5-522f-9ced-23bcd15861d8",
+            "name": "Seething Song",
+            "text": "Add {R}{R}{R}{R}{R} to your mana pool.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "eb0bee60-dfc8-570f-a665-551ef9395e43",
+            "name": "Shatter",
+            "text": "Destroy target artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "b77211e4-683c-5806-a9df-0faf6827e069",
+            "name": "Shrapnel Blast",
+            "text": "As an additional cost to play Shrapnel Blast, sacrifice an artifact.\nShrapnel Blast deals 5 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "6f59dba2-c864-5547-986e-beb8bbfbf3d0",
+            "name": "Slith Firewalker",
+            "text": "Haste\nWhenever Slith Firewalker deals combat damage to a player, put a +1/+1 counter on it.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "af3f8a3b-e17f-5e4f-9795-07ff0991c87a",
+            "name": "Spikeshot Goblin",
+            "text": "{R}, {T}: Spikeshot Goblin deals damage equal to its power to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "89782ed9-606d-5f35-9e76-63d1c69a81f5",
+            "name": "Trash for Treasure",
+            "text": "As an additional cost to play Trash for Treasure, sacrifice an artifact.\nReturn target artifact card from your graveyard to play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "2e9b8691-372b-51dc-9b14-1c99b1da232d",
+            "name": "Vulshok Battlemaster",
+            "text": "Haste\nWhen Vulshok Battlemaster comes into play, attach all Equipment in play to it. (Control of the Equipment doesn't change.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "d9b7221d-40f0-58a6-8f20-0655330f7496",
+            "name": "Vulshok Berserker",
+            "text": "Haste",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "02f6328b-9c67-5815-b58a-d83a97f155f9",
+            "name": "War Elemental",
+            "text": "When War Elemental comes into play, sacrifice it unless an opponent was dealt damage this turn.\nWhenever damage is dealt to an opponent, put that many +1/+1 counters on War Elemental.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "b903c792-99ab-5320-913c-a937a82efb4b",
+            "name": "Battlegrowth",
+            "text": "Put a +1/+1 counter on target creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c4ac67ed-8ab3-5f6d-b5c0-ac7cb4b51e30",
+            "name": "Bloodscent",
+            "text": "All creatures able to block target creature this turn do so.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "a9cb4f21-7f54-50ab-9009-f77623821463",
+            "name": "Brown Ouphe",
+            "text": "{1}{G}, {T}: Counter target activated ability from an artifact source. (Mana abilities can't be countered.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "54fc5081-f17b-5d7f-a486-bb47c1ad1830",
+            "name": "Copperhoof Vorrac",
+            "text": "Copperhoof Vorrac gets +1/+1 for each untapped permanent your opponents control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "45d89b40-00c5-5efe-a744-b8bbd6c08b40",
+            "name": "Creeping Mold",
+            "text": "Destroy target artifact, enchantment, or land.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "d73caaf3-659d-5ff0-87b2-d34ef320c377",
+            "name": "Deconstruct",
+            "text": "Destroy target artifact. Then add {G}{G}{G} to your mana pool.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "56f5b809-f07c-5e81-bc89-41eca38123ab",
+            "name": "Fangren Hunter",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a8051892-19a3-5101-9eeb-0fa83140b75d",
+            "name": "Glissa Sunseeker",
+            "text": "First strike\n{T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "07eb3db9-2a06-5de0-afce-59f2deae70cb",
+            "name": "Groffskithur",
+            "text": "Whenever Groffskithur becomes blocked, you may return target card named Groffskithur from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "21588cba-df2c-5bf3-b4fa-41c67a929733",
+            "name": "Hum of the Radix",
+            "text": "Each artifact spell costs {1} more to play for each artifact its controller controls.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6fb939cc-6091-5399-9106-fa863d212cb9",
+            "name": "Journey of Discovery",
+            "text": "Choose one Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library; or you may play up to two additional lands this turn.\nEntwine {2}{G} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "61feb004-c24d-59d5-81b5-44c9cc87c198",
+            "name": "Living Hive",
+            "text": "Trample\nWhenever Living Hive deals combat damage to a player, put that many 1/1 green Insect creature tokens into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "7f6adf2e-dae6-55ba-bb4e-f0c8b36bf5f0",
+            "name": "Molder Slug",
+            "text": "At the beginning of each player's upkeep, that player sacrifices an artifact.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "8d949caf-fe03-5016-9c45-54d4531b93b0",
+            "name": "One Dozen Eyes",
+            "text": "Choose one Put a 5/5 green Beast creature token into play; or put five 1/1 green Insect creature tokens into play.\nEntwine {G}{G}{G} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "e7c1ebf0-31ee-5dde-bb7b-a093f63ac3bc",
+            "name": "Plated Slagwurm",
+            "text": "Plated Slagwurm can't be the target of spells or abilities your opponents control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "55bad9f7-2c22-545e-8299-bd65f5bbe094",
+            "name": "Predator's Strike",
+            "text": "Target creature gets +3/+3 and gains trample until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7f8554e6-b78f-5303-b6a4-72808ec67523",
+            "name": "Slith Predator",
+            "text": "Trample\nWhenever Slith Predator deals combat damage to a player, put a +1/+1 counter on it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "33ea24df-f7c3-5b94-bd80-7f262be850fb",
+            "name": "Sylvan Scrying",
+            "text": "Search your library for a land card, reveal it, and put it into your hand. Then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "f9a12bf9-06eb-5863-9790-1eb6d19858e1",
+            "name": "Tel-Jilad Archers",
+            "text": "Protection from artifacts\nTel-Jilad Archers may block as though it had flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a8bf2066-2f9c-5497-ab06-7394d14d5af4",
+            "name": "Tel-Jilad Chosen",
+            "text": "Protection from artifacts",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "03b66c98-4f51-5229-95e7-84501d20112c",
+            "name": "Tel-Jilad Exile",
+            "text": "{1}{G}: Regenerate Tel-Jilad Exile.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "52a30ada-50cc-5e8e-9632-a3bdf88c37d0",
+            "name": "Tooth and Nail",
+            "text": "Choose one Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand into play.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "ae6ac0d4-54c0-51dc-a009-9664c4334d61",
+            "name": "Troll Ascetic",
+            "text": "Troll Ascetic can't be the target of spells or abilities your opponents control.\n{1}{G}: Regenerate Troll Ascetic.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "94192555-f332-5d0f-8696-ca3a1fece3da",
+            "name": "Trolls of Tel-Jilad",
+            "text": "{1}{G}: Regenerate target green creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "4140ad49-0d3d-5aa4-b125-83d808a2385e",
+            "name": "Turn to Dust",
+            "text": "Destroy target Equipment. Then add {G} to your mana pool.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "76ab6fb0-0446-59a0-b146-fea48dc167ea",
+            "name": "Viridian Joiner",
+            "text": "{T}: Add an amount of {G} to your mana pool equal to Viridian Joiner's power.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "ef201401-a2b2-5e84-af64-e9b293d83ea6",
+            "name": "Viridian Shaman",
+            "text": "When Viridian Shaman comes into play, destroy target artifact.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "a7880a99-cb3a-5079-80b2-71cb56c93f5a",
+            "name": "Wurmskin Forger",
+            "text": "When Wurmskin Forger comes into play, distribute three +1/+1 counters among any number of target creatures.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "44829535-d2be-519b-9484-3e1008ee49f7",
+            "name": "Aether Spellbomb",
+            "text": "{U}, Sacrifice \u00c6ther Spellbomb: Return target creature to its owner's hand.\n{1}, Sacrifice \u00c6ther Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "0662f0e3-23b5-5eee-a7e0-d78fc0b6ec79",
+            "name": "Alpha Myr",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "b0c62122-52b3-5038-aff9-6b45f3e019bd",
+            "name": "Altar of Shadows",
+            "text": "At the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on Altar of Shadows.\n{7}, {T}: Destroy target creature. Then put a charge counter on Altar of Shadows.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "0addcced-63f4-570e-844a-2589e65ea266",
+            "name": "Banshee's Blade",
+            "text": "Equipped creature gets +1/+1 for each charge counter on Banshee's Blade.\nWhenever equipped creature deals combat damage, put a charge counter on this card.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "5127618b-f2cf-5a05-b69a-b2c843b0d415",
+            "name": "Blinkmoth Urn",
+            "text": "At the beginning of each player's precombat main phase, if Blinkmoth Urn is untapped, that player adds {1} to his or her mana pool for each artifact he or she controls.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "32c3fe49-1e7c-50a9-ba75-826d46e41b3a",
+            "name": "Bonesplitter",
+            "text": "Equipped creature gets +2/+0.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a0d692d6-7a9d-5b3d-86d9-600b23567da3",
+            "name": "Bosh, Iron Golem",
+            "text": "Trample\n{3}{R}, Sacrifice an artifact: Bosh, Iron Golem deals damage equal to the sacrificed artifact's converted mana cost to target creature or player.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 8.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "67a337b4-9d24-5f9c-893c-e7dfa8658fdf",
+            "name": "Bottle Gnomes",
+            "text": "Sacrifice Bottle Gnomes: You gain 3 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "884a487d-4469-58ef-b392-93f890463d92",
+            "name": "Cathodion",
+            "text": "When Cathodion is put into a graveyard from play, add {3} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "e750531f-d22b-53c6-b6a7-467682079c3f",
+            "name": "Chalice of the Void",
+            "text": "Chalice of the Void comes into play with X charge counters on it.\nWhenever a player plays a spell with converted mana cost equal to the number of charge counters on Chalice of the Void, counter that spell.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "7524befc-0a52-595e-b48a-1697d32e8aed",
+            "name": "Chromatic Sphere",
+            "text": "{1}, {T}, Sacrifice Chromatic Sphere: Add one mana of any color to your mana pool. Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "3b84c096-d20b-54a2-b09e-959bb5ff5e94",
+            "name": "Chrome Mox",
+            "text": "Imprint When Chrome Mox comes into play, you may remove a nonartifact, nonland card in your hand from the game. (The removed card is imprinted on this artifact.)\n{T}: Add one mana of any of the imprinted card's colors to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "08a992e2-ccd6-54b1-a33f-f05f3ee4259e",
+            "name": "Clockwork Beetle",
+            "text": "Clockwork Beetle comes into play with two +1/+1 counters on it.\nWhenever Clockwork Beetle attacks or blocks, remove a +1/+1 counter from it at end of combat.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "610cde51-3a05-5dbb-a674-1fe8bbffff5b",
+            "name": "Clockwork Condor",
+            "text": "Flying\nClockwork Condor comes into play with three +1/+1 counters on it.\nWhenever Clockwork Condor attacks or blocks, remove a +1/+1 counter from it at end of combat.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7079cdfc-9e0c-5819-8d95-9c0cb92e9c75",
+            "name": "Clockwork Dragon",
+            "text": "Flying\nClockwork Dragon comes into play with six +1/+1 counters on it.\nWhenever Clockwork Dragon attacks or blocks, remove a +1/+1 counter from it at end of combat.\n{3}: Put a +1/+1 counter on Clockwork Dragon.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "7c70911f-51db-508f-9e0d-2a10232ea3d4",
+            "name": "Clockwork Vorrac",
+            "text": "Trample\nClockwork Vorrac comes into play with four +1/+1 counters on it.\nWhenever Clockwork Vorrac attacks or blocks, remove a +1/+1 counter from it at end of combat.\n{T}: Put a +1/+1 counter on Clockwork Vorrac.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "0e2d748e-016a-5067-aee1-3caab8e69c6a",
+            "name": "Cobalt Golem",
+            "text": "{1}{U}: Cobalt Golem gains flying until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "18368775-5612-598b-bbb8-a67aa623b80b",
+            "name": "Copper Myr",
+            "text": "{T}: Add {G} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cb5d6b42-f7b8-5d6e-b771-a5c24c340079",
+            "name": "Crystal Shard",
+            "text": "{3}, {T} or {U}, {T}: Return target creature to its owner's hand unless its controller pays {1}.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "18625edd-db2b-5feb-adb2-1f74586d8671",
+            "name": "Culling Scales",
+            "text": "At the beginning of your upkeep, destroy target nonland permanent with the lowest converted mana cost among nonland permanents in play. (If two or more permanents are tied for lowest cost, target any one of them.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "c0a937a4-2c1f-5412-bd06-e0c80623f473",
+            "name": "Damping Matrix",
+            "text": "Activated abilities of artifacts and creatures can't be played unless they're mana abilities.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "71e3eee1-0ecd-5485-894c-cdac080b400a",
+            "name": "Dead-Iron Sledge",
+            "text": "Whenever equipped creature blocks or becomes blocked by a creature, destroy that creature and equipped creature.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "80f47aad-b99f-5fc1-a483-ba9fe40f8f71",
+            "name": "Dragon Blood",
+            "text": "{3}, {T}: Put a +1/+1 counter on target creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "23241051-54fc-54aa-b4ff-89d48c1c7eaf",
+            "name": "Dross Scorpion",
+            "text": "Whenever Dross Scorpion or another artifact creature is put into a graveyard from play, you may untap target artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "5f46e5f4-30f5-5158-9bfa-010a7cec0e43",
+            "name": "Duplicant",
+            "text": "Imprint When Duplicant comes into play, you may remove target nontoken creature from the game. (The removed card is imprinted on this artifact.)\nAs long as a creature card is imprinted on Duplicant, Duplicant has that card's power, toughness, and creature types. It's still a Shapeshifter.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6fde934b-be53-5358-9f82-9293f9ec565f",
+            "name": "Duskworker",
+            "text": "Whenever Duskworker becomes blocked, regenerate it.\n{3}: Duskworker gets +1/+0 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "145426c9-3e4c-5edc-b015-690b72deb964",
+            "name": "Elf Replica",
+            "text": "{1}{G}, Sacrifice Elf Replica: Destroy target enchantment.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "47ad7c72-e712-5d7f-b366-62506592f74e",
+            "name": "Empyrial Plate",
+            "text": "Equipped creature gets +1/+1 for each card in your hand.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "1308e781-9fc1-572d-a99a-84e1b694eed9",
+            "name": "Extraplanar Lens",
+            "text": "Imprint When Extraplanar Lens comes into play, you may remove target land you control from the game. (The removed card is imprinted on this artifact.)\nWhenever a land with the same name as the imprinted card is tapped for mana, its controller adds one mana to his or her mana pool of any type that land produced.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "17426b58-1608-57fc-8350-a93ac13268b5",
+            "name": "Farsight Mask",
+            "text": "Whenever a source an opponent controls deals damage to you, if Farsight Mask is untapped, you may draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "c8199596-de89-5ba9-a712-52ab3f057c84",
+            "name": "Fireshrieker",
+            "text": "Equipped creature has double strike. (It deals both first-strike and regular combat damage.)\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "e90b88c9-b69b-5627-892f-e79d01735f7a",
+            "name": "Frogmite",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c9f5c36c-ec4e-5ebe-8fe2-ef777aee6981",
+            "name": "Galvanic Key",
+            "text": "You may play Galvanic Key any time you could play an instant.\n{3}, {T}: Untap target artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c5bb36a9-9b93-5c11-8f0b-fa7ecffc82d5",
+            "name": "Gate to the Aether",
+            "text": "At the beginning of each player's upkeep, that player reveals the top card of his or her library. If it's an artifact, creature, enchantment, or land card, the player may put it into play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "d35ed259-c7ee-5ee4-872c-76875c85afed",
+            "name": "Gilded Lotus",
+            "text": "{T}: Add three mana of any one color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "4aa6dae9-0664-5051-9000-edb6cd5fde0c",
+            "name": "Goblin Charbelcher",
+            "text": "{3}, {T}: Reveal cards from the top of your library until you reveal a land card. Goblin Charbelcher deals damage equal to the number of nonland cards revealed this way to target creature or player. If the revealed land card was a Mountain, Goblin Charbelcher deals double that damage instead. Put the revealed cards on the bottom of your library in any order.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "1e1e1eec-ba16-5b8b-8b80-bd26e5e3b2aa",
+            "name": "Goblin Dirigible",
+            "text": "Flying\nGoblin Dirigible doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap Goblin Dirigible.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "e9b6fbce-67d0-5d52-998a-504f3a34dcb7",
+            "name": "Goblin Replica",
+            "text": "{3}{R}, Sacrifice Goblin Replica: Destroy target artifact.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "b346418d-e819-5c12-9131-6582a489e240",
+            "name": "Goblin War Wagon",
+            "text": "Goblin War Wagon doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {2}. If you do, untap Goblin War Wagon.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "f8234e3b-ed3b-50ee-84d2-17aaff3500a3",
+            "name": "Gold Myr",
+            "text": "{T}: Add {W} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c5d3a332-7a2b-5438-892a-1f5f0b1e09bb",
+            "name": "Golem-Skin Gauntlets",
+            "text": "Equipped creature gets +1/+0 for each Equipment attached to it.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "aca7f6b4-f573-59d9-9e14-2ff257f89c84",
+            "name": "Granite Shard",
+            "text": "{3}, {T} or {R}, {T}: Granite Shard deals 1 damage to target creature or player.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "f2d40670-fa05-5050-bbe2-c5767c84b349",
+            "name": "Grid Monitor",
+            "text": "You can't play creature spells.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "51ebff86-42fa-518b-a178-db2f7af9296d",
+            "name": "Heartwood Shard",
+            "text": "{3}, {T} or {G}, {T}: Target creature gains trample until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "3116f693-b007-5e71-a2d9-9db85686a515",
+            "name": "Hematite Golem",
+            "text": "{1}{R}: Hematite Golem gets +2/+0 until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "c245d9c0-8838-53aa-bd52-ae57b31017c2",
+            "name": "Icy Manipulator",
+            "text": "{1}, {T}: Tap target artifact, creature, or land.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "acd896a7-edf9-5575-b5c2-f2fd5eeae669",
+            "name": "Iron Myr",
+            "text": "{T}: Add {R} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a3585853-9506-5b1c-b035-1e26e5aa0c72",
+            "name": "Isochron Scepter",
+            "text": "Imprint When Isochron Scepter comes into play, you may remove an instant card with converted mana cost 2 or less in your hand from the game. (The removed card is imprinted on this artifact.)\n{2}, {T}: You may copy the imprinted instant card and play the copy without paying its mana cost.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "0facf220-1c21-5be3-8acf-76d10f74d123",
+            "name": "Jinxed Choker",
+            "text": "At the end of your turn, target opponent gains control of Jinxed Choker and puts a charge counter on it.\nAt the beginning of your upkeep, Jinxed Choker deals damage to you equal to the number of charge counters on it.\n{3}: Put a charge counter on Jinxed Choker or remove one from it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "47bf8c6d-3d74-578a-a873-03e76ea2dcc8",
+            "name": "Krark's Thumb",
+            "text": "If you would flip a coin, instead flip two coins and ignore one.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "ebce3430-1e96-576c-bcdd-5a017b653f1c",
+            "name": "Leaden Myr",
+            "text": "{T}: Add {B} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "270b6d4b-7a2b-536d-849d-d4e30a5783a8",
+            "name": "Leonin Bladetrap",
+            "text": "You may play Leonin Bladetrap any time you could play an instant.\n{2}, Sacrifice Leonin Bladetrap: Leonin Bladetrap deals 2 damage to each attacking creature without flying.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "d326b076-522d-572e-85b2-0dee953d9510",
+            "name": "Leonin Scimitar",
+            "text": "Equipped creature gets +1/+1.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cb0df8c9-b497-5526-8e9e-a805d0bc53c2",
+            "name": "Leonin Sun Standard",
+            "text": "{1}{W}: Creatures you control get +1/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "8988dfbc-8e24-5758-8f5b-79af5a0815a6",
+            "name": "Leveler",
+            "text": "When Leveler comes into play, remove your library from the game.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "80d4204a-17d2-5f67-92f1-f0e94d501fd2",
+            "name": "Liar's Pendulum",
+            "text": "{2}, {T}: Name a card. Target opponent guesses whether a card with that name is in your hand. You may reveal your hand. If you do and your opponent guessed wrong, draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "53b1883f-4c6f-5342-9bf3-8e36f3ca57ba",
+            "name": "Lifespark Spellbomb",
+            "text": "{G}, Sacrifice Lifespark Spellbomb: Until end of turn, target land becomes a 3/3 creature that's still a land.\n{1}, Sacrifice Lifespark Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1250647d-4890-5043-a6a6-f4786006ea6f",
+            "name": "Lightning Coils",
+            "text": "Whenever a nontoken creature you control is put into a graveyard from play, put a charge counter on Lightning Coils.\nAt the beginning of your upkeep, if Lightning Coils has five or more charge counters on it, remove all of them from it and put that many 3/1 red Elemental creature tokens with haste into play. Remove them from the game at end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "25429a6d-fd7a-5235-a230-f4748b04589d",
+            "name": "Lightning Greaves",
+            "text": "Equipped creature has haste and can't be the target of spells or abilities.\nEquip {0} ({0}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "817c05bf-b9af-5093-9fa0-a64e7e526ec1",
+            "name": "Lodestone Myr",
+            "text": "Trample\nTap an untapped artifact you control: Lodestone Myr gets +1/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "2d4a07f8-ad17-5b90-8e09-3d8519fca861",
+            "name": "Loxodon Warhammer",
+            "text": "Equipped creature gets +3/+0, has trample, and has \"Whenever this creature deals damage, you gain that much life.\"\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "778a262f-8759-5dfc-89ff-a514ecec8acc",
+            "name": "Malachite Golem",
+            "text": "{1}{G}: Malachite Golem gains trample until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1c42d2bd-058a-5d29-94f8-3731c10c9b92",
+            "name": "Mask of Memory",
+            "text": "Whenever equipped creature deals combat damage to a player, you may draw two cards. If you do, discard a card from your hand.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "c879425a-6b46-555b-abac-5f56b7790280",
+            "name": "Mesmeric Orb",
+            "text": "Whenever a permanent becomes untapped, that permanent's controller puts the top card of his or her library into his or her graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "8f6813a7-cfbd-59b1-beac-373b18a025d8",
+            "name": "Mind's Eye",
+            "text": "Whenever an opponent draws a card, you may pay {1}. If you do, draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "6b60ae25-d5a3-57aa-8102-ba5262ec796c",
+            "name": "Mindslaver",
+            "text": "{4}, {T}, Sacrifice Mindslaver: You control target player's next turn. (You see all cards that player could see and make all decisions for the player. He or she doesn't lose life because of mana burn.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "97708c05-2689-5840-8713-8888e878c0a3",
+            "name": "Mindstorm Crown",
+            "text": "At the beginning of your upkeep, draw a card if you had no cards in hand at the beginning of this turn. If you had a card in hand, Mindstorm Crown deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "69d416fb-f290-58c9-a9a9-32275d36d265",
+            "name": "Mirror Golem",
+            "text": "Imprint When Mirror Golem comes into play, you may remove target card in a graveyard from the game. (The removed card is imprinted on this artifact.)\nMirror Golem has protection from each of the imprinted card's card types. (The card types are artifact, creature, enchantment, instant, land, and sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "d60a0ae3-b61b-5b5b-aec5-a9e16cb3c0d3",
+            "name": "Mourner's Shield",
+            "text": "Imprint When Mourner's Shield comes into play, you may remove target card in a graveyard from the game. (The removed card is imprinted on this artifact.)\n{2}, {T}: Prevent all damage that would be dealt this turn by a source of your choice that shares a color with the imprinted card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "bed0e680-9691-5266-91cf-8756bfbfec2b",
+            "name": "Myr Adapter",
+            "text": "Myr Adapter gets +1/+1 for each Equipment attached to it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "92e5b9a2-fb68-5eae-aba6-338bcb17b24c",
+            "name": "Myr Enforcer",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "18dc0e7f-1f1f-5530-ab3e-5ffc7b82d0bd",
+            "name": "Myr Incubator",
+            "text": "{6}, {T}, Sacrifice Myr Incubator: Search your library for any number of artifact cards, remove them from the game, then put that many 1/1 Myr artifact creature tokens into play. Then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "fa3e26b7-096d-5845-ac22-a90be7a41d1e",
+            "name": "Myr Mindservant",
+            "text": "{2}, {T}: Shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "0e0be462-2b51-5ce2-ae7a-9f64e0ea7343",
+            "name": "Myr Prototype",
+            "text": "At the beginning of your upkeep, put a +1/+1 counter on Myr Prototype.\nMyr Prototype can't attack or block unless you pay {1} for each +1/+1 counter on it. (This cost is paid as attackers or blockers are declared.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "6a03e3ca-8041-56c0-b908-3c2027c77813",
+            "name": "Myr Retriever",
+            "text": "When Myr Retriever is put into a graveyard from play, return another target artifact card from your graveyard to your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "840919e2-7c75-5ce5-84e1-dd9bffcffc20",
+            "name": "Necrogen Spellbomb",
+            "text": "{B}, Sacrifice Necrogen Spellbomb: Target player discards a card from his or her hand.\n{1}, Sacrifice Necrogen Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "4d1a3bd1-2d9c-59ce-b7a1-28756d977a33",
+            "name": "Needlebug",
+            "text": "Protection from artifacts\nYou may play Needlebug any time you could play an instant.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "de2fc517-fcbc-557b-a0e3-2242e4212f2d",
+            "name": "Neurok Hoversail",
+            "text": "Equipped creature has flying.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "9d9cfc11-23f2-549e-bb77-12946b49952b",
+            "name": "Nightmare Lash",
+            "text": "Equipped creature gets +1/+1 for each Swamp you control.\nEquip\u2014\nPay 3 life. (Pay 3 life: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "cf6c78bd-2497-5b65-bb2c-89fd9fde1484",
+            "name": "Nim Replica",
+            "text": "{2}{B}, Sacrifice Nim Replica: Target creature gets -1/-1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "efff191a-c928-5104-a8b4-f7be30494e8a",
+            "name": "Nuisance Engine",
+            "text": "{2}, {T}: Put a 0/1 Pest artifact creature token into play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "bbe06c84-7e26-5db8-b76b-91946c4d9c16",
+            "name": "Oblivion Stone",
+            "text": "{4}, {T}: Put a fate counter on target permanent.\n{5}, {T}, Sacrifice Oblivion Stone: Destroy each nonland permanent without a fate counter on it, then remove all fate counters from all permanents.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "4c88c7e1-4e4d-54fd-a2f1-d54e6d7d14fb",
+            "name": "Omega Myr",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "dc0ae0b0-0184-5012-be34-6bbba1408b29",
+            "name": "Ornithopter",
+            "text": "Flying",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "de4f0614-5752-52ef-9e50-f1559a1db4e0",
+            "name": "Pearl Shard",
+            "text": "{3}, {T} or {W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "bf99443f-28c0-57fb-bb96-006e8dea9f05",
+            "name": "Pentavus",
+            "text": "Pentavus comes into play with five +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Pentavus: Put a 1/1 Pentavite artifact creature token with flying into play.\n{1}, Sacrifice a Pentavite: Put a +1/+1 counter on Pentavus.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "50811d69-2ac8-51e0-a0ba-d5d8bbf34c01",
+            "name": "Pewter Golem",
+            "text": "{1}{B}: Regenerate Pewter Golem.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "91945553-a222-52ea-9950-0a8621105bb0",
+            "name": "Platinum Angel",
+            "text": "Flying\nYou can't lose the game and your opponents can't win the game.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "322daeea-5abe-59ba-87dd-0285dd8f20ce",
+            "name": "Power Conduit",
+            "text": "{T}, Remove a counter from a permanent you control: Choose one Put a charge counter on target artifact; or put a +1/+1 counter on target creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "3c79fb75-2aa5-5233-aa8c-96a594d474e6",
+            "name": "Proteus Staff",
+            "text": "{2}{U}, {T}: Put target creature on the bottom of its owner's library. That creature's controller reveals cards from the top of his or her library until he or she reveals a creature card. The player puts that card into play and the rest on the bottom of his or her library in any order. Play this ability only any time you could play a sorcery.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "45fcc44f-59f3-525c-bc72-a1d887101b67",
+            "name": "Psychogenic Probe",
+            "text": "Whenever a spell or ability causes a player to shuffle his or her library, Psychogenic Probe deals 2 damage to him or her.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "c77e1c3d-6f63-5942-828c-fe65cbafc039",
+            "name": "Pyrite Spellbomb",
+            "text": "{R}, Sacrifice Pyrite Spellbomb: Pyrite Spellbomb deals 2 damage to target creature or player.\n{1}, Sacrifice Pyrite Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "f6c1643d-5e74-5cf0-a404-4d1545052be1",
+            "name": "Quicksilver Fountain",
+            "text": "At the beginning of each player's upkeep, that player puts a flood counter on target non-Island land he or she controls. That land is an Island as long as it has a flood counter on it.\nAt end of turn, if all lands in play are Islands, remove all flood counters from them.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "37d303d7-af1f-5cbc-a57a-aadcd255d41f",
+            "name": "Rust Elemental",
+            "text": "Flying\nAt the beginning of your upkeep, sacrifice an artifact other than Rust Elemental. If you can't, tap Rust Elemental and you lose 4 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "d1719b64-8f30-5c97-8746-96c8178d811d",
+            "name": "Rustspore Ram",
+            "text": "When Rustspore Ram comes into play, destroy target Equipment.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "bf1af69e-8e86-5acf-80fe-c5013a4c47b2",
+            "name": "Scale of Chiss-Goria",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nYou may play Scale of Chiss-Goria any time you could play an instant.\n{T}: Target creature gets +0/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "53ba04f7-47a3-51e6-baa5-ee3d6fcd96df",
+            "name": "Scrabbling Claws",
+            "text": "{T}: Target player removes a card in his or her graveyard from the game.\n{1}, Sacrifice Scrabbling Claws: Remove target card in a graveyard from the game. Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "52ad0c9d-ea18-5244-b305-e1b254d9767d",
+            "name": "Sculpting Steel",
+            "text": "As Sculpting Steel comes into play, you may choose an artifact in play. If you do, Sculpting Steel comes into play as a copy of that artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "12587e5a-3b4f-56d5-b843-2a821faeee91",
+            "name": "Scythe of the Wretched",
+            "text": "Equipped creature gets +2/+2.\nWhenever a creature dealt damage by equipped creature this turn is put into a graveyard, return that card to play under your control. Attach Scythe of the Wretched to that creature.\nEquip {4}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "084f78e9-5e62-55a3-9d05-266c5b7f19a1",
+            "name": "Serum Tank",
+            "text": "Whenever Serum Tank or another artifact comes into play, put a charge counter on Serum Tank.\n{3}, {T}, Remove a charge counter from Serum Tank: Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "038e6785-57cf-52fb-88b1-c58d77f79451",
+            "name": "Silver Myr",
+            "text": "{T}: Add {U} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "164ca139-fabd-5a35-a19a-dfa932fac67e",
+            "name": "Skeleton Shard",
+            "text": "{3}, {T} or {B}, {T}: Return target artifact creature card from your graveyard to your hand.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "2c5c62a1-1190-5489-bb8d-a56372790faf",
+            "name": "Slagwurm Armor",
+            "text": "Equipped creature gets +0/+6.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7f1e3001-49f6-50d6-b058-fce4f87cc7ce",
+            "name": "Soldier Replica",
+            "text": "{1}{W}, Sacrifice Soldier Replica: Soldier Replica deals 3 damage to target attacking or blocking creature.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "cbdf57dd-db66-52fd-8e44-ee3dffc3a540",
+            "name": "Solemn Simulacrum",
+            "text": "When Solemn Simulacrum comes into play, you may search your library for a basic land card and put that card into play tapped. If you do, shuffle your library.\nWhen Solemn Simulacrum is put into a graveyard from play, you may draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "e2429895-beca-5a8f-bc99-2df107558ada",
+            "name": "Soul Foundry",
+            "text": "Imprint When Soul Foundry comes into play, you may remove a creature card in your hand from the game. (The removed card is imprinted on this artifact.)\n{X}, {T}: Put a creature token into play that's a copy of the imprinted creature card. X is the converted mana cost of that card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "0cfde1f1-7795-515f-b52f-92e37e1def29",
+            "name": "Spellweaver Helix",
+            "text": "Imprint When Spellweaver Helix comes into play, you may remove two target sorcery cards in a single graveyard from the game. (The removed cards are imprinted on this artifact.)\nWhenever a card is played, if it has the same name as one of the imprinted sorcery cards, you may copy the other and play the copy without paying its mana cost.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "ed0116b1-6bc7-58a1-956d-0f868817f3d7",
+            "name": "Steel Wall",
+            "text": "(Walls can't attack.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "4dd3cda3-ee64-5eb2-b508-4846f2648add",
+            "name": "Sun Droplet",
+            "text": "Whenever you're dealt damage, put that many charge counters on Sun Droplet.\nAt the beginning of each player's upkeep, you may remove a charge counter from Sun Droplet. If you do, you gain 1 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "97a835d8-f52d-5d08-bacd-2e5740d81965",
+            "name": "Sunbeam Spellbomb",
+            "text": "{W}, Sacrifice Sunbeam Spellbomb: You gain 5 life.\n{1}, Sacrifice Sunbeam Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "9fc4c275-4670-5099-af68-6e7702d94988",
+            "name": "Sword of Kaldra",
+            "text": "Equipped creature gets +5/+5.\nWhenever equipped creature deals damage to a creature, remove that creature from the game.\nEquip {4} ({4}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "fb3ae02b-8802-52d6-8f6b-57cf3e3b6088",
+            "name": "Synod Sanctum",
+            "text": "{2}, {T}: Remove target permanent you control from the game.\n{2}, Sacrifice Synod Sanctum: Return to play under your control all cards removed from the game with Synod Sanctum.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "f879f3ab-f95a-5d46-9765-624e44808366",
+            "name": "Talisman of Dominance",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Talisman of Dominance deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "dfb9a097-19dc-509e-ad8f-cef6388e9b63",
+            "name": "Talisman of Impulse",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Talisman of Impulse deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "51aea172-b039-538b-9b75-2ebcf16b598e",
+            "name": "Talisman of Indulgence",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {B} or {R} to your mana pool. Talisman of Indulgence deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "26aec3cf-6430-506d-b066-40573ab5d8b6",
+            "name": "Talisman of Progress",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {W} or {U} to your mana pool. Talisman of Progress deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "23d05da0-a519-5e3e-b7e9-8cd7e3875b40",
+            "name": "Talisman of Unity",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {G} or {W} to your mana pool. Talisman of Unity deals 1 damage to you.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "4e6cd2b7-06e6-5c40-898c-fa1c6aaaab18",
+            "name": "Tanglebloom",
+            "text": "{1}, {T}: You gain 1 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "04919084-641d-519d-813f-0a0e6cbbda86",
+            "name": "Tangleroot",
+            "text": "Whenever a player plays a creature spell, that player adds {G} to his or her mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "456b5d44-92a6-5d2b-ae1c-d2945ff47c48",
+            "name": "Tel-Jilad Stylus",
+            "text": "{T}: Put target permanent you own on the bottom of your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "09c84d88-0429-554b-aa62-c00725bae836",
+            "name": "Thought Prison",
+            "text": "Imprint When Thought Prison comes into play, you may have target player reveal his or her hand. If you do, choose a nonland card from it and remove that card from the game. (The removed card is imprinted on this artifact.)\nWhenever a player plays a spell that shares a color or converted mana cost with the imprinted card, Thought Prison deals 2 damage to that player.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "db9deb44-c440-57e6-bda6-f40703792553",
+            "name": "Timesifter",
+            "text": "At the beginning of each player's upkeep, each player removes the top card of his or her library from the game. The player who removed the card with the highest converted mana cost takes an extra turn after this one. If two or more players' cards are tied for highest cost, the tied players repeat this process until the tie is broken.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "115b87d0-044c-5306-9c07-ab8635ac7130",
+            "name": "Titanium Golem",
+            "text": "{1}{W}: Titanium Golem gains first strike until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "5084a2a8-2170-5e1d-a2fc-ca457b32afa8",
+            "name": "Tooth of Chiss-Goria",
+            "text": "Affinity for artifacts (This spell costs {1} less to play for each artifact you control.)\nYou may play Tooth of Chiss-Goria any time you could play an instant.\n{T}: Target creature gets +1/+0 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "36a2e003-2cb2-51c9-a2fe-308ceac58967",
+            "name": "Tower of Champions",
+            "text": "{8}, {T}: Target creature gets +6/+6 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "69ee29de-5b36-580c-8c54-2d806f964eb7",
+            "name": "Tower of Eons",
+            "text": "{8}, {T}: You gain 10 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "dc84e7a3-0758-5378-8a43-eb71e1c52488",
+            "name": "Tower of Fortunes",
+            "text": "{8}, {T}: Draw four cards.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "aeaf9131-042f-5620-9874-aa68700dd415",
+            "name": "Tower of Murmurs",
+            "text": "{8}, {T}: Target player puts the top eight cards of his or her library into his or her graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "5f49458c-b134-5a27-a93e-8a8da1e22099",
+            "name": "Triskelion",
+            "text": "Triskelion comes into play with three +1/+1 counters on it.\nRemove a +1/+1 counter from Triskelion: Triskelion deals 1 damage to target creature or player.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "3523ad3b-3dab-51e4-a836-9a3cfd2cd2eb",
+            "name": "Viridian Longbow",
+            "text": "Equipped creature has \"{T}: This creature deals 1 damage to target creature or player.\"\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "142cd1bb-d2bd-5460-944b-22ccda065dd5",
+            "name": "Vorrac Battlehorns",
+            "text": "Equipped creature has trample and can't be blocked by more than one creature.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "2bda989c-55a4-52dd-8bf9-50a647151369",
+            "name": "Vulshok Battlegear",
+            "text": "Equipped creature gets +3/+3.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "5f5495c9-6740-55e4-8cdc-ef2f7c9b8bc2",
+            "name": "Vulshok Gauntlets",
+            "text": "Equipped creature gets +4/+2 and doesn't untap during its controller's untap step.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1775236c-3a6f-5eef-83b0-51b762407250",
+            "name": "Welding Jar",
+            "text": "Sacrifice Welding Jar: Regenerate target artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "ddd2cf1d-b32a-50b6-b961-daf930626d54",
+            "name": "Wizard Replica",
+            "text": "Flying\n{U}, Sacrifice Wizard Replica: Counter target spell unless its controller pays {2}.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "03b8970f-fec8-5ffb-87b7-068ccb29db3c",
+            "name": "Worldslayer",
+            "text": "Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5} ({5}: Attach to target creature you control. Equip only as a sorcery. This card comes into play unattached and stays in play if the creature leaves play.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "055333ec-a8cf-572b-8cbf-0f876016d9c2",
+            "name": "Yotian Soldier",
+            "text": "Attacking doesn't cause Yotian Soldier to tap.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "ddb39aed-2186-5a21-ba04-03343d362a58",
+            "name": "Ancient Den",
+            "text": "(Ancient Den isn't a spell.)\n{T}: Add {W} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "417d2f23-189c-570b-9045-b2d436da736f",
+            "name": "Blinkmoth Well",
+            "text": "{T}: Add {1} to your mana pool.\n{2}, {T}: Tap target noncreature artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "50fdbbf5-d4f1-5fe8-920a-c9b663a6dd19",
+            "name": "Cloudpost",
+            "text": "Cloudpost comes into play tapped.\n{T}: Add {1} to your mana pool for each Locus in play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "b0fde0a0-c51e-51b3-8a80-86d15872e9f9",
+            "name": "Glimmervoid",
+            "text": "At end of turn, if you control no artifacts, sacrifice Glimmervoid.\n{T}: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MRD"
+        },
+        {
+            "id": "a2431ece-7fe5-53ae-9e3a-591546241d1c",
+            "name": "Great Furnace",
+            "text": "(Great Furnace isn't a spell.)\n{T}: Add {R} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "35255e8a-029e-53a2-82b0-0180711c0644",
+            "name": "Seat of the Synod",
+            "text": "(Seat of the Synod isn't a spell.)\n{T}: Add {U} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "f202a313-7c77-53db-a919-08aa6285875a",
+            "name": "Stalking Stones",
+            "text": "{T}: Add {1} to your mana pool.\n{6}: Stalking Stones becomes a 3/3 artifact creature that's still a land. (This effect doesn't end at end of turn.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MRD"
+        },
+        {
+            "id": "c22745b0-4f52-508a-923b-25aacf91fcd4",
+            "name": "Tree of Tales",
+            "text": "(Tree of Tales isn't a spell.)\n{T}: Add {G} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1f08d5e7-8e2f-517a-be40-190cb2403680",
+            "name": "Vault of Whispers",
+            "text": "(Vault of Whispers isn't a spell.)\n{T}: Add {B} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Artifact",
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "5fa6d528-88b1-5a67-9828-cf7cd8153bc5",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "1e2abaf2-e188-50a3-8bc6-9abf9592ef48",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "d37c4d07-5bd9-5c03-b180-9fd86d4b44dd",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "aed1ac6c-e250-5d15-9611-1e8a31ebd19a",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "3cbb9b81-021e-5891-81e4-a7af7551a507",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "05d31f1f-f143-5e7c-a063-0c96c121b7fb",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "abd6856d-ff3b-5e0f-93d7-e513de22b445",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7b3f8b9d-58ae-5b32-9c42-3b674292685b",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "df6693a0-d5c5-507b-a20a-0065cc1a255a",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "e0a867a4-b61a-5ca4-bea0-abefbedfce6d",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "7060d213-98cb-5e2e-bc89-e73bb57b0cc1",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "de41ec0f-94cc-5421-9ef9-ad63cb6d1ff5",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "a61807d9-f69e-5897-a8dc-6371e4bbf479",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "3e2ad6d5-3b20-531a-8dc6-38a3ba249d6e",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "35d5c337-4eca-5382-b38e-9b5bdf656e6f",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "e8cf2834-e498-5ccf-9897-0a0853f0f1fd",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "06ebc501-cc95-542c-bd8a-4fc76465612f",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "52d6b5fe-6d66-5843-abe6-e0b402b3fbba",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "e8367098-edb8-533f-859a-7b5897e0a0af",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        },
+        {
+            "id": "70f4c47f-bde7-5db9-bd89-a2fe00342b90",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MRD"
+        }
+    ]
+}

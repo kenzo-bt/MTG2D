@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class DeckBrowser : MonoBehaviour
 {
-    public GameObject deckDisplayPrefab;
-    public int currentPage;
-    public int decksPerPage;
 
+    public GameObject yourDecks;
+    public GameObject starterDecks;
+    public GameObject deckDisplayPrefab;
     // Start is called before the first frame update
     void Start()
     {
-      currentPage = 0;
-      showDecks(currentPage);
+      loadDecks();
     }
 
     // Update is called once per frame
@@ -21,76 +20,15 @@ public class DeckBrowser : MonoBehaviour
 
     }
 
-    // Fetch previous page of decks
-    public void browseBack()
+    // Load decks into browser
+    public void loadDecks()
     {
-      if (currentPage > 0)
+      List<Decklist> allDecks = PlayerManager.Instance.allDecks;
+      foreach (Decklist deck in allDecks)
       {
-        currentPage--;
-        removeDecks();
-        showDecks(currentPage);
-      }
-    }
-
-    // Fetch next page of decks
-    public void browseForward()
-    {
-      if (((currentPage + 1) * decksPerPage) < PlayerManager.Instance.allDecks.Count)
-      {
-        currentPage++;
-        removeDecks();
-        showDecks(currentPage);
-      }
-    }
-
-    // Remove existing deck displays from browser
-    private void removeDecks()
-    {
-      int numChildren = transform.childCount;
-
-      for (int i = 0; i < numChildren; i++)
-      {
-        DestroyImmediate(transform.GetChild(0).gameObject);
-      }
-    }
-
-    // Order decks centered around deckbrowser width
-    private void orderDecks()
-    {
-      float deckDisplayWidth = deckDisplayPrefab.GetComponent<RectTransform>().sizeDelta.x;
-      float browserWidth = deckDisplayWidth * transform.childCount;
-      float maxBrowserWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
-      if (browserWidth >= maxBrowserWidth)
-      {
-        browserWidth = maxBrowserWidth;
-      }
-      float individualSpace = browserWidth / transform.childCount;
-      float positionX = 0 - (browserWidth / 2) + (individualSpace / 2);
-
-      foreach (Transform child in transform)
-      {
-        child.localPosition = new Vector3(positionX, child.localPosition.y, child.localPosition.z);
-        positionX += individualSpace;
-      }
-    }
-
-    // Show a page of decks in the browser
-    private void showDecks(int page)
-    {
-      int startingIndex = page * decksPerPage;
-      for (int i = startingIndex; i < (startingIndex + decksPerPage); i++)
-      {
-        if (i >= PlayerManager.Instance.allDecks.Count)
-        {
-          break;
-        }
-
-        Decklist deck = PlayerManager.Instance.allDecks[i];
-        GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, transform);
+        GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
         DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
         display.setDisplayData(deck.name, deck.cards[0]);
       }
-
-      orderDecks();
     }
 }
