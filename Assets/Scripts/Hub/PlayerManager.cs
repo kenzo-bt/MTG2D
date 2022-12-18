@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
       cardLookup = new Dictionary<string, CardInfo>();
       createCardLookup();
 
-      decksFilePath = Application.persistentDataPath + "/AllDecks.txt";
+      decksFilePath = Application.persistentDataPath + "/userDecks.txt";
       loadPlayerDecks();
     }
 
@@ -79,7 +79,7 @@ public class PlayerManager : MonoBehaviour
         File.WriteAllText(decksFilePath, starterDeckFile.text);
       }
 
-      fileContents = File.ReadAllText(Application.persistentDataPath + "/AllDecks.txt");
+      fileContents = File.ReadAllText(Application.persistentDataPath + "/userDecks.txt");
       foreach (string deck in fileContents.Split("---"))
       {
         Decklist individualDeck = new Decklist();
