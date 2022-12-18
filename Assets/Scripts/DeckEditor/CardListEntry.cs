@@ -12,6 +12,8 @@ public class CardListEntry : MonoBehaviour
     CardInfo card;
     public GameObject nameObject;
     public GameObject quantityObject;
+    public GameObject manaCostObject;
+    public GameObject manaPrefab;
     private TMP_Text nameText;
     private TMP_Text quantityText;
     private Image nameBackground;
@@ -41,6 +43,7 @@ public class CardListEntry : MonoBehaviour
       cardId = card.id;
       cardName = card.name;
       quantity = num;
+      createManaCost();
       colorize();
       updateEntry();
     }
@@ -96,5 +99,22 @@ public class CardListEntry : MonoBehaviour
       deck.removeCard(card);
       // Refresh decklist panel
       transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
+    }
+
+    // Creates the mana cost string
+    public void createManaCost()
+    {
+      List<string> costString = new List<string>(card.manaCost.Split('}'));
+      costString.Remove("");
+      for (int i = 0; i < costString.Count; i++)
+      {
+        costString[i] = costString[i].Substring(1);
+      }
+      foreach (string symbol in costString)
+      {
+        GameObject manaSymbol = Instantiate(manaPrefab, manaCostObject.transform);
+        Debug.Log("Sending " + symbol + " to ManaSymbol");
+        manaSymbol.GetComponent<ManaSymbol>().paintSymbol(symbol);
+      }
     }
 }

@@ -11,6 +11,7 @@ public class CardInfo
     public List<string> colours;
     public List<string> colourIdentity;
     public int manaValue;
+    public string manaCost;
     public List<string> types;
     public string rarity;
     public string set;

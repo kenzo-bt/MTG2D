@@ -54,6 +54,12 @@ for card in cards:
             if key == "originalText":
                 text = value
 
+    manaCost = ""
+    try:
+        manaCost = card["manaCost"]
+    except KeyError:
+        manaCost = ""
+
     thisCard = {
         "id": card["uuid"],
         "name": card["name"],
@@ -61,6 +67,7 @@ for card in cards:
         "colours": card["colors"],
         "colourIdentity": card["colorIdentity"],
         "manaValue": card["manaValue"],
+        "manaCost": manaCost,
         "types": card["types"],
         "rarity": card["rarity"],
         "set": card["setCode"]
