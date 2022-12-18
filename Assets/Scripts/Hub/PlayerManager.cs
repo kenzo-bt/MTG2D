@@ -116,7 +116,6 @@ public class PlayerManager : MonoBehaviour
           Decklist individualDeck = new Decklist();
           List<CardInfo> cards = new List<CardInfo>();
           List<int> cardFrequencies = new List<int>();
-          Debug.Log(deck);
 
           foreach (string card in deck.Split("%")[1].Split('\n'))
           {

@@ -97,6 +97,12 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
       // Update master data
       Decklist deck = PlayerManager.Instance.selectedDeck;
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      int indexOfCard = deck.cards.IndexOf(card);
+      if (deck.cardFrequencies[indexOfCard] == 1)
+      {
+        DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+        panel.hideHighlight();
+      }
       deck.removeCard(card);
       // Refresh decklist panel
       transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();

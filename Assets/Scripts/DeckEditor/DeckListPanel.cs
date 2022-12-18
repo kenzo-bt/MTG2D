@@ -59,57 +59,60 @@ public class DeckListPanel : MonoBehaviour
     // populate the cardList with the selected deck
     public void populateCardList()
     {
-      // Sort by manaValue
-      int maxValue = 0;
-      foreach (CardInfo card in deck.cards)
+      if (deck.cards.Count > 0)
       {
-        if (card.manaValue > maxValue)
+        // Sort by manaValue
+        int maxValue = 0;
+        foreach (CardInfo card in deck.cards)
         {
-          maxValue = card.manaValue;
-        }
-      }
-      List<int>[] valuesArray = new List<int>[maxValue + 1];
-      for (int i = 0; i < valuesArray.Length; i++)
-      {
-          valuesArray[i] = new List<int>();
-      }
-      for (int i = 0; i < deck.cards.Count; i++)
-      {
-        valuesArray[deck.cards[i].manaValue].Add(i);
-      }
-      List<CardInfo> sortedCards = new List<CardInfo>();
-      List<int> sortedFrequencies = new List<int>();
-      for (int i = 0; i < valuesArray.Length; i++)
-      {
-        if (valuesArray[i].Count > 0)
-        {
-          foreach (int index in valuesArray[i])
+          if (card.manaValue > maxValue)
           {
-            sortedCards.Add(deck.cards[index]);
-            sortedFrequencies.Add(deck.cardFrequencies[index]);
+            maxValue = card.manaValue;
           }
         }
-      }
-
-      // Instantiate each entry (no  lands)
-      for (int i = 0; i < sortedCards.Count; i++)
-      {
-        if (!sortedCards[i].types.Contains("Land"))
+        List<int>[] valuesArray = new List<int>[maxValue + 1];
+        for (int i = 0; i < valuesArray.Length; i++)
         {
-          // Instantiate a list entry prefab in the card list
-          GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
-          entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+            valuesArray[i] = new List<int>();
         }
-      }
-
-      // Instantiate each entry (only lands)
-      for (int i = 0; i < sortedCards.Count; i++)
-      {
-        if (sortedCards[i].types.Contains("Land"))
+        for (int i = 0; i < deck.cards.Count; i++)
         {
-          // Instantiate a list entry prefab in the card list
-          GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
-          entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+          valuesArray[deck.cards[i].manaValue].Add(i);
+        }
+        List<CardInfo> sortedCards = new List<CardInfo>();
+        List<int> sortedFrequencies = new List<int>();
+        for (int i = 0; i < valuesArray.Length; i++)
+        {
+          if (valuesArray[i].Count > 0)
+          {
+            foreach (int index in valuesArray[i])
+            {
+              sortedCards.Add(deck.cards[index]);
+              sortedFrequencies.Add(deck.cardFrequencies[index]);
+            }
+          }
+        }
+
+        // Instantiate each entry (no  lands)
+        for (int i = 0; i < sortedCards.Count; i++)
+        {
+          if (!sortedCards[i].types.Contains("Land"))
+          {
+            // Instantiate a list entry prefab in the card list
+            GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
+            entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+          }
+        }
+
+        // Instantiate each entry (only lands)
+        for (int i = 0; i < sortedCards.Count; i++)
+        {
+          if (sortedCards[i].types.Contains("Land"))
+          {
+            // Instantiate a list entry prefab in the card list
+            GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
+            entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+          }
         }
       }
     }
@@ -129,8 +132,6 @@ public class DeckListPanel : MonoBehaviour
     // Show card highlight next to this panel
     public void highlightCard(string id)
     {
-      Debug.Log("Panel -> Received request to show card with ID: " + id);
-      // Activate highlight card
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
       highlightCardObject.SetActive(true);
       highlightCardObject.GetComponent<WebCard>().texturizeCard(targetCard);
@@ -138,8 +139,6 @@ public class DeckListPanel : MonoBehaviour
 
     public void hideHighlight()
     {
-      Debug.Log("Panel -> Received request to hide highlight.");
-      // Deactivate highlight card
       highlightCardObject.SetActive(false);
     }
 }
