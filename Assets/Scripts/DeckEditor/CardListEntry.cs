@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
-public class CardListEntry : MonoBehaviour
+public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private string cardId;
     private string cardName;
@@ -115,5 +116,19 @@ public class CardListEntry : MonoBehaviour
         GameObject manaSymbol = Instantiate(manaPrefab, manaCostObject.transform);
         manaSymbol.GetComponent<ManaSymbol>().paintSymbol(symbol);
       }
+    }
+
+    public void OnPointerEnter(PointerEventData pointerEventData)
+    {
+      // Access panel
+      DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+      panel.highlightCard(cardId);
+    }
+
+    //Detect when Cursor leaves the GameObject
+    public void OnPointerExit(PointerEventData pointerEventData)
+    {
+      DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+      panel.hideHighlight();
     }
 }

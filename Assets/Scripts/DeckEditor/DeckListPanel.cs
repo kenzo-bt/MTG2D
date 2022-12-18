@@ -11,6 +11,7 @@ public class DeckListPanel : MonoBehaviour
     public GameObject deckNameInputObject;
     public GameObject cardCount;
     public GameObject manaCurveObject;
+    public GameObject highlightCardObject;
     private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
@@ -123,5 +124,22 @@ public class DeckListPanel : MonoBehaviour
       PlayerManager.Instance.selectedDeck.name = deckNameInput.text;
 
       updatePanel();
+    }
+
+    // Show card highlight next to this panel
+    public void highlightCard(string id)
+    {
+      Debug.Log("Panel -> Received request to show card with ID: " + id);
+      // Activate highlight card
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      highlightCardObject.SetActive(true);
+      highlightCardObject.GetComponent<WebCard>().texturizeCard(targetCard);
+    }
+
+    public void hideHighlight()
+    {
+      Debug.Log("Panel -> Received request to hide highlight.");
+      // Deactivate highlight card
+      highlightCardObject.SetActive(false);
     }
 }
