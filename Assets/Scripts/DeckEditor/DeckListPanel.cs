@@ -58,11 +58,58 @@ public class DeckListPanel : MonoBehaviour
     // populate the cardList with the selected deck
     public void populateCardList()
     {
+      // Sort by manaValue
+      int maxValue = 0;
+      foreach (CardInfo card in deck.cards)
+      {
+        if (card.manaValue > maxValue)
+        {
+          maxValue = card.manaValue;
+        }
+      }
+      List<int>[] valuesArray = new List<int>[maxValue + 1];
+      for (int i = 0; i < valuesArray.Length; i++)
+      {
+          valuesArray[i] = new List<int>();
+      }
       for (int i = 0; i < deck.cards.Count; i++)
       {
-        // Instantiate a list entry prefab in the card list
-        GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
-        entryInstance.GetComponent<CardListEntry>().setValues(deck.cards[i].id, deck.cardFrequencies[i]);
+        valuesArray[deck.cards[i].manaValue].Add(i);
+      }
+      List<CardInfo> sortedCards = new List<CardInfo>();
+      List<int> sortedFrequencies = new List<int>();
+      for (int i = 0; i < valuesArray.Length; i++)
+      {
+        if (valuesArray[i].Count > 0)
+        {
+          foreach (int index in valuesArray[i])
+          {
+            sortedCards.Add(deck.cards[index]);
+            sortedFrequencies.Add(deck.cardFrequencies[index]);
+          }
+        }
+      }
+
+      // Instantiate each entry (no  lands)
+      for (int i = 0; i < sortedCards.Count; i++)
+      {
+        if (!sortedCards[i].types.Contains("Land"))
+        {
+          // Instantiate a list entry prefab in the card list
+          GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
+          entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+        }
+      }
+
+      // Instantiate each entry (only lands)
+      for (int i = 0; i < sortedCards.Count; i++)
+      {
+        if (sortedCards[i].types.Contains("Land"))
+        {
+          // Instantiate a list entry prefab in the card list
+          GameObject entryInstance = Instantiate(entryPrefab, cardList.transform);
+          entryInstance.GetComponent<CardListEntry>().setValues(sortedCards[i].id, sortedFrequencies[i]);
+        }
       }
     }
 

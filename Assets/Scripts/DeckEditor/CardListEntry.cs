@@ -113,7 +113,6 @@ public class CardListEntry : MonoBehaviour
       foreach (string symbol in costString)
       {
         GameObject manaSymbol = Instantiate(manaPrefab, manaCostObject.transform);
-        Debug.Log("Sending " + symbol + " to ManaSymbol");
         manaSymbol.GetComponent<ManaSymbol>().paintSymbol(symbol);
       }
     }
