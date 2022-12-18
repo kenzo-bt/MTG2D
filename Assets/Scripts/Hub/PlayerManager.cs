@@ -69,24 +69,24 @@ public class PlayerManager : MonoBehaviour
     private void loadPlayerDecks()
     {
       allDecks = new List<Decklist>();
-      string fileContents = "";
 
       // If file doesnt exist, create a file in persistent data storage and load starter decks into it
       if (!System.IO.File.Exists(decksFilePath))
       {
-        using (File.Create(decksFilePath));
-        TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
-        File.WriteAllText(decksFilePath, starterDeckFile.text);
+        using (File.Create(decksFilePath)) {}
       }
 
-      fileContents = File.ReadAllText(Application.persistentDataPath + "/userDecks.txt");
-      foreach (string deck in fileContents.Split("---"))
+      // Read starter decks
+      TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
+      List<string> starterDecks = new List<string>(starterDeckFile.text.Split("---"));
+      for (int i = 0; i < starterDecks.Count; i++)
       {
+        starterDecks[i] = starterDecks[i].Trim();
         Decklist individualDeck = new Decklist();
         List<CardInfo> cards = new List<CardInfo>();
         List<int> cardFrequencies = new List<int>();
 
-        foreach (string card in deck.Split("%")[1].Split('\n'))
+        foreach (string card in starterDecks[i].Split("%")[1].Split('\n'))
         {
           if (!string.IsNullOrWhiteSpace(card))
           {
@@ -95,11 +95,44 @@ public class PlayerManager : MonoBehaviour
           }
         }
 
-        individualDeck.name = deck.Split("%")[0].Trim();
+        individualDeck.name = starterDecks[i].Split("%")[0].Trim();
+        if (!individualDeck.name.Contains("!Starter!"))
+        {
+          individualDeck.name = individualDeck.name + " !Starter!";
+        }
         individualDeck.cards = cards;
         individualDeck.cardFrequencies = cardFrequencies;
 
         allDecks.Add(individualDeck);
+      }
+
+      // Read user decks
+      string fileContents = "";
+      fileContents = File.ReadAllText(decksFilePath);
+      if (fileContents != "")
+      {
+        foreach (string deck in fileContents.Split("---"))
+        {
+          Decklist individualDeck = new Decklist();
+          List<CardInfo> cards = new List<CardInfo>();
+          List<int> cardFrequencies = new List<int>();
+          Debug.Log(deck);
+
+          foreach (string card in deck.Split("%")[1].Split('\n'))
+          {
+            if (!string.IsNullOrWhiteSpace(card))
+            {
+              cards.Add(getCardFromLookup(card.Split(" ")[0]));
+              cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
+            }
+          }
+
+          individualDeck.name = deck.Split("%")[0].Trim();
+          individualDeck.cards = cards;
+          individualDeck.cardFrequencies = cardFrequencies;
+
+          allDecks.Add(individualDeck);
+        }
       }
 
       // TODO Remove this when deck selector is done
@@ -118,11 +151,14 @@ public class PlayerManager : MonoBehaviour
         string allDecksString = "";
         for (int i = 0; i < deckCount; i++)
         {
+          if (!allDecks[i].name.Contains("!Starter!"))
+          {
             allDecksString += allDecks[i].getDecklistString();
             if (i < (deckCount - 1))
             {
               allDecksString += "\n---\n";
             }
+          }
         }
         File.WriteAllText(decksFilePath, allDecksString);
       }
