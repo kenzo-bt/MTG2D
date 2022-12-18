@@ -40,7 +40,7 @@ public class ManaSymbol : MonoBehaviour
         text = symbol;
         targetSymbol = "N";
       }
-      Texture2D symbolTexture = Resources.Load("Images/Symbols/" + targetSymbol) as Texture2D;
+      Texture2D symbolTexture = Resources.Load("Images/Symbols/" + targetSymbol + "-Small") as Texture2D;
       symbolImage.sprite = Sprite.Create(symbolTexture, new Rect(0, 0, symbolTexture.width, symbolTexture.height), new Vector2(0.5f, 0.5f));
       // Add text
       if (targetSymbol == "N")
