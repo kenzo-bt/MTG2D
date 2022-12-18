@@ -9,6 +9,7 @@ public class DeckDisplay : MonoBehaviour
 {
     public GameObject displayText;
     public GameObject displayCard;
+    public GameObject displayDialog;
     public string deckName;
     public CardInfo coverCard;
 
@@ -32,11 +33,6 @@ public class DeckDisplay : MonoBehaviour
       displayText.GetComponent<TMP_Text>().text = deckName;
       // Texturize card
       displayCard.GetComponent<WebCard>().texturizeCard(coverCard);
-      /*
-      Image image = displayImage.GetComponent<Image>();
-      Texture2D cardTexture = Resources.Load("Images/Cards/" + coverCard.set + "/" + coverCard.id) as Texture2D;
-      image.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-      */
     }
 
     // Set this deck as the user selectedDeck
@@ -69,6 +65,36 @@ public class DeckDisplay : MonoBehaviour
     {
       setAsSelectedDeck();
       SceneManager.LoadScene("DeckEditor");
+    }
+
+    // Delete this deck
+    public void deleteThisDeck()
+    {
+      Debug.Log("My name: " + deckName);
+      List<Decklist> allDecks = PlayerManager.Instance.allDecks;
+      for (int i = 0; i < allDecks.Count; i++)
+      {
+        if (allDecks[i].name == deckName)
+        {
+          allDecks.RemoveAt(i);
+          break;
+        }
+      }
+      PlayerManager.Instance.savePlayerDecks();
+      gameObject.SetActive(false);
+      GameObject grid = transform.parent.gameObject;
+      Debug.Log("Parent: " + grid.name);
+      LayoutRebuilder.ForceRebuildLayoutImmediate(transform.parent.gameObject.GetComponent<RectTransform>());
+    }
+
+    public void hideDialog()
+    {
+      displayDialog.SetActive(false);
+    }
+
+    public void showDialog()
+    {
+      displayDialog.SetActive(true);
     }
 
     // Debug deck name
