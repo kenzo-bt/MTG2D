@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class CardListEntry : MonoBehaviour
@@ -8,10 +9,12 @@ public class CardListEntry : MonoBehaviour
     private string cardId;
     private string cardName;
     private int quantity;
+    CardInfo card;
     public GameObject nameObject;
     public GameObject quantityObject;
     private TMP_Text nameText;
     private TMP_Text quantityText;
+    private Image nameBackground;
 
     // Start is called before the first frame update
     void Awake()
@@ -19,8 +22,10 @@ public class CardListEntry : MonoBehaviour
         cardName = "";
         cardId = "";
         quantity = 0;
+        card = null;
         nameText = nameObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>();
         quantityText = quantityObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>();
+        nameBackground = nameObject.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -32,11 +37,36 @@ public class CardListEntry : MonoBehaviour
     // Set the name and quantity properties
     public void setValues(string id, int num)
     {
-      CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
+      card = PlayerManager.Instance.getCardFromLookup(id);
       cardId = card.id;
       cardName = card.name;
       quantity = num;
+      colorize();
       updateEntry();
+    }
+
+    // Colorize the entry name header
+    public void colorize()
+    {
+      string computedColour = "A"; // Fallback
+      if (card.types.Contains("Artifact"))
+      {
+        computedColour = "A";
+      }
+      else if (card.colourIdentity.Count > 1)
+      {
+        computedColour = "M";
+      }
+      else
+      {
+        if (card.colourIdentity[0] == "W") { computedColour = "W"; }
+        else if (card.colourIdentity[0] == "U") { computedColour = "U"; }
+        else if (card.colourIdentity[0] == "B") { computedColour = "B"; }
+        else if (card.colourIdentity[0] == "R") { computedColour = "R"; }
+        else if (card.colourIdentity[0] == "G") { computedColour = "G"; }
+      }
+      Texture2D background = Resources.Load("Images/Entries/" + computedColour) as Texture2D;
+      nameBackground.sprite = Sprite.Create(background, new Rect(0, 0, background.width, background.height), new Vector2(0.5f, 0.5f));
     }
 
     // Pass name and quantity to the game objects
