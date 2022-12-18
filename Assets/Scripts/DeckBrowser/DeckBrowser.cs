@@ -9,6 +9,7 @@ public class DeckBrowser : MonoBehaviour
     public GameObject yourDecks;
     public GameObject starterDecks;
     public GameObject deckDisplayPrefab;
+    public GameObject starterDeckPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,15 @@ public class DeckBrowser : MonoBehaviour
       List<Decklist> allDecks = PlayerManager.Instance.allDecks;
       foreach (Decklist deck in allDecks)
       {
-        GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
+        GameObject deckDisplayInstance = null;
+        if (deck.name.Contains("!Starter!"))
+        {
+          deckDisplayInstance = Instantiate(starterDeckPrefab, starterDecks.transform);
+        }
+        else
+        {
+          deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
+        }
         DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
         display.setDisplayData(deck.name, deck.getCoverCard());
       }

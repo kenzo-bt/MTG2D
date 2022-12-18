@@ -30,7 +30,14 @@ public class DeckDisplay : MonoBehaviour
     {
       this.deckName = deckName;
       this.coverCard = coverCard;
-      displayText.GetComponent<TMP_Text>().text = deckName;
+      if (deckName.Contains("!Starter!"))
+      {
+        displayText.GetComponent<TMP_Text>().text = deckName.Split("!Starter!")[0];
+      }
+      else
+      {
+        displayText.GetComponent<TMP_Text>().text = deckName;
+      }
       // Texturize card
       displayCard.GetComponent<WebCard>().texturizeCard(coverCard);
     }
@@ -70,7 +77,6 @@ public class DeckDisplay : MonoBehaviour
     // Delete this deck
     public void deleteThisDeck()
     {
-      Debug.Log("My name: " + deckName);
       List<Decklist> allDecks = PlayerManager.Instance.allDecks;
       for (int i = 0; i < allDecks.Count; i++)
       {
@@ -83,8 +89,26 @@ public class DeckDisplay : MonoBehaviour
       PlayerManager.Instance.savePlayerDecks();
       gameObject.SetActive(false);
       GameObject grid = transform.parent.gameObject;
-      Debug.Log("Parent: " + grid.name);
       LayoutRebuilder.ForceRebuildLayoutImmediate(transform.parent.gameObject.GetComponent<RectTransform>());
+    }
+
+    // Copy starter deck
+    public void copyStarterDeck()
+    {
+      Decklist copy = new Decklist();
+      List<Decklist> allDecks = PlayerManager.Instance.allDecks;
+      foreach (Decklist deck in allDecks)
+      {
+        if (deck.name == deckName)
+        {
+          copy.name = deckName.Split("!Starter!")[0];
+          copy.cards = new List<CardInfo>(deck.cards);
+          copy.cardFrequencies = new List<int>(deck.cardFrequencies);
+        }
+      }
+      PlayerManager.Instance.allDecks.Add(copy);
+      PlayerManager.Instance.selectedDeck = copy;
+      SceneManager.LoadScene("DeckEditor");
     }
 
     public void hideDialog()

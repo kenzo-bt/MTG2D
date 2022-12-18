@@ -316,7 +316,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1512,7 +1512,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1640,6 +1640,7 @@ MonoBehaviour:
   yourDecks: {fileID: 1962612555}
   starterDecks: {fileID: 344168903}
   deckDisplayPrefab: {fileID: 3720854164323507538, guid: 7d1843f2b4dfd3a47a9b657b109f7684, type: 3}
+  starterDeckPrefab: {fileID: 3720854164323507538, guid: 4cf2ce136106f3949bea1f4969c3f165, type: 3}
 --- !u!1 &1611762676
 GameObject:
   m_ObjectHideFlags: 0
