@@ -86,7 +86,17 @@ public class PlayerManager : MonoBehaviour
         List<CardInfo> cards = new List<CardInfo>();
         List<int> cardFrequencies = new List<int>();
 
-        foreach (string card in starterDecks[i].Split("%")[1].Split('\n'))
+        // Split name / cover / cards
+        string deckName = starterDecks[i].Split("%")[0].Trim();
+        string[] cardStrings = starterDecks[i].Split("%")[1].Split('\n');
+        string coverId = "";
+        if (starterDecks[i].Split("%").Length == 3)
+        {
+          coverId = starterDecks[i].Split("%")[2].Trim();
+          Debug.Log(deckName + " deck has a cover card - > " + coverId);
+        }
+
+        foreach (string card in cardStrings)
         {
           if (!string.IsNullOrWhiteSpace(card))
           {
@@ -95,13 +105,14 @@ public class PlayerManager : MonoBehaviour
           }
         }
 
-        individualDeck.name = starterDecks[i].Split("%")[0].Trim();
+        individualDeck.name = deckName;
         if (!individualDeck.name.Contains("!Starter!"))
         {
           individualDeck.name = individualDeck.name + " !Starter!";
         }
         individualDeck.cards = cards;
         individualDeck.cardFrequencies = cardFrequencies;
+        individualDeck.coverId = coverId;
 
         allDecks.Add(individualDeck);
       }
@@ -117,7 +128,17 @@ public class PlayerManager : MonoBehaviour
           List<CardInfo> cards = new List<CardInfo>();
           List<int> cardFrequencies = new List<int>();
 
-          foreach (string card in deck.Split("%")[1].Split('\n'))
+          // Split name / cover / cards
+          string deckName = deck.Split("%")[0].Trim();
+          string[] cardStrings = deck.Split("%")[1].Split('\n');
+          string coverId = "";
+          if (deck.Split("%").Length == 3)
+          {
+            coverId = deck.Split("%")[2].Trim();
+            Debug.Log(deckName + " deck has a cover card - > " + coverId);
+          }
+
+          foreach (string card in cardStrings)
           {
             if (!string.IsNullOrWhiteSpace(card))
             {
@@ -126,9 +147,10 @@ public class PlayerManager : MonoBehaviour
             }
           }
 
-          individualDeck.name = deck.Split("%")[0].Trim();
+          individualDeck.name = deckName;
           individualDeck.cards = cards;
           individualDeck.cardFrequencies = cardFrequencies;
+          individualDeck.coverId = coverId;
 
           allDecks.Add(individualDeck);
         }

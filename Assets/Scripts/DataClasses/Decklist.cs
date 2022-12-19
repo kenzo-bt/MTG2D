@@ -6,6 +6,7 @@ public class Decklist {
   public string name;
   public List<CardInfo> cards;
   public List<int> cardFrequencies;
+  public string coverId;
 
   public string getDecklistString()
   {
@@ -13,6 +14,10 @@ public class Decklist {
     for (int i = 0; i < cards.Count; i++)
     {
       decklistString += cards[i].id + " " + cardFrequencies[i] + "\n";
+    }
+    if (coverId != "")
+    {
+      decklistString += "%\n" + coverId;
     }
     return decklistString.Trim();
   }
@@ -25,6 +30,7 @@ public class Decklist {
     {
       Debug.Log(cards[i].name + " x" + cardFrequencies[i]);
     }
+    Debug.Log("Cover card: " + coverId);
   }
 
   // Get number of cards in deck
@@ -73,6 +79,7 @@ public class Decklist {
     this.name = "";
     this.cards = new List<CardInfo>();
     this.cardFrequencies = new List<int>();
+    this.coverId = "";
   }
 
   // Copy constructor
@@ -80,15 +87,23 @@ public class Decklist {
     this.name = deckToCopy.name;
     this.cards = new List<CardInfo>(deckToCopy.cards);
     this.cardFrequencies = new List<int>(deckToCopy.cardFrequencies);
+    this.coverId = deckToCopy.coverId;
   }
 
   // Get selected card
   public CardInfo getCoverCard()
   {
-    if (cards.Count > 0)
+    if (coverId != "")
+    {
+      return PlayerManager.Instance.getCardFromLookup(coverId);
+    }
+    else if (cards.Count > 0)
     {
       return cards[0];
     }
-    return PlayerManager.Instance.cardCollection[0].cards[0];
+    else
+    {
+      return PlayerManager.Instance.cardCollection[0].cards[0];
+    }
   }
 }

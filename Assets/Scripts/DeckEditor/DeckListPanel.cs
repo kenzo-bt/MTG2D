@@ -12,6 +12,7 @@ public class DeckListPanel : MonoBehaviour
     public GameObject cardCount;
     public GameObject manaCurveObject;
     public GameObject highlightCardObject;
+    public GameObject coverCardObject;
     private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
