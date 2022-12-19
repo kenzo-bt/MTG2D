@@ -77,10 +77,20 @@ public class DeckEditorManager : MonoBehaviour
 
     public void exitNoChange()
     {
-      PlayerManager.Instance.selectedDeck.name = getValidName(initialDeck.name);
-      PlayerManager.Instance.selectedDeck.cards = new List<CardInfo>(initialDeck.cards);
-      PlayerManager.Instance.selectedDeck.cardFrequencies = new List<int>(initialDeck.cardFrequencies);
-      PlayerManager.Instance.selectedDeck.coverId = initialDeck.coverId;
+      // If initial deck was empty, then remove the deck
+      if (initialDeck.cards.Count == 0 && initialDeck.name == "")
+      {
+        Debug.Log("Initial deck was empty and had no name!");
+        List<Decklist> allDecks = PlayerManager.Instance.allDecks;
+        allDecks.RemoveAt(allDecks.Count - 1);
+      }
+      else
+      {
+        PlayerManager.Instance.selectedDeck.name = getValidName(initialDeck.name);
+        PlayerManager.Instance.selectedDeck.cards = new List<CardInfo>(initialDeck.cards);
+        PlayerManager.Instance.selectedDeck.cardFrequencies = new List<int>(initialDeck.cardFrequencies);
+        PlayerManager.Instance.selectedDeck.coverId = initialDeck.coverId;
+      }
       SceneManager.LoadScene("DeckBrowser");
     }
 }
