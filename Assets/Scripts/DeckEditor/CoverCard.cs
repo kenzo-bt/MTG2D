@@ -33,6 +33,7 @@ public class CoverCard : MonoBehaviour
         {
           cardNames.Add(card.name);
         }
+        coverDropdown.ClearOptions();
         coverDropdown.AddOptions(cardNames);
         CardInfo coverCard = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.selectedDeck.coverId);
         string coverName = coverCard.name;
@@ -47,6 +48,7 @@ public class CoverCard : MonoBehaviour
       }
       else
       {
+        PlayerManager.Instance.selectedDeck.coverId = "";
         coverCard.texturizeCard(PlayerManager.Instance.selectedDeck.getCoverCard());
         dropdownObject.SetActive(false);
       }
