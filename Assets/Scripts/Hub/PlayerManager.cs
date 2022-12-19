@@ -93,7 +93,6 @@ public class PlayerManager : MonoBehaviour
         if (starterDecks[i].Split("%").Length == 3)
         {
           coverId = starterDecks[i].Split("%")[2].Trim();
-          Debug.Log(deckName + " deck has a cover card - > " + coverId);
         }
 
         foreach (string card in cardStrings)
@@ -135,7 +134,6 @@ public class PlayerManager : MonoBehaviour
           if (deck.Split("%").Length == 3)
           {
             coverId = deck.Split("%")[2].Trim();
-            Debug.Log(deckName + " deck has a cover card - > " + coverId);
           }
 
           foreach (string card in cardStrings)

@@ -80,6 +80,7 @@ public class DeckEditorManager : MonoBehaviour
       PlayerManager.Instance.selectedDeck.name = getValidName(initialDeck.name);
       PlayerManager.Instance.selectedDeck.cards = new List<CardInfo>(initialDeck.cards);
       PlayerManager.Instance.selectedDeck.cardFrequencies = new List<int>(initialDeck.cardFrequencies);
+      PlayerManager.Instance.selectedDeck.coverId = initialDeck.coverId;
       SceneManager.LoadScene("DeckBrowser");
     }
 }

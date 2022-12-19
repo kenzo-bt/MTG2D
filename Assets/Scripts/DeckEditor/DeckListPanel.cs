@@ -16,6 +16,7 @@ public class DeckListPanel : MonoBehaviour
     private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
+    private CoverCard coverCard;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class DeckListPanel : MonoBehaviour
       deckNameInput = deckNameInputObject.GetComponent<TMP_InputField>();
       cardCountText = cardCount.GetComponent<TMP_Text>();
       manaCurve = manaCurveObject.GetComponent<ManaCurveDisplay>();
+      coverCard = coverCardObject.GetComponent<CoverCard>();
 
       initializePanel();
     }
@@ -55,6 +57,7 @@ public class DeckListPanel : MonoBehaviour
       cardCountText.text = "Cards: " + deck.getNumCards();
       populateCardList();
       manaCurve.updateManaCurve(deck);
+      coverCard.updateDropdown();
     }
 
     // populate the cardList with the selected deck
