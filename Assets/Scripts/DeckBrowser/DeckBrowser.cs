@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DeckBrowser : MonoBehaviour
 {
@@ -40,6 +41,9 @@ public class DeckBrowser : MonoBehaviour
         DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
         display.setDisplayData(deck.name, deck.getCoverCard());
       }
+
+      LayoutRebuilder.ForceRebuildLayoutImmediate(starterDecks.GetComponent<RectTransform>());
+      LayoutRebuilder.ForceRebuildLayoutImmediate(yourDecks.GetComponent<RectTransform>());
     }
 
     // Add a deck
@@ -49,5 +53,19 @@ public class DeckBrowser : MonoBehaviour
       PlayerManager.Instance.allDecks.Add(newDeck);
       PlayerManager.Instance.selectedDeck = newDeck;
       SceneManager.LoadScene("DeckEditor");
+    }
+
+    // Toggle visibility of the deck browser
+    public void toggleVisibility()
+    {
+      gameObject.SetActive(!gameObject.activeSelf);
+    }
+
+    // Show/Hide
+    public void showBrowser(){
+      gameObject.SetActive(true);
+    }
+    public void hideBrowser(){
+      gameObject.SetActive(false);
     }
 }

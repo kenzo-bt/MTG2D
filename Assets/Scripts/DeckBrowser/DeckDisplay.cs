@@ -121,6 +121,12 @@ public class DeckDisplay : MonoBehaviour
       displayDialog.SetActive(true);
     }
 
+    // Update the select deck display in the Hub
+    public void updateDeckInDisplay()
+    {
+      GameObject.Find("SelectPanel").GetComponent<SelectPanel>().updateSelectedDeck();
+    }
+
     // Debug deck name
     public void debugDeckName()
     {

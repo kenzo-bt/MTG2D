@@ -11,6 +11,7 @@ public class CardSet
 
     public void debugSet()
     {
+      Debug.Log(cards.Count);
       foreach (CardInfo card in cards)
       {
         Debug.Log(card.name);

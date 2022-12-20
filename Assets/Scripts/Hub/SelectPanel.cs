@@ -9,6 +9,10 @@ public class SelectPanel : MonoBehaviour
     private float speed;
     private float showPosX;
     private float hidePosX;
+    public GameObject playButtonObject;
+    public GameObject deckDisplayObject;
+    private DeckDisplay deckDisplay;
+    private AcceptButton playButton;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,19 @@ public class SelectPanel : MonoBehaviour
       hidePosX = transform.localPosition.x + GetComponent<RectTransform>().sizeDelta.x;
       transform.localPosition = new Vector3(hidePosX, 0f, 0f);
       targetPosition = transform.localPosition;
+
+      deckDisplay = deckDisplayObject.GetComponent<DeckDisplay>();
+      playButton = playButtonObject.GetComponent<AcceptButton>();
+      if (PlayerManager.Instance.selectedDeck != null)
+      {
+        updateSelectedDeck();
+        deckDisplayObject.SetActive(true);
+      }
+      else
+      {
+        playButton.disable();
+        deckDisplayObject.SetActive(false);
+      }
     }
 
     // Update is called once per frame
@@ -35,5 +52,14 @@ public class SelectPanel : MonoBehaviour
     public void hidePanel()
     {
       targetPosition = new Vector3(hidePosX, 0f, 0f);
+    }
+
+    public void updateSelectedDeck()
+    {
+      Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
+      Debug.Log("Selected deck: " + selectedDeck.name);
+      playButton.enable();
+      deckDisplay.setDisplayData(selectedDeck.name, selectedDeck.getCoverCard());
+      deckDisplayObject.SetActive(true);
     }
 }

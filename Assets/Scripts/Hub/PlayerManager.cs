@@ -42,7 +42,6 @@ public class PlayerManager : MonoBehaviour
     // Load in card collection
     private void loadCardCollection()
     {
-
       TextAsset activeSetsFile = Resources.Load("ActiveSets") as TextAsset;
       string[] activeSets = activeSetsFile.text.Split('\n');
       for (int i = 0; i < activeSets.Length; i++)
@@ -157,7 +156,7 @@ public class PlayerManager : MonoBehaviour
       // TODO Remove this when deck selector is done
       if (allDecks.Count > 0)
       {
-        selectedDeck = allDecks[allDecks.Count - 1];
+        //selectedDeck = allDecks[allDecks.Count - 1];
       }
     }
 

@@ -7,7 +7,7 @@ public class PlayMenu : MonoBehaviour
 {
     private CanvasGroup playMenu;
     public GameObject selectPanel;
-    public GameObject deckSelector;
+    public GameObject deckBrowser;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +37,6 @@ public class PlayMenu : MonoBehaviour
       playMenu.alpha = 0;
       playMenu.blocksRaycasts = false;
       selectPanel.GetComponent<SelectPanel>().hidePanel();
-      deckSelector.GetComponent<DeckSelector>().hide();
+      deckBrowser.GetComponent<DeckBrowser>().hideBrowser();
     }
 }
