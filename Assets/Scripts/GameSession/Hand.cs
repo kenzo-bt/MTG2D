@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
-    private List<CardInfo> hand = new List<CardInfo>();
+    public List<CardInfo> hand = new List<CardInfo>();
     private int handSize = 7;
     private int mulligans = 0;
     public GameObject deckObject;

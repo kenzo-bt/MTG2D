@@ -14,7 +14,10 @@ public class PlayerManager : MonoBehaviour
     public List<Decklist> allDecks;
     private string decksFilePath;
     public string serverUrl;
+    public string apiUrl;
     public string serverImageFileExtension;
+    public string myID;
+    public string opponentID;
 
     private void Awake()
     {
@@ -27,6 +30,7 @@ public class PlayerManager : MonoBehaviour
       DontDestroyOnLoad(gameObject);
 
       serverUrl = "http://myxos.live/MTG/";
+      apiUrl = "http://myxos.live/pythonAPI/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -37,6 +41,9 @@ public class PlayerManager : MonoBehaviour
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
       loadPlayerDecks();
+
+      myID = "1";
+      opponentID = "2";
     }
 
     // Load in card collection

@@ -6,11 +6,12 @@ public class Player : MonoBehaviour
 {
     public GameObject deckObject;
     public GameObject handObject;
+    private Hand hand;
 
     // Start is called before the first frame update
     void Start()
     {
-
+      hand = handObject.GetComponent<Hand>();
     }
 
     // Update is called once per frame
@@ -30,5 +31,20 @@ public class Player : MonoBehaviour
         // Perform a mulligan
         hand.mulligan();
       }
+    }
+
+    // Produce board state as JSON string
+    public string getBoardState()
+    {
+      List<string> handIds = new List<string>();
+      foreach (CardInfo card in hand.hand)
+      {
+        handIds.Add(card.id);
+      }
+
+      BoardState myState = new BoardState();
+      myState.hand = handIds;
+
+      return JsonUtility.ToJson(myState);
     }
 }

@@ -1,0 +1,16 @@
+API Basics + Python API GET / POST / DELETE : https://www.youtube.com/watch?v=qbLc5a9jdXo&ab_channel=CalebCurry
+Deploy python API to godaddy: https://www.youtube.com/watch?v=260eDcsUheE&ab_channel=BappyTechTips
+
+activate .venv to begin with all dependencies locally
+.venv/Scripts/activate.bat
+
+>>> from testApp import db
+>>> from testApp import Card
+
+>>> card = Card(name="CardName", description="CardDescription")
+>>> db.session.add(card)
+>>> db.session.commit()
+>>> Card.query.all()
+
+I included the phpliteadmin.php in myxos.live/pythonAPI/phpliteadmin.php
+
