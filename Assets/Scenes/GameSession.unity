@@ -1251,8 +1251,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.99, y: 270.05}
-  m_SizeDelta: {x: 1714.3, y: 540.1}
+  m_AnchoredPosition: {x: 8.99, y: 275.6}
+  m_SizeDelta: {x: 1714.3, y: 529.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1876604089
 MonoBehaviour:
@@ -1267,6 +1267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 2100421024}
+  cardPrefab: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
+  state:
+    hand: []
 --- !u!1 &1996678663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,13 +1600,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100421024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac7c7b22393a8da41bd6011b2d50f55e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fa05bc64f53f9348b1bcacee6d4137f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: []
-  deckObject: {fileID: 840629723}
-  cardPrefab: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
-  isInitialized: 0
+  childPrefab: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
 --- !u!1 &2105555775
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class GameState : MonoBehaviour
     public GameObject opponentObject;
     public GameObject deckObject;
     public GameObject handObject;
+    private Opponent opponent;
 
     private string playerID;
     private string opponentID;
@@ -18,9 +19,10 @@ public class GameState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      opponent = opponentObject.GetComponent<Opponent>();
       playerID = PlayerManager.Instance.myID;
       opponentID = PlayerManager.Instance.opponentID;
-      //InvokeRepeating("fetchData", 0f, 3f);
+      InvokeRepeating("getOpponentState", 3f, 3f);
     }
 
     // Update is called once per frame
@@ -91,11 +93,10 @@ public class GameState : MonoBehaviour
         else
         {
           Debug.Log("Successfully fetched opponent state from server");
-
           string serverJson = request.downloadHandler.text;
           BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
-          Debug.Log(serverJson);
-          oppState.debugState();
+          opponent.state.hand = new List<string>(oppState.hand);
+          opponent.updateBoard();
         }
       }
     }
