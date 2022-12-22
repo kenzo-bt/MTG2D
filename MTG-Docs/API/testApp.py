@@ -1,5 +1,5 @@
 import json
-from flask import Flask, request
+from flask import Flask, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
@@ -21,13 +21,14 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     state = db.Column(db.Text)
+    password = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
 
 @app.route('/')
 def index():
-    return 'Welcome to the Mirari API!'
+    return redirect("pythonAPI/index.html", code=302)
 
 @app.route('/cards')
 def get_cards():
@@ -67,28 +68,28 @@ def get_users():
 
     output = []
     for user in users:
-        user_data = {'id': user.id, 'username': user.username, 'state': json.loads(user.state)}
+        user_data = {'id': user.id, 'username': user.username, 'password': user.password}
         output.append(user_data)
 
     return {"users" : output}
 
+@app.route('/users', methods=['POST'])
+def add_user():
+    user = User(username=request.json['username'], password=request.json['password'])
+    db.session.add(user)
+    db.session.commit()
+    return {'New user id': user.id, 'Username': user.username, 'Password': user.password}
+
 @app.route('/users/<id>')
 def get_user(id):
     user = User.query.get_or_404(id)
-    return {"id": user.id, "username": user.username, "state": json.loads(user.state)}
-
-@app.route('/users', methods=['POST'])
-def add_user():
-    user = User(username=request.json['username'])
-    db.session.add(user)
-    db.session.commit()
-    return {'New user id': user.id, 'Username': user.username}
+    return {"id": user.id, "username": user.username, "password": user.password}
 
 @app.route('/users/<id>', methods=['DELETE'])
 def delete_user(id):
     user = User.query.get(id)
     if user is None:
-        return {"error": "User not found"}
+        return {"Error": "User not found"}
     db.session.delete(user)
     db.session.commit()
     return {"Successful user deletion": id}
