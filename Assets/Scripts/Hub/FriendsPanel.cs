@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class FriendsPanel : MonoBehaviour
 {
@@ -11,7 +12,13 @@ public class FriendsPanel : MonoBehaviour
   public GameObject friendPrefab;
   public GameObject friendList;
   public GameObject addOverlayObject;
+  public GameObject panelObject;
+  public GameObject expanderObject;
   private AddFriend addFriendOverlay;
+  private float speed;
+  private float showPanelY;
+  private float hidePanelY;
+  private Vector3 targetPosition;
 
   // Start is called before the first frame update
   void Start()
@@ -19,12 +26,32 @@ public class FriendsPanel : MonoBehaviour
       friendIDs = new List<int>();
       friendNames = new List<string>();
       addFriendOverlay = addOverlayObject.GetComponent<AddFriend>();
+      // Panel Movement
+      speed = 500f;
+      showPanelY = panelObject.transform.localPosition.y;
+      hidePanelY = panelObject.transform.localPosition.y - panelObject.GetComponent<RectTransform>().sizeDelta.y;
+      panelObject.transform.localPosition = new Vector3(0f, hidePanelY, 0f);
+      targetPosition = panelObject.transform.localPosition;
   }
 
   // Update is called once per frame
   void Update()
   {
+    // Move panel if show/hide
+    var step =  speed * Time.deltaTime;
+    panelObject.transform.localPosition = Vector3.MoveTowards(panelObject.transform.localPosition, targetPosition, step);
+  }
 
+  public void showPanel()
+  {
+    targetPosition = new Vector3(0f, showPanelY, 0f);
+    expanderObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+  }
+
+  public void hidePanel()
+  {
+    targetPosition = new Vector3(0f, hidePanelY, 0f);
+    expanderObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
   }
 
   public void loadFriends()
