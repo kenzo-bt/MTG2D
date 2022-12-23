@@ -22,6 +22,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     state = db.Column(db.Text)
     password = db.Column(db.Text)
+    friends = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
@@ -62,6 +63,8 @@ def delete_card(id):
     db.session.commit()
     return {"Successful deletion": id}
 
+### All users view ###
+
 @app.route('/users')
 def get_users():
     users = User.query.all()
@@ -80,6 +83,8 @@ def add_user():
     db.session.commit()
     return {'New user id': user.id, 'Username': user.username, 'Password': user.password}
 
+### Individual user view ###
+
 @app.route('/users/<id>')
 def get_user(id):
     user = User.query.get_or_404(id)
@@ -94,6 +99,8 @@ def delete_user(id):
     db.session.commit()
     return {"Successful user deletion": id}
 
+### Board state ###
+
 @app.route('/users/<id>/state')
 def get_user_state(id):
     user =  User.query.get_or_404(id)
@@ -105,3 +112,19 @@ def write_user_state(id):
     user.state = json.dumps(request.json)
     db.session.commit()
     return {'username': user.username, 'newState': json.loads(user.state)}
+
+### User friends view ###
+
+@app.route('/users/<id>/friends')
+def get_user_friends(id):
+    user =  User.query.get_or_404(id)
+    if user.friends is None:
+        return {}
+    return {'friends': json.loads(user.friends)}
+
+@app.route('/users/<id>/friends', methods=['POST'])
+def write_user_friends(id):
+    user = User.query.get(id)
+    user.friends = json.dumps(request.json['friends'])
+    db.session.commit()
+    return {'friends': json.loads(user.friends)}

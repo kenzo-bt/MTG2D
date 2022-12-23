@@ -13,6 +13,7 @@ public class TitleScreen : MonoBehaviour
     public GameObject passObject;
     public GameObject statusObject;
     public GameObject objectGroup;
+    public GameObject friendsPanelObject;
     private TMP_InputField username;
     private TMP_InputField password;
     private TMP_Text status;
@@ -136,9 +137,8 @@ public class TitleScreen : MonoBehaviour
             {
               status.color = normalColor;
               status.text = "Successfully authenticated\nLogging in...";
-              PlayerManager.Instance.myID = userID;
-              Debug.Log("My ID: " + PlayerManager.Instance.myID);
               yield return new WaitForSeconds(3);
+              StartCoroutine(setUserID(username.text));
               hideTitleScreen();
             }
             else
@@ -163,7 +163,6 @@ public class TitleScreen : MonoBehaviour
             StartCoroutine(setUserID(username.text));
             hideTitleScreen();
           }
-
         }
       }
     }
@@ -188,6 +187,7 @@ public class TitleScreen : MonoBehaviour
             {
               PlayerManager.Instance.myID = user.id;
               Debug.Log("My ID: " + PlayerManager.Instance.myID);
+              friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
               break;
             }
           }
@@ -199,6 +199,7 @@ public class TitleScreen : MonoBehaviour
     public void hideTitleScreen()
     {
       StartCoroutine(FadeAllToZeroAlpha());
+
     }
 
     public IEnumerator FadeAllToZeroAlpha()
