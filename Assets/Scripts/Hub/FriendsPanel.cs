@@ -115,6 +115,7 @@ public class FriendsPanel : MonoBehaviour
       Debug.Log("Adding friend -> ID " + ID + " : " + allUsers.users[ID - 1].username);
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
       friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
+      friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
     }
     // Hide the overlay
     addFriendOverlay.hide();
@@ -165,7 +166,7 @@ public class FriendsPanel : MonoBehaviour
           Debug.Log("Player found in server! Proceeding to add him to your friend list...");
           friendIDs.Add(targetFriendID);
           friendNames.Add(friendName);
-          StartCoroutine(postNewFriendToServer(friendName));
+          StartCoroutine(postFriendsToServer());
         }
         else
         {
@@ -176,7 +177,7 @@ public class FriendsPanel : MonoBehaviour
   }
 
   // Update your friends list in the server
-  public IEnumerator postNewFriendToServer(string friendName)
+  public IEnumerator postFriendsToServer()
   {
     // POST to server
     string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/friends";
@@ -202,5 +203,22 @@ public class FriendsPanel : MonoBehaviour
     request.Dispose();
     // Rebuild the friends panel
     loadFriends();
+  }
+
+  // Remove friend
+  public void removeFriend(int removeID)
+  {
+    // Remove locally
+    for (int i = 0; i < friendIDs.Count; i++)
+    {
+      if (friendIDs[i] == removeID)
+      {
+        friendIDs.RemoveAt(i);
+        friendNames.RemoveAt(i);
+        break;
+      }
+    }
+    // Remove remotely
+    StartCoroutine(postFriendsToServer());
   }
 }

@@ -9,6 +9,7 @@ public class FriendEntry : MonoBehaviour
     public GameObject statusObject;
     public GameObject challengeObject;
     public GameObject nameObject;
+    public GameObject panelObject;
     private TMP_Text friendText;
     private Image status;
     private Image challengeIcon;
@@ -37,5 +38,15 @@ public class FriendEntry : MonoBehaviour
       friendName = name;
       friendId = id;
       friendText.text = friendName;
+    }
+
+    public void setPanelObject(GameObject panel)
+    {
+      panelObject = panel;
+    }
+
+    public void removeFriend()
+    {
+      panelObject.GetComponent<FriendsPanel>().removeFriend(friendId);
     }
 }
