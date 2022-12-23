@@ -24,10 +24,12 @@ public class TitleScreen : MonoBehaviour
     private JsonNetworking serverCommunicator;
     private Hasher hasher;
     private string hashedPassword;
-    private string userID;
+    private int userID;
     // Start is called before the first frame update
     void Start()
     {
+      if (!PlayerManager.Instance.loggedIn)
+      {
         title = titleObject.GetComponent<Image>();
         login = loginObject.GetComponent<Image>();
         username = userObject.GetComponent<TMP_InputField>();
@@ -42,6 +44,14 @@ public class TitleScreen : MonoBehaviour
           username.text = PlayerPrefs.GetString("lastUser");
         }
         StartCoroutine(FadeTitleToFullAlpha(2f, title));
+      }
+      else {
+        if (gameObject.activeSelf)
+        {
+          friendsPanelObject.GetComponent<FriendsPanel>().loadFriendsLocal();
+          gameObject.SetActive(false);
+        }
+      }
     }
 
     // Update is called once per frame
@@ -142,6 +152,7 @@ public class TitleScreen : MonoBehaviour
               status.color = normalColor;
               status.text = "Successfully authenticated\nLogging in...";
               PlayerPrefs.SetString("lastUser", username.text);
+              PlayerManager.Instance.loggedIn = true;
               yield return new WaitForSeconds(3);
               StartCoroutine(setUserID(username.text));
               hideTitleScreen();
@@ -165,6 +176,7 @@ public class TitleScreen : MonoBehaviour
             status.color = normalColor;
             status.text = "New user created\nLogging in...";
             PlayerPrefs.SetString("lastUser", username.text);
+            PlayerManager.Instance.loggedIn = true;
             yield return new WaitForSeconds(3);
             StartCoroutine(setUserID(username.text));
             hideTitleScreen();

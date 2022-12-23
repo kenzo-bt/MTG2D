@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class User
+public class AllChallenges
 {
-  public int id;
-  public string username;
-  public string password;
+  public List<Challenge> challenges;
 }

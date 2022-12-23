@@ -13,8 +13,8 @@ public class GameState : MonoBehaviour
     public GameObject handObject;
     private Opponent opponent;
 
-    private string playerID;
-    private string opponentID;
+    private int playerID;
+    private int opponentID;
 
     // Start is called before the first frame update
     void Start()

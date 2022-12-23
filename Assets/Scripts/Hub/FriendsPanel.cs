@@ -7,8 +7,6 @@ using UnityEngine.UI;
 
 public class FriendsPanel : MonoBehaviour
 {
-  public List<int> friendIDs;
-  public List<string> friendNames;
   public GameObject friendPrefab;
   public GameObject friendList;
   public GameObject addOverlayObject;
@@ -23,8 +21,6 @@ public class FriendsPanel : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-      friendIDs = new List<int>();
-      friendNames = new List<string>();
       addFriendOverlay = addOverlayObject.GetComponent<AddFriend>();
       // Panel Movement
       speed = 500f;
@@ -57,6 +53,30 @@ public class FriendsPanel : MonoBehaviour
   public void loadFriends()
   {
     StartCoroutine(getFriendsFromServer());
+  }
+
+  public void loadFriendsLocal()
+  {
+    int numChildrenInList = friendList.transform.childCount;
+    int deleteOffset = 0;
+    for (int i = 0; i < numChildrenInList; i++)
+    {
+      if (friendList.transform.GetChild(0 + deleteOffset).gameObject.name != "AddFriend")
+      {
+        DestroyImmediate(friendList.transform.GetChild(0 + deleteOffset).gameObject);
+      }
+      else {
+        deleteOffset += 1;
+      }
+    }
+    // Generate list locally
+    Debug.Log("Playermanager friendIDs: " + PlayerManager.Instance.friendIDs.Count);
+    for (int i = 0; i < PlayerManager.Instance.friendIDs.Count; i++)
+    {
+      GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
+      friendInstance.GetComponent<FriendEntry>().setData(PlayerManager.Instance.friendNames[i], PlayerManager.Instance.friendIDs[i]);
+      friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
+    }
   }
 
   public IEnumerator getFriendsFromServer()
@@ -107,16 +127,19 @@ public class FriendsPanel : MonoBehaviour
       }
     }
     // Generate local data and populate friend panel
+    PlayerManager.Instance.friendIDs = new List<int>();
+    PlayerManager.Instance.friendNames = new List<string>();
     for (int i = 0; i < allFriends.friends.Count; i++)
     {
       int ID = allFriends.friends[i];
-      friendIDs.Add(ID);
-      friendNames.Add(allUsers.users[ID - 1].username);
+      PlayerManager.Instance.friendIDs.Add(ID);
+      PlayerManager.Instance.friendNames.Add(allUsers.users[ID - 1].username);
       Debug.Log("Adding friend -> ID " + ID + " : " + allUsers.users[ID - 1].username);
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
       friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
       friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
     }
+    Debug.Log("PlayerManager friendIDs count: " + PlayerManager.Instance.friendIDs.Count);
     // Hide the overlay
     addFriendOverlay.hide();
   }
@@ -125,7 +148,7 @@ public class FriendsPanel : MonoBehaviour
   public void addFriend(string friendName)
   {
     // Check if already a friend
-    if (friendNames.Contains(friendName))
+    if (PlayerManager.Instance.friendNames.Contains(friendName))
     {
       addFriendOverlay.setAlert("Player is already your friend!");
     }
@@ -157,15 +180,15 @@ public class FriendsPanel : MonoBehaviour
           if (user.username == friendName)
           {
             userFound = true;
-            targetFriendID = int.Parse(user.id);
+            targetFriendID = user.id;
             break;
           }
         }
         if (userFound)
         {
           Debug.Log("Player found in server! Proceeding to add him to your friend list...");
-          friendIDs.Add(targetFriendID);
-          friendNames.Add(friendName);
+          PlayerManager.Instance.friendIDs.Add(targetFriendID);
+          PlayerManager.Instance.friendNames.Add(friendName);
           StartCoroutine(postFriendsToServer());
         }
         else
@@ -182,7 +205,7 @@ public class FriendsPanel : MonoBehaviour
     // POST to server
     string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/friends";
     FriendList newFriendList = new FriendList();
-    newFriendList.friends = new List<int>(friendIDs);
+    newFriendList.friends = new List<int>(PlayerManager.Instance.friendIDs);
     string newFriends = JsonUtility.ToJson(newFriendList);
     byte[] bytes = Encoding.UTF8.GetBytes(newFriends);
     UnityWebRequest request = new UnityWebRequest(url);
@@ -209,12 +232,12 @@ public class FriendsPanel : MonoBehaviour
   public void removeFriend(int removeID)
   {
     // Remove locally
-    for (int i = 0; i < friendIDs.Count; i++)
+    for (int i = 0; i < PlayerManager.Instance.friendIDs.Count; i++)
     {
-      if (friendIDs[i] == removeID)
+      if (PlayerManager.Instance.friendIDs[i] == removeID)
       {
-        friendIDs.RemoveAt(i);
-        friendNames.RemoveAt(i);
+        PlayerManager.Instance.friendIDs.RemoveAt(i);
+        PlayerManager.Instance.friendNames.RemoveAt(i);
         break;
       }
     }

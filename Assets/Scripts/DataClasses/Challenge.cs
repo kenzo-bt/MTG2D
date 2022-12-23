@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class User
+public class Challenge
 {
-  public int id;
-  public string username;
-  public string password;
+  public int challengerID;
+  public bool accepted;
 }

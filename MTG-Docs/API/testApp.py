@@ -23,6 +23,7 @@ class User(db.Model):
     state = db.Column(db.Text)
     password = db.Column(db.Text)
     friends = db.Column(db.Text)
+    challenges = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
@@ -128,3 +129,19 @@ def write_user_friends(id):
     user.friends = json.dumps(request.json['friends'])
     db.session.commit()
     return {'friends': json.loads(user.friends)}
+
+### User challenges view ###
+
+@app.route('/users/<id>/challenges')
+def get_user_challenges(id):
+    user =  User.query.get_or_404(id)
+    if user.challenges is None:
+        return {'challenges': []}
+    return {'challenges': json.loads(user.challenges)}
+
+@app.route('/users/<id>/challenges', methods=['POST'])
+def write_user_challenges(id):
+    user = User.query.get(id)
+    user.challenges = json.dumps(request.json['challenges'])
+    db.session.commit()
+    return {'challenges': json.loads(user.challenges)}

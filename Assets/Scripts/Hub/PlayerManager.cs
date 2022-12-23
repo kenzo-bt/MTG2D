@@ -16,9 +16,11 @@ public class PlayerManager : MonoBehaviour
     public string serverUrl;
     public string apiUrl;
     public string serverImageFileExtension;
-    public string myID;
-    public string opponentID;
-    public List<int> friends;
+    public int myID;
+    public int opponentID;
+    public List<int> friendIDs;
+    public List<string> friendNames;
+    public bool loggedIn;
 
     private void Awake()
     {
@@ -43,10 +45,12 @@ public class PlayerManager : MonoBehaviour
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
       loadPlayerDecks();
 
-      myID = "1";
-      opponentID = "2";
+      myID = -1;
 
-      friends = new List<int>();
+      friendIDs = new List<int>();
+      friendNames = new List<string>();
+
+      loggedIn = false;
     }
 
     // Load in card collection

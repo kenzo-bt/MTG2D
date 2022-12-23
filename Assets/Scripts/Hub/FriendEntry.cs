@@ -49,4 +49,9 @@ public class FriendEntry : MonoBehaviour
     {
       panelObject.GetComponent<FriendsPanel>().removeFriend(friendId);
     }
+
+    public void sendChallenge()
+    {
+      panelObject.GetComponent<Matchmaker>().sendChallenge(friendId);
+    }
 }
