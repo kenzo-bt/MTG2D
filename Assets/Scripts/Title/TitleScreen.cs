@@ -37,6 +37,10 @@ public class TitleScreen : MonoBehaviour
         normalColor = new Color(1f, 1f, 1f, 1f);
         serverCommunicator = GetComponent<JsonNetworking>();
         hasher = GetComponent<Hasher>();
+        if (PlayerPrefs.HasKey("lastUser"))
+        {
+          username.text = PlayerPrefs.GetString("lastUser");
+        }
         StartCoroutine(FadeTitleToFullAlpha(2f, title));
     }
 
@@ -137,6 +141,7 @@ public class TitleScreen : MonoBehaviour
             {
               status.color = normalColor;
               status.text = "Successfully authenticated\nLogging in...";
+              PlayerPrefs.SetString("lastUser", username.text);
               yield return new WaitForSeconds(3);
               StartCoroutine(setUserID(username.text));
               hideTitleScreen();
@@ -159,6 +164,7 @@ public class TitleScreen : MonoBehaviour
             // Update status and hide title screen
             status.color = normalColor;
             status.text = "New user created\nLogging in...";
+            PlayerPrefs.SetString("lastUser", username.text);
             yield return new WaitForSeconds(3);
             StartCoroutine(setUserID(username.text));
             hideTitleScreen();
