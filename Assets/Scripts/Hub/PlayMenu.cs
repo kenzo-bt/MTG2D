@@ -36,6 +36,7 @@ public class PlayMenu : MonoBehaviour
         if (PlayerManager.Instance.friendIDs[i] == PlayerManager.Instance.opponentID)
         {
           oppName = PlayerManager.Instance.friendNames[i];
+          PlayerManager.Instance.opponentName = oppName;
         }
       }
       opponentName.GetComponent<TMP_Text>().text = oppName;

@@ -153,6 +153,7 @@ public class TitleScreen : MonoBehaviour
               status.text = "Successfully authenticated\nLogging in...";
               PlayerPrefs.SetString("lastUser", username.text);
               PlayerManager.Instance.loggedIn = true;
+              PlayerManager.Instance.myName = username.text;
               yield return new WaitForSeconds(3);
               StartCoroutine(setUserID(username.text));
               hideTitleScreen();

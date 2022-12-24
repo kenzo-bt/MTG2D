@@ -18,9 +18,12 @@ public class PlayerManager : MonoBehaviour
     public string serverImageFileExtension;
     public int myID;
     public int opponentID;
+    public string myName;
+    public string opponentName;
     public List<int> friendIDs;
     public List<string> friendNames;
     public bool loggedIn;
+    public string role;
 
     private void Awake()
     {
@@ -46,11 +49,10 @@ public class PlayerManager : MonoBehaviour
       loadPlayerDecks();
 
       myID = -1;
-
       friendIDs = new List<int>();
       friendNames = new List<string>();
-
       loggedIn = false;
+      role = "";
     }
 
     // Load in card collection

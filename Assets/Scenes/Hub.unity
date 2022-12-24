@@ -4744,9 +4744,12 @@ MonoBehaviour:
   serverImageFileExtension: 
   myID: 0
   opponentID: 0
+  myName: 
+  opponentName: 
   friendIDs: 
   friendNames: []
   loggedIn: 0
+  role: 
 --- !u!1 &1551000116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5243,7 +5246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: GameSession
+      value: LoadingScreen
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

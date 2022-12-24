@@ -145,3 +145,55 @@ def write_user_challenges(id):
     user.challenges = json.dumps(request.json['challenges'])
     db.session.commit()
     return {'challenges': json.loads(user.challenges)}
+
+@app.route('/users/<id>/challenges/<chId>')
+def get_user_challenge(id, chId):
+    user =  User.query.get_or_404(id)
+    challenges = json.loads(user.challenges)
+    for challenge in challenges:
+        for key, value in challenge.items():
+            if key == 'challengerID' and str(value) == chId:
+                return challenge
+    return {}
+
+@app.route('/users/<id>/challenges/<chId>', methods=['POST'])
+def write_user_challenge(id, chId):
+    user = User.query.get(id)
+    incomingChallenge = request.json
+    incomingValue = None
+    for key, value in incomingChallenge.items():
+        if key == 'accepted':
+            incomingValue = value
+            break
+    allChallenges = json.loads(user.challenges if user.challenges != None else "[]")
+    challengeFound = False
+    for challenge in allChallenges:
+        for key, value in challenge.items():
+            if key == 'challengerID' and str(value) == chId:
+                challenge['accepted'] = incomingValue
+                challengeFound = True
+                break
+        if challengeFound:
+            break
+    if not challengeFound:
+        allChallenges.append(incomingChallenge)
+    user.challenges = json.dumps(allChallenges)
+    db.session.commit()
+    return incomingChallenge
+
+@app.route('/users/<id>/challenges/<chId>', methods=['DELETE'])
+def delete_user_challenge(id, chId):
+    user = User.query.get(id)
+    allChallenges = json.loads(user.challenges if user.challenges != None else "[]")
+    for challenge in allChallenges[:]:
+        for key, value in challenge.items():
+            if key == 'challengerID' and str(value) == chId:
+                challengeFound = True
+                break
+        if challengeFound:
+            allChallenges.remove(challenge)
+            break
+
+    user.challenges = json.dumps(allChallenges)
+    db.session.commit()
+    return {"Success": "Challenge deleted successfully"}

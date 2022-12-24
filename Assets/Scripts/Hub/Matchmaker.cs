@@ -66,6 +66,7 @@ public class Matchmaker : MonoBehaviour
       StartCoroutine(sendChallengeToServer(targetID));
     }
 
+    /*
     IEnumerator sendChallengeToServer(int targetID)
     {
       // Get challenges object from target player
@@ -116,6 +117,61 @@ public class Matchmaker : MonoBehaviour
             {
               Debug.Log("Challenge successfully sent and updated in server.");
               PlayerManager.Instance.opponentID = targetID;
+
+              waitOnChallengee();
+            }
+            // Dispose of the request to prevent memory leaks
+            postRequest.Dispose();
+          }
+          else {
+            Debug.Log("Challenge already exists on target player");
+          }
+        }
+      }
+    }
+    */
+
+    IEnumerator sendChallengeToServer(int targetID)
+    {
+      // Get my challenge information from target player
+      string url = PlayerManager.Instance.apiUrl + "users/" + targetID + "/challenges/" + PlayerManager.Instance.myID;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          Debug.Log(serverJson);
+          // Add new challenge if not already in existence
+          if (serverJson.Trim() == "{}")
+          {
+            Debug.Log("Challenge did not previously exist.");
+            Challenge newChallenge = new Challenge();
+            newChallenge.challengerID = PlayerManager.Instance.myID;
+            newChallenge.accepted = 0;
+            // POST to server
+            url = PlayerManager.Instance.apiUrl + "users/" + targetID + "/challenges/" + PlayerManager.Instance.myID;
+            string updatedChallenges = JsonUtility.ToJson(newChallenge);
+            byte[] bytes = Encoding.UTF8.GetBytes(updatedChallenges);
+            UnityWebRequest postRequest = new UnityWebRequest(url);
+            postRequest.method = UnityWebRequest.kHttpVerbPOST;
+            postRequest.uploadHandler = new UploadHandlerRaw (bytes);
+            postRequest.uploadHandler.contentType = "application/json";
+            yield return postRequest.SendWebRequest();
+            // Debug the results
+            if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+            {
+              Debug.Log(postRequest.error);
+            }
+            else
+            {
+              Debug.Log("Challenge successfully sent and updated in server.");
+              PlayerManager.Instance.opponentID = targetID;
+
               waitOnChallengee();
             }
             // Dispose of the request to prevent memory leaks
@@ -140,9 +196,8 @@ public class Matchmaker : MonoBehaviour
 
     IEnumerator checkIfOpponentAccepted()
     {
-      Debug.Log("Running checkIfOpponentAccepted() on ID: " + PlayerManager.Instance.opponentID);
-      // Get opponent challenges
-      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.opponentID + "/challenges";
+      // Get my challenge from opponent challenges
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.opponentID + "/challenges/" + PlayerManager.Instance.myID;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -153,30 +208,26 @@ public class Matchmaker : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          AllChallenges oppChallenges = JsonUtility.FromJson<AllChallenges>(serverJson);
-          // Check if my challenge has been accepted
-          foreach (Challenge ch in oppChallenges.challenges)
+          if (serverJson.Trim() == "{}") // User has delted your challenge request
           {
-            if (ch.challengerID == PlayerManager.Instance.myID)
+            Debug.Log("Opponent has declined your challenge");
+            CancelInvoke();
+          }
+          else
+          {
+            Challenge myChallenge = JsonUtility.FromJson<Challenge>(serverJson);
+            if (myChallenge.accepted == 1)
             {
-              if (ch.accepted == 1)
-              {
-                Debug.Log("Opponent has accepted my challenge!");
-                Debug.Log("Opening play planel");
-                // Show play panel with opponent name and enable play button?
-                playMenu.GetComponent<PlayMenu>().show();
-                CancelInvoke();
-              }
-              else if (ch.accepted == -1)
-              {
-                Debug.Log("Opponent has actively refused your challenge");
-                CancelInvoke();
-              }
-              else
-              {
-                Debug.Log("Opponent has not yet accepted the challenge");
-              }
-              break;
+              Debug.Log("Opponent has accepted my challenge!");
+              Debug.Log("Opening play planel");
+              PlayerManager.Instance.role = "challenger";
+              // Show play panel with opponent name and enable play button?
+              playMenu.GetComponent<PlayMenu>().show();
+              CancelInvoke();
+            }
+            else
+            {
+              Debug.Log("Opponent has not yet accepted the challenge");
             }
           }
         }
@@ -191,7 +242,7 @@ public class Matchmaker : MonoBehaviour
     IEnumerator acceptChallengeInServer(int id)
     {
       // Get challenges object from target player
-      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges";
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges/" + id;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -202,24 +253,19 @@ public class Matchmaker : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          AllChallenges myChallenges = JsonUtility.FromJson<AllChallenges>(serverJson);
-          bool acceptedChallenge = false;
-          foreach (Challenge ch in myChallenges.challenges)
+          if (serverJson.Trim() == "{}")
           {
-            if (ch.challengerID == id)
-            {
-              ch.accepted = 1;
-              acceptedChallenge = true;
-              break;
-            }
+            Debug.Log("Challenge from user with ID " + id + " was not found in your challenge list.");
           }
-          if (acceptedChallenge)
+          else
           {
+            Challenge opponentChallenge = JsonUtility.FromJson<Challenge>(serverJson);
+            opponentChallenge.accepted = 1;
             Debug.Log("Challenge was accepted.");
             // POST updated challenges to server
-            url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges";
-            string updatedChallenges = JsonUtility.ToJson(myChallenges);
-            byte[] bytes = Encoding.UTF8.GetBytes(updatedChallenges);
+            url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges/" + id;
+            string updatedChallenge = JsonUtility.ToJson(opponentChallenge);
+            byte[] bytes = Encoding.UTF8.GetBytes(updatedChallenge);
             UnityWebRequest postRequest = new UnityWebRequest(url);
             postRequest.method = UnityWebRequest.kHttpVerbPOST;
             postRequest.uploadHandler = new UploadHandlerRaw (bytes);
@@ -233,15 +279,12 @@ public class Matchmaker : MonoBehaviour
             else
             {
               Debug.Log("Challenges updated in server.");
-              // Show play panel with opponent name and enable play button?
+              // Show play panel with opponent name
+              PlayerManager.Instance.role = "guest";
               playMenu.GetComponent<PlayMenu>().show();
             }
             // Dispose of the request to prevent memory leaks
             postRequest.Dispose();
-          }
-          else
-          {
-            Debug.Log("Tried to accept challenge, but it was not found.");
           }
         }
       }
