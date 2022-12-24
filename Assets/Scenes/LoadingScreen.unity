@@ -309,6 +309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRole: 
   statusObject: {fileID: 51152994}
+  versusScreenObject: {fileID: 1886497402}
+  yourName: {fileID: 1617238515}
+  opponentName: {fileID: 756764778}
 --- !u!1 &408368137
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,13 +811,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886497403}
+  - component: {fileID: 1886497404}
   m_Layer: 0
   m_Name: Versus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1886497403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -838,6 +842,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1886497404
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886497402}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1953055734
 GameObject:
   m_ObjectHideFlags: 0

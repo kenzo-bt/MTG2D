@@ -178,6 +178,7 @@ public class TitleScreen : MonoBehaviour
             status.text = "New user created\nLogging in...";
             PlayerPrefs.SetString("lastUser", username.text);
             PlayerManager.Instance.loggedIn = true;
+            PlayerManager.Instance.myName = username.text;
             yield return new WaitForSeconds(3);
             StartCoroutine(setUserID(username.text));
             hideTitleScreen();
@@ -209,6 +210,19 @@ public class TitleScreen : MonoBehaviour
               friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
               break;
             }
+          }
+          // Delete all challenges for this user
+          url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges";
+          UnityWebRequest deleteRequest = new UnityWebRequest(url);
+          deleteRequest.method = UnityWebRequest.kHttpVerbDELETE;
+          yield return deleteRequest.SendWebRequest();
+          if (deleteRequest.result == UnityWebRequest.Result.ConnectionError || deleteRequest.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(deleteRequest.error);
+          }
+          else
+          {
+            Debug.Log("Deleted all challenges for this user...");
           }
         }
       }

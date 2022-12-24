@@ -146,6 +146,13 @@ def write_user_challenges(id):
     db.session.commit()
     return {'challenges': json.loads(user.challenges)}
 
+@app.route('/users/<id>/challenges', methods=['DELETE'])
+def delete_user_challenges(id):
+    user = User.query.get(id)
+    user.challenges = "[]"
+    db.session.commit()
+    return {'challenges': json.loads(user.challenges)}
+
 @app.route('/users/<id>/challenges/<chId>')
 def get_user_challenge(id, chId):
     user =  User.query.get_or_404(id)
@@ -185,6 +192,7 @@ def write_user_challenge(id, chId):
 def delete_user_challenge(id, chId):
     user = User.query.get(id)
     allChallenges = json.loads(user.challenges if user.challenges != None else "[]")
+    challengeFound = False
     for challenge in allChallenges[:]:
         for key, value in challenge.items():
             if key == 'challengerID' and str(value) == chId:

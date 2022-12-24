@@ -10,12 +10,19 @@ public class LoadingManager : MonoBehaviour
 {
     public string myRole;
     public GameObject statusObject;
+    public GameObject versusScreenObject;
+    public GameObject yourName;
+    public GameObject opponentName;
+    private CanvasGroup vsScreen;
     private TMP_Text status;
     // Start is called before the first frame update
     void Start()
     {
       status = statusObject.GetComponent<TMP_Text>();
       myRole = PlayerManager.Instance.role;
+      vsScreen = versusScreenObject.GetComponent<CanvasGroup>();
+      yourName.GetComponent<TMP_Text>().text = PlayerManager.Instance.myName;
+      opponentName.GetComponent<TMP_Text>().text = PlayerManager.Instance.opponentName;
       if (myRole == "challenger")
       {
         InvokeRepeating("checkIfGuestReady", 3.0f, 3.0f);
@@ -84,9 +91,7 @@ public class LoadingManager : MonoBehaviour
                 Debug.Log("Accepted flag set to 3...");
                 CancelInvoke();
                 // Proceed to game session...
-                status.text = "Proceeding to game session...";
-                yield return new WaitForSeconds(3);
-                SceneManager.LoadScene("GameSession");
+                enterGameSession();
               }
               // Dispose of the request to prevent memory leaks
               postRequest.Dispose();
@@ -184,10 +189,34 @@ public class LoadingManager : MonoBehaviour
       }
       else
       {
-        // Enter the game
-        status.text = "Proceeding to game session...";
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("GameSession");
+        enterGameSession();
       }
+    }
+
+    public void enterGameSession()
+    {
+      // VS screen fade-in-out and change scene to game session
+      StartCoroutine(readyToPlayAnimation());
+    }
+
+    IEnumerator readyToPlayAnimation()
+    {
+      float t = 2f;
+      status.text = "";
+      yield return new WaitForSeconds(1);
+      vsScreen.alpha = 0;
+      while (vsScreen.alpha < 1.0f)
+      {
+          vsScreen.alpha = vsScreen.alpha + (Time.deltaTime / t);
+          yield return null;
+      }
+      yield return new WaitForSeconds(2);
+      while (vsScreen.alpha > 0f)
+      {
+          vsScreen.alpha = vsScreen.alpha - (Time.deltaTime / t);
+          yield return null;
+      }
+      yield return new WaitForSeconds(1);
+      //SceneManager.LoadScene("GameSession");
     }
 }

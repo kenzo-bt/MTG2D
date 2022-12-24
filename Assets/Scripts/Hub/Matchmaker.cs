@@ -151,7 +151,7 @@ public class Matchmaker : MonoBehaviour
           else
           {
             Challenge myChallenge = JsonUtility.FromJson<Challenge>(serverJson);
-            if (myChallenge.accepted == 1)
+            if (myChallenge.accepted == 1 || myChallenge.accepted == 2)
             {
               Debug.Log("Opponent has accepted my challenge!");
               Debug.Log("Opening play planel");
