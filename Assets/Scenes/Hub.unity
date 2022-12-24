@@ -2392,7 +2392,7 @@ GameObject:
   - component: {fileID: 690239815}
   - component: {fileID: 690239814}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: OpponentName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6728,6 +6728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectPanel: {fileID: 1062261499}
   deckBrowser: {fileID: 1689399941}
+  opponentName: {fileID: 690239812}
 --- !u!1 &1941166044 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}

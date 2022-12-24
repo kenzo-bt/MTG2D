@@ -6,8 +6,6 @@ using UnityEngine.Networking;
 
 public class Matchmaker : MonoBehaviour
 {
-    private bool waiting;
-    private bool opponentAccepted;
     public GameObject playMenu;
     // Once the user has logged in, we can ping the server every X seconds to check if we have open challenges (Idle)
     // Start is called before the first frame update
@@ -132,27 +130,17 @@ public class Matchmaker : MonoBehaviour
 
     public void waitOnChallengee()
     {
-      opponentAccepted = false;
-      waiting = true;
-      while (waiting)
-      {
-        InvokeRepeating("checkIfOpponentAccepted", 5.0f, 5.0f);
-      }
-      // What to do once the opponent has accepted/rejected my challenge
-      if (opponentAccepted)
-      {
-        Debug.Log("Opponent has accepted my challenge!");
-        Debug.Log("Opening play planel");
-        // Show play panel with opponent name and enable play button?
-        playMenu.GetComponent<PlayMenu>().show();
-      }
-      else {
-        Debug.Log("Opponent has actively refused your challenge");
-      }
+      InvokeRepeating("checkIfAccepted", 5.0f, 5.0f);
+    }
+
+    public void checkIfAccepted()
+    {
+      StartCoroutine(checkIfOpponentAccepted());
     }
 
     IEnumerator checkIfOpponentAccepted()
     {
+      Debug.Log("Running checkIfOpponentAccepted() on ID: " + PlayerManager.Instance.opponentID);
       // Get opponent challenges
       string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.opponentID + "/challenges";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
@@ -173,13 +161,16 @@ public class Matchmaker : MonoBehaviour
             {
               if (ch.accepted == 1)
               {
-                waiting = false;
-                opponentAccepted = true;
+                Debug.Log("Opponent has accepted my challenge!");
+                Debug.Log("Opening play planel");
+                // Show play panel with opponent name and enable play button?
+                playMenu.GetComponent<PlayMenu>().show();
+                CancelInvoke();
               }
               else if (ch.accepted == -1)
               {
-                waiting = false;
-                opponentAccepted = false;
+                Debug.Log("Opponent has actively refused your challenge");
+                CancelInvoke();
               }
               else
               {

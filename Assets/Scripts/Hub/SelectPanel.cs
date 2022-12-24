@@ -46,6 +46,7 @@ public class SelectPanel : MonoBehaviour
 
     public void showPanel()
     {
+
       targetPosition = new Vector3(showPosX, 0f, 0f);
     }
 
