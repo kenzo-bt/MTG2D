@@ -6,5 +6,5 @@ using UnityEngine;
 public class Challenge
 {
   public int challengerID;
-  public bool accepted;
+  public int accepted; // -1 Declined 0 Pending 1 Accepted 2 Ready
 }

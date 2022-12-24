@@ -120,7 +120,7 @@ def write_user_state(id):
 def get_user_friends(id):
     user =  User.query.get_or_404(id)
     if user.friends is None:
-        return {}
+        return {'friends': []}
     return {'friends': json.loads(user.friends)}
 
 @app.route('/users/<id>/friends', methods=['POST'])

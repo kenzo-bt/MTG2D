@@ -8,6 +8,7 @@ public class FriendEntry : MonoBehaviour
 {
     public GameObject statusObject;
     public GameObject challengeObject;
+    public GameObject acceptObject;
     public GameObject nameObject;
     public GameObject panelObject;
     private TMP_Text friendText;
@@ -15,8 +16,8 @@ public class FriendEntry : MonoBehaviour
     private Image challengeIcon;
     private Color onlineColor;
     private Color offlineColor;
-    private string friendName;
-    private int friendId;
+    public string friendName;
+    public int friendID;
 
     void Awake()
     {
@@ -36,7 +37,7 @@ public class FriendEntry : MonoBehaviour
     public void setData(string name, int id)
     {
       friendName = name;
-      friendId = id;
+      friendID = id;
       friendText.text = friendName;
     }
 
@@ -47,11 +48,32 @@ public class FriendEntry : MonoBehaviour
 
     public void removeFriend()
     {
-      panelObject.GetComponent<FriendsPanel>().removeFriend(friendId);
+      panelObject.GetComponent<FriendsPanel>().removeFriend(friendID);
     }
 
     public void sendChallenge()
     {
-      panelObject.GetComponent<Matchmaker>().sendChallenge(friendId);
+      panelObject.GetComponent<Matchmaker>().sendChallenge(friendID);
+    }
+
+    public void turnToChallenger()
+    {
+      challengeObject.SetActive(false);
+      acceptObject.SetActive(true);
+    }
+
+    public void turnToIdle()
+    {
+      challengeObject.SetActive(true);
+      acceptObject.SetActive(false);
+    }
+
+    public void acceptChallenge()
+    {
+      // Set opponent ID to the ID of this player
+      PlayerManager.Instance.opponentID = friendID;
+      Debug.Log("OpponentID: " + PlayerManager.Instance.opponentID);
+      // Set the challenge to accepted in the server
+      panelObject.GetComponent<Matchmaker>().acceptChallenge(friendID);
     }
 }
