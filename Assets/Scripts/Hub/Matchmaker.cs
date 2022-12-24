@@ -46,7 +46,14 @@ public class Matchmaker : MonoBehaviour
             if (child.gameObject.name != "AddFriend")
             {
               FriendEntry friend = child.gameObject.GetComponent<FriendEntry>();
-              friend.turnToIdle();
+              if (friend.sentRequest)
+              {
+                friend.turnToSent();
+              }
+              else
+              {
+                friend.turnToIdle();
+              }
               foreach (Challenge ch in myChallenges.challenges)
               {
                 if (ch.challengerID == friend.friendID)
@@ -145,8 +152,10 @@ public class Matchmaker : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           if (serverJson.Trim() == "{}") // User has delted your challenge request
           {
-            Debug.Log("Opponent has declined your challenge");
+            Debug.Log("Challenge no longer exists.");
             CancelInvoke();
+            // Turn friend entry back to the idle state
+            GetComponent<FriendsPanel>().turnToIdle(PlayerManager.Instance.opponentID);
           }
           else
           {
@@ -156,7 +165,11 @@ public class Matchmaker : MonoBehaviour
               Debug.Log("Opponent has accepted my challenge!");
               Debug.Log("Opening play planel");
               PlayerManager.Instance.role = "challenger";
-              // Show play panel with opponent name and enable play button?
+              // Hide friends panel
+              GetComponent<FriendsPanel>().hidePanel();
+              // Turn friend entry back to the idle state
+              GetComponent<FriendsPanel>().turnToIdle(PlayerManager.Instance.opponentID);
+              // Show play panel with opponent name
               playMenu.GetComponent<PlayMenu>().show();
               CancelInvoke();
             }
@@ -214,6 +227,8 @@ public class Matchmaker : MonoBehaviour
             else
             {
               Debug.Log("Challenges updated in server.");
+              // Hide friends panel
+              GetComponent<FriendsPanel>().hidePanel();
               // Show play panel with opponent name
               PlayerManager.Instance.role = "guest";
               playMenu.GetComponent<PlayMenu>().show();
@@ -223,5 +238,28 @@ public class Matchmaker : MonoBehaviour
           }
         }
       }
+    }
+
+    public void cancelChallenge(int id)
+    {
+      StartCoroutine(cancelChallengeInServer(id));
+    }
+
+    IEnumerator cancelChallengeInServer(int id)
+    {
+      // Send a DELETE http request to the API for the given challenge
+      string url = PlayerManager.Instance.apiUrl + "users/" + id + "/challenges/" + PlayerManager.Instance.myID;
+      UnityWebRequest deleteRequest = new UnityWebRequest(url);
+      deleteRequest.method = UnityWebRequest.kHttpVerbDELETE;
+      yield return deleteRequest.SendWebRequest();
+      if (deleteRequest.result == UnityWebRequest.Result.ConnectionError || deleteRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(deleteRequest.error);
+      }
+      else
+      {
+        Debug.Log("Challenge successfully deleted");
+      }
+      // Stop searching for acceptance?
     }
 }

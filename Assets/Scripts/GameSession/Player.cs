@@ -7,10 +7,12 @@ public class Player : MonoBehaviour
     public GameObject deckObject;
     public GameObject handObject;
     private Hand hand;
+    private Hasher hasher;
 
     // Start is called before the first frame update
     void Start()
     {
+      hasher = GetComponent<Hasher>();
       hand = handObject.GetComponent<Hand>();
     }
 
@@ -44,6 +46,8 @@ public class Player : MonoBehaviour
 
       BoardState myState = new BoardState();
       myState.hand = handIds;
+      myState.hash = ""; // Standardize to avoid garbage values before hashing
+      myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
       return JsonUtility.ToJson(myState);
     }

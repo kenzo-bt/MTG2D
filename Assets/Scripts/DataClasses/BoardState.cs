@@ -6,6 +6,7 @@ using UnityEngine;
 public class BoardState
 {
   public List<string> hand;
+  public string hash;
 
   public void debugState()
   {

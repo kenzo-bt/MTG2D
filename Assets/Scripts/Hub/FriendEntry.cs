@@ -10,7 +10,9 @@ public class FriendEntry : MonoBehaviour
     public GameObject challengeObject;
     public GameObject acceptObject;
     public GameObject nameObject;
+    public GameObject sentObject;
     public GameObject panelObject;
+    public GameObject cancelObject;
     private TMP_Text friendText;
     private Image status;
     private Image challengeIcon;
@@ -18,9 +20,11 @@ public class FriendEntry : MonoBehaviour
     private Color offlineColor;
     public string friendName;
     public int friendID;
+    public bool sentRequest;
 
     void Awake()
     {
+      sentRequest = false;
       friendText = nameObject.GetComponent<TMP_Text>();
       status = statusObject.GetComponent<Image>();
       challengeIcon = challengeObject.GetComponent<Image>();
@@ -53,27 +57,58 @@ public class FriendEntry : MonoBehaviour
 
     public void sendChallenge()
     {
+      turnToSent();
       panelObject.GetComponent<Matchmaker>().sendChallenge(friendID);
     }
 
     public void turnToChallenger()
     {
+      sentRequest = false;
       challengeObject.SetActive(false);
       acceptObject.SetActive(true);
+      sentObject.SetActive(false);
     }
 
     public void turnToIdle()
     {
+      sentRequest = false;
       challengeObject.SetActive(true);
       acceptObject.SetActive(false);
+      sentObject.SetActive(false);
+    }
+
+    public void turnToSent()
+    {
+      sentRequest = true;
+      challengeObject.SetActive(false);
+      acceptObject.SetActive(false);
+      sentObject.SetActive(true);
     }
 
     public void acceptChallenge()
     {
       // Set opponent ID to the ID of this player
       PlayerManager.Instance.opponentID = friendID;
-      Debug.Log("OpponentID: " + PlayerManager.Instance.opponentID);
       // Set the challenge to accepted in the server
       panelObject.GetComponent<Matchmaker>().acceptChallenge(friendID);
+    }
+
+    public void showCancel()
+    {
+      cancelObject.SetActive(true);
+    }
+
+    public void hideCancel()
+    {
+      cancelObject.SetActive(false);
+    }
+
+    // Cancel a challenge sent
+    public void cancelChallenge()
+    {
+      // Delete the challenge from the server
+      panelObject.GetComponent<Matchmaker>().cancelChallenge(friendID);
+      // Turn entry into idle state
+      turnToIdle();
     }
 }

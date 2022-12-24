@@ -105,7 +105,9 @@ def delete_user(id):
 @app.route('/users/<id>/state')
 def get_user_state(id):
     user =  User.query.get_or_404(id)
-    return {'hand': json.loads(user.state)['hand']}
+    if user.state is None:
+        return {'hand': [], 'hash': ''}
+    return json.loads(user.state)
 
 @app.route('/users/<id>/state', methods=['POST'])
 def write_user_state(id):
@@ -113,6 +115,20 @@ def write_user_state(id):
     user.state = json.dumps(request.json)
     db.session.commit()
     return {'username': user.username, 'newState': json.loads(user.state)}
+
+@app.route('/users/<id>/state', methods=['DELETE'])
+def delete_user_state(id):
+    user = User.query.get(id)
+    user.state = None
+    db.session.commit()
+    return {'Success': 'State successfully deleted.'}
+
+@app.route('/users/<id>/state/hash')
+def get_user_state_hash(id):
+    user =  User.query.get_or_404(id)
+    if user.state is None:
+        return ''
+    return json.loads(user.state)['hash']
 
 ### User friends view ###
 

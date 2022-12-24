@@ -12,6 +12,8 @@ public class GameState : MonoBehaviour
     public GameObject deckObject;
     public GameObject handObject;
     private Opponent opponent;
+    private Hasher hasher;
+    private string lastOpponentHash;
 
     private int playerID;
     private int opponentID;
@@ -19,6 +21,8 @@ public class GameState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      lastOpponentHash = "";
+      hasher = GetComponent<Hasher>();
       opponent = opponentObject.GetComponent<Opponent>();
       playerID = PlayerManager.Instance.myID;
       opponentID = PlayerManager.Instance.opponentID;
@@ -80,9 +84,8 @@ public class GameState : MonoBehaviour
 
     IEnumerator getOpponentStateFromServer()
     {
-      // Construct URL based on API requirements
-      string url = PlayerManager.Instance.apiUrl + "users/" + opponentID + "/state";
-
+      // Get only hash first and compare to last hash. If different, fetch new state
+      string url = PlayerManager.Instance.apiUrl + "users/" + opponentID + "/state/hash";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -92,11 +95,35 @@ public class GameState : MonoBehaviour
         }
         else
         {
-          Debug.Log("Successfully fetched opponent state from server");
-          string serverJson = request.downloadHandler.text;
-          BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
-          opponent.state.hand = new List<string>(oppState.hand);
-          opponent.updateBoard();
+          Debug.Log("Successfully fetched opponent state hash value.");
+          string opponentHash = request.downloadHandler.text;
+          if (opponentHash != lastOpponentHash)
+          {
+            // Fetch new state
+            url = PlayerManager.Instance.apiUrl + "users/" + opponentID + "/state";
+
+            using (UnityWebRequest stateRequest = UnityWebRequest.Get(url))
+            {
+              yield return stateRequest.SendWebRequest();
+              if (stateRequest.result == UnityWebRequest.Result.ConnectionError || stateRequest.result == UnityWebRequest.Result.ProtocolError)
+              {
+                Debug.Log(stateRequest.error);
+              }
+              else
+              {
+                Debug.Log("Successfully fetched new opponent state from server");
+                string serverJson = stateRequest.downloadHandler.text;
+                BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
+                opponent.state.hand = new List<string>(oppState.hand);
+                opponent.updateBoard();
+              }
+            }
+            // Update lastOpponentHash
+            lastOpponentHash = opponentHash;
+          }
+          else {
+            Debug.Log("Hashes matched. Not fetching full opponent state...");
+          }
         }
       }
     }

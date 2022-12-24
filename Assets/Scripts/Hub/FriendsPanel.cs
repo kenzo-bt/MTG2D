@@ -72,7 +72,6 @@ public class FriendsPanel : MonoBehaviour
       }
     }
     // Generate list locally
-    Debug.Log("Playermanager friendIDs: " + PlayerManager.Instance.friendIDs.Count);
     for (int i = 0; i < PlayerManager.Instance.friendIDs.Count; i++)
     {
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
@@ -140,8 +139,26 @@ public class FriendsPanel : MonoBehaviour
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
       friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
       friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
+      // Check if challenge exists to turn them into sent entries
+      url = PlayerManager.Instance.apiUrl + "users/" + ID + "/challenges/" + PlayerManager.Instance.myID;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          if (serverJson.Trim() != "{}")
+          {
+            Debug.Log("Turning to sent...");
+            friendInstance.GetComponent<FriendEntry>().turnToSent();
+          }
+        }
+      }
     }
-    Debug.Log("PlayerManager friendIDs count: " + PlayerManager.Instance.friendIDs.Count);
     // Hide the overlay
     addFriendOverlay.hide();
   }
@@ -245,5 +262,22 @@ public class FriendsPanel : MonoBehaviour
     }
     // Remove remotely
     StartCoroutine(postFriendsToServer());
+  }
+
+  // Turn a specific friend into the idle state
+  public void turnToIdle(int id)
+  {
+    foreach (Transform child in friendList.transform)
+    {
+      if (child.gameObject.name != "AddFriend")
+      {
+        FriendEntry friend = child.gameObject.GetComponent<FriendEntry>();
+        if (friend.friendID == id)
+        {
+          friend.turnToIdle();
+          break;
+        }
+      }
+    }
   }
 }

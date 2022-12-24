@@ -1178,6 +1178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739602575}
   - component: {fileID: 1739602574}
+  - component: {fileID: 1739602576}
   m_Layer: 5
   m_Name: GameState
   m_TagString: Untagged
@@ -1216,6 +1217,18 @@ Transform:
   m_Father: {fileID: 142631251}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1739602576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739602573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911b5596f56ed040abaf7aa706fed81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1876604087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1283,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
   state:
     hand: []
+    hash: 
 --- !u!1 &1996678663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,6 +1294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996678666}
   - component: {fileID: 1996678665}
+  - component: {fileID: 1996678667}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -1316,6 +1331,18 @@ Transform:
   m_Father: {fileID: 142631251}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996678667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996678663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911b5596f56ed040abaf7aa706fed81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2046315448
 GameObject:
   m_ObjectHideFlags: 0

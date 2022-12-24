@@ -48,7 +48,7 @@ public class TitleScreen : MonoBehaviour
       else {
         if (gameObject.activeSelf)
         {
-          friendsPanelObject.GetComponent<FriendsPanel>().loadFriendsLocal();
+          friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
           gameObject.SetActive(false);
         }
       }
