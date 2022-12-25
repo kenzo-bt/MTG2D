@@ -1,0 +1,2532 @@
+{
+    "setCode": "EXO",
+    "setName": "Exodus",
+    "cards": [
+        {
+            "id": "6eeb61a0-ea46-56f3-8118-89a32ffda0c4",
+            "name": "Allay",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nDestroy target enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "0c1cf88e-67ca-516a-b59e-8a45585741f0",
+            "name": "Angelic Blessing",
+            "text": "Target creature gets +3/+3 and gains flying until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "033d8210-7238-53cb-aacc-ac11cde3fc5e",
+            "name": "Cataclysm",
+            "text": "Each player chooses from the permanents he or she controls an artifact, a creature, an enchantment, and a land and sacrifices the rest.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "3a42c724-19e3-5ab5-989c-0d4d9cd8c17e",
+            "name": "Charging Paladin",
+            "text": "If Charging Paladin attacks, it gets +0/+3 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "7cb04fb1-81b8-5d7f-b91b-47c3d64770bb",
+            "name": "Convalescence",
+            "text": "During your upkeep, if you have 10 or less life, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "6f21746e-87ab-569a-bd4e-1ba4829c81b5",
+            "name": "Exalted Dragon",
+            "text": "Flying\nEach turn, Exalted Dragon cannot attack unless you sacrifice a land.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "18bbb8c7-336b-5eb2-b92f-6a3e34fd0943",
+            "name": "High Ground",
+            "text": "Each creature you control may block one additional creature. (All defense must be legal.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "1f029ee4-cb61-5510-99d6-99188b16885f",
+            "name": "Keeper of the Light",
+            "text": "o\nW, oc\nT: Gain 3 life. Play this ability only if you have less life than target opponent.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "5dff28fd-f1d1-503a-811a-f051f9f98a5e",
+            "name": "Kor Chant",
+            "text": "Redirect to target creature all damage dealt to any one creature you control from any one source.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "43d9cb2c-c26c-53db-886e-ffabb72cf3dd",
+            "name": "Limited Resources",
+            "text": "When Limited Resources comes into play, each player chooses five lands he or she controls and sacrifices the rest.\nAs long as there are ten or more lands in play, players cannot play lands.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "1ae3cbd6-2c63-5936-b3f4-db3dc63c7a9b",
+            "name": "Oath of Lieges",
+            "text": "During each player's upkeep, if that player controls fewer lands than target opponent, the player may search his or her library for a basic land card and put that land into play. The player shuffles his or her library afterwards.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "de082077-37e1-5ce8-a345-d22026487e27",
+            "name": "Paladin en-Vec",
+            "text": "First strike, protection from black, protection from red",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "f1253730-e2ff-5886-adff-efb29db76322",
+            "name": "Peace of Mind",
+            "text": "o\nW, Choose and discard a card: Gain 3 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "e4c27329-ba8b-5fc7-ba9c-d75bfadf805e",
+            "name": "Pegasus Stampede",
+            "text": "Buyback\u2014\nSacrifice a land. (You may sacrifice a land in addition to any other costs when you play this spell. If you do, put Pegasus Stampede into your hand instead of your graveyard as part of the spell's effect.)\nPut a Pegasus token into play. Treat this token as a 1/1 white creature with flying.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "9246de07-091e-50a5-9273-62e3225887b7",
+            "name": "Penance",
+            "text": "Choose a card from your hand and put that card on top of your library: Prevent all damage from a black or red source. (Treat further damage from that source normally.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "a0d36f71-25b1-5881-8f9d-323fb9f322d2",
+            "name": "Reaping the Rewards",
+            "text": "Buyback\u2014\nSacrifice a land. (You may sacrifice a land in addition to any other costs when you play this spell. If you do, put Reaping the Rewards into your hand instead of your graveyard as part of the spell's effect.)\nGain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "a52218c4-fc79-5fb4-b45b-a823db604f86",
+            "name": "Reconnaissance",
+            "text": "o0: Remove target attacking creature you control from combat and untap it. (That creature neither deals nor receives combat damage this turn.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "35967038-f8fc-5986-a9a1-cfdc37b93a71",
+            "name": "Shackles",
+            "text": "Enchanted creature does not untap during its controller's untap phase.\noo\nW Return Shackles to owner's hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "a2029eeb-3dcb-5099-9ecb-72cbcb505308",
+            "name": "Shield Mate",
+            "text": "Sacrifice Shield Mate: Target creature gets +0/+4 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "a8ec8b5b-b7d3-56d9-b770-55e960e9d9e2",
+            "name": "Soltari Visionary",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nIf Soltari Visionary damages any player, destroy target enchantment that player controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "81a73b58-804f-5ae7-81c8-cbd680f3af6e",
+            "name": "Soul Warden",
+            "text": "Whenever any other creature comes into play, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "de06f13a-708b-5155-adc8-40f2e3435cfe",
+            "name": "Standing Troops",
+            "text": "Attacking does not cause Standing Troops to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "7f0d3965-257b-59b2-8703-60218456ba9e",
+            "name": "Treasure Hunter",
+            "text": "When Treasure Hunter comes into play, you may return target artifact card from your graveyard to your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "0b1a698a-3c82-5cbf-91ba-0b7c7deb5a80",
+            "name": "Wall of Nets",
+            "text": "(Walls cannot attack.)\nAt end of combat, remove from the game all creatures blocked by Wall of Nets.\nIf Wall of Nets leaves play, return to play under their owners' control all creatures removed from the game with Wall of Nets.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "7c320fb6-1943-503f-9982-96600f413d28",
+            "name": "Welkin Hawk",
+            "text": "Flying\nIf Welkin Hawk is put into any graveyard from play, you may search your library for a Welkin Hawk card, reveal that card to all players, and put it into your hand. Shuffle your library afterwards.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b0ce8e40-719b-524e-ab32-4bdb2ae7ce49",
+            "name": "Zealots en-Dal",
+            "text": "During your upkeep, if all nonland permanents you control are white, gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "c52455af-fd3a-585a-a407-dd07d1625521",
+            "name": "Aether Tide",
+            "text": "Choose and discard X creature cards: Return X target creatures to their owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "1cebea0d-f8cb-5ee4-8915-e99f8bfb22f0",
+            "name": "Cunning",
+            "text": "Enchanted creature gets +3/+3.\nIf enchanted creature attacks or blocks, sacrifice Cunning at end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "0b550b62-2a83-5006-af52-79742c04633e",
+            "name": "Curiosity",
+            "text": "If enchanted creature damages an opponent, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "72a5c776-0d93-5434-b0db-6315ce28265a",
+            "name": "Dominating Licid",
+            "text": "o1o\nUo\nU, oc\nT: Dominating Licid loses this ability and becomes a creature enchantment that reads \"Gain control of enchanted creature\" instead of any other type of permanent. Move Dominating Licid onto target creature. You may pay o\nU to end this effect.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "e9206e1d-7c2b-518e-ae7e-3227770b6e50",
+            "name": "Ephemeron",
+            "text": "Flying\nChoose and discard a card: Return Ephemeron to owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "cf9f7ba1-13cd-592b-b50f-3e89ced55f60",
+            "name": "Equilibrium",
+            "text": "Whenever you successfully cast a creature spell, you may pay o1 to return target creature to owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "8806c719-4992-54dd-9263-320a344a0da9",
+            "name": "Ertai, Wizard Adept",
+            "text": "Ertai, Wizard Adept counts as a Wizard.\no2o\nUo\nU, oc\nT: Counter target spell. Play this ability as an interrupt.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "85b99b7d-7c0d-55dc-b660-26ac4768b42c",
+            "name": "Fade Away",
+            "text": "For each creature, that creature's controller pays o1 or sacrifices a permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "e5bc597e-b51e-56eb-8560-11056578d552",
+            "name": "Forbid",
+            "text": "Buyback\u2014\nChoose and discard two cards. (You may choose and discard two cards in addition to any other costs when you play this spell. If you do, put Forbid into your hand instead of your graveyard as part of the spell's effect.)\nCounter target spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "2059afee-3f3a-5587-babb-88dbccaee73c",
+            "name": "Keeper of the Mind",
+            "text": "o\nU, oc\nT: Draw a card. Play this ability only if target opponent has at least two more cards in hand than you.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "ce3ff3e3-6e11-5971-a8ef-ba3e9efb8329",
+            "name": "Killer Whale",
+            "text": "oo\nU Killer Whale gains flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "f4a69d59-475a-54d6-a6ee-661550289927",
+            "name": "Mana Breach",
+            "text": "Whenever any player plays a spell, that player returns a land he or she controls to owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "ef4340b6-d60e-5107-8868-bc12c502c1d4",
+            "name": "Merfolk Looter",
+            "text": "oc\nT: Draw a card, then choose and discard a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "47c1848a-9b00-568d-9a4d-5a3e24f0c914",
+            "name": "Mind Over Matter",
+            "text": "Choose and discard a card: Tap or untap target artifact, creature, or land.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{2}{U}{U}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "b10738f3-d416-5adc-8140-5c798aab779b",
+            "name": "Mirozel",
+            "text": "Flying\nIf Mirozel is the target of any spell or ability, return Mirozel to owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "027750b1-809f-5833-b5bc-3b04b2084cdd",
+            "name": "Oath of Scholars",
+            "text": "During each player's upkeep, if that player has fewer cards in hand than target opponent, the player may discard his or her hand and draw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "82d8a704-9fc8-5b07-98af-b36e3e1ec051",
+            "name": "Robe of Mirrors",
+            "text": "Enchanted creature cannot be the target of spells or abilities.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "26b4edef-e58f-5d8e-9c55-9e480473f4c9",
+            "name": "Rootwater Mystic",
+            "text": "o1oo\nU Look at the top card of target player's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "4807bd11-8a63-5129-bd56-85eb8d9933ec",
+            "name": "School of Piranha",
+            "text": "During your upkeep, pay o1o\nU or sacrifice School of Piranha.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b663c159-504d-5b95-9ae5-36a9034a3915",
+            "name": "Scrivener",
+            "text": "When Scrivener comes into play, you may return target instant or interrupt card from your graveyard to your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "30cf7f9c-81d9-52a8-85fd-8c6e4575cddf",
+            "name": "Thalakos Drifters",
+            "text": "Choose and discard a card: Thalakos Drifters gains shadow until end of turn. (This creature can block or be blocked by only creatures with shadow.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "58a812dc-9d44-5dba-b3a1-f7bf93ce619b",
+            "name": "Thalakos Scout",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nChoose and discard a card: Return Thalakos Scout to owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b913f6ed-3c82-5173-92b8-81b31b0f502b",
+            "name": "Theft of Dreams",
+            "text": "For each tapped creature target opponent controls, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "ada1ef96-1161-5cd3-a732-e58b76608321",
+            "name": "Treasure Trove",
+            "text": "o2o\nUoo\nU Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "120575e6-ed6a-5568-8e67-27e33ed308e4",
+            "name": "Wayward Soul",
+            "text": "Flying\noo\nU Put Wayward Soul on top of owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b41ab697-6f63-5d7b-be26-e9f28150d72a",
+            "name": "Whiptongue Frog",
+            "text": "oo\nU Whiptongue Frog gains flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "37430fe8-172d-596f-b71e-066941598242",
+            "name": "Carnophage",
+            "text": "During your upkeep, pay 1 life or tap Carnophage.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "286685ac-0c97-5df5-a51f-d6782b951e17",
+            "name": "Cat Burglar",
+            "text": "o2o\nB, oc\nT: Target player chooses and discards a card. Play this ability as a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "28af757d-5e16-5725-9a81-d3b8b1bd97d8",
+            "name": "Culling the Weak",
+            "text": "Sacrifice a creature: Add o\nBo\nBo\nBo\nB to your mana pool.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "7fe15dd1-1b85-5c6e-9819-40627fe20211",
+            "name": "Cursed Flesh",
+            "text": "Enchanted creature gets -1/-1 and cannot be blocked except by artifact creatures and black creatures.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "6ff71206-c05c-5ade-a42b-13cbb4f9ae4d",
+            "name": "Dauthi Cutthroat",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\no1o\nB, oc\nT: Destroy target creature with shadow.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "66abba6d-cbcd-50bb-8abb-72252187ab64",
+            "name": "Dauthi Jackal",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\no\nBo\nB, Sacrifice Dauthi Jackal: Destroy target blocking creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "0e984450-ed46-5b17-ab0f-f589cdab2312",
+            "name": "Dauthi Warlord",
+            "text": "Shadow (This creature can block or be blocked by only creatures with shadow.)\nDauthi Warlord has power equal to the number of creatures with shadow in play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "3bbed77b-5352-5dcd-88a1-00eec600e728",
+            "name": "Death's Duet",
+            "text": "Return two target creature cards from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b11f15be-6184-56f2-9611-829df104777d",
+            "name": "Entropic Specter",
+            "text": "Flying\nEntropic Specter has power and toughness each equal to the number of cards in target opponent's hand.\nIf Entropic Specter damages any player, that player chooses and discards a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "053f3c6c-5bfb-5f53-90bb-56f5b1ff94f5",
+            "name": "Fugue",
+            "text": "Target player chooses and discards three cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "393266ac-2012-55e4-a3dc-d3634465013f",
+            "name": "Grollub",
+            "text": "For each 1 damage dealt to Grollub, each opponent gains 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "67ac1d38-e935-5955-a8a1-3860587eadd2",
+            "name": "Hatred",
+            "text": "Pay X life: Target creature gets +X/+0 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "3990fc5f-b823-51f1-a8de-c5b75c39665b",
+            "name": "Keeper of the Dead",
+            "text": "o\nB, oc\nT: Destroy target nonblack creature. Play this ability only if that creature's controller has at least two fewer creature cards in his or her graveyard than you have in yours.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "f18ec648-87bc-5597-91e5-797034de01ab",
+            "name": "Mind Maggots",
+            "text": "When Mind Maggots comes into play, choose and discard any number of creature cards. For each card discarded this way, put two +1/+1 counters on Mind Maggots.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "23aa6a30-f7de-5168-9e71-d87aa6cfa6e7",
+            "name": "Nausea",
+            "text": "All creatures get -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "676d1dff-2257-5a3b-9fe6-f7af3d15ceae",
+            "name": "Necrologia",
+            "text": "Play Necrologia only during your discard phase.\nPay X life: Draw X cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "a35339cf-7b5c-569d-bcee-2d00d5929523",
+            "name": "Oath of Ghouls",
+            "text": "During each player's upkeep, if there are more creature cards in that player's graveyard than in target opponent's graveyard, the player may return a creature card from his or her graveyard to his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "c29b0822-ffec-5ab8-af54-61e9bea876bd",
+            "name": "Pit Spawn",
+            "text": "First strike\nDuring your upkeep, pay o\nBo\nB or sacrifice Pit Spawn.\nIf Pit Spawn damages any creature, remove that creature from the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "5b7fdf35-7a82-5481-a97d-ff2c87e43afd",
+            "name": "Plaguebearer",
+            "text": "o\nXo\nXoo\nB Destroy target nonblack creature with total casting cost equal to X.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "063929a5-a4d9-5b57-8237-8db43be48342",
+            "name": "Recurring Nightmare",
+            "text": "Sacrifice a creature, Return Recurring Nightmare to owner's hand: Put target creature card from your graveyard into play. Play this ability as a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "864b9ab2-aafc-5ba9-9de7-03b73473feea",
+            "name": "Scare Tactics",
+            "text": "All creatures you control get +1/+0 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "1d2cc863-b67d-5f89-b4a5-d89ef7b81333",
+            "name": "Slaughter",
+            "text": "Buyback\u2014\nPay 4 life. (You may pay 4 life in addition to any other costs when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nDestroy target nonblack creature. That creature cannot be regenerated this turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "e534e4b0-75a4-5526-8dc4-4246d03f5bab",
+            "name": "Spike Cannibal",
+            "text": "Spike Cannibal comes into play with one +1/+1 counter on it.\nWhen Spike Cannibal comes into play, move all +1/+1 counters from all creatures onto Spike Cannibal.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "2ee88115-88f6-56c6-a85b-8b00a602effd",
+            "name": "Thrull Surgeon",
+            "text": "o1o\nB, Sacrifice Thrull Surgeon: Look at target player's hand and choose one of those cards. That player discards that card. Play this ability as a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "f6fdc3c5-4bdb-5213-b763-c374c3c16bbc",
+            "name": "Vampire Hounds",
+            "text": "Choose and discard a creature card: Vampire Hounds gets +2/+2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "4248f87e-7c73-502a-bc5a-ff6e60c3e07f",
+            "name": "Volrath's Dungeon",
+            "text": "Any player may pay 5 life during his or her turn to destroy Volrath's Dungeon.\nChoose and discard a card: Target player chooses a card in his or her hand and puts that card on top of his or her library. Play this ability as a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "2efaaaf9-beed-5d3f-95c0-bd48fb172d38",
+            "name": "Anarchist",
+            "text": "When Anarchist comes into play, you may return target sorcery card from your graveyard to your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "3988282c-85d8-513b-9b7b-506b201dac0a",
+            "name": "Cinder Crawler",
+            "text": "oo\nR Cinder Crawler gets +1/+0 until end of turn. Use this ability only if Cinder Crawler is blocked.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "614b94f8-4622-5d0f-9241-8e2840c653c9",
+            "name": "Dizzying Gaze",
+            "text": "Play Dizzying Gaze only on a creature you control.\noo\nR Enchanted creature deals 1 damage to target creature with flying.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "df323991-5e1a-5551-a28c-ad6a1e0a11fc",
+            "name": "Fighting Chance",
+            "text": "For each blocking creature, flip a coin. If you win the flip, that creature deals no combat damage this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "7cd6dfc0-26da-5719-a25d-8aa8fcbb205f",
+            "name": "Flowstone Flood",
+            "text": "Buyback\u2014\nPay 3 life, Discard a card at random. (You may pay 3 life and discard a card at random in addition to any other costs when you play this spell. If you do, put Flowstone Flood into your hand instead of your graveyard as part of the spell's effect.)\nDestroy target land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "7db4bad4-f785-5404-b48e-4b72c36b80e5",
+            "name": "Furnace Brood",
+            "text": "oo\nR Target creature cannot be regenerated this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "bc580b31-a4ef-5b30-99d0-b3638cf17769",
+            "name": "Keeper of the Flame",
+            "text": "o\nR, oc\nT: Keeper of the Flame deals 2 damage to target opponent. Use this ability only if that opponent has more life than you.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "e30ae589-4537-5533-8afc-5230dec41d18",
+            "name": "Mage il-Vec",
+            "text": "oc\nT, Discard a card at random: Mage il-Vec deals 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "840f30ab-03e7-55ef-9731-3ac604a9135b",
+            "name": "Maniacal Rage",
+            "text": "Enchanted creature gets +2/+2 and cannot block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "0d4dc355-7dd4-512a-9046-809207bc6782",
+            "name": "Mogg Assassin",
+            "text": "oc\nT: Flip a coin. If you win the flip, destroy target creature an opponent controls. Otherwise, destroy target creature of that opponent's choice.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "c851f73d-d85a-5439-a4ef-bab1cedfcafd",
+            "name": "Monstrous Hound",
+            "text": "Monstrous Hound cannot attack unless you control more lands than defending player.\nMonstrous Hound cannot block unless you control more lands than attacking player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "cc2b64a2-d949-5a2f-9446-9892c3516e29",
+            "name": "Oath of Mages",
+            "text": "During each player's upkeep, if that player has less life than target opponent, he or she may have Oath of Mages deal 1 damage to that opponent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "8b997794-4c6f-57ea-a2cf-f5f49fc28d76",
+            "name": "Ogre Shaman",
+            "text": "o2, Discard a card at random: Ogre Shaman deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "3e917bef-a284-5c8b-b3cd-70922804d760",
+            "name": "Onslaught",
+            "text": "Whenever you successfully cast a creature spell, tap target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "9e40c654-bb8c-5b20-8142-944bd1832d8d",
+            "name": "Pandemonium",
+            "text": "Whenever any creature comes into play, that creature's controller may choose to have it deal damage equal to its power to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "3bb91b71-f9f5-510c-ab9a-bb7b839d558d",
+            "name": "Paroxysm",
+            "text": "During the upkeep of enchanted creature's controller, reveal the top card of that player's library to all players. If that card is a land card, destroy enchanted creature. Otherwise, enchanted creature gets +3/+3 until end of turn. (Return the card to the top of the player's library, face down.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "1dba2ff6-17b8-5af4-b036-126046cebc2b",
+            "name": "Price of Progress",
+            "text": "Price of Progress deals 2 damage to each player for each nonbasic land he or she controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "fd41c261-d282-543b-ae32-cc38f5505060",
+            "name": "Raging Goblin",
+            "text": "Raging Goblin is unaffected by summoning sickness.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "5ededc32-1479-50cb-86ef-646eee6802df",
+            "name": "Ravenous Baboons",
+            "text": "When Ravenous Baboons comes into play, destroy target nonbasic land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "f7576f1b-1f69-52b3-bd5b-e8f79984f4e4",
+            "name": "Reckless Ogre",
+            "text": "If Reckless Ogre attacks and no other creatures do, it gets +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "ee540c7f-0774-5693-85d9-69b1f5ea3771",
+            "name": "Sabertooth Wyvern",
+            "text": "Flying, first strike",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "3dcac15b-c8f3-5498-9cea-aea952007395",
+            "name": "Scalding Salamander",
+            "text": "o0: Scalding Salamander deals 1 damage to each creature without flying defending player controls. Play this ability only if Scalding Salamander is attacking and only once each turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "8ad24bd0-598b-5c4a-9451-e65c364a7e6d",
+            "name": "Seismic Assault",
+            "text": "Choose and discard a land card: Seismic Assault deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "00e99d4c-8aff-56b8-851e-ed83450095e4",
+            "name": "Shattering Pulse",
+            "text": "Buyback o3 (You may pay an additional o3 when you play this spell. If you do, put it into your hand instead of your graveyard as part of the spell's effect.)\nDestroy target artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "97313f2c-0ed4-5475-b6ed-2c59133aae22",
+            "name": "Sonic Burst",
+            "text": "Discard a card at random: Sonic Burst deals 4 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "2be15898-9758-59b1-a378-d1b2445ee9ac",
+            "name": "Spellshock",
+            "text": "Whenever any player successfully casts a spell, Spellshock deals 2 damage to him or her.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "79bf01d1-a7b1-54f3-9849-2729ca5bcb7d",
+            "name": "Avenging Druid",
+            "text": "If Avenging Druid damages any opponent, you may reveal cards from your library until you reveal a land card. Put that land into play and put all other revealed cards into your graveyard.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "d775ffc0-0658-531c-8523-906edc5cdc80",
+            "name": "Bequeathal",
+            "text": "If enchanted creature is put into any graveyard, draw two cards.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "dcf01db0-5b17-5fbc-923a-eeec51af7b98",
+            "name": "Cartographer",
+            "text": "When Cartographer comes into play, you may return target land card from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "4af2c742-954c-5766-93e9-fc503073dfd2",
+            "name": "Crashing Boars",
+            "text": "If Crashing Boars attacks, defending player chooses an untapped creature he or she controls. That creature blocks Crashing Boars this turn if able.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "e58165d6-78c2-52fd-bc61-f1fc183d7ae6",
+            "name": "Elven Palisade",
+            "text": "Sacrifice a forest: Target attacking creature gets -3/-0 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "77512035-74f5-5c6b-a98c-f061d02fe765",
+            "name": "Elvish Berserker",
+            "text": "For each creature that blocks it, Elvish Berserker gets +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "de622ed9-36c5-5a06-b888-e230ff4686a1",
+            "name": "Jackalope Herd",
+            "text": "If you play any spell, return Jackalope Herd to owner's hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "b641bc13-2279-52cd-aebd-6b693096385e",
+            "name": "Keeper of the Beasts",
+            "text": "o\nG, oc\nT: Put a Beast token into play. Treat this token as a 2/2 green creature. Play this ability only if target opponent controls more creatures than you.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "fab0a25c-a5fe-5c3f-90e4-3d64ae00046f",
+            "name": "Manabond",
+            "text": "During your discard phase, you may choose to put all land cards from your hand into play. If you do, discard the rest of your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "8166de85-98db-50be-88a8-81f2a9370f0b",
+            "name": "Mirri, Cat Warrior",
+            "text": "Mirri, Cat Warrior counts as a Cat Warrior.\nFirst strike; forestwalk (If defending player controls any forests, this creature is unblockable.)\nAttacking does not cause Mirri to tap.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "fc297e6e-f094-51b1-8e68-b6d93a677fe5",
+            "name": "Oath of Druids",
+            "text": "During each player's upkeep, if that player controls fewer creatures than target opponent, the player may reveal cards from his or her library until he or she reveals a creature card. The player puts that creature into play and all other revealed cards into his or her graveyard.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "5431ece4-5a0b-5d6b-82a2-1b95dc158c67",
+            "name": "Plated Rootwalla",
+            "text": "o2oo\nG Plated Rootwalla gets +3/+3 until end of turn. Play this ability only once each turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "68c5b687-b584-5f8a-915e-f9b106b009d6",
+            "name": "Predatory Hunger",
+            "text": "Whenever any opponent successfully casts a creature spell, put a +1/+1 counter on enchanted creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "0d3f06f3-743b-531a-95b3-357395bdbf27",
+            "name": "Pygmy Troll",
+            "text": "For each creature that blocks it, Pygmy Troll gets +1/+1 until end of turn.\noo\nG Regenerate Pygmy Troll.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "2a150efb-0b42-586c-9d47-8b41ca9bb0cf",
+            "name": "Rabid Wolverines",
+            "text": "For each creature that blocks it, Rabid Wolverines gets +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "1335c32c-cc3e-5d2e-a68c-7705259e4f95",
+            "name": "Reclaim",
+            "text": "Put target card from your graveyard on top of your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "ba8463f1-3703-5844-91ab-a0e9894f3017",
+            "name": "Resuscitate",
+            "text": "Until end of turn, each creature you control gains \"o1: Regenerate this creature.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "8ba6623d-8358-50ac-b38c-99fd5d50f726",
+            "name": "Rootwater Alligator",
+            "text": "Sacrifice a forest: Regenerate Rootwater Alligator.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "8c440f85-ef41-50c2-8916-376a45bd2632",
+            "name": "Skyshroud Elite",
+            "text": "Skyshroud Elite gets +1/+2 as long as any opponent controls any nonbasic lands.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "10d6e38e-29be-59ba-933e-a709946b6100",
+            "name": "Skyshroud War Beast",
+            "text": "Trample\nSkyshroud War Beast has power and toughness each equal to the number of nonbasic lands target opponent controls.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "48abdb45-5704-56bb-bab0-ff97359770a6",
+            "name": "Song of Serenity",
+            "text": "Creatures with any enchantments on them cannot attack or block.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "39ef301e-7b62-50ce-9d44-51e7f8cea9b3",
+            "name": "Spike Hatcher",
+            "text": "Spike Hatcher comes into play with six +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Hatcher: Put a +1/+1 counter on target creature.\no1, Remove a +1/+1 counter from Spike Hatcher: Regenerate Spike Hatcher.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "2644bf84-1b2b-5c9c-b3fd-066cd9d2f2f9",
+            "name": "Spike Rogue",
+            "text": "Spike Rogue comes into play with two +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Rogue: Put a +1/+1 counter on target creature.\no2, Remove a +1/+1 counter from any creature you control: Put a +1/+1 counter on Spike Rogue.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "0f3895a1-c684-5546-b52f-940675291511",
+            "name": "Spike Weaver",
+            "text": "Spike Weaver comes into play with three +1/+1 counters on it.\no2, Remove a +1/+1 counter from Spike Weaver: Put a +1/+1 counter on target creature.\no1, Remove a +1/+1 counter from Spike Weaver: Creatures deal no combat damage this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "78e2c28e-4331-5f97-9ce8-96032de08bba",
+            "name": "Survival of the Fittest",
+            "text": "o\nG, Choose and discard a creature card: Search your library for a creature card, reveal that card to all players, and put it into your hand. Shuffle your library afterwards.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "2707929d-98e6-54e4-b0ae-c5d915e340d6",
+            "name": "Wood Elves",
+            "text": "When Wood Elves comes into play, search your library for a forest card and put that forest into play. Shuffle your library afterwards.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EXO"
+        },
+        {
+            "id": "6543faa0-fbdf-5247-bbb7-befd6e6d4cc4",
+            "name": "Coat of Arms",
+            "text": "Each creature gets +1/+1 for each other creature in play of the same creature type. (For example, if there are three Goblins in play, each of them gets +2/+2.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "ae4cfad0-ea30-5046-8ffc-0cf995df16e5",
+            "name": "Erratic Portal",
+            "text": "o1, oc\nT: Return target creature to owner's hand unless its controller pays o1.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "c22daa90-fe5b-545a-be02-fc6d509597ef",
+            "name": "Medicine Bag",
+            "text": "o1, oc\nT, Choose and discard a card: Regenerate target creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "dff23ea0-f7d1-519b-ba24-112cb6e6c5c0",
+            "name": "Memory Crystal",
+            "text": "All buyback costs are reduced by o2.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "6168b788-27e6-5cd7-b1c4-333195de93f7",
+            "name": "Mindless Automaton",
+            "text": "Mindless Automaton comes into play with two +1/+1 counters on it.\no1, Choose and discard a card: Put a +1/+1 counter on Mindless Automaton.\nRemove two +1/+1 counters from Mindless Automaton: Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "5842868e-0cfc-5309-8365-85bb2fd22a3c",
+            "name": "Null Brooch",
+            "text": "o2, oc\nT, Discard your hand: Counter target noncreature spell. Play this ability as an interrupt.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "6a7b875c-0d24-52f0-b2a2-729596a47349",
+            "name": "Skyshaper",
+            "text": "Sacrifice Skyshaper: All creatures you control gain flying until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "b1f903e0-5d42-5e46-8cf5-e5c1ee28e7cc",
+            "name": "Spellbook",
+            "text": "Skip your discard phase.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "11c0de6b-9910-53b1-9669-4a941d53520b",
+            "name": "Sphere of Resistance",
+            "text": "All spells cost an additional o1 to play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "c5e356a6-8d4a-5b94-90d8-8866326090c2",
+            "name": "Thopter Squadron",
+            "text": "Flying\nThopter Squadron comes into play with three +1/+1 counters on it.\no1, Remove a +1/+1 counter from Thopter Squadron: Put a Thopter token into play. Treat this token as a 1/1 artifact creature with flying. Play this ability as a sorcery.\no1, Sacrifice a Thopter: Put a +1/+1 counter on Thopter Squadron. Play this ability as a sorcery.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "ce441c2b-34a2-58e4-871c-f43350600653",
+            "name": "Transmogrifying Licid",
+            "text": "Transmogrifying Licid counts as a Licid.\no1, oc\nT: Transmogrifying Licid loses this ability and becomes a creature enchantment that reads \"Enchanted creature gets +1/+1 and counts as an artifact\" instead of any other type of permanent. Move Transmogrifying Licid onto target creature. You may pay o1 to end this effect.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EXO"
+        },
+        {
+            "id": "80dec60e-3005-5d3a-a39c-db71c78d8864",
+            "name": "Workhorse",
+            "text": "Workhorse comes into play with four +1/+1 counters on it.\nRemove a +1/+1 counter from Workhorse: Add one colorless mana to your mana pool. Play this ability as a mana source.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        },
+        {
+            "id": "d81e7409-5299-560b-a79c-e3dda4807c33",
+            "name": "City of Traitors",
+            "text": "If you play a land, sacrifice City of Traitors.\noc\nT: Add two colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EXO"
+        }
+    ]
+}

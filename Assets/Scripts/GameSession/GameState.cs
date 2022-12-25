@@ -19,7 +19,7 @@ public class GameState : MonoBehaviour
     private int opponentID;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
       lastOpponentHash = "";
       hasher = GetComponent<Hasher>();

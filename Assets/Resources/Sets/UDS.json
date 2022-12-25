@@ -1,0 +1,2517 @@
+{
+    "setCode": "UDS",
+    "setName": "Urza's Destiny",
+    "cards": [
+        {
+            "id": "b0e69425-f47f-5879-a526-5396994655d3",
+            "name": "Academy Rector",
+            "text": "When Academy Rector is put into a graveyard from play, you may remove Academy Rector from the game. If you do, search your library for an enchantment card and put that card into play. Then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "b1246365-728a-5dd6-82cf-7e51d308ce99",
+            "name": "Archery Training",
+            "text": "At the beginning of your upkeep, you may put an arrow counter on Archery Training.\nEnchanted creature gains \"oc\nT: This creature deals X damage to target attacking or blocking creature, where X is the number of arrow counters on the Archery Training enchanting this creature.\"",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "83a63214-23b9-5485-b90a-5843f54c5307",
+            "name": "Capashen Knight",
+            "text": "First strike\no1oo\nW Capashen Knight gets +1/+0 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "8fc693d6-4903-500e-b1b2-23967b58405d",
+            "name": "Capashen Standard",
+            "text": "Enchanted creature gets +1/+1.\no2, Sacrifice Capashen Standard: Draw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "dc332d75-f08f-5cc7-ba42-6578c13054ba",
+            "name": "Capashen Templar",
+            "text": "oo\nW Capashen Templar gets +0/+1 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "4f63c818-48ba-5556-a98c-0fb5d9deaa93",
+            "name": "False Prophet",
+            "text": "When False Prophet is put into a graveyard from play, remove all creatures from the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "ffbb07f0-1846-5990-b85c-1710ff1f3c72",
+            "name": "Fend Off",
+            "text": "Cycling o2\nTarget creature deals no combat damage this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "ed459912-5954-5f82-800c-340768be09f8",
+            "name": "Field Surgeon",
+            "text": "Tap an untapped creature you control: Prevent the next 1 damage to target creature this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "e2759759-106b-5a0c-9d89-64df82b6f8a7",
+            "name": "Flicker",
+            "text": "Remove target nontoken permanent from the game, then return it to play under its owner's control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "b15644b3-8da5-5938-a2e9-a62f28cfe257",
+            "name": "Jasmine Seer",
+            "text": "o2o\nW, oc\nT: Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "6fdc10fc-15e9-54a9-84cf-564cf45c4960",
+            "name": "Mask of Law and Grace",
+            "text": "Enchanted creature gains protection from black and protection from red.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "85db7ad3-6d16-538c-989a-914ec7cd69cb",
+            "name": "Master Healer",
+            "text": "oc\nT: Prevent the next 4 damage to target creature or player this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "aa03644e-01c9-5ef7-a2b2-ef3da6014aa9",
+            "name": "Opalescence",
+            "text": "Each other global enchantment is a creature with power and toughness each equal to its converted mana cost. It's still an enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "70df1168-6ed2-533d-abb7-1da3dec72d93",
+            "name": "Reliquary Monk",
+            "text": "When Reliquary Monk is put into a graveyard from play, destroy target artifact or enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "7f2288a2-7217-5cfc-b04d-6d410cb8dea9",
+            "name": "Replenish",
+            "text": "Return all enchantment cards from your graveyard to play. (Local enchantments with no permanent to enchant remain in your graveyard.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4b5c5aa5-bbb6-5053-94a5-96134660d176",
+            "name": "Sanctimony",
+            "text": "Whenever one of your opponents taps a mountain for mana, you may gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "fc02dea7-cbcc-571f-b5ac-4af283b97939",
+            "name": "Scent of Jasmine",
+            "text": "Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "c3199633-3df9-5b78-8e50-b1b125b6f1cf",
+            "name": "Scour",
+            "text": "Remove target enchantment from the game. Search its controller's graveyard, hand, and library for all copies of that card and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "a0fac403-93a4-5014-9eba-6f4e91553686",
+            "name": "Serra Advocate",
+            "text": "Flying\noc\nT: Target attacking or blocking creature gets +2/+2 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "d5767d51-547a-5c59-9484-a12de098657d",
+            "name": "Solidarity",
+            "text": "Creatures you control get +0/+5 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "ca6a3bf0-35e0-598e-a155-3d13a8e90d46",
+            "name": "Tethered Griffin",
+            "text": "Flying\nWhen you control no enchantments, sacrifice Tethered Griffin.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4ae811a8-f0b3-58f6-afc6-3f784a9e1787",
+            "name": "Tormented Angel",
+            "text": "Flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "ecfe3c40-785d-51b9-a0c0-475ea488f37e",
+            "name": "Voice of Duty",
+            "text": "Flying, protection from green",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "6805405e-49e7-549a-b207-e4cfbf16a70f",
+            "name": "Voice of Reason",
+            "text": "Flying, protection from blue",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "aa3cee08-9c8b-5d02-a476-a1778cc11375",
+            "name": "Wall of Glare",
+            "text": "(Walls can't attack.)\nWall of Glare may block any number of creatures each combat.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "dc32ed0e-137c-5c99-9434-bf2dc1e293a8",
+            "name": "Aura Thief",
+            "text": "Flying\nWhen Aura Thief is put into a graveyard from play, you gain control of all enchantments. (You don't get to move local enchantments.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "248776ce-5d76-577a-a5a8-fba6ee8f4220",
+            "name": "Blizzard Elemental",
+            "text": "Flying\no3oo\nU Untap Blizzard Elemental.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "efaed608-df00-5b44-8b21-27dd3b1070cf",
+            "name": "Brine Seer",
+            "text": "o2o\nU, oc\nT: Reveal any number of blue cards in your hand. Counter target spell unless its controller pays o1 for each card revealed this way.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "53e68e3b-07a0-52a9-8397-928c5a92c8c6",
+            "name": "Bubbling Beebles",
+            "text": "Bubbling Beebles is unblockable as long as defending player controls an enchantment.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "ead8866e-fa99-559b-85e3-05db07f24bbd",
+            "name": "Disappear",
+            "text": "oo\nU Return enchanted creature and Disappear to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "90f4b30a-abf7-5114-bbb6-ac5f567c9b19",
+            "name": "Donate",
+            "text": "Target player gains control of target permanent you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "cad6361a-7aa0-565d-9e7d-87a5d4d9cc18",
+            "name": "Fatigue",
+            "text": "Target player skips his or her next draw step.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "02075eb8-fb7e-5f5a-8bb0-3e378f21736c",
+            "name": "Fledgling Osprey",
+            "text": "Fledgling Osprey gains flying as long as it's enchanted.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "bc0a51e2-217b-5835-bf8f-af1704db43f4",
+            "name": "Illuminated Wings",
+            "text": "Enchanted creature gains flying.\no2, Sacrifice Illuminated Wings: Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "3a1be31b-5f4a-5609-85a5-224f5c31654b",
+            "name": "Iridescent Drake",
+            "text": "Flying\nWhen Iridescent Drake comes into play, return target enchant creature card from a graveyard to play enchanting Iridescent Drake. (You control that enchantment.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "5532e74f-4e11-5103-928b-4fd9c365edff",
+            "name": "Kingfisher",
+            "text": "Flying\nWhen Kingfisher is put into a graveyard from play, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "eb05dd87-7c42-52ec-bb62-e33ead1e8660",
+            "name": "Mental Discipline",
+            "text": "o1o\nU, Choose and discard a card from your hand: Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "7734c4b3-e710-5a38-82d3-eb27e266b2e2",
+            "name": "Metathran Elite",
+            "text": "Metathran Elite is unblockable as long as it's enchanted.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "8f2a7b23-7447-52a7-a94e-29e4004b20b1",
+            "name": "Metathran Soldier",
+            "text": "Metathran Soldier is unblockable.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "197c45bf-2cb1-5003-843e-e5c75c5f0211",
+            "name": "Opposition",
+            "text": "Tap an untapped creature you control: Tap target artifact, creature, or land.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "fbc49538-3f1c-5b61-bb3a-cd35f9de88f2",
+            "name": "Private Research",
+            "text": "At the beginning of your upkeep, you may put a page counter on Private Research.\nWhen enchanted creature is put into a graveyard, draw a card for each page counter on Private Research.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "408d9636-1938-5a77-b7e2-d9702123db70",
+            "name": "Quash",
+            "text": "Counter target instant or sorcery spell. Search its controller's graveyard, hand, and library for all copies of that card and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "ebe7fab8-a1bd-5bc9-9136-46297176e4d9",
+            "name": "Rayne, Academy Chancellor",
+            "text": "Whenever you or a permanent you control is the target of a spell or ability controlled by one of your opponents, you may draw a card, and if Rayne, Academy Chancellor is enchanted, you may draw another card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "f176cf58-7abc-5696-9517-6a1c3df371a2",
+            "name": "Rescue",
+            "text": "Return target permanent you control to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "68b0be19-4739-57d2-a026-b54cfa740d3b",
+            "name": "Scent of Brine",
+            "text": "Reveal any number of blue cards in your hand. Counter target spell unless its controller pays o1 for each card revealed this way.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "23ed8ac1-00ec-5491-a4ce-cccd9c3c41df",
+            "name": "Sigil of Sleep",
+            "text": "Whenever enchanted creature deals damage to a player, return target creature that player controls to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "87fed47f-c822-51ed-abe4-699b5ac69acc",
+            "name": "Telepathic Spies",
+            "text": "When Telepathic Spies comes into play, look at target opponent's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "87cd283a-b7d3-5eef-b2d2-7e40ee910b81",
+            "name": "Temporal Adept",
+            "text": "o\nUo\nUo\nU, oc\nT: Return target permanent to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "3a20c68d-bfa5-53b3-b115-317865da6c9e",
+            "name": "Thieving Magpie",
+            "text": "Flying\nWhenever Thieving Magpie deals damage to one of your opponents, you draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "58ddf2a3-1810-5ebd-a8be-2e0957b29bc7",
+            "name": "Treachery",
+            "text": "When Treachery comes into play, untap up to five lands.\nYou control enchanted creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "50d8ee20-8fe0-5396-97f4-af34d38f95a7",
+            "name": "Apprentice Necromancer",
+            "text": "o\nB, oc\nT, Sacrifice Apprentice Necromancer: Return target creature card from your graveyard to play. That creature gains haste. At end of turn, sacrifice it. (The creature may attack and oc\nT the turn it comes under your control.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "7b6abdfe-6aff-5d80-949c-bfdb2b7cbca1",
+            "name": "Attrition",
+            "text": "o\nB, Sacrifice a creature: Destroy target nonblack creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "9a2d2c91-3391-59a1-a7e4-930b050ba541",
+            "name": "Body Snatcher",
+            "text": "When Body Snatcher comes into play, you may choose and discard a creature card from your hand. If you don't, remove Body Snatcher from the game.\nWhen Body Snatcher is put into a graveyard from play, remove Body Snatcher from the game and return target creature card from your graveyard to play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "d1025350-d221-5446-9d6a-e070aafa9428",
+            "name": "Bubbling Muck",
+            "text": "Until end of turn, whenever a player taps a swamp for mana, it produces an additional o\nB.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "35f68312-c536-5df5-bf6d-582192a41bb6",
+            "name": "Carnival of Souls",
+            "text": "Whenever a creature comes into play, you lose 1 life and add o\nB to your mana pool.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "479fa3eb-332e-5ba4-a717-47fd7a349f10",
+            "name": "Chime of Night",
+            "text": "When Chime of Night is put into a graveyard from play, destroy target nonblack creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "234fe6d9-63c1-5185-8d9f-97a8d5bc655c",
+            "name": "Disease Carriers",
+            "text": "When Disease Carriers is put into a graveyard from play, target creature gets -2/-2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "49b61440-2740-580a-8a66-06627f8c32be",
+            "name": "Dying Wail",
+            "text": "When enchanted creature is put into a graveyard from play, target player chooses and discards two cards from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "a96218d1-4648-5e55-be1b-4746b84db1a8",
+            "name": "Encroach",
+            "text": "Look at target player's hand and choose a nonbasic land card from it. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "473abae9-677b-5b72-8941-74a34d7c466b",
+            "name": "Eradicate",
+            "text": "Remove target nonblack creature from the game. Search its controller's graveyard, hand, and library for all copies of that card and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "68c91cdd-1367-5443-91de-9126593cc117",
+            "name": "Festering Wound",
+            "text": "At the beginning of your upkeep, you may put an infection counter on Festering Wound.\nAt the beginning of the upkeep of enchanted creature's controller, Festering Wound deals X damage to that player, where X is the number of infection counters on Festering Wound.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "4e4d0bdb-6401-506b-9114-fdbda54ceb5e",
+            "name": "Lurking Jackals",
+            "text": "When one of your opponents has 10 life or less, if Lurking Jackals is an enchantment, it becomes a 3/2 Hound creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "722f00ed-823f-5a4a-9e0f-85a710f7cd30",
+            "name": "Nightshade Seer",
+            "text": "o2o\nB, oc\nT: Reveal any number of black cards in your hand. Target creature gets -X/-X until end of turn, where X is the number of cards revealed this way.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "fa43dfc5-37d3-5c33-942a-b95eba8486e3",
+            "name": "Phyrexian Monitor",
+            "text": "oo\nB Regenerate Phyrexian Monitor.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "93624615-209a-57c3-8520-0b68b9440910",
+            "name": "Phyrexian Negator",
+            "text": "Trample\nWhenever Phyrexian Negator is dealt damage, sacrifice a permanent for each 1 damage dealt to it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "ffd0eb74-20c8-50b8-9256-3a4858c3d652",
+            "name": "Plague Dogs",
+            "text": "When Plague Dogs is put into a graveyard from play, all creatures get -1/-1 until end of turn.\no2, Sacrifice Plague Dogs: Draw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "dc2ba3f0-9754-5d94-bc01-167deccf2e27",
+            "name": "Rapid Decay",
+            "text": "Cycling o2\nRemove from the game up to three target cards in a single graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "3312ed41-aab2-5fe7-bd5b-f84ee7ba0b4e",
+            "name": "Ravenous Rats",
+            "text": "When Ravenous Rats comes into play, target opponent chooses and discards a card from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "c555a96d-c96d-577f-8251-5219b508837a",
+            "name": "Scent of Nightshade",
+            "text": "Reveal any number of black cards in your hand. Target creature gets -X/-X until end of turn, where X is the number of cards revealed this way.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "972d8bfe-fe9b-55f6-8ed4-2eb33858b26d",
+            "name": "Skittering Horror",
+            "text": "When you play a creature spell, sacrifice Skittering Horror.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "fa899bf9-0d6b-5384-bce5-8cc02fd6854f",
+            "name": "Slinking Skirge",
+            "text": "Flying\no2, Sacrifice Slinking Skirge: Draw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "021d9bf0-3f3c-57a4-9959-5fac926f4cba",
+            "name": "Soul Feast",
+            "text": "Target player loses 4 life and you gain 4 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "c83b5d41-049f-572f-ab88-a2d9b41f7c5f",
+            "name": "Squirming Mass",
+            "text": "Squirming Mass can't be blocked except by artifact creatures and black creatures.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "e79ee2a5-39ce-5a86-92a2-8d8a7c3ea692",
+            "name": "Twisted Experiment",
+            "text": "Enchanted creature gets +3/-1.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "3726bacc-49c6-5846-b034-a0fc292d778c",
+            "name": "Yawgmoth's Bargain",
+            "text": "Skip your draw step.\nPay 1 life: Draw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "aff51fd7-2955-5b77-afc2-a7e77b86f9eb",
+            "name": "Aether Sting",
+            "text": "Whenever one of your opponents plays a creature spell, \u00c6ther Sting deals 1 damage to that player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "81b9f2ad-5e89-5c54-89e2-193fc3bb79ad",
+            "name": "Bloodshot Cyclops",
+            "text": "oc\nT, Sacrifice a creature: Bloodshot Cyclops deals X damage to target creature or player, where X is the sacrificed creature's power.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "0786d784-77e8-5831-8b81-a7c689e3f11b",
+            "name": "Cinder Seer",
+            "text": "o2o\nR, oc\nT: Reveal any number of red cards in your hand. Cinder Seer deals X damage to target creature or player, where X is the number of cards revealed this way.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "d3775406-1442-5c88-8acd-5719ee100085",
+            "name": "Colos Yearling",
+            "text": "Mountainwalk (This creature is unblockable as long as defending player controls a mountain.)\noo\nR Colos Yearling gets +1/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "9b7f4929-3417-5e1f-aa57-0aaa8643c7e8",
+            "name": "Covetous Dragon",
+            "text": "Flying\nWhen you control no artifacts, sacrifice Covetous Dragon.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "3dd5a073-184c-5165-a54a-2e70e86aff56",
+            "name": "Flame Jet",
+            "text": "Cycling o2\nFlame Jet deals 3 damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "39ae221e-1f7d-546b-b707-6102127768f9",
+            "name": "Goblin Berserker",
+            "text": "First strike; haste (This creature may attack and oc\nT the turn it comes under your control.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "203a53aa-d597-5a16-a185-320c90da448b",
+            "name": "Goblin Festival",
+            "text": "o2: Goblin Festival deals 1 damage to target creature or player. Flip a coin. If you lose the flip, choose one of your opponents. That player gains control of Goblin Festival.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "42b8feca-0c85-5161-abc9-9b83eb732105",
+            "name": "Goblin Gardener",
+            "text": "When Goblin Gardener is put into a graveyard from play, destroy target land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "3d8dbeee-839a-5752-8d6d-e2efd2cba48c",
+            "name": "Goblin Marshal",
+            "text": "Echo\nWhenever Goblin Marshal comes into play or is put into a graveyard from play, put two 1/1 red Goblin creature tokens into play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4d073f26-79a5-5637-9eeb-ca71b58b4383",
+            "name": "Goblin Masons",
+            "text": "When Goblin Masons is put into a graveyard from play, destroy target Wall.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "5e342d15-15f4-5f7f-93ef-a89c524d8d03",
+            "name": "Hulking Ogre",
+            "text": "Hulking Ogre can't block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "6ee50c72-eb06-5f61-9d2f-4f5e7a4f666b",
+            "name": "Impatience",
+            "text": "At the end of each player's turn, if that player didn't play a spell that turn, Impatience deals 2 damage to him or her.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4b5e9fad-ba3f-522a-baef-142d311eebd3",
+            "name": "Incendiary",
+            "text": "At the beginning of your upkeep, you may put a fuse counter on Incendiary.\nWhen enchanted creature is put into a graveyard, Incendiary deals X damage to target creature or player, where X is the number of fuse counters on Incendiary.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "ae80cc9e-e6bc-55fe-aba5-2d238c27e72d",
+            "name": "Keldon Champion",
+            "text": "Echo; haste (This creature may attack and oc\nT the turn it comes under your control.)\nWhen Keldon Champion comes into play, it deals 3 damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "cedb4186-e146-5a03-96a6-7f86e2f85189",
+            "name": "Keldon Vandals",
+            "text": "Echo\nWhen Keldon Vandals comes into play, destroy target artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "a154e9a0-6e85-5a25-acd2-2e8e1d627cd6",
+            "name": "Landslide",
+            "text": "Sacrifice any number of mountains. Landslide deals that much damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "9ac067eb-03a0-588e-80ff-684a6ff4b1ca",
+            "name": "Mark of Fury",
+            "text": "Enchanted creature gains haste. (It may attack and oc\nT the turn it comes under your control.)\nAt end of turn, return Mark of Fury to its owner's hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "b7ecdd90-a948-5774-b219-c7c5d41ece15",
+            "name": "Reckless Abandon",
+            "text": "As an additional cost to play Reckless Abandon, sacrifice a creature.\nReckless Abandon deals 4 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "887e10bf-833a-54dd-ba85-e1078e9eb99c",
+            "name": "Repercussion",
+            "text": "Whenever a creature is dealt damage, Repercussion deals that much damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "194117c1-4eb2-5516-bf36-886bf5758e2d",
+            "name": "Scent of Cinder",
+            "text": "Reveal any number of red cards in your hand. Scent of Cinder deals X damage to target creature or player, where X is the number of cards revealed this way.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "03ec0b47-023e-53b9-bd9e-770dc0029d5a",
+            "name": "Sowing Salt",
+            "text": "Remove target nonbasic land from the game. Search its controller's graveyard, hand, and library for all copies of that card and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "19e7a911-da90-52e2-b217-b17e15be9400",
+            "name": "Trumpet Blast",
+            "text": "Attacking creatures get +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "d0975290-baa2-5436-9b29-eb6f78e39fa0",
+            "name": "Wake of Destruction",
+            "text": "Destroy target land and all lands with the same name as that land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{R}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "ecb639d4-91da-59f4-aecd-25fcd9d1ed6d",
+            "name": "Wild Colos",
+            "text": "Haste (This creature may attack and oc\nT the turn it comes under your control.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "e7f5f4d6-21d3-5f91-8072-0b799770283c",
+            "name": "Ancient Silverback",
+            "text": "oo\nG Regenerate Ancient Silverback.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "8d56d218-631b-51d4-9f5a-820ae43fdc2e",
+            "name": "Compost",
+            "text": "Whenever a black card is put into one of your opponents' graveyards, you may draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "447a015b-83af-5a07-8f31-987ec120093b",
+            "name": "Elvish Lookout",
+            "text": "Elvish Lookout can't be the target of spells or abilities.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "5a4974b7-a661-5b8d-a148-364c78332949",
+            "name": "Elvish Piper",
+            "text": "o\nG, oc\nT: Put a creature card from your hand into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "1bbeaa7e-3640-58af-872a-df1a8245ee84",
+            "name": "Emperor Crocodile",
+            "text": "When you control no other creatures, sacrifice Emperor Crocodile.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "efcb920c-bd3a-56b8-a4f1-115625b12888",
+            "name": "Gamekeeper",
+            "text": "When Gamekeeper is put into a graveyard from play, you may remove Gamekeeper from the game. If you do, reveal cards from your library until you reveal a creature card. Put that card into play and put the other cards revealed this way into your graveyard.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "c95b74de-0fdf-538a-9222-80f02c2c2371",
+            "name": "Goliath Beetle",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "a1abcaaa-c481-5e5a-87c9-9ccda0340a67",
+            "name": "Heart Warden",
+            "text": "oc\nT: Add one green mana to your mana pool.\no2, Sacrifice Heart Warden: Draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "2fe8693c-e033-566f-965c-2689ffe9f6ed",
+            "name": "Hunting Moa",
+            "text": "Echo\nWhenever Hunting Moa comes into play or is put into a graveyard from play, put a +1/+1 counter on target creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "f57beb0a-fd89-5546-b465-6ea8527b35c6",
+            "name": "Ivy Seer",
+            "text": "o2o\nG, oc\nT: Reveal any number of green cards in your hand. Target creature gets +X/+X until end of turn, where X is the number of cards revealed this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "91f94f9b-8ec1-5af2-b404-44456b9b3a95",
+            "name": "Magnify",
+            "text": "All creatures get +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "8b1be586-6890-5d11-bac8-75ed7b937d37",
+            "name": "Marker Beetles",
+            "text": "When Marker Beetles is put into a graveyard from play, target creature gets +1/+1 until end of turn.\no2, Sacrifice Marker Beetles: Draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "57f76675-f77b-5109-9fa3-27e30ab9d46d",
+            "name": "Momentum",
+            "text": "At the beginning of your upkeep, you may put a growth counter on Momentum.\nEnchanted creature gets +1/+1 for each growth counter on Momentum.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "d551fe59-bf69-5dc1-bdf6-3351c86c54e9",
+            "name": "Multani's Decree",
+            "text": "Destroy all enchantments. You gain 2 life for each enchantment destroyed this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "6138d6f6-3d88-5ed8-a7ab-d9b5c1d32545",
+            "name": "Pattern of Rebirth",
+            "text": "When enchanted creature is put into a graveyard from play, that creature's controller may search his or her library for a creature card and put that card into play. If that player does, he or she then shuffles his or her library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "bf74c9e7-f4fd-5a64-8ef4-293cd5c87eff",
+            "name": "Plated Spider",
+            "text": "Plated Spider may block as though it had flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "d8701233-0bfd-5c61-be59-e1cc3646e23c",
+            "name": "Plow Under",
+            "text": "Put two target lands on top of their owner's library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "22badd84-bc17-5eae-a8d1-b9650f7a6733",
+            "name": "Rofellos, Llanowar Emissary",
+            "text": "oc\nT: Add one green mana to your mana pool for each forest you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4008d0ed-68e3-5333-8598-342c8c387bc5",
+            "name": "Rofellos's Gift",
+            "text": "Reveal any number of green cards in your hand. Return an enchantment card from your graveyard to your hand for each card revealed this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "8b69c0bf-e0b5-5a67-afc5-b93999926aa7",
+            "name": "Scent of Ivy",
+            "text": "Reveal any number of green cards in your hand. Target creature gets +X/+X until end of turn, where X is the number of cards revealed this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "dc68a089-ecaf-58a6-8967-505405fbc441",
+            "name": "Splinter",
+            "text": "Remove target artifact from the game. Search its controller's graveyard, hand, and library for all copies of that card and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "cfa6450e-b511-53f8-9c5c-b21dd70038b0",
+            "name": "Taunting Elf",
+            "text": "All creatures able to block Taunting Elf do so.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "b3331d09-74c0-5c20-a441-5dd4cdfe90d5",
+            "name": "Thorn Elemental",
+            "text": "Thorn Elemental may deal its combat damage to defending player as though it weren't blocked.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "ebbae453-4e06-594c-85c4-2316bb244d50",
+            "name": "Yavimaya Elder",
+            "text": "When Yavimaya Elder is put into a graveyard from play, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library.\no2, Sacrifice Yavimaya Elder: Draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UDS"
+        },
+        {
+            "id": "6d593dc8-bf00-5b63-8ea7-d79fbb0dd58b",
+            "name": "Yavimaya Enchantress",
+            "text": "Yavimaya Enchantress gets +1/+1 for each enchantment in play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "de58f4ec-99dd-5e37-83af-42e7c8c0b353",
+            "name": "Braidwood Cup",
+            "text": "oc\nT: You gain 1 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "9b0e371e-6720-545a-a4ec-3106f601719d",
+            "name": "Braidwood Sextant",
+            "text": "o2, oc\nT, Sacrifice Braidwood Sextant: Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "8db5c541-2958-50c5-99ed-d70eb0530a30",
+            "name": "Brass Secretary",
+            "text": "o2, Sacrifice Brass Secretary: Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "9ffbb6b6-5d07-5ebe-9890-952ed2e8fe80",
+            "name": "Caltrops",
+            "text": "Whenever a creature attacks, Caltrops deals 1 damage to it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "f241a1d5-94f9-53d0-b473-b786ba51d072",
+            "name": "Extruder",
+            "text": "Echo\nSacrifice an artifact: Put a +1/+1 counter on target creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "59fecc9a-7a4f-5938-912a-007a71a1117e",
+            "name": "Fodder Cannon",
+            "text": "o4, oc\nT, Sacrifice a creature: Fodder Cannon deals 4 damage to target creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "eab65b38-7d18-5295-9796-15747b193fe3",
+            "name": "Junk Diver",
+            "text": "Flying\nWhen Junk Diver is put into a graveyard from play, return another target artifact card from your graveyard to your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "3657c541-d387-5cb6-a874-ee918c5d4843",
+            "name": "Mantis Engine",
+            "text": "o2: Mantis Engine gains flying until end of turn.\no2: Mantis Engine gains first strike until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "3e2b946f-0a62-58c3-aeba-68588d825d23",
+            "name": "Masticore",
+            "text": "At the beginning of your upkeep, you may choose and discard a card from your hand. If you don't, sacrifice Masticore.\no2: Masticore deals 1 damage to target creature.\no2: Regenerate Masticore.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "dcd05bd8-60aa-5a11-8ac1-1f6d40d14be3",
+            "name": "Metalworker",
+            "text": "oc\nT: Reveal any number of artifact cards in your hand. Add two colorless mana to your mana pool for each card revealed this way.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "b027e7be-84c3-543f-b1bd-8241518de3d7",
+            "name": "Powder Keg",
+            "text": "At the beginning of your upkeep, you may put a fuse counter on Powder Keg.\noc\nT, Sacrifice Powder Keg: Destroy each artifact and creature with converted mana cost equal to the number of fuse counters on Powder Keg.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "531a3146-0140-5050-9ac3-a8971c09430f",
+            "name": "Scrying Glass",
+            "text": "o3, oc\nT: Choose a number greater than 0 and a color. Target opponent reveals his or her hand. If that opponent reveals exactly the chosen number of cards of the chosen color, you draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "758edb30-c44a-5ade-acc3-d90141b89dbc",
+            "name": "Storage Matrix",
+            "text": "As long as Storage Matrix is untapped, instead of each player untapping the permanents he or she controls during his or her untap step, that player chooses artifacts, creatures, or lands and untaps all permanents of the chosen type he or she controls.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "d96a4072-944e-5862-921d-f951055f91f6",
+            "name": "Thran Dynamo",
+            "text": "oc\nT: Add three colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "d1096803-ee6f-5650-8666-571616d23626",
+            "name": "Thran Foundry",
+            "text": "o1, oc\nT, Remove Thran Foundry from the game: Target player shuffles his or her graveyard into his or her library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UDS"
+        },
+        {
+            "id": "17901676-3afc-57a9-a629-397a57555a6b",
+            "name": "Thran Golem",
+            "text": "As long as Thran Golem is enchanted, it gets +2/+2 and gains flying, first strike, and trample.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "83beb4d1-d3f5-545e-bf0a-66659ee25f3c",
+            "name": "Urza's Incubator",
+            "text": "When Urza's Incubator comes into play, choose a creature type.\nCreature spells of the chosen type cost o2 less to play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        },
+        {
+            "id": "4d8175a8-cecc-5526-92e5-c16dfd4d04ce",
+            "name": "Yavimaya Hollow",
+            "text": "oc\nT: Add one colorless mana to your mana pool.\no\nG, oc\nT: Regenerate target creature.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "UDS"
+        }
+    ]
+}

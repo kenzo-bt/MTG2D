@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private Hasher hasher;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
       hasher = GetComponent<Hasher>();
       hand = handObject.GetComponent<Hand>();

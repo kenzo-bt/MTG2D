@@ -9,6 +9,8 @@ public class Hand : MonoBehaviour
     private int mulligans = 0;
     public GameObject deckObject;
     public GameObject cardPrefab;
+    public GameObject gameStateObject;
+    private GameState gameState;
     private Deck deck;
     public bool isInitialized = false;
 
@@ -26,6 +28,8 @@ public class Hand : MonoBehaviour
         isInitialized = true;
         generateHand(handSize);
         showHand();
+        gameState = gameStateObject.GetComponent<GameState>();
+        gameState.sendState();
       }
     }
 
