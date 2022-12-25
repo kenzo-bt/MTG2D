@@ -9,24 +9,17 @@ public class GameState : MonoBehaviour
 {
     public GameObject playerObject;
     public GameObject opponentObject;
-    public GameObject deckObject;
-    public GameObject handObject;
     private Opponent opponent;
     private Hasher hasher;
     private string lastOpponentHash;
-
+    private string lastHash;
     private int playerID;
     private int opponentID;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-      lastOpponentHash = "";
-      hasher = GetComponent<Hasher>();
-      opponent = opponentObject.GetComponent<Opponent>();
-      playerID = PlayerManager.Instance.myID;
-      opponentID = PlayerManager.Instance.opponentID;
-      InvokeRepeating("getOpponentState", 3f, 3f);
+
     }
 
     // Update is called once per frame
@@ -35,15 +28,18 @@ public class GameState : MonoBehaviour
 
     }
 
-    // Restart Game
-    public void restartGame()
+    public void initializeState()
     {
-      // Reset deck
-      Deck deck = deckObject.GetComponent<Deck>();
-      deck.resetDeck();
-      // Reset hand
-      Hand hand = handObject.GetComponent<Hand>();
-      hand.resetHand();
+      lastHash = "";
+      lastOpponentHash = "";
+      hasher = GetComponent<Hasher>();
+      opponent = opponentObject.GetComponent<Opponent>();
+      playerID = PlayerManager.Instance.myID;
+      opponentID = PlayerManager.Instance.opponentID;
+      // Send initial state
+      sendState();
+      // Start listening for changes in opponent state
+      InvokeRepeating("getOpponentState", 3f, 3f);
     }
 
     public void getOpponentState()
@@ -58,28 +54,38 @@ public class GameState : MonoBehaviour
 
     IEnumerator sendStateToServer()
     {
-      // Construct URL based on API requirements
-      string url = PlayerManager.Instance.apiUrl + "users/" + playerID + "/state";
       // Get JSON string and encode it as UTF8 bytes to send as POST body
-      string state = playerObject.GetComponent<Player>().getBoardState();
-      byte[] bytes = Encoding.UTF8.GetBytes(state);
-      // Create the web request and set the correct properties
-      UnityWebRequest request = new UnityWebRequest(url);
-      request.method = UnityWebRequest.kHttpVerbPOST;
-      request.uploadHandler = new UploadHandlerRaw (bytes);
-      request.uploadHandler.contentType = "application/json";
-      yield return request.SendWebRequest();
-      // Debug the results
-      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      BoardState myState = playerObject.GetComponent<Player>().getBoardState();
+      // Compare to see if last hash is same as new hash
+      if (myState.hash != lastHash)
       {
-        Debug.Log(request.error);
+        string state = JsonUtility.ToJson(myState);
+        string url = PlayerManager.Instance.apiUrl + "users/" + playerID + "/state";
+        // Send post request to update my state in the server
+        byte[] bytes = Encoding.UTF8.GetBytes(state);
+        // Create the web request and set the correct properties
+        UnityWebRequest request = new UnityWebRequest(url);
+        request.method = UnityWebRequest.kHttpVerbPOST;
+        request.uploadHandler = new UploadHandlerRaw (bytes);
+        request.uploadHandler.contentType = "application/json";
+        yield return request.SendWebRequest();
+        // Debug the results
+        if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          Debug.Log("State sent successfully to server");
+        }
+        // Save the hash
+        lastHash = myState.hash;
+        // Dispose of the request to prevent memory leaks
+        request.Dispose();
       }
-      else
-      {
-        Debug.Log("State sent successfully to server");
+      else {
+        Debug.Log("Your state has NOT changed. Wont send it to server.");
       }
-      // Dispose of the request to prevent memory leaks
-      request.Dispose();
     }
 
     IEnumerator getOpponentStateFromServer()

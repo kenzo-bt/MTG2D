@@ -4,32 +4,50 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
-    public List<CardInfo> hand = new List<CardInfo>();
-    private int handSize = 7;
-    private int mulligans = 0;
-    public GameObject deckObject;
+    public List<CardInfo> hand;
     public GameObject cardPrefab;
-    public GameObject gameStateObject;
-    private GameState gameState;
-    private Deck deck;
-    public bool isInitialized = false;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-      deck = deckObject.GetComponent<Deck>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-      if (!isInitialized && deck.isInitialized)
+
+    }
+
+    public void initializeHand()
+    {
+      hand = new List<CardInfo>();
+    }
+
+    public void addCard(CardInfo card)
+    {
+      // Update data
+      hand.Add(card);
+      // Update physical cards
+      GameObject cardInstance = Instantiate(cardPrefab, transform);
+      cardInstance.GetComponent<WebCard>().texturizeCard(card);
+      cardInstance.GetComponent<DragDrop>().player = player;
+    }
+
+    public void removeCard(CardInfo card)
+    {
+      // Update data
+      hand.Remove(card);
+      // Update physical cards
+      int numChildren = transform.childCount;
+      for(int i = 0; i < numChildren; i++)
       {
-        isInitialized = true;
-        generateHand(handSize);
-        showHand();
-        gameState = gameStateObject.GetComponent<GameState>();
-        gameState.sendState();
+        if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardName == card.name)
+        {
+          DestroyImmediate(transform.GetChild(i).gameObject);
+          break;
+        }
       }
     }
 
@@ -39,30 +57,8 @@ public class Hand : MonoBehaviour
       return hand.Count;
     }
 
-    // Draw 7 cards from deck
-    private void generateHand(int numCards)
-    {
-      for (int i = 0; i < numCards; i++)
-      {
-        hand.Add(deck.drawCard());
-      }
-    }
-
-    // Show hand (Generate the UI card images)
-    private void showHand()
-    {
-      foreach (CardInfo card in hand)
-      {
-        GameObject cardInstance = Instantiate(cardPrefab, transform);
-        WebCard cardScript = cardInstance.GetComponent<WebCard>();
-        cardScript.texturizeCard(card);
-      }
-
-      orderHand();
-    }
-
     // Position cards in hand
-    private void orderHand()
+    public void orderHand()
     {
       float cardWidth = cardPrefab.GetComponent<RectTransform>().sizeDelta.x;
       float handWidth = cardWidth * hand.Count;
@@ -82,39 +78,22 @@ public class Hand : MonoBehaviour
     }
 
     // Empty hand
-    private void emptyHand()
+    public void emptyHand()
     {
+      // Update data
       hand = new List<CardInfo>();
+      // Update physical cards
       int numChildren = transform.childCount;
-
       for (int i = 0; i < numChildren; i++)
       {
         DestroyImmediate(transform.GetChild(0).gameObject);
       }
     }
 
-    // Reset hand
-    public void resetHand()
-    {
-      mulligans = 0;
-      emptyHand();
-      generateHand(handSize);
-      showHand();
-    }
-
-    // Mulligan
-    public void mulligan()
-    {
-      mulligans += 1;
-      emptyHand();
-      generateHand(handSize - mulligans);
-      showHand();
-    }
-
     // Debug hand info
-    private void debugPrintHand()
+    public void debugPrintHand()
     {
-      foreach (var card in hand)
+      foreach (CardInfo card in hand)
       {
         Debug.Log(card.name);
       }

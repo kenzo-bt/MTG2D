@@ -6,15 +6,12 @@ using UnityEngine.UI;
 
 public class Deck : MonoBehaviour
 {
-    private List<CardInfo> deck = new List<CardInfo>();
-    public bool isInitialized = false;
+    private List<CardInfo> deck;
 
     // Start is called before the first frame update
     void Start()
     {
-      generateDeck();
-      shuffleDeck();
-      isInitialized = true;
+
     }
 
     // Update is called once per frame
@@ -52,7 +49,7 @@ public class Deck : MonoBehaviour
     }
 
     // Draws a card from deck. Remove from deck and return card name.
-    public CardInfo drawCard()
+    public CardInfo removeCard()
     {
       if (deck.Count > 0)
       {
@@ -67,8 +64,8 @@ public class Deck : MonoBehaviour
       }
     }
 
-    // Reset deck
-    public void resetDeck()
+    // Initialize the deck at game start
+    public void initializeDeck()
     {
       deck = new List<CardInfo>();
       generateDeck();
@@ -82,7 +79,6 @@ public class Deck : MonoBehaviour
       {
         Debug.Log(card.name);
       }
-
       Debug.Log("Card count: " + deck.Count);
     }
 }

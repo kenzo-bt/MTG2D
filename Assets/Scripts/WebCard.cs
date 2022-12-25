@@ -8,7 +8,8 @@ using UnityEngine.Networking;
 
 public class WebCard : MonoBehaviour
 {
-    private string cardName;
+    public string cardName;
+    public string cardId;
     private string cachePath;
     private string fileExtension;
     public GameObject cardImageObject;
@@ -48,9 +49,10 @@ public class WebCard : MonoBehaviour
     // Apply texture to card
     public void texturizeCard(CardInfo card)
     {
+      cardId = card.id;
+      cardName = card.name;
       cachePath = Application.persistentDataPath + "/ImageCache/";
       fileExtension = PlayerManager.Instance.serverImageFileExtension;
-      string cardId = card.id;
       string set = card.set;
       // Use old border mask if card is of the Alpha set
       if (card.set == "LEA")
@@ -151,5 +153,29 @@ public class WebCard : MonoBehaviour
     public void hideFullSize()
     {
       fullMaskObject.SetActive(false);
+    }
+
+    public void bringToFront()
+    {
+      GetComponent<Canvas>().overrideSorting = true;
+    }
+
+    public void sendToBack()
+    {
+      GetComponent<Canvas>().overrideSorting = false;
+    }
+
+    public void highlightInHand()
+    {
+      Debug.Log("Highlighting card!");
+      bringToFront();
+      transform.localPosition = new Vector3(transform.localPosition.x, 160, transform.localPosition.z);
+    }
+
+    public void unHighlightInHand()
+    {
+      Debug.Log("Un-Highlighting card!");
+      sendToBack();
+      transform.localPosition = new Vector3(transform.localPosition.x, 0, transform.localPosition.z);
     }
 }
