@@ -1,0 +1,1595 @@
+{
+    "setCode": "ATQ",
+    "setName": "Antiquities",
+    "cards": [
+        {
+            "id": "2172f6a4-a1a1-5c61-bcb3-393b381e7a0a",
+            "name": "Argivian Archaeologist",
+            "text": "o\nWoo\nW Tap to bring one artifact from your graveyard to your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "c43e408c-64cf-57c8-8c4f-acdd4a9fa912",
+            "name": "Argivian Blacksmith",
+            "text": "Tap to prevent up to 2 damage to target artifact creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "93a5a9ef-4f3d-5413-bbff-1b3dca579da4",
+            "name": "Artifact Ward",
+            "text": "Target creature cannot be blocked by artifact creatures, and any damage taken from an artifact source is reduced to 0. Target creature is unaffected by any artifact effects that target it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "fc1966ef-41bd-5f01-bc79-ae706037eb19",
+            "name": "Circle of Protection: Artifacts",
+            "text": "o2: Prevents all damage against you from any one artifact source. If a source does damage to you more than once in a turn, you must pay o2 each time you want to prevent the damage.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "8a03a3b6-6f37-578c-9f72-fe141793c957",
+            "name": "Damping Field",
+            "text": "Players may not untap more than one artifact during each of their own untap phases.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "a4c662b9-3a91-59b6-98fd-45fd1763860e",
+            "name": "Martyrs of Korlis",
+            "text": "Unless Martyrs of Korlis is tapped, any damage done to you by artifacts is instead applied to Martyrs of Korlis. You may not take this damage yourself, though you may prevent it if possible. No more than one Bodyguard of your choice can take damage for you in this manner each turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "62ba1509-14a9-5fdb-a6ed-40c76fe7d711",
+            "name": "Reverse Polarity",
+            "text": "All damage done to you so far this turn by artifacts is retroactively added to your life total instead of subtracted. Further damage this turn is treated normally.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "44f6abee-a596-5e23-93f9-234bb96bf1cb",
+            "name": "Drafna's Restoration",
+            "text": "Take any number of artifacts of your choice from target player's graveyard and place them on top of that player's library, in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "1fc46567-9a43-543f-bd97-391e2adb2f9d",
+            "name": "Energy Flux",
+            "text": "All artifacts in play now require an upkeep cost of o2 in addition to any other upkeep costs they may have. If the upkeep cost for an artifact is not paid, the artifact must be discarded.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "31ce9fd3-2c07-5362-b628-be49b29e59d2",
+            "name": "Hurkyl's Recall",
+            "text": "All artifacts in play owned by target player are returned to target player's hand. Any enchantments on those artifacts are discarded. Cannot be played during the damage-dealing phase of an attack.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "ec79b3db-99bd-536b-b09d-5438bac5536e",
+            "name": "Power Artifact",
+            "text": "The activation cost of target artifact is reduced by o2. If this would reduce target artifact's activation cost below o1, target artifact's activation cost becomes o1. Power Artifact has no effect on artifacts that have no activation cost or whose activation cost is o0.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "7b3f65b8-2dd9-5026-be22-ef18aa7f21b2",
+            "name": "Reconstruction",
+            "text": "Bring one artifact from your graveyard to your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "8ea7d80c-110e-55ae-bbf6-38d6861a559a",
+            "name": "Sage of Lat-Nam",
+            "text": "Tap to draw a card from your library. Each time you use this ability, you must choose one of your artifacts in play and place it in the graveyard. This artifact cannot be one that is already on its way to the graveyard, and artifact creatures killed this way may not be regenerated.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "98893d8a-85dc-5429-9648-c93feda4873e",
+            "name": "Transmute Artifact",
+            "text": "Search through your library for one artifact and immediately place it into play; also, choose any artifact in play that you control and place it in its owner's graveyard. If the new artifact has a casting cost greater than that of the discarded one, you must pay the difference or Transmute Artifact fails and both artifacts are discarded. Shuffle your library after playing this card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "2c5aef2a-628a-56a7-92df-97fbc176df8c",
+            "name": "Artifact Possession",
+            "text": "Artifact Possession does 2 damage to target artifact's controller each time target artifact is tapped or its activation cost is paid. Has no effect if cast on a continuous artifact.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "ca6c9d78-48ad-5ce6-a8ff-55c699fd6a1e",
+            "name": "Gate to Phyrexia",
+            "text": "Sacrifice one of your creatures during your upkeep to destroy any one artifact. You may not sacrifice a creature that is already on its way to the graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "b2a0023e-3ae7-5d59-a33f-2af006890b25",
+            "name": "Haunting Wind",
+            "text": "Each time an artifact in play is tapped or its activation cost is paid, Haunting Wind does 1 damage to that artifact's controller. Is not triggered by continuous artifacts.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "0a53e07a-4fae-56a5-9976-be85f7da6bef",
+            "name": "Phyrexian Gremlins",
+            "text": "Tap Gremlins to tap an artifact. As long as Gremlins remain tapped and in play, that artifact does not untap as normal during its controller's untap phase. You may choose not to untap Gremlins during your untap phase.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "d5e8a38a-5439-511c-8fff-35616be82a8d",
+            "name": "Priest of Yawgmoth",
+            "text": "Tap to add an amount of black mana equal to target artifact's casting cost to your mana pool. This effect is played as an interrupt. Target artifact, which must belong to you, is discarded. This artifact cannot be one that is already on its way to the graveyard, and artifact creatures killed this way may not be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "6fc80bbd-ee58-5515-86cb-918583d6e465",
+            "name": "Xenic Poltergeist",
+            "text": "Tap to turn target non-creature artifact into an artifact creature with both power and toughness equal to its casting cost. This transformation lasts until your next upkeep; target retains all its original abilities as well.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "c6e4d57e-e983-58ba-bd0b-b440e9a95166",
+            "name": "Yawgmoth Demon",
+            "text": "Flying, first strike\nDuring your upkeep, choose one of your artifacts in play and place it in the graveyard, or Yawgmoth Demon becomes tapped and deals 2 points of damage to you. Artifact creatures destroyed this way may not be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "8d049b0a-7571-57bc-853a-d1fb8232fec9",
+            "name": "Artifact Blast",
+            "text": "Counters any artifact as it is being cast.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "062dec00-8d7e-51f2-ba8d-ea6f930ffcf3",
+            "name": "Atog",
+            "text": "o0: +2/+2 until end of turn. Each time you use this ability, you must choose one of your artifacts in play and place it in the graveyard. This artifact cannot be one that is already on its way to the graveyard, and artifact creatures killed this way may not be regenerated.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "79afd8d0-d940-561d-8485-d57e3c9ca1fd",
+            "name": "Atog",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "24c4d57a-3560-564d-8404-5b1e746606c6",
+            "name": "Detonate",
+            "text": "Targets any artifact; X is the casting cost of target artifact. Target artifact is destroyed, and Detonate does X points of damage to artifact's controller. Artifact creatures destroyed in this manner may not be regenerated.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "9b1fe74e-ec49-5c02-b0be-c382c3d8e5af",
+            "name": "Dwarven Weaponsmith",
+            "text": "Tap during your upkeep to add a permanent +1/+1 counter to any creature. Each time you use this ability, you must choose one of your artifacts in play and place it in the graveyard. This artifact cannot be one that is already on its way to the graveyard, and artifact creatures killed in this way may not be regenerated.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "4a8ced8a-e033-5a50-a50f-2b628fb60818",
+            "name": "Goblin Artisans",
+            "text": "You may tap Goblin Artisans as you cast an artifact. Then flip a coin; opponent calls heads or tails while coin is in the air. If the flip ends up in opponent's favor, your artifact is countered. Otherwise, draw another card from your library. You can only use this ability once for each time you cast an artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "03014f7c-5ed1-5eaa-b405-53e66a114061",
+            "name": "Orcish Mechanics",
+            "text": "Tap to do 2 points of damage to any target. Each time you use this ability, you must choose one of your artifacts in play and place it in the graveyard. This artifact cannot be one already on its way to the graveyard, and artifact creatures killed this way may not be regenerated.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "37cb60a3-9bbf-5035-b542-cc86387fe39f",
+            "name": "Shatterstorm",
+            "text": "All artifacts in play are discarded.\nArtifact creatures cannot be regenerated.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "3e7ed4d3-43e8-5ab2-b343-2bd0cd564a0a",
+            "name": "Argothian Pixies",
+            "text": "Cannot be blocked by artifact creatures. Any damage Argothian Pixies take from artifact creatures is reduced to 0.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "24a035d4-f042-51f8-b018-31697d0ae891",
+            "name": "Argothian Treefolk",
+            "text": "Any damage Argothian Treefolk take from an artifact source is reduced to 0.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "6360649f-b0d4-5d11-8d4a-4481b3f2d8e7",
+            "name": "Citanul Druid",
+            "text": "Druid gains a +1/+1 counter each time opponent casts an artifact.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "3a12cebc-8f57-5bd8-82f0-a947038da26a",
+            "name": "Crumble",
+            "text": "Destroy target artifact; artifact creatures may not regenerate. Artifact's controller gains life points equal to target artifact's casting cost.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "f00a51ae-00ac-560a-8e98-e59bd69d1cc9",
+            "name": "Gaea's Avenger",
+            "text": "The *s below are the number of artifacts opponent has in play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "546a88d7-1cda-5567-8721-cf58d21609f2",
+            "name": "Powerleech",
+            "text": "Gain 1 life whenever one of opponent's artifacts becomes tapped, or whenever the activation cost of one of opponent's artifacts is paid. Is not triggered by continuous artifacts.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "61475d58-937f-5116-b319-03779a9cc58f",
+            "name": "Titania's Song",
+            "text": "All non-creature artifacts in play lose all their usual abilities and become artifact creatures with toughness and power both equal to their casting costs. If Titania's Song leaves play, artifacts return to normal just before the untap phase of the next turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "06d37a54-ac63-5960-a952-a896193c3995",
+            "name": "Amulet of Kroog",
+            "text": "o2: Prevent 1 damage to any target.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "85cc73a1-602e-57dd-b4df-8ccc47bf2cb9",
+            "name": "Armageddon Clock",
+            "text": "Put one counter on Armageddon Clock during each of your upkeeps. At the end of your upkeep, each player takes damage equal to the number of counters on the Clock. Any player may spend o4 during any upkeep to remove a counter.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "3108f008-0f9f-51f2-9f35-e0facff6e640",
+            "name": "Ashnod's Altar",
+            "text": "o0: Sacrifice one of your creatures to add 2 colorless mana to your mana pool. This effect is played as an interrupt. You may not sacrifice a creature that is already on its way to the graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "89582854-9011-5b30-a8c7-88ef6103914f",
+            "name": "Ashnod's Battle Gear",
+            "text": "o2: Give a creature of yours +2/-2 as long as Ashnod's Battle Gear is tapped. You may choose not to untap Ashnod's Battle Gear during untap phase.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "eb81a30d-0113-5c65-b177-d5201be5e269",
+            "name": "Ashnod's Transmogrant",
+            "text": "Target non-artifact creature gains +1/+1 and is now considered an artifact creature, though it retains its original color. Discard Ashnod's Transmogrant after it is used.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "45b2a364-e246-5f74-8d90-e742370a4cbb",
+            "name": "Battering Ram",
+            "text": "Bands, but only when attacking. Any wall blocking Battering Ram is destroyed. Walls destroyed this way deal their damage before dying.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "47a60b39-e13f-5741-a332-bab38681d506",
+            "name": "Bronze Tablet",
+            "text": "o4: Target any card opponent has in play; remove it and Bronze Tablet from game. You become owner of that card, and your opponent becomes owner of Bronze Tablet. Exchange is permanent; play as interrupt. Opponent can prevent exchange by spending 10 life; this discards Bronze Tablet. Damage-preventing effects cannot counter such loss of life. Bronze Tablet comes into play tapped. Remove this card from deck if not playing for ante.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "c30b2434-0f06-53e1-b79b-e98fc6c0024a",
+            "name": "Candelabra of Tawnos",
+            "text": "oo\nX Untap X separate lands.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "ed4beaef-692d-5825-8a3c-faba028d397d",
+            "name": "Clay Statue",
+            "text": "o2: Regenerates",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "f35653fe-6fa3-5565-9677-04e07742c570",
+            "name": "Clockwork Avian",
+            "text": "Flying\nPut four +1/+0 counters on Avian. After Avian attacks or blocks a creature, discard a counter.\nDuring his or her upkeep, controller may buy back lost counters for o1 per counter; this taps Avian.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "9edc0231-4585-5908-91bc-530b5e37c41c",
+            "name": "Colossus of Sardia",
+            "text": "Trample\nColossus does not untap normally during untap phase; you may spend o9 during your upkeep phase to untap Colossus.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 9.0,
+            "manaCost": "{9}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "ee5206cd-b4f0-5f2b-b4a0-50f2bf298ac1",
+            "name": "Coral Helm",
+            "text": "o3: Give target creature +2/+2 until end of turn. Each time you use this ability, you must discard one card at random from your hand. Coral Helm cannot be used if you have no cards in your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "e5a4cd29-5cce-5fa0-80a7-44f06589505b",
+            "name": "Cursed Rack",
+            "text": "Opponent must discard down to four cards during his or her discard phase.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "f8a02129-c89c-5f6a-b255-0501f8604783",
+            "name": "Dragon Engine",
+            "text": "o2: +1/+0 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "a4c55bc8-a284-516a-838e-30a689e0ccf2",
+            "name": "Feldon's Cane",
+            "text": "o0: Reshuffle your graveyard into your library. If Feldon's Cane is used, remove it from the game, returning it to its owner's deck only when the game is over.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "81388425-7e8b-56a8-b7d9-10369e1840fa",
+            "name": "Golgothian Sylex",
+            "text": "o1: All cards from the Antiquities expansion, including Golgothian Sylex, must be discarded from play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "5b2752e8-947a-562f-85ac-9238d11f689e",
+            "name": "Grapeshot Catapult",
+            "text": "Tap to deal 1 damage to target flying creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "5658fb05-55d8-51ee-96c6-f11a95491c80",
+            "name": "Ivory Tower",
+            "text": "During your upkeep phase, gain 1 life for each card in your hand above four.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "27b3d07b-e9bf-581d-ab94-1b7a150cdceb",
+            "name": "Jalum Tome",
+            "text": "o2: Draw a card from your library, then immediately discard a card of your choice to your graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "5d492ae6-cb7c-5c83-bb72-9dba7e91822a",
+            "name": "Mightstone",
+            "text": "All attacking creatures gain +1/+0.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "aae274de-d935-5ca7-a450-6812bceaf87d",
+            "name": "Millstone",
+            "text": "o2: Take the top two cards from target player's library and put them in target player's graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "18295dd4-f5a8-594a-8655-2e6e6b17f603",
+            "name": "Mishra's War Machine",
+            "text": "Bands\nDuring your upkeep, discard one card of your choice from your hand, or Mishra's War Machine becomes tapped and does 3 points of damage to you.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "770e06ad-a595-539c-99e6-1d43f663c337",
+            "name": "Obelisk of Undoing",
+            "text": "o6: Return any of your permanents in play to your hand; enchantments on that permanent are discarded. Can be used only on permanents you cast.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "d9e1f806-d023-5989-9340-2ee737f03025",
+            "name": "Onulet",
+            "text": "If Onulet goes to the graveyard, its controller gains 2 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "bf1fa173-654a-5aff-a402-4d4614e03421",
+            "name": "Ornithopter",
+            "text": "Flying",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "90ccad0a-0c43-5ecc-9f58-efb7c6311dde",
+            "name": "Primal Clay",
+            "text": "When you cast Primal Clay, you must choose whether to make it a 1/6 wall, a 3/3 creature, or a 2/2 flying creature. Primal Clay then remains in this form until altered by another card or removed from play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "5cfae833-52ae-52d7-9141-fc6efcc66275",
+            "name": "Rakalite",
+            "text": "o2: Prevent 1 damage to any target. If Rakalite is used, it returns to its owner's hand at end of turn; all enchantments on Rakalite are then discarded.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "12a49ccf-364a-5252-89ae-39cf5c847ac5",
+            "name": "Rocket Launcher",
+            "text": "o2: Do 1 damage to any target. Rocket Launcher may not be used until it begins a turn in play on your side. If it is used, Rocket Launcher is destroyed at end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "484f1f05-d8e9-5ef3-a8b8-07a9edc23f5e",
+            "name": "Shapeshifter",
+            "text": "The *s below represent any number from 0 to 6. You set * when Shapeshifter is cast, and you may change it during your upkeep.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "476d2ec1-6212-5308-a718-72a5850c31e4",
+            "name": "Staff of Zegon",
+            "text": "o3: Target creature loses -2/-0 until end of turn. Creatures with power less than 1 deal no damage.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "685c9d21-bac0-545f-a6cc-c1041add2225",
+            "name": "Su-Chi",
+            "text": "If Su-Chi goes to the graveyard, its controller gains 4 colorless mana.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "ea0f41f1-0e3e-566e-9ad1-b796c970fcb1",
+            "name": "Tablet of Epityr",
+            "text": "o1: You gain 1 life every time one of your artifacts goes to the graveyard. Can only give 1 life each time an artifact reaches the graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "81527540-94fa-5e90-8853-7d0b9ac68a26",
+            "name": "Tawnos's Coffin",
+            "text": "o3: Select a creature in play; that creature is considered out of play as long as Coffin remains tapped. Hence the creature cannot be the target of spells and cannot receive damage, use special powers, attack, or defend. All counters and enchantments on the creature remain but are also out of play. If Coffin is untapped or removed, creature returns to play tapped. You may choose not to untap Coffin during the untap phase.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "9e44fef0-b169-5493-b274-a13cf27d4f85",
+            "name": "Tawnos's Wand",
+            "text": "o2: Make a creature of power no greater than 2 unblockable by all creatures except artifact creatures until end of turn. Other cards may be used to increase target creature's power beyond 2 after defense is chosen.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "2012a5ac-9d24-5d6e-9931-7435a3d26903",
+            "name": "Tawnos's Weaponry",
+            "text": "o2: Target creature gains +1/+1 as long as Tawnos's Weaponry remains tapped. You may choose not to untap Tawnos's Weaponry during untap phase.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "38792f46-6fa4-5afb-aca9-db8d4732fd18",
+            "name": "Tawnos's Weaponry",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "23d749b2-d958-51e5-a251-9ae96ae09bbf",
+            "name": "Tetravus",
+            "text": "Flying\nTetravus gets three +1/+1 counters when cast. During your upkeep, you may move each of these counters on or off Tetravus.  Counters moved off of Tetravus become independent 1/1 flying artifact creatures.  If such a creature dies, the counter is removed from play.  Such creatures may not have enchantments cast on them, and they do not share any enchantments on Tetravus.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "8282dfbf-e403-599c-88f9-89b77a95c303",
+            "name": "The Rack",
+            "text": "If opponent has fewer than three cards in hand during his or her upkeep, the Rack does 1 damage to opponent for each card fewer than three.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "93b4c02e-bca7-52e7-9cdf-5e5bb924315a",
+            "name": "Triskelion",
+            "text": "Triskelion gets three +1/+1 counters when cast. Controller may discard a +1/+1 counter at any time to do 1 damage to any target.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "d1454386-64d1-52f3-b1be-baf1786ddc17",
+            "name": "Urza's Avenger",
+            "text": "o0: Avenger loses -1/-1 and gains one of your choice of flying, banding, first strike, or trample until end of turn. Attribute losses and ability gains are cumulative.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "e11d3332-fa89-5f0c-bbc0-916b89e52fa1",
+            "name": "Urza's Chalice",
+            "text": "o1: Any artifact cast by any player gives you 1 life. Can only give 1 life each time an artifact is cast.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "14f6fa46-4534-5a82-b31d-ec7b428e76e6",
+            "name": "Urza's Miter",
+            "text": "o3: Draw one card from your library every time an artifact of yours goes to the graveyard. Can only let you draw one card per artifact destruction. May not be used when you destroy an artifact to gain benefits from another card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "c526289b-a705-5350-a7fe-d72b312c6f97",
+            "name": "Wall of Spears",
+            "text": "First strike, counts as a wall.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "a072feb1-0ada-594c-be41-88f7b72618f8",
+            "name": "Weakstone",
+            "text": "All attacking creatures lose -1/-0. Creatures with power less than 1 deal no damage.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "bb438a2c-feba-5e98-841b-dcce02d063b6",
+            "name": "Yotian Soldier",
+            "text": "Attacking does not cause Yotian Soldier to tap.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "927c9c55-20a2-5ae1-a64f-31495b5d4d2c",
+            "name": "Mishra's Factory",
+            "text": "Tap to add 1 colorless mana to your mana pool or give any Assembly Worker +1/+1 until end of turn.\no1: Mishra's Factory becomes an Assembly Worker, a 2/2 artifact creature, until end of turn. Assembly Worker is still considered a land as well.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "d947adc6-97e9-5acf-be62-3ebd8b00c7e4",
+            "name": "Mishra's Factory",
+            "text": "Tap to add 1 colorless mana to your mana pool or give any Assembly Worker +1/+1 until end of turn.\no1: Mishra's Factory becomes an Assembly Worker, a 2/2 artifact creature, until end of turn. Assembly Worker is still considered a land as well.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "d8ad1e4e-4bc5-5c9f-a860-f5a48b02e9f2",
+            "name": "Mishra's Factory",
+            "text": "Tap to add 1 colorless mana to your mana pool or give any Assembly Worker +1/+1 until end of turn.\no1: Mishra's Factory becomes an Assembly Worker, a 2/2 artifact creature, until end of turn. Assembly Worker is still considered a land as well.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "a29a3bd1-465b-5c6c-9220-24f433f38f3a",
+            "name": "Mishra's Factory",
+            "text": "Tap to add 1 colorless mana to your mana pool or give any Assembly Worker +1/+1 until end of turn.\no1: Mishra's Factory becomes an Assembly Worker, a 2/2 artifact creature, until end of turn. Assembly Worker is still considered a land as well.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "4938b0bf-0804-58a4-b08c-28eaa0d50b08",
+            "name": "Mishra's Workshop",
+            "text": "Tap to add 3 colorless mana to your mana pool. This mana may only be used to cast artifacts.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "b769fe08-b7ac-55ac-a271-5071c335cd45",
+            "name": "Strip Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool or place Strip Mine in your graveyard and destroy one land of your choice.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "51340ce9-e346-5866-850b-44a8c939cf6c",
+            "name": "Strip Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool or place Strip Mine in your graveyard and destroy one land of your choice.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "5c14e66e-3a74-57bf-916e-07bd777346b1",
+            "name": "Strip Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool or place Strip Mine in your graveyard and destroy one land of your choice.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "4506940f-2074-5217-9e4c-d0686f89d7e3",
+            "name": "Strip Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool or place Strip Mine in your graveyard and destroy one land of your choice.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ATQ"
+        },
+        {
+            "id": "07fff1b2-e42f-57fb-bb5b-f2d7811b849e",
+            "name": "Urza's Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "c3209e37-85dd-51dc-911d-d56541017839",
+            "name": "Urza's Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "b283ac99-3b95-55be-9c4d-c93cf9d3bde3",
+            "name": "Urza's Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "a41407e3-c878-50bf-8b99-6423266b923e",
+            "name": "Urza's Mine",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "dd2315b3-8e04-5f9e-bcb8-1802eeac49d4",
+            "name": "Urza's Power Plant",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "04f6bbac-81d2-5ae7-ae0d-e18ef003760c",
+            "name": "Urza's Power Plant",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "21491a40-9e69-5c60-9594-44f62f44a6a3",
+            "name": "Urza's Power Plant",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "a38bd19b-0272-5b82-9f7c-be82514e5bba",
+            "name": "Urza's Power Plant",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 2 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "e555dd4a-3b70-5579-b4e0-5ed49b9892b7",
+            "name": "Urza's Tower",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 3 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ATQ"
+        },
+        {
+            "id": "82c21ea8-a057-55f0-bab1-7ead4bee5ee2",
+            "name": "Urza's Tower",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 3 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "5d31d685-4a95-5674-a175-398ce3e2feed",
+            "name": "Urza's Tower",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 3 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        },
+        {
+            "id": "7d956150-e28d-5468-ab92-95f38675ddb9",
+            "name": "Urza's Tower",
+            "text": "Tap to add 1 colorless mana to your mana pool. If you have Urza's Mine, Urza's Tower, and Urza's Power Plant in play at the same time, tap to add 3 colorless mana to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "ATQ"
+        }
+    ]
+}
