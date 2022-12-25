@@ -23,6 +23,8 @@ public class LoadingManager : MonoBehaviour
       vsScreen = versusScreenObject.GetComponent<CanvasGroup>();
       yourName.GetComponent<TMP_Text>().text = PlayerManager.Instance.myName;
       opponentName.GetComponent<TMP_Text>().text = PlayerManager.Instance.opponentName;
+      // Clean my state in the server
+      StartCoroutine(deletePreviousState());
       if (myRole == "challenger")
       {
         InvokeRepeating("checkIfGuestReady", 3.0f, 3.0f);
@@ -37,6 +39,22 @@ public class LoadingManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    IEnumerator deletePreviousState()
+    {
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/state";
+      UnityWebRequest deleteRequest = new UnityWebRequest(url);
+      deleteRequest.method = UnityWebRequest.kHttpVerbDELETE;
+      yield return deleteRequest.SendWebRequest();
+      if (deleteRequest.result == UnityWebRequest.Result.ConnectionError || deleteRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(deleteRequest.error);
+      }
+      else
+      {
+        Debug.Log("Previous state deleted.");
+      }
     }
 
     private void checkIfGuestReady()
