@@ -6,9 +6,11 @@ public class Player : MonoBehaviour
 {
     public GameObject deckObject;
     public GameObject handObject;
+    public GameObject battlefieldObject;
     public GameObject gameStateObject;
     private Hand hand;
     private Deck deck;
+    private Battlefield battlefield;
     private GameState gameState;
     private Hasher hasher;
     private int mulligans;
@@ -20,12 +22,14 @@ public class Player : MonoBehaviour
       hasher = GetComponent<Hasher>();
       hand = handObject.GetComponent<Hand>();
       deck = deckObject.GetComponent<Deck>();
+      battlefield = battlefieldObject.GetComponent<Battlefield>();
       gameState = gameStateObject.GetComponent<GameState>();
       mulligans = 0;
       initialHandSize = 7;
       // Initialize your deck and hand
       deck.initializeDeck();
       hand.initializeHand();
+      battlefield.initializeBattlefield();
       // Draw 7 cards (Involves hand and deck -> Player handles this)
       drawCards(initialHandSize);
       // Initialize game state
@@ -114,5 +118,6 @@ public class Player : MonoBehaviour
       hand.orderHand();
       // Add card to battlefield
       Debug.Log("Adding to the battlefield...");
+      battlefield.addCard(card);
     }
 }

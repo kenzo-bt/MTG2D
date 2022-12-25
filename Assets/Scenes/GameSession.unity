@@ -654,6 +654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 300361127}
+  - component: {fileID: 300361128}
   m_Layer: 5
   m_Name: Lands
   m_TagString: Untagged
@@ -681,6 +682,19 @@ RectTransform:
   m_AnchoredPosition: {x: -449.9999, y: 87.50003}
   m_SizeDelta: {x: 900, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &300361128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300361126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cefebde0e991e64c8d2760dd2dc4984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 2394192197915304873, guid: dba219b986624e946859ec5e18efd367, type: 3}
 --- !u!1001 &506921592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -860,6 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 516316686}
+  - component: {fileID: 516316687}
   m_Layer: 5
   m_Name: Creatures
   m_TagString: Untagged
@@ -887,6 +902,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -87.50003}
   m_SizeDelta: {x: 1800, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &516316687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516316685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cefebde0e991e64c8d2760dd2dc4984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 2394192197915304873, guid: dba219b986624e946859ec5e18efd367, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -881, y: -0.0000038147}
+  m_AnchoredPosition: {x: -886.75, y: 344}
   m_SizeDelta: {x: 146.3, y: 321.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1568760727
@@ -1595,6 +1623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1568760728}
+  - component: {fileID: 1568760729}
   m_Layer: 5
   m_Name: Others
   m_TagString: Untagged
@@ -1622,6 +1651,19 @@ RectTransform:
   m_AnchoredPosition: {x: 449.9999, y: 87.50003}
   m_SizeDelta: {x: 900, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1568760729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568760727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cefebde0e991e64c8d2760dd2dc4984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 2394192197915304873, guid: dba219b986624e946859ec5e18efd367, type: 3}
 --- !u!1 &1739602573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,6 +1810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deckObject: {fileID: 840629723}
   handObject: {fileID: 2105555775}
+  battlefieldObject: {fileID: 2112610993}
   gameStateObject: {fileID: 1739602573}
   initialHandSize: 0
 --- !u!114 &1996678667
@@ -2165,6 +2208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112610994}
+  - component: {fileID: 2112610995}
   m_Layer: 5
   m_Name: Battlefield
   m_TagString: Untagged
@@ -2195,3 +2239,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 95}
   m_SizeDelta: {x: 1920, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2112610995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112610993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371b55497f3000b4fbc0064b17e81092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureArea: {fileID: 516316685}
+  landArea: {fileID: 300361126}
+  otherArea: {fileID: 1568760727}
+  creatures: []
+  lands: []
+  others: []

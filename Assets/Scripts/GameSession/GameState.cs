@@ -9,8 +9,8 @@ public class GameState : MonoBehaviour
 {
     public GameObject playerObject;
     public GameObject opponentObject;
+    private Player player;
     private Opponent opponent;
-    private Hasher hasher;
     private string lastOpponentHash;
     private string lastHash;
     private int playerID;
@@ -32,14 +32,14 @@ public class GameState : MonoBehaviour
     {
       lastHash = "";
       lastOpponentHash = "";
-      hasher = GetComponent<Hasher>();
+      player = playerObject.GetComponent<Player>();
       opponent = opponentObject.GetComponent<Opponent>();
       playerID = PlayerManager.Instance.myID;
       opponentID = PlayerManager.Instance.opponentID;
       // Send initial state
       sendState();
       // Start listening for changes in opponent state
-      InvokeRepeating("getOpponentState", 3f, 3f);
+      //// ENABLE THIS LINE AFTER DEBUGGING GAME SESSION InvokeRepeating("getOpponentState", 3f, 3f);
     }
 
     public void getOpponentState()
@@ -55,7 +55,7 @@ public class GameState : MonoBehaviour
     IEnumerator sendStateToServer()
     {
       // Get JSON string and encode it as UTF8 bytes to send as POST body
-      BoardState myState = playerObject.GetComponent<Player>().getBoardState();
+      BoardState myState = player.getBoardState();
       // Compare to see if last hash is same as new hash
       if (myState.hash != lastHash)
       {
