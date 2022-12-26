@@ -120,4 +120,28 @@ public class Player : MonoBehaviour
       Debug.Log("Adding to the battlefield...");
       battlefield.addCard(card);
     }
+
+    // Move card from source to destination
+    public void changeCardLocation(string cardId, string sourceArea, string destination)
+    {
+      // Remove card from current area
+      battlefield.removeCard(cardId, sourceArea);
+      // Place card in given destination
+      if (destination == "hand")
+      {
+        Debug.Log("Sending this card to hand...");
+      }
+      else if (destination == "grave")
+      {
+        Debug.Log("Sending this card to the graveyard...");
+      }
+      else if (destination == "exile")
+      {
+        Debug.Log("Sending this card to exile...");
+      }
+      else if (destination == "deck")
+      {
+        Debug.Log("Sending this card to deck...");
+      }
+    }
 }

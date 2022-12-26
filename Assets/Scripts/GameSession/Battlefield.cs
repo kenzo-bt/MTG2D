@@ -54,4 +54,26 @@ public class Battlefield : MonoBehaviour
       // Update physical cards
       targetArea.GetComponent<BattlefieldArea>().addCard(card);
     }
+
+    public void removeCard(string cardId, string area)
+    {
+      if (area == "Creatures")
+      {
+        creatures.Remove(cardId);
+        creatureArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        Debug.Log("Removed card from creatures area...");
+      }
+      else if (area == "Lands")
+      {
+        lands.Remove(cardId);
+        landArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        Debug.Log("Removed card from lands area...");
+      }
+      else if (area == "Others")
+      {
+        others.Remove(cardId);
+        otherArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        Debug.Log("Removed card from others area...");
+      }
+    }
 }
