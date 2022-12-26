@@ -4,13 +4,15 @@ MTG simulator in 2D made in Unity
 ## Current features
 
 - Deck Browsing / Building / Editing / Saving
+- Adding and removing friends by username
+- Challenge system to host/join games against friends
 
 ## Future features
 
 - Analog game mechanics and interacting with the battlefield
 - Networked play
 
-## How the data was gathered
+## How the card data was gathered
 
 - The python script `getCardsFromSet.py` inside `MTG-Docs/CardDatabase` will parse through JSON set information downloaded from https://mtgjson.com/ and generate a reduced JSON file with only the necessary information.
 - Additionally the script will also download the card images from the Scryfall API and store them in separate folders inside `MTG-Docs/CardDatabase/Images/Sets`
