@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Deck : MonoBehaviour
 {
-    private List<CardInfo> deck;
+    private CardStack stack;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,15 @@ public class Deck : MonoBehaviour
 
     }
 
-    // Read decklist and generate deck
+    // Initialize the deck at game start
+    public void initializeDeck()
+    {
+      stack = GetComponent<CardStack>();
+      stack.initializeStack();
+      generateDeck();
+      shuffleDeck();
+    }
+
     private void generateDeck()
     {
       Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
@@ -29,7 +37,7 @@ public class Deck : MonoBehaviour
       {
         for (int n = 0; n < selectedDeck.cardFrequencies[i]; n++)
         {
-          deck.Add(selectedDeck.cards[i]);
+          stack.addCard(selectedDeck.cards[i].id);
         }
       }
     }
@@ -37,48 +45,43 @@ public class Deck : MonoBehaviour
     // Shuffle deck
     public void shuffleDeck()
     {
-      List<CardInfo> shuffledDeck = new List<CardInfo>();
-      int numCards = deck.Count;
+      Debug.Log("Deck before shuffle has " + stack.cards.Count + " cards.");
+      List<string> shuffledDeck = new List<string>();
+      int numCards = stack.cards.Count;
       for (int i = 0; i < numCards; i++)
       {
-        int randIndex = UnityEngine.Random.Range(0, deck.Count);
-        shuffledDeck.Add(deck[randIndex]);
-        deck.RemoveAt(randIndex);
+        int randIndex = UnityEngine.Random.Range(0, stack.cards.Count);
+        shuffledDeck.Add(stack.cards[randIndex]);
+        stack.cards.RemoveAt(randIndex);
       }
-      deck = shuffledDeck;
+      stack.cards = new List<string>(shuffledDeck);
+      Debug.Log("Deck after shuffle has " + stack.cards.Count + " cards.");
     }
 
-    // Draws a card from deck. Remove from deck and return card name.
-    public CardInfo removeCard()
+    // Draws a card from deck, returns the CardInfo
+    public CardInfo drawCard()
     {
-      if (deck.Count > 0)
+      if (stack.cards.Count > 0)
       {
-        CardInfo card = deck[deck.Count - 1];
-        deck.RemoveAt(deck.Count - 1);
+        string cardId = stack.cards[stack.cards.Count - 1];
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+        stack.cards.RemoveAt(stack.cards.Count - 1);
         return card;
       }
       else
       {
-        Debug.Log("CANT DRAW! Deck size is currently " + deck.Count);
+        Debug.Log("CANT DRAW! Deck size is currently " + stack.cards.Count);
         return null;
       }
-    }
-
-    // Initialize the deck at game start
-    public void initializeDeck()
-    {
-      deck = new List<CardInfo>();
-      generateDeck();
-      shuffleDeck();
     }
 
     // Debug deck info
     private void debugPrintDeck()
     {
-      foreach (CardInfo card in deck)
+      foreach (string cardId in stack.cards)
       {
-        Debug.Log(card.name);
+        Debug.Log("CardID: " + cardId);
       }
-      Debug.Log("Card count: " + deck.Count);
+      Debug.Log("Card count: " + stack.cards.Count);
     }
 }

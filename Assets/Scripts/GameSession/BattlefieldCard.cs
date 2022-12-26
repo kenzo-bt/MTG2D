@@ -35,7 +35,7 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
       // Tell player to move me to a certain destination
       string cardId = GetComponent<WebCard>().cardId;
       string areaName = transform.parent.gameObject.name;
-      player.GetComponent<Player>().changeCardLocation(cardId, transform.parent.gameObject.name, destination);
+      player.GetComponent<Player>().moveBattlefieldCard(cardId, transform.parent.gameObject.name, destination);
     }
 
     public void tapCard()
