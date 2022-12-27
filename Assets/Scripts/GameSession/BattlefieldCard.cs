@@ -32,12 +32,10 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
 
     public void moveCard(string destination)
     {
-      int siblingIndex = transform.GetSiblingIndex();
-      Debug.Log("Sibling index: " + siblingIndex);
       // Tell player to move me to a certain destination
+      int siblingIndex = transform.GetSiblingIndex();
       string cardId = GetComponent<WebCard>().cardId;
       string areaName = transform.parent.gameObject.name;
-      //player.GetComponent<Player>().moveBattlefieldCard(cardId, transform.parent.gameObject.name, destination);
       player.GetComponent<Player>().moveBattlefieldCard(cardId, siblingIndex, transform.parent.gameObject.name, destination);
     }
 

@@ -1595,6 +1595,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 2394192197915304873, guid: d54a6d9e868fbe14b99904eca7db837a, type: 3}
   player: {fileID: 1996678663}
   cards: []
+  cardsVisibility: 
 --- !u!1 &840629723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1759,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 2394192197915304873, guid: d54a6d9e868fbe14b99904eca7db837a, type: 3}
   player: {fileID: 1996678663}
   cards: []
+  cardsVisibility: 
 --- !u!1 &968842481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,6 +2189,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 2394192197915304873, guid: d54a6d9e868fbe14b99904eca7db837a, type: 3}
   player: {fileID: 1996678663}
   cards: []
+  cardsVisibility: 
 --- !u!1 &1179541934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3547,7 @@ MonoBehaviour:
     creatures: []
     lands: []
     others: []
+    life: 0
     hash: 
 --- !u!1 &1914514193
 GameObject:

@@ -8,6 +8,7 @@ public class CardStack : MonoBehaviour
     public GameObject cardPrefab;
     public GameObject player;
     public List<string> cards;
+    public List<bool> cardsVisibility;
     private CardBrowser browser;
     // Start is called before the first frame update
     void Start()
@@ -21,14 +22,22 @@ public class CardStack : MonoBehaviour
 
     }
 
-    public void addCard(string id)
+    public void addCard(string id, bool visibility)
     {
       cards.Add(id);
+      cardsVisibility.Add(visibility);
+    }
+
+    public void removeCard(int index)
+    {
+      cards.RemoveAt(index);
+      cardsVisibility.RemoveAt(index);
     }
 
     public void initializeStack()
     {
       cards = new List<string>();
+      cardsVisibility  = new List<bool>();
       browser = browserObject.GetComponent<CardBrowser>();
     }
 
@@ -37,18 +46,23 @@ public class CardStack : MonoBehaviour
       // Empty browser
       browser.emptyBrowser();
       // Add cards to browser
-      foreach (string cardID in cards)
+      for (int i = 0; i < cards.Count; i++)
       {
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardID);
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(cards[i]);
         GameObject cardInstance = Instantiate(cardPrefab, browser.carousel.transform);
-        cardInstance.GetComponent<WebCard>().texturizeCard(card);
+        if (cardsVisibility[i])
+        {
+          cardInstance.GetComponent<WebCard>().texturizeCard(card);
+        }
         cardInstance.GetComponent<StackCard>().player = player;
+        cardInstance.GetComponent<StackCard>().visible = cardsVisibility[i];
+        cardInstance.GetComponent<StackCard>().hideIfInvisible();
       }
       // Open card browser
       browser.showBrowser(gameObject.name);
     }
 
-    // Get list of card IDs in this stack
+    // Get list of card IDs in this stack (! Add visibilities here)
     public List<string> getStackIds()
     {
       return new List<string>(cards);

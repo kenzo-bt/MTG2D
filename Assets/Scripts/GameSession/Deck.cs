@@ -37,7 +37,7 @@ public class Deck : MonoBehaviour
       {
         for (int n = 0; n < selectedDeck.cardFrequencies[i]; n++)
         {
-          stack.addCard(selectedDeck.cards[i].id);
+          stack.addCard(selectedDeck.cards[i].id, false);
         }
       }
     }
@@ -46,6 +46,7 @@ public class Deck : MonoBehaviour
     public void shuffleDeck()
     {
       List<string> shuffledDeck = new List<string>();
+      stack.cardsVisibility = new List<bool>();
       int numCards = stack.cards.Count;
       for (int i = 0; i < numCards; i++)
       {
@@ -54,6 +55,10 @@ public class Deck : MonoBehaviour
         stack.cards.RemoveAt(randIndex);
       }
       stack.cards = new List<string>(shuffledDeck);
+      for (int i = 0; i < stack.cards.Count; i++)
+      {
+        stack.cardsVisibility.Add(false);
+      }
     }
 
     // Draws a card from deck, returns the CardInfo
@@ -63,7 +68,7 @@ public class Deck : MonoBehaviour
       {
         string cardId = stack.cards[stack.cards.Count - 1];
         CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-        stack.cards.RemoveAt(stack.cards.Count - 1);
+        stack.removeCard(stack.cards.Count - 1);
         return card;
       }
       else
@@ -73,7 +78,7 @@ public class Deck : MonoBehaviour
       }
     }
 
-    // Get ids of my stack
+    // Get ids of my stack (! Add card visibility here)
     public List<string> getDeckIds()
     {
       return new List<string>(stack.cards);

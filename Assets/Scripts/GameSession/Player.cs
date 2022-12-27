@@ -156,35 +156,35 @@ public class Player : MonoBehaviour
       }
       else if (destination == "grave")
       {
-        grave.addCard(cardId);
+        grave.addCard(cardId, true);
       }
       else if (destination == "exile")
       {
-        exile.addCard(cardId);
+        exile.addCard(cardId, true);
       }
       else if (destination == "deck")
       {
         // Currently putting on top of deck -> Need option for top/bottom/shuffled
-        deckStack.addCard(cardId);
+        deckStack.addCard(cardId, true);
       }
       // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
       hideHighlightCard();
     }
 
-    public void moveStackCard(string cardId, string source, string destination)
+    public void moveStackCard(string cardId, int index, string source, string destination)
     {
       // Remove card from current stack
       if (source == "Deck")
       {
-        deckStack.cards.Remove(cardId);
+        deckStack.removeCard(index);
       }
       else if (source == "Grave")
       {
-        grave.cards.Remove(cardId);
+        grave.removeCard(index);
       }
       else if (source == "Exile")
       {
-        exile.cards.Remove(cardId);
+        exile.removeCard(index);
       }
       // Put card in destination area
       if (destination == "Battlefield")
@@ -201,15 +201,15 @@ public class Player : MonoBehaviour
       else if (destination == "Deck")
       {
         // Currently putting on top of deck -> Need option for top/bottom/shuffled
-        deckStack.cards.Add(cardId);
+        deckStack.addCard(cardId, true);
       }
       else if (destination == "Grave")
       {
-        grave.cards.Add(cardId);
+        grave.addCard(cardId, true);
       }
       else if (destination == "Exile")
       {
-        exile.cards.Add(cardId);
+        exile.addCard(cardId, true);
       }
     }
 

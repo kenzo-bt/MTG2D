@@ -11,6 +11,7 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
     public GameObject contextMenu;
     public GameObject destinationIndicator;
     public GameObject destinationText;
+    public GameObject hiddenLayerObject;
     public string destination;
     private Color clrBattle;
     private Color clrGrave;
@@ -19,9 +20,12 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
     private Color clrDeck;
     private Image indicatorImage;
     private TMP_Text indicatorLetter;
+    private CanvasGroup hiddenLayer;
+    public bool visible;
     // Start is called before the first frame update
     void Awake()
     {
+      visible = true;
       destination = "";
       clrBattle = new Color(0.63f, 0f, 0.29f, 1f);
       clrGrave = new Color(0.45f, 0f, 1f, 1f);
@@ -30,6 +34,7 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
       clrDeck = new Color(1f, 0.5f, 0.05f, 1f);
       indicatorImage = destinationIndicator.GetComponent<Image>();
       indicatorLetter = destinationText.GetComponent<TMP_Text>();
+      hiddenLayer = hiddenLayerObject.GetComponent<CanvasGroup>();
     }
 
     // Update is called once per frame
@@ -40,7 +45,10 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
 
     public void showContextMenu()
     {
-      contextMenu.SetActive(true);
+      if (visible)
+      {
+        contextMenu.SetActive(true);
+      }
     }
 
     public void hideContextMenu()
@@ -52,7 +60,9 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
     {
       // Tell player to move me to a certain destination
       string cardId = GetComponent<WebCard>().cardId;
-      player.GetComponent<Player>().moveStackCard(cardId, source, destination);
+      int index = transform.GetSiblingIndex();
+      Debug.Log("Trying to move card from " + source + " to " + destination + ". Index -> " + index);
+      player.GetComponent<Player>().moveStackCard(cardId, index, source, destination);
     }
 
     public void setDestination(string dest)
@@ -112,6 +122,14 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
           showContextMenu();
           destinationIndicator.SetActive(false);
         }
+      }
+    }
+
+    public void hideIfInvisible()
+    {
+      if (!visible)
+      {
+        hiddenLayer.alpha = 1f;
       }
     }
 }

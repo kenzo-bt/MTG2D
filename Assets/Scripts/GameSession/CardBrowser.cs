@@ -41,6 +41,7 @@ public class CardBrowser : MonoBehaviour
         if (card.destination != "")
         {
           card.moveCard(currentlyDisplaying);
+          DestroyImmediate(child.gameObject);
         }
       }
     }
@@ -50,6 +51,8 @@ public class CardBrowser : MonoBehaviour
       currentlyDisplaying = source;
       GetComponent<CanvasGroup>().alpha = 1f;
       GetComponent<CanvasGroup>().blocksRaycasts = true;
+      float carouselWidth = carousel.GetComponent<RectTransform>().sizeDelta.x;
+      carousel.GetComponent<RectTransform>().localPosition = new Vector3((-carouselWidth / 2), 0f, 0f);
     }
 
     public void hideBrowser()
