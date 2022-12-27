@@ -19,16 +19,17 @@ public class Container : MonoBehaviour
 
     public void orderChildrenCenter()
     {
-      int numChildren = transform.childCount;
-      float childWidth = childPrefab.GetComponent<RectTransform>().sizeDelta.x;
-      float currentWidth = childWidth * numChildren;
-      float maxWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
-      if (currentWidth >= maxWidth)
+      float childWidth = childPrefab.GetComponent<RectTransform>().sizeDelta.x * childPrefab.GetComponent<RectTransform>().localScale.x;
+      float allChildrenWidth = childWidth * transform.childCount;
+      float areaWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
+      float spacingOffset = 0f;
+      if (allChildrenWidth > areaWidth)
       {
-        currentWidth = maxWidth;
+        allChildrenWidth = areaWidth;
+        spacingOffset = (childWidth - (allChildrenWidth / transform.childCount)) / transform.childCount;
       }
-      float individualSpace = currentWidth / numChildren;
-      float positionX = 0 - (currentWidth / 2) + (individualSpace / 2);
+      float individualSpace = (allChildrenWidth / transform.childCount)- spacingOffset;
+      float positionX = 0 - (allChildrenWidth / 2);
 
       foreach (Transform child in transform)
       {

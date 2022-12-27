@@ -169,13 +169,13 @@ public class WebCard : MonoBehaviour
     {
       Debug.Log("Highlighting card!");
       bringToFront();
-      transform.localPosition = new Vector3(transform.localPosition.x, 160, transform.localPosition.z);
+      transform.localPosition = new Vector3(transform.localPosition.x, 182f, transform.localPosition.z);
     }
 
     public void unHighlightInHand()
     {
       Debug.Log("Un-Highlighting card!");
       sendToBack();
-      transform.localPosition = new Vector3(transform.localPosition.x, 0, transform.localPosition.z);
+      transform.localPosition = new Vector3(transform.localPosition.x, 0f, transform.localPosition.z);
     }
 }

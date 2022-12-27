@@ -60,21 +60,7 @@ public class Hand : MonoBehaviour
     // Position cards in hand
     public void orderHand()
     {
-      float cardWidth = cardPrefab.GetComponent<RectTransform>().sizeDelta.x;
-      float handWidth = cardWidth * hand.Count;
-      float maxHandWidth = transform.GetComponent<RectTransform>().sizeDelta.x;
-      if (handWidth >= maxHandWidth)
-      {
-        handWidth = maxHandWidth;
-      }
-      float individualSpace = handWidth / hand.Count;
-      float positionX = 0 - (handWidth / 2) + (individualSpace / 2);
-
-      foreach (Transform child in transform)
-      {
-        child.localPosition = new Vector3(positionX, child.localPosition.y, child.localPosition.z);
-        positionX += individualSpace;
-      }
+      GetComponent<Container>().orderChildrenCenter();
     }
 
     // Empty hand
