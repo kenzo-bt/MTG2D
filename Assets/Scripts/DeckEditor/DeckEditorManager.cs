@@ -80,7 +80,6 @@ public class DeckEditorManager : MonoBehaviour
       // If initial deck was empty, then remove the deck
       if (initialDeck.cards.Count == 0 && initialDeck.name == "")
       {
-        Debug.Log("Initial deck was empty and had no name!");
         List<Decklist> allDecks = PlayerManager.Instance.allDecks;
         allDecks.RemoveAt(allDecks.Count - 1);
       }

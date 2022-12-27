@@ -61,19 +61,16 @@ public class Battlefield : MonoBehaviour
       {
         creatures.Remove(cardId);
         creatureArea.GetComponent<BattlefieldArea>().removeCard(cardId);
-        Debug.Log("Removed card from creatures area...");
       }
       else if (area == "Lands")
       {
         lands.Remove(cardId);
         landArea.GetComponent<BattlefieldArea>().removeCard(cardId);
-        Debug.Log("Removed card from lands area...");
       }
       else if (area == "Others")
       {
         others.Remove(cardId);
         otherArea.GetComponent<BattlefieldArea>().removeCard(cardId);
-        Debug.Log("Removed card from others area...");
       }
     }
 }

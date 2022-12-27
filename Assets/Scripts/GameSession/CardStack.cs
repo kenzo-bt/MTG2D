@@ -37,16 +37,20 @@ public class CardStack : MonoBehaviour
       // Empty browser
       browser.emptyBrowser();
       // Add cards to browser
-      Debug.Log("Cards in this stack: " + cards.Count);
       foreach (string cardID in cards)
       {
         CardInfo card = PlayerManager.Instance.getCardFromLookup(cardID);
-        Debug.Log("Creating -> " + card.name);
         GameObject cardInstance = Instantiate(cardPrefab, browser.carousel.transform);
         cardInstance.GetComponent<WebCard>().texturizeCard(card);
         cardInstance.GetComponent<StackCard>().player = player;
       }
       // Open card browser
       browser.showBrowser(gameObject.name);
+    }
+
+    // Get list of card IDs in this stack
+    public List<string> getStackIds()
+    {
+      return new List<string>(cards);
     }
 }

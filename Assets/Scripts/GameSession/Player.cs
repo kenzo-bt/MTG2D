@@ -10,12 +10,14 @@ public class Player : MonoBehaviour
     public GameObject gameStateObject;
     public GameObject graveObject;
     public GameObject exileObject;
+    public GameObject highlightObject;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
     private CardStack grave;
     private CardStack exile;
     private CardStack deckStack;
+    private WebCard highlightCard;
     private GameState gameState;
     private Hasher hasher;
     private int mulligans;
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
       grave = graveObject.GetComponent<CardStack>();
       exile = exileObject.GetComponent<CardStack>();
       deckStack = deckObject.GetComponent<CardStack>();
+      highlightCard = highlightObject.GetComponent<WebCard>();
       gameState = gameStateObject.GetComponent<GameState>();
       mulligans = 0;
       initialHandSize = 7;
@@ -98,14 +101,14 @@ public class Player : MonoBehaviour
     // Produce board state as JSON string
     public BoardState getBoardState()
     {
-      List<string> handIds = new List<string>();
-      foreach (CardInfo card in hand.hand)
-      {
-        handIds.Add(card.id);
-      }
-
       BoardState myState = new BoardState();
-      myState.hand = handIds;
+      myState.hand = hand.getHandIds();
+      myState.deck = deck.getDeckIds();
+      myState.grave = grave.getStackIds();
+      myState.exile = exile.getStackIds();
+      myState.creatures =  new List<string>(battlefield.creatures);
+      myState.lands =  new List<string>(battlefield.lands);
+      myState.others =  new List<string>(battlefield.others);
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -127,7 +130,6 @@ public class Player : MonoBehaviour
       hand.removeCard(card);
       hand.orderHand();
       // Add card to battlefield
-      Debug.Log("Adding to the battlefield...");
       battlefield.addCard(card);
     }
 
@@ -139,26 +141,25 @@ public class Player : MonoBehaviour
       // Place card in given destination
       if (destination == "hand")
       {
-        Debug.Log("Sending this card to hand...");
         CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardId);
         hand.addCard(targetCard);
+        hand.orderHand();
       }
       else if (destination == "grave")
       {
-        Debug.Log("Sending this card to the graveyard...");
         grave.addCard(cardId);
       }
       else if (destination == "exile")
       {
-        Debug.Log("Sending this card to exile...");
         exile.addCard(cardId);
       }
       else if (destination == "deck")
       {
         // Currently putting on top of deck -> Need option for top/bottom/shuffled
-        Debug.Log("Sending this card to deck...");
         deckStack.addCard(cardId);
       }
+      // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
+      hideHighlightCard();
     }
 
     public void moveStackCard(string cardId, string source, string destination)
@@ -201,5 +202,19 @@ public class Player : MonoBehaviour
       {
         exile.cards.Add(cardId);
       }
+    }
+
+    // Show highlight card
+    public void showHighlightCard(string cardId)
+    {
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      highlightCard.texturizeCard(card);
+      highlightObject.GetComponent<CanvasGroup>().alpha = 1f;
+    }
+
+    // Hide highlight card
+    public void hideHighlightCard()
+    {
+      highlightObject.GetComponent<CanvasGroup>().alpha = 0f;
     }
 }

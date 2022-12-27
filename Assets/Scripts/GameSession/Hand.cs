@@ -76,6 +76,17 @@ public class Hand : MonoBehaviour
       }
     }
 
+    // Get ids of cards in hand
+    public List<string> getHandIds()
+    {
+      List<string> handIds = new List<string>();
+      foreach (CardInfo card in hand)
+      {
+        handIds.Add(card.id);
+      }
+      return handIds;
+    }
+
     // Debug hand info
     public void debugPrintHand()
     {

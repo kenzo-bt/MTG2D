@@ -45,7 +45,6 @@ public class Deck : MonoBehaviour
     // Shuffle deck
     public void shuffleDeck()
     {
-      Debug.Log("Deck before shuffle has " + stack.cards.Count + " cards.");
       List<string> shuffledDeck = new List<string>();
       int numCards = stack.cards.Count;
       for (int i = 0; i < numCards; i++)
@@ -55,7 +54,6 @@ public class Deck : MonoBehaviour
         stack.cards.RemoveAt(randIndex);
       }
       stack.cards = new List<string>(shuffledDeck);
-      Debug.Log("Deck after shuffle has " + stack.cards.Count + " cards.");
     }
 
     // Draws a card from deck, returns the CardInfo
@@ -73,6 +71,12 @@ public class Deck : MonoBehaviour
         Debug.Log("CANT DRAW! Deck size is currently " + stack.cards.Count);
         return null;
       }
+    }
+
+    // Get ids of my stack
+    public List<string> getDeckIds()
+    {
+      return new List<string>(stack.cards);
     }
 
     // Debug deck info

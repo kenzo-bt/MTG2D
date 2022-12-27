@@ -71,4 +71,15 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
         }
       }
     }
+
+    public void showInGameHighlight()
+    {
+      string id = GetComponent<WebCard>().cardId;
+      player.GetComponent<Player>().showHighlightCard(id);
+    }
+
+    public void hideInGameHighlight()
+    {
+      player.GetComponent<Player>().hideHighlightCard();
+    }
 }

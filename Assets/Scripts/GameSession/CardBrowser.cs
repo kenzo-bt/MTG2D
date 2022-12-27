@@ -36,12 +36,10 @@ public class CardBrowser : MonoBehaviour
 
     public void processCardDestinations()
     {
-      Debug.Log("There are " + carousel.transform.childCount + " cards in the browser");
       foreach (Transform child in carousel.transform){
         StackCard card = child.gameObject.GetComponent<StackCard>();
         if (card.destination != "")
         {
-          Debug.Log("Card destination was: " + card.destination);
           card.moveCard(currentlyDisplaying);
         }
       }

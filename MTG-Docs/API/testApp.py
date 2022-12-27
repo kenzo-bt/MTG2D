@@ -106,7 +106,7 @@ def delete_user(id):
 def get_user_state(id):
     user =  User.query.get_or_404(id)
     if user.state is None:
-        return {'hand': [], 'hash': ''}
+        return {'hand': [], 'deck': [], 'grave': [], 'exile': [], 'creatures': [], 'lands': [], 'others': [], 'hash': ''}
     return json.loads(user.state)
 
 @app.route('/users/<id>/state', methods=['POST'])
