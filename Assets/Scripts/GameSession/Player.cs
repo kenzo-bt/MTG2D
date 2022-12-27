@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     public GameObject deckObject;
     public GameObject handObject;
     public GameObject battlefieldObject;
-    public GameObject gameStateObject;
     public GameObject graveObject;
     public GameObject exileObject;
     public GameObject highlightObject;
+    public GameObject lifeObject;
+    public GameObject gameStateObject;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -18,10 +20,12 @@ public class Player : MonoBehaviour
     private CardStack exile;
     private CardStack deckStack;
     private WebCard highlightCard;
+    private TMP_Text lifeCounter;
     private GameState gameState;
     private Hasher hasher;
     private int mulligans;
     public int initialHandSize;
+    private int lifeTotal;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +38,13 @@ public class Player : MonoBehaviour
       exile = exileObject.GetComponent<CardStack>();
       deckStack = deckObject.GetComponent<CardStack>();
       highlightCard = highlightObject.GetComponent<WebCard>();
+      lifeCounter = lifeObject.GetComponent<TMP_Text>();
       gameState = gameStateObject.GetComponent<GameState>();
       mulligans = 0;
       initialHandSize = 7;
+      lifeTotal = 20;
+      // Initialize your life counter in the UI
+      updateLifeTotal();
       // Initialize your deck and hand
       deck.initializeDeck();
       hand.initializeHand();
@@ -109,6 +117,7 @@ public class Player : MonoBehaviour
       myState.creatures =  new List<string>(battlefield.creatures);
       myState.lands =  new List<string>(battlefield.lands);
       myState.others =  new List<string>(battlefield.others);
+      myState.life = lifeTotal;
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -216,5 +225,25 @@ public class Player : MonoBehaviour
     public void hideHighlightCard()
     {
       highlightObject.GetComponent<CanvasGroup>().alpha = 0f;
+    }
+
+    // Reduce life total by 1
+    public void reduceLife()
+    {
+      lifeTotal = lifeTotal - 1;
+      updateLifeTotal();
+    }
+
+    // Increase life total by 1
+    public void increaseLife()
+    {
+      lifeTotal = lifeTotal + 1;
+      updateLifeTotal();
+    }
+
+    // Update total life in the UI
+    public void updateLifeTotal()
+    {
+      lifeCounter.text = lifeTotal.ToString();
     }
 }
