@@ -26,19 +26,10 @@ public class BattlefieldArea : MonoBehaviour
       orderArea();
     }
 
-    public void removeCard(string cardId)
+    public void removeCard(int index)
     {
-      int numCards = transform.childCount;
-      for (int i = 0; i < numCards; i++)
-      {
-        WebCard card = transform.GetChild(i).gameObject.GetComponent<WebCard>();
-        if (card.cardId == cardId)
-        {
-          DestroyImmediate(transform.GetChild(i).gameObject);
-          orderArea();
-          break;
-        }
-      }
+      DestroyImmediate(transform.GetChild(index).gameObject);
+      orderArea();
     }
 
     // Position cards in area. Cards should have a left-aligned x-anchor.

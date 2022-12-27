@@ -143,10 +143,10 @@ public class Player : MonoBehaviour
     }
 
     // Move battlefield card from source to destination
-    public void moveBattlefieldCard(string cardId, string sourceArea, string destination)
+    public void moveBattlefieldCard(string cardId, int index, string sourceArea, string destination)
     {
       // Remove card from current area
-      battlefield.removeCard(cardId, sourceArea);
+      battlefield.removeCard(index, sourceArea);
       // Place card in given destination
       if (destination == "hand")
       {

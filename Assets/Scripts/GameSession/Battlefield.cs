@@ -55,22 +55,22 @@ public class Battlefield : MonoBehaviour
       targetArea.GetComponent<BattlefieldArea>().addCard(card);
     }
 
-    public void removeCard(string cardId, string area)
+    public void removeCard(int index, string area)
     {
       if (area == "Creatures")
       {
-        creatures.Remove(cardId);
-        creatureArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        creatures.RemoveAt(index);
+        creatureArea.GetComponent<BattlefieldArea>().removeCard(index);
       }
       else if (area == "Lands")
       {
-        lands.Remove(cardId);
-        landArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        lands.RemoveAt(index);
+        landArea.GetComponent<BattlefieldArea>().removeCard(index);
       }
       else if (area == "Others")
       {
-        others.Remove(cardId);
-        otherArea.GetComponent<BattlefieldArea>().removeCard(cardId);
+        others.RemoveAt(index);
+        otherArea.GetComponent<BattlefieldArea>().removeCard(index);
       }
     }
 }
