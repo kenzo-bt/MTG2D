@@ -38,7 +38,7 @@ public class CardBrowser : MonoBehaviour
     {
       foreach (Transform child in carousel.transform){
         StackCard card = child.gameObject.GetComponent<StackCard>();
-        if (card.destination != "")
+        if (card != null && card.destination != "")
         {
           card.moveCard(currentlyDisplaying);
           DestroyImmediate(child.gameObject);

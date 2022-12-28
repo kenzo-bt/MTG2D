@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public GameObject highlightObject;
     public GameObject lifeObject;
     public GameObject gameStateObject;
+    public GameObject opponentObject;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
     private WebCard highlightCard;
     private TMP_Text lifeCounter;
     private GameState gameState;
+    private Opponent opponent;
     private Hasher hasher;
     private int mulligans;
     public int initialHandSize;
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour
       deckStack = deckObject.GetComponent<CardStack>();
       highlightCard = highlightObject.GetComponent<WebCard>();
       lifeCounter = lifeObject.GetComponent<TMP_Text>();
+      opponent = opponentObject.GetComponent<Opponent>();
       gameState = gameStateObject.GetComponent<GameState>();
       mulligans = 0;
       initialHandSize = 7;
@@ -51,6 +54,7 @@ public class Player : MonoBehaviour
       battlefield.initializeBattlefield();
       grave.initializeStack();
       exile.initializeStack();
+      opponent.initializeOpponent();
       // Draw 7 cards (Involves hand and deck -> Player handles this)
       drawCards(initialHandSize);
       // Initialize game state
@@ -111,7 +115,7 @@ public class Player : MonoBehaviour
     {
       BoardState myState = new BoardState();
       myState.hand = hand.getHandIds();
-      myState.deck = deck.getDeckIds();
+      myState.deck = deckStack.getStackIds();
       myState.grave = grave.getStackIds();
       myState.exile = exile.getStackIds();
       myState.creatures =  new List<string>(battlefield.creatures);
