@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hand : MonoBehaviour
 {
     public List<CardInfo> hand;
+    public List<bool> cardVisibility;
     public GameObject cardPrefab;
     public GameObject player;
 
@@ -23,12 +24,14 @@ public class Hand : MonoBehaviour
     public void initializeHand()
     {
       hand = new List<CardInfo>();
+      cardVisibility = new List<bool>();
     }
 
     public void addCard(CardInfo card)
     {
       // Update data
       hand.Add(card);
+      cardVisibility.Add(false);
       // Update physical cards
       GameObject cardInstance = Instantiate(cardPrefab, transform);
       cardInstance.GetComponent<WebCard>().texturizeCard(card);
@@ -45,6 +48,7 @@ public class Hand : MonoBehaviour
       {
         if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardName == card.name)
         {
+          cardVisibility.RemoveAt(i);
           DestroyImmediate(transform.GetChild(i).gameObject);
           break;
         }
@@ -68,6 +72,7 @@ public class Hand : MonoBehaviour
     {
       // Update data
       hand = new List<CardInfo>();
+      cardVisibility = new List<bool>();
       // Update physical cards
       int numChildren = transform.childCount;
       for (int i = 0; i < numChildren; i++)
@@ -80,9 +85,15 @@ public class Hand : MonoBehaviour
     public List<string> getHandIds()
     {
       List<string> handIds = new List<string>();
-      foreach (CardInfo card in hand)
+      int numCards = hand.Count;
+      for (int i = 0; i < hand.Count; i++)
       {
-        handIds.Add(card.id);
+        string cardID = hand[i].id;
+        if (!cardVisibility[i])
+        {
+          cardID += "-H";
+        }
+        handIds.Add(cardID);
       }
       return handIds;
     }

@@ -77,10 +77,15 @@ public class Opponent : MonoBehaviour
       // Create card objects
       foreach (string cardID in state.hand)
       {
-        CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardID);
+        string onlyCard = cardID.Split("-H")[0];
+        CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(onlyCard);
         GameObject cardInstance = Instantiate(handCardPrefab, hand.transform);
         cardInstance.GetComponent<WebCard>().texturizeCard(targetCard);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
+        if (cardID.Split("-H").Length > 1)
+        {
+          cardInstance.GetComponent<OppBattlefieldCard>().hideCard();
+        }
       }
       // Order cards
       hand.GetComponent<Container>().orderChildrenCenter();
@@ -112,10 +117,15 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.creatures)
       {
+        string onlyCard = card.Split("-T")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, creatureArea.transform);
-        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
+        if (card.Split("-T").Length > 1)
+        {
+          cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();
     }
@@ -139,10 +149,15 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.lands)
       {
+        string onlyCard = card.Split("-T")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, landArea.transform);
-        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
+        if (card.Split("-T").Length > 1)
+        {
+          cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
       }
       landArea.GetComponent<Container>().orderChildrenCenter();
     }
@@ -166,10 +181,15 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.others)
       {
+        string onlyCard = card.Split("-T")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, otherArea.transform);
-        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+        CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
+        if (card.Split("-T").Length > 1)
+        {
+          cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
       }
       otherArea.GetComponent<Container>().orderChildrenCenter();
     }

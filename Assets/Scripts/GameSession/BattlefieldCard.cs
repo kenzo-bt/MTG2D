@@ -7,7 +7,7 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
 {
     public GameObject player;
     public GameObject contextMenu;
-    private bool tapped;
+    public bool tapped;
     // Start is called before the first frame update
     void Awake()
     {

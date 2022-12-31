@@ -73,4 +73,55 @@ public class Battlefield : MonoBehaviour
         otherArea.GetComponent<BattlefieldArea>().removeCard(index);
       }
     }
+
+    public List<string> getCreatures()
+    {
+      List<string> allCreatures = new List<string>();
+      int numChildren = creatureArea.transform.childCount;
+      for (int i = 0; i < numChildren; i++)
+      {
+        BattlefieldCard card = creatureArea.transform.GetChild(i).gameObject.GetComponent<BattlefieldCard>();
+        string cardId = creatures[i];
+        if (card.tapped)
+        {
+          cardId += "-T";
+        }
+        allCreatures.Add(cardId);
+      }
+      return allCreatures;
+    }
+
+    public List<string> getLands()
+    {
+      List<string> allLands = new List<string>();
+      int numChildren = landArea.transform.childCount;
+      for (int i = 0; i < numChildren; i++)
+      {
+        BattlefieldCard card = landArea.transform.GetChild(i).gameObject.GetComponent<BattlefieldCard>();
+        string cardId = lands[i];
+        if (card.tapped)
+        {
+          cardId += "-T";
+        }
+        allLands.Add(cardId);
+      }
+      return allLands;
+    }
+
+    public List<string> getOthers()
+    {
+      List<string> allOthers = new List<string>();
+      int numChildren = otherArea.transform.childCount;
+      for (int i = 0; i < numChildren; i++)
+      {
+        BattlefieldCard card = otherArea.transform.GetChild(i).gameObject.GetComponent<BattlefieldCard>();
+        string cardId = others[i];
+        if (card.tapped)
+        {
+          cardId += "-T";
+        }
+        allOthers.Add(cardId);
+      }
+      return allOthers;
+    }
 }

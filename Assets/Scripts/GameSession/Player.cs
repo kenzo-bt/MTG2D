@@ -118,9 +118,9 @@ public class Player : MonoBehaviour
       myState.deck = deckStack.getStackIds();
       myState.grave = grave.getStackIds();
       myState.exile = exile.getStackIds();
-      myState.creatures =  new List<string>(battlefield.creatures);
-      myState.lands =  new List<string>(battlefield.lands);
-      myState.others =  new List<string>(battlefield.others);
+      myState.creatures =  battlefield.getCreatures();
+      myState.lands =  battlefield.getLands();
+      myState.others =  battlefield.getOthers();
       myState.life = lifeTotal;
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
