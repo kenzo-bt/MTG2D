@@ -17,9 +17,6 @@ public class BoardState
 
   public void debugState()
   {
-    foreach (string cardID in hand)
-    {
-      Debug.Log("OppCard: " + cardID);
-    }
+    Debug.Log(JsonUtility.ToJson(this));
   }
 }

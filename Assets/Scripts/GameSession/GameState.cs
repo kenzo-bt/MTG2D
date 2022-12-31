@@ -120,7 +120,12 @@ public class GameState : MonoBehaviour
                 Debug.Log("Successfully fetched new opponent state from server");
                 string serverJson = stateRequest.downloadHandler.text;
                 BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
+                opponent.prevState = opponent.state;
                 opponent.state = oppState;
+                Debug.Log("Previous opponent state:");
+                opponent.prevState.debugState();
+                Debug.Log("New opponent state:");
+                opponent.state.debugState();
                 opponent.updateBoard();
               }
             }

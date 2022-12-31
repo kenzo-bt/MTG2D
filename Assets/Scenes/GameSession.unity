@@ -3844,6 +3844,16 @@ MonoBehaviour:
   deckObject: {fileID: 1385937347}
   graveObject: {fileID: 1179541934}
   exileObject: {fileID: 1844370535}
+  prevState:
+    hand: []
+    deck: []
+    grave: []
+    exile: []
+    creatures: []
+    lands: []
+    others: []
+    life: 0
+    hash: 
   state:
     hand: []
     deck: []

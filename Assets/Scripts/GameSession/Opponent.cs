@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class Opponent : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Opponent : MonoBehaviour
     private OppCardStack deck;
     private OppCardStack grave;
     private OppCardStack exile;
+    public BoardState prevState;
     public BoardState state;
     private TMP_Text life;
 
@@ -36,6 +38,7 @@ public class Opponent : MonoBehaviour
 
     public void initializeOpponent()
     {
+      prevState = new BoardState();
       state = new BoardState();
       life = lifeObject.GetComponent<TMP_Text>();
       deck = deckObject.GetComponent<OppCardStack>();
@@ -56,6 +59,15 @@ public class Opponent : MonoBehaviour
 
     public void updateHand()
     {
+      // Determine if previous hand is different from new hand
+      if (prevState.hand != null)
+      {
+        if (prevState.hand.SequenceEqual(state.hand))
+        {
+          Debug.Log("Hand has not changed. Skipping...");
+          return;
+        }
+      }
       // Destroy the hand objects
       int cardCount = hand.transform.childCount;
       for (int i = 0; i < cardCount; i++)
@@ -76,20 +88,28 @@ public class Opponent : MonoBehaviour
 
     public void updateBattlefield()
     {
-      // Destroy all cards in battlefield
+      updateCreatures();
+      updateLands();
+      updateOthers();
+    }
+
+    public void updateCreatures()
+    {
+      // Check if area has changed from previous state
+      if (prevState.creatures != null)
+      {
+        if (prevState.creatures.SequenceEqual(state.creatures))
+        {
+          Debug.Log("Creature area has not changed. Skipping...");
+          return;
+        }
+      }
+      // Destroy previous objects
       for (int i = 0; i < creatureArea.transform.childCount; i++)
       {
         DestroyImmediate(creatureArea.transform.GetChild(0).gameObject);
       }
-      for (int i = 0; i < landArea.transform.childCount; i++)
-      {
-        DestroyImmediate(landArea.transform.GetChild(0).gameObject);
-      }
-      for (int i = 0; i < otherArea.transform.childCount; i++)
-      {
-        DestroyImmediate(otherArea.transform.GetChild(0).gameObject);
-      }
-      // Repopulate battlefield with new state
+      // Populate with new objects
       foreach (string card in state.creatures)
       {
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, creatureArea.transform);
@@ -98,6 +118,25 @@ public class Opponent : MonoBehaviour
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();
+    }
+
+    public void updateLands()
+    {
+      // Check if area has changed from previous state
+      if (prevState.lands != null)
+      {
+        if (prevState.lands.SequenceEqual(state.lands))
+        {
+          Debug.Log("Lands area has not changed. Skipping...");
+          return;
+        }
+      }
+      // Destroy previous objects
+      for (int i = 0; i < landArea.transform.childCount; i++)
+      {
+        DestroyImmediate(landArea.transform.GetChild(0).gameObject);
+      }
+      // Populate with new objects
       foreach (string card in state.lands)
       {
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, landArea.transform);
@@ -106,6 +145,25 @@ public class Opponent : MonoBehaviour
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
       }
       landArea.GetComponent<Container>().orderChildrenCenter();
+    }
+
+    public void updateOthers()
+    {
+      // Check if area has changed from previous state
+      if (prevState.others != null)
+      {
+        if (prevState.others.SequenceEqual(state.others))
+        {
+          Debug.Log("Others area has not changed. Skipping...");
+          return;
+        }
+      }
+      // Destroy previous objects
+      for (int i = 0; i < otherArea.transform.childCount; i++)
+      {
+        DestroyImmediate(otherArea.transform.GetChild(0).gameObject);
+      }
+      // Populate with new objects
       foreach (string card in state.others)
       {
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, otherArea.transform);
@@ -118,17 +176,56 @@ public class Opponent : MonoBehaviour
 
     public void updateStacks()
     {
+      updateDeck();
+      updateGrave();
+      updateExile();
+    }
+
+    public void updateDeck()
+    {
+      if (prevState.deck != null)
+      {
+        if (prevState.deck.SequenceEqual(state.deck))
+        {
+          Debug.Log("Deck has not changed. Skipping...");
+          return;
+        }
+      }
       deck.cards = new List<string>();
       deck.cardsVisibility = new List<bool>();
       foreach (string card in state.deck)
       {
         deck.addCard(card, false);
       }
+    }
+
+    public void updateGrave()
+    {
+      if (prevState.grave != null)
+      {
+        if (prevState.grave.SequenceEqual(state.grave))
+        {
+          Debug.Log("Grave has not changed. Skipping...");
+          return;
+        }
+      }
       grave.cards = new List<string>();
       grave.cardsVisibility = new List<bool>();
       foreach (string card in state.grave)
       {
         grave.addCard(card, true);
+      }
+    }
+
+    public void updateExile()
+    {
+      if (prevState.exile != null)
+      {
+        if (prevState.exile.SequenceEqual(state.exile))
+        {
+          Debug.Log("Exile has not changed. Skipping...");
+          return;
+        }
       }
       exile.cards = new List<string>();
       exile.cardsVisibility = new List<bool>();
