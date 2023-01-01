@@ -65,6 +65,16 @@ public class CardStack : MonoBehaviour
     // Get list of card IDs in this stack (! Add visibilities here)
     public List<string> getStackIds()
     {
-      return new List<string>(cards);
+      List<string> allCards = new List<string>();
+      for (int i = 0; i < cards.Count; i++)
+      {
+        string cardId = cards[i];
+        if (!cardsVisibility[i])
+        {
+          cardId += "-H";
+        }
+        allCards.Add(cardId);
+      }
+      return allCards;
     }
 }

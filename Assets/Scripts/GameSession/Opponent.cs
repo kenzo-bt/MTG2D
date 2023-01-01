@@ -110,7 +110,8 @@ public class Opponent : MonoBehaviour
         }
       }
       // Destroy previous objects
-      for (int i = 0; i < creatureArea.transform.childCount; i++)
+      int numCards = creatureArea.transform.childCount;
+      for (int i = 0; i < numCards; i++)
       {
         DestroyImmediate(creatureArea.transform.GetChild(0).gameObject);
       }
@@ -142,7 +143,8 @@ public class Opponent : MonoBehaviour
         }
       }
       // Destroy previous objects
-      for (int i = 0; i < landArea.transform.childCount; i++)
+      int numCards = landArea.transform.childCount;
+      for (int i = 0; i < numCards; i++)
       {
         DestroyImmediate(landArea.transform.GetChild(0).gameObject);
       }
@@ -174,7 +176,8 @@ public class Opponent : MonoBehaviour
         }
       }
       // Destroy previous objects
-      for (int i = 0; i < otherArea.transform.childCount; i++)
+      int numCards = otherArea.transform.childCount;
+      for (int i = 0; i < numCards; i++)
       {
         DestroyImmediate(otherArea.transform.GetChild(0).gameObject);
       }
@@ -215,7 +218,15 @@ public class Opponent : MonoBehaviour
       deck.cardsVisibility = new List<bool>();
       foreach (string card in state.deck)
       {
-        deck.addCard(card, false);
+        string onlyCard = card.Split("-H")[0];
+        if (card.Split("-H").Length > 1)
+        {
+          deck.addCard(onlyCard, false);
+        }
+        else
+        {
+          deck.addCard(onlyCard, true);
+        }
       }
     }
 
@@ -233,7 +244,15 @@ public class Opponent : MonoBehaviour
       grave.cardsVisibility = new List<bool>();
       foreach (string card in state.grave)
       {
-        grave.addCard(card, true);
+        string onlyCard = card.Split("-H")[0];
+        if (card.Split("-H").Length > 1)
+        {
+          grave.addCard(onlyCard, false);
+        }
+        else
+        {
+          grave.addCard(onlyCard, true);
+        }
       }
     }
 
@@ -251,7 +270,15 @@ public class Opponent : MonoBehaviour
       exile.cardsVisibility = new List<bool>();
       foreach (string card in state.exile)
       {
-        exile.addCard(card, true);
+        string onlyCard = card.Split("-H")[0];
+        if (card.Split("-H").Length > 1)
+        {
+          exile.addCard(onlyCard, false);
+        }
+        else
+        {
+          exile.addCard(onlyCard, true);
+        }
       }
     }
 
