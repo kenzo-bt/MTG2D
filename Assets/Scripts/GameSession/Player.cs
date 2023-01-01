@@ -250,4 +250,16 @@ public class Player : MonoBehaviour
     {
       lifeCounter.text = lifeTotal.ToString();
     }
+
+    // show a card in hand to opponent
+    public void showHandCard(int index)
+    {
+      hand.cardVisibility[index] = true;
+    }
+
+    // show a card in hand to opponent
+    public void hideHandCard(int index)
+    {
+      hand.cardVisibility[index] = false;
+    }
 }

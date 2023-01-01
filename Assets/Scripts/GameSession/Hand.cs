@@ -35,6 +35,7 @@ public class Hand : MonoBehaviour
       // Update physical cards
       GameObject cardInstance = Instantiate(cardPrefab, transform);
       cardInstance.GetComponent<WebCard>().texturizeCard(card);
+      cardInstance.GetComponent<HandCard>().player = player;
       cardInstance.GetComponent<DragDrop>().player = player;
     }
 
