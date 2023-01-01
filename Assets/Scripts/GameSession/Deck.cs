@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Deck : MonoBehaviour
+public class Deck : MonoBehaviour, IPointerClickHandler
 {
     private CardStack stack;
+    public GameObject contextMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -92,5 +94,30 @@ public class Deck : MonoBehaviour
         Debug.Log("CardID: " + cardId);
       }
       Debug.Log("Card count: " + stack.cards.Count);
+    }
+
+    public void showContextMenu()
+    {
+      contextMenu.SetActive(true);
+    }
+
+    public void hideContextMenu()
+    {
+      contextMenu.SetActive(false);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+      if (eventData.button == PointerEventData.InputButton.Right)
+      {
+        if (contextMenu.activeSelf)
+        {
+          hideContextMenu();
+        }
+        else
+        {
+          showContextMenu();
+        }
+      }
     }
 }

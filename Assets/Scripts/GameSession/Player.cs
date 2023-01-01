@@ -262,4 +262,23 @@ public class Player : MonoBehaviour
     {
       hand.cardVisibility[index] = false;
     }
+
+    // Mill X cards
+    public void mill(int numCards)
+    {
+      // Remove top X cards on deck and add them to the graveyard stack
+      for (int i = 0; i < numCards; i++)
+      {
+        if (deckStack.cards.Count < 1)
+        {
+          break;
+        }
+        // Get it
+        string cardId = deckStack.cards[deckStack.cards.Count - 1];
+        // Remove it
+        deckStack.removeCard(deckStack.cards.Count - 1);
+        // Place it in grave
+        grave.addCard(cardId, true);
+      }
+    }
 }
