@@ -271,7 +271,7 @@ public class Player : MonoBehaviour
       {
         if (deckStack.cards.Count < 1)
         {
-          break;
+          return;
         }
         // Get it
         string cardId = deckStack.cards[deckStack.cards.Count - 1];
@@ -280,5 +280,21 @@ public class Player : MonoBehaviour
         // Place it in grave
         grave.addCard(cardId, true);
       }
+    }
+
+    // Look at top X cards of library
+    public void look(int numCards)
+    {
+      // Make top X cards in deck stack visible
+      for (int i = 0; i < numCards; i++)
+      {
+        if (deckStack.cards.Count < 1)
+        {
+          return;
+        }
+        deckStack.cardsVisibility[deckStack.cardsVisibility.Count - (1 + i)] = true;
+      }
+      // Open the browser
+      deckStack.showStack();
     }
 }

@@ -73,4 +73,26 @@ public class DeckActions : MonoBehaviour
         errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer.";
       }
     }
+
+    public void validateLook()
+    {
+      string inputText = lookInput.GetComponent<TMP_InputField>().text;
+      try
+      {
+        int numCards = Int32.Parse(inputText);
+        if (numCards >= 0)
+        {
+          player.GetComponent<Player>().look(numCards);
+          hide();
+        }
+        else
+        {
+          errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer.";
+        }
+      }
+      catch (FormatException)
+      {
+        errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer.";
+      }
+    }
 }
