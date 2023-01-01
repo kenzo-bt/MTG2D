@@ -95,4 +95,9 @@ public class DeckActions : MonoBehaviour
         errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer.";
       }
     }
+
+    public void search()
+    {
+      player.GetComponent<Player>().search();
+    }
 }

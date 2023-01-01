@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CardBrowser : MonoBehaviour
 {
+    public GameObject player;
     public GameObject carousel;
     public string currentlyDisplaying;
+    public bool shuffle;
     // Start is called before the first frame update
     void Start()
     {
       currentlyDisplaying = "";
+      shuffle = false;
     }
 
     // Update is called once per frame
@@ -57,6 +60,11 @@ public class CardBrowser : MonoBehaviour
 
     public void hideBrowser()
     {
+      if (shuffle)
+      {
+        player.GetComponent<Player>().shuffleDeck();
+        shuffle = false;
+      }
       GetComponent<CanvasGroup>().alpha = 0f;
       GetComponent<CanvasGroup>().blocksRaycasts = false;
     }

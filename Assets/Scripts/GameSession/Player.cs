@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public GameObject lifeObject;
     public GameObject gameStateObject;
     public GameObject opponentObject;
+    public GameObject browserObject;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -110,6 +111,12 @@ public class Player : MonoBehaviour
       }
     }
 
+    // Shuffle deck
+    public void shuffleDeck()
+    {
+      deck.shuffleDeck();
+    }
+
     // Produce board state as JSON string
     public BoardState getBoardState()
     {
@@ -171,6 +178,10 @@ public class Player : MonoBehaviour
         // Currently putting on top of deck -> Need option for top/bottom/shuffled
         deckStack.addCard(cardId, true);
       }
+      else if (destination == "deckBtm")
+      {
+        deckStack.addCardBottom(cardId, true);
+      }
       // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
       hideHighlightCard();
     }
@@ -206,6 +217,10 @@ public class Player : MonoBehaviour
       {
         // Currently putting on top of deck -> Need option for top/bottom/shuffled
         deckStack.addCard(cardId, true);
+      }
+      else if (destination == "DeckBtm")
+      {
+        deckStack.addCardBottom(cardId, true);
       }
       else if (destination == "Grave")
       {
@@ -295,6 +310,19 @@ public class Player : MonoBehaviour
         deckStack.cardsVisibility[deckStack.cardsVisibility.Count - (1 + i)] = true;
       }
       // Open the browser
+      deckStack.showStack();
+    }
+
+    // Make whole deck stack visible. Open Browser. Shuffle after search.
+    public void search()
+    {
+      // Make deck stack visible
+      for (int i = 0; i < deckStack.cardsVisibility.Count; i++)
+      {
+        deckStack.cardsVisibility[i] = true;
+      }
+      // Open Browser and have it shuffle the cards on close
+      browserObject.GetComponent<CardBrowser>().shuffle = true;
       deckStack.showStack();
     }
 }

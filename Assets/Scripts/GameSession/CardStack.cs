@@ -28,6 +28,12 @@ public class CardStack : MonoBehaviour
       cardsVisibility.Add(visibility);
     }
 
+    public void addCardBottom(string id, bool visibility)
+    {
+      cards.Insert(0, id);
+      cardsVisibility.Insert(0, visibility);
+    }
+
     public void removeCard(int index)
     {
       cards.RemoveAt(index);
