@@ -36,10 +36,10 @@ public class GameState : MonoBehaviour
       opponent = opponentObject.GetComponent<Opponent>();
       playerID = PlayerManager.Instance.myID;
       opponentID = PlayerManager.Instance.opponentID;
-      // Send initial state
-      sendState();
+      // Send state
+      InvokeRepeating("sendState", 1f, 3f);
       // Start listening for changes in opponent state
-      //// ENABLE THIS LINE AFTER DEBUGGING GAME SESSION InvokeRepeating("getOpponentState", 3f, 3f);
+      InvokeRepeating("getOpponentState", 3f, 3f);
     }
 
     public void getOpponentState()

@@ -128,7 +128,7 @@ public class Matchmaker : MonoBehaviour
 
     public void waitOnChallengee()
     {
-      InvokeRepeating("checkIfAccepted", 5.0f, 5.0f);
+      InvokeRepeating("checkIfAccepted", 1.0f, 3.0f);
     }
 
     public void checkIfAccepted()
