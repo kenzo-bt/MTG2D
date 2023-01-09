@@ -73,10 +73,12 @@ public class GameState : MonoBehaviour
         if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
           Debug.Log(request.error);
+          player.logMessage("Failed sending new state to server");
         }
         else
         {
           Debug.Log("State sent successfully to server");
+          player.logMessage("(POST) State sent successfully to server");
         }
         // Save the hash
         lastHash = myState.hash;
@@ -85,6 +87,7 @@ public class GameState : MonoBehaviour
       }
       else {
         Debug.Log("Your state has NOT changed. Wont send it to server.");
+        player.logMessage("Your state has NOT changed. Wont update server");
       }
     }
 
@@ -114,10 +117,12 @@ public class GameState : MonoBehaviour
               if (stateRequest.result == UnityWebRequest.Result.ConnectionError || stateRequest.result == UnityWebRequest.Result.ProtocolError)
               {
                 Debug.Log(stateRequest.error);
+                player.logMessage("Failed retrieving opponent state from server");
               }
               else
               {
                 Debug.Log("Successfully fetched new opponent state from server");
+                player.logMessage("(GET) Successfully fetched new opponent state from server");
                 string serverJson = stateRequest.downloadHandler.text;
                 BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
                 opponent.prevState = opponent.state;
@@ -134,6 +139,7 @@ public class GameState : MonoBehaviour
           }
           else {
             Debug.Log("Hashes matched. Not fetching full opponent state...");
+            player.logMessage("Hashes matched. Not fetching full opponent state");
           }
         }
       }

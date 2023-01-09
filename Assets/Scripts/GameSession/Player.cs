@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
     public GameObject gameStateObject;
     public GameObject opponentObject;
     public GameObject browserObject;
+    public GameObject loggerObject;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
     private int mulligans;
     public int initialHandSize;
     private int lifeTotal;
+    public string log;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +50,7 @@ public class Player : MonoBehaviour
       mulligans = 0;
       initialHandSize = 7;
       lifeTotal = 20;
+      log = "";
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -94,6 +98,7 @@ public class Player : MonoBehaviour
         // Order hand
         hand.orderHand();
       }
+      logMessage("You drew a card (" + card.name + ")");
     }
 
     // Mulligan
@@ -324,5 +329,12 @@ public class Player : MonoBehaviour
       // Open Browser and have it shuffle the cards on close
       browserObject.GetComponent<CardBrowser>().shuffle = true;
       deckStack.showStack();
+    }
+
+    public void logMessage(string message)
+    {
+      string time = DateTime.Now.ToLongTimeString();
+      message = time + " - " + message;
+      loggerObject.GetComponent<Logger>().addToLogger(message);
     }
 }
