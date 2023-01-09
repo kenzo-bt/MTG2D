@@ -113,6 +113,7 @@ public class Player : MonoBehaviour
         deck.initializeDeck();
         // Perform a mulligan
         drawCards(initialHandSize - mulligans);
+        logMessage("You performed a mulligan (Drew " + (initialHandSize - mulligans) + ")");
       }
     }
 
@@ -120,6 +121,7 @@ public class Player : MonoBehaviour
     public void shuffleDeck()
     {
       deck.shuffleDeck();
+      logMessage("You shuffled your deck");
     }
 
     // Produce board state as JSON string
@@ -156,17 +158,18 @@ public class Player : MonoBehaviour
       hand.orderHand();
       // Add card to battlefield
       battlefield.addCard(card);
+      logMessage("You dropped " + card.name + " to the battlefield");
     }
 
     // Move battlefield card from source to destination
     public void moveBattlefieldCard(string cardId, int index, string sourceArea, string destination)
     {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardId);
       // Remove card from current area
       battlefield.removeCard(index, sourceArea);
       // Place card in given destination
       if (destination == "hand")
       {
-        CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardId);
         hand.addCard(targetCard);
         hand.orderHand();
       }
@@ -189,6 +192,7 @@ public class Player : MonoBehaviour
       }
       // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
       hideHighlightCard();
+      logMessage("You moved " + targetCard.name + " from " + sourceArea + "to " + destination);
     }
 
     public void moveStackCard(string cardId, int index, string source, string destination)
@@ -235,6 +239,8 @@ public class Player : MonoBehaviour
       {
         exile.addCard(cardId, true);
       }
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardId);
+      logMessage("You moved " + targetCard.name + " from " + source + "to " + destination);
     }
 
     // Show highlight card
@@ -269,18 +275,21 @@ public class Player : MonoBehaviour
     public void updateLifeTotal()
     {
       lifeCounter.text = lifeTotal.ToString();
+      logMessage("Life total changed to " + lifeTotal.ToString());
     }
 
     // show a card in hand to opponent
     public void showHandCard(int index)
     {
       hand.cardVisibility[index] = true;
+      logMessage("Showed " + hand.hand[index].name + " in hand to opponent");
     }
 
     // show a card in hand to opponent
     public void hideHandCard(int index)
     {
       hand.cardVisibility[index] = false;
+      logMessage("Hid " + hand.hand[index].name + " in hand from opponent");
     }
 
     // Mill X cards
@@ -300,6 +309,7 @@ public class Player : MonoBehaviour
         // Place it in grave
         grave.addCard(cardId, true);
       }
+      logMessage("You milled " + numCards + " cards");
     }
 
     // Look at top X cards of library
@@ -316,6 +326,7 @@ public class Player : MonoBehaviour
       }
       // Open the browser
       deckStack.showStack();
+      logMessage("You looked at the top " + numCards + " cards of your deck");
     }
 
     // Make whole deck stack visible. Open Browser. Shuffle after search.
@@ -329,6 +340,7 @@ public class Player : MonoBehaviour
       // Open Browser and have it shuffle the cards on close
       browserObject.GetComponent<CardBrowser>().shuffle = true;
       deckStack.showStack();
+      logMessage("You searched your library for a card");
     }
 
     public void logMessage(string message)
