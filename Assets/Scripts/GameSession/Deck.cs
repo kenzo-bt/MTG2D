@@ -47,19 +47,23 @@ public class Deck : MonoBehaviour, IPointerClickHandler
     // Shuffle deck
     public void shuffleDeck()
     {
-      List<string> shuffledDeck = new List<string>();
-      stack.cardsVisibility = new List<bool>();
-      int numCards = stack.cards.Count;
-      for (int i = 0; i < numCards; i++)
+      // New addition: shuffle 5 times to improve randomization
+      for (int n = 0; n < 5; n++)
       {
-        int randIndex = UnityEngine.Random.Range(0, stack.cards.Count);
-        shuffledDeck.Add(stack.cards[randIndex]);
-        stack.cards.RemoveAt(randIndex);
-      }
-      stack.cards = new List<string>(shuffledDeck);
-      for (int i = 0; i < stack.cards.Count; i++)
-      {
-        stack.cardsVisibility.Add(false);
+        List<string> shuffledDeck = new List<string>();
+        stack.cardsVisibility = new List<bool>();
+        int numCards = stack.cards.Count;
+        for (int i = 0; i < numCards; i++)
+        {
+          int randIndex = UnityEngine.Random.Range(0, stack.cards.Count);
+          shuffledDeck.Add(stack.cards[randIndex]);
+          stack.cards.RemoveAt(randIndex);
+        }
+        stack.cards = new List<string>(shuffledDeck);
+        for (int i = 0; i < stack.cards.Count; i++)
+        {
+          stack.cardsVisibility.Add(false);
+        }
       }
     }
 
