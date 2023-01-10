@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeckListPanelObject: {fileID: 0}
+  HighlightBackCard: {fileID: 0}
 --- !u!1001 &3813689631154465562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +124,10 @@ PrefabInstance:
     - target: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
       propertyPath: m_Name
       value: WebCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481102133429290144, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5708504131370383626, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
       propertyPath: m_Pivot.x

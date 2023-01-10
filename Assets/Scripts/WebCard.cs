@@ -16,10 +16,14 @@ public class WebCard : MonoBehaviour
     public GameObject imageMaskObject;
     public GameObject fullImageObject;
     public GameObject fullMaskObject;
+    public GameObject fullImageBackObject;
+    public GameObject fullMaskBackObject;
     private Image cardImage;
     private Image maskImage;
     private Image fullImage;
     private Image fullMask;
+    private Image fullImageBack;
+    private Image fullMaskBack;
 
     void Awake()
     {
@@ -27,6 +31,8 @@ public class WebCard : MonoBehaviour
       maskImage = imageMaskObject.GetComponent<Image>();
       fullImage = fullImageObject.GetComponent<Image>();
       fullMask = fullMaskObject.GetComponent<Image>();
+      fullImageBack = fullImageBackObject.GetComponent<Image>();
+      fullMaskBack = fullMaskBackObject.GetComponent<Image>();
     }
 
     IEnumerator fetchCardFromServer(string serverUrl, string cardId)
@@ -42,6 +48,22 @@ public class WebCard : MonoBehaviour
         Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        saveImageToCache(cardTexture, cardId);
+      }
+    }
+
+    IEnumerator fetchBackCardFromServer(string serverUrl, string cardId)
+    {
+      UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
+        fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
     }
@@ -78,6 +100,23 @@ public class WebCard : MonoBehaviour
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
         StartCoroutine(fetchCardFromServer(serverUrl, cardId));
+      }
+      // MDFC back side
+      if (card.backId != "" && card.backId != null)
+      {
+        Debug.Log("back id: " + card.backId);
+        if (File.Exists(cachePath + card.backId + fileExtension))
+        {
+          Texture2D cardTexture = loadImageFromCache(card.backId);
+          fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        }
+        else
+        {
+          Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+          fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+          string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
+          StartCoroutine(fetchBackCardFromServer(serverUrl, card.backId));
+        }
       }
     }
 
@@ -119,6 +158,7 @@ public class WebCard : MonoBehaviour
       Texture2D cardTexture = Resources.Load("Images/OldBorder") as Texture2D;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       fullMask.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+      fullMaskBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 
     // If image is Alpha set utilize the old border as mask
@@ -127,6 +167,7 @@ public class WebCard : MonoBehaviour
       Texture2D cardTexture = Resources.Load("Images/NewBorder") as Texture2D;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       fullMask.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+      fullMaskBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
     }
 
     // Make the card transparent
@@ -148,11 +189,17 @@ public class WebCard : MonoBehaviour
     public void showFullSize()
     {
       fullMaskObject.SetActive(true);
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      if (card.backId != "")
+      {
+        fullMaskBackObject.SetActive(true);
+      }
     }
 
     public void hideFullSize()
     {
       fullMaskObject.SetActive(false);
+      fullMaskBackObject.SetActive(false);
     }
 
     public void bringToFront()

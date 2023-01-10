@@ -12,6 +12,7 @@ public class DeckListPanel : MonoBehaviour
     public GameObject cardCount;
     public GameObject manaCurveObject;
     public GameObject highlightCardObject;
+    public GameObject highlightCardBackObject;
     public GameObject coverCardObject;
     private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
@@ -139,10 +140,17 @@ public class DeckListPanel : MonoBehaviour
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
       highlightCardObject.SetActive(true);
       highlightCardObject.GetComponent<WebCard>().texturizeCard(targetCard);
+      if (targetCard.backId != "")
+      {
+        CardInfo targetBackCard = PlayerManager.Instance.getCardFromLookup(targetCard.backId);
+        highlightCardBackObject.SetActive(true);
+        highlightCardBackObject.GetComponent<WebCard>().texturizeCard(targetBackCard);
+      }
     }
 
     public void hideHighlight()
     {
       highlightCardObject.SetActive(false);
+      highlightCardBackObject.SetActive(false);
     }
 }
