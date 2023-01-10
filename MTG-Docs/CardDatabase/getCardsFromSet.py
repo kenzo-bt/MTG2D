@@ -60,6 +60,17 @@ for card in cards:
     except KeyError:
         manaCost = ""
 
+    backside = ""
+    isBack = False
+    try:
+        if card["side"] == "a":
+            backside = card["otherFaceIds"][0]
+        if card["side"] == "b":
+            isBack = True
+    except KeyError:
+        backside = ""
+        isBack = False
+
     thisCard = {
         "id": card["uuid"],
         "name": card["name"],
@@ -70,7 +81,9 @@ for card in cards:
         "manaCost": manaCost,
         "types": card["types"],
         "rarity": card["rarity"],
-        "set": card["setCode"]
+        "set": card["setCode"],
+        "backId": backside,
+        "isBack": isBack
     }
     outputSet["cards"].append(thisCard);
 
@@ -82,7 +95,13 @@ for card in cards:
             time.sleep(0.1)
             data = scryfallResponse.text
             parse_json = json.loads(data)
-            imageUrl = parse_json["image_uris"]["normal"]
+            try:
+                imageUrl = parse_json["image_uris"]["normal"]
+            except KeyError:
+                if card["side"] == "a":
+                    imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
+                else:
+                    imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
 
             # Save image to the image output directory
             image = requests.get(imageUrl)

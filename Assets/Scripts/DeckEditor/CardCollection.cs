@@ -105,7 +105,11 @@ public class CardCollection : MonoBehaviour
       {
         foreach (CardInfo card in set.cards)
         {
-          allCardIds.Add(card.id);
+          // Dont include DFC backside
+          if (!card.isBack)
+          {
+            allCardIds.Add(card.id);
+          }
         }
       }
     }

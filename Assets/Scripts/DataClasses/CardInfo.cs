@@ -15,4 +15,6 @@ public class CardInfo
     public List<string> types;
     public string rarity;
     public string set;
+    public string backId;
+    public bool isBack;
 }
