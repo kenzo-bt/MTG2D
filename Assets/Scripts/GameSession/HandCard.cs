@@ -46,4 +46,15 @@ public class HandCard : MonoBehaviour
       int index = transform.GetSiblingIndex();
       player.GetComponent<Player>().hideHandCard(index);
     }
+
+    public void highlightCard()
+    {
+      string id = GetComponent<WebCard>().cardId;
+      player.GetComponent<Player>().showHighlightCard(id);
+    }
+
+    public void unhighlightCard()
+    {
+      player.GetComponent<Player>().hideHighlightCard();
+    }
 }

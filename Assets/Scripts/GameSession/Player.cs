@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public GameObject graveObject;
     public GameObject exileObject;
     public GameObject highlightObject;
+    public GameObject highlightBackObject;
     public GameObject lifeObject;
     public GameObject gameStateObject;
     public GameObject opponentObject;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     private CardStack exile;
     private CardStack deckStack;
     private WebCard highlightCard;
+    private WebCard highlightBackCard;
     private TMP_Text lifeCounter;
     private GameState gameState;
     private Opponent opponent;
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
       exile = exileObject.GetComponent<CardStack>();
       deckStack = deckObject.GetComponent<CardStack>();
       highlightCard = highlightObject.GetComponent<WebCard>();
+      highlightBackCard = highlightBackObject.GetComponent<WebCard>();
       lifeCounter = lifeObject.GetComponent<TMP_Text>();
       opponent = opponentObject.GetComponent<Opponent>();
       gameState = gameStateObject.GetComponent<GameState>();
@@ -249,12 +252,23 @@ public class Player : MonoBehaviour
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       highlightCard.texturizeCard(card);
       highlightObject.GetComponent<CanvasGroup>().alpha = 1f;
+      if (card.backId != "")
+      {
+        CardInfo backCard = PlayerManager.Instance.getCardFromLookup(card.backId);
+        highlightBackCard.texturizeCard(backCard);
+        highlightBackObject.GetComponent<CanvasGroup>().alpha = 1f;
+      }
+      else
+      {
+        highlightBackObject.GetComponent<CanvasGroup>().alpha = 0f;
+      }
     }
 
     // Hide highlight card
     public void hideHighlightCard()
     {
       highlightObject.GetComponent<CanvasGroup>().alpha = 0f;
+      highlightBackObject.GetComponent<CanvasGroup>().alpha = 0f;
     }
 
     // Reduce life total by 1

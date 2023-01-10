@@ -37,6 +37,7 @@ public class DragDrop : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
         string cardId = GetComponent<WebCard>().cardId;
         CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
         player.GetComponent<Player>().dropCardInBattlefield(card);
+        player.GetComponent<Player>().hideHighlightCard();
       }
       else
       {
