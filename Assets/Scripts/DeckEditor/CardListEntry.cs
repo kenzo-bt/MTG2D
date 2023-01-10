@@ -42,7 +42,14 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
       card = PlayerManager.Instance.getCardFromLookup(id);
       cardId = card.id;
-      cardName = card.name;
+      if (card.backId != "")
+      {
+        cardName = card.name.Split(" // ")[0];
+      }
+      else
+      {
+        cardName = card.name;
+      }
       quantity = num;
       createManaCost();
       colorize();
