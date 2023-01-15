@@ -23,6 +23,10 @@ public class BattlefieldArea : MonoBehaviour
       GameObject cardInstance = Instantiate(cardPrefab, transform);
       cardInstance.GetComponent<WebCard>().texturizeCard(card);
       cardInstance.GetComponent<BattlefieldCard>().player = player;
+      if (card.backId != "")
+      {
+        cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
+      }
       orderArea();
     }
 

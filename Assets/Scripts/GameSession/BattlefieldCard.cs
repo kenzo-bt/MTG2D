@@ -7,6 +7,7 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
 {
     public GameObject player;
     public GameObject contextMenu;
+    public GameObject flipButton;
     public bool tapped;
     public bool flipped;
     // Start is called before the first frame update
@@ -99,5 +100,10 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
         GetComponent<WebCard>().showBack();
       }
       flipped = !flipped;
+    }
+
+    public void enableFlipButton()
+    {
+      flipButton.SetActive(true);
     }
 }
