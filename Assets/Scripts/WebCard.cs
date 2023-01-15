@@ -122,6 +122,48 @@ public class WebCard : MonoBehaviour
       }
     }
 
+    public void showFront()
+    {
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      // Check if image already exists in cache
+      if (File.Exists(cachePath + cardId + fileExtension))
+      {
+        Texture2D cardTexture = loadImageFromCache(cardId);
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      else // If not in cache, proceed to download from server
+      {
+        // Set fallback image
+        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
+        StartCoroutine(fetchCardFromServer(serverUrl, cardId));
+      }
+    }
+
+    public void showBack()
+    {
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      // Check if image already exists in cache
+      if (File.Exists(cachePath + card.backId + fileExtension))
+      {
+        Texture2D cardTexture = loadImageFromCache(card.backId);
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      else // If not in cache, proceed to download from server
+      {
+        // Set fallback image
+        Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
+        StartCoroutine(fetchCardFromServer(serverUrl, card.backId));
+      }
+    }
+
     // Save image to cache
     private void saveImageToCache(Texture2D texture, string id) {
       string fileName = id + fileExtension;

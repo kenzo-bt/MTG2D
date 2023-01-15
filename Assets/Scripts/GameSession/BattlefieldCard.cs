@@ -8,10 +8,12 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public GameObject player;
     public GameObject contextMenu;
     public bool tapped;
+    public bool flipped;
     // Start is called before the first frame update
     void Awake()
     {
       tapped = false;
+      flipped = false;
     }
 
     // Update is called once per frame
@@ -82,5 +84,20 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public void hideInGameHighlight()
     {
       player.GetComponent<Player>().hideHighlightCard();
+    }
+
+    public void flipCard()
+    {
+      if (flipped)
+      {
+        // Texturize as face card
+        GetComponent<WebCard>().showFront();
+      }
+      else
+      {
+        // Texturize as back side
+        GetComponent<WebCard>().showBack();
+      }
+      flipped = !flipped;
     }
 }
