@@ -210,7 +210,7 @@ public class PlayerManager : MonoBehaviour
       {
 
       }
-      Debug.Log("Card not found in collection!");
+      Debug.Log("Card not found in collection! (" + id + ")");
       return targetCard;
     }
 }

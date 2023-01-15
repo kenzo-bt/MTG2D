@@ -84,7 +84,11 @@ public class Battlefield : MonoBehaviour
         string cardId = creatures[i];
         if (card.tapped)
         {
-          cardId += "-T";
+          cardId += "--T";
+        }
+        if (card.flipped)
+        {
+          cardId += "--F";
         }
         allCreatures.Add(cardId);
       }
@@ -101,7 +105,11 @@ public class Battlefield : MonoBehaviour
         string cardId = lands[i];
         if (card.tapped)
         {
-          cardId += "-T";
+          cardId += "--T";
+        }
+        if (card.flipped)
+        {
+          cardId += "--F";
         }
         allLands.Add(cardId);
       }
@@ -118,7 +126,11 @@ public class Battlefield : MonoBehaviour
         string cardId = others[i];
         if (card.tapped)
         {
-          cardId += "-T";
+          cardId += "--T";
+        }
+        if (card.flipped)
+        {
+          cardId += "--F";
         }
         allOthers.Add(cardId);
       }

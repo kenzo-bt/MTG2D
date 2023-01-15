@@ -118,14 +118,20 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.creatures)
       {
-        string onlyCard = card.Split("-T")[0];
+        bool isTapped = card.Contains("--T");
+        bool isFlipped = card.Contains("--F");
+        string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, creatureArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
-        if (card.Split("-T").Length > 1)
+        if (isTapped)
         {
           cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
+        if (isFlipped)
+        {
+          cardInstance.GetComponent<WebCard>().showBack();
         }
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();
@@ -151,14 +157,20 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.lands)
       {
-        string onlyCard = card.Split("-T")[0];
+        bool isTapped = card.Contains("--T");
+        bool isFlipped = card.Contains("--F");
+        string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, landArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
-        if (card.Split("-T").Length > 1)
+        if (isTapped)
         {
           cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
+        if (isFlipped)
+        {
+          cardInstance.GetComponent<WebCard>().showBack();
         }
       }
       landArea.GetComponent<Container>().orderChildrenCenter();
@@ -184,14 +196,20 @@ public class Opponent : MonoBehaviour
       // Populate with new objects
       foreach (string card in state.others)
       {
-        string onlyCard = card.Split("-T")[0];
+        bool isTapped = card.Contains("--T");
+        bool isFlipped = card.Contains("--F");
+        string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, otherArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
         cardInstance.GetComponent<WebCard>().texturizeCard(cardInfo);
         cardInstance.GetComponent<OppBattlefieldCard>().player = player;
-        if (card.Split("-T").Length > 1)
+        if (isTapped)
         {
           cardInstance.GetComponent<OppBattlefieldCard>().tapCard();
+        }
+        if (isFlipped)
+        {
+          cardInstance.GetComponent<WebCard>().showBack();
         }
       }
       otherArea.GetComponent<Container>().orderChildrenCenter();
