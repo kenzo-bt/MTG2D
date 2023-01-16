@@ -41,14 +41,16 @@ public class Hand : MonoBehaviour
 
     public void removeCard(CardInfo card)
     {
-      // Update data
-      hand.Remove(card);
-      // Update physical cards
+      player.GetComponent<Player>().logMessage("removeCard() -> Removing: " + card.name);
+      player.GetComponent<Player>().logMessage("removeCard() -> CardCount: " + transform.childCount);
       int numChildren = transform.childCount;
       for(int i = 0; i < numChildren; i++)
       {
-        if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardName == card.name)
+        player.GetComponent<Player>().logMessage("removeCard() -> [" + i + "]: " + transform.GetChild(i).gameObject.GetComponent<WebCard>().cardName);
+        if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardId == card.id)
         {
+          player.GetComponent<Player>().logMessage("removeCard() -> [" + i + "]: " + "Card found! Removing and destroying...");
+          hand.RemoveAt(i);
           cardVisibility.RemoveAt(i);
           DestroyImmediate(transform.GetChild(i).gameObject);
           break;
@@ -87,6 +89,11 @@ public class Hand : MonoBehaviour
     {
       List<string> handIds = new List<string>();
       int numCards = hand.Count;
+      player.GetComponent<Player>().logMessage("Hand size: " + hand.Count);
+      player.GetComponent<Player>().logMessage("HandVis size: " + cardVisibility.Count);
+      Debug.Log("Hand size: " + hand.Count);
+      Debug.Log("HandVis size: " + cardVisibility.Count);
+
       for (int i = 0; i < hand.Count; i++)
       {
         string cardID = hand[i].id;
