@@ -10,9 +10,11 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance;
     public List<CardSet> cardCollection;
     public Dictionary<string, CardInfo> cardLookup;
+    public Dictionary<string, int> collectedCards;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
     private string decksFilePath;
+    private string collectionFilePath;
     public string serverUrl;
     public string apiUrl;
     public string serverImageFileExtension;
@@ -44,6 +46,10 @@ public class PlayerManager : MonoBehaviour
 
       cardLookup = new Dictionary<string, CardInfo>();
       createCardLookup();
+
+      collectedCards = new Dictionary<string, int>();
+      collectionFilePath = Application.persistentDataPath + "/userCards.txt";
+      loadCollectedCards();
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
       loadPlayerDecks();
@@ -78,6 +84,51 @@ public class PlayerManager : MonoBehaviour
           cardLookup.Add(card.id, card);
         }
       }
+    }
+
+    // Read from textfile with cards collected by the user
+    private void loadCollectedCards()
+    {
+      // If file doesnt exist, create a file in persistent data storage
+      //// TODO: Here we can flag to give the user starter packs
+      if (!System.IO.File.Exists(collectionFilePath))
+      {
+        using (File.Create(collectionFilePath)) {}
+      }
+      else
+      {
+        // Load the collected cards into the dictionary
+        string fileContents = "";
+        fileContents = File.ReadAllText(collectionFilePath);
+        if (fileContents != "")
+        {
+          foreach (string line in fileContents.Split('\n'))
+          {
+            // Format: ID Freq
+            string id = line.Split(" ")[0];
+            int freq = Int32.Parse(line.Split(" ")[1]);
+            if (id.Length > 2)
+            {
+              collectedCards.Add(line.Split(" ")[0], freq);
+            }
+          }
+
+          foreach (KeyValuePair<string, int> item in collectedCards)
+          {
+            Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
+          }
+        }
+      }
+    }
+
+    private void saveCollectedCards()
+    {
+      string allCardsString = "";
+      foreach (KeyValuePair<string, int> item in collectedCards)
+      {
+        allCardsString += (item.Key + " " + item.Value + "\n");
+      }
+      File.WriteAllText(collectionFilePath, allCardsString);
     }
 
     // Read in player decks from disk
