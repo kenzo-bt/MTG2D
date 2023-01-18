@@ -68,6 +68,10 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
       {
         computedColour = "M";
       }
+      else if (card.colourIdentity.Count == 0)
+      {
+        computedColour = "A";
+      }
       else
       {
         if (card.colourIdentity[0] == "W") { computedColour = "W"; }
