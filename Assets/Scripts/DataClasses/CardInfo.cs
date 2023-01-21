@@ -17,4 +17,6 @@ public class CardInfo
     public string set;
     public string backId;
     public bool isBack;
+    public string layout;
+    public bool isToken;
 }

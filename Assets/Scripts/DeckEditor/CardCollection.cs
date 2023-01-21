@@ -193,6 +193,8 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(hasSelectedTypes));
       }
 
+      filteredIds = new List<string>(filteredIds.FindAll(notToken));
+
       // Go back to page one on the display
       currentPage = 0;
       // Update the display with the filtered cards
@@ -332,6 +334,11 @@ public class CardCollection : MonoBehaviour
     {
       return rarities.Contains(PlayerManager.Instance.getCardFromLookup(id).rarity);
     }
+
+    private static bool notToken(string id)
+    {
+      return !PlayerManager.Instance.getCardFromLookup(id).isToken;
+    }
 
     //// Receiving extra filters from Advanced filters
 

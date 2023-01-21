@@ -252,7 +252,7 @@ public class Player : MonoBehaviour
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       highlightCard.texturizeCard(card);
       highlightObject.GetComponent<CanvasGroup>().alpha = 1f;
-      if (card.backId != "" & card.backId != null)
+      if (card.layout != "split" && card.backId != "" & card.backId != null)
       {
         CardInfo backCard = PlayerManager.Instance.getCardFromLookup(card.backId);
         highlightBackCard.texturizeCard(backCard);

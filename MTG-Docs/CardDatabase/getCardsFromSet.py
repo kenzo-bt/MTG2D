@@ -23,6 +23,7 @@ setCode = sys.argv[1]
 setInputPath = setReadDirectory + setCode + fileType
 setOutputPath = setWriteDirectory + setCode + fileType
 setImageDirectory = "./Images/Sets/" + setCode + "/"
+setTokenDirectory = "./Images/Sets/T" + setCode + "/"
 
 # If image directory doesnt exist, create it
 if not os.path.exists(setImageDirectory):
@@ -71,6 +72,12 @@ for card in cards:
         backside = ""
         isBack = False
 
+    layout = ""
+    try:
+        layout = card["layout"]
+    except KeyError:
+        backside = ""
+
     thisCard = {
         "id": card["uuid"],
         "name": card["name"],
@@ -83,7 +90,9 @@ for card in cards:
         "rarity": card["rarity"],
         "set": card["setCode"],
         "backId": backside,
-        "isBack": isBack
+        "isBack": isBack,
+        "layout": layout,
+        "isToken": False
     }
     outputSet["cards"].append(thisCard);
 
@@ -106,6 +115,52 @@ for card in cards:
             # Save image to the image output directory
             image = requests.get(imageUrl)
             file = open(setImageDirectory + card["uuid"] + ".jpg", "wb")
+            file.write(image.content)
+            file.close()
+
+# Get tokens from set
+tokens = setInformation["tokens"]
+if len(tokens) > 0:
+    print("Tokens found in this set...")
+    # If token directory doesnt exist, create it
+    if not os.path.exists(setTokenDirectory):
+        os.makedirs(setTokenDirectory)
+for token in tokens:
+    thisToken = {
+        "id": token["uuid"],
+        "name": token["name"],
+        "text": "",
+        "colours": token["colors"],
+        "colourIdentity": token["colorIdentity"],
+        "manaValue": 0,
+        "manaCost": "",
+        "types": token["types"],
+        "rarity": "common",
+        "set": token["setCode"],
+        "backId": "",
+        "isBack": False,
+        "layout": "",
+        "isToken": True
+    }
+    outputSet["cards"].append(thisToken);
+
+    if len(sys.argv) == 3 and sys.argv[2] == "-t":
+        if not os.path.exists(setTokenDirectory + token["uuid"] + ".jpg"):
+            scryfallResponse = requests.get('https://api.scryfall.com/cards/' + token["identifiers"]["scryfallId"])
+            time.sleep(0.1)
+            data = scryfallResponse.text
+            parse_json = json.loads(data)
+            try:
+                imageUrl = parse_json["image_uris"]["normal"]
+            except KeyError:
+                if token["side"] == "a":
+                    imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
+                else:
+                    imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
+
+            # Save image to the image output directory
+            image = requests.get(imageUrl)
+            file = open(setTokenDirectory + token["uuid"] + ".jpg", "wb")
             file.write(image.content)
             file.close()
 

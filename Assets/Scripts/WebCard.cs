@@ -45,6 +45,8 @@ public class WebCard : MonoBehaviour
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
+        Debug.Log("Failed to retrieve card with ID: " + cardId);
+        Debug.Log("ServerURL: " + serverUrl);
       }
       else
       {

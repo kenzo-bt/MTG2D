@@ -42,7 +42,7 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
       card = PlayerManager.Instance.getCardFromLookup(id);
       cardId = card.id;
-      if (card.backId != "" && card.backId != null)
+      if (card.layout != "split" && card.backId != "" && card.backId != null)
       {
         cardName = card.name.Split(" // ")[0];
       }
