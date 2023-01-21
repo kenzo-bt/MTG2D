@@ -178,27 +178,30 @@ public class Player : MonoBehaviour
       // Remove card from current area
       battlefield.removeCard(index, sourceArea);
       // Place card in given destination
-      if (destination == "hand")
+      if (!targetCard.isToken)
       {
-        hand.addCard(targetCard);
-        hand.orderHand();
-      }
-      else if (destination == "grave")
-      {
-        grave.addCard(cardId, true);
-      }
-      else if (destination == "exile")
-      {
-        exile.addCard(cardId, true);
-      }
-      else if (destination == "deck")
-      {
-        // Currently putting on top of deck -> Need option for top/bottom/shuffled
-        deckStack.addCard(cardId, true);
-      }
-      else if (destination == "deckBtm")
-      {
-        deckStack.addCardBottom(cardId, true);
+        if (destination == "hand")
+        {
+          hand.addCard(targetCard);
+          hand.orderHand();
+        }
+        else if (destination == "grave")
+        {
+          grave.addCard(cardId, true);
+        }
+        else if (destination == "exile")
+        {
+          exile.addCard(cardId, true);
+        }
+        else if (destination == "deck")
+        {
+          // Currently putting on top of deck -> Need option for top/bottom/shuffled
+          deckStack.addCard(cardId, true);
+        }
+        else if (destination == "deckBtm")
+        {
+          deckStack.addCardBottom(cardId, true);
+        }
       }
       // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
       hideHighlightCard();

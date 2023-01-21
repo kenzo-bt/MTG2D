@@ -55,11 +55,9 @@ public class TokenPanel : MonoBehaviour
       {
         filteredTokens = new List<string>(tokenIds.FindAll(matchesSearchText));
       }
-
-      foreach (string id in filteredTokens)
+      else
       {
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
-        Debug.Log("Token name: " + card.name + " / ID: " + card.id);
+        filteredTokens = new List<string>();
       }
 
       // Eliminate all browser children
