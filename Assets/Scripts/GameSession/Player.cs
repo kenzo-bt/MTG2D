@@ -164,6 +164,13 @@ public class Player : MonoBehaviour
       logMessage("You dropped " + card.name + " to the battlefield");
     }
 
+    // Create a card in the battlefield (token)
+    public void addCardToBattlefield(CardInfo card)
+    {
+      battlefield.addCard(card);
+      logMessage("You created a " + card.name + " token in the battlefield");
+    }
+
     // Move battlefield card from source to destination
     public void moveBattlefieldCard(string cardId, int index, string sourceArea, string destination)
     {
