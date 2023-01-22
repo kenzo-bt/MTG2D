@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -18,6 +19,8 @@ public class Player : MonoBehaviour
     public GameObject opponentObject;
     public GameObject browserObject;
     public GameObject loggerObject;
+    public GameObject coinImage;
+    public GameObject coinTime;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -34,6 +37,8 @@ public class Player : MonoBehaviour
     public int initialHandSize;
     private int lifeTotal;
     public string log;
+    public int coinToss;
+    public string tossTime;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +59,8 @@ public class Player : MonoBehaviour
       initialHandSize = 7;
       lifeTotal = 20;
       log = "";
+      coinToss = 0;
+      tossTime = "";
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -139,6 +146,8 @@ public class Player : MonoBehaviour
       myState.lands =  battlefield.getLands();
       myState.others =  battlefield.getOthers();
       myState.life = lifeTotal;
+      myState.coinToss = coinToss;
+      myState.tossTime = tossTime;
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -372,5 +381,24 @@ public class Player : MonoBehaviour
       string time = DateTime.Now.ToLongTimeString();
       message = time + " - " + message;
       loggerObject.GetComponent<Logger>().addToLogger(message);
+    }
+
+    public void tossCoin()
+    {
+      Image coin = coinImage.GetComponent<Image>();
+      TMP_Text time = coinTime.GetComponent<TMP_Text>();
+      tossTime = DateTime.Now.ToLongTimeString();
+      coinToss = UnityEngine.Random.Range(0, 2);
+      if (coinToss == 0) // Heads
+      {
+        Texture2D headTexture = Resources.Load("Images/coinHeads") as Texture2D;
+        coin.sprite = Sprite.Create(headTexture, new Rect(0, 0, headTexture.width, headTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      else if (coinToss == 1) // Tails
+      {
+        Texture2D tailTexture = Resources.Load("Images/coinTails") as Texture2D;
+        coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      time.text = tossTime;
     }
 }

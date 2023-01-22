@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Linq;
 
@@ -17,6 +18,8 @@ public class Opponent : MonoBehaviour
     public GameObject deckObject;
     public GameObject graveObject;
     public GameObject exileObject;
+    public GameObject coinToss;
+    public GameObject tossTime;
     private OppCardStack deck;
     private OppCardStack grave;
     private OppCardStack exile;
@@ -55,6 +58,7 @@ public class Opponent : MonoBehaviour
       updateBattlefield();
       updateStacks();
       updateLife();
+      updateCoin();
     }
 
     public void updateHand()
@@ -64,7 +68,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.hand.SequenceEqual(state.hand))
         {
-          Debug.Log("Hand has not changed. Skipping...");
           return;
         }
       }
@@ -105,7 +108,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.creatures.SequenceEqual(state.creatures))
         {
-          Debug.Log("Creature area has not changed. Skipping...");
           return;
         }
       }
@@ -144,7 +146,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.lands.SequenceEqual(state.lands))
         {
-          Debug.Log("Lands area has not changed. Skipping...");
           return;
         }
       }
@@ -183,7 +184,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.others.SequenceEqual(state.others))
         {
-          Debug.Log("Others area has not changed. Skipping...");
           return;
         }
       }
@@ -228,7 +228,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.deck.SequenceEqual(state.deck))
         {
-          Debug.Log("Deck has not changed. Skipping...");
           return;
         }
       }
@@ -254,7 +253,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.grave.SequenceEqual(state.grave))
         {
-          Debug.Log("Grave has not changed. Skipping...");
           return;
         }
       }
@@ -280,7 +278,6 @@ public class Opponent : MonoBehaviour
       {
         if (prevState.exile.SequenceEqual(state.exile))
         {
-          Debug.Log("Exile has not changed. Skipping...");
           return;
         }
       }
@@ -303,5 +300,22 @@ public class Opponent : MonoBehaviour
     public void updateLife()
     {
       life.text = state.life.ToString();
+    }
+
+    public void updateCoin()
+    {
+      Image coin = coinToss.GetComponent<Image>();
+      TMP_Text time = tossTime.GetComponent<TMP_Text>();
+      if (state.coinToss == 0) // Heads
+      {
+        Texture2D headTexture = Resources.Load("Images/coinHeads") as Texture2D;
+        coin.sprite = Sprite.Create(headTexture, new Rect(0, 0, headTexture.width, headTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      else if (state.coinToss == 1) // Tails
+      {
+        Texture2D tailTexture = Resources.Load("Images/coinTails") as Texture2D;
+        coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
+      }
+      time.text = state.tossTime;
     }
 }

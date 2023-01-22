@@ -14,6 +14,8 @@ public class BoardState
   public List<string> others;
   public int life;
   public string hash;
+  public int coinToss;
+  public string tossTime;
 
   public void debugState()
   {

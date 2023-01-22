@@ -41,15 +41,11 @@ public class Hand : MonoBehaviour
 
     public void removeCard(CardInfo card)
     {
-      player.GetComponent<Player>().logMessage("removeCard() -> Removing: " + card.name);
-      player.GetComponent<Player>().logMessage("removeCard() -> CardCount: " + transform.childCount);
       int numChildren = transform.childCount;
       for(int i = 0; i < numChildren; i++)
       {
-        player.GetComponent<Player>().logMessage("removeCard() -> [" + i + "]: " + transform.GetChild(i).gameObject.GetComponent<WebCard>().cardName);
         if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardId == card.id)
         {
-          player.GetComponent<Player>().logMessage("removeCard() -> [" + i + "]: " + "Card found! Removing and destroying...");
           hand.RemoveAt(i);
           cardVisibility.RemoveAt(i);
           DestroyImmediate(transform.GetChild(i).gameObject);
@@ -89,10 +85,6 @@ public class Hand : MonoBehaviour
     {
       List<string> handIds = new List<string>();
       int numCards = hand.Count;
-      player.GetComponent<Player>().logMessage("Hand size: " + hand.Count);
-      player.GetComponent<Player>().logMessage("HandVis size: " + cardVisibility.Count);
-      Debug.Log("Hand size: " + hand.Count);
-      Debug.Log("HandVis size: " + cardVisibility.Count);
 
       for (int i = 0; i < hand.Count; i++)
       {
@@ -113,7 +105,6 @@ public class Hand : MonoBehaviour
       {
         Debug.Log(card.name);
       }
-
       Debug.Log("Cards in hand: " + hand.Count);
     }
 }
