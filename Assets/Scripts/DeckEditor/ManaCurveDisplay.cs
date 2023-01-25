@@ -66,7 +66,7 @@ public class ManaCurveDisplay : MonoBehaviour
 
       for (int i = 0; i < deck.cards.Count; i++)
       {
-        int manaValue = deck.cards[i].manaValue;
+        int manaValue = PlayerManager.Instance.getCardFromLookup(deck.cards[i]).manaValue;
         int frequency = deck.cardFrequencies[i];
         if (manaValue > 0 && manaValue < 6)
         {

@@ -149,7 +149,7 @@ public class PlayerManager : MonoBehaviour
       {
         starterDecks[i] = starterDecks[i].Trim();
         Decklist individualDeck = new Decklist();
-        List<CardInfo> cards = new List<CardInfo>();
+        List<string> cards = new List<string>();
         List<int> cardFrequencies = new List<int>();
 
         // Split name / cover / cards
@@ -165,7 +165,7 @@ public class PlayerManager : MonoBehaviour
         {
           if (!string.IsNullOrWhiteSpace(card))
           {
-            cards.Add(getCardFromLookup(card.Split(" ")[0]));
+            cards.Add(card.Split(" ")[0]);
             cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
           }
         }
@@ -190,7 +190,7 @@ public class PlayerManager : MonoBehaviour
         foreach (string deck in fileContents.Split("---"))
         {
           Decklist individualDeck = new Decklist();
-          List<CardInfo> cards = new List<CardInfo>();
+          List<string> cards = new List<string>();
           List<int> cardFrequencies = new List<int>();
 
           // Split name / cover / cards
@@ -206,7 +206,7 @@ public class PlayerManager : MonoBehaviour
           {
             if (!string.IsNullOrWhiteSpace(card))
             {
-              cards.Add(getCardFromLookup(card.Split(" ")[0]));
+              cards.Add(card.Split(" ")[0]);
               cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
             }
           }

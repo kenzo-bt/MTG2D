@@ -39,7 +39,7 @@ public class Deck : MonoBehaviour, IPointerClickHandler
       {
         for (int n = 0; n < selectedDeck.cardFrequencies[i]; n++)
         {
-          stack.addCard(selectedDeck.cards[i].id, false);
+          stack.addCard(selectedDeck.cards[i], false);
         }
       }
     }

@@ -102,7 +102,7 @@ public class DeckDisplay : MonoBehaviour
         if (deck.name == deckName)
         {
           copy.name = deckName.Split("!Starter!")[0];
-          copy.cards = new List<CardInfo>(deck.cards);
+          copy.cards = new List<string>(deck.cards);
           copy.cardFrequencies = new List<int>(deck.cardFrequencies);
         }
       }

@@ -29,8 +29,9 @@ public class CoverCard : MonoBehaviour
       if (PlayerManager.Instance.selectedDeck.cards.Count > 0)
       {
         List<string> cardNames = new List<string>();
-        foreach (CardInfo card in PlayerManager.Instance.selectedDeck.cards)
+        foreach (string cardId in PlayerManager.Instance.selectedDeck.cards)
         {
+          CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
           cardNames.Add(card.name);
         }
         coverDropdown.ClearOptions();
@@ -58,8 +59,9 @@ public class CoverCard : MonoBehaviour
     {
       string selectedName = coverDropdown.options[coverDropdown.value].text;
       string selectedId = "";
-      foreach (CardInfo card in PlayerManager.Instance.selectedDeck.cards)
+      foreach (string cardId in PlayerManager.Instance.selectedDeck.cards)
       {
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
         if (card.name == selectedName)
         {
           selectedId = card.id;
