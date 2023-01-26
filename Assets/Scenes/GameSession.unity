@@ -3166,7 +3166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 475, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 950, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755833184
@@ -9379,6 +9379,7 @@ MonoBehaviour:
   loggerObject: {fileID: 369419181}
   coinImage: {fileID: 1829966442}
   coinTime: {fileID: 212188264}
+  coinButton: {fileID: 2046557299}
   initialHandSize: 0
   log: 
   coinToss: 0
@@ -9864,6 +9865,11 @@ PrefabInstance:
 --- !u!224 &2046557298 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7701075555334843708, guid: 3092f78c84168dd4894bfce0934cc343, type: 3}
+  m_PrefabInstance: {fileID: 2046557297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2046557299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3354217110938647247, guid: 3092f78c84168dd4894bfce0934cc343, type: 3}
   m_PrefabInstance: {fileID: 2046557297}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048020380

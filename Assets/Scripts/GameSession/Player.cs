@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public GameObject loggerObject;
     public GameObject coinImage;
     public GameObject coinTime;
+    public GameObject coinButton;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -400,5 +401,13 @@ public class Player : MonoBehaviour
         coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
       }
       time.text = tossTime;
+      StartCoroutine(disableCoinButtonTemporarily(3));
+    }
+
+    private IEnumerator disableCoinButtonTemporarily(int seconds)
+    {
+      coinButton.GetComponent<Button>().interactable = false;
+      yield return new WaitForSeconds(3);
+      coinButton.GetComponent<Button>().interactable = true;
     }
 }
