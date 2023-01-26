@@ -232,7 +232,6 @@ public class TitleScreen : MonoBehaviour
     public void hideTitleScreen()
     {
       StartCoroutine(FadeAllToZeroAlpha());
-
     }
 
     public IEnumerator FadeAllToZeroAlpha()

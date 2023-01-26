@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System;
+using UnityEngine.Networking;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     public Dictionary<string, int> collectedCards;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
+    public List<Decklist> starterDecks;
     private string decksFilePath;
     private string collectionFilePath;
     public string serverUrl;
@@ -131,6 +133,35 @@ public class PlayerManager : MonoBehaviour
       File.WriteAllText(collectionFilePath, allCardsString);
     }
 
+    public void readStarterDecks()
+    {
+      StartCoroutine(getStarterDecksFromServer());
+    }
+
+    private IEnumerator getStarterDecksFromServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "globals/starters";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          AllDecklists starters = new AllDecklists();
+          starters = JsonUtility.FromJson<AllDecklists>(serverJson);
+          starterDecks = new List<Decklist>(starters.decks);
+          foreach (Decklist deck in starterDecks)
+          {
+            Debug.Log(deck.name);
+          }
+        }
+      }
+    }
+
     // Read in player decks from disk
     private void loadPlayerDecks()
     {
@@ -143,44 +174,7 @@ public class PlayerManager : MonoBehaviour
       }
 
       // Read starter decks
-      TextAsset starterDeckFile = Resources.Load("StarterDecks") as TextAsset;
-      List<string> starterDecks = new List<string>(starterDeckFile.text.Split("---"));
-      for (int i = 0; i < starterDecks.Count; i++)
-      {
-        starterDecks[i] = starterDecks[i].Trim();
-        Decklist individualDeck = new Decklist();
-        List<string> cards = new List<string>();
-        List<int> cardFrequencies = new List<int>();
-
-        // Split name / cover / cards
-        string deckName = starterDecks[i].Split("%")[0].Trim();
-        string[] cardStrings = starterDecks[i].Split("%")[1].Split('\n');
-        string coverId = "";
-        if (starterDecks[i].Split("%").Length == 3)
-        {
-          coverId = starterDecks[i].Split("%")[2].Trim();
-        }
-
-        foreach (string card in cardStrings)
-        {
-          if (!string.IsNullOrWhiteSpace(card))
-          {
-            cards.Add(card.Split(" ")[0]);
-            cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
-          }
-        }
-
-        individualDeck.name = deckName;
-        if (!individualDeck.name.Contains("!Starter!"))
-        {
-          individualDeck.name = individualDeck.name + " !Starter!";
-        }
-        individualDeck.cards = cards;
-        individualDeck.cardFrequencies = cardFrequencies;
-        individualDeck.coverId = coverId;
-
-        allDecks.Add(individualDeck);
-      }
+      readStarterDecks();
 
       // Read user decks
       string fileContents = "";
