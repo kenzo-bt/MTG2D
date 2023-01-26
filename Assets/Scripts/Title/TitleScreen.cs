@@ -211,6 +211,7 @@ public class TitleScreen : MonoBehaviour
               break;
             }
           }
+
           // Delete all challenges for this user
           url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges";
           UnityWebRequest deleteRequest = new UnityWebRequest(url);
@@ -224,6 +225,9 @@ public class TitleScreen : MonoBehaviour
           {
             Debug.Log("Deleted all challenges for this user...");
           }
+
+          // Start checking for incoming challenges
+          friendsPanelObject.GetComponent<Matchmaker>().startChallengeChecking();
         }
       }
     }

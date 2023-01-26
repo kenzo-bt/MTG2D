@@ -42,8 +42,6 @@ public class FriendsPanel : MonoBehaviour
   {
     targetPosition = new Vector3(0f, showPanelY, 0f);
     expanderObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
-    // Ask the server if we have had a challenge
-    GetComponent<Matchmaker>().checkForChallenges();
   }
 
   public void hidePanel()

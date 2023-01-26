@@ -11,12 +11,21 @@ public class Matchmaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      startChallengeChecking();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void startChallengeChecking()
+    {
+      if (PlayerManager.Instance.myID != -1)
+      {
+        InvokeRepeating("checkForChallenges", 0.5f, 2f);
+      }
     }
 
     public void checkForChallenges()
