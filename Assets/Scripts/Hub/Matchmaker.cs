@@ -162,7 +162,7 @@ public class Matchmaker : MonoBehaviour
           if (serverJson.Trim() == "{}") // User has delted your challenge request
           {
             Debug.Log("Challenge no longer exists.");
-            CancelInvoke();
+            CancelInvoke("checkIfAccepted");
             // Turn friend entry back to the idle state
             GetComponent<FriendsPanel>().turnToIdle(PlayerManager.Instance.opponentID);
           }
@@ -180,7 +180,7 @@ public class Matchmaker : MonoBehaviour
               GetComponent<FriendsPanel>().turnToIdle(PlayerManager.Instance.opponentID);
               // Show play panel with opponent name
               playMenu.GetComponent<PlayMenu>().show();
-              CancelInvoke();
+              CancelInvoke("checkIfAccepted");
             }
             else
             {
