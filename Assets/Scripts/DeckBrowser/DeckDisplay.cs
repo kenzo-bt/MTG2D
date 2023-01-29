@@ -30,14 +30,7 @@ public class DeckDisplay : MonoBehaviour
     {
       this.deckName = deckName;
       this.coverCard = coverCard;
-      if (deckName.Contains("!Starter!"))
-      {
-        displayText.GetComponent<TMP_Text>().text = deckName.Split("!Starter!")[0];
-      }
-      else
-      {
-        displayText.GetComponent<TMP_Text>().text = deckName;
-      }
+      displayText.GetComponent<TMP_Text>().text = deckName;
       // Texturize card
       displayCard.GetComponent<WebCard>().texturizeCard(coverCard);
     }
@@ -96,13 +89,13 @@ public class DeckDisplay : MonoBehaviour
     public void copyStarterDeck()
     {
       Decklist copy = new Decklist();
-      List<Decklist> allDecks = PlayerManager.Instance.allDecks;
-      foreach (Decklist deck in allDecks)
+      List<Decklist> starterDecks = PlayerManager.Instance.starterDecks;
+      foreach (Decklist deck in starterDecks)
       {
         if (deck.name == deckName)
         {
-          copy.name = deckName.Split("!Starter!")[0];
-          copy.cards = new List<CardInfo>(deck.cards);
+          copy.name = deckName;
+          copy.cards = new List<string>(deck.cards);
           copy.cardFrequencies = new List<int>(deck.cardFrequencies);
         }
       }

@@ -23,10 +23,7 @@ public class CollectionCard : MonoBehaviour
     public void addToDeck()
     {
       Decklist deck = PlayerManager.Instance.selectedDeck;
-      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-
-      deck.addCard(card);
-
+      deck.addCard(cardId);
       deckPanel.updatePanel();
     }
 

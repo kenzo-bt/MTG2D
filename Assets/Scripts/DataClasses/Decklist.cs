@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Decklist {
   public string name;
-  public List<CardInfo> cards;
+  public List<string> cards;
   public List<int> cardFrequencies;
   public string coverId;
 
@@ -13,7 +14,7 @@ public class Decklist {
     string decklistString = name + "\n%\n";
     for (int i = 0; i < cards.Count; i++)
     {
-      decklistString += cards[i].id + " " + cardFrequencies[i] + "\n";
+      decklistString += cards[i] + " " + cardFrequencies[i] + "\n";
     }
     if (coverId != "")
     {
@@ -28,7 +29,7 @@ public class Decklist {
     Debug.Log("Deck name: " + name);
     for (int i = 0; i < cards.Count; i++)
     {
-      Debug.Log(cards[i].name + " x" + cardFrequencies[i]);
+      Debug.Log(cards[i] + " x" + cardFrequencies[i]);
     }
     Debug.Log("Cover card: " + coverId);
   }
@@ -45,7 +46,7 @@ public class Decklist {
   }
 
   // Add card to deck
-  public void addCard(CardInfo card)
+  public void addCard(string card)
   {
     if (cards.Contains(card))
     {
@@ -60,7 +61,7 @@ public class Decklist {
   }
 
   // Remove card (Remove 1 instance of the passed card)
-  public void removeCard(CardInfo card)
+  public void removeCard(string card)
   {
     if (cards.Contains(card))
     {
@@ -77,7 +78,7 @@ public class Decklist {
   // Default constructor
   public Decklist() {
     this.name = "";
-    this.cards = new List<CardInfo>();
+    this.cards = new List<string>();
     this.cardFrequencies = new List<int>();
     this.coverId = "";
   }
@@ -85,7 +86,7 @@ public class Decklist {
   // Copy constructor
   public Decklist (Decklist deckToCopy) {
     this.name = deckToCopy.name;
-    this.cards = new List<CardInfo>(deckToCopy.cards);
+    this.cards = new List<string>(deckToCopy.cards);
     this.cardFrequencies = new List<int>(deckToCopy.cardFrequencies);
     this.coverId = deckToCopy.coverId;
   }
@@ -99,7 +100,7 @@ public class Decklist {
     }
     else if (cards.Count > 0)
     {
-      return cards[0];
+      return PlayerManager.Instance.getCardFromLookup(cards[0]);
     }
     else
     {

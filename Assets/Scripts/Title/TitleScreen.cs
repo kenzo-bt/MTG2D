@@ -228,6 +228,9 @@ public class TitleScreen : MonoBehaviour
 
           // Start checking for incoming challenges
           friendsPanelObject.GetComponent<Matchmaker>().startChallengeChecking();
+
+          // Load player decks
+          PlayerManager.Instance.loadPlayerDecks();
         }
       }
     }

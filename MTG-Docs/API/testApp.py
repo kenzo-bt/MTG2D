@@ -24,9 +24,18 @@ class User(db.Model):
     password = db.Column(db.Text)
     friends = db.Column(db.Text)
     challenges = db.Column(db.Text)
+    decks = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
+
+class Global(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), unique=True, nullable=False)
+    content = db.Column(db.Text)
+
+    def __repr__(self):
+        return f"ID:{self.id} - {self.name}"
 
 @app.route('/')
 def index():
@@ -146,6 +155,22 @@ def write_user_friends(id):
     db.session.commit()
     return {'friends': json.loads(user.friends)}
 
+### User decks view ###
+
+@app.route('/users/<id>/decks')
+def get_user_decks(id):
+    user =  User.query.get_or_404(id)
+    if user.decks is None:
+        return {'decks': []}
+    return {'decks': json.loads(user.decks)}
+
+@app.route('/users/<id>/decks', methods=['POST'])
+def write_user_decks(id):
+    user = User.query.get(id)
+    user.decks = json.dumps(request.json['decks'])
+    db.session.commit()
+    return {'decks': json.loads(user.decks)}
+
 ### User challenges view ###
 
 @app.route('/users/<id>/challenges')
@@ -221,3 +246,27 @@ def delete_user_challenge(id, chId):
     user.challenges = json.dumps(allChallenges)
     db.session.commit()
     return {"Success": "Challenge deleted successfully"}
+
+### Server globals ###
+
+@app.route('/globals')
+def get_globals():
+    globals = Global.query.all()
+
+    output = []
+    for entry in globals:
+        global_data = {'id': entry.id, 'name': entry.name, 'content': json.loads(entry.content)}
+        output.append(global_data)
+
+    return {"globals" : output}
+
+@app.route('/globals/starters')
+def get_starters():
+    starters = Global.query.get(1)
+    return json.loads(starters.content)
+
+@app.route('/globals/starters', methods=['POST'])
+def write_starters():
+    starters = Global.query.get(1)
+    starters.content = json.dumps(request.json)
+    return json.loads(starters.content)

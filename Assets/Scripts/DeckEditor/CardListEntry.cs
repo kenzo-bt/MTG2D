@@ -96,8 +96,7 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
       // Update master data
       Decklist deck = PlayerManager.Instance.selectedDeck;
-      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-      deck.addCard(card);
+      deck.addCard(cardId);
       // Refresh decklist panel
       transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
     }
@@ -107,14 +106,13 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
       // Update master data
       Decklist deck = PlayerManager.Instance.selectedDeck;
-      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-      int indexOfCard = deck.cards.IndexOf(card);
+      int indexOfCard = deck.cards.IndexOf(cardId);
       if (deck.cardFrequencies[indexOfCard] == 1)
       {
         DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
         panel.hideHighlight();
       }
-      deck.removeCard(card);
+      deck.removeCard(cardId);
       // Refresh decklist panel
       transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
     }
