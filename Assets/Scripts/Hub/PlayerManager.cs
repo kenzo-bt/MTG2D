@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
@@ -54,7 +55,7 @@ public class PlayerManager : MonoBehaviour
       loadCollectedCards();
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
-      loadPlayerDecks();
+      readStarterDecks();
 
       myID = -1;
       friendIDs = new List<int>();
@@ -117,7 +118,7 @@ public class PlayerManager : MonoBehaviour
 
           foreach (KeyValuePair<string, int> item in collectedCards)
           {
-            Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
+            // Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
           }
         }
       }
@@ -154,93 +155,115 @@ public class PlayerManager : MonoBehaviour
           AllDecklists starters = new AllDecklists();
           starters = JsonUtility.FromJson<AllDecklists>(serverJson);
           starterDecks = new List<Decklist>(starters.decks);
-          foreach (Decklist deck in starterDecks)
-          {
-            Debug.Log(deck.name);
-          }
         }
       }
     }
 
-    // Read in player decks from disk
-    private void loadPlayerDecks()
+    public void loadPlayerDecks()
     {
-      allDecks = new List<Decklist>();
+      StartCoroutine(getPlayerDecksFromServer());
+    }
 
-      // If file doesnt exist, create a file in persistent data storage and load starter decks into it
-      if (!System.IO.File.Exists(decksFilePath))
+    private IEnumerator getPlayerDecksFromServer()
+    {
+      string url = apiUrl + "users/" + myID + "/decks";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
-        using (File.Create(decksFilePath)) {}
-      }
-
-      // Read starter decks
-      readStarterDecks();
-
-      // Read user decks
-      string fileContents = "";
-      fileContents = File.ReadAllText(decksFilePath);
-      if (fileContents != "")
-      {
-        foreach (string deck in fileContents.Split("---"))
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
-          Decklist individualDeck = new Decklist();
-          List<string> cards = new List<string>();
-          List<int> cardFrequencies = new List<int>();
-
-          // Split name / cover / cards
-          string deckName = deck.Split("%")[0].Trim();
-          string[] cardStrings = deck.Split("%")[1].Split('\n');
-          string coverId = "";
-          if (deck.Split("%").Length == 3)
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          AllDecklists playerDecks = new AllDecklists();
+          playerDecks = JsonUtility.FromJson<AllDecklists>(serverJson);
+          allDecks = new List<Decklist>(playerDecks.decks);
+          Debug.Log("Player decks in server: " + allDecks.Count);
+          // If there are no decks in server, check if local decklist exists
+          if (allDecks.Count == 0)
           {
-            coverId = deck.Split("%")[2].Trim();
-          }
-
-          foreach (string card in cardStrings)
-          {
-            if (!string.IsNullOrWhiteSpace(card))
+            if (System.IO.File.Exists(decksFilePath))
             {
-              cards.Add(card.Split(" ")[0]);
-              cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
+              // Load decks from local decklist
+              string fileContents = "";
+              fileContents = File.ReadAllText(decksFilePath);
+              if (fileContents != "")
+              {
+                foreach (string deck in fileContents.Split("---"))
+                {
+                  Decklist individualDeck = new Decklist();
+                  List<string> cards = new List<string>();
+                  List<int> cardFrequencies = new List<int>();
+
+                  // Split name / cover / cards
+                  string deckName = deck.Split("%")[0].Trim();
+                  string[] cardStrings = deck.Split("%")[1].Split('\n');
+                  string coverId = "";
+                  if (deck.Split("%").Length == 3)
+                  {
+                    coverId = deck.Split("%")[2].Trim();
+                  }
+
+                  foreach (string card in cardStrings)
+                  {
+                    if (!string.IsNullOrWhiteSpace(card))
+                    {
+                      cards.Add(card.Split(" ")[0]);
+                      cardFrequencies.Add(Int32.Parse(card.Split(" ")[1]));
+                    }
+                  }
+
+                  individualDeck.name = deckName;
+                  individualDeck.cards = cards;
+                  individualDeck.cardFrequencies = cardFrequencies;
+                  individualDeck.coverId = coverId;
+
+                  allDecks.Add(individualDeck);
+                }
+
+                // Update player decks in server
+                savePlayerDecks();
+
+                // Empty the local file
+                File.WriteAllText(decksFilePath, "");
+              }
             }
           }
-
-          individualDeck.name = deckName;
-          individualDeck.cards = cards;
-          individualDeck.cardFrequencies = cardFrequencies;
-          individualDeck.coverId = coverId;
-
-          allDecks.Add(individualDeck);
         }
-      }
-
-      // TODO Remove this when deck selector is done
-      if (allDecks.Count > 0)
-      {
-        //selectedDeck = allDecks[allDecks.Count - 1];
       }
     }
 
-    // Save decks to persistent storage
     public void savePlayerDecks()
     {
-      int deckCount = allDecks.Count;
-      if (deckCount > 0)
+      if (allDecks.Count > 0)
       {
-        string allDecksString = "";
-        for (int i = 0; i < deckCount; i++)
-        {
-          if (!allDecks[i].name.Contains("!Starter!"))
-          {
-            allDecksString += allDecks[i].getDecklistString();
-            if (i < (deckCount - 1))
-            {
-              allDecksString += "\n---\n";
-            }
-          }
-        }
-        File.WriteAllText(decksFilePath, allDecksString);
+        StartCoroutine(savePlayerDecksToServer());
       }
+    }
+
+    public IEnumerator savePlayerDecksToServer()
+    {
+      string url = apiUrl + "users/" + myID + "/decks";
+      AllDecklists allPlayerDecks = new AllDecklists();
+      allPlayerDecks.decks = new List<Decklist>(allDecks);
+      string decksJson = JsonUtility.ToJson(allPlayerDecks);
+      byte[] bytes = Encoding.UTF8.GetBytes(decksJson);
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Player decks successfully updated in server");
+      }
+      request.Dispose();
     }
 
     public CardInfo getCardFromLookup(string id)

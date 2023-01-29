@@ -133,7 +133,7 @@ public class FriendsPanel : MonoBehaviour
       int ID = allFriends.friends[i];
       PlayerManager.Instance.friendIDs.Add(ID);
       PlayerManager.Instance.friendNames.Add(allUsers.users[ID - 1].username);
-      Debug.Log("Adding friend -> ID " + ID + " : " + allUsers.users[ID - 1].username);
+      // Debug.Log("Adding friend -> ID " + ID + " : " + allUsers.users[ID - 1].username);
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
       friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
       friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);

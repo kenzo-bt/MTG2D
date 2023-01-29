@@ -47,7 +47,6 @@ public class Matchmaker : MonoBehaviour
         {
           string serverJson = request.downloadHandler.text;
           AllChallenges myChallenges = JsonUtility.FromJson<AllChallenges>(serverJson);
-          Debug.Log("Successfully fetched challenges from server");
           // If the challenge comes from one of my friends, turn the friend entry into play mode
           GameObject friendList = GetComponent<FriendsPanel>().friendList;
           foreach (Transform child in friendList.transform)
