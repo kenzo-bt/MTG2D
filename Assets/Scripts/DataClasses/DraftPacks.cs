@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class DraftPack
+public class DraftPacks
 {
   public List<Pack> draftPacks;
 }

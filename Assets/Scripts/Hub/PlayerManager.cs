@@ -281,4 +281,38 @@ public class PlayerManager : MonoBehaviour
       Debug.Log("Card not found in collection! (" + id + ")");
       return targetCard;
     }
+
+    public void loadPlayerDraftPacks()
+    {
+      StartCoroutine(getPlayerDraftPacksFromServer());
+    }
+
+    private IEnumerator getPlayerDraftPacksFromServer()
+    {
+      string url = apiUrl + "users/" + myID + "/draftPacks";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          DraftPacks packs = new DraftPacks();
+          packs = JsonUtility.FromJson<DraftPacks>(serverJson);
+          Debug.Log("Num of packs in draft: " + packs.draftPacks.Count);
+          foreach (Pack pack in packs.draftPacks)
+          {
+            Debug.Log("---");
+            foreach (string card in pack.cards)
+            {
+              Debug.Log(card);
+            }
+            Debug.Log("---");
+          }
+        }
+      }
+    }
 }

@@ -264,6 +264,25 @@ def write_user_draftPacks(id):
     db.session.commit()
     return {'draftPacks': json.loads(user.draftPacks)}
 
+@app.route('/users/<id>/draftPacks/<packNum>')
+def get_user_draftPacks_individual(id, packNum):
+    user =  User.query.get_or_404(id)
+    packs = json.loads(user.draftPacks if user.draftPacks != None else "[]")
+    if len(packs) >= (int(packNum) + 1):
+        return packs[int(packNum)]
+    return {'cards': []}
+
+@app.route('/users/<id>/draftPacks/<packNum>', methods=['POST'])
+def write_user_draftPacks_individual(id, packNum):
+    user = User.query.get(id)
+    packs = json.loads(user.draftPacks if user.draftPacks != None else "[]")
+    if len(packs) >= (int(packNum) + 1):
+        packs[int(packNum)] = {'cards': request.json['cards']}
+        user.draftPacks = json.dumps(packs)
+        db.session.commit()
+        return packs[int(packNum)]
+    return {'cards': []}
+
 ### Server globals ###
 
 @app.route('/globals')
