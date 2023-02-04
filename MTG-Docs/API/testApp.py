@@ -25,6 +25,7 @@ class User(db.Model):
     friends = db.Column(db.Text)
     challenges = db.Column(db.Text)
     decks = db.Column(db.Text)
+    draftPacks = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
@@ -246,6 +247,22 @@ def delete_user_challenge(id, chId):
     user.challenges = json.dumps(allChallenges)
     db.session.commit()
     return {"Success": "Challenge deleted successfully"}
+
+### Player draft packs view ###
+
+@app.route('/users/<id>/draftPacks')
+def get_user_draftPacks(id):
+    user =  User.query.get_or_404(id)
+    if user.draftPacks is None:
+        return {'draftPacks': []}
+    return {'draftPacks': json.loads(user.draftPacks)}
+
+@app.route('/users/<id>/draftPacks', methods=['POST'])
+def write_user_draftPacks(id):
+    user = User.query.get(id)
+    user.draftPacks = json.dumps(request.json['draftPacks'])
+    db.session.commit()
+    return {'draftPacks': json.loads(user.draftPacks)}
 
 ### Server globals ###
 
