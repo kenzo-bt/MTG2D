@@ -30,6 +30,7 @@ class User(db.Model):
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
 
+
 class Global(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True, nullable=False)
@@ -37,6 +38,17 @@ class Global(db.Model):
 
     def __repr__(self):
         return f"ID:{self.id} - {self.name}"
+
+class Draft(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    hostId = db.Column(db.Integer, nullable=False)
+    capacity = db.Column(db.Integer)
+    set = db.Column(db.String(80))
+    players = db.Column(db.Text)
+
+    def __repr__(self):
+        return f"ID:{self.id} - HostId:{self.hostId}"
+
 
 @app.route('/')
 def index():
@@ -306,3 +318,75 @@ def write_starters():
     starters = Global.query.get(1)
     starters.content = json.dumps(request.json)
     return json.loads(starters.content)
+
+## All draft view ##
+
+@app.route('/drafts')
+def get_drafts():
+    drafts = Draft.query.all()
+
+    output = []
+    for draft in drafts:
+        draft_data = {'id': draft.id, 'hostId': draft.hostId, 'capacity': draft.capacity, 'set': draft.set, 'players': json.loads(draft.players)}
+        output.append(draft_data)
+
+    return {"drafts" : output}
+
+@app.route('/drafts', methods=['POST'])
+def add_draft():
+    # Check if it already exists for this host, if so -> delete previous
+    prevDraft = Draft.query.filter_by(hostId=request.json['hostId']).first()
+    if prevDraft is not None:
+        db.session.delete(prevDraft)
+        db.session.commit()
+    # Add new draft
+    draft = Draft(hostId=request.json['hostId'], capacity=request.json['capacity'], set=request.json['set'], players=json.dumps(request.json['players']))
+    db.session.add(draft)
+    db.session.commit()
+    return {'New draft id': draft.id, 'Host': draft.hostId, 'Capacity': draft.capacity, 'Set': draft.set, 'Players': json.loads(draft.players)}
+
+## Individual draft view ##
+
+@app.route('/drafts/<id>', methods=['DELETE'])
+def delete_draft(id):
+    draft = Draft.query.get(id)
+    if draft is None:
+        return {"Error": "Draft not found"}
+    db.session.delete(draft)
+    db.session.commit()
+    return {"Successful draft deletion": id}
+
+## Individual draft player list ##
+
+@app.route('/drafts/<hostID>/players', methods=['GET'])
+def get_draft_players(hostID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
+    if draft is None:
+        return {"Error": "Draft not found"}
+    return {'players': json.loads(draft.players)}
+
+@app.route('/drafts/<hostID>/players/<playerID>', methods=['POST'])
+def add_draft_player(hostID, playerID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
+    if draft is None:
+        return {"Error": "Draft not found"}
+    players = json.loads(draft.players)
+    if len(players) >= int(draft.capacity):
+        return {"Error": "Draft is already full"}
+    if int(playerID) not in players:
+        players.append(int(playerID))
+        draft.players = json.dumps(players)
+        db.session.commit()
+    return {'players': json.loads(draft.players)}
+
+@app.route('/drafts/<hostID>/players/<playerID>', methods=['DELETE'])
+def remove_draft_player(hostID, playerID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
+    if draft is None:
+        return {"Error": "Draft not found"}
+    players = json.loads(draft.players)
+    if int(playerID) in players:
+        players.remove(int(playerID))
+        draft.players = json.dumps(players)
+        db.session.commit()
+    return {'players': json.loads(draft.players)}
