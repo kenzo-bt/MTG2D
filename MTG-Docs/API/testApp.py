@@ -347,14 +347,14 @@ def add_draft():
 
 ## Individual draft view ##
 
-@app.route('/drafts/<id>', methods=['DELETE'])
-def delete_draft(id):
-    draft = Draft.query.get(id)
+@app.route('/drafts/<hostID>', methods=['DELETE'])
+def delete_draft(hostID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
     if draft is None:
         return {"Error": "Draft not found"}
     db.session.delete(draft)
     db.session.commit()
-    return {"Successful draft deletion": id}
+    return {"Successful draft deletion": hostID}
 
 ## Individual draft player list ##
 
