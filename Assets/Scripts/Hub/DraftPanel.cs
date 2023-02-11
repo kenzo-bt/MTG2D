@@ -1,17 +1,29 @@
+using System;
 using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using TMPro;
 
 public class DraftPanel : MonoBehaviour
 {
     public GameObject entryList;
     public GameObject entryPrefab;
+    public GameObject createOverlay;
+    public GameObject setDropbox;
+    public GameObject capacityInput;
+    public GameObject errorMessage;
+    private List<string> setCodes;
+    private List<string> setNames;
+    private int capacity;
+    private int dropdownIndex;
     // Start is called before the first frame update
     void Start()
     {
-
+      setCodes = new List<string>();
+      setNames = new List<string>();
+      capacity = -1;
     }
 
     // Update is called once per frame
@@ -35,9 +47,52 @@ public class DraftPanel : MonoBehaviour
       cg.blocksRaycasts = false;
     }
 
+    public void openCreateOverlay()
+    {
+      // Populate set dropbox
+      setNames = new List<string>();
+      setCodes = new List<string>();
+      foreach (CardSet set in PlayerManager.Instance.cardCollection)
+      {
+        setNames.Add(set.setName);
+        setCodes.Add(set.setCode);
+      }
+      setDropbox.GetComponent<TMP_Dropdown>().ClearOptions();
+      setDropbox.GetComponent<TMP_Dropdown>().AddOptions(setNames);
+      setDropbox.GetComponent<TMP_Dropdown>().value = 0;
+      // Show overlay
+      createOverlay.GetComponent<CanvasGroup>().alpha = 1;
+      createOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void closeCreateOverlay()
+    {
+      createOverlay.GetComponent<CanvasGroup>().alpha = 0;
+      createOverlay.GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
+
     public void createDraft()
     {
-      StartCoroutine(createDraftInServer());
+      // Check if set/capacity has been set correctly
+      string capacityString = capacityInput.GetComponent<TMP_InputField>().text;
+      try
+      {
+        capacity = Int32.Parse(capacityString);
+        dropdownIndex = setDropbox.GetComponent<TMP_Dropdown>().value;
+        if (capacity >= 0)
+        {
+          errorMessage.GetComponent<TMP_Text>().text = "";
+          StartCoroutine(createDraftInServer());
+        }
+        else
+        {
+          errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer as the room capacity.";
+        }
+      }
+      catch (FormatException)
+      {
+        errorMessage.GetComponent<TMP_Text>().text = "Please enter a valid non-negative integer as the room capacity.";
+      }
     }
 
     public IEnumerator createDraftInServer()
@@ -46,9 +101,9 @@ public class DraftPanel : MonoBehaviour
       Draft myDraft = new Draft();
       myDraft.hostId = PlayerManager.Instance.myID;
       myDraft.hostName = PlayerManager.Instance.myName;
-      myDraft.capacity = 3;
-      myDraft.set = "DMR";
-      myDraft.setName = "Dominaria Remastered";
+      myDraft.capacity = capacity;
+      myDraft.set = setCodes[dropdownIndex];
+      myDraft.setName = setNames[dropdownIndex];
       myDraft.players = new List<int>();
       myDraft.players.Add(myDraft.hostId);
       // Send to draft to server
@@ -69,6 +124,8 @@ public class DraftPanel : MonoBehaviour
       {
         // Send to draft room
         Debug.Log("Draft created successfully in server. Proceeding to draft room...");
+        closeCreateOverlay();
+        refreshEntries();
       }
       // Dispose of the request to prevent memory leaks
       request.Dispose();
