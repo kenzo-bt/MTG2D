@@ -42,8 +42,10 @@ class Global(db.Model):
 class Draft(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     hostId = db.Column(db.Integer, nullable=False)
+    hostName = db.Column(db.String(80))
     capacity = db.Column(db.Integer)
     set = db.Column(db.String(80))
+    setName = db.Column(db.String(80))
     players = db.Column(db.Text)
 
     def __repr__(self):
@@ -121,6 +123,11 @@ def delete_user(id):
     db.session.delete(user)
     db.session.commit()
     return {"Successful user deletion": id}
+
+@app.route('/users/<id>/name')
+def get_username(id):
+    user = User.query.get_or_404(id)
+    return {"name": user.username}
 
 ### Board state ###
 
@@ -327,7 +334,7 @@ def get_drafts():
 
     output = []
     for draft in drafts:
-        draft_data = {'id': draft.id, 'hostId': draft.hostId, 'capacity': draft.capacity, 'set': draft.set, 'players': json.loads(draft.players)}
+        draft_data = {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players)}
         output.append(draft_data)
 
     return {"drafts" : output}
@@ -340,10 +347,10 @@ def add_draft():
         db.session.delete(prevDraft)
         db.session.commit()
     # Add new draft
-    draft = Draft(hostId=request.json['hostId'], capacity=request.json['capacity'], set=request.json['set'], players=json.dumps(request.json['players']))
+    draft = Draft(hostId=request.json['hostId'], hostName=request.json['hostName'], capacity=request.json['capacity'], set=request.json['set'], setName=request.json['setName'], players=json.dumps(request.json['players']))
     db.session.add(draft)
     db.session.commit()
-    return {'New draft id': draft.id, 'Host': draft.hostId, 'Capacity': draft.capacity, 'Set': draft.set, 'Players': json.loads(draft.players)}
+    return {'New draft id': draft.id, 'Host': draft.hostId, 'HostName': draft.hostName, 'Capacity': draft.capacity, 'Set': draft.set, 'SetName': draft.setName, 'Players': json.loads(draft.players)}
 
 ## Individual draft view ##
 

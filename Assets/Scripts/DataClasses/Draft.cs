@@ -7,7 +7,9 @@ public class Draft
 {
   public int id;
   public int hostId;
+  public string hostName;
   public int capacity;
   public string set;
+  public string setName;
   public List<int> players;
 }

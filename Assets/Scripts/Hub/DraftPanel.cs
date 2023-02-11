@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 public class DraftPanel : MonoBehaviour
 {
     public GameObject entryList;
+    public GameObject entryPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,8 +45,10 @@ public class DraftPanel : MonoBehaviour
       // Initialize the draft
       Draft myDraft = new Draft();
       myDraft.hostId = PlayerManager.Instance.myID;
+      myDraft.hostName = PlayerManager.Instance.myName;
       myDraft.capacity = 3;
       myDraft.set = "DMR";
+      myDraft.setName = "Dominaria Remastered";
       myDraft.players = new List<int>();
       myDraft.players.Add(myDraft.hostId);
       // Send to draft to server
@@ -91,7 +94,14 @@ public class DraftPanel : MonoBehaviour
         {
           string serverJson = request.downloadHandler.text;
           AllDrafts allDrafts = JsonUtility.FromJson<AllDrafts>(serverJson);
-          Debug.Log("There are currently " + allDrafts.drafts.Count + " active drafts in the server...");
+          foreach (Draft draft in allDrafts.drafts)
+          {
+            string hostName = draft.hostName;
+            string setName = draft.setName;
+            string capacity = "" + draft.players.Count + " / " + draft.capacity;
+            GameObject entry = Instantiate(entryPrefab, entryList.transform);
+            entry.GetComponent<DraftListEntry>().setInfo(hostName, setName, capacity);
+          }
         }
       }
     }
