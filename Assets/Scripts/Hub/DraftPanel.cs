@@ -14,6 +14,7 @@ public class DraftPanel : MonoBehaviour
     public GameObject setDropbox;
     public GameObject capacityInput;
     public GameObject errorMessage;
+    public GameObject joinButton;
     private List<string> setCodes;
     private List<string> setNames;
     private int capacity;
@@ -169,6 +170,27 @@ public class DraftPanel : MonoBehaviour
       for (int i = 0; i < numEntries; i++)
       {
         DestroyImmediate(entryList.transform.GetChild(0).gameObject);
+      }
+    }
+
+    public void updateSelection()
+    {
+      bool draftSelected = false;
+      foreach (Transform entry in entryList.transform)
+      {
+        if (entry.gameObject.GetComponent<DraftListEntry>().selected)
+        {
+          draftSelected = true;
+          break;
+        }
+      }
+      if (draftSelected)
+      {
+        joinButton.SetActive(true);
+      }
+      else
+      {
+        joinButton.SetActive(false);
       }
     }
 }
