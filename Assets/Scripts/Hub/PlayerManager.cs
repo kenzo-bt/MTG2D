@@ -29,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     public List<string> friendNames;
     public bool loggedIn;
     public string role;
+    public int draftHostID;
 
     private void Awake()
     {

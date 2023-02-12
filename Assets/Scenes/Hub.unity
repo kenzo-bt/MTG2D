@@ -7264,6 +7264,7 @@ MonoBehaviour:
   friendNames: []
   loggedIn: 0
   role: 
+  draftHostID: 0
 --- !u!1 &1551000116
 GameObject:
   m_ObjectHideFlags: 0
@@ -10574,7 +10575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: openCreateOverlay
+      value: joinDraftRoom
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

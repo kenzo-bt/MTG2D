@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DraftPanel : MonoBehaviour
@@ -125,8 +126,8 @@ public class DraftPanel : MonoBehaviour
       {
         // Send to draft room
         Debug.Log("Draft created successfully in server. Proceeding to draft room...");
-        closeCreateOverlay();
-        refreshEntries();
+        PlayerManager.Instance.draftHostID = PlayerManager.Instance.myID;
+        SceneManager.LoadScene("DraftWaitRoom");
       }
       // Dispose of the request to prevent memory leaks
       request.Dispose();
@@ -154,11 +155,12 @@ public class DraftPanel : MonoBehaviour
           AllDrafts allDrafts = JsonUtility.FromJson<AllDrafts>(serverJson);
           foreach (Draft draft in allDrafts.drafts)
           {
+            int hostId = draft.hostId;
             string hostName = draft.hostName;
             string setName = draft.setName;
             string capacity = "" + draft.players.Count + " / " + draft.capacity;
             GameObject entry = Instantiate(entryPrefab, entryList.transform);
-            entry.GetComponent<DraftListEntry>().setInfo(hostName, setName, capacity);
+            entry.GetComponent<DraftListEntry>().setInfo(hostId, hostName, setName, capacity);
           }
         }
       }
@@ -181,6 +183,7 @@ public class DraftPanel : MonoBehaviour
         if (entry.gameObject.GetComponent<DraftListEntry>().selected)
         {
           draftSelected = true;
+          PlayerManager.Instance.draftHostID = entry.gameObject.GetComponent<DraftListEntry>().hostID;
           break;
         }
       }
@@ -192,5 +195,64 @@ public class DraftPanel : MonoBehaviour
       {
         joinButton.SetActive(false);
       }
+    }
+
+    public void joinDraftRoom()
+    {
+      StartCoroutine(sendDraftJoinRequest());
+    }
+
+    public IEnumerator sendDraftJoinRequest()
+    {
+      // Check if room has capacity
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          Draft draft = JsonUtility.FromJson<Draft>(serverJson);
+          if (draft.players.Count >= draft.capacity)
+          {
+            Debug.Log("Couldn't join " + draft.hostName + "\'s draft. Room is full.");
+          }
+          else
+          {
+            if (!draft.players.Contains(PlayerManager.Instance.myID))
+            {
+              StartCoroutine(joinDraftInServer());
+            }
+            else
+            {
+              Debug.Log("Couldn't join " + draft.hostName + "\'s draft. You are already in the room (?)");
+            }
+          }
+        }
+      }
+    }
+
+    public IEnumerator joinDraftInServer()
+    {
+      // Add yourself to draft room
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/players/" + PlayerManager.Instance.myID;
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      yield return request.SendWebRequest();
+      // Debug the results
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully entered draft room in server...");
+        // SceneManager.LoadScene("DraftWaitRoom");
+      }
+      request.Dispose();
     }
 }

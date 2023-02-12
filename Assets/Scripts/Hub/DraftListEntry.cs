@@ -10,10 +10,12 @@ public class DraftListEntry : MonoBehaviour
   public GameObject setObject;
   public GameObject capacityObject;
   public bool selected;
+  public int hostID;
   // Start is called before the first frame update
-  void Start()
+  void Awake()
   {
     selected = false;
+    hostID = -1;
   }
 
   // Update is called once per frame
@@ -22,8 +24,9 @@ public class DraftListEntry : MonoBehaviour
 
   }
 
-  public void setInfo(string hostName, string setName, string capacity)
+  public void setInfo(int hostId, string hostName, string setName, string capacity)
   {
+    hostID = hostId;
     hostObject.GetComponent<TMP_Text>().text = hostName;
     setObject.GetComponent<TMP_Text>().text = setName;
     capacityObject.GetComponent<TMP_Text>().text = capacity;

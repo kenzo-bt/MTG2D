@@ -354,6 +354,13 @@ def add_draft():
 
 ## Individual draft view ##
 
+@app.route('/drafts/<hostID>', methods=['GET'])
+def get_draft(hostID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
+    if draft is None:
+        return {"Error": "Draft not found"}
+    return {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players)}
+
 @app.route('/drafts/<hostID>', methods=['DELETE'])
 def delete_draft(hostID):
     draft = Draft.query.filter_by(hostId=hostID).first()
