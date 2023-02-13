@@ -12,6 +12,7 @@ public class DraftRoomManager : MonoBehaviour
     public GameObject statusMessageObject;
     public GameObject playerGridObject;
     public GameObject playerEntryPrefab;
+    public GameObject startDraftButton;
     public List<int> playerIds;
     public string hostName;
 
@@ -81,7 +82,6 @@ public class DraftRoomManager : MonoBehaviour
 
     public IEnumerator getRoomInfoFromServer()
     {
-      Debug.Log("Fetching draft room info from server");
       string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -93,8 +93,6 @@ public class DraftRoomManager : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          Debug.Log("serverJson -> " + serverJson);
-          Debug.Log("serverJson length -> " + serverJson.Trim().Length);
           if (serverJson.Trim() == "{\"Error\":\"Draft not found\"}")
           {
             Debug.Log("Draft room has been deleted! Returning to Hub...");
@@ -107,10 +105,28 @@ public class DraftRoomManager : MonoBehaviour
             if (draft.players.Count < draft.capacity)
             {
               statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for players... (" + draft.players.Count + "/" + draft.capacity + ")";
+              if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+              {
+                if (startDraftButton.activeSelf)
+                {
+                  startDraftButton.SetActive(false);
+                }
+              }
             }
             else
             {
-              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
+              if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+              {
+                if (!startDraftButton.activeSelf)
+                {
+                  startDraftButton.SetActive(true);
+                }
+                statusMessageObject.GetComponent<TMP_Text>().text = "";
+              }
+              else
+              {
+                statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
+              }
             }
             // Update title
             if (hostName != draft.hostName)
@@ -157,6 +173,26 @@ public class DraftRoomManager : MonoBehaviour
       for (int i = 0; i < numPlayers; i++)
       {
         DestroyImmediate(playerGridObject.transform.GetChild(0).gameObject);
+      }
+    }
+
+    public void startDraft()
+    {
+      StartCoroutine(initializeDraftInServer());
+    }
+
+    public IEnumerator initializeDraftInServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/start";
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else {
+        Debug.Log("Successfully started draft!");
       }
     }
 }

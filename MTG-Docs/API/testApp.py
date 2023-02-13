@@ -47,6 +47,7 @@ class Draft(db.Model):
     set = db.Column(db.String(80))
     setName = db.Column(db.String(80))
     players = db.Column(db.Text)
+    started = db.Column(db.Integer)
 
     def __repr__(self):
         return f"ID:{self.id} - HostId:{self.hostId}"
@@ -334,7 +335,7 @@ def get_drafts():
 
     output = []
     for draft in drafts:
-        draft_data = {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players)}
+        draft_data = {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players), 'started': draft.started}
         output.append(draft_data)
 
     return {"drafts" : output}
@@ -347,10 +348,10 @@ def add_draft():
         db.session.delete(prevDraft)
         db.session.commit()
     # Add new draft
-    draft = Draft(hostId=request.json['hostId'], hostName=request.json['hostName'], capacity=request.json['capacity'], set=request.json['set'], setName=request.json['setName'], players=json.dumps(request.json['players']))
+    draft = Draft(hostId=request.json['hostId'], hostName=request.json['hostName'], capacity=request.json['capacity'], set=request.json['set'], setName=request.json['setName'], players=json.dumps(request.json['players']), started=request.json['started'])
     db.session.add(draft)
     db.session.commit()
-    return {'New draft id': draft.id, 'Host': draft.hostId, 'HostName': draft.hostName, 'Capacity': draft.capacity, 'Set': draft.set, 'SetName': draft.setName, 'Players': json.loads(draft.players)}
+    return {'New draft id': draft.id, 'Host': draft.hostId, 'HostName': draft.hostName, 'Capacity': draft.capacity, 'Set': draft.set, 'SetName': draft.setName, 'Players': json.loads(draft.players), 'Started': draft.started}
 
 ## Individual draft view ##
 
@@ -359,7 +360,7 @@ def get_draft(hostID):
     draft = Draft.query.filter_by(hostId=hostID).first()
     if draft is None:
         return {"Error": "Draft not found"}
-    return {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players)}
+    return {'id': draft.id, 'hostId': draft.hostId, 'hostName': draft.hostName, 'capacity': draft.capacity, 'set': draft.set, 'setName': draft.setName, 'players': json.loads(draft.players), 'started': draft.started}
 
 @app.route('/drafts/<hostID>', methods=['DELETE'])
 def delete_draft(hostID):
@@ -369,6 +370,15 @@ def delete_draft(hostID):
     db.session.delete(draft)
     db.session.commit()
     return {"Successful draft deletion": hostID}
+
+@app.route('/drafts/<hostID>/start', methods=['POST'])
+def start_draft(hostID):
+    draft = Draft.query.filter_by(hostId=hostID).first()
+    if draft is None:
+        return {"Error": "Draft not found"}
+    draft.started = 1
+    db.session.commit()
+    return {"Successfully started draft": hostID}
 
 ## Individual draft player list ##
 

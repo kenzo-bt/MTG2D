@@ -12,4 +12,5 @@ public class Draft
   public string set;
   public string setName;
   public List<int> players;
+  public int started;
 }

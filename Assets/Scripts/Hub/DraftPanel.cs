@@ -108,6 +108,7 @@ public class DraftPanel : MonoBehaviour
       myDraft.setName = setNames[dropdownIndex];
       myDraft.players = new List<int>();
       myDraft.players.Add(myDraft.hostId);
+      myDraft.started = 0;
       // Send to draft to server
       string draftJson = JsonUtility.ToJson(myDraft);
       byte[] bytes = Encoding.UTF8.GetBytes(draftJson);
