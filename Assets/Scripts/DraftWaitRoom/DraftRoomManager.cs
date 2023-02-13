@@ -183,6 +183,7 @@ public class DraftRoomManager : MonoBehaviour
 
     public IEnumerator initializeDraftInServer()
     {
+      // Set draft start flag in server
       string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/start";
       UnityWebRequest request = new UnityWebRequest(url);
       request.method = UnityWebRequest.kHttpVerbPOST;
@@ -191,8 +192,9 @@ public class DraftRoomManager : MonoBehaviour
       {
         Debug.Log(request.error);
       }
-      else {
-        Debug.Log("Successfully started draft!");
+      else
+      {
+        // Should we generate all the packs and upload to server? Or each player generates their packs when entering deck creator?
       }
     }
 }
