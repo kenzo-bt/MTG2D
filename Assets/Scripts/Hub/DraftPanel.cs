@@ -251,7 +251,7 @@ public class DraftPanel : MonoBehaviour
       else
       {
         Debug.Log("Successfully entered draft room in server...");
-        // SceneManager.LoadScene("DraftWaitRoom");
+        SceneManager.LoadScene("DraftWaitRoom");
       }
       request.Dispose();
     }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -11,11 +12,15 @@ public class DraftRoomManager : MonoBehaviour
     public GameObject statusMessageObject;
     public GameObject playerGridObject;
     public GameObject playerEntryPrefab;
+    public List<int> playerIds;
+    public string hostName;
 
     // Start is called before the first frame update
     void Start()
     {
-
+      playerIds = new List<int>();
+      hostName = "";
+      initializeRoom();
     }
 
     // Update is called once per frame
@@ -26,13 +31,47 @@ public class DraftRoomManager : MonoBehaviour
 
     public void initializeRoom()
     {
-      updateRoomData();
-      // Invoke the status checker
+      InvokeRepeating("updateRoomData", 0f, 3.0f);
     }
 
     public void returnToHub()
     {
-      // Remove yourself from draft in server and go back to hub
+      StartCoroutine(leaveDraftRoom());
+    }
+
+    public IEnumerator leaveDraftRoom()
+    {
+      // If you are host, then delete draft room
+      if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+      {
+        string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID;
+        UnityWebRequest request = new UnityWebRequest(url);
+        request.method = UnityWebRequest.kHttpVerbDELETE;
+        yield return request.SendWebRequest();
+        if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else {
+          Debug.Log("Successfully deleted draft room. Returning to Hub...");
+          SceneManager.LoadScene("Hub");
+        }
+      }
+      else // Else -> remove yourself from draft in server and go back to hub
+      {
+        string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/players/" + PlayerManager.Instance.myID;
+        UnityWebRequest request = new UnityWebRequest(url);
+        request.method = UnityWebRequest.kHttpVerbDELETE;
+        yield return request.SendWebRequest();
+        if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else {
+          Debug.Log("Successfully left draft room. Returning to Hub...");
+          SceneManager.LoadScene("Hub");
+        }
+      }
     }
 
     public void updateRoomData()
@@ -42,6 +81,7 @@ public class DraftRoomManager : MonoBehaviour
 
     public IEnumerator getRoomInfoFromServer()
     {
+      Debug.Log("Fetching draft room info from server");
       string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -53,14 +93,59 @@ public class DraftRoomManager : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          Draft draft = JsonUtility.FromJson<Draft>(serverJson);
-          // Update title
-          roomTitleObject.GetComponent<TMP_Text>().text = draft.hostName + "\'s Draft Room";
-          // Populate room grid
-          clearPlayerGrid();
-          foreach (int playerID in draft.players)
+          Debug.Log("serverJson -> " + serverJson);
+          Debug.Log("serverJson length -> " + serverJson.Trim().Length);
+          if (serverJson.Trim() == "{\"Error\":\"Draft not found\"}")
           {
-            // TODO: Add player names in draft data scheme. Use List<Player> instead of List<int> for players
+            Debug.Log("Draft room has been deleted! Returning to Hub...");
+            SceneManager.LoadScene("Hub");
+          }
+          else
+          {
+            Draft draft = JsonUtility.FromJson<Draft>(serverJson);
+            // Update message
+            if (draft.players.Count < draft.capacity)
+            {
+              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for players... (" + draft.players.Count + "/" + draft.capacity + ")";
+            }
+            else
+            {
+              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
+            }
+            // Update title
+            if (hostName != draft.hostName)
+            {
+              roomTitleObject.GetComponent<TMP_Text>().text = draft.hostName + "\'s Draft Room";
+              hostName = draft.hostName;
+            }
+            // Populate room grid
+            if (!playerIds.SequenceEqual(draft.players))
+            {
+              clearPlayerGrid();
+              foreach (int playerID in draft.players)
+              {
+                // Instantiate the entry
+                GameObject playerEntry = Instantiate(playerEntryPrefab, playerGridObject.transform);
+                // Name the entry
+                url = PlayerManager.Instance.apiUrl + "users/" + playerID;
+                using (UnityWebRequest nameRequest = UnityWebRequest.Get(url))
+                {
+                  yield return nameRequest.SendWebRequest();
+                  if (nameRequest.result == UnityWebRequest.Result.ConnectionError || nameRequest.result == UnityWebRequest.Result.ProtocolError)
+                  {
+                    Debug.Log(nameRequest.error);
+                  }
+                  else
+                  {
+                    serverJson = nameRequest.downloadHandler.text;
+                    User user = JsonUtility.FromJson<User>(serverJson);
+                    playerEntry.GetComponent<DraftPlayerEntry>().setUsername(user.username);
+                    playerEntry.GetComponent<DraftPlayerEntry>().setReady();
+                  }
+                }
+              }
+              playerIds = new List<int>(draft.players);
+            }
           }
         }
       }
