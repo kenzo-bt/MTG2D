@@ -96,80 +96,83 @@ public class DraftRoomManager : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
+          // Exit if the room has been deleted
           if (serverJson.Trim() == "{\"Error\":\"Draft not found\"}")
           {
             Debug.Log("Draft room has been deleted! Returning to Hub...");
             SceneManager.LoadScene("Hub");
           }
+          Draft draft = JsonUtility.FromJson<Draft>(serverJson);
+          // Enter draft editor if draft has been started by host
+          if (draft.started == 1)
+          {
+            SceneManager.LoadScene("DraftEditor");
+          }
+          // Update message
+          if (draft.players.Count < draft.capacity)
+          {
+            statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for players... (" + draft.players.Count + "/" + draft.capacity + ")";
+            if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+            {
+              if (startDraftButton.activeSelf)
+              {
+                startDraftButton.SetActive(false);
+              }
+            }
+          }
           else
           {
-            Draft draft = JsonUtility.FromJson<Draft>(serverJson);
-            // Update message
-            if (draft.players.Count < draft.capacity)
+            if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
             {
-              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for players... (" + draft.players.Count + "/" + draft.capacity + ")";
-              if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+              if (!startDraftButton.activeSelf)
               {
-                if (startDraftButton.activeSelf)
-                {
-                  startDraftButton.SetActive(false);
-                }
+                startDraftButton.SetActive(true);
               }
+              statusMessageObject.GetComponent<TMP_Text>().text = "";
             }
             else
             {
-              if (PlayerManager.Instance.myID == PlayerManager.Instance.draftHostID)
+              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
+            }
+          }
+          // Update set name
+          if (setName == "")
+          {
+            setName = draft.setName;
+          }
+          // Update title
+          if (hostName != draft.hostName)
+          {
+            roomTitleObject.GetComponent<TMP_Text>().text = draft.hostName + "\'s Draft Room";
+            hostName = draft.hostName;
+          }
+          // Populate room grid
+          if (!playerIds.SequenceEqual(draft.players))
+          {
+            clearPlayerGrid();
+            foreach (int playerID in draft.players)
+            {
+              // Instantiate the entry
+              GameObject playerEntry = Instantiate(playerEntryPrefab, playerGridObject.transform);
+              // Name the entry
+              url = PlayerManager.Instance.apiUrl + "users/" + playerID;
+              using (UnityWebRequest nameRequest = UnityWebRequest.Get(url))
               {
-                if (!startDraftButton.activeSelf)
+                yield return nameRequest.SendWebRequest();
+                if (nameRequest.result == UnityWebRequest.Result.ConnectionError || nameRequest.result == UnityWebRequest.Result.ProtocolError)
                 {
-                  startDraftButton.SetActive(true);
+                  Debug.Log(nameRequest.error);
                 }
-                statusMessageObject.GetComponent<TMP_Text>().text = "";
-              }
-              else
-              {
-                statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
-              }
-            }
-            // Update set name
-            if (setName == "")
-            {
-              setName = draft.setName;
-            }
-            // Update title
-            if (hostName != draft.hostName)
-            {
-              roomTitleObject.GetComponent<TMP_Text>().text = draft.hostName + "\'s Draft Room";
-              hostName = draft.hostName;
-            }
-            // Populate room grid
-            if (!playerIds.SequenceEqual(draft.players))
-            {
-              clearPlayerGrid();
-              foreach (int playerID in draft.players)
-              {
-                // Instantiate the entry
-                GameObject playerEntry = Instantiate(playerEntryPrefab, playerGridObject.transform);
-                // Name the entry
-                url = PlayerManager.Instance.apiUrl + "users/" + playerID;
-                using (UnityWebRequest nameRequest = UnityWebRequest.Get(url))
+                else
                 {
-                  yield return nameRequest.SendWebRequest();
-                  if (nameRequest.result == UnityWebRequest.Result.ConnectionError || nameRequest.result == UnityWebRequest.Result.ProtocolError)
-                  {
-                    Debug.Log(nameRequest.error);
-                  }
-                  else
-                  {
-                    serverJson = nameRequest.downloadHandler.text;
-                    User user = JsonUtility.FromJson<User>(serverJson);
-                    playerEntry.GetComponent<DraftPlayerEntry>().setUsername(user.username);
-                    playerEntry.GetComponent<DraftPlayerEntry>().setReady();
-                  }
+                  serverJson = nameRequest.downloadHandler.text;
+                  User user = JsonUtility.FromJson<User>(serverJson);
+                  playerEntry.GetComponent<DraftPlayerEntry>().setUsername(user.username);
+                  playerEntry.GetComponent<DraftPlayerEntry>().setReady();
                 }
               }
-              playerIds = new List<int>(draft.players);
             }
+            playerIds = new List<int>(draft.players);
           }
         }
       }
@@ -241,8 +244,8 @@ public class DraftRoomManager : MonoBehaviour
       }
       else
       {
-        // Should we generate all the packs and upload to server? Or each player generates their packs when entering deck creator?
         Debug.Log("Successfully started the draft in the server.");
+        SceneManager.LoadScene("DraftEditor");
       }
       startRequest.Dispose();
     }
