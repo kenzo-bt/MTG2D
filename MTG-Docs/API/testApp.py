@@ -26,6 +26,7 @@ class User(db.Model):
     challenges = db.Column(db.Text)
     decks = db.Column(db.Text)
     draftPacks = db.Column(db.Text)
+    draftQueue = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
@@ -301,6 +302,36 @@ def write_user_draftPacks_individual(id, packNum):
         user.draftPacks = json.dumps(packs)
         db.session.commit()
         return packs[int(packNum)]
+    return {'cards': []}
+
+### Player draft queue view ###
+
+@app.route('/users/<id>/draftQueue')
+def get_user_draftQueue(id):
+    user =  User.query.get_or_404(id)
+    if user.draftQueue is None:
+        return {'draftQueue': []}
+    return {'draftQueue': json.loads(user.draftQueue)}
+
+@app.route('/users/<id>/draftQueue', methods=['POST'])
+def add_user_draftQueue(id):
+    user = User.query.get(id)
+    queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
+    pack = request.json
+    queue.append(pack)
+    user.draftQueue = json.dumps(queue)
+    db.session.commit()
+    return {'draftQueue': json.loads(user.draftQueue)}
+
+@app.route('/users/<id>/draftQueue', methods=['DELETE'])
+def consume_user_draftQueue(id):
+    user = User.query.get(id)
+    queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
+    if len(queue) > 0:
+        pack = queue.pop(0)
+        user.draftQueue = json.dumps(queue)
+        db.session.commit()
+        return pack
     return {'cards': []}
 
 ### Server globals ###
