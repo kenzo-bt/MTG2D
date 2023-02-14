@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -15,12 +16,14 @@ public class DraftRoomManager : MonoBehaviour
     public GameObject startDraftButton;
     public List<int> playerIds;
     public string hostName;
+    public string setName;
 
     // Start is called before the first frame update
     void Start()
     {
       playerIds = new List<int>();
       hostName = "";
+      setName = "";
       initializeRoom();
     }
 
@@ -128,6 +131,11 @@ public class DraftRoomManager : MonoBehaviour
                 statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start draft";
               }
             }
+            // Update set name
+            if (setName == "")
+            {
+              setName = draft.setName;
+            }
             // Update title
             if (hostName != draft.hostName)
             {
@@ -183,18 +191,59 @@ public class DraftRoomManager : MonoBehaviour
 
     public IEnumerator initializeDraftInServer()
     {
+      // Generate booster packs for each player
+      CardSet draftSet = new CardSet();
+      foreach (CardSet set in PlayerManager.Instance.cardCollection)
+      {
+        if (set.setName == setName)
+        {
+          draftSet = set;
+          break;
+        }
+      }
+      foreach (int id in playerIds)
+      {
+        DraftPacks playerDraftPacks = new DraftPacks();
+        playerDraftPacks.draftPacks = new List<Pack>();
+        for (int i = 0; i < 3; i++)
+        {
+          Pack pack = new Pack();
+          pack.cards = new List<string>(draftSet.getPack());
+          playerDraftPacks.draftPacks.Add(pack);
+        }
+        // Upload player packs to server
+        string packsJson = JsonUtility.ToJson(playerDraftPacks);
+        string postUrl = PlayerManager.Instance.apiUrl + "users/" + id + "/draftPacks";
+        byte[] bytes = Encoding.UTF8.GetBytes(packsJson);
+        UnityWebRequest request = new UnityWebRequest(postUrl);
+        request.method = UnityWebRequest.kHttpVerbPOST;
+        request.uploadHandler = new UploadHandlerRaw (bytes);
+        request.uploadHandler.contentType = "application/json";
+        yield return request.SendWebRequest();
+        if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          Debug.Log("Successfully updated draft packs for user with ID: " + id);
+        }
+        request.Dispose();
+      }
       // Set draft start flag in server
       string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/start";
-      UnityWebRequest request = new UnityWebRequest(url);
-      request.method = UnityWebRequest.kHttpVerbPOST;
-      yield return request.SendWebRequest();
-      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      UnityWebRequest startRequest = new UnityWebRequest(url);
+      startRequest.method = UnityWebRequest.kHttpVerbPOST;
+      yield return startRequest.SendWebRequest();
+      if(startRequest.result == UnityWebRequest.Result.ConnectionError || startRequest.result == UnityWebRequest.Result.ProtocolError)
       {
-        Debug.Log(request.error);
+        Debug.Log(startRequest.error);
       }
       else
       {
         // Should we generate all the packs and upload to server? Or each player generates their packs when entering deck creator?
+        Debug.Log("Successfully started the draft in the server.");
       }
+      startRequest.Dispose();
     }
 }
