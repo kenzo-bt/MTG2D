@@ -74,7 +74,7 @@ public class CardCollection : MonoBehaviour
       {
         // Texturize the card display card
         GameObject collectionCardObject = displayObject.transform.GetChild(i).gameObject;
-        WebCard card = collectionCardObject.transform.GetChild(0).GetComponent<WebCard>();
+        WebCard card = collectionCardObject.transform.GetChild(1).GetComponent<WebCard>();
         CollectionCard collectionCard = collectionCardObject.GetComponent<CollectionCard>();
 
         collectionCard.setId(cardsToDisplay[i].id);
@@ -88,7 +88,7 @@ public class CardCollection : MonoBehaviour
     {
       foreach (Transform child in displayObject.transform)
       {
-        child.GetChild(0).GetComponent<WebCard>().makeTransparent();
+        child.GetChild(1).GetComponent<WebCard>().makeTransparent();
       }
     }
 

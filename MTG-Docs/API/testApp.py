@@ -324,6 +324,17 @@ def add_user_draftQueue(id):
     return {'draftQueue': json.loads(user.draftQueue)}
 
 @app.route('/users/<id>/draftQueue', methods=['DELETE'])
+def delete_user_draftQueue(id):
+    user = User.query.get(id)
+    queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
+    if len(queue) > 0:
+        pack = queue.pop(0)
+        user.draftQueue = json.dumps(queue)
+        db.session.commit()
+        return pack
+    return {'cards': []}
+
+@app.route('/users/<id>/draftQueue/consume')
 def consume_user_draftQueue(id):
     user = User.query.get(id)
     queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
