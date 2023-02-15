@@ -12,6 +12,7 @@ public class DraftCollection : MonoBehaviour
     public GameObject panelObject;
     public GameObject leftPlayerObject;
     public GameObject rightPlayerObject;
+    public GameObject statusMessageObject;
     private int cardsPerPage;
     private int currentPage;
     private List<Pack> initialPacks;
@@ -68,25 +69,31 @@ public class DraftCollection : MonoBehaviour
             initialPacks.Add(pack);
           }
           // Upload first pack to my queue
-          string packJson = JsonUtility.ToJson(initialPacks[0]);
-          string postUrl = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/draftQueue";
-          byte[] bytes = Encoding.UTF8.GetBytes(packJson);
-          UnityWebRequest postRequest = new UnityWebRequest(postUrl);
-          postRequest.method = UnityWebRequest.kHttpVerbPOST;
-          postRequest.uploadHandler = new UploadHandlerRaw (bytes);
-          postRequest.uploadHandler.contentType = "application/json";
-          yield return postRequest.SendWebRequest();
-          if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
-          {
-            Debug.Log(postRequest.error);
-          }
-          else
-          {
-            fetchDraftPack();
-          }
-          postRequest.Dispose();
+          StartCoroutine(uploadPackToMyQueue());
         }
       }
+    }
+
+    public IEnumerator uploadPackToMyQueue()
+    {
+      string packJson = JsonUtility.ToJson(initialPacks[0]);
+      string postUrl = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/draftQueue";
+      byte[] bytes = Encoding.UTF8.GetBytes(packJson);
+      UnityWebRequest postRequest = new UnityWebRequest(postUrl);
+      postRequest.method = UnityWebRequest.kHttpVerbPOST;
+      postRequest.uploadHandler = new UploadHandlerRaw (bytes);
+      postRequest.uploadHandler.contentType = "application/json";
+      yield return postRequest.SendWebRequest();
+      if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(postRequest.error);
+      }
+      else
+      {
+        initialPacks.RemoveAt(0);
+        fetchDraftPack();
+      }
+      postRequest.Dispose();
     }
 
     public void fetchDraftPack()
@@ -109,8 +116,23 @@ public class DraftCollection : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           Pack draftPack = JsonUtility.FromJson<Pack>(serverJson);
           cardIds = new List<string>(draftPack.cards);
-          Debug.Log("Pack has " + cardIds.Count + " cards");
           updateDisplay();
+          foreach (Transform child in displayObject.transform)
+          {
+            child.gameObject.GetComponent<DraftCollectionCard>().unHighlightCard();
+          }
+          if (draftPack.cards.Count == 0)
+          {
+            statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for " + rightPlayerObject.GetComponent<TMP_Text>().text + " to pass a pack.";
+            Debug.Log("Queue was empty.");
+            yield return new WaitForSeconds(5);
+            Debug.Log("Trying to fetch from queue again...");
+            StartCoroutine(consumePackFromQueue());
+          }
+          else
+          {
+            statusMessageObject.GetComponent<TMP_Text>().text = "";
+          }
         }
       }
     }
@@ -282,9 +304,47 @@ public class DraftCollection : MonoBehaviour
       PlayerManager.Instance.selectedDeck.addCard(cardId);
       panelObject.GetComponent<DeckListPanel>().updatePanel();
       addButton.SetActive(false);
+      selectedIndex = -1;
       // TODO : Remove selected card and send updated pack to left neighbour's queue
+      cardIds.Remove(cardId);
+      if (cardIds.Count == 0)
+      {
+        if (initialPacks.Count > 0)
+        {
+          StartCoroutine(uploadPackToMyQueue());
+        }
+        else
+        {
+          // TODO : Activate save button to complete draft
 
-      // TODO : Try consuming from queue until it has at least one pack
+        }
+      }
+      else
+      {
+        StartCoroutine(sendPackToLeftPlayer());
+      }
+    }
 
+    public IEnumerator sendPackToLeftPlayer()
+    {
+      Pack packToSend = new Pack();
+      packToSend.cards = new List<string>(cardIds);
+      string packJson = JsonUtility.ToJson(packToSend);
+      string postUrl = PlayerManager.Instance.apiUrl + "users/" + leftPlayerId + "/draftQueue";
+      byte[] bytes = Encoding.UTF8.GetBytes(packJson);
+      UnityWebRequest postRequest = new UnityWebRequest(postUrl);
+      postRequest.method = UnityWebRequest.kHttpVerbPOST;
+      postRequest.uploadHandler = new UploadHandlerRaw (bytes);
+      postRequest.uploadHandler.contentType = "application/json";
+      yield return postRequest.SendWebRequest();
+      if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(postRequest.error);
+      }
+      else
+      {
+        fetchDraftPack();
+      }
+      postRequest.Dispose();
     }
 }

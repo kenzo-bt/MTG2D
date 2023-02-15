@@ -282,6 +282,9 @@ def get_user_draftPacks(id):
 def write_user_draftPacks(id):
     user = User.query.get(id)
     user.draftPacks = json.dumps(request.json['draftPacks'])
+    # Reset the player's draft queue
+    if user.draftQueue is not None:
+        user.draftQueue = json.dumps(json.loads("[]"))
     db.session.commit()
     return {'draftPacks': json.loads(user.draftPacks)}
 
