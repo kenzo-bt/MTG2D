@@ -88,7 +88,10 @@ public class DeckEditorManager : MonoBehaviour
         PlayerManager.Instance.selectedDeck.name = getValidName(initialDeck.name);
         PlayerManager.Instance.selectedDeck.cards = new List<string>(initialDeck.cards);
         PlayerManager.Instance.selectedDeck.cardFrequencies = new List<int>(initialDeck.cardFrequencies);
+        PlayerManager.Instance.selectedDeck.sideboard = new List<string>(initialDeck.sideboard);
+        PlayerManager.Instance.selectedDeck.sideboardFrequencies = new List<int>(initialDeck.sideboardFrequencies);
         PlayerManager.Instance.selectedDeck.coverId = initialDeck.coverId;
+        PlayerManager.Instance.selectedDeck.isDraft = initialDeck.isDraft;
       }
       SceneManager.LoadScene("DeckBrowser");
     }
