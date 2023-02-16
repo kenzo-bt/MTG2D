@@ -18,7 +18,7 @@ public class DeckListPanel : MonoBehaviour
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
     private CoverCard coverCard;
-    private bool sideboardActive;
+    public bool sideboardActive;
 
     // Start is called before the first frame update
     void Start()

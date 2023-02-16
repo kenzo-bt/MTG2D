@@ -94,27 +94,43 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     // Increase card frequency
     public void addFrequency()
     {
-      // Update master data
       Decklist deck = PlayerManager.Instance.selectedDeck;
-      deck.addCard(cardId);
-      // Refresh decklist panel
-      transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
+      DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+      if (panel.sideboardActive)
+      {
+        deck.addToSideboard(cardId);
+      }
+      else
+      {
+        deck.addCard(cardId);
+      }
+      panel.updatePanel();
     }
 
     // Decrease card frequency
     public void removeFrequency()
     {
-      // Update master data
       Decklist deck = PlayerManager.Instance.selectedDeck;
-      int indexOfCard = deck.cards.IndexOf(cardId);
-      if (deck.cardFrequencies[indexOfCard] == 1)
+      DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+      if (panel.sideboardActive)
       {
-        DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
-        panel.hideHighlight();
+        int indexOfCard = deck.sideboard.IndexOf(cardId);
+        if (deck.sideboardFrequencies[indexOfCard] == 1)
+        {
+          panel.hideHighlight();
+        }
+        deck.removeFromSideboard(cardId);
       }
-      deck.removeCard(cardId);
-      // Refresh decklist panel
-      transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>().updatePanel();
+      else
+      {
+        int indexOfCard = deck.cards.IndexOf(cardId);
+        if (deck.cardFrequencies[indexOfCard] == 1)
+        {
+          panel.hideHighlight();
+        }
+        deck.removeCard(cardId);
+      }
+      panel.updatePanel();
     }
 
     // Creates the mana cost string
@@ -145,5 +161,24 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
       DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
       panel.hideHighlight();
+    }
+
+    public void toggleLocation()
+    {
+      Decklist deck = PlayerManager.Instance.selectedDeck;
+      DeckListPanel deckPanel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
+
+      if (deckPanel.sideboardActive)
+      {
+        deck.removeFromSideboard(cardId);
+        deck.addCard(cardId);
+      }
+      else
+      {
+        deck.removeCard(cardId);
+        deck.addToSideboard(cardId);
+      }
+
+      deckPanel.updatePanel();
     }
 }
