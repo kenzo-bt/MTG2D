@@ -3753,6 +3753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayObject: {fileID: 85281903}
   addButton: {fileID: 171519825}
+  saveButton: {fileID: 1736127766}
   panelObject: {fileID: 2034659554}
   leftPlayerObject: {fileID: 200035353}
   rightPlayerObject: {fileID: 1982080622}
@@ -6313,7 +6314,7 @@ PrefabInstance:
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1118635334}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -6336,7 +6337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DeckEditorManager, Assembly-CSharp
+      value: DraftCollection, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228357, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

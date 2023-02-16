@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DraftCollection : MonoBehaviour
 {
     public GameObject displayObject;
     public GameObject addButton;
+    public GameObject saveButton;
     public GameObject panelObject;
     public GameObject leftPlayerObject;
     public GameObject rightPlayerObject;
@@ -68,32 +70,21 @@ public class DraftCollection : MonoBehaviour
           {
             initialPacks.Add(pack);
           }
-          // Upload first pack to my queue
-          StartCoroutine(uploadPackToMyQueue());
+          openPack();
         }
       }
     }
 
-    public IEnumerator uploadPackToMyQueue()
+    public void openPack()
     {
-      string packJson = JsonUtility.ToJson(initialPacks[0]);
-      string postUrl = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/draftQueue";
-      byte[] bytes = Encoding.UTF8.GetBytes(packJson);
-      UnityWebRequest postRequest = new UnityWebRequest(postUrl);
-      postRequest.method = UnityWebRequest.kHttpVerbPOST;
-      postRequest.uploadHandler = new UploadHandlerRaw (bytes);
-      postRequest.uploadHandler.contentType = "application/json";
-      yield return postRequest.SendWebRequest();
-      if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+      cardIds = new List<string>(initialPacks[0].cards);
+      initialPacks.RemoveAt(0);
+      updateDisplay();
+      foreach (Transform child in displayObject.transform)
       {
-        Debug.Log(postRequest.error);
+        child.gameObject.GetComponent<DraftCollectionCard>().unHighlightCard();
       }
-      else
-      {
-        initialPacks.RemoveAt(0);
-        fetchDraftPack();
-      }
-      postRequest.Dispose();
+      statusMessageObject.GetComponent<TMP_Text>().text = "";
     }
 
     public void fetchDraftPack()
@@ -107,9 +98,12 @@ public class DraftCollection : MonoBehaviour
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
+
         if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
           Debug.Log(request.error);
+          Debug.Log("There was a connection or protocol error in consumePackFromQueue(). Retrying...");
+          StartCoroutine(consumePackFromQueue());
         }
         else
         {
@@ -309,14 +303,22 @@ public class DraftCollection : MonoBehaviour
       cardIds.Remove(cardId);
       if (cardIds.Count == 0)
       {
-        if (initialPacks.Count > 0)
+        if (initialPacks.Count > 0) // Open the next pack
         {
-          StartCoroutine(uploadPackToMyQueue());
+          openPack();
         }
-        else
+        else // Save deck and exit
         {
-          // TODO : Activate save button to complete draft
-
+          updateDisplay();
+          foreach (Transform child in displayObject.transform)
+          {
+            child.gameObject.GetComponent<DraftCollectionCard>().unHighlightCard();
+          }
+          saveButton.SetActive(true);
+          if (PlayerManager.Instance.draftHostID == PlayerManager.Instance.myID)
+          {
+            StartCoroutine(deleteDraftInServer());
+          }
         }
       }
       else
@@ -340,11 +342,74 @@ public class DraftCollection : MonoBehaviour
       if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(postRequest.error);
+        Debug.Log("There was a connection or protocol error in sendPackToLeftPlayer(). Retrying...");
+        StartCoroutine(sendPackToLeftPlayer());
       }
       else
       {
         fetchDraftPack();
       }
       postRequest.Dispose();
+    }
+
+    // Save deck changes
+    public void saveDeck()
+    {
+      PlayerManager.Instance.selectedDeck.name = getValidName(PlayerManager.Instance.selectedDeck.name);
+      PlayerManager.Instance.savePlayerDecks();
+      SceneManager.LoadScene("Hub");
+    }
+
+    // Generate a valid deck name if there are repeats
+    public string getValidName(string name)
+    {
+      List<Decklist> allDecks = PlayerManager.Instance.allDecks;
+
+      int nameHit = 0;
+      if (name == "")
+      {
+        name = "DraftDeck";
+        nameHit += 1;
+      }
+
+      for (int i = 0; i < allDecks.Count; i++)
+      {
+        if (allDecks[i].name == name)
+        {
+          nameHit += 1;
+        }
+      }
+      if (nameHit == 1)
+      {
+        return name;
+      }
+
+      int copyHit = 0;
+      string copyName = name + " (v.";
+      for (int i = 0; i < allDecks.Count; i++)
+      {
+        if (allDecks[i].name.Contains(copyName))
+        {
+          copyHit += 1;
+        }
+      }
+      return copyName + (copyHit + 1) + ")";
+    }
+
+    public IEnumerator deleteDraftInServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID;
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbDELETE;
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully deleted draft in server");
+      }
+      request.Dispose();
     }
 }
