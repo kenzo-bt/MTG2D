@@ -24,6 +24,7 @@ public class DraftEditorManager : MonoBehaviour
     public void createDeck()
     {
       Decklist newDeck = new Decklist();
+      newDeck.isDraft = true;
       PlayerManager.Instance.allDecks.Add(newDeck);
       PlayerManager.Instance.selectedDeck = newDeck;
     }

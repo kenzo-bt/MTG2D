@@ -18,6 +18,7 @@ public class DeckListPanel : MonoBehaviour
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
     private CoverCard coverCard;
+    public bool sideboardActive;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class DeckListPanel : MonoBehaviour
       cardCountText = cardCount.GetComponent<TMP_Text>();
       manaCurve = manaCurveObject.GetComponent<ManaCurveDisplay>();
       coverCard = coverCardObject.GetComponent<CoverCard>();
+      sideboardActive = false;
 
       initializePanel();
     }
@@ -64,11 +66,15 @@ public class DeckListPanel : MonoBehaviour
     // populate the cardList with the selected deck
     public void populateCardList()
     {
-      if (deck.cards.Count > 0)
+      // Deck / Sideboard logic
+      List<string> listOfCards = sideboardActive ? new List<string>(deck.sideboard) : new List<string>(deck.cards);
+      List<int> listOfFrequencies = sideboardActive ? new List<int>(deck.sideboardFrequencies) : new List<int>(deck.cardFrequencies);
+
+      if (listOfCards.Count > 0)
       {
         // Sort by manaValue
         int maxValue = 0;
-        foreach (string cardId in deck.cards)
+        foreach (string cardId in listOfCards)
         {
           CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
           if (card.manaValue > maxValue)
@@ -81,9 +87,9 @@ public class DeckListPanel : MonoBehaviour
         {
             valuesArray[i] = new List<int>();
         }
-        for (int i = 0; i < deck.cards.Count; i++)
+        for (int i = 0; i < listOfCards.Count; i++)
         {
-          CardInfo card = PlayerManager.Instance.getCardFromLookup(deck.cards[i]);
+          CardInfo card = PlayerManager.Instance.getCardFromLookup(listOfCards[i]);
           valuesArray[card.manaValue].Add(i);
         }
         List<string> sortedCards = new List<string>();
@@ -94,8 +100,8 @@ public class DeckListPanel : MonoBehaviour
           {
             foreach (int index in valuesArray[i])
             {
-              sortedCards.Add(deck.cards[index]);
-              sortedFrequencies.Add(deck.cardFrequencies[index]);
+              sortedCards.Add(listOfCards[index]);
+              sortedFrequencies.Add(listOfFrequencies[index]);
             }
           }
         }
@@ -156,5 +162,17 @@ public class DeckListPanel : MonoBehaviour
     {
       highlightCardObject.SetActive(false);
       highlightCardBackObject.SetActive(false);
+    }
+
+    public void showSideboard()
+    {
+      sideboardActive = true;
+      updatePanel();
+    }
+
+    public void showDeck()
+    {
+      sideboardActive = false;
+      updatePanel();
     }
 }
