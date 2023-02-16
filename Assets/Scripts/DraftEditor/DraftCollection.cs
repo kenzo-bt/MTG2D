@@ -299,7 +299,7 @@ public class DraftCollection : MonoBehaviour
       panelObject.GetComponent<DeckListPanel>().updatePanel();
       addButton.SetActive(false);
       selectedIndex = -1;
-      // TODO : Remove selected card and send updated pack to left neighbour's queue
+      currentPage = 0;
       cardIds.Remove(cardId);
       if (cardIds.Count == 0)
       {
