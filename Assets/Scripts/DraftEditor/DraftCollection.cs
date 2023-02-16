@@ -15,6 +15,7 @@ public class DraftCollection : MonoBehaviour
     public GameObject leftPlayerObject;
     public GameObject rightPlayerObject;
     public GameObject statusMessageObject;
+    public GameObject pickIndicatorObject;
     private int cardsPerPage;
     private int currentPage;
     private List<Pack> initialPacks;
@@ -23,6 +24,8 @@ public class DraftCollection : MonoBehaviour
     private int leftPlayerId;
     private int rightPlayerId;
     private int selectedIndex;
+    private int pickNum;
+    private int packNum;
 
     // Start is called before the first frame update
     void Start()
@@ -46,10 +49,12 @@ public class DraftCollection : MonoBehaviour
       leftPlayerId = -1;
       rightPlayerId = -1;
       selectedIndex = -1;
-      // Get all 3 initial packs
-      StartCoroutine(fetchInitialPacksFromServer());
+      packNum = 1;
+      pickNum = 1;
       // Determine left and right players
       StartCoroutine(fetchDraftPlayers());
+      // Get all 3 initial packs
+      StartCoroutine(fetchInitialPacksFromServer());
     }
 
     public IEnumerator fetchInitialPacksFromServer()
@@ -85,6 +90,7 @@ public class DraftCollection : MonoBehaviour
         child.gameObject.GetComponent<DraftCollectionCard>().unHighlightCard();
       }
       statusMessageObject.GetComponent<TMP_Text>().text = "";
+      showCollection();
     }
 
     public void fetchDraftPack()
@@ -125,6 +131,7 @@ public class DraftCollection : MonoBehaviour
           }
           else
           {
+            showCollection();
             statusMessageObject.GetComponent<TMP_Text>().text = "";
           }
         }
@@ -301,10 +308,14 @@ public class DraftCollection : MonoBehaviour
       selectedIndex = -1;
       currentPage = 0;
       cardIds.Remove(cardId);
+      hideCollection();
       if (cardIds.Count == 0)
       {
         if (initialPacks.Count > 0) // Open the next pack
         {
+          pickNum = 1;
+          packNum++;
+          updatePickIndicator();
           openPack();
         }
         else // Save deck and exit
@@ -323,6 +334,8 @@ public class DraftCollection : MonoBehaviour
       }
       else
       {
+        pickNum++;
+        updatePickIndicator();
         StartCoroutine(sendPackToLeftPlayer());
       }
     }
@@ -411,5 +424,22 @@ public class DraftCollection : MonoBehaviour
         Debug.Log("Successfully deleted draft in server");
       }
       request.Dispose();
+    }
+
+    public void updatePickIndicator()
+    {
+      pickIndicatorObject.GetComponent<TMP_Text>().text = "Pack " + packNum + " : Pick " + pickNum;
+    }
+
+    private void hideCollection()
+    {
+      GetComponent<CanvasGroup>().alpha = 0;
+      GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
+
+    private void showCollection()
+    {
+      GetComponent<CanvasGroup>().alpha = 1;
+      GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
