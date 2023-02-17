@@ -19,4 +19,13 @@ public class CardInfo
     public bool isBack;
     public string layout;
     public bool isToken;
+
+    public bool isBasicLand()
+    {
+      if (name == "Plains" || name == "Swamp" || name == "Forest" || name == "Mountain" || name == "Island")
+      {
+        return true;
+      }
+      return false;
+    }
 }

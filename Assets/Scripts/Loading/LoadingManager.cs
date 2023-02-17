@@ -13,8 +13,13 @@ public class LoadingManager : MonoBehaviour
     public GameObject versusScreenObject;
     public GameObject yourName;
     public GameObject opponentName;
+    public GameObject yourDisplay;
+    public GameObject opponentDisplay;
+    public GameObject oppDraftStatus;
+    public GameObject yourDraftStatus;
     private CanvasGroup vsScreen;
     private TMP_Text status;
+    private Decklist opponentDeck;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,10 @@ public class LoadingManager : MonoBehaviour
       vsScreen = versusScreenObject.GetComponent<CanvasGroup>();
       yourName.GetComponent<TMP_Text>().text = PlayerManager.Instance.myName;
       opponentName.GetComponent<TMP_Text>().text = PlayerManager.Instance.opponentName;
+      // Update deck in loading screen
+      showYourDeck();
+      // Upload selected deck to server
+      StartCoroutine(uploadActiveDeckToServer());
       // Clean my state in the server
       StartCoroutine(deletePreviousState());
       if (myRole == "challenger")
@@ -213,6 +222,8 @@ public class LoadingManager : MonoBehaviour
 
     public void enterGameSession()
     {
+      // Fetch opponent active deck and update the play animation
+      StartCoroutine(fetchOpponentDeckFromServer());
       // VS screen fade-in-out and change scene to game session
       StartCoroutine(readyToPlayAnimation());
     }
@@ -228,7 +239,7 @@ public class LoadingManager : MonoBehaviour
           vsScreen.alpha = vsScreen.alpha + (Time.deltaTime / t);
           yield return null;
       }
-      yield return new WaitForSeconds(2);
+      yield return new WaitForSeconds(4);
       while (vsScreen.alpha > 0f)
       {
           vsScreen.alpha = vsScreen.alpha - (Time.deltaTime / t);
@@ -236,5 +247,66 @@ public class LoadingManager : MonoBehaviour
       }
       yield return new WaitForSeconds(1);
       SceneManager.LoadScene("GameSession");
+    }
+
+    private IEnumerator uploadActiveDeckToServer()
+    {
+      Decklist activeDeck = PlayerManager.Instance.selectedDeck;
+      string deckJson = JsonUtility.ToJson(activeDeck);
+      byte[] bytes = Encoding.UTF8.GetBytes(deckJson);
+      string postUrl = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/activeDeck";
+      UnityWebRequest postRequest = new UnityWebRequest(postUrl);
+      postRequest.method = UnityWebRequest.kHttpVerbPOST;
+      postRequest.uploadHandler = new UploadHandlerRaw (bytes);
+      postRequest.uploadHandler.contentType = "application/json";
+      yield return postRequest.SendWebRequest();
+      if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(postRequest.error);
+      }
+      else
+      {
+        Debug.Log("Selected deck successfully uploaded to server");
+      }
+      postRequest.Dispose();
+    }
+
+    private IEnumerator fetchOpponentDeckFromServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.opponentID + "/activeDeck";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          opponentDeck = JsonUtility.FromJson<Decklist>(serverJson);
+          showOpponentDeck();
+          Debug.Log("Successfully fetched opponent deck from server");
+        }
+      }
+    }
+
+    private void showYourDeck()
+    {
+      Decklist yourDeck = PlayerManager.Instance.selectedDeck;
+      yourDisplay.GetComponent<DeckDisplay>().setDisplayData(yourDeck.name, PlayerManager.Instance.getCardFromLookup(yourDeck.coverId));
+      if (yourDeck.isDraft)
+      {
+        yourDraftStatus.SetActive(true);
+      }
+    }
+
+    private void showOpponentDeck()
+    {
+      opponentDisplay.GetComponent<DeckDisplay>().setDisplayData(opponentDeck.name, PlayerManager.Instance.getCardFromLookup(opponentDeck.coverId));
+      if (opponentDeck.isDraft)
+      {
+        oppDraftStatus.SetActive(true);
+      }
     }
 }

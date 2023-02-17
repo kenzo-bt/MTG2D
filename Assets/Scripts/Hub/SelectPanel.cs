@@ -25,16 +25,7 @@ public class SelectPanel : MonoBehaviour
 
       deckDisplay = deckDisplayObject.GetComponent<DeckDisplay>();
       playButton = playButtonObject.GetComponent<AcceptButton>();
-      if (PlayerManager.Instance.selectedDeck != null)
-      {
-        updateSelectedDeck();
-        deckDisplayObject.SetActive(true);
-      }
-      else
-      {
-        playButton.disable();
-        deckDisplayObject.SetActive(false);
-      }
+      updateSelectedDeck();
     }
 
     // Update is called once per frame
@@ -46,7 +37,6 @@ public class SelectPanel : MonoBehaviour
 
     public void showPanel()
     {
-
       targetPosition = new Vector3(showPosX, 0f, 0f);
     }
 
@@ -57,10 +47,18 @@ public class SelectPanel : MonoBehaviour
 
     public void updateSelectedDeck()
     {
-      Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
-      Debug.Log("Selected deck: " + selectedDeck.name);
-      playButton.enable();
-      deckDisplay.setDisplayData(selectedDeck.name, selectedDeck.getCoverCard());
-      deckDisplayObject.SetActive(true);
+      if (PlayerManager.Instance.selectedDeck.name != "")
+      {
+        Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
+        Debug.Log("Selected deck: " + selectedDeck.name);
+        playButton.enable();
+        deckDisplay.setDisplayData(selectedDeck.name, selectedDeck.getCoverCard());
+        deckDisplayObject.SetActive(true);
+      }
+      else
+      {
+        playButton.disable();
+        deckDisplayObject.SetActive(false);
+      }
     }
 }

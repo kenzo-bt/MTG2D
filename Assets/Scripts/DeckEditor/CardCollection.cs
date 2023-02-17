@@ -9,6 +9,7 @@ public class CardCollection : MonoBehaviour
     public GameObject filtersObject;
     public GameObject displayObject;
     public GameObject searchInputObject;
+    public GameObject landFilter;
     private List<string> allCardIds;
     private List<string> filteredIds;
     private int cardsPerPage;
@@ -33,7 +34,6 @@ public class CardCollection : MonoBehaviour
       manaFilters = new List<int>();
       allCardIds = new List<string>();
       loadCollection();
-      // TODO: pre-apply filters based on the selected deck's colours OR load deck (less computation + more intuitive)
       onlyLands = false;
       onlyMultiColoured = false;
       onlyColourless = false;
@@ -42,7 +42,18 @@ public class CardCollection : MonoBehaviour
       typeFilters = new List<string>();
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
-      filteredIds = new List<string>(PlayerManager.Instance.selectedDeck.cards);
+      if (PlayerManager.Instance.selectedDeck.isDraft)
+      {
+        filteredIds = new List<string>();
+        // Emulate clicking on the lands filter
+        /*
+        landFilter.GetComponent<IconFilter>().filterClicked();
+        toggleLands();
+        */
+      }
+      else {
+        filteredIds = new List<string>(PlayerManager.Instance.selectedDeck.cards);
+      }
       updateCollectionDisplay();
     }
 
@@ -74,7 +85,7 @@ public class CardCollection : MonoBehaviour
       {
         // Texturize the card display card
         GameObject collectionCardObject = displayObject.transform.GetChild(i).gameObject;
-        WebCard card = collectionCardObject.transform.GetChild(0).GetComponent<WebCard>();
+        WebCard card = collectionCardObject.transform.GetChild(1).GetComponent<WebCard>();
         CollectionCard collectionCard = collectionCardObject.GetComponent<CollectionCard>();
 
         collectionCard.setId(cardsToDisplay[i].id);
@@ -88,7 +99,7 @@ public class CardCollection : MonoBehaviour
     {
       foreach (Transform child in displayObject.transform)
       {
-        child.GetChild(0).GetComponent<WebCard>().makeTransparent();
+        child.GetChild(1).GetComponent<WebCard>().makeTransparent();
       }
     }
 
@@ -99,10 +110,21 @@ public class CardCollection : MonoBehaviour
       {
         foreach (CardInfo card in set.cards)
         {
-          // Dont include DFC backside
-          if (!card.isBack)
+          if (PlayerManager.Instance.selectedDeck.isDraft)
           {
-            allCardIds.Add(card.id);
+            // Only include basic lands
+            if (card.isBasicLand())
+            {
+              allCardIds.Add(card.id);
+            }
+          }
+          else
+          {
+            // Dont include DFC backside
+            if (!card.isBack)
+            {
+              allCardIds.Add(card.id);
+            }
           }
         }
       }

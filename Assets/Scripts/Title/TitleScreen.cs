@@ -231,6 +231,9 @@ public class TitleScreen : MonoBehaviour
 
           // Load player decks
           PlayerManager.Instance.loadPlayerDecks();
+
+          // Remove any unfinished drafts
+          PlayerManager.Instance.deletePlayerDrafts();
         }
       }
     }

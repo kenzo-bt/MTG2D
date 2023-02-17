@@ -38,12 +38,25 @@ public class DeckDisplay : MonoBehaviour
     // Set this deck as the user selectedDeck
     public void setAsSelectedDeck()
     {
+      bool found = false;
       foreach (Decklist deck in PlayerManager.Instance.allDecks)
       {
         if (deck.name == deckName)
         {
           PlayerManager.Instance.selectedDeck = deck;
+          found = true;
           break;
+        }
+      }
+      if (!found)
+      {
+        foreach (Decklist deck in PlayerManager.Instance.starterDecks)
+        {
+          if (deck.name == deckName)
+          {
+            PlayerManager.Instance.selectedDeck = deck;
+            break;
+          }
         }
       }
     }
@@ -75,6 +88,7 @@ public class DeckDisplay : MonoBehaviour
       {
         if (allDecks[i].name == deckName)
         {
+          Debug.Log("Removing deck: " + deckName);
           allDecks.RemoveAt(i);
           break;
         }
