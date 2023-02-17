@@ -79,16 +79,9 @@ public class CardSet
       {
         if (card.rarity == "common")
         {
-          if (card.name == "Plains" || card.name == "Swamp" || card.name == "Forest" || card.name == "Mountain" || card.name == "Island")
+          if (!card.isBasicLand() && !card.isToken)
           {
-
-          }
-          else
-          {
-            if (!card.isToken)
-            {
-              allCommons.Add(card);
-            }
+            allCommons.Add(card);
           }
         }
       }

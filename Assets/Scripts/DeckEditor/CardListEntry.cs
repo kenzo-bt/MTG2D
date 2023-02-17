@@ -94,43 +94,51 @@ public class CardListEntry : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     // Increase card frequency
     public void addFrequency()
     {
+      CardInfo thisCard = PlayerManager.Instance.getCardFromLookup(cardId);
       Decklist deck = PlayerManager.Instance.selectedDeck;
       DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
-      if (panel.sideboardActive)
+      if (thisCard.isBasicLand() || !deck.isDraft)
       {
-        deck.addToSideboard(cardId);
+        if (panel.sideboardActive)
+        {
+          deck.addToSideboard(cardId);
+        }
+        else
+        {
+          deck.addCard(cardId);
+        }
+        panel.updatePanel();
       }
-      else
-      {
-        deck.addCard(cardId);
-      }
-      panel.updatePanel();
     }
 
     // Decrease card frequency
     public void removeFrequency()
     {
+      CardInfo thisCard = PlayerManager.Instance.getCardFromLookup(cardId);
       Decklist deck = PlayerManager.Instance.selectedDeck;
       DeckListPanel panel = transform.parent.parent.parent.gameObject.GetComponent<DeckListPanel>();
-      if (panel.sideboardActive)
+      if (thisCard.isBasicLand() || !deck.isDraft)
       {
-        int indexOfCard = deck.sideboard.IndexOf(cardId);
-        if (deck.sideboardFrequencies[indexOfCard] == 1)
+        if (panel.sideboardActive)
         {
-          panel.hideHighlight();
+          int indexOfCard = deck.sideboard.IndexOf(cardId);
+          if (deck.sideboardFrequencies[indexOfCard] == 1)
+          {
+            panel.hideHighlight();
+          }
+          deck.removeFromSideboard(cardId);
         }
-        deck.removeFromSideboard(cardId);
-      }
-      else
-      {
-        int indexOfCard = deck.cards.IndexOf(cardId);
-        if (deck.cardFrequencies[indexOfCard] == 1)
+        else
         {
-          panel.hideHighlight();
+          int indexOfCard = deck.cards.IndexOf(cardId);
+          if (deck.cardFrequencies[indexOfCard] == 1)
+          {
+            panel.hideHighlight();
+          }
+          deck.removeCard(cardId);
         }
-        deck.removeCard(cardId);
+        panel.updatePanel();
       }
-      panel.updatePanel();
     }
 
     // Creates the mana cost string

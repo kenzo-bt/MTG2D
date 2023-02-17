@@ -6548,6 +6548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f741f225742fd9c459f0c6e2e835c039, type: 3}
+--- !u!1 &681175693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2102434802187772799, guid: f741f225742fd9c459f0c6e2e835c039, type: 3}
+  m_PrefabInstance: {fileID: 681175692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &686226326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10494,6 +10499,7 @@ MonoBehaviour:
   filtersObject: {fileID: 936134907}
   displayObject: {fileID: 85281903}
   searchInputObject: {fileID: 135980946}
+  landFilter: {fileID: 681175693}
 --- !u!210 &1118635333
 SortingGroup:
   m_ObjectHideFlags: 0
