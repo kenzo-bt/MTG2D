@@ -1060,6 +1060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeckDisplay
       objectReference: {fileID: 0}
+    - target: {fileID: 3720854164323507538, guid: e54b19ffbd2a0934685cefea4f9de32f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720854164323507539, guid: e54b19ffbd2a0934685cefea4f9de32f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7401,8 +7405,11 @@ MonoBehaviour:
   selectedDeck:
     name: 
     cards: []
+    sideboard: []
     cardFrequencies: 
+    sideboardFrequencies: 
     coverId: 
+    isDraft: 0
   allDecks: []
   starterDecks: []
   serverUrl: 

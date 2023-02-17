@@ -27,6 +27,7 @@ class User(db.Model):
     decks = db.Column(db.Text)
     draftPacks = db.Column(db.Text)
     draftQueue = db.Column(db.Text)
+    activeDeck = db.Column(db.Text)
 
     def __repr__(self):
         return f"ID:{self.id} - {self.username}"
@@ -192,6 +193,22 @@ def write_user_decks(id):
     user.decks = json.dumps(request.json['decks'])
     db.session.commit()
     return {'decks': json.loads(user.decks)}
+
+### User active deck view ###
+
+@app.route('/users/<id>/activeDeck')
+def get_user_activeDeck(id):
+    user =  User.query.get_or_404(id)
+    if user.activeDeck is None:
+        return {'name': '', 'cards': [], 'sideboard': [], 'cardFrequencies': [], 'sideboardFrequencies': [], 'coverId': '', 'isDraft': False}
+    return json.loads(user.activeDeck)
+
+@app.route('/users/<id>/activeDeck', methods=['POST'])
+def write_user_activeDeck(id):
+    user = User.query.get(id)
+    user.activeDeck = json.dumps(request.json)
+    db.session.commit()
+    return json.loads(user.activeDeck)
 
 ### User challenges view ###
 

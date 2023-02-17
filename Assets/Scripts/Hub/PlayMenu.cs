@@ -40,6 +40,7 @@ public class PlayMenu : MonoBehaviour
         }
       }
       opponentName.GetComponent<TMP_Text>().text = oppName;
+      selectPanel.GetComponent<SelectPanel>().updateSelectedDeck();
       selectPanel.GetComponent<SelectPanel>().showPanel();
     }
 

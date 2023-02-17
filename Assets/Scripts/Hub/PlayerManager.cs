@@ -238,10 +238,13 @@ public class PlayerManager : MonoBehaviour
 
     public void savePlayerDecks()
     {
+      /*
       if (allDecks.Count > 0)
       {
         StartCoroutine(savePlayerDecksToServer());
       }
+      */
+      StartCoroutine(savePlayerDecksToServer());
     }
 
     public IEnumerator savePlayerDecksToServer()
