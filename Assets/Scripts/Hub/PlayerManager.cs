@@ -316,4 +316,26 @@ public class PlayerManager : MonoBehaviour
         }
       }
     }
+
+    public void deletePlayerDrafts()
+    {
+      StartCoroutine(deletePlayerDraftsInServer());
+    }
+
+    private IEnumerator deletePlayerDraftsInServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.myID;
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbDELETE;
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully deleted my drafts in server");
+      }
+      request.Dispose();
+    }
 }
