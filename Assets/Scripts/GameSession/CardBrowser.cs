@@ -39,12 +39,20 @@ public class CardBrowser : MonoBehaviour
 
     public void processCardDestinations()
     {
-      foreach (Transform child in carousel.transform){
-        StackCard card = child.gameObject.GetComponent<StackCard>();
+      int numChildren = carousel.transform.childCount;
+      int cardIndex = 0;
+      for (int i = 0; i < numChildren; i++)
+      {
+        StackCard card = carousel.transform.GetChild(cardIndex).gameObject.GetComponent<StackCard>();
         if (card != null && card.destination != "")
         {
+          Debug.Log("Move card: " + carousel.transform.GetChild(cardIndex).gameObject.GetComponent<WebCard>().cardName + " -> " + card.destination);
           card.moveCard(currentlyDisplaying);
-          DestroyImmediate(child.gameObject);
+          DestroyImmediate(carousel.transform.GetChild(cardIndex).gameObject);
+        }
+        else
+        {
+          cardIndex++;
         }
       }
     }
