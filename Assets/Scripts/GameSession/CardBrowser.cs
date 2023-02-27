@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardBrowser : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class CardBrowser : MonoBehaviour
       currentlyDisplaying = source;
       GetComponent<CanvasGroup>().alpha = 1f;
       GetComponent<CanvasGroup>().blocksRaycasts = true;
+      LayoutRebuilder.ForceRebuildLayoutImmediate(carousel.GetComponent<RectTransform>());
       float carouselWidth = carousel.GetComponent<RectTransform>().sizeDelta.x;
       carousel.GetComponent<RectTransform>().localPosition = new Vector3((-carouselWidth / 2), 0f, 0f);
     }
