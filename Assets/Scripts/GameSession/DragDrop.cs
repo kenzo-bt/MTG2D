@@ -31,18 +31,36 @@ public class DragDrop : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
+      string cardId = GetComponent<WebCard>().cardId;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      bool cardVisibility = GetComponent<HandCard>().shown;
       float yPos = GetComponent<RectTransform>().localPosition.y;
       if (yPos > 500f)
       {
-        string cardId = GetComponent<WebCard>().cardId;
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
         player.GetComponent<Player>().removeCardFromHand(transform.GetSiblingIndex());
         player.GetComponent<Player>().dropCardInBattlefield(card);
         player.GetComponent<Player>().hideHighlightCard();
       }
       else
       {
-        GetComponent<RectTransform>().localPosition = beginPosition;
+        foreach (Transform child in transform.parent)
+        {
+          float thisPosX = GetComponent<RectTransform>().localPosition.x;
+          float childPosX = child.gameObject.GetComponent<RectTransform>().localPosition.x;
+          if (thisPosX < childPosX)
+          {
+            // Remove and insert
+            player.GetComponent<Player>().removeCardFromHand(transform.GetSiblingIndex());
+            player.GetComponent<Player>().insertCardInHand(child.GetSiblingIndex(), card, cardVisibility);
+            player.GetComponent<Player>().hideHighlightCard();
+            return;
+          }
+        }
+        // Add to end of hand
+        int endIndex = transform.parent.childCount - 1;
+        player.GetComponent<Player>().removeCardFromHand(transform.GetSiblingIndex());
+        player.GetComponent<Player>().insertCardInHand(endIndex, card, cardVisibility);
+        player.GetComponent<Player>().hideHighlightCard();
       }
     }
 }

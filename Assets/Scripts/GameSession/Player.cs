@@ -170,6 +170,12 @@ public class Player : MonoBehaviour
       hand.orderHand();
     }
 
+    public void insertCardInHand(int index, CardInfo card, bool visibility)
+    {
+      hand.insertCard(index, card, visibility);
+      hand.orderHand();
+    }
+
     // Move card to the battlefield
     public void dropCardInBattlefield(CardInfo card)
     {

@@ -39,22 +39,20 @@ public class Hand : MonoBehaviour
       cardInstance.GetComponent<DragDrop>().player = player;
     }
 
-    /*
-    public void removeCard(CardInfo card)
+    public void insertCard(int index, CardInfo card, bool visibility)
     {
-      int numChildren = transform.childCount;
-      for(int i = 0; i < numChildren; i++)
+      hand.Insert(index, card);
+      cardVisibility.Insert(index, visibility);
+      GameObject cardInstance = Instantiate(cardPrefab, transform);
+      cardInstance.transform.SetSiblingIndex(index);
+      cardInstance.GetComponent<WebCard>().texturizeCard(card);
+      cardInstance.GetComponent<HandCard>().player = player;
+      cardInstance.GetComponent<DragDrop>().player = player;
+      if (visibility)
       {
-        if (transform.GetChild(i).gameObject.GetComponent<WebCard>().cardId == card.id)
-        {
-          hand.RemoveAt(i);
-          cardVisibility.RemoveAt(i);
-          DestroyImmediate(transform.GetChild(i).gameObject);
-          break;
-        }
+        cardInstance.GetComponent<HandCard>().toggleShowCard();
       }
     }
-    */
 
     public void removeCard(int index)
     {
