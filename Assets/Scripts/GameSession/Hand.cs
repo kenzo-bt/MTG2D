@@ -39,6 +39,7 @@ public class Hand : MonoBehaviour
       cardInstance.GetComponent<DragDrop>().player = player;
     }
 
+    /*
     public void removeCard(CardInfo card)
     {
       int numChildren = transform.childCount;
@@ -52,6 +53,14 @@ public class Hand : MonoBehaviour
           break;
         }
       }
+    }
+    */
+
+    public void removeCard(int index)
+    {
+      hand.RemoveAt(index);
+      cardVisibility.RemoveAt(index);
+      DestroyImmediate(transform.GetChild(index).gameObject);
     }
 
     // Get number of cards in hand
