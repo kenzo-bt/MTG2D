@@ -163,13 +163,22 @@ public class Player : MonoBehaviour
       drawCards(initialHandSize);
     }
 
+    // Remove card from hand at certain index
+    public void removeCardFromHand(int index)
+    {
+      hand.removeCard(index);
+      hand.orderHand();
+    }
+
+    public void insertCardInHand(int index, CardInfo card, bool visibility)
+    {
+      hand.insertCard(index, card, visibility);
+      hand.orderHand();
+    }
+
     // Move card to the battlefield
     public void dropCardInBattlefield(CardInfo card)
     {
-      // Remove card from hand
-      hand.removeCard(card);
-      hand.orderHand();
-      // Add card to battlefield
       battlefield.addCard(card);
       logMessage("You dropped " + card.name + " to the battlefield");
     }
