@@ -8,7 +8,7 @@ MTG simulator in 2D made in Unity
 - Challenge system to host/join games against friends
 - Analog game mechanics and interacting with the battlefield
 - Networked play
-- Online draft system
+- Online multiplayer draft system
 
 ## Future features
 
