@@ -134,6 +134,11 @@ public class Opponent : MonoBehaviour
         if (isFlipped)
         {
           cardInstance.GetComponent<WebCard>().showBack();
+          // Hide highlight if morph
+          if (cardInfo.text.Contains("Morph"))
+          {
+            cardInstance.GetComponent<OppBattlefieldCard>().turnFaceDown();
+          }
         }
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();

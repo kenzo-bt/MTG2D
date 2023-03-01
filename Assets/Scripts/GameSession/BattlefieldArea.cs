@@ -27,6 +27,11 @@ public class BattlefieldArea : MonoBehaviour
       {
         cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
       }
+      else if (card.text.Contains("Morph"))
+      {
+        cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
+        cardInstance.GetComponent<BattlefieldCard>().flipCard();
+      }
       orderArea();
     }
 

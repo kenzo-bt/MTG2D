@@ -148,6 +148,13 @@ public class WebCard : MonoBehaviour
     public void showBack()
     {
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      if (card.text.Contains("Morph"))
+      {
+        Texture2D cardTexture = Resources.Load("Images/WebCardDefault") as Texture2D;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        return;
+      }
       // Check if image already exists in cache
       if (File.Exists(cachePath + card.backId + fileExtension))
       {

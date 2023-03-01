@@ -7,11 +7,13 @@ public class OppBattlefieldCard : MonoBehaviour
     public GameObject player;
     public GameObject hideLayer;
     public bool hidden;
+    public bool faceDown;
 
     // Start is called before the first frame update
     void Awake()
     {
       hidden = false;
+      faceDown = false;
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class OppBattlefieldCard : MonoBehaviour
 
     public void showInGameHighlight()
     {
-      if (!hidden)
+      if (!hidden && !faceDown)
       {
         string id = GetComponent<WebCard>().cardId;
         player.GetComponent<Player>().showHighlightCard(id);
@@ -31,7 +33,7 @@ public class OppBattlefieldCard : MonoBehaviour
 
     public void hideInGameHighlight()
     {
-      if (!hidden)
+      if (!hidden && !faceDown)
       {
         player.GetComponent<Player>().hideHighlightCard();
       }
@@ -46,5 +48,10 @@ public class OppBattlefieldCard : MonoBehaviour
     {
       hideLayer.GetComponent<CanvasGroup>().alpha = 1f;
       hidden = true;
+    }
+
+    public void turnFaceDown()
+    {
+      faceDown = true;
     }
 }
