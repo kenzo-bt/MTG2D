@@ -1,0 +1,3197 @@
+{
+    "setCode": "LGN",
+    "setName": "Legions",
+    "cards": [
+        {
+            "id": "d047cdf7-3205-5261-83ec-80a202ce2748",
+            "name": "Akroma, Angel of Wrath",
+            "text": "Flying, first strike, trample, haste, protection from black, protection from red\nAttacking doesn't cause Akroma, Angel of Wrath to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{W}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f83b84d-9fa6-550e-85bb-6599b721a8e6",
+            "name": "Akroma's Devoted",
+            "text": "Attacking doesn't cause Clerics to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e90d907-1c9b-5542-a174-c9064c0487e9",
+            "name": "Aven Redeemer",
+            "text": "Flying\n{T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a5b97da9-bb84-58ec-a6d8-c86a73a468b5",
+            "name": "Aven Warhawk",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Bird and/or Soldier card you reveal in your hand.)\nFlying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0417d9d5-d5ae-5fb8-ba69-5efbaca7ad95",
+            "name": "Beacon of Destiny",
+            "text": "{T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to Beacon of Destiny instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3c35ffd7-29ae-5b3f-8c4a-eafc2178b35a",
+            "name": "Celestial Gatekeeper",
+            "text": "Flying\nWhen Celestial Gatekeeper is put into a graveyard from play, remove it from the game, then return up to two target Bird and/or Cleric cards from your graveyard to play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85de5708-6658-511b-b419-ffe8dc4a2143",
+            "name": "Cloudreach Cavalry",
+            "text": "Cloudreach Cavalry gets +2/+2 and has flying as long as you control a Bird.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5d4390f7-56f4-5dcc-8725-540df590b46e",
+            "name": "Daru Mender",
+            "text": "Morph {W} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Daru Mender is turned face up, regenerate target creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3904d239-d9a6-5cf0-ab53-5e481e9af8b1",
+            "name": "Daru Sanctifier",
+            "text": "Morph {1}{W} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Daru Sanctifier is turned face up, destroy target enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "61da696b-7e69-5c29-be3e-b6b43ee903f5",
+            "name": "Daru Stinger",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Soldier card you reveal in your hand.)\n{T}: Daru Stinger deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5afbdb3-7bb2-5dc0-aa5d-0a3ad27a0b2d",
+            "name": "Defender of the Order",
+            "text": "Morph {W}{W} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Defender of the Order is turned face up, creatures you control get +0/+2 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9d950aec-8dab-5ef3-9265-464123dfdc47",
+            "name": "Deftblade Elite",
+            "text": "Provoke (When this attacks, you may have target creature defending player controls untap and block it if able.)\n{1}{W}: Prevent all combat damage that would be dealt to and dealt by Deftblade Elite this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81817245-40bd-5a65-b5f5-155150de2e69",
+            "name": "Essence Sliver",
+            "text": "Whenever a Sliver deals damage, its controller gains that much life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1d8c017c-a253-532a-b766-e091e4c4ad89",
+            "name": "Gempalm Avenger",
+            "text": "Cycling {2}{W} ({2}{W}, Discard this card from your hand: Draw a card.)\nWhen you cycle Gempalm Avenger, all Soldiers get +1/+1 and gain first strike until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42e4a16b-b177-5a3c-89ee-285ae7540a42",
+            "name": "Glowrider",
+            "text": "Noncreature spells cost {1} more to play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2d5b72e5-9059-5d9c-9a50-b07d74f6bc44",
+            "name": "Liege of the Axe",
+            "text": "Attacking doesn't cause Liege of the Axe to tap.\nMorph {1}{W} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Liege of the Axe is turned face up, untap it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "beaf0f12-253b-53a4-bc86-6c60fbd25c47",
+            "name": "Lowland Tracker",
+            "text": "First strike\nProvoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "166556b7-bcbd-5007-8cc7-b480785ec13f",
+            "name": "Planar Guide",
+            "text": "{3}{W}, Remove Planar Guide from the game: Remove all creatures from the game. At end of turn, return those cards to play under their owners' control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "322df5e0-d0f4-58c7-b43a-7af3619e8b3c",
+            "name": "Plated Sliver",
+            "text": "All Slivers get +0/+1.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "949a2212-6695-5ee7-900f-783442803a66",
+            "name": "Starlight Invoker",
+            "text": "{7}{W}: You gain 5 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a9eaa8e-aed2-51c4-8117-bce5386bb429",
+            "name": "Stoic Champion",
+            "text": "Whenever a player cycles a card, Stoic Champion gets +2/+2 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02f2ebd1-adb1-5671-a51a-f3663f20a99d",
+            "name": "Sunstrike Legionnaire",
+            "text": "Sunstrike Legionnaire doesn't untap during your untap step.\nWhenever another creature comes into play, untap Sunstrike Legionnaire.\n{T}: Tap target creature with converted mana cost 3 or less.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "176bc9ee-496f-5cb3-bb2f-8665816b04f5",
+            "name": "Swooping Talon",
+            "text": "Flying\n{1}: Swooping Talon loses flying until end of turn.\nProvoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "780d80a9-8a52-5da7-ac3e-7b1db1c1a279",
+            "name": "Wall of Hope",
+            "text": "(Walls can't attack.)\nWhenever Wall of Hope is dealt damage, you gain that much life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dcf9aae3-2dd0-5a2f-94e5-9b1322d46179",
+            "name": "Ward Sliver",
+            "text": "As Ward Sliver comes into play, choose a color.\nAll Slivers have protection from the chosen color.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bbfdedc1-2598-5202-bb3e-66ac9e149f62",
+            "name": "Whipgrass Entangler",
+            "text": "{1}{W}: Until end of turn, target creature gains \"This creature can't attack or block unless its controller pays {1} for each Cleric in play. (This cost is paid as attackers or blockers are declared.)\"",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "227ea980-8fd8-5266-adc8-41415ebeeef5",
+            "name": "White Knight",
+            "text": "First strike, protection from black",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d4111022-5cd5-5b1a-b6bb-9b4c2238a7c3",
+            "name": "Windborn Muse",
+            "text": "Flying\nCreatures can't attack you unless their controller pays {2} for each creature attacking you. (This cost is paid as attackers are declared.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cf0627e3-ee37-5dd8-9602-72a7b33fa46f",
+            "name": "Wingbeat Warrior",
+            "text": "Flying\nMorph {2}{W} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6ff28085-564d-59dc-a768-51a01f947d37",
+            "name": "Aven Envoy",
+            "text": "Flying",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "685ddf02-5523-5ff4-b35f-bc13dfcbbc5e",
+            "name": "Cephalid Pathmage",
+            "text": "Cephalid Pathmage is unblockable.\n{T}, Sacrifice Cephalid Pathmage: Target creature is unblockable this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d8fef6b0-8295-5024-b8f0-dfe7c848677c",
+            "name": "Chromeshell Crab",
+            "text": "Morph {4}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Chromeshell Crab is turned face up, you may exchange control of target creature you control and target creature an opponent controls.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "20d52b3c-730e-56b7-b077-bdbfe88a9677",
+            "name": "Covert Operative",
+            "text": "Covert Operative is unblockable.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f4a05b3d-6951-5926-84ad-4f664565d463",
+            "name": "Crookclaw Elder",
+            "text": "Flying\nTap two untapped Birds you control: Draw a card.\nTap two untapped Wizards you control: Target creature gains flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fee47ed7-aa28-59c6-b172-00d05d1e3f4a",
+            "name": "Dermoplasm",
+            "text": "Flying\nMorph {2}{U}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Dermoplasm is turned face up, you may put a creature card with morph from your hand into play face up. If you do, return Dermoplasm to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dd2d1938-1abe-545f-b1d6-a86751d20194",
+            "name": "Dreamborn Muse",
+            "text": "At the beginning of each player's upkeep, that player puts the top X cards from his or her library into his or her graveyard, where X is the number of cards in his or her hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df3dc7ea-127d-5d69-aa37-da37fd6a4d53",
+            "name": "Echo Tracer",
+            "text": "Morph {2}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Echo Tracer is turned face up, return target creature to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1cba44ba-6466-55a9-9d82-ef832fd40256",
+            "name": "Fugitive Wizard",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "48d395ec-9777-59a7-bd16-a9bd0b2d7fca",
+            "name": "Gempalm Sorcerer",
+            "text": "Cycling {2}{U} ({2}{U}, Discard this card from your hand: Draw a card.)\nWhen you cycle Gempalm Sorcerer, all Wizards gain flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea36f9f2-011d-5239-a37b-83c84d68d908",
+            "name": "Glintwing Invoker",
+            "text": "{7}{U}: Glintwing Invoker gets +3/+3 and gains flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "55fc0d0e-1c46-550e-8c7b-c09c6b7880ab",
+            "name": "Keeneye Aven",
+            "text": "Flying\nCycling {2} ({2}, Discard this card from your hand: Draw a card.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cd45e77e-80ea-502a-a647-a53928b0eeaa",
+            "name": "Keeper of the Nine Gales",
+            "text": "Flying\n{T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e5593a9e-7da1-5622-bb79-56aafbd0235c",
+            "name": "Master of the Veil",
+            "text": "Morph {2}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Master of the Veil is turned face up, you may turn target creature with morph face down.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ee62e2e-1e3a-52bf-9a2e-3be262d6f222",
+            "name": "Merchant of Secrets",
+            "text": "When Merchant of Secrets comes into play, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e84dd67-1d4d-516a-8ef1-e4be5b5b4c7d",
+            "name": "Mistform Seaswift",
+            "text": "Flying\n{1}: Mistform Seaswift's type becomes the creature type of your choice until end of turn.\nMorph {1}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2053371e-6a38-5697-bed7-e84e32dea646",
+            "name": "Mistform Sliver",
+            "text": "All Slivers have \"{1}: This creature's type becomes the creature type of your choice in addition to its other types until end of turn.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f7964cf4-2d23-5da4-b326-268eac991968",
+            "name": "Mistform Ultimus",
+            "text": "Mistform Ultimus is every creature type (even if this card isn't in play).\nMistform Ultimus may attack as though it weren't a Wall.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "668e3bad-5731-52d6-aac1-9cecf848ce83",
+            "name": "Mistform Wakecaster",
+            "text": "Flying\n{1}: Mistform Wakecaster's type becomes the creature type of your choice until end of turn.\n{2}{U}{U}, {T}: Choose a creature type. The type of each creature you control becomes that type until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a8b6c9d9-c5c9-5144-9d92-69bc5b8a6564",
+            "name": "Primoc Escapee",
+            "text": "Flying\nCycling {2} ({2}, Discard this card from your hand: Draw a card.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85af368f-a552-5cb8-85e0-f47d6ecb84b9",
+            "name": "Riptide Director",
+            "text": "{2}{U}{U}, {T}: Draw a card for each Wizard you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e05fb82f-de0f-542a-aafa-9574f40ed57f",
+            "name": "Riptide Mangler",
+            "text": "{1}{U}: Change Riptide Mangler's power to target creature's power. (It doesn't change back at end of turn.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "22a426df-d521-500c-9e9b-7287163f9366",
+            "name": "Shifting Sliver",
+            "text": "Slivers can't be blocked except by Slivers.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aecf601c-b7c6-5758-861e-bd0742cb3aac",
+            "name": "Synapse Sliver",
+            "text": "Whenever a Sliver deals combat damage to a player, its controller may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1103143b-89f1-5608-8e82-ee23b45a2f76",
+            "name": "Voidmage Apprentice",
+            "text": "Morph {2}{U}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Voidmage Apprentice is turned face up, counter target spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02c68aea-ec27-5f67-9b3b-bd4733fc631a",
+            "name": "Wall of Deceit",
+            "text": "(Walls can't attack.)\n{3}: Turn Wall of Deceit face down.\nMorph {U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5eff3001-2c9c-51ae-9711-f0a3aa4ee619",
+            "name": "Warped Researcher",
+            "text": "Whenever a player cycles a card, Warped Researcher gains flying until end of turn and can't be the target of spells or abilities this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01ff277a-47a4-5612-b00f-7f6c735da1f0",
+            "name": "Weaver of Lies",
+            "text": "Morph {4}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Weaver of Lies is turned face up, turn any number of target creatures with morph other than Weaver of Lies face down.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "327e9043-f65e-550f-bf97-d902fd488ef9",
+            "name": "Willbender",
+            "text": "Morph {1}{U} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Willbender is turned face up, change the target of target spell or ability with a single target.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a3e4479-ef2c-503a-a417-2e192f3b8c92",
+            "name": "Aphetto Exterminator",
+            "text": "Morph {3}{B} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Aphetto Exterminator is turned face up, target creature gets -3/-3 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4f5563be-d910-5df4-b376-068123c9f801",
+            "name": "Bane of the Living",
+            "text": "Morph {X}{B}{B} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Bane of the Living is turned face up, all creatures get -X/-X until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2201379c-1d42-5ce4-93e5-9654eb2f4a94",
+            "name": "Blood Celebrant",
+            "text": "{B}, Pay 1 life: Add one mana of any color to your mana pool.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3ef71c2-bd0d-5e59-b09c-1f6a67ba3811",
+            "name": "Corpse Harvester",
+            "text": "{1}{B}, {T}, Sacrifice a creature: Search your library for a Zombie card and a swamp card, reveal them, and put them into your hand. Then shuffle your library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb2c7395-9e59-5b37-981a-e055d91a7089",
+            "name": "Crypt Sliver",
+            "text": "All Slivers have \"{T}: Regenerate target Sliver.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3e81d27-f6b0-5ff5-96f7-490bde928d5b",
+            "name": "Dark Supplicant",
+            "text": "{T}, Sacrifice three Clerics: Search your graveyard, hand, and/or library for a card named Scion of Darkness and put it into play. If you search your library this way, shuffle it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "36c49a97-1d92-57f4-96dc-f4147ec89efc",
+            "name": "Deathmark Prelate",
+            "text": "{2}{B}, {T}, Sacrifice a Zombie: Destroy target non-Zombie creature. It can't be regenerated. Play this ability only any time you could play a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e9af6c42-21b5-5d1f-921b-98047449bab3",
+            "name": "Drinker of Sorrow",
+            "text": "Drinker of Sorrow can't block.\nWhenever Drinker of Sorrow deals combat damage, sacrifice a permanent.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5aa61697-2235-5253-ad0b-ad0299d0ffce",
+            "name": "Dripping Dead",
+            "text": "Dripping Dead can't block.\nWhenever Dripping Dead deals combat damage to a creature, destroy that creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d4e55da6-30ec-56ae-a67c-154dbe93a322",
+            "name": "Earthblighter",
+            "text": "{2}{B}, {T}, Sacrifice a Goblin: Destroy target land.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bfd6cf0d-7236-521f-a191-5dfa0e862539",
+            "name": "Embalmed Brawler",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)\nWhenever Embalmed Brawler attacks or blocks, you lose 1 life for each +1/+1 counter on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ffa601ca-22dd-50ea-9aed-99593816fe81",
+            "name": "Gempalm Polluter",
+            "text": "Cycling {B}{B} ({B}{B}, Discard this card from your hand: Draw a card.)\nWhen you cycle Gempalm Polluter, you may have target player lose 1 life for each Zombie in play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a0c80ee-63c7-5d90-9838-65da46a6e5e2",
+            "name": "Ghastly Remains",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)\nAt the beginning of your upkeep, if Ghastly Remains is in your graveyard, you may pay {B}{B}{B}. If you do, return Ghastly Remains to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "519d3cec-277e-5bfa-af7b-e9e73329c235",
+            "name": "Goblin Turncoat",
+            "text": "Sacrifice a Goblin: Regenerate Goblin Turncoat.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b5479269-b96f-513d-ad78-aceacac17aa6",
+            "name": "Graveborn Muse",
+            "text": "At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ed2b2260-41f9-5814-8f6b-5f9cd330450b",
+            "name": "Havoc Demon",
+            "text": "Flying\nWhen Havoc Demon is put into a graveyard from play, all creatures get -5/-5 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f9ceb186-7297-51d2-ad6a-0b9483d8a6d8",
+            "name": "Hollow Specter",
+            "text": "Flying\nWhenever Hollow Specter deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from his or her hand and you choose one of them. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "15ad5e18-3f8a-55b6-8063-83f4c91336d9",
+            "name": "Infernal Caretaker",
+            "text": "Morph {3}{B} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Infernal Caretaker is turned face up, return all Zombie cards from all graveyards to their owners' hands.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "faf52df1-c6cc-5ecd-ae23-dd2cbcb26b3e",
+            "name": "Noxious Ghoul",
+            "text": "Whenever Noxious Ghoul or another Zombie comes into play, all non-Zombie creatures get -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "12ea9045-f0ca-5190-b7f3-71707554e20d",
+            "name": "Phage the Untouchable",
+            "text": "When Phage the Untouchable comes into play, if you didn't play it from your hand, you lose the game.\nWhenever Phage deals combat damage to a creature, destroy that creature. It can't be regenerated.\nWhenever Phage deals combat damage to a player, that player loses the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{3}{B}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9eab83c7-206a-5ee8-a007-44e67ae1a9d6",
+            "name": "Scion of Darkness",
+            "text": "Trample\nWhenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard into play under your control.\nCycling {3} ({3}, Discard this card from your hand: Draw a card.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b6e4f9d8-c3d5-5908-b5c6-ee5873e26e96",
+            "name": "Skinthinner",
+            "text": "Morph {3}{B}{B} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Skinthinner is turned face up, destroy target nonblack creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "959a16e0-a64e-546c-9c54-a45e541d5243",
+            "name": "Smokespew Invoker",
+            "text": "{7}{B}: Target creature gets -3/-3 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c25dddbd-32fd-5ef7-aee7-4dd707720f63",
+            "name": "Sootfeather Flock",
+            "text": "Flying\nMorph {3}{B} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "414ea154-acd2-5b0b-83cb-8ab0d7889707",
+            "name": "Spectral Sliver",
+            "text": "All Slivers have \"{2}: This creature gets +1/+1 until end of turn.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "522370cc-6f34-57a5-9555-a42fdeb49db6",
+            "name": "Toxin Sliver",
+            "text": "Whenever a Sliver deals combat damage to a creature, destroy that creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de83ec85-da7c-5436-8dc9-b29513635b10",
+            "name": "Vile Deacon",
+            "text": "Whenever Vile Deacon attacks, it gets +X/+X until end of turn, where X is the number of Clerics in play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "258488cc-0015-55ff-82cf-d49d7522ee1b",
+            "name": "Withered Wretch",
+            "text": "{1}: Remove target card in a graveyard from the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2e2d15b4-ec05-59a1-ae4f-79f9aad359da",
+            "name": "Zombie Brute",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)\nTrample",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6bdef813-2ded-5692-9e32-053b7aca9a1a",
+            "name": "Blade Sliver",
+            "text": "All Slivers get +1/+0.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a1808ac4-998c-522d-88cd-1b61f67079e7",
+            "name": "Bloodstoke Howler",
+            "text": "Morph {6}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Bloodstoke Howler is turned face up, Beasts you control get +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6b73fc2b-3973-5e8e-a4a9-fdf45c8049e0",
+            "name": "Clickslither",
+            "text": "Haste\nSacrifice a Goblin: Clickslither gets +2/+2 and gains trample until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{R}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "77ded0b9-2884-54db-b382-42179de0c1ee",
+            "name": "Crested Craghorn",
+            "text": "Haste\nProvoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9ab4fefb-f4fb-57c7-bad5-c4b94457136b",
+            "name": "Flamewave Invoker",
+            "text": "{7}{R}: Flamewave Invoker deals 5 damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "835baff3-9990-5137-910b-064f517e049c",
+            "name": "Frenetic Raptor",
+            "text": "Beasts can't block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d35f9114-8c85-545b-823a-fa25a5d8bae2",
+            "name": "Gempalm Incinerator",
+            "text": "Cycling {1}{R} ({1}{R}, Discard this card from your hand: Draw a card.)\nWhen you cycle Gempalm Incinerator, you may have it deal X damage to target creature, where X is the number of Goblins in play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d4122d7e-ed59-5538-9257-52463fa805c2",
+            "name": "Goblin Assassin",
+            "text": "Whenever Goblin Assassin or another Goblin comes into play, each player flips a coin. Each player whose coin comes up tails sacrifices a creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a36c7ee2-ab86-51ef-b9d8-99cdb44a6075",
+            "name": "Goblin Clearcutter",
+            "text": "{T}, Sacrifice a forest: Add three mana in any combination of red and/or green to your mana pool.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "63bcb884-820d-545e-a457-5b50703ebe8c",
+            "name": "Goblin Dynamo",
+            "text": "{T}: Goblin Dynamo deals 1 damage to target creature or player.\n{X}{R}, {T}, Sacrifice Goblin Dynamo: Goblin Dynamo deals X damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0de9259-f2c4-5006-8816-442467e04bbd",
+            "name": "Goblin Firebug",
+            "text": "When Goblin Firebug leaves play, sacrifice a land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4fd98cde-ac72-5642-8f1a-c8ed16bfdd99",
+            "name": "Goblin Goon",
+            "text": "Goblin Goon can't attack unless you control more creatures than defending player.\nGoblin Goon can't block unless you control more creatures than attacking player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "99673d00-9c00-51cf-b6e3-3ec67ee76030",
+            "name": "Goblin Grappler",
+            "text": "Provoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c92b123a-7f8a-51a5-9d4c-fa7957acaef9",
+            "name": "Goblin Lookout",
+            "text": "{T}, Sacrifice a Goblin: All Goblins get +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "61056a91-7fe0-5ae7-8304-cd1b75be50ea",
+            "name": "Hunter Sliver",
+            "text": "All Slivers have provoke. (When a Sliver attacks, its controller may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "943a48ef-2055-5d6e-9a94-ee99f6627d16",
+            "name": "Imperial Hellkite",
+            "text": "Flying\nMorph {6}{R}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Imperial Hellkite is turned face up, you may search your library for a Dragon card, reveal it, and put it into your hand. If you do, shuffle your library.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0e445688-9fac-5a5f-aef6-a910a0d172bb",
+            "name": "Kilnmouth Dragon",
+            "text": "Amplify 3 (As this card comes into play, put three +1/+1 counters on it for each Dragon card you reveal in your hand.)\nFlying\n{T}: Kilnmouth Dragon deals damage equal to the number of +1/+1 counters on it to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "84629309-151a-57f1-9eda-1ab4cd8b8982",
+            "name": "Lavaborn Muse",
+            "text": "At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, Lavaborn Muse deals 3 damage to him or her.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e19f2099-717e-5910-ae33-10bfd85ad949",
+            "name": "Macetail Hystrodon",
+            "text": "First strike, haste\nCycling {3} ({3}, Discard this card from your hand: Draw a card.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4f6b945d-e7a4-5ccf-81dd-30a8caf519c4",
+            "name": "Magma Sliver",
+            "text": "All Slivers have \"{T}: Target Sliver gets +X/+0 until end of turn, where X is the number of Slivers in play.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dd404ecf-1ad2-5130-94b6-1c8ad1a760f7",
+            "name": "Ridgetop Raptor",
+            "text": "Double strike (This creature deals both first-strike and regular combat damage.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fe8314d6-fcec-5394-8562-49c65711d160",
+            "name": "Rockshard Elemental",
+            "text": "Double strike (This creature deals both first-strike and regular combat damage.)\nMorph {4}{R}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "07fc0ee6-8f6d-51c4-8983-87e3e24d583d",
+            "name": "Shaleskin Plower",
+            "text": "Morph {4}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Shaleskin Plower is turned face up, destroy target land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "80345ec8-caef-54a8-b748-11f781a49916",
+            "name": "Skirk Alarmist",
+            "text": "Haste\n{T}: Turn target face-down creature you control face up. At end of turn, sacrifice it.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "928fdb7c-d1c2-5f41-ab9c-f389aedb0007",
+            "name": "Skirk Drill Sergeant",
+            "text": "Whenever Skirk Drill Sergeant or another Goblin is put into a graveyard from play, you may pay {2}{R}. If you do, reveal the top card of your library. If it's a Goblin card, put it into play. Otherwise, put it into your graveyard.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2f5f5637-725a-5dfe-850d-dba261431406",
+            "name": "Skirk Marauder",
+            "text": "Morph {2}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Skirk Marauder is turned face up, it deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e31beb95-9126-5eb3-9c1a-6939d3e2950b",
+            "name": "Skirk Outrider",
+            "text": "Skirk Outrider gets +2/+2 and has trample as long as you control a Beast.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0eb9319b-6e9a-5e84-8ab7-c7bbc9175793",
+            "name": "Unstable Hulk",
+            "text": "Morph {3}{R}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Unstable Hulk is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "61f87fab-ac2e-5461-b092-f3e173020262",
+            "name": "Warbreak Trumpeter",
+            "text": "Morph {X}{X}{R} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Warbreak Trumpeter is turned face up, put X 1/1 red Goblin creature tokens into play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c2c583b1-7e04-58e7-a297-98f64748221e",
+            "name": "Berserk Murlodont",
+            "text": "Whenever a Beast becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11f318e6-0da0-59fc-8dc4-c15597c03962",
+            "name": "Branchsnap Lorian",
+            "text": "Trample\nMorph {G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "51ca5353-fca4-546c-be46-7ea3b0076015",
+            "name": "Brontotherium",
+            "text": "Trample\nProvoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "57c66987-de4e-5dca-8751-b7f651f049c7",
+            "name": "Brood Sliver",
+            "text": "Whenever a Sliver deals combat damage to a player, its controller may put a 1/1 colorless Sliver creature token into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab6da8d9-b56b-5e5d-955c-136f59157f25",
+            "name": "Caller of the Claw",
+            "text": "You may play Caller of the Claw any time you could play an instant.\nWhen Caller of the Claw comes into play, put a 2/2 green Bear creature token into play for each nontoken creature put into your graveyard from play this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b0efc90-f094-5a6f-b2ad-8ad842da6342",
+            "name": "Canopy Crawler",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Beast card you reveal in your hand.)\n{T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on Canopy Crawler.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f6f3eb7-d2d6-5dd2-afc5-87a66ed3a880",
+            "name": "Defiant Elf",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "12310578-7547-5e61-881d-be553a74ff25",
+            "name": "Elvish Soultiller",
+            "text": "When Elvish Soultiller is put into a graveyard from play, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "634c9d56-a13f-5176-8f40-1ee0bd0f73c3",
+            "name": "Enormous Baloth",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1ae017c-2312-52a5-bc8e-d4ed262ba9fd",
+            "name": "Feral Throwback",
+            "text": "Amplify 2 (As this card comes into play, put two +1/+1 counters on it for each Beast card you reveal in your hand.)\nProvoke (When this attacks, you may have target creature defending player controls untap and block it if able.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8f1d2c61-f191-5256-b1e5-71a5195ae1b5",
+            "name": "Gempalm Strider",
+            "text": "Cycling {2}{G}{G} ({2}{G}{G}, Discard this card from your hand: Draw a card.)\nWhen you cycle Gempalm Strider, all Elves get +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "98e6c52d-9fa9-5087-ac6b-7c48052550f4",
+            "name": "Glowering Rogon",
+            "text": "Amplify 1 (As this card comes into play, put a +1/+1 counter on it for each Beast card you reveal in your hand.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e5cc1438-666c-53ab-b84b-3a3248291b35",
+            "name": "Hundroog",
+            "text": "Cycling {3} ({3}, Discard this card from your hand: Draw a card.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d2680f13-b8b2-5078-9d9a-c18158eafd00",
+            "name": "Krosan Cloudscraper",
+            "text": "At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}.\nMorph {7}{G}{G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 10.0,
+            "manaCost": "{7}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8168b98b-0d78-5c87-a8c8-b32011d58e2a",
+            "name": "Krosan Vorine",
+            "text": "Provoke (When this attacks, you may have target creature defending player controls untap and block it if able.)\nKrosan Vorine can't be blocked by more than one creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c09f8235-9bd2-5a83-9399-369145573f3c",
+            "name": "Nantuko Vigilante",
+            "text": "Morph {1}{G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Nantuko Vigilante is turned face up, destroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3aabf95b-e31c-5a9e-a66d-c7d559d99d8c",
+            "name": "Needleshot Gourna",
+            "text": "Needleshot Gourna may block as though it had flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eba773f3-d908-59a4-b268-bb14f5dee69f",
+            "name": "Patron of the Wild",
+            "text": "Morph {2}{G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Patron of the Wild is turned face up, target creature gets +3/+3 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f3275338-4cb9-5b79-8437-c8d69360d0dc",
+            "name": "Primal Whisperer",
+            "text": "Primal Whisperer gets +2/+2 for each face-down creature in play.\nMorph {3}{G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03122b07-59f6-5352-8a9e-0d5cb972e5d4",
+            "name": "Quick Sliver",
+            "text": "You may play Quick Sliver any time you could play an instant.\nAny player may play Sliver cards any time he or she could play an instant.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "67147a39-a02b-561d-9957-8e4053cbac75",
+            "name": "Root Sliver",
+            "text": "Root Sliver can't be countered.\nSliver spells can't be countered.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7993e139-846b-52ae-9096-6ce8f256f782",
+            "name": "Seedborn Muse",
+            "text": "Untap all permanents you control during each other player's untap step.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "90e39758-c6dc-5def-943a-b41a5e52f747",
+            "name": "Stonewood Invoker",
+            "text": "{7}{G}: Stonewood Invoker gets +5/+5 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "174d052d-a88b-5cdd-9004-a485a01dfd80",
+            "name": "Timberwatch Elf",
+            "text": "{T}: Target creature gets +X/+X until end of turn, where X is the number of Elves in play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df838e91-e28e-5c70-87ff-ef75456111e6",
+            "name": "Totem Speaker",
+            "text": "Whenever a Beast comes into play, you may gain 3 life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "32a54d96-3a03-5625-992e-5a1b7478ea10",
+            "name": "Tribal Forcemage",
+            "text": "Morph {1}{G} (You may play this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)\nWhen Tribal Forcemage is turned face up, creatures of the type of your choice get +2/+2 and gain trample until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ecb1a118-5fca-5f8e-b6fb-306b44c32f26",
+            "name": "Vexing Beetle",
+            "text": "Vexing Beetle can't be countered.\nVexing Beetle gets +3/+3 as long as no opponent controls a creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "139786eb-5640-58e2-9981-53301246748c",
+            "name": "Wirewood Channeler",
+            "text": "{T}: Add X mana of any one color to your mana pool, where X is the number of Elves in play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "964d0b5d-3838-5a7d-b7f0-fc46bd24de0a",
+            "name": "Wirewood Hivemaster",
+            "text": "Whenever another nontoken Elf comes into play, you may put a 1/1 green Insect creature token into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "LGN",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        }
+    ]
+}

@@ -1,0 +1,3301 @@
+{
+    "setCode": "PLS",
+    "setName": "Planeshift",
+    "cards": [
+        {
+            "id": "8ce57c19-2905-5bf7-827b-53fe450ff2c0",
+            "name": "Aura Blast",
+            "text": "Destroy target enchantment.\nDraw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e4f4460-ff0a-581a-8570-639b89fd6896",
+            "name": "Aurora Griffin",
+            "text": "Flying\no\nW: Target permanent becomes white until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e9cb3842-250d-500f-af38-97e21e28b822",
+            "name": "Disciple of Kangee",
+            "text": "o\nU, oc\nT: Target creature gains flying and becomes blue until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0959cb88-17ca-5937-8ffa-e043c0226c34",
+            "name": "Dominaria's Judgment",
+            "text": "Until end of turn, creatures you control gain protection from white if you control a plains, from blue if you control an island, from black if you control a swamp, from red if you control a mountain, and from green if you control a forest.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "87e89326-a262-587b-9b70-6be118e8583c",
+            "name": "Guard Dogs",
+            "text": "o2o\nW, oc\nT: Choose a permanent you control. Prevent all combat damage target creature would deal this turn if it shares a color with that permanent.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d98c1260-dc4f-5379-b0ff-4100f5cf5521",
+            "name": "Heroic Defiance",
+            "text": "Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a6838491-11c1-5915-a77d-37701d7ec8ef",
+            "name": "Hobble",
+            "text": "When Hobble comes into play, draw a card.\nEnchanted creature can't attack.\nEnchanted creature can't block if it's black.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "af68d99d-ad07-55d4-8ba6-0637f2b736f9",
+            "name": "Honorable Scout",
+            "text": "When Honorable Scout comes into play, you gain 2 life for each black and/or red creature target opponent controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85b61b06-68c8-53a2-ac4d-6daa8ccafc51",
+            "name": "Lashknife Barrier",
+            "text": "When Lashknife Barrier comes into play, draw a card.\nIf a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "be92b3c7-774b-5d77-9498-c83e183accd0",
+            "name": "March of Souls",
+            "text": "Destroy all creatures. They can't be regenerated. For each creature destroyed this way, its controller puts a 1/1 white Spirit creature token with flying into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e9b8491-7120-5d14-bb9f-3094b57512b7",
+            "name": "Orim's Chant",
+            "text": "Kicker o\nW (You may pay an additional o\nW as you play this spell.)\nTarget player can't play spells this turn.\nIf you paid the kicker cost, creatures can't attack this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c904aec-dd4d-52ca-83e9-0cd24f2da68b",
+            "name": "Planeswalker's Mirth",
+            "text": "o3o\nW: Target opponent reveals a card at random from his or her hand. You gain life equal to that card's converted mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3b6f5982-ef4a-545b-9cd6-9258d7d5d0d2",
+            "name": "Pollen Remedy",
+            "text": "Kicker\u2014\nSacrifice a land. (You may sacrifice a land in addition to any other costs as you play this spell.)\nPrevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If you paid the kicker cost, prevent the next 6 damage this way instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e957e5e0-af17-50ac-80a7-7e111b48cd68",
+            "name": "Samite Elder",
+            "text": "oc\nT: Creatures you control gain protection from the color(s) of target permanent you control until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b58190d-e889-5005-8b62-5d324531ac29",
+            "name": "Samite Pilgrim",
+            "text": "oc\nT: Prevent the next X damage that would be dealt to target creature this turn, where X is the number of basic land types among lands you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7945e1a8-b60e-5e86-833d-c9a0cc025fbb",
+            "name": "Sunscape Battlemage",
+            "text": "Kicker o1o\nG and/or o2o\nU\nWhen Sunscape Battlemage comes into play, if you paid the o1o\nG kicker cost, destroy target creature with flying.\nWhen Sunscape Battlemage comes into play, if you paid the o2o\nU kicker cost, draw two cards.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4314b8d5-c006-5a68-b5b1-55f5875c0135",
+            "name": "Sunscape Familiar",
+            "text": "(Walls can't attack.)\nGreen spells and blue spells you play cost o1 less to play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6c8009e7-3cde-5d0e-a3b9-e37f8887b030",
+            "name": "Surprise Deployment",
+            "text": "Play Surprise Deployment only during combat.\nPut a nonwhite creature card from your hand into play. At end of turn, return that creature to your hand. (Return it only if it's in play.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1f811e0c-5a19-50f6-bb16-69818397d944",
+            "name": "Voice of All",
+            "text": "Flying\nAs Voice of All comes into play, choose a color.\nVoice of All has protection from the chosen color.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3baab717-273c-5a1b-ae27-9dd1daecbe0f",
+            "name": "Allied Strategies",
+            "text": "Target player draws a card for each basic land type among lands he or she controls.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30e73f2c-fd65-50c6-a32e-39b7339f53e8",
+            "name": "Arctic Merfolk",
+            "text": "Kicker\u2014\nReturn a creature you control to its owner's hand. (You may return a creature you control to its owner's hand in addition to any other costs as you play this spell.)\nIf you paid the kicker cost, Arctic Merfolk comes into play with a +1/+1 counter on it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f49a8e7-6f04-5559-9931-959e069223f9",
+            "name": "Confound",
+            "text": "Counter target spell that targets one or more creatures.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "973fc21e-18b7-5827-94b4-1d41ba814823",
+            "name": "Dralnu's Pet",
+            "text": "Kicker\u2014o2o\nB, Discard a creature card from your hand. (You may pay o2o\nB and discard a creature card from your hand in addition to any other costs as you play this spell.)\nIf you paid the kicker cost, Dralnu's Pet has flying and comes into play with X +1/+1 counters on it, where X is the discarded card's converted mana cost.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0973d41e-72d5-5a4a-b967-7d18852ebaeb",
+            "name": "Ertai's Trickery",
+            "text": "Counter target spell if a kicker cost was paid for it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9455e0b3-015f-5e77-9ab8-67302037ca02",
+            "name": "Escape Routes",
+            "text": "o2o\nU: Return target white or black creature you control to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6dc19cc5-2c4f-5d64-a16d-18813d2bb5b8",
+            "name": "Gainsay",
+            "text": "Counter target blue spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8d0ad1ba-5cdd-53a6-b79d-4b82e9553169",
+            "name": "Hunting Drake",
+            "text": "Flying\nWhen Hunting Drake comes into play, put target red or green creature on top of its owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "942a7fc4-2d8f-58b0-b83f-8de1c50f051d",
+            "name": "Planar Overlay",
+            "text": "Each player chooses a land he or she controls of each basic land type. Return those lands to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "60707b67-c552-5e51-a569-7e64a04761ef",
+            "name": "Planeswalker's Mischief",
+            "text": "o3o\nU: Target opponent reveals a card at random from his or her hand. If it's an instant or sorcery card, remove it from the game. As long as it remains removed from the game, you may play it as though it were in your hand without paying its mana cost. If it has X in its mana cost, X is 0. At end of turn, if you haven't played it, return it to its owner's hand. Play this ability only any time you could play a sorcery.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1d433d60-e483-5b00-ac00-5edb4a686621",
+            "name": "Rushing River",
+            "text": "Kicker\u2014\nSacrifice a land. (You may sacrifice a land in addition to any other costs as you play this spell.)\nReturn target nonland permanent to its owner's hand. If you paid the kicker cost, return another target nonland permanent to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "afbd07ea-0623-54e6-84fc-3236e80a027d",
+            "name": "Sea Snidd",
+            "text": "oc\nT: Target land's type becomes the basic land type of your choice until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc2388d2-3a96-5720-9b78-9996749d902d",
+            "name": "Shifting Sky",
+            "text": "As Shifting Sky comes into play, choose a color.\nAll nonland permanents are the chosen color.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "10e92b09-ebc4-5d20-a7bf-0477cfc5dbfc",
+            "name": "Sisay's Ingenuity",
+            "text": "When Sisay's Ingenuity comes into play, draw a card.\nEnchanted creature has \"o2o\nU: Target creature becomes the color of your choice until end of turn.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "080a47d1-e3c6-5bd8-888a-cf4762deb6b7",
+            "name": "Sleeping Potion",
+            "text": "When Sleeping Potion comes into play, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.\nWhen enchanted creature becomes the target of a spell or ability, sacrifice Sleeping Potion.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "beeb6bcf-223b-5d41-aa42-b0cfe20503bd",
+            "name": "Stormscape Battlemage",
+            "text": "Kicker o\nW and/or o2o\nB\nWhen Stormscape Battlemage comes into play, if you paid the o\nW kicker cost, you gain 3 life.\nWhen Stormscape Battlemage comes into play, if you paid the o2o\nB kicker cost, destroy target nonblack creature. That creature can't be regenerated.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4d783b25-5b95-53f9-b11f-459536142400",
+            "name": "Stormscape Familiar",
+            "text": "Flying\nWhite spells and black spells you play cost {1} less to play.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "75dc6a8b-7726-5d43-9516-f35da01ae75d",
+            "name": "Sunken Hope",
+            "text": "At the beginning of each player's upkeep, that player returns a creature he or she controls to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0d2d7d77-1c66-5684-80ed-4fc867c77930",
+            "name": "Waterspout Elemental",
+            "text": "Kicker o\nU (You may pay an additional o\nU as you play this spell.)\nFlying\nWhen Waterspout Elemental comes into play, if you paid the kicker cost, return all other creatures to their owners' hands and you skip your next turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "87515dd9-3574-555b-8707-cec4b845ab4e",
+            "name": "Bog Down",
+            "text": "Kicker\u2014\nSacrifice two lands. (You may sacrifice two lands in addition to any other costs as you play this spell.)\nTarget player discards two cards from his or her hand. If you paid the kicker cost, that player discards three cards from his or her hand instead.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "65dfc8a7-27bd-58fc-93cb-c95209d2aaf0",
+            "name": "Dark Suspicions",
+            "text": "At the beginning of each opponent's upkeep, that player loses 1 life for each card in his or her hand more than you have in your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c5681401-b898-5287-808d-2d451e245c50",
+            "name": "Death Bomb",
+            "text": "As an additional cost to play Death Bomb, sacrifice a creature.\nDestroy target nonblack creature. It can't be regenerated. Its controller loses 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dbc1f65a-6a48-5f9f-a63d-9af50294a31e",
+            "name": "Diabolic Intent",
+            "text": "As an additional cost to play Diabolic Intent, sacrifice a creature.\nSearch your library for a card and put that card into your hand. Then shuffle your library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "56ef52f1-cc45-55ec-83d5-3fc41db0ed25",
+            "name": "Exotic Disease",
+            "text": "Target player loses X life and you gain X life, where X is the number of basic land types among lands you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e76db16-0bc2-527d-b0a9-98b94fa43c1a",
+            "name": "Lord of the Undead",
+            "text": "All Zombies get +1/+1.\no1o\nB, oc\nT: Return target Zombie card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5b1d5e02-6af1-5ccb-8163-c9ab9b32c0d7",
+            "name": "Maggot Carrier",
+            "text": "When Maggot Carrier comes into play, each player loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bc259785-df34-5342-acd5-bebe2d1d78d2",
+            "name": "Morgue Toad",
+            "text": "Sacrifice Morgue Toad: Add o\nUo\nR to your mana pool.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cdba7571-bb85-5a42-a76d-d70a93d96a75",
+            "name": "Nightscape Battlemage",
+            "text": "Kicker o2o\nU and/or o2o\nR\nWhen Nightscape Battlemage comes into play, if you paid the o2o\nU kicker cost, return up to two target nonblack creatures to their owners' hands.\nWhen Nightscape Battlemage comes into play, if you paid the o2o\nR kicker cost, destroy target land.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27900460-ae79-5b11-bdff-9926cfbbb643",
+            "name": "Nightscape Familiar",
+            "text": "Blue spells and red spells you play cost o1 less to play.\no1o\nB: Regenerate Nightscape Familiar.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "088278b7-b10e-5234-86fa-1931f223b671",
+            "name": "Noxious Vapors",
+            "text": "Each player reveals his or her hand and chooses one card of each color from it, then discards all other nonland cards from it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d841c9c2-1279-516e-96d2-00e542dd9795",
+            "name": "Phyrexian Bloodstock",
+            "text": "When Phyrexian Bloodstock leaves play, destroy target white creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b2bde8b6-9509-5a37-8bd1-f306d24acbf4",
+            "name": "Phyrexian Scuta",
+            "text": "Kicker\u2014\nPay 3 life. (You may pay 3 life in addition to any other costs as you play this spell.)\nIf you paid the kicker cost, Phyrexian Scuta comes into play with two +1/+1 counters on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3e86b5c5-6ce7-5032-8bfa-c083c3c71f8d",
+            "name": "Planeswalker's Scorn",
+            "text": "o3o\nB: Target opponent reveals a card at random from his or her hand. Target creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost. Play this ability only any time you could play a sorcery.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "097a4ad2-5210-5ed8-8063-499925351573",
+            "name": "Shriek of Dread",
+            "text": "Target creature can't be blocked this turn except by artifact creatures and/or black creatures.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c54c78a-dfc3-50b7-b4e9-3458e43c1d5a",
+            "name": "Sinister Strength",
+            "text": "Enchanted creature gets +3/+1 and is black.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "139f4f43-a39b-5d3a-b76b-b4c9b5f8e094",
+            "name": "Slay",
+            "text": "Destroy target green creature. It can't be regenerated.\nDraw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa25ffd2-6dbe-5803-afb4-491765d39805",
+            "name": "Volcano Imp",
+            "text": "Flying\no1o\nR: Volcano Imp gains first strike until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "95561d09-fa4a-552b-a52e-3a95ccba6923",
+            "name": "Warped Devotion",
+            "text": "Whenever a permanent is returned to a player's hand, that player discards a card from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "97c7174f-9fa0-5cdd-9c21-824b4f1c7bb0",
+            "name": "Caldera Kavu",
+            "text": "o1o\nB: Caldera Kavu gets +1/+1 until end of turn.\no\nG: Caldera Kavu becomes the color of your choice until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "816a6f1e-c6f5-582e-858d-8217df08063b",
+            "name": "Deadapult",
+            "text": "o\nR, Sacrifice a Zombie: Deadapult deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c506bf42-ac04-5b39-a8b8-3b1bfaca00f5",
+            "name": "Flametongue Kavu",
+            "text": "When Flametongue Kavu comes into play, it deals 4 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6cdf8e34-ae2a-53b3-8692-b3f19cfba2a9",
+            "name": "Goblin Game",
+            "text": "Each player hides at least one object, then all players reveal them simultaneously. Each player loses life equal to the number of objects he or she revealed. The player who revealed the fewest objects then loses half his or her life, rounded up. If two or more players are tied for fewest, each loses half his or her life, rounded up.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eefd3b77-e95f-5f6f-8a63-fe6d38bc3292",
+            "name": "Implode",
+            "text": "Destroy target land.\nDraw a card.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a0136e48-0c39-54e6-b647-bb84eccc68e0",
+            "name": "Insolence",
+            "text": "Whenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f50aa24c-7659-5f01-b8c4-cafe3d1ef17c",
+            "name": "Kavu Recluse",
+            "text": "oc\nT: Target land becomes a forest until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c7395e8-38b2-5c6d-a5ef-bf0ba485811e",
+            "name": "Keldon Mantle",
+            "text": "o\nB: Regenerate enchanted creature.\no\nR: Enchanted creature gets +1/+0 until end of turn.\no\nG: Enchanted creature gains trample until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f5ce237d-54ce-5fc6-a800-4a216fc1d66b",
+            "name": "Magma Burst",
+            "text": "Kicker\u2014\nSacrifice two lands. (You may sacrifice two lands in addition to any other costs as you play this spell.)\nMagma Burst deals 3 damage to target creature or player. If you paid the kicker cost, Magma Burst deals 3 damage to another target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0010f07c-a2e4-5ca5-b91a-fbc5f0380d45",
+            "name": "Mire Kavu",
+            "text": "Mire Kavu gets +1/+1 as long as you control a swamp.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e57027a5-68e8-5596-b8fc-57f04ba91dd7",
+            "name": "Mogg Jailer",
+            "text": "Mogg Jailer can't attack if defending player controls an untapped creature with power 2 or less.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "05b0a4a4-e65a-5edc-a22d-a4ad3b631912",
+            "name": "Mogg Sentry",
+            "text": "Whenever an opponent plays a spell, Mogg Sentry gets +2/+2 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b9edaf0c-2727-5ad1-b820-4f3861c2388e",
+            "name": "Planeswalker's Fury",
+            "text": "o3o\nR: Target opponent reveals a card at random from his or her hand. Planeswalker's Fury deals damage equal to that card's converted mana cost to that player. Play this ability only any time you could play a sorcery.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a75db63b-3c0a-55b9-9bd2-93cc03113ccb",
+            "name": "Singe",
+            "text": "Singe deals 1 damage to target creature. That creature becomes black until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eeb43bcf-421b-528b-bf41-936d8de53ada",
+            "name": "Slingshot Goblin",
+            "text": "o\nR, oc\nT: Slingshot Goblin deals 2 damage to target blue creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eef8286d-a535-53fb-bfde-8dc49d6b8815",
+            "name": "Strafe",
+            "text": "Strafe deals 3 damage to target nonred creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6f5fae0-0fc2-5289-be7e-9093215892db",
+            "name": "Tahngarth, Talruum Hero",
+            "text": "Attacking doesn't cause Tahngarth, Talruum Hero to tap.\no1o\nR, oc\nT: Tahngarth deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2e8d1ebb-db0b-5976-a936-f83fba5cd95c",
+            "name": "Tahngarth, Talruum Hero",
+            "text": "Attacking doesn't cause Tahngarth, Talruum Hero to tap.\no1o\nR, oc\nT: Tahngarth deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "19b02e4d-3584-563e-8e28-1abc74f86a5d",
+            "name": "Thunderscape Battlemage",
+            "text": "Kicker o1o\nB and/or o\nG\nWhen Thunderscape Battlemage comes into play, if you paid the o1o\nB kicker cost, target player discards two cards from his or her hand.\nWhen Thunderscape Battlemage comes into play, if you paid the o\nG kicker cost, destroy target enchantment.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "06e9a08c-f135-5f53-bdc3-e427f855db24",
+            "name": "Thunderscape Familiar",
+            "text": "First strike\nBlack spells and green spells you play cost o1 less to play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b61822ce-c549-553c-9207-f2955c302606",
+            "name": "Alpha Kavu",
+            "text": "o1o\nG: Target Kavu gets -1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9bb04c0f-43cb-5cd3-97be-b8525aeb4016",
+            "name": "Amphibious Kavu",
+            "text": "Whenever Amphibious Kavu blocks or becomes blocked by one or more blue and/or black creatures, Amphibious Kavu gets +3/+3 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2f5e6386-32d8-5ee7-b6a5-00eb2daffd28",
+            "name": "Falling Timber",
+            "text": "Kicker\u2014\nSacrifice a land. (You may sacrifice a land in addition to any other costs as you play this spell.)\nPrevent all combat damage target creature would deal this turn. If you paid the kicker cost, prevent all combat damage another target creature would deal this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3e02adbb-5c6c-54c7-8540-bf81809ce9b8",
+            "name": "Gaea's Herald",
+            "text": "Creature spells can't be countered by spells or abilities.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d53c5091-657e-50d2-a78d-aa78867e9c67",
+            "name": "Gaea's Might",
+            "text": "Target creature gets +1/+1 until end of turn for each basic land type among lands you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de543f98-d170-55a7-a73a-01a38a90fdaa",
+            "name": "Magnigoth Treefolk",
+            "text": "For each basic land type among lands you control, Magnigoth Treefolk has landwalk of that type. (It's unblockable as long as defending player controls a land of that type.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba9ac79f-53a3-5361-90e9-d71efdf21492",
+            "name": "Mirrorwood Treefolk",
+            "text": "o2o\nRo\nW: The next time damage would be dealt to Mirrorwood Treefolk this turn, that damage is dealt to target creature or player instead.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a4d1629c-8f0f-5bfd-a143-df60b51fb653",
+            "name": "Multani's Harmony",
+            "text": "Enchanted creature has \"oc\nT: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7c78533a-ce63-5dbd-a495-71d47ec384ea",
+            "name": "Nemata, Grove Guardian",
+            "text": "o2o\nG: Put a 1/1 green Saproling creature token into play.\nSacrifice a Saproling: All Saprolings get +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81eac25f-c260-59e6-abc0-2ad001c00df5",
+            "name": "Planeswalker's Favor",
+            "text": "o3o\nG: Target opponent reveals a card at random from his or her hand. Target creature gets +X/+X until end of turn, where X is the revealed card's converted mana cost.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9da93f26-1af3-5eed-97fa-2b3e373c2ec3",
+            "name": "Primal Growth",
+            "text": "Kicker\u2014\nSacrifice a creature. (You may sacrifice a creature in addition to any other costs as you play this spell.)\nSearch your library for a basic land card, put that card into play, then shuffle your library. If you paid the kicker cost, instead search your library for two basic land cards, put them into play, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e470925c-ac42-5eba-8833-e21b7aa3410d",
+            "name": "Pygmy Kavu",
+            "text": "When Pygmy Kavu comes into play, draw a card for each black creature your opponents control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "58a9d6b3-ed82-571b-a02f-cb1c66b81983",
+            "name": "Quirion Dryad",
+            "text": "Whenever you play a white, blue, black, or red spell, put a +1/+1 counter on Quirion Dryad.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3cb0b2a5-58b4-5ea2-a97c-6a6a22f6fecd",
+            "name": "Quirion Explorer",
+            "text": "oc\nT: Add to your mana pool one mana of any color that a land an opponent controls could produce.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "70984f12-b185-5b7a-919c-197769fedb19",
+            "name": "Root Greevil",
+            "text": "o2o\nG, oc\nT, Sacrifice Root Greevil: Destroy all enchantments of the color of your choice.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ed85869b-361a-5bbd-a3db-ebb44b6e0860",
+            "name": "Skyshroud Blessing",
+            "text": "Lands can't be the targets of spells or abilities this turn.\nDraw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb5959c2-ed7d-517b-8758-1ad48fa7530f",
+            "name": "Stone Kavu",
+            "text": "o\nR: Stone Kavu gets +1/+0 until end of turn.\no\nW: Stone Kavu gets +0/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3d331144-0a97-5f20-a513-0f3a29eb5fdb",
+            "name": "Thornscape Battlemage",
+            "text": "Kicker o\nR and/or o\nW\nWhen Thornscape Battlemage comes into play, if you paid the o\nR kicker cost, Thornscape Battlemage deals 2 damage to target creature or player.\nWhen Thornscape Battlemage comes into play, if you paid the o\nW kicker cost, destroy target artifact.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d08321fd-143d-5a39-86f6-bbbe497ae75a",
+            "name": "Thornscape Familiar",
+            "text": "Red spells and white spells you play cost o1 less to play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6d7b8ab2-376e-52e8-9101-19288b43c0e0",
+            "name": "Ancient Spider",
+            "text": "First strike\nAncient Spider may block as though it had flying.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "adcba755-a00e-51f5-a707-54efa08f7bd0",
+            "name": "Cavern Harpy",
+            "text": "Flying\nWhen Cavern Harpy comes into play, return a blue or black creature you control to its owner's hand.\nPay 1 life: Return Cavern Harpy to its owner's hand.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4622450a-601f-5426-8354-e55853b22382",
+            "name": "Cloud Cover",
+            "text": "Whenever another permanent you control becomes the target of a spell or ability an opponent controls, you may return that permanent to its owner's hand.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6b8c22a9-7af4-54d8-af73-81e8b15f7977",
+            "name": "Crosis's Charm",
+            "text": "Choose one Return target permanent to its owner's hand; or destroy target nonblack creature, and it can't be regenerated; or destroy target artifact.",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U}{B}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d26a98f8-8b31-5668-9500-934e9ba6c413",
+            "name": "Darigaaz's Charm",
+            "text": "Choose one Return target creature card from your graveyard to your hand; or Darigaaz's Charm deals 3 damage to target creature or player; or target creature gets +3/+3 until end of turn.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{R}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "003dfe5d-0406-59c5-9d8b-f2493ccfe74d",
+            "name": "Daring Leap",
+            "text": "Target creature gets +1/+1 and gains flying and first strike until end of turn.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "17302f09-7ffc-553f-83bb-8bf3a7aade72",
+            "name": "Destructive Flow",
+            "text": "At the beginning of each player's upkeep, that player sacrifices a nonbasic land.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f1af98bb-3409-56a7-a268-c3fdad8c58b4",
+            "name": "Doomsday Specter",
+            "text": "Flying\nWhen Doomsday Specter comes into play, return a blue or black creature you control to its owner's hand.\nWhenever Doomsday Specter deals combat damage to a player, look at that player's hand and choose a card from it. The player discards that card.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "da2e8a09-acb4-5797-9cbb-056c6d098f44",
+            "name": "Dralnu's Crusade",
+            "text": "All Goblins get +1/+1, are black, and are Zombies in addition to their creature types.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a47bca32-5f88-57fd-9d25-1496167a26e5",
+            "name": "Dromar's Charm",
+            "text": "Choose one You gain 5 life; or counter target spell; or target creature gets -2/-2 until end of turn.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{W}{U}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "654325fc-a312-5e4c-9233-6bb8bc317b76",
+            "name": "Eladamri's Call",
+            "text": "Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "64f532aa-9a4a-51c0-97d3-2af8619d9c49",
+            "name": "Ertai, the Corrupted",
+            "text": "o\nU, oc\nT, Sacrifice a creature or enchantment: Counter target spell.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{W}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d22484cb-0c49-5e45-80fe-4b626d67624d",
+            "name": "Ertai, the Corrupted",
+            "text": "o\nU, oc\nT, Sacrifice a creature or enchantment: Counter target spell.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{W}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8d68411a-1daa-51c2-bd1a-2319a21cbe47",
+            "name": "Fleetfoot Panther",
+            "text": "You may play Fleetfoot Panther any time you could play an instant.\nWhen Fleetfoot Panther comes into play, return a green or white creature you control to its owner's hand.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "66e11c6c-c433-5137-a492-c559ba1e01aa",
+            "name": "Gerrard's Command",
+            "text": "Untap target creature. It gets +3/+3 until end of turn.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "05ca4249-6011-5085-a81f-3d268033b9e2",
+            "name": "Horned Kavu",
+            "text": "When Horned Kavu comes into play, return a red or green creature you control to its owner's hand.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a0d09e84-8d24-59bf-bf13-aaad1b5e3175",
+            "name": "Hull Breach",
+            "text": "Choose one Destroy target artifact; or destroy target enchantment; or destroy target artifact and target enchantment.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a955c77a-86f1-57ba-b15a-567bafd5b1df",
+            "name": "Keldon Twilight",
+            "text": "At the end of each player's turn, if no creatures attacked that turn, that player sacrifices a creature he or she controlled since the beginning of the turn.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "15899809-bc96-56a8-ba0a-fadf9f4b7eea",
+            "name": "Lava Zombie",
+            "text": "When Lava Zombie comes into play, return a black or red creature you control to its owner's hand.\no2: Lava Zombie gets +1/+0 until end of turn.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "488c4a55-1124-5ffc-855f-988016a5718e",
+            "name": "Malicious Advice",
+            "text": "Tap X target artifacts, creatures, and/or lands. You lose X life.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{U}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5243207f-65be-5420-bd31-46c76ca42d4c",
+            "name": "Marsh Crocodile",
+            "text": "When Marsh Crocodile comes into play, return a blue or black creature you control to its owner's hand.\nWhen Marsh Crocodile comes into play, each player discards a card from his or her hand.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d85ee5f6-7334-57fc-b5af-2df8a3b12836",
+            "name": "Meddling Mage",
+            "text": "As Meddling Mage comes into play, name a nonland card.\nThe named card can't be played.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d491394a-d569-52b4-bd35-bce831812913",
+            "name": "Natural Emergence",
+            "text": "When Natural Emergence comes into play, return a red or green enchantment you control to its owner's hand.\nLands you control are 2/2 creatures with first strike. They're still lands.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c1cc879d-887e-5d77-b63a-7e8990111c8c",
+            "name": "Phyrexian Tyranny",
+            "text": "Whenever a player draws a card, that player loses 2 life unless he or she pays o2.",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U}{B}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "295c896e-4c00-5f78-8c37-53e599bf1602",
+            "name": "Questing Phelddagrif",
+            "text": "o\nG: Questing Phelddagrif gets +1/+1 until end of turn. Target opponent puts a 1/1 green Hippo creature token into play.\no\nW: Questing Phelddagrif gains protection from black and from red until end of turn. Target opponent gains 2 life.\no\nU: Questing Phelddagrif gains flying until end of turn. Target opponent may draw a card.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{G}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8375fab2-d00a-5259-8056-d50bdcdaf448",
+            "name": "Radiant Kavu",
+            "text": "o\nRo\nGo\nW: Prevent all combat damage blue creatures and black creatures would deal this turn.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "776ea205-4cbb-5330-88b0-c1b89b1966b3",
+            "name": "Razing Snidd",
+            "text": "When Razing Snidd comes into play, return a black or red creature you control to its owner's hand.\nWhen Razing Snidd comes into play, each player sacrifices a land.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2347a4b0-0210-56f7-ae9b-578f1284db1a",
+            "name": "Rith's Charm",
+            "text": "Choose one Destroy target nonbasic land; or put three 1/1 green Saproling creature tokens into play; or prevent all damage a source of your choice would deal this turn.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R}{G}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4e283726-d57b-50c4-9656-865b0c54dc1c",
+            "name": "Sawtooth Loon",
+            "text": "Flying\nWhen Sawtooth Loon comes into play, return a white or blue creature you control to its owner's hand.\nWhen Sawtooth Loon comes into play, draw two cards, then put two cards from your hand on the bottom of your library.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e74cb19d-fe18-5dd0-891e-4a1415e5d5fd",
+            "name": "Shivan Wurm",
+            "text": "Trample\nWhen Shivan Wurm comes into play, return a red or green creature you control to its owner's hand.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ec4ff6f5-c8ea-5764-b7c1-8d1baaf28e35",
+            "name": "Silver Drake",
+            "text": "Flying\nWhen Silver Drake comes into play, return a white or blue creature you control to its owner's hand.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b06211d3-ac38-5326-a692-eaa56f63b5a0",
+            "name": "Sparkcaster",
+            "text": "When Sparkcaster comes into play, return a red or green creature you control to its owner's hand.\nWhen Sparkcaster comes into play, it deals 1 damage to target player.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8dc49c9c-c85c-506c-9934-5db57a9cdae4",
+            "name": "Steel Leaf Paladin",
+            "text": "First strike\nWhen Steel Leaf Paladin comes into play, return a green or white creature you control to its owner's hand.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "907ada8a-00c0-59eb-93ca-6dfcfb09fcb2",
+            "name": "Terminate",
+            "text": "Destroy target creature. It can't be regenerated.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "68cd0fc0-44e2-53e4-9c0d-dbe21b9893eb",
+            "name": "Treva's Charm",
+            "text": "Choose one Destroy target enchantment; or remove target attacking creature from the game; or draw a card, then discard a card from your hand.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{G}{W}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c6d992e9-0b9f-5ac4-a5b4-036c4ae2070a",
+            "name": "Urza's Guilt",
+            "text": "Each player draws two cards, then discards three cards from his or her hand, then loses 4 life.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7ff52aaf-39e7-56c3-b591-694348f29d81",
+            "name": "Draco",
+            "text": "Draco costs o2 less to play for each basic land type among lands you control.\nFlying\nAt the beginning of your upkeep, sacrifice Draco unless you pay o10. This cost is reduced by o2 for each basic land type among lands you control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 16.0,
+            "manaCost": "{16}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "54c44056-8115-5af4-9178-add3c1d3b46f",
+            "name": "Mana Cylix",
+            "text": "o1, oc\nT: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a05c82be-c929-5720-a509-7b9f51156db9",
+            "name": "Skyship Weatherlight",
+            "text": "When Skyship Weatherlight comes into play, search your library for any number of artifact and/or creature cards and remove them from the game. Then shuffle your library.\no4, oc\nT: Choose a card at random that was removed from the game with Skyship Weatherlight. Put that card into your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dcc4ee11-6a61-55f0-966a-d19732010ffa",
+            "name": "Skyship Weatherlight",
+            "text": "When Skyship Weatherlight comes into play, search your library for any number of artifact and/or creature cards and remove them from the game. Then shuffle your library.\no4, oc\nT: Choose a card at random that was removed from the game with Skyship Weatherlight. Put that card into your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "208bc9d2-3c62-53ee-aade-bd057cf4abb3",
+            "name": "Star Compass",
+            "text": "Star Compass comes into play tapped.\noc\nT: Add to your mana pool one mana of any color a basic land you control could produce.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5bdedf8d-6f37-51b7-bdc2-258e6573222a",
+            "name": "Stratadon",
+            "text": "Stratadon costs o1 less to play for each basic land type among lands you control.\nTrample",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 10.0,
+            "manaCost": "{10}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8425ddef-69df-509f-b870-558db4dacc72",
+            "name": "Crosis's Catacombs",
+            "text": "Crosis's Catacombs is a Lair in addition to its land type.\nWhen Crosis's Catacombs comes into play, sacrifice it unless you return a non-Lair land you control to its owner's hand.\noc\nT: Add o\nU, o\nB, or o\nR to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bc710e9e-0b80-5979-bb9d-0f370276df98",
+            "name": "Darigaaz's Caldera",
+            "text": "Darigaaz's Caldera is a Lair in addition to its land type.\nWhen Darigaaz's Caldera comes into play, sacrifice it unless you return a non-Lair land you control to its owner's hand.\noc\nT: Add o\nB, o\nR, or o\nG to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6bacfb09-ac19-55bf-a214-bba1b060f4d3",
+            "name": "Dromar's Cavern",
+            "text": "Dromar's Cavern is a Lair in addition to its land type.\nWhen Dromar's Cavern comes into play, sacrifice it unless you return a non-Lair land you control to its owner's hand.\noc\nT: Add o\nW, o\nU, or o\nB to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bf573d7c-63cd-5bd2-96f0-0db504f0243e",
+            "name": "Forsaken City",
+            "text": "Forsaken City doesn't untap during your untap step.\nAt the beginning of your upkeep, you may remove a card in your hand from the game. If you do, untap Forsaken City.\noc\nT: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "734e5e9a-2672-542b-a20c-0c69bcb5a326",
+            "name": "Meteor Crater",
+            "text": "oc\nT: Choose a color of a permanent you control. Add one mana of that color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de5793cc-64f3-56ae-baef-738f8cf6006b",
+            "name": "Rith's Grove",
+            "text": "Rith's Grove is a Lair in addition to its land type.\nWhen Rith's Grove comes into play, sacrifice it unless you return a non-Lair land you control to its owner's hand.\noc\nT: Add o\nR, o\nG, or o\nW to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "06385292-2d0c-5279-92d2-0dc07ecf48d2",
+            "name": "Terminal Moraine",
+            "text": "oc\nT: Add one colorless mana to your mana pool.\no2, oc\nT, Sacrifice Terminal Moraine: Search your library for a basic land card and put that card into play tapped. Then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "90f44f37-ef3b-57ef-9a9c-29a80d35bd29",
+            "name": "Treva's Ruins",
+            "text": "Treva's Ruins is a Lair in addition to its land type.\nWhen Treva's Ruins comes into play, sacrifice it unless you return a non-Lair land you control to its owner's hand.\noc\nT: Add o\nG, o\nW, or o\nU to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "PLS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        }
+    ]
+}
