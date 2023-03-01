@@ -1,0 +1,3698 @@
+{
+    "setCode": "BOK",
+    "setName": "Betrayers of Kamigawa",
+    "cards": [
+        {
+            "id": "44e15b78-f2ee-5eba-b6cc-e0b2b3ee6026",
+            "name": "Day of Destiny",
+            "text": "Legendary creatures you control get +2/+2.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0e8f777c-b8b6-50b0-91a8-c186be7ecb90",
+            "name": "Empty-Shrine Kannushi",
+            "text": "Empty-Shrine Kannushi has protection from the colors of permanents you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7472759d-0b05-53ef-8053-951448d5d2c5",
+            "name": "Faithful Squire // Kaiso, Memory of Loyalty",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Faithful Squire.\nAt end of turn, if there are two or more ki counters on Faithful Squire, you may flip it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "74d83cb0-c66c-56e3-9f04-c73e54e5d855",
+            "isBack": false,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "74d83cb0-c66c-56e3-9f04-c73e54e5d855",
+            "name": "Faithful Squire // Kaiso, Memory of Loyalty",
+            "text": "Flying\nRemove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": true,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "e9af55f4-8aca-5d98-b19f-371b64d9bb35",
+            "name": "Final Judgment",
+            "text": "Remove all creatures from the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b69e6f6-0cbc-5b49-bc9f-91135635105a",
+            "name": "Genju of the Fields",
+            "text": "{2}: Until end of turn, enchanted Plains becomes a 2/5 white Spirit creature with \"Whenever this creature deals damage, you gain that much life.\" It's still a land.\nWhen enchanted Plains is put into a graveyard, you may return Genju of the Fields from your graveyard to your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "abb0aa58-dbb2-5e82-b39e-868662b172bb",
+            "name": "Heart of Light",
+            "text": "Prevent all damage that would be dealt to and dealt by enchanted creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "65e745cd-f2e9-528a-8563-01748c8d669f",
+            "name": "Hokori, Dust Drinker",
+            "text": "Lands don't untap during their controllers' untap steps.\nAt the beginning of each player's upkeep, that player untaps a land he or she controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c9711bcb-fd9a-58a4-9a33-694bd789747c",
+            "name": "Hundred-Talon Strike",
+            "text": "Target creature gets +1/+0 and gains first strike until end of turn.\nSplice onto Arcane\u2014\nTap an untapped white creature you control. (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3a0665bc-c6b4-5be0-bb0f-e9d478b49148",
+            "name": "Indebted Samurai",
+            "text": "Bushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)\nWhenever a Samurai you control is put into a graveyard from play, you may put a +1/+1 counter on Indebted Samurai.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e3d31de2-7ce0-55e0-b8b7-59b7590f97ce",
+            "name": "Kami of False Hope",
+            "text": "Sacrifice Kami of False Hope: Prevent all combat damage that would be dealt this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42cf19d0-174e-53ee-a5bf-d5143a1043cb",
+            "name": "Kami of Tattered Shoji",
+            "text": "Whenever you play a Spirit or Arcane spell, Kami of Tattered Shoji gains flying until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "728fa79b-9561-5ffe-bbfd-22fbe85bd79a",
+            "name": "Kami of the Honored Dead",
+            "text": "Flying\nWhenever Kami of the Honored Dead is dealt damage, you gain that much life.\nSoulshift 6 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 6 or less from your graveyard to your hand.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81b0531a-f530-5711-9d73-940db29f6b27",
+            "name": "Kentaro, the Smiling Cat",
+            "text": "Bushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)\nYou may pay {X} rather than pay the mana cost for Samurai spells you play, where X is that spell's converted mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a1d9bd80-5870-5ebc-9b00-ff2bdd261aa0",
+            "name": "Kitsune Palliator",
+            "text": "{T}: Prevent the next 1 damage that would be dealt to each creature and each player this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "29af53f2-90a2-50a1-9357-e11ff4c65f18",
+            "name": "Mending Hands",
+            "text": "Prevent the next 4 damage that would be dealt to target creature or player this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "95b3b9a4-dddf-5b57-b298-d9241c6dbc23",
+            "name": "Moonlit Strider",
+            "text": "Sacrifice Moonlit Strider: Target creature you control gains protection from the color of your choice until end of turn.\nSoulshift 3 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 3 or less from your graveyard to your hand.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "993307b6-316d-5211-a43f-060f00f5a88a",
+            "name": "Opal-Eye, Konda's Yojimbo",
+            "text": "Bushido 1; defender (This creature can't attack.)\n{T}: The next time a source of your choice would deal damage this turn, that damage is dealt to Opal-Eye, Konda's Yojimbo instead.\n{1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7963d18a-6f55-5173-b56b-1c24e4674598",
+            "name": "Oyobi, Who Split the Heavens",
+            "text": "Flying\nWhenever you play a Spirit or Arcane spell, put a 3/3 white Spirit creature token with flying into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1b175fa3-cc00-5c29-abda-72798d30b66e",
+            "name": "Patron of the Kitsune",
+            "text": "Fox offering (You may play this card any time you could play an instant by sacrificing a Fox and paying the difference in mana costs between this and the sacrificed Fox. Mana cost includes color.)\nWhenever a creature attacks, you may gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bda909b3-68b4-5e1a-82ed-a40601fb0133",
+            "name": "Scour",
+            "text": "Remove target enchantment from the game. Search its controller's graveyard, hand, and library for all cards with the same name as that enchantment and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b454bcac-bed7-5773-81fd-cf2b58527f20",
+            "name": "Shining Shoal",
+            "text": "You may remove a white card with converted mana cost X in your hand from the game rather than pay Shining Shoal's mana cost.\nThe next X damage that a source of your choice would deal to you or a creature you control this turn is dealt to target creature or player instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30faa8a4-318e-5515-ba06-ab5c887f37d1",
+            "name": "Silverstorm Samurai",
+            "text": "You may play Silverstorm Samurai any time you could play an instant.\nBushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1ccf0336-a4c5-5e61-91e9-ebc0e7020b72",
+            "name": "Split-Tail Miko",
+            "text": "{W}, {T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "96e884ad-a136-5ef6-aad6-d2082cd37c0e",
+            "name": "Takeno's Cavalry",
+            "text": "Bushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)\n{T}: Takeno's Cavalry deals 1 damage to target attacking or blocking Spirit.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "57909662-b038-5cb0-9912-b29b20e42fba",
+            "name": "Tallowisp",
+            "text": "Whenever you play a Spirit or Arcane spell, you may search your library for an enchant creature card, reveal it, and put it into your hand. If you do, shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f4e88aaf-1522-526b-bf3e-a3ae2c06d9d8",
+            "name": "Terashi's Grasp",
+            "text": "Destroy target artifact or enchantment. You gain life equal to its converted mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30e7c67c-2b64-5b17-bc88-ba114c2acea7",
+            "name": "Terashi's Verdict",
+            "text": "Destroy target attacking creature with power 3 or less.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "004ea5e7-bd25-5fcc-a4bb-c7f619068867",
+            "name": "Ward of Piety",
+            "text": "{1}{W}: The next 1 damage that would be dealt to enchanted creature this turn is dealt to target creature or player instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cb69d8aa-780a-5151-a403-4a4a74c3cde8",
+            "name": "Waxmane Baku",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Waxmane Baku.\n{1}, Remove X ki counters from Waxmane Baku: Tap X target creatures.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc5d61c3-3d2a-54c4-a6ee-fc8872a3e42d",
+            "name": "Yomiji, Who Bars the Way",
+            "text": "Whenever a legendary permanent other than Yomiji, Who Bars the Way is put into a graveyard from play, return that card to its owner's hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0fe8e5c4-25ec-587a-bc60-83510ae6f2e8",
+            "name": "Callow Jushi // Jaraku the Interloper",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Callow Jushi.\nAt end of turn, if there are two or more ki counters on Callow Jushi, you may flip it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "54001e85-889a-5723-9998-91ec33094946",
+            "isBack": false,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "54001e85-889a-5723-9998-91ec33094946",
+            "name": "Callow Jushi // Jaraku the Interloper",
+            "text": "Remove a ki counter from Jaraku the Interloper: Counter target spell unless its controller pays {2}.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": true,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "e1b666a5-3dbd-58d9-ba70-d85435cc1156",
+            "name": "Chisei, Heart of Oceans",
+            "text": "Flying\nAt the beginning of your upkeep, sacrifice Chisei, Heart of Oceans unless you remove a counter from a permanent you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4d63dd59-42e1-55d3-bba3-0c3333944234",
+            "name": "Disrupting Shoal",
+            "text": "You may remove a blue card with converted mana cost X in your hand from the game rather than pay Disrupting Shoal's mana cost.\nCounter target spell if its converted mana cost is X.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "49fd6ce2-86ed-5cde-86ba-415e5ee472dc",
+            "name": "Floodbringer",
+            "text": "Flying\n{2}, Return a land you control to its owner's hand: Tap target land.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bad9761e-36b3-540f-928f-9f97c8a0f154",
+            "name": "Genju of the Falls",
+            "text": "{2}: Enchanted Island becomes a 3/2 blue Spirit creature with flying until end of turn. It's still a land.\nWhen enchanted Island is put into a graveyard, you may return Genju of the Falls from your graveyard to your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c68e6d8b-db02-519b-b272-3fe619235f80",
+            "name": "Heed the Mists",
+            "text": "Put the top card of your library into your graveyard, then draw cards equal to that card's converted mana cost.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f65f1fa-2198-53a1-b0e2-488efadef92d",
+            "name": "Higure, the Still Wind",
+            "text": "Ninjutsu {2}{U}{U} ({2}{U}{U}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Higure deals combat damage to a player, you may search your library for a Ninja card, reveal it, and put it into your hand. If you do, shuffle your library.\n{2}: Target Ninja is unblockable this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dff1d79f-f144-5310-8bda-7e34fb2b7082",
+            "name": "Jetting Glasskite",
+            "text": "Flying\nWhenever Jetting Glasskite becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "72e59b01-d6fd-5ef7-a81e-40fbf47e25f0",
+            "name": "Kaijin of the Vanishing Touch",
+            "text": "Defender (This creature can't attack.)\nWhenever Kaijin of the Vanishing Touch blocks a creature, return that creature to its owner's hand at end of combat. (Return it only if it's in play.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "70cf308a-bdc9-563c-8ab4-dafb048bb686",
+            "name": "Kira, Great Glass-Spinner",
+            "text": "Flying\nCreatures you control have \"Whenever this creature becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bd249b1d-8956-5376-adfd-9ff8301a6b52",
+            "name": "Minamo Sightbender",
+            "text": "{X}, {T}: Target creature with power X or less is unblockable this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eff51563-1a20-5bcb-925e-608eaea1b915",
+            "name": "Minamo's Meddling",
+            "text": "Counter target spell. That spell's controller reveals his or her hand, then discards each card with the same name as a card spliced onto that spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3bed5fa4-4985-58b9-b7de-ff6809aff53d",
+            "name": "Mistblade Shinobi",
+            "text": "Ninjutsu {U} ({U}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Mistblade Shinobi deals combat damage to a player, you may return target creature that player controls to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fcdf57bd-60ec-57f7-9699-f299f48bce75",
+            "name": "Ninja of the Deep Hours",
+            "text": "Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Ninja of the Deep Hours deals combat damage to a player, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "07d85d05-3b69-5ec6-a3a3-579f39634bb6",
+            "name": "Patron of the Moon",
+            "text": "Moonfolk offering (You may play this card any time you could play an instant by sacrificing a Moonfolk and paying the difference in mana costs between this and the sacrificed Moonfolk. Mana cost includes color.)\nFlying\n{1}: Put up to two land cards from your hand into play tapped.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7517a4d7-45e1-5900-a7bc-00b5527f08ef",
+            "name": "Phantom Wings",
+            "text": "Enchanted creature has flying.\nSacrifice Phantom Wings: Return enchanted creature to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ee07613c-9d1a-56e8-a49e-4db799072f51",
+            "name": "Quash",
+            "text": "Counter target instant or sorcery spell. Search its controller's graveyard, hand, and library for all cards with the same name as that spell and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a2dc0f0a-df18-5c40-a9bd-6a3d2329a9ac",
+            "name": "Quillmane Baku",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Quillmane Baku.\n{1}, {T}, Remove X ki counters from Quillmane Baku: Return target creature with converted mana cost X or less to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5b69031b-544e-5788-973c-6e633f8d29b8",
+            "name": "Reduce to Dreams",
+            "text": "Return all artifacts and enchantments to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d467bbe2-43cc-5625-8f2c-5c9b5733699a",
+            "name": "Ribbons of the Reikai",
+            "text": "Draw a card for each Spirit you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7fcb4df9-a6fa-53ba-b776-d4a163efe409",
+            "name": "Shimmering Glasskite",
+            "text": "Flying\nWhenever Shimmering Glasskite becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "574b3a8e-8827-5525-a62d-3b8b5602bfc7",
+            "name": "Soratami Mindsweeper",
+            "text": "Flying\n{2}, Return a land you control to its owner's hand: Target player puts the top two cards of his or her library into his or her graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aeed80e7-2c70-50ba-b765-572281a3075c",
+            "name": "Stream of Consciousness",
+            "text": "Target player shuffles up to four target cards from his or her graveyard into his or her library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a8dd679e-ca61-5163-baf6-8ac9c0e89e24",
+            "name": "Sway of the Stars",
+            "text": "Each player shuffles his or her hand, graveyard, and permanents he or she owns into his or her library, then draws seven cards. Each player's life total becomes 7.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 10.0,
+            "manaCost": "{8}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "811d59a4-ff57-524d-9eae-3e9acca81ac7",
+            "name": "Teardrop Kami",
+            "text": "Sacrifice Teardrop Kami: Tap or untap target creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dfc4b171-c703-5b52-b28f-aadc6d8a7453",
+            "name": "Threads of Disloyalty",
+            "text": "Threads of Disloyalty can enchant only a creature with converted mana cost 2 or less.\nYou control enchanted creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c86bb471-cbaa-5c23-b734-a4bef4535fd0",
+            "name": "Toils of Night and Day",
+            "text": "Tap or untap target permanent, then tap or untap another target permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "da9b0852-7f62-51cc-81a6-5de216eebbb2",
+            "name": "Tomorrow, Azami's Familiar",
+            "text": "If you would draw a card, look at the top three cards of your library instead. Put one of those cards into your hand and the rest on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a32eab4-f2c9-56a1-8762-c231a28174b5",
+            "name": "Veil of Secrecy",
+            "text": "Target creature is unblockable and can't be the target of spells or abilities this turn.\nSplice onto Arcane\u2014\nReturn a blue creature you control to its owner's hand. (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1fae63ea-331a-5901-ab78-a7ce51f3001d",
+            "name": "Walker of Secret Ways",
+            "text": "Ninjutsu {1}{U} ({1}{U}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Walker of Secret Ways deals combat damage to a player, look at that player's hand.\n{1}{U}: Return target Ninja you control to its owner's hand. Play this ability only during your turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9403bc97-1283-591e-8e7e-299894bed009",
+            "name": "Bile Urchin",
+            "text": "Sacrifice Bile Urchin: Target player loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cb030931-f7b2-5032-aed3-aa7003844163",
+            "name": "Blessing of Leeches",
+            "text": "You may play Blessing of Leeches any time you could play an instant.\nAt the beginning of your upkeep, you lose 1 life.\n{0}: Regenerate enchanted creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6abd8532-677d-59d2-8bd7-dfde3b1f90c3",
+            "name": "Call for Blood",
+            "text": "As an additional cost to play Call for Blood, sacrifice a creature.\nTarget creature gets -X/-X until end of turn, where X is the sacrificed creature's power.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "25993f5e-061e-53d2-933e-c606f84c5793",
+            "name": "Crawling Filth",
+            "text": "Fear\nSoulshift 5 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 5 or less from your graveyard to your hand.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a59f0cd4-2bf4-5208-9fc1-d53d83b3293b",
+            "name": "Eradicate",
+            "text": "Remove target nonblack creature from the game. Search its controller's graveyard, hand, and library for all cards with the same name as that creature and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de39f9db-fef0-5eda-8fa6-d8965938f102",
+            "name": "Genju of the Fens",
+            "text": "{2}: Until end of turn, enchanted Swamp becomes a 2/2 black Spirit creature with \"{B}: This creature gets +1/+1 until end of turn.\" It's still a land.\nWhen enchanted Swamp is put into a graveyard, you may return Genju of the Fens from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3781a4d-b87f-56e5-a686-020c23a068f4",
+            "name": "Goryo's Vengeance",
+            "text": "Return target legendary creature card from your graveyard to play. That creature gains haste. Remove it from the game at end of turn.\nSplice onto Arcane {2}{B} (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4d3561d8-1289-5b13-9cf9-08c89de95e55",
+            "name": "Hero's Demise",
+            "text": "Destroy target legendary creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f4989495-0939-544f-9b84-d7b82cb1fdd1",
+            "name": "Hired Muscle // Scarmaker",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Hired Muscle.\nAt end of turn, if there are two or more ki counters on Hired Muscle, you may flip it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "e417dba8-bcac-55c8-ba01-aa75de3edf73",
+            "isBack": false,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "e417dba8-bcac-55c8-ba01-aa75de3edf73",
+            "name": "Hired Muscle // Scarmaker",
+            "text": "Remove a ki counter from Scarmaker: Target creature gains fear until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": true,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "8394398a-bddf-561f-836f-51ac3a871ba2",
+            "name": "Horobi's Whisper",
+            "text": "If you control a Swamp, destroy target nonblack creature.\nSplice onto Arcane\u2014\nRemove four cards in your graveyard from the game. (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab8486a9-7eaa-5c49-a8cc-8aa32eeb13dc",
+            "name": "Ink-Eyes, Servant of Oni",
+            "text": "Ninjutsu {3}{B}{B} ({3}{B}{B}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Ink-Eyes, Servant of Oni deals combat damage to a player, you may put target creature card from that player's graveyard into play under your control.\n{1}{B}: Regenerate Ink-Eyes.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bf08d1ec-b389-5c64-a61c-a3ea915ea019",
+            "name": "Kyoki, Sanity's Eclipse",
+            "text": "Whenever you play a Spirit or Arcane spell, target opponent removes a card in his or her hand from the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef2704d4-77e2-5711-823a-7b4c8073b191",
+            "name": "Mark of the Oni",
+            "text": "You control enchanted creature.\nAt end of turn, if you control no Demons, sacrifice Mark of the Oni.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6eac5714-9caf-5ec2-9a56-09661d9a4276",
+            "name": "Nezumi Shadow-Watcher",
+            "text": "Sacrifice Nezumi Shadow-Watcher: Destroy target Ninja.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2bcd8e2e-f9ec-5c6c-961b-4eba5c916a26",
+            "name": "Ogre Marauder",
+            "text": "Whenever Ogre Marauder attacks, it can't be blocked this turn unless defending player sacrifices a creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "025600ee-74dc-515f-a985-c62a2d8ce55e",
+            "name": "Okiba-Gang Shinobi",
+            "text": "Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Okiba-Gang Shinobi deals combat damage to a player, that player discards two cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4ab7451e-554f-5f51-94a6-f608e9d18343",
+            "name": "Patron of the Nezumi",
+            "text": "Rat offering (You may play this card any time you could play an instant by sacrificing a Rat and paying the difference in mana costs between this and the sacrificed Rat. Mana cost includes color.)\nWhenever a permanent is put into an opponent's graveyard, that player loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "081719ae-fd27-594d-996f-fe85b07242e8",
+            "name": "Psychic Spear",
+            "text": "Target player reveals his or her hand. Choose a Spirit or Arcane card from it. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "078d944e-7f95-53bf-b24d-5249edd81591",
+            "name": "Pus Kami",
+            "text": "{B}, Sacrifice Pus Kami: Destroy target nonblack creature.\nSoulshift 6 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 6 or less from your graveyard to your hand.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "76f8e324-724e-5f08-a584-8ca5a770c077",
+            "name": "Scourge of Numai",
+            "text": "At the beginning of your upkeep, you lose 2 life if you don't control an Ogre.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3d5df6e-a033-5d35-a246-13e2a8e809c4",
+            "name": "Shirei, Shizo's Caretaker",
+            "text": "Whenever a creature with power 1 or less is put into your graveyard from play, you may return that creature card to play under your control at end of turn if Shirei, Shizo's Caretaker is still in play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8fd32306-3d4e-5efa-a38b-02488df0d191",
+            "name": "Sickening Shoal",
+            "text": "You may remove a black card with converted mana cost X in your hand from the game rather than pay Sickening Shoal's mana cost.\nTarget creature gets -X/-X until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83562f98-7742-5fa7-a02b-8f9c4f696bdc",
+            "name": "Skullmane Baku",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Skullmane Baku.\n{1}, {T}, Remove X ki counters from Skullmane Baku: Target creature gets -X/-X until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2f901215-d9b1-538e-99d6-910285ead4bd",
+            "name": "Skullsnatcher",
+            "text": "Ninjutsu {B} ({B}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Skullsnatcher deals combat damage to a player, remove up to two target cards in that player's graveyard from the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a1a3ab11-d14a-5ad8-8f9f-9b5bfa1517cd",
+            "name": "Stir the Grave",
+            "text": "Return target creature card with converted mana cost X or less from your graveyard to play.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ac287583-8089-5722-847c-7fd1ce923679",
+            "name": "Takenuma Bleeder",
+            "text": "Whenever Takenuma Bleeder attacks or blocks, you lose 1 life if you don't control a Demon.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "70c17494-4219-55dd-90be-a9525f6603a2",
+            "name": "Three Tragedies",
+            "text": "Target player discards three cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "70394da4-2fb8-5ad8-8d04-006b6e0fbc48",
+            "name": "Throat Slitter",
+            "text": "Ninjutsu {2}{B} ({2}{B}, Return an unblocked attacker you control to hand: Put this card into play from your hand tapped and attacking.)\nWhenever Throat Slitter deals combat damage to a player, destroy target nonblack creature that player controls.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6703071b-6e24-54dd-9054-b0cc0e7ffc98",
+            "name": "Toshiro Umezawa",
+            "text": "Bushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)\nWhenever a creature an opponent controls is put into a graveyard from play, you may play target instant card in your graveyard. If that card would be put into a graveyard this turn, remove it from the game instead.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b0ddfd27-8b31-547d-9199-abf8a02f8f1b",
+            "name": "Yukora, the Prisoner",
+            "text": "When Yukora, the Prisoner leaves play, sacrifice all non-Ogre creatures you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "37b03848-9740-5383-aa22-f05f0762395d",
+            "name": "Akki Blizzard-Herder",
+            "text": "When Akki Blizzard-Herder is put into a graveyard from play, each player sacrifices a land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5dab75b5-a0c0-5bc6-a152-756d18f88c5e",
+            "name": "Akki Raider",
+            "text": "Whenever a land is put into a graveyard from play, Akki Raider gets +1/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5379eadc-493f-5575-bdd2-2a5d6c15080d",
+            "name": "Ashen Monstrosity",
+            "text": "Haste\nAshen Monstrosity attacks each turn if able.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5610d52b-9e10-5b00-b323-8adc82f0162f",
+            "name": "Aura Barbs",
+            "text": "Each enchantment deals 2 damage to its controller, then each enchantment enchanting a creature deals 2 damage to the creature it's enchanting.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1e6a92c5-4b61-5560-b982-c2b00f6393ed",
+            "name": "Blademane Baku",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Blademane Baku.\n{1}, Remove X ki counters from Blademane Baku: For each counter removed, Blademane Baku gets +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1885479d-9ce3-52f8-a853-1cb28cc17c39",
+            "name": "Blazing Shoal",
+            "text": "You may remove a red card with converted mana cost X in your hand from the game rather than pay Blazing Shoal's mana cost.\nTarget creature gets +X/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{R}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28925ce5-4641-5440-90d7-e624aa999d9f",
+            "name": "Clash of Realities",
+            "text": "All Spirits have \"When this creature comes into play, you may have it deal 3 damage to target non-Spirit creature.\"\nAll non-Spirit creatures have \"When this creature comes into play, you may have it deal 3 damage to target Spirit.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42116b64-2e16-5ca4-9913-04a6951303fe",
+            "name": "Crack the Earth",
+            "text": "Each player sacrifices a permanent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7734be83-3d66-5900-b4aa-09824a5a59c0",
+            "name": "Cunning Bandit // Azamuki, Treachery Incarnate",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Cunning Bandit.\nAt end of turn, if there are two or more ki counters on Cunning Bandit, you may flip it.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "a51e78e2-0401-5796-a2d3-1d21cbd8b5f7",
+            "isBack": false,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "a51e78e2-0401-5796-a2d3-1d21cbd8b5f7",
+            "name": "Cunning Bandit // Azamuki, Treachery Incarnate",
+            "text": "Remove a ki counter from Azamuki, Treachery Incarnate: Gain control of target creature until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": true,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "2c1d39f6-7c7b-5c16-8807-0a2f734d2c20",
+            "name": "First Volley",
+            "text": "First Volley deals 1 damage to target creature and 1 damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b4544c9f-4594-5247-ad0f-091fdc937e3f",
+            "name": "Flames of the Blood Hand",
+            "text": "Flames of the Blood Hand deals 4 damage to target player. The damage can't be prevented. If that player would gain life this turn, that player gains no life instead.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02cc3e00-1bc5-5143-aa84-7ee2c0331656",
+            "name": "Frost Ogre",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83d04883-4bbd-509e-b89b-a5f87ae2d9e0",
+            "name": "Frostling",
+            "text": "Sacrifice Frostling: Frostling deals 1 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27865a76-588b-5b9b-a2c7-97fb59d36ee6",
+            "name": "Fumiko the Lowblood",
+            "text": "Fumiko the Lowblood has bushido X, where X is the number of attacking creatures. (When this blocks or becomes blocked, it gets +X/+X until end of turn.)\nCreatures your opponents control attack each turn if able.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8be51286-18d1-539b-8dbb-9081bd9e7e77",
+            "name": "Genju of the Spires",
+            "text": "{2}: Enchanted Mountain becomes a 6/1 red Spirit creature until end of turn. It's still a land.\nWhen enchanted Mountain is put into a graveyard, you may return Genju of the Spires from your graveyard to your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c9c2c24f-22c5-54b1-9f09-287594a690de",
+            "name": "Goblin Cohort",
+            "text": "Goblin Cohort can't attack unless you've played a creature spell this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ddc1705d-2f11-5413-bc7a-89237fe362a0",
+            "name": "Heartless Hidetsugu",
+            "text": "{T}: Heartless Hidetsugu deals to each player damage equal to half that player's life total, rounded down.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "965f4919-189c-5fe3-a428-0b09dd5cb5d6",
+            "name": "In the Web of War",
+            "text": "Whenever a creature comes into play under your control, it gets +2/+0 and gains haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c2027f5a-8b9f-5e33-a204-1a154577c03e",
+            "name": "Ire of Kaminari",
+            "text": "Ire of Kaminari deals damage to target creature or player equal to the number of Arcane cards in your graveyard.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79fae3b5-7d9c-58e3-bd39-0514cf732fd9",
+            "name": "Ishi-Ishi, Akki Crackshot",
+            "text": "Whenever an opponent plays a Spirit or Arcane spell, Ishi-Ishi, Akki Crackshot deals 2 damage to that player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ec76d3aa-b501-572e-8c3e-2525d695f1a6",
+            "name": "Kumano's Blessing",
+            "text": "You may play Kumano's Blessing any time you could play an instant.\nIf a creature dealt damage by enchanted creature this turn would be put into a graveyard, remove it from the game instead.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f812e5e-0df8-59e3-85e5-65e6590b1c8c",
+            "name": "Mannichi, the Fevered Dream",
+            "text": "{1}{R}: Switch each creature's power and toughness until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0d6f7756-6501-532b-8f2b-d61d40fee3af",
+            "name": "Ogre Recluse",
+            "text": "Whenever a player plays a spell, tap Ogre Recluse.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3b921b2e-6388-58f7-a84d-41f1c8338c00",
+            "name": "Overblaze",
+            "text": "Each time target permanent would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead.\nSplice onto Arcane {2}{R}{R} (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4ec8baf0-5481-5917-9a46-6d868ad41dfc",
+            "name": "Patron of the Akki",
+            "text": "Goblin offering (You may play this card any time you could play an instant by sacrificing a Goblin and paying the difference in mana costs between this and the sacrificed Goblin. Mana cost includes color.)\nWhenever Patron of the Akki attacks, creatures you control get +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bb8886f1-64ae-5632-9d0d-c5be19f7bf8b",
+            "name": "Ronin Cliffrider",
+            "text": "Bushido 1 (When this blocks or becomes blocked, it gets +1/+1 until end of turn.)\nWhenever Ronin Cliffrider attacks, you may have it deal 1 damage to each creature defending player controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b5d2e04-2fd0-5054-a291-415885e7a147",
+            "name": "Shinka Gatekeeper",
+            "text": "Whenever Shinka Gatekeeper is dealt damage, it deals that much damage to you.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "106c2cf6-1a70-5043-a070-8c589d323c3f",
+            "name": "Sowing Salt",
+            "text": "Remove target nonbasic land from the game. Search its controller's graveyard, hand, and library for all cards with the same name as that land and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fc4c0e16-568d-5209-9fd1-e56ff479d963",
+            "name": "Torrent of Stone",
+            "text": "Torrent of Stone deals 4 damage to target creature.\nSplice onto Arcane\u2014\nSacrifice two mountains. (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ed6638a8-b432-579f-be54-58bcc915ef73",
+            "name": "Twist Allegiance",
+            "text": "You and target opponent each gain control of all creatures the other controls until end of turn. Untap those creatures. Those creatures gain haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0e4a2501-afb8-5915-ada3-0dfff5c88877",
+            "name": "Body of Jukai",
+            "text": "Trample\nSoulshift 8 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 8 or less from your graveyard to your hand.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 9.0,
+            "manaCost": "{7}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2185cdf1-2279-5cf6-911d-2eb98bb6e153",
+            "name": "Budoka Pupil // Ichiga, Who Topples Oaks",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Budoka Pupil.\nAt end of turn, if there are two or more ki counters on Budoka Pupil, you may flip it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "50d83b31-5be7-5752-a2ca-8a2033883849",
+            "isBack": false,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "50d83b31-5be7-5752-a2ca-8a2033883849",
+            "name": "Budoka Pupil // Ichiga, Who Topples Oaks",
+            "text": "Trample\nRemove a ki counter from Ichiga, Who Topples Oaks: Target creature gets +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": true,
+            "layout": "flip",
+            "isToken": false
+        },
+        {
+            "id": "25ca66d8-c42b-5b61-822a-e057c9e9429e",
+            "name": "Child of Thorns",
+            "text": "Sacrifice Child of Thorns: Target creature gets +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4df77839-0ccd-53da-aa5f-8d426af7b05f",
+            "name": "Enshrined Memories",
+            "text": "Reveal the top X cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "282d6da0-8c42-57e5-b39f-832147a6eb79",
+            "name": "Forked-Branch Garami",
+            "text": "Soulshift 4, soulshift 4 (When this is put into a graveyard from play, you may return up to two target Spirit cards with converted mana cost 4 or less from your graveyard to your hand.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2c2d00fd-a4d9-5282-9648-f8cb83bc8993",
+            "name": "Genju of the Cedars",
+            "text": "{2}: Enchanted Forest becomes a 4/4 green Spirit creature until end of turn. It's still a land.\nWhen enchanted Forest is put into a graveyard, you may return Genju of the Cedars from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "74ddca44-cc62-5a47-a6c9-0524ac4d4227",
+            "name": "Gnarled Mass",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "38520521-3e27-5914-a7cb-4097caec89f7",
+            "name": "Harbinger of Spring",
+            "text": "Protection from non-Spirit creatures\nSoulshift 4 (When this is put into a graveyard from play, you may return target Spirit card with converted mana cost 4 or less from your graveyard to your hand.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d4ff7d8c-abd2-5e91-9710-253472e01af6",
+            "name": "Isao, Enlightened Bushi",
+            "text": "Isao, Enlightened Bushi can't be countered.\nBushido 2 (When this blocks or becomes blocked, it gets +2/+2 until end of turn.)\n{2}: Regenerate target Samurai.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9bc681b5-8e9a-5120-82c2-d8aec6511529",
+            "name": "Iwamori of the Open Fist",
+            "text": "Trample\nWhen Iwamori of the Open Fist comes into play, each opponent may put a legendary creature card from his or her hand into play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7ec146dc-4692-52a2-a694-91db8d02d3d3",
+            "name": "Kodama of the Center Tree",
+            "text": "Kodama of the Center Tree's power and toughness are each equal to the number of Spirits you control.\nKodama of the Center Tree has soulshift X, where X is the number of Spirits you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7bafd9e0-6d35-5ff8-a145-2fa293cd585f",
+            "name": "Lifegift",
+            "text": "Whenever a land comes into play, you may gain 1 life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7c35c5f7-9b55-5d53-a7f5-dbdb679d204b",
+            "name": "Lifespinner",
+            "text": "{T}, Sacrifice three Spirits: Search your library for a legendary Spirit card and put it into play. Then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ae7e25f2-4073-5006-a034-5bbf2d49ebd0",
+            "name": "Loam Dweller",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a land card from your hand into play tapped.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "89b77f5a-128a-56b6-950e-3d30ee9d956e",
+            "name": "Mark of Sakiko",
+            "text": "Enchanted creature has \"Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. This mana doesn't cause mana burn. Until end of turn, this mana doesn't empty from your mana pool as phases end.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "696add83-f7a6-5e83-be33-8b79adb726fe",
+            "name": "Matsu-Tribe Sniper",
+            "text": "{T}: Matsu-Tribe Sniper deals 1 damage to target creature with flying.\nWhenever Matsu-Tribe Sniper deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ee40ce0c-63e8-5901-aebf-fdf97d522960",
+            "name": "Nourishing Shoal",
+            "text": "You may remove a green card with converted mana cost X in your hand from the game rather than pay Nourishing Shoal's mana cost.\nYou gain X life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{G}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "44d727b7-3cd6-5fb9-bd4b-97f3b29eef06",
+            "name": "Patron of the Orochi",
+            "text": "Snake offering (You may play this card any time you could play an instant by sacrificing a Snake and paying the difference in mana costs between this and the sacrificed Snake. Mana cost includes color.)\n{T}: Untap all Forests and all green creatures. Play this ability only once each turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9f0da37c-ccba-599d-bc20-7844cea69fbd",
+            "name": "Petalmane Baku",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Petalmane Baku.\n{1}, Remove X ki counters from Petalmane Baku: Add X mana of any one color to your mana pool.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e74ea3e4-8f9b-5a6f-85b6-0110aa9501bb",
+            "name": "Roar of Jukai",
+            "text": "If you control a Forest, each blocked creature gets +2/+2 until end of turn.\nSplice onto Arcane\u2014\nAn opponent gains 5 life. (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a9bd8c82-007c-51de-8228-1d885fb8d19e",
+            "name": "Sakiko, Mother of Summer",
+            "text": "Whenever a creature you control deals combat damage to a player, add that much {G} to your mana pool. This mana doesn't cause mana burn. Until end of turn, this mana doesn't empty from your mana pool as phases end.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01aa2246-6cf0-563c-8aad-ad3663ca1571",
+            "name": "Sakura-Tribe Springcaller",
+            "text": "At the beginning of your upkeep, add {G} to your mana pool. This mana doesn't cause mana burn. Until end of turn, this mana doesn't empty from your mana pool as phases end.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "649be30d-ad1b-5acc-a049-b164bd45b11b",
+            "name": "Scaled Hulk",
+            "text": "Whenever you play a Spirit or Arcane spell, Scaled Hulk gets +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "31bca2b6-d965-5ed2-a914-996ded55df31",
+            "name": "Shizuko, Caller of Autumn",
+            "text": "At the beginning of each player's upkeep, that player adds {G}{G}{G} to his or her mana pool. This mana doesn't cause mana burn. Until end of turn, this mana doesn't empty from that player's mana pool as phases end.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9f97dd03-059d-5dd4-a14c-cc8f8776873f",
+            "name": "Sosuke's Summons",
+            "text": "Put two 1/1 green Snake creature tokens into play.\nWhenever a nontoken Snake comes into play under your control, you may return Sosuke's Summons from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cb1f644a-f2bb-5143-b769-d158beb23cd8",
+            "name": "Splinter",
+            "text": "Remove target artifact from the game. Search its controller's graveyard, hand, and library for all cards with the same name as that artifact and remove them from the game. That player then shuffles his or her library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85fa4483-92c3-51cd-9e03-b0de5aff27b4",
+            "name": "Traproot Kami",
+            "text": "Defender (This creature can't attack.)\nTraproot Kami's toughness is equal to the number of Forests in play.\nTraproot Kami may block as though it had flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fbd61c9e-d2fa-5f07-8a88-e14413ea556a",
+            "name": "Unchecked Growth",
+            "text": "Target creature gets +4/+4 until end of turn. If it's a Spirit, it gains trample until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fc6c03de-81f8-5590-8ed9-3ebec766b571",
+            "name": "Uproot",
+            "text": "Put target land on top of its owner's library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e9a36e8f-d95c-59ea-931e-291d7c64a1c2",
+            "name": "Vital Surge",
+            "text": "You gain 3 life.\nSplice onto Arcane {1}{G} (As you play an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11e3e65c-8e89-5720-ba7d-830520453a97",
+            "name": "Genju of the Realm",
+            "text": "{2}: Enchanted land becomes a legendary 8/12 Spirit creature with trample until end of turn. It's still a land.\nWhen enchanted land is put into a graveyard, you may return Genju of the Realm from your graveyard to your hand.",
+            "colours": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{W}{U}{B}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce15fb9c-7433-5ce3-9d75-c72c4179a7c4",
+            "name": "Baku Altar",
+            "text": "Whenever you play a Spirit or Arcane spell, you may put a ki counter on Baku Altar.\n{2}, {T}, Remove a ki counter from Baku Altar: Put a 1/1 colorless Spirit creature token into play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "400b1730-8c5c-514f-96f9-e0a9844c34d9",
+            "name": "Blinding Powder",
+            "text": "Equipped creature has \"Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn.\"\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "37bcaa96-96bf-5f0d-87f1-c4b3f1fc739f",
+            "name": "Mirror Gallery",
+            "text": "The \"legend rule\" doesn't apply.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef98cea0-1808-5fef-b589-c431dfc5093a",
+            "name": "Neko-Te",
+            "text": "Whenever equipped creature deals damage to a creature, tap that creature. As long as Neko-Te remains in play, that creature doesn't untap during its controller's untap step.\nWhenever equipped creature deals damage to a player, that player loses 1 life.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3326b2ec-a5b6-5a4f-9d9a-71a0213c8113",
+            "name": "Orb of Dreams",
+            "text": "Permanents come into play tapped.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9dd9fba2-04cc-53be-96ef-7a53cba8dede",
+            "name": "Ornate Kanzashi",
+            "text": "{2}, {T}: Target opponent removes the top card of his or her library from the game. You may play that card this turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8aa78369-15c8-5d5d-8d4a-aa6f3050f87b",
+            "name": "Ronin Warclub",
+            "text": "Equipped creature gets +2/+1.\nWhenever a creature comes into play under your control, attach Ronin Warclub to that creature.\nEquip {5} ({5}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea8cf134-a05a-512d-a364-d9a133db2a45",
+            "name": "Shuko",
+            "text": "Equipped creature gets +1/+0.\nEquip {0} ({0}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f9641e79-b81e-5901-bdcc-927146582e75",
+            "name": "Shuriken",
+            "text": "Equipped creature has \"{T}, Unattach Shuriken: Shuriken deals 2 damage to target creature. That creature's controller gains control of Shuriken unless it was unattached from a Ninja.\"\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9d7f00b9-bc10-51ff-b650-a29a67dcf896",
+            "name": "Slumbering Tora",
+            "text": "{2}, Discard a Spirit or Arcane card: Slumbering Tora becomes an X/X artifact creature until end of turn, where X is the discarded card's converted mana cost.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3026e795-cf34-5d30-88cc-54429dc4dd6a",
+            "name": "That Which Was Taken",
+            "text": "{4}, {T}: Put a divinity counter on target permanent other than That Which Was Taken.\nEach permanent with a divinity counter on it is indestructible.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b9eb9778-51c7-5c12-8524-4aaaf14c68c3",
+            "name": "Umezawa's Jitte",
+            "text": "Whenever equipped creature deals combat damage, put two charge counters on Umezawa's Jitte.\nRemove a charge counter from Umezawa's Jitte: Choose one Equipped creature gets +2/+2 until end of turn; or target creature gets -1/-1 until end of turn; or you gain 2 life.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "670f1af5-e33b-583e-ab46-fe2270b03f48",
+            "name": "Gods' Eye, Gate to the Reikai",
+            "text": "{T}: Add {1} to your mana pool.\nWhen Gods' Eye, Gate to the Reikai is put into a graveyard from play, put a 1/1 colorless Spirit creature token into play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "34e99f42-adcb-5c48-9ab8-433a5b351d5b",
+            "name": "Tendo Ice Bridge",
+            "text": "Tendo Ice Bridge comes into play with a charge counter on it.\n{T}: Add {1} to your mana pool.\n{T}, Remove a charge counter from Tendo Ice Bridge: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "BOK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        }
+    ]
+}
