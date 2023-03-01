@@ -90,6 +90,10 @@ public class Battlefield : MonoBehaviour
         {
           cardId += "--F";
         }
+        if (card.flipped180)
+        {
+          cardId += "--F180";
+        }
         allCreatures.Add(cardId);
       }
       return allCreatures;
@@ -111,6 +115,10 @@ public class Battlefield : MonoBehaviour
         {
           cardId += "--F";
         }
+        if (card.flipped180)
+        {
+          cardId += "--F180";
+        }
         allLands.Add(cardId);
       }
       return allLands;
@@ -131,6 +139,10 @@ public class Battlefield : MonoBehaviour
         if (card.flipped)
         {
           cardId += "--F";
+        }
+        if (card.flipped180)
+        {
+          cardId += "--F180";
         }
         allOthers.Add(cardId);
       }

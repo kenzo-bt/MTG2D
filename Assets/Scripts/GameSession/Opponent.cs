@@ -122,6 +122,7 @@ public class Opponent : MonoBehaviour
       {
         bool isTapped = card.Contains("--T");
         bool isFlipped = card.Contains("--F");
+        bool isFlipped180 = card.Contains("--F180");
         string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, creatureArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
@@ -139,6 +140,10 @@ public class Opponent : MonoBehaviour
           {
             cardInstance.GetComponent<OppBattlefieldCard>().turnFaceDown();
           }
+        }
+        if (isFlipped180)
+        {
+          cardInstance.GetComponent<OppBattlefieldCard>().flip180();
         }
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();
@@ -165,6 +170,7 @@ public class Opponent : MonoBehaviour
       {
         bool isTapped = card.Contains("--T");
         bool isFlipped = card.Contains("--F");
+        bool isFlipped180 = card.Contains("--F180");
         string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, landArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
@@ -203,6 +209,7 @@ public class Opponent : MonoBehaviour
       {
         bool isTapped = card.Contains("--T");
         bool isFlipped = card.Contains("--F");
+        bool isFlipped180 = card.Contains("--F180");
         string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, otherArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
