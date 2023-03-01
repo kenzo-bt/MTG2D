@@ -8,13 +8,16 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public GameObject player;
     public GameObject contextMenu;
     public GameObject flipButton;
+    public GameObject cardImage;
     public bool tapped;
     public bool flipped;
+    public bool flipped180;
     // Start is called before the first frame update
     void Awake()
     {
       tapped = false;
       flipped = false;
+      flipped180 = false;
     }
 
     // Update is called once per frame
@@ -44,7 +47,6 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
 
     public void tapCard()
     {
-      //GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
       if (tapped)
       {
         transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -54,7 +56,6 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
         transform.localRotation = Quaternion.Euler(0f, 0f, 25f);
       }
       tapped = !tapped;
-      //GetComponent<RectTransform>().pivot = new Vector2(0f, 0.5f);
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -89,17 +90,38 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
 
     public void flipCard()
     {
-      if (flipped)
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(GetComponent<WebCard>().cardId);
+      if (card.layout == "flip")
       {
-        // Texturize as face card
-        GetComponent<WebCard>().showFront();
+        flip180();
       }
       else
       {
-        // Texturize as back side
-        GetComponent<WebCard>().showBack();
+        if (flipped)
+        {
+          // Texturize as face card
+          GetComponent<WebCard>().showFront();
+        }
+        else
+        {
+          // Texturize as back side
+          GetComponent<WebCard>().showBack();
+        }
+        flipped = !flipped;
       }
-      flipped = !flipped;
+    }
+
+    public void flip180()
+    {
+      if (flipped180)
+      {
+        cardImage.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+      }
+      else
+      {
+        cardImage.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+      }
+      flipped180 = !flipped180;
     }
 
     public void enableFlipButton()

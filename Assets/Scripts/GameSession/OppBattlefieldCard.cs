@@ -6,6 +6,7 @@ public class OppBattlefieldCard : MonoBehaviour
 {
     public GameObject player;
     public GameObject hideLayer;
+    public GameObject cardImage;
     public bool hidden;
     public bool faceDown;
 
@@ -42,6 +43,11 @@ public class OppBattlefieldCard : MonoBehaviour
     public void tapCard()
     {
       transform.localRotation = Quaternion.Euler(0f, 0f, 25f);
+    }
+
+    public void flip180()
+    {
+      cardImage.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
     }
 
     public void hideCard()

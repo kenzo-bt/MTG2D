@@ -175,6 +175,8 @@ MonoBehaviour:
   imageMaskObject: {fileID: 3556283594213015870}
   fullImageObject: {fileID: 1526891793712229951}
   fullMaskObject: {fileID: 5607687853123033284}
+  fullImageBackObject: {fileID: 0}
+  fullMaskBackObject: {fileID: 0}
 --- !u!114 &8688474413408137679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +191,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   hideLayer: {fileID: 0}
+  cardImage: {fileID: 3495932983781438179}
+  hidden: 0
+  faceDown: 0
 --- !u!114 &4400250701448164746
 MonoBehaviour:
   m_ObjectHideFlags: 0

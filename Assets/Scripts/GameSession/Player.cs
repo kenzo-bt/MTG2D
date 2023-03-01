@@ -286,6 +286,14 @@ public class Player : MonoBehaviour
         CardInfo backCard = PlayerManager.Instance.getCardFromLookup(card.backId);
         highlightBackCard.texturizeCard(backCard);
         highlightBackObject.GetComponent<CanvasGroup>().alpha = 1f;
+        if (card.layout == "flip")
+        {
+          highlightBackCard.cardImageObject.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+        }
+        else
+        {
+          highlightBackCard.cardImageObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        }
       }
       else
       {
