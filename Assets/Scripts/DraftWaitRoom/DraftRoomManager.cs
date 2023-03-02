@@ -17,6 +17,7 @@ public class DraftRoomManager : MonoBehaviour
     public List<int> playerIds;
     public string hostName;
     public string setName;
+    public List<string> setCodes;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class DraftRoomManager : MonoBehaviour
       playerIds = new List<int>();
       hostName = "";
       setName = "";
+      setCodes = new List<string>();
       initializeRoom();
     }
 
@@ -140,6 +142,13 @@ public class DraftRoomManager : MonoBehaviour
           {
             setName = draft.setName;
           }
+          // Update set codes
+          if (setCodes.Count == 0)
+          {
+            setCodes.Add(draft.set1);
+            setCodes.Add(draft.set2);
+            setCodes.Add(draft.set3);
+          }
           // Update title
           if (hostName != draft.hostName)
           {
@@ -195,20 +204,22 @@ public class DraftRoomManager : MonoBehaviour
     public IEnumerator initializeDraftInServer()
     {
       // Generate booster packs for each player
-      CardSet draftSet = new CardSet();
-      foreach (CardSet set in PlayerManager.Instance.cardCollection)
+      List<CardSet> draftSets = new List<CardSet>();
+      foreach (string setCode in setCodes)
       {
-        if (set.setName == setName)
+        foreach (CardSet set in PlayerManager.Instance.cardCollection)
         {
-          draftSet = set;
-          break;
+          if (set.setCode == setCode)
+          {
+            draftSets.Add(set);
+          }
         }
       }
       foreach (int id in playerIds)
       {
         DraftPacks playerDraftPacks = new DraftPacks();
         playerDraftPacks.draftPacks = new List<Pack>();
-        for (int i = 0; i < 3; i++)
+        foreach (CardSet draftSet in draftSets)
         {
           Pack pack = new Pack();
           pack.cards = new List<string>(draftSet.getPack());
