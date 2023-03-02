@@ -133,7 +133,6 @@ public class FriendsPanel : MonoBehaviour
       int ID = allFriends.friends[i];
       PlayerManager.Instance.friendIDs.Add(ID);
       PlayerManager.Instance.friendNames.Add(allUsers.users[ID - 1].username);
-      // Debug.Log("Adding friend -> ID " + ID + " : " + allUsers.users[ID - 1].username);
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
       friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
       friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
@@ -151,7 +150,6 @@ public class FriendsPanel : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           if (serverJson.Trim() != "{}")
           {
-            Debug.Log("Turning to sent...");
             friendInstance.GetComponent<FriendEntry>().turnToSent();
           }
         }
@@ -203,7 +201,6 @@ public class FriendsPanel : MonoBehaviour
         }
         if (userFound)
         {
-          Debug.Log("Player found in server! Proceeding to add him to your friend list...");
           PlayerManager.Instance.friendIDs.Add(targetFriendID);
           PlayerManager.Instance.friendNames.Add(friendName);
           StartCoroutine(postFriendsToServer());
@@ -237,7 +234,7 @@ public class FriendsPanel : MonoBehaviour
     }
     else
     {
-      Debug.Log("Friends list sent successfully to server");
+      // Debug.Log("Friends list sent successfully to server");
     }
     // Dispose of the request to prevent memory leaks
     request.Dispose();

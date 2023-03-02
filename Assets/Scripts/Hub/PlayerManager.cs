@@ -181,7 +181,6 @@ public class PlayerManager : MonoBehaviour
           AllDecklists playerDecks = new AllDecklists();
           playerDecks = JsonUtility.FromJson<AllDecklists>(serverJson);
           allDecks = new List<Decklist>(playerDecks.decks);
-          Debug.Log("Player decks in server: " + allDecks.Count);
           // If there are no decks in server, check if local decklist exists
           if (allDecks.Count == 0)
           {
@@ -265,7 +264,7 @@ public class PlayerManager : MonoBehaviour
       }
       else
       {
-        Debug.Log("Player decks successfully updated in server");
+        // Debug.Log("Player decks successfully updated in server");
       }
       request.Dispose();
     }
@@ -306,16 +305,6 @@ public class PlayerManager : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           DraftPacks packs = new DraftPacks();
           packs = JsonUtility.FromJson<DraftPacks>(serverJson);
-          Debug.Log("Num of packs in draft: " + packs.draftPacks.Count);
-          foreach (Pack pack in packs.draftPacks)
-          {
-            Debug.Log("---");
-            foreach (string card in pack.cards)
-            {
-              Debug.Log(card);
-            }
-            Debug.Log("---");
-          }
         }
       }
     }
@@ -337,7 +326,7 @@ public class PlayerManager : MonoBehaviour
       }
       else
       {
-        Debug.Log("Successfully deleted my drafts in server");
+        // Debug.Log("Successfully deleted my drafts in server");
       }
       request.Dispose();
     }

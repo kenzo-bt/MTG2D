@@ -206,7 +206,6 @@ public class TitleScreen : MonoBehaviour
             if (username == user.username)
             {
               PlayerManager.Instance.myID = user.id;
-              Debug.Log("My ID: " + PlayerManager.Instance.myID);
               friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
               break;
             }
@@ -223,7 +222,7 @@ public class TitleScreen : MonoBehaviour
           }
           else
           {
-            Debug.Log("Deleted all challenges for this user...");
+            // Debug.Log("Deleted all challenges for this user...");
           }
 
           // Start checking for incoming challenges
