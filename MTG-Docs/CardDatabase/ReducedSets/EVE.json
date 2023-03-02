@@ -1,0 +1,4272 @@
+{
+    "setCode": "EVE",
+    "setName": "Eventide",
+    "cards": [
+        {
+            "id": "03a654ae-5f63-53dc-be7d-1e634101f44b",
+            "name": "Archon of Justice",
+            "text": "Flying\nWhen Archon of Justice is put into a graveyard from play, remove target permanent from the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e9326289-4e94-5a29-8422-4fb8e09535b5",
+            "name": "Ballynock Trapper",
+            "text": "{T}: Tap target creature.\nWhenever you play a white spell, you may untap Ballynock Trapper.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0f422807-8ad6-5dc0-9bf7-d08ae13fbe7d",
+            "name": "Cenn's Enlistment",
+            "text": "Put two 1/1 white Kithkin Soldier creature tokens into play.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3a49712-f5da-5b9a-a8b3-1566ea539b09",
+            "name": "Endless Horizons",
+            "text": "When Endless Horizons comes into play, search your library for any number of Plains cards and remove them from the game. Then shuffle your library.\nAt the beginning of your upkeep, you may put a card you own removed from the game with Endless Horizons into your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f1897f1d-b02c-5871-b706-0634536ff191",
+            "name": "Endure",
+            "text": "Prevent all damage that would be dealt to you and permanents you control this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a8b0f3b-3a37-5468-aa5a-208727d8c515",
+            "name": "Flickerwisp",
+            "text": "Flying\nWhen Flickerwisp comes into play, remove another target permanent from the game. Return that card to play under its owner's control at end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "41efc890-387c-54e1-99fc-a481adf701e8",
+            "name": "Hallowed Burial",
+            "text": "Put all creatures on the bottom of their owners' libraries.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fdfaa8c0-ce80-564c-9ed3-9b8c03c16f1e",
+            "name": "Kithkin Spellduster",
+            "text": "Flying\n{1}{W}, Sacrifice Kithkin Spellduster: Destroy target enchantment.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b71ad28f-5ba9-5ab9-9a37-edf23e2736de",
+            "name": "Kithkin Zealot",
+            "text": "When Kithkin Zealot comes into play, you gain 1 life for each black and/or red permanent target opponent controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a2d49a09-d695-5dc5-85e9-1d1bfd2c1f52",
+            "name": "Light from Within",
+            "text": "Chroma Each creature you control gets +1/+1 for each white mana symbol in its mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e89ecf65-0146-5814-9e31-7c29f83cf52b",
+            "name": "Loyal Gyrfalcon",
+            "text": "Defender, flying\nWhenever you play a white spell, Loyal Gyrfalcon loses defender until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f622649f-9bdc-505a-9c29-6f7abf1dec8f",
+            "name": "Patrol Signaler",
+            "text": "{1}{W}, {Q}: Put a 1/1 white Kithkin Soldier creature token into play. ({Q} is the untap symbol.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0d8b2f76-b5be-57e6-bb33-7bc2ef537176",
+            "name": "Recumbent Bliss",
+            "text": "Enchant creature\nEnchanted creature can't attack or block.\nAt the beginning of your upkeep, you may gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ac4c121-c50a-56a8-83d4-13472ef51947",
+            "name": "Spirit of the Hearth",
+            "text": "Flying\nYou can't be the target of spells or abilities your opponents control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "caa31c0f-7512-50f1-a3a9-70019fb98aad",
+            "name": "Springjack Shepherd",
+            "text": "Chroma When Springjack Shepherd comes into play, put a 0/1 white Goat creature token into play for each white mana symbol in the mana costs of permanents you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "913e6bba-0434-59ae-a02d-2c247872d0df",
+            "name": "Suture Spirit",
+            "text": "Flying\n{WB}{WB}{WB}: Regenerate target creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "860ffaf2-de0c-5903-8251-70d02578de1a",
+            "name": "Banishing Knack",
+            "text": "Until end of turn, target creature gains \"{T}: Return target nonland permanent to its owner's hand.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cfbfdd73-6d8e-5f28-882a-db43472bf87b",
+            "name": "Cache Raiders",
+            "text": "At the beginning of your upkeep, return a permanent you control to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "70eebf45-5b98-5e46-8278-ef1490f6f6e3",
+            "name": "Dream Fracture",
+            "text": "Counter target spell. Its controller draws a card.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce6724c6-5725-565a-bfa6-4e4fade13607",
+            "name": "Dream Thief",
+            "text": "Flying\nWhen Dream Thief comes into play, draw a card if you played another blue spell this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ff7329b7-733a-533e-9c8e-78a0117ff8a8",
+            "name": "Glamerdye",
+            "text": "Change the text of target spell or permanent by replacing all instances of one color word with another.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "08954c3e-3497-528c-9efa-d70eb772d017",
+            "name": "Glen Elendra Archmage",
+            "text": "Flying\n{U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1584e48f-e820-5cc3-b976-75fdb4570f7c",
+            "name": "Idle Thoughts",
+            "text": "{2}: Draw a card if you have no cards in hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6511fc06-1018-5539-b256-e414cc799373",
+            "name": "Indigo Faerie",
+            "text": "Flying\n{U}: Target permanent becomes blue in addition to its other colors until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e0a832a-6741-5af2-9787-4b2a0395d03d",
+            "name": "Inundate",
+            "text": "Return all nonblue creatures to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{U}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "503b9d37-6527-5a86-8145-59a577803812",
+            "name": "Merrow Levitator",
+            "text": "{T}: Target creature gains flying until end of turn.\nWhenever you play a blue spell, you may untap Merrow Levitator.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb7edbb4-ad0a-5f27-86a9-3338e3f0b922",
+            "name": "Oona's Grace",
+            "text": "Target player draws a card.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7a46ff72-4644-5978-be44-9f5f039e87be",
+            "name": "Razorfin Abolisher",
+            "text": "{1}{U}, {T}: Return target creature with a counter on it to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4286d5bd-1186-5878-a14c-5339ead8ad09",
+            "name": "Sanity Grinding",
+            "text": "Chroma Reveal the top ten cards of your library. For each blue mana symbol in the mana costs of the revealed cards, target opponent puts the top card of his or her library into his or her graveyard. Then put the cards you revealed this way on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e94e28f-be51-5a02-adf4-978d5af38f5f",
+            "name": "Talonrend",
+            "text": "Flying\n{UR}: Talonrend gets +1/-1 until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3ae72dce-629a-5059-b605-0ababaef231b",
+            "name": "Wake Thrasher",
+            "text": "Whenever a permanent you control becomes untapped, Wake Thrasher gets +1/+1 until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6849b431-06ad-56fc-8b7d-5ad9ced67322",
+            "name": "Wilderness Hypnotist",
+            "text": "{T}: Target red or green creature gets -2/-0 until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a1281f43-e233-5a1e-a18f-bd710297ab38",
+            "name": "Ashling, the Extinguisher",
+            "text": "Whenever Ashling, the Extinguisher deals combat damage to a player, choose target creature that player controls. He or she sacrifices that creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a569db27-40b9-5b10-8422-9db84723042f",
+            "name": "Creakwood Ghoul",
+            "text": "{BG}{BG}: Remove target card in a graveyard from the game. You gain 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cb53154a-c1b7-51de-922b-7f2634b3b9e1",
+            "name": "Crumbling Ashes",
+            "text": "At the beginning of your upkeep, destroy target creature with a -1/-1 counter on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85aef10c-c958-5b1e-85f8-82178c900020",
+            "name": "Lingering Tormentor",
+            "text": "Fear\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7abbdd3d-3a0c-55bf-ae81-2befd15dd489",
+            "name": "Merrow Bonegnawer",
+            "text": "{T}: Target player removes a card in his or her graveyard from the game.\nWhenever you play a black spell, you may untap Merrow Bonegnawer.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a5af59c0-f169-5372-a97f-2154d7db56c3",
+            "name": "Necroskitter",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\nWhenever a creature an opponent controls with a -1/-1 counter on it is put into a graveyard, you may return that card to play under your control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f694101-4bb1-5e6a-94f5-ae2492810674",
+            "name": "Needle Specter",
+            "text": "Flying\nWither (This deals damage to creatures in the form of -1/-1 counters.)\nWhenever Needle Specter deals combat damage to a player, that player discards that many cards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5fb2898f-3f9f-53e8-968f-e3b6fa1a29b8",
+            "name": "Nightmare Incursion",
+            "text": "Search target player's library for up to X cards, where X is the number of Swamps you control, and remove them from the game. Then that player shuffles his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e8b8e0f2-ddf2-52ff-8499-851b79ad8498",
+            "name": "Raven's Crime",
+            "text": "Target player discards a card.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e7071bb-d625-57fc-89bb-b77c41d9ac25",
+            "name": "Smoldering Butcher",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8802f614-decd-542e-a829-c6ef1c7ae6fe",
+            "name": "Soot Imp",
+            "text": "Flying\nWhenever a player plays a nonblack spell, that player loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f0cce21-a806-5b4a-b95f-af6a835ea396",
+            "name": "Soul Reap",
+            "text": "Destroy target nongreen creature. Its controller loses 3 life if you played another black spell this turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eed04d7f-11a8-5910-8aa7-53f27ef76ea6",
+            "name": "Soul Snuffers",
+            "text": "When Soul Snuffers comes into play, put a -1/-1 counter on each creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "93ffa620-3396-589f-9d6f-28ed4df597fd",
+            "name": "Syphon Life",
+            "text": "Target player loses 2 life and you gain 2 life.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "78448a28-5437-5f35-9a97-6f3afe1abef1",
+            "name": "Talara's Bane",
+            "text": "Target opponent reveals his or her hand. Choose a green or white creature card from it. You gain life equal that creature card's toughness, then that player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9b59ccc9-23df-512b-8730-3048c0fe1b63",
+            "name": "Umbra Stalker",
+            "text": "Chroma Umbra Stalker's power and toughness are each equal to the number of black mana symbols in the mana costs of cards in your graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1b9a1019-c07e-5cbe-bf0d-fa24c43fa04e",
+            "name": "Chaotic Backlash",
+            "text": "Chaotic Backlash deals damage to target player equal to twice the number of white and/or blue permanents he or she controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5773770f-63ab-578d-9fd7-ed2b0261886e",
+            "name": "Cinder Pyromancer",
+            "text": "{T}: Cinder Pyromancer deals 1 damage to target player.\nWhenever you play a red spell, you may untap Cinder Pyromancer.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dc37cb19-3a21-54c9-be10-996bcd3c5c7a",
+            "name": "Duergar Cave-Guard",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\n{GU}: Duergar Cave-Guard gets +1/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d550bdcc-5ba7-5e24-a414-6630688dfb3a",
+            "name": "Fiery Bombardment",
+            "text": "Chroma {2}, Sacrifice a creature: Fiery Bombardment deals damage to target creature or player equal to the number of red mana symbols in the sacrificed creature's mana cost.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3fdb2c28-d478-54c2-9dda-1e8d1255ab2b",
+            "name": "Flame Jab",
+            "text": "Flame Jab deals 1 damage to target creature or player.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ebbe23c7-9f7e-54f3-b5cb-d39090c53073",
+            "name": "Hatchet Bully",
+            "text": "{2}{R}, {T}, Put a -1/-1 counter on a creature you control: Hatchet Bully deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "570bf66f-237a-5487-bd0e-cc8c3c12f034",
+            "name": "Hateflayer",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\n{2}{R}, {Q}: Hateflayer deals damage equal to its power to target creature or player. ({Q} is the untap symbol.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c8db8cff-7d91-5923-a9e6-eed05274b3fe",
+            "name": "Heartlash Cinder",
+            "text": "Haste\nChroma When Heartlash Cinder comes into play, it gets +X/+0 until end of turn, where X is the number of red mana symbols in the mana costs of permanents you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ffff4ce-2405-539d-93ad-56fcae334877",
+            "name": "Hotheaded Giant",
+            "text": "Haste\nHotheaded Giant comes into play with two -1/-1 counters on it unless you played another red spell this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d0e77185-47bd-563f-bb36-1af9951288fd",
+            "name": "Impelled Giant",
+            "text": "Trample\nTap an untapped red creature you control other than Impelled Giant: Impelled Giant gets +X/+0 until end of turn, where X is the power of the creature tapped this way.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eca6a98e-fb78-5c2a-929a-eabab03bc4c0",
+            "name": "Outrage Shaman",
+            "text": "Chroma When Outrage Shaman comes into play, it deals damage to target creature equal to the number of red mana symbols in the mana costs of permanents you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "797378c6-2b54-558a-8be7-3964d2802f08",
+            "name": "Puncture Blast",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\nPuncture Blast deals 3 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de550665-a4f2-57bb-96ea-9a3f596225e7",
+            "name": "Rekindled Flame",
+            "text": "Rekindled Flame deals 4 damage to target creature or player.\nAt the beginning of your upkeep, if an opponent has no cards in hand, you may return Rekindled Flame from your graveyard to your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "07ffc7ed-3029-5a45-b76d-ed3b890b684a",
+            "name": "Stigma Lasher",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\nWhenever Stigma Lasher deals damage to a player, that player can't gain life for the rest of the game.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "73ffcf75-7d76-5fde-bb36-378fed606c2e",
+            "name": "Thunderblust",
+            "text": "Haste\nThunderblust has trample as long as it has a -1/-1 counter on it.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{R}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a26b2da0-1b6c-5795-9414-841a30866834",
+            "name": "Unwilling Recruit",
+            "text": "Gain control of target creature until end of turn. Untap that creature. It gets +X/+0 and gains haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{R}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f9ffc76-4dc2-5468-a193-1d1d79f1c1d1",
+            "name": "Aerie Ouphes",
+            "text": "Sacrifice Aerie Ouphes: Aerie Ouphes deals damage equal to its power to target creature with flying.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3d13cead-3261-57f9-b3f8-bed61147e5e1",
+            "name": "Bloom Tender",
+            "text": "{T}: For each color among permanents you control, add one mana of that color to your mana pool.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "089ea162-a3b9-53a7-98e9-212ae916cec6",
+            "name": "Duskdale Wurm",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a93b25e4-9353-535c-9211-f4404c2fa8d3",
+            "name": "Helix Pinnacle",
+            "text": "Shroud\n{X}: Put X tower counters on Helix Pinnacle.\nAt the beginning of your upkeep, if there are 100 or more tower counters on Helix Pinnacle, you win the game.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "26c4f971-9a40-5e93-a96a-dd5c3adcc6b6",
+            "name": "Marshdrinker Giant",
+            "text": "When Marshdrinker Giant comes into play, destroy target Island or Swamp an opponent controls.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a5aa4436-34d1-5149-9075-9e8bff7d6f0d",
+            "name": "Monstrify",
+            "text": "Target creature gets +4/+4 until end of turn.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "af7a10d6-69ed-5916-bcf8-4ee9181d7d48",
+            "name": "Nettle Sentinel",
+            "text": "Nettle Sentinel doesn't untap during its controller's untap step.\nWhenever you play a green spell, you may untap Nettle Sentinel.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b5c3a165-5e87-50ba-bbd5-e2c2db38f0e3",
+            "name": "Phosphorescent Feast",
+            "text": "Chroma Reveal any number of cards in your hand. You gain 2 life for each green mana symbol in those cards' mana costs.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{G}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7b43cb71-97f3-5c06-9f58-050285bb104b",
+            "name": "Primalcrux",
+            "text": "Trample\nChroma Primalcrux's power and toughness are each equal to the number of green mana symbols in the mana costs of permanents you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{G}{G}{G}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fcc54344-e5c5-53aa-a971-71119eeadcdb",
+            "name": "Regal Force",
+            "text": "When Regal Force comes into play, draw a card for each green creature you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ff26a131-cae7-5742-ad86-cdfbf13140d1",
+            "name": "Savage Conception",
+            "text": "Put a 3/3 green Beast creature token into play.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a8ca92e-533a-56d7-a1e4-9960f23ccf45",
+            "name": "Swirling Spriggan",
+            "text": "{GW}{GW}: Target creature you control becomes the color or colors of your choice until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03a2eef2-959c-5e10-9672-76317538e20f",
+            "name": "Talara's Battalion",
+            "text": "Trample\nPlay Talara's Battalion only if you played another green spell this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d37d518f-acdf-5e8a-af1f-8b43124d192b",
+            "name": "Tilling Treefolk",
+            "text": "When Tilling Treefolk comes into play, you may return up to two target land cards from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a4da26e1-a546-5d54-84fb-d2407ace0542",
+            "name": "Twinblade Slasher",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\n{1}{G}: Twinblade Slasher gets +2/+2 until end of turn. Play this ability only once each turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a7ee7b0-f244-5341-91a1-efe45e2cb2f0",
+            "name": "Wickerbough Elder",
+            "text": "Wickerbough Elder comes into play with a -1/-1 counter on it.\n{G}, Remove a -1/-1 counter from Wickerbough Elder: Destroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "73ac6df6-0138-5f7c-ab0c-a177b5d24947",
+            "name": "Batwing Brume",
+            "text": "Prevent all combat damage that would be dealt this turn if {W} was spent to play Batwing Brume. Each player loses 1 life for each attacking creature he or she controls if {B} was spent to play Batwing Brume. (Do both if {W}{B} was spent.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W/B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7db601e3-b2c1-5f71-be25-31d671a67d43",
+            "name": "Beckon Apparition",
+            "text": "Remove target card in a graveyard from the game. Put a 1/1 white and black Spirit creature token with flying into play.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W/B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3978f775-ccb9-50ee-838d-555303e7622d",
+            "name": "Bloodied Ghost",
+            "text": "Flying\nBloodied Ghost comes into play with a -1/-1 counter on it.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "53b0d15c-92cb-5678-8c94-0c5e12b98206",
+            "name": "Cauldron Haze",
+            "text": "Choose any number of target creatures. Each of those creatures gains persist until end of turn. (When it's put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W/B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e34ec215-3a1c-5efd-aee6-72c27eafbce4",
+            "name": "Deathbringer Liege",
+            "text": "Other white creatures you control get +1/+1.\nOther black creatures you control get +1/+1.\nWhenever you play a white spell, you may tap target creature.\nWhenever you play a black spell, you may destroy target creature if it's tapped.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{W/B}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02ea1702-5b8d-5914-9f58-ac73d7848f75",
+            "name": "Divinity of Pride",
+            "text": "Flying, lifelink\nDivinity of Pride gets +4/+4 as long as you have 25 or more life.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{W/B}{W/B}{W/B}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d927fab3-aa40-5b00-96be-fc6838d52ad8",
+            "name": "Edge of the Divinity",
+            "text": "Enchant creature\nAs long as enchanted creature is white, it gets +1/+2.\nAs long as enchanted creature is black, it gets +2/+1.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W/B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83f84198-c564-5329-9b7a-a4c6eb2a5980",
+            "name": "Evershrike",
+            "text": "Flying\nEvershrike gets +2/+2 for each Aura attached to it.\n{X}{WB}{WB}: Return Evershrike from your graveyard to play. You may put an Aura card with converted mana cost X or less from your hand into play attached to it. If you don't, remove Evershrike from the game.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "236ba113-7381-5edd-a3f3-4013b3c01f81",
+            "name": "Gwyllion Hedge-Mage",
+            "text": "When Gwyllion Hedge-Mage comes into play, if you control two or more Plains, you may put a 1/1 white Kithkin Soldier creature token into play.\nWhen Gwyllion Hedge-Mage comes into play, if you control two or more Swamps, you may put a -1/-1 counter on target creature.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "049c80a9-db73-514f-9d76-79fcc535bf99",
+            "name": "Harvest Gwyllion",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea3ad998-6f53-5ccb-a0fb-772386d7b05c",
+            "name": "Nightsky Mimic",
+            "text": "Whenever you play a spell that's both white and black, Nightsky Mimic becomes 4/4 and gains flying until end of turn.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e289d529-beda-5853-96bb-56ddcf570c23",
+            "name": "Nip Gwyllion",
+            "text": "Lifelink (Whenever this creature deals damage, you gain that much life.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "33076fc0-c2f6-5ec1-a7cd-053a84ec94c4",
+            "name": "Pyrrhic Revival",
+            "text": "Each player returns each creature card in his or her graveyard to play with a -1/-1 counter on it.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{W/B}{W/B}{W/B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ae642db9-03ff-511c-a338-f301afb08994",
+            "name": "Restless Apparition",
+            "text": "{WB}{WB}{WB}: Restless Apparition gets +3/+3 until end of turn.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{W/B}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "919555eb-c02a-5424-a524-1d26795193fa",
+            "name": "Stillmoon Cavalier",
+            "text": "Protection from white and from black\n{WB}: Stillmoon Cavalier gains flying until end of turn.\n{WB}: Stillmoon Cavalier gains first strike until end of turn.\n{WB}{WB}: Stillmoon Cavalier gets +1/+0 until end of turn.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "53a72db0-0b43-5b0d-9418-a2fe48c4a1c9",
+            "name": "Unmake",
+            "text": "Remove target creature from the game.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{W/B}{W/B}{W/B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "455c6f9c-9b3d-590c-abb6-051ab7954f45",
+            "name": "Voracious Hatchling",
+            "text": "Lifelink\nVoracious Hatchling comes into play with four -1/-1 counters on it.\nWhenever you play a white spell, remove a -1/-1 counter from Voracious Hatchling.\nWhenever you play a black spell, remove a -1/-1 counter from Voracious Hatchling.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8fe1a16a-ab5c-5737-a434-6632390e8d79",
+            "name": "Call the Skybreaker",
+            "text": "Put a 5/5 blue and red Elemental creature token with flying into play.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U/R}{U/R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1a88fa8c-b551-535c-ab50-ba9204bd84dc",
+            "name": "Clout of the Dominus",
+            "text": "Enchant creature\nAs long as enchanted creature is blue, it gets +1/+1 and has shroud. (It can't be the target of spells or abilities.)\nAs long as enchanted creature is red, it gets +1/+1 and has haste.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U/R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dc162a3b-8625-5d0e-9cbf-a3df76e8677d",
+            "name": "Crackleburr",
+            "text": "{UR}{UR}, {T}, Tap two untapped red creatures you control: Crackleburr deals 3 damage to target creature or player.\n{UR}{UR}, {Q}, Untap two tapped blue creatures you control: Return target creature to its owner's hand. ({Q} is the untap symbol.)",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "50ed9364-38ab-58ec-817d-1e16099cf911",
+            "name": "Crag Puca",
+            "text": "{UR}: Switch Crag Puca's power and toughness until end of turn.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U/R}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bf1256e3-9a98-54a1-a3a6-580576157387",
+            "name": "Dominus of Fealty",
+            "text": "Flying\nAt the beginning of your upkeep, you may gain control of target permanent until end of turn. If you do, untap it and it gains haste until end of turn.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{U/R}{U/R}{U/R}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa8333fc-ac7f-5bb0-9551-ad95434ddd81",
+            "name": "Inside Out",
+            "text": "Switch target creature's power and toughness until end of turn.\nDraw a card.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U/R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2d7965a6-b809-555b-b2c9-405356413584",
+            "name": "Mindwrack Liege",
+            "text": "Other blue creatures you control get +1/+1.\nOther red creatures you control get +1/+1.\n{UR}{UR}{UR}{UR}: You may put a blue or red creature card from your hand into play.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{U/R}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dbf1fc75-c757-5e18-81bb-64452c56415b",
+            "name": "Mirror Sheen",
+            "text": "{1}{UR}{UR}: Copy target instant or sorcery spell that targets you. You may choose new targets for the copy.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U/R}{U/R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "23ff7e34-5d90-5c61-8055-55271de0d6c5",
+            "name": "Noggle Bandit",
+            "text": "Noggle Bandit can't be blocked except by creatures with defender.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0e3b9e3b-fd13-56e4-a72c-a49d7a732753",
+            "name": "Noggle Bridgebreaker",
+            "text": "When Noggle Bridgebreaker comes into play, return a land you control to its owner's hand.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a90c24e6-ed83-52a1-81db-2afeda06d24e",
+            "name": "Noggle Hedge-Mage",
+            "text": "When Noggle Hedge-Mage comes into play, if you control two or more Islands, you may tap two target permanents.\nWhen Noggle Hedge-Mage comes into play, if you control two or more Mountains, you may have Noggle Hedge-Mage deal 2 damage to target player.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7ed5b61f-02ed-5d6b-9f72-b3a12020ed9c",
+            "name": "Noggle Ransacker",
+            "text": "When Noggle Ransacker comes into play, each player draws two cards, then discards a card at random.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03cbb600-af0d-5b44-8f99-1582fcd2ae32",
+            "name": "Nucklavee",
+            "text": "When Nucklavee comes into play, you may return target red sorcery card from your graveyard to your hand.\nWhen Nucklavee comes into play, you may return target blue instant card from your graveyard to your hand.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U/R}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7427aa05-545a-549a-8970-c91685109622",
+            "name": "Riverfall Mimic",
+            "text": "Whenever you play a spell that's both blue and red, Riverfall Mimic becomes 3/3 and is unblockable until end of turn.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "731b23bd-14c4-5644-bcb5-46edd5243f13",
+            "name": "Shrewd Hatchling",
+            "text": "Shrewd Hatchling comes into play with four -1/-1 counters on it.\n{UR}: Target creature can't block Shrewd Hatchling this turn.\nWhenever you play a blue spell, remove a -1/-1 counter from Shrewd Hatchling.\nWhenever you play a red spell, remove a -1/-1 counter from Shrewd Hatchling.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "10dcf077-b25b-57b8-8322-6ae92d7e17ab",
+            "name": "Stream Hopper",
+            "text": "{UR}: Stream Hopper gains flying until end of turn.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "86e2b69f-5826-5eca-a541-daced00def07",
+            "name": "Unnerving Assault",
+            "text": "Creatures your opponents control get -1/-0 until end of turn if {U} was spent to play Unnerving Assault, and creatures you control get +1/+0 until end of turn if {R} was spent to play it. (Do both if {U}{R} was spent.)",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U/R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "970d954f-3139-5711-89e1-257640183095",
+            "name": "Canker Abomination",
+            "text": "As Canker Abomination comes into play, choose an opponent. Canker Abomination comes into play with a -1/-1 counter on it for each creature that player controls.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5a07ee2-8ffb-5487-85eb-23beb882515a",
+            "name": "Cankerous Thirst",
+            "text": "If {B} was spent to play Cankerous Thirst, you may have target creature get -3/-3 until end of turn. If {G} was spent to play Cankerous Thirst, you may have target creature get +3/+3 until end of turn. (Do both if {B}{G} was spent.)",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B/G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d8f12878-6c9d-5d42-ad0a-38edb4c4b219",
+            "name": "Creakwood Liege",
+            "text": "Other black creatures you control get +1/+1.\nOther green creatures you control get +1/+1.\nAt the beginning of your upkeep, you may put a 1/1 black and green Worm creature token into play.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{B/G}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eae1e3b2-d14d-505c-9559-bf096f0cb9e6",
+            "name": "Deity of Scars",
+            "text": "Trample\nDeity of Scars comes into play with two -1/-1 counters on it.\n{BG}, Remove a -1/-1 counter from Deity of Scars: Regenerate Deity of Scars.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{B/G}{B/G}{B/G}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c9dbe65-ff51-5726-847e-30f691af7f91",
+            "name": "Desecrator Hag",
+            "text": "When Desecrator Hag comes into play, return to your hand the creature card in your graveyard with the highest power. If two or more cards are tied for highest power, you choose one of them.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "25a921ed-3db6-538e-894f-9d4fe41c6a2e",
+            "name": "Doomgape",
+            "text": "Trample\nAt the beginning of your upkeep, sacrifice a creature. You gain life equal to that creature's toughness.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{B/G}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6cdaa356-055b-5cf8-ad52-fab72255015d",
+            "name": "Drain the Well",
+            "text": "Destroy target land. You gain 2 life.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B/G}{B/G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c2e3483-b7aa-58b3-897a-c99567dc74c0",
+            "name": "Gift of the Deity",
+            "text": "Enchant creature\nAs long as enchanted creature is black, it gets +1/+1 and has deathtouch. (Whenever it deals damage to a creature, destroy that creature.)\nAs long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B/G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "06cc030b-9ce9-5c21-a449-6b2b317b6c58",
+            "name": "Hag Hedge-Mage",
+            "text": "When Hag Hedge-Mage comes into play, if you control two or more Swamps, you may have target player discard a card.\nWhen Hag Hedge-Mage comes into play, if you control two or more Forests, you may put target card in your graveyard on top of your library.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f1cf1dc-2f0a-5e7a-bede-f5e51c78decf",
+            "name": "Noxious Hatchling",
+            "text": "Noxious Hatchling comes into play with four -1/-1 counters on it.\nWither (This deals damage to creatures in the form of -1/-1 counters.)\nWhenever you play a black spell, remove a -1/-1 counter from Noxious Hatchling.\nWhenever you play a green spell, remove a -1/-1 counter from Noxious Hatchling.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "09525df4-cc1f-5a7d-95aa-c890f34f44e6",
+            "name": "Odious Trow",
+            "text": "{1}{BG}: Regenerate Odious Trow.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "873a1a6b-c824-5f5c-9f8e-a503eeded360",
+            "name": "Quillspike",
+            "text": "{BG}, Remove a -1/-1 counter from a creature you control: Quillspike gets +3/+3 until end of turn.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f440a9b-1810-5401-85d3-3e304ae17c6b",
+            "name": "Rendclaw Trow",
+            "text": "Wither (This deals damage to creatures in the form of -1/-1 counters.)\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81386b8c-77da-516b-b18a-093e0adb50fa",
+            "name": "Sapling of Colfenor",
+            "text": "Sapling of Colfenor is indestructible.\nWhenever Sapling of Colfenor attacks, reveal the top card of your library. If it's a creature card, you gain life equal to that card's toughness, lose life equal to its power, then put it into your hand.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "20c0419d-6f7f-518b-93dd-ba6c4dccbdaa",
+            "name": "Stalker Hag",
+            "text": "Swampwalk, forestwalk",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B/G}{B/G}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f969330a-62cf-5610-83fc-59f9012cf0aa",
+            "name": "Woodlurker Mimic",
+            "text": "Whenever you play a spell that's both black and green, Woodlurker Mimic becomes 4/5 and gains wither until end of turn. (It deals damage to creatures in the form of -1/-1 counters.)",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B/G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "44e371cf-3eb3-525a-a2d2-b68f31116aab",
+            "name": "Worm Harvest",
+            "text": "Put a 1/1 black and green Worm creature token into play for each land card in your graveyard.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{B/G}{B/G}{B/G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c713ccd6-8f61-515d-950e-c23db21ac5e6",
+            "name": "Balefire Liege",
+            "text": "Other red creatures you control get +1/+1.\nOther white creatures you control get +1/+1.\nWhenever you play a red spell, Balefire Liege deals 3 damage to target player.\nWhenever you play a white spell, you gain 3 life.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{R/W}{R/W}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b4bdde27-7fd8-5305-b71a-553b48a2ed15",
+            "name": "Battlegate Mimic",
+            "text": "Whenever you play a spell that's both red and white, Battlegate Mimic becomes 4/2 and gains first strike until end of turn.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "290609e9-0057-5c2b-bb64-c113496f60a6",
+            "name": "Belligerent Hatchling",
+            "text": "First strike\nBelligerent Hatchling comes into play with four -1/-1 counters on it.\nWhenever you play a red spell, remove a -1/-1 counter from Belligerent Hatchling.\nWhenever you play a white spell, remove a -1/-1 counter from Belligerent Hatchling.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "300bb6f4-8100-51a8-8430-6d7a3d2a345e",
+            "name": "Double Cleave",
+            "text": "Target creature gains double strike until end of turn. (It deals both first-strike and regular combat damage.)",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R/W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3cdf3142-ab49-5234-8873-e08b337d7b77",
+            "name": "Duergar Assailant",
+            "text": "Sacrifice Duergar Assailant: Duergar Assailant deals 1 damage to target attacking or blocking creature.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fc97e711-4dc9-51a7-9830-ed5dad2b0887",
+            "name": "Duergar Hedge-Mage",
+            "text": "When Duergar Hedge-Mage comes into play, if you control two or more Mountains, you may destroy target artifact.\nWhen Duergar Hedge-Mage comes into play, if you control two or more Plains, you may destroy target enchantment.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d55259b7-19b1-5cde-ad49-9098a8d78779",
+            "name": "Duergar Mine-Captain",
+            "text": "{1}{GU}, {Q}: Attacking creatures get +1/+0 until end of turn. ({Q} is the untap symbol.)",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6283ee8c-c13e-504d-9a55-ef5bce05fa83",
+            "name": "Figure of Destiny",
+            "text": "{GU}: Figure of Destiny becomes a 2/2 Kithkin Spirit.\n{GU}{GU}{GU}: If Figure of Destiny is a Spirit, it becomes a 4/4 Kithkin Spirit Warrior.\n{GU}{GU}{GU}{GU}{GU}{GU}: If Figure of Destiny is a Warrior, it becomes an 8/8 Kithkin Spirit Warrior Avatar with flying and first strike.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d05af934-4cd9-5383-9dd4-f817a5a288b5",
+            "name": "Fire at Will",
+            "text": "Fire at Will deals 3 damage divided as you choose among any number of target attacking or blocking creatures.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R/W}{R/W}{R/W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5c0f3bbc-a417-51da-9674-82e753335a4f",
+            "name": "Hearthfire Hobgoblin",
+            "text": "Double strike",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R/W}{R/W}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "efbc1025-9316-53ce-9e21-6e4b84174748",
+            "name": "Hobgoblin Dragoon",
+            "text": "Flying, first strike",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e80731e8-f02c-5a09-8558-353f8423c9a1",
+            "name": "Moonhold",
+            "text": "Target player can't play land cards this turn if {R} was spent to play Moonhold and can't play creature cards this turn if {W} was spent to play it. (Do both if {R}{W} was spent.)",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R/W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6c24e909-3658-5791-85b0-bde025dd74ee",
+            "name": "Nobilis of War",
+            "text": "Flying\nAttacking creatures you control get +2/+0.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{R/W}{R/W}{R/W}{R/W}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a7c05056-ff39-5cc8-ab92-2fe57cd1f2c4",
+            "name": "Rise of the Hobgoblins",
+            "text": "When Rise of the Hobgoblins comes into play, you may pay {X}. If you do, put X 1/1 red and white Goblin Soldier creature tokens into play.\n{GU}: Red creatures and white creatures you control gain first strike until end of turn.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R/W}{R/W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "50858b80-3105-5ed0-b5f6-284d6e06114b",
+            "name": "Scourge of the Nobilis",
+            "text": "Enchant creature\nAs long as enchanted creature is red, it gets +1/+1 and has \"{GU}: This creature gets +1/+0 until end of turn.\"\nAs long as enchanted creature is white, it gets +1/+1 and has lifelink. (Whenever it deals damage, its controller gains that much life.)",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R/W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6ab82d81-c24a-59a8-9b3f-e2b77d1fa260",
+            "name": "Spitemare",
+            "text": "Whenever Spitemare is dealt damage, it deals that much damage to target creature or player.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R/W}{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb6b216a-e05a-5558-953e-760fe475fbf3",
+            "name": "Waves of Aggression",
+            "text": "Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R/W}{R/W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3d82ac5-9fd1-5f72-b064-486459ba8365",
+            "name": "Cold-Eyed Selkie",
+            "text": "Islandwalk\nWhenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2bbc95a4-c748-541c-9db4-e0d223dbd427",
+            "name": "Fable of Wolf and Owl",
+            "text": "Whenever you play a green spell, you may put a 2/2 green Wolf creature token into play.\nWhenever you play a blue spell, you may put a 1/1 blue Bird creature token with flying into play.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{G/U}{G/U}{G/U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba39315e-3b9a-5362-a276-81b245893580",
+            "name": "Favor of the Overbeing",
+            "text": "Enchant creature\nAs long as enchanted creature is green, it gets +1/+1 and has vigilance.\nAs long as enchanted creature is blue, it gets +1/+1 and has flying.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G/U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f4f0ebac-2a9e-50cf-a3b9-fa4553081d61",
+            "name": "Gilder Bairn",
+            "text": "{2}{GW}, {Q}: For each counter on target permanent, put another of those counters on that permanent. ({Q} is the untap symbol.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa3fd9b5-89f1-56f8-b903-d2781f23f818",
+            "name": "Grazing Kelpie",
+            "text": "{GW}, Sacrifice Grazing Kelpie: Put target card in a graveyard on the bottom of its owner's library.\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83bd0e35-ac0c-5e94-9d30-dfed8356de85",
+            "name": "Groundling Pouncer",
+            "text": "{GW}: Groundling Pouncer gets +1/+3 and gains flying until end of turn. Play this ability only once each turn and only if an opponent controls a creature with flying.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "211d982b-cec0-557b-93c6-89606d51ab24",
+            "name": "Invert the Skies",
+            "text": "Creatures your opponents control lose flying until end of turn if {G} was spent to play Invert the Skies, and creatures you control gain flying until end of turn if {U} was spent to play it. (Do both if {G}{U} was spent.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G/U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a666b49c-a661-504f-9ef0-04925e9a6df6",
+            "name": "Murkfiend Liege",
+            "text": "Other green creatures you control get +1/+1.\nOther blue creatures you control get +1/+1.\nUntap all green and/or blue creatures you control during each other player's untap step.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{G/U}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "145ec295-c0f9-5387-8687-6a2f9a371300",
+            "name": "Overbeing of Myth",
+            "text": "Overbeing of Myth's power and toughness are each equal to the number of cards in your hand.\nAt the beginning of your draw step, draw a card.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{G/U}{G/U}{G/U}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ee4f4eac-55ea-5088-83ca-8fb8a0b2fb08",
+            "name": "Selkie Hedge-Mage",
+            "text": "When Selkie Hedge-Mage comes into play, if you control two or more Forests, you may gain 3 life.\nWhen Selkie Hedge-Mage comes into play, if you control two or more Islands, you may return target tapped creature to its owner's hand.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e6432886-ffd5-5559-99c6-0669532319e0",
+            "name": "Shorecrasher Mimic",
+            "text": "Whenever you play a spell that's both green and blue, Shorecrasher Mimic becomes 5/3 and gains trample until end of turn.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dc3d0e52-dece-5711-baec-0482366e14a8",
+            "name": "Slippery Bogle",
+            "text": "Slippery Bogle can't be the target of spells or abilities your opponents control.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6c48b000-825a-5b77-b4ba-8dff8fc0cef4",
+            "name": "Snakeform",
+            "text": "Target creature loses all abilities and becomes a 1/1 green Snake until end of turn.\nDraw a card.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G/U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "67411f74-afd0-5cb7-a679-7eaf4f1283de",
+            "name": "Spitting Image",
+            "text": "Put a token into play that's a copy of target creature.\nRetrace (You may play this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G/U}{G/U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2213f4fb-a302-52fe-9081-158451e60ae8",
+            "name": "Sturdy Hatchling",
+            "text": "Sturdy Hatchling comes into play with four -1/-1 counters on it.\n{GW}: Sturdy Hatchling gains shroud until end of turn.\nWhenever you play a green spell, remove a -1/-1 counter from Sturdy Hatchling.\nWhenever you play a blue spell, remove a -1/-1 counter from Sturdy Hatchling.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd46f8e0-3127-5f0c-a5ea-10809dfe8fb6",
+            "name": "Trapjaw Kelpie",
+            "text": "Flash\nPersist (When this creature is put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6ca1aa20-d0a4-57d6-94e3-c323b57f5139",
+            "name": "Wistful Selkie",
+            "text": "When Wistful Selkie comes into play, draw a card.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{G/U}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5f335e1a-6031-5203-8155-a92693ad8901",
+            "name": "Altar Golem",
+            "text": "Trample\nAltar Golem's power and toughness are each equal to the number of creatures in play.\nAltar Golem doesn't untap during its controller's untap step.\nTap five untapped creatures you control: Untap Altar Golem.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0acaee76-73b5-5439-b793-190cfac530ce",
+            "name": "Antler Skulkin",
+            "text": "{2}: Target white creature gains persist until end of turn. (When it's put into a graveyard from play, if it had no -1/-1 counters on it, return it to play under its owner's control with a -1/-1 counter on it.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "866b0c2b-7344-584a-b3a1-74bc6a50a903",
+            "name": "Fang Skulkin",
+            "text": "{2}: Target black creature gains wither until end of turn. (It deals damage to creatures in the form of -1/-1 counters.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "839e9b19-8728-5a74-bf89-3547ef349318",
+            "name": "Hoof Skulkin",
+            "text": "{3}: Target green creature gets +1/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d0f77126-ff3c-59ba-9207-8415c40a2744",
+            "name": "Jawbone Skulkin",
+            "text": "{2}: Target red creature gains haste until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "00730563-84b6-562e-bf0a-51b2fdaf583c",
+            "name": "Leering Emblem",
+            "text": "Whenever you play a spell, equipped creature gets +2/+2 until end of turn.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4696cb7b-484d-5035-afba-9829d160cba8",
+            "name": "Scarecrone",
+            "text": "{1}, Sacrifice a Scarecrow: Draw a card.\n{4}, {T}: Return target artifact creature card from your graveyard to play.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "401963b9-f54f-544c-bbe8-d32d2cca8758",
+            "name": "Shell Skulkin",
+            "text": "{3}: Target blue creature gains shroud until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "975ccf00-3a2f-5ca6-b381-2e64b3e2759e",
+            "name": "Ward of Bones",
+            "text": "Each opponent who controls more creatures than you can't play creature cards. The same is true for artifacts, enchantments, and lands.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f4b7766a-8590-57bf-b625-159c8f9c4103",
+            "name": "Cascade Bluffs",
+            "text": "{T}: Add {1} to your mana pool.\n{UR}, {T}: Add {U}{U}, {U}{R}, or {R}{R} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "feecb7fd-b8c3-5136-9114-2b7257a2a766",
+            "name": "Fetid Heath",
+            "text": "{T}: Add {1} to your mana pool.\n{WB}, {T}: Add {W}{W}, {W}{B}, or {B}{B} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b584f07b-e23b-5af1-bad0-944054694522",
+            "name": "Flooded Grove",
+            "text": "{T}: Add {1} to your mana pool.\n{GW}, {T}: Add {G}{G}, {G}{U}, or {U}{U} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27e87e79-77ff-5179-b9f6-597433b8a038",
+            "name": "Rugged Prairie",
+            "text": "{T}: Add {1} to your mana pool.\n{GU}, {T}: Add {R}{R}, {R}{W}, or {W}{W} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8db72e25-a8e8-529e-b017-e9136665691b",
+            "name": "Springjack Pasture",
+            "text": "{T}: Add {1} to your mana pool.\n{4}, {T}: Put a 0/1 white Goat creature token into play.\n{T}, Sacrifice X Goats: Add X mana of any one color to your mana pool. You gain X life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7a39815b-7cac-550f-ad76-84167d8a9df0",
+            "name": "Twilight Mire",
+            "text": "{T}: Add {1} to your mana pool.\n{BG}, {T}: Add {B}{B}, {B}{G}, or {G}{G} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "EVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "da3796c8-1666-58fd-b962-3e960cd28bdd",
+            "name": "Goat",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "4a3f32ed-8d70-5358-adde-7c206a525b8a",
+            "name": "Bird",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "0f7766ea-bb7c-5936-967b-49eac1f8fc11",
+            "name": "Beast",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "c39b810f-d8ab-5fd6-a971-5e5017d7b511",
+            "name": "Spirit",
+            "text": "",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "e59691aa-e1f1-5b09-836c-3104c1f45bfb",
+            "name": "Elemental",
+            "text": "",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "daae7519-b9df-5c2d-9bde-25d115b7ece3",
+            "name": "Worm",
+            "text": "",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "69863b68-0cee-589c-a3d4-b02bbce9db2f",
+            "name": "Goblin Soldier",
+            "text": "",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TEVE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
