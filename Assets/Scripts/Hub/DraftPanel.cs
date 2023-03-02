@@ -12,14 +12,18 @@ public class DraftPanel : MonoBehaviour
     public GameObject entryList;
     public GameObject entryPrefab;
     public GameObject createOverlay;
-    public GameObject setDropbox;
+    public GameObject setDropbox1;
+    public GameObject setDropbox2;
+    public GameObject setDropbox3;
     public GameObject capacityInput;
     public GameObject errorMessage;
     public GameObject joinButton;
     private List<string> setCodes;
     private List<string> setNames;
     private int capacity;
-    private int dropdownIndex;
+    private int dropdownIndex1;
+    private int dropdownIndex2;
+    private int dropdownIndex3;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +63,15 @@ public class DraftPanel : MonoBehaviour
         setNames.Add(set.setName);
         setCodes.Add(set.setCode);
       }
-      setDropbox.GetComponent<TMP_Dropdown>().ClearOptions();
-      setDropbox.GetComponent<TMP_Dropdown>().AddOptions(setNames);
-      setDropbox.GetComponent<TMP_Dropdown>().value = 0;
+      setDropbox1.GetComponent<TMP_Dropdown>().ClearOptions();
+      setDropbox1.GetComponent<TMP_Dropdown>().AddOptions(setNames);
+      setDropbox1.GetComponent<TMP_Dropdown>().value = 0;
+      setDropbox2.GetComponent<TMP_Dropdown>().ClearOptions();
+      setDropbox2.GetComponent<TMP_Dropdown>().AddOptions(setNames);
+      setDropbox2.GetComponent<TMP_Dropdown>().value = 0;
+      setDropbox3.GetComponent<TMP_Dropdown>().ClearOptions();
+      setDropbox3.GetComponent<TMP_Dropdown>().AddOptions(setNames);
+      setDropbox3.GetComponent<TMP_Dropdown>().value = 0;
       // Show overlay
       createOverlay.GetComponent<CanvasGroup>().alpha = 1;
       createOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -80,7 +90,9 @@ public class DraftPanel : MonoBehaviour
       try
       {
         capacity = Int32.Parse(capacityString);
-        dropdownIndex = setDropbox.GetComponent<TMP_Dropdown>().value;
+        dropdownIndex1 = setDropbox1.GetComponent<TMP_Dropdown>().value;
+        dropdownIndex2 = setDropbox2.GetComponent<TMP_Dropdown>().value;
+        dropdownIndex3 = setDropbox3.GetComponent<TMP_Dropdown>().value;
         if (capacity >= 0)
         {
           errorMessage.GetComponent<TMP_Text>().text = "";
@@ -104,8 +116,17 @@ public class DraftPanel : MonoBehaviour
       myDraft.hostId = PlayerManager.Instance.myID;
       myDraft.hostName = PlayerManager.Instance.myName;
       myDraft.capacity = capacity;
-      myDraft.set = setCodes[dropdownIndex];
-      myDraft.setName = setNames[dropdownIndex];
+      myDraft.set1 = setCodes[dropdownIndex1];
+      myDraft.set2 = setCodes[dropdownIndex2];
+      myDraft.set3 = setCodes[dropdownIndex3];
+      if (myDraft.set1 == myDraft.set2 && myDraft.set2 == myDraft.set3)
+      {
+        myDraft.setName = setNames[dropdownIndex1];
+      }
+      else
+      {
+        myDraft.setName = myDraft.set1 + " / " + myDraft.set2 + " / " + myDraft.set3;
+      }
       myDraft.players = new List<int>();
       myDraft.players.Add(myDraft.hostId);
       myDraft.started = 0;
