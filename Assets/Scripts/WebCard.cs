@@ -249,9 +249,17 @@ public class WebCard : MonoBehaviour
     {
       fullMaskObject.SetActive(true);
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-      if (card.backId != "" && card.backId != null)
+      if (card.layout != "split" && card.backId != "" && card.backId != null)
       {
         fullMaskBackObject.SetActive(true);
+        if (card.layout == "flip")
+        {
+          fullMaskBackObject.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+        }
+        else
+        {
+          fullMaskBackObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        }
       }
       else
       {
@@ -263,7 +271,7 @@ public class WebCard : MonoBehaviour
     {
       fullMaskObject.SetActive(false);
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-      if (card.backId != "" && card.backId != null)
+      if (card.layout != "split" && card.backId != "" && card.backId != null)
       {
         fullMaskBackObject.SetActive(false);
       }

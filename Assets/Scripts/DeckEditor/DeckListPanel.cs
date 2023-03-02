@@ -155,6 +155,14 @@ public class DeckListPanel : MonoBehaviour
         CardInfo targetBackCard = PlayerManager.Instance.getCardFromLookup(targetCard.backId);
         highlightCardBackObject.SetActive(true);
         highlightCardBackObject.GetComponent<WebCard>().texturizeCard(targetBackCard);
+        if (targetCard.layout == "flip")
+        {
+          highlightCardBackObject.transform.localRotation = Quaternion.Euler(0f, 0f, 180f);
+        }
+        else
+        {
+          highlightCardBackObject.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        }
       }
     }
 
