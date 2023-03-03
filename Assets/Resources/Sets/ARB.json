@@ -1,0 +1,3681 @@
+{
+    "setCode": "ARB",
+    "setName": "Alara Reborn",
+    "cards": [
+        {
+            "id": "e1001f62-0c7f-544e-8905-738feb82bf88",
+            "name": "Ardent Plea",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nCascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e61536eb-5acb-54cd-90d9-476f86d9a50f",
+            "name": "Aven Mimeomancer",
+            "text": "Flying\nAt the beginning of your upkeep, you may put a feather counter on target creature. If you do, that creature is 3/1 and has flying as long as it has a feather counter on it.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "68787d65-0187-56fe-80a6-b3f82ea1d19e",
+            "name": "Ethercaste Knight",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aae5b8a2-d311-5212-8589-be08548728fd",
+            "name": "Ethersworn Shieldmage",
+            "text": "Flash\nWhen Ethersworn Shieldmage comes into play, prevent all damage that would be dealt to artifact creatures this turn.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "22d7eec3-b2a2-537b-8865-f4e050b7b496",
+            "name": "Fieldmist Borderpost",
+            "text": "You may pay {1} and return a basic land you control to its owner's hand rather than pay Fieldmist Borderpost's mana cost.\nFieldmist Borderpost comes into play tapped.\n{T}: Add {W} or {U} to your mana pool.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a07a3e8-f503-5d94-8aea-0e934cc5bae0",
+            "name": "Filigree Angel",
+            "text": "Flying\nWhen Filigree Angel comes into play, you gain 3 life for each artifact you control.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{W}{W}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "99c42685-c894-57fe-bffb-4913ed88634e",
+            "name": "Glassdust Hulk",
+            "text": "Whenever another artifact comes into play under your control, Glassdust Hulk gets +1/+1 until end of turn and is unblockable this turn.\nCycling {WU} ({WU}, Discard this card: Draw a card.)",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3c7cf112-ba65-595e-a43e-b5e1cb1cddf7",
+            "name": "Meddling Mage",
+            "text": "As Meddling Mage comes into play, name a nonland card.\nThe named card can't be played.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "937ea00a-f4ab-5bd6-8bda-750fc653ff1b",
+            "name": "Offering to Asha",
+            "text": "Counter target spell unless its controller pays {4}. You gain 4 life.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d780941a-b8f3-5540-aa62-f57d2bf9d9c9",
+            "name": "Sanctum Plowbeast",
+            "text": "Defender\nPlainscycling {2}, islandcycling {2} ({2}, Discard this card: Search your library for a Plains or Island card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "82c1c8e6-6264-553f-8a3d-f6b2deaa504c",
+            "name": "Shield of the Righteous",
+            "text": "Equipped creature gets +0/+2 and has vigilance.\nWhenever equipped creature blocks a creature, that creature doesn't untap during its controller's next untap step.\nEquip {2}",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{U}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e1cdea9-8c02-5987-974c-9ed00cade0f6",
+            "name": "Sovereigns of Lost Alara",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nWhenever a creature you control attacks alone, you may search your library for an Aura card that could enchant that creature, put it into play attached to that creature, then shuffle your library.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f916a802-d4ff-532c-b2e6-579d7684611f",
+            "name": "Stormcaller's Boon",
+            "text": "Sacrifice Stormcaller's Boon: Creatures you control gain flying until end of turn.\nCascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7c581212-e99c-5d37-8b44-e5cfb474377f",
+            "name": "Talon Trooper",
+            "text": "Flying",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e716bf6b-4443-541a-9460-18a8032e7f0a",
+            "name": "Unbender Tine",
+            "text": "{T}: Untap another target permanent.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0166bc69-b44f-54e5-9b8d-de967e61f41b",
+            "name": "Wall of Denial",
+            "text": "Defender, flying, shroud",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1093e390-b8c8-5099-903b-f191b98cf1b0",
+            "name": "Architects of Will",
+            "text": "When Architects of Will comes into play, look at the top three cards of target player's library, then put them back in any order.\nCycling {UB} ({UB}, Discard this card: Draw a card.)",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8dfa4834-6958-5cad-93c1-5cb0964ce5de",
+            "name": "Brainbite",
+            "text": "Target opponent reveals his or her hand. You choose a card from it. That player discards that card.\nDraw a card.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab593973-79da-5ceb-9883-b0d5e8495c0a",
+            "name": "Deny Reality",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)\nReturn target permanent to its owner's hand.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6492d27e-7cce-5870-a39d-6a50c0d22928",
+            "name": "Etherium Abomination",
+            "text": "Unearth {1}{U}{B} ({1}{U}{B}: Return this card from your graveyard to play. It gains haste. Remove it from the game at end of turn or if it would leave play. Unearth only as a sorcery.)",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e8b7817-f770-53e4-bbde-a641c55ebf55",
+            "name": "Illusory Demon",
+            "text": "Flying\nWhen you play a spell, sacrifice Illusory Demon.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa50ab73-24af-5210-aec2-cde30c0d77b0",
+            "name": "Jhessian Zombies",
+            "text": "Fear\nIslandcycling {2}, swampcycling {2} ({2}, Discard this card: Search your library for an Island or Swamp card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8b7f5c31-28de-59e0-832f-9dacfbae85c7",
+            "name": "Kathari Remnant",
+            "text": "Flying\n{B}: Regenerate Kathari Remnant.\nCascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d203ccdf-1e89-58ba-b1e0-785c8632a383",
+            "name": "Lich Lord of Unx",
+            "text": "{U}{B}, {T}: Put a 1/1 blue and black Zombie Wizard creature token into play.\n{U}{U}{B}{B}: Target player loses X life and puts the top X cards of his or her library into his or her graveyard, where X is the number of Zombies you control.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "de64875c-ae9b-5ed6-bef2-7121c9cabbcd",
+            "name": "Mask of Riddles",
+            "text": "Equipped creature has fear.\nWhenever equipped creature deals combat damage to a player, you may draw a card.\nEquip {2}",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "710d511a-9abb-571f-a7cc-fe38cac9060a",
+            "name": "Mind Funeral",
+            "text": "Target opponent reveals cards from the top of his or her library until four land cards are revealed. That player puts all cards revealed this way into his or her graveyard.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b57c7f60-0b92-5f30-b513-1329a37a49c4",
+            "name": "Mistvein Borderpost",
+            "text": "You may pay {1} and return a basic land you control to its owner's hand rather than pay Mistvein Borderpost's mana cost.\nMistvein Borderpost comes into play tapped.\n{T}: Add {U} or {B} to your mana pool.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d93534d9-42d2-5e9e-80f4-0911ac184127",
+            "name": "Nemesis of Reason",
+            "text": "Whenever Nemesis of Reason attacks, defending player puts the top ten cards of his or her library into his or her graveyard.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "77dffba4-077a-5793-b6de-e3db43da68d7",
+            "name": "Soul Manipulation",
+            "text": "Choose one or both \u2014 Counter target creature spell; and/or return target creature card in your graveyard to your hand.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "37c8db5b-ef13-5a75-88b0-1adf28364546",
+            "name": "Soulquake",
+            "text": "Return all creatures in play and all creature cards in graveyards to their owners' hands.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{3}{U}{U}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a62a2d91-f525-531d-a7bc-194de3ec7dd2",
+            "name": "Time Sieve",
+            "text": "{T}, Sacrifice five artifacts: Take an extra turn after this one.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c4eab165-fd56-5de8-a649-7f1bed11077e",
+            "name": "Vedalken Ghoul",
+            "text": "Whenever Vedalken Ghoul becomes blocked, defending player loses 4 life.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c389a04-0cfa-59a8-b67a-6c7a98b6e292",
+            "name": "Anathemancer",
+            "text": "When Anathemancer comes into play, it deals damage to target player equal to the number of nonbasic lands that player controls.\nUnearth {5}{B}{R} ({5}{B}{R}: Return this card from your graveyard to play. It gains haste. Remove it from the game at end of turn or if it would leave play. Unearth only as a sorcery.)",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85616586-607d-5b3b-bb52-45334ed7dd14",
+            "name": "Bituminous Blast",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)\nBituminous Blast deals 4 damage to target creature.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "574cdd9f-e3a0-5ad9-b2c6-3b34092b54fa",
+            "name": "Breath of Malfegor",
+            "text": "Breath of Malfegor deals 5 damage to each opponent.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "acc8caba-1faa-541b-a3d3-29d7c4ae8b7d",
+            "name": "Deathbringer Thoctar",
+            "text": "Whenever another creature is put into a graveyard from play, you may put a +1/+1 counter on Deathbringer Thoctar.\nRemove a +1/+1 counter from Deathbringer Thoctar: Deathbringer Thoctar deals 1 damage to target creature or player.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "35ccb77c-54ad-5692-a801-eaf464a28a00",
+            "name": "Defiler of Souls",
+            "text": "Flying\nAt the beginning of each player's upkeep, that player sacrifices a monocolored creature.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{B}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bad4daed-7888-5e70-85f4-aed9ccc12b09",
+            "name": "Demonic Dread",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)\nTarget creature can't block this turn.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "580ae286-03cd-5217-9d33-50e61df6f602",
+            "name": "Demonspine Whip",
+            "text": "{X}: Equipped creature gets +X/+0 until end of turn.\nEquip {1}",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{R}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "82c2253a-2274-50ac-b84d-77010ae3f81a",
+            "name": "Igneous Pouncer",
+            "text": "Haste\nSwampcycling {2}, mountaincycling {2} ({2}, Discard this card: Search your library for a Swamp or Mountain card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e970360-8b64-5d31-9acf-990f87f8b646",
+            "name": "Kathari Bomber",
+            "text": "Flying\nWhen Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens into play and sacrifice Kathari Bomber.\nUnearth {3}{B}{R} ({3}{B}{R}: Return this card from your graveyard to play. It gains haste. Remove it from the game at end of turn or if it would leave play. Unearth only as a sorcery.)",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "57e01cfd-bdd7-5953-b1c9-ab053b74f030",
+            "name": "Lightning Reaver",
+            "text": "Fear, haste\nWhenever Lightning Reaver deals combat damage to a player, put a charge counter on it.\nAt the end of your turn, Lightning Reaver deals damage equal to the number of charge counters on it to each opponent.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1b6edd72-e2ee-58af-97d5-1a139d5a8bfd",
+            "name": "Monstrous Carabid",
+            "text": "Monstrous Carabid attacks each turn if able.\nCycling {BR} ({BR}, Discard this card: Draw a card.)",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "60184302-f250-5a8a-be69-a90a39fdf11d",
+            "name": "Sanity Gnawers",
+            "text": "When Sanity Gnawers comes into play, target player discards a card at random.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a5414dea-6bed-5276-8600-63946c2c934a",
+            "name": "Singe-Mind Ogre",
+            "text": "When Singe-Mind Ogre comes into play, target player reveals a card at random from his or her hand, then loses life equal to that card's converted mana cost.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c4320d6f-8955-5c69-8512-d57b9494331c",
+            "name": "Terminate",
+            "text": "Destroy target creature. It can't be regenerated.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "78d48bdc-78cd-584d-92d2-2d95e68a266b",
+            "name": "Thought Hemorrhage",
+            "text": "Name a nonland card. Target player reveals his or her hand. Thought Hemorrhage deals 3 damage to that player for each card with that name revealed this way. Search that player's graveyard, hand, and library for all cards with that name and remove them from the game. Then that player shuffles his or her library.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "577e54e6-a84b-53da-bf21-4c7a39bc83f7",
+            "name": "Veinfire Borderpost",
+            "text": "You may pay {1} and return a basic land you control to its owner's hand rather than pay Veinfire Borderpost's mana cost.\nVeinfire Borderpost comes into play tapped.\n{T}: Add {B} or {R} to your mana pool.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{R}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aa5e05ee-265b-55ad-9871-a9583709a963",
+            "name": "Blitz Hellion",
+            "text": "Trample, haste\nAt end of turn, Blitz Hellion's owner shuffles it into his or her library.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e177b7e-e008-52aa-91ce-cbd5e1977232",
+            "name": "Bloodbraid Elf",
+            "text": "Haste\nCascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "34330743-fd16-5c17-8bac-4796bd1b9958",
+            "name": "Colossal Might",
+            "text": "Target creature gets +4/+2 and gains trample until end of turn.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0003d249-25d9-5223-af1e-1130f09622a7",
+            "name": "Deadshot Minotaur",
+            "text": "When Deadshot Minotaur comes into play, it deals 3 damage to target creature with flying.\nCycling {RG} ({RG}, Discard this card: Draw a card.)",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9bee1432-76d0-51a8-b133-9b6869534311",
+            "name": "Dragon Broodmother",
+            "text": "Flying\nAt the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 into play. (As the token comes into play, you may sacrifice any number of creatures. It comes into play with twice that many +1/+1 counters on it.)",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{2}{R}{R}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ede81bb9-5212-5e0c-9ccf-4d767a9cb296",
+            "name": "Firewild Borderpost",
+            "text": "You may pay {1} and return a basic land you control to its owner's hand rather than pay Firewild Borderpost's mana cost.\nFirewild Borderpost comes into play tapped.\n{T}: Add {R} or {G} to your mana pool.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{G}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4647038f-8118-5ba8-af41-664bf9e9737d",
+            "name": "Godtracker of Jund",
+            "text": "Whenever a creature with power 5 or greater comes into play under your control, you may put a +1/+1 counter on Godtracker of Jund.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4a258abc-8ede-5f95-ad78-332d11e3f5d1",
+            "name": "Gorger Wurm",
+            "text": "Devour 1 (As this comes into play, you may sacrifice any number of creatures. This creature comes into play with that many +1/+1 counters on it.)",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5396538f-d9f4-5d08-98ad-c95e52c3d897",
+            "name": "Mage Slayer",
+            "text": "Whenever equipped creature attacks, it deals damage equal to its power to defending player.\nEquip {3}",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{G}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e79c7009-8762-55bd-a383-ffaeba6d9bef",
+            "name": "Predatory Advantage",
+            "text": "At the end of each opponent's turn, if that player didn't play a creature spell this turn, put a 2/2 green Lizard creature token into play.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e6d6b86-e967-548a-85fc-b51b082f8b7f",
+            "name": "Rhox Brute",
+            "text": "",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "51ed4bec-6b5f-5720-830c-0c5298d1166a",
+            "name": "Spellbreaker Behemoth",
+            "text": "Spellbreaker Behemoth can't be countered.\nCreature spells you control with power 5 or greater can't be countered.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{R}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "af72ecf0-310e-508c-a1bb-b16e5035c067",
+            "name": "Valley Rannet",
+            "text": "Mountaincycling {2}, forestcycling {2} ({2}, Discard this card: Search your library for a Mountain or Forest card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "69281173-cfe0-548c-b0f5-7fa32d8c545d",
+            "name": "Vengeful Rebirth",
+            "text": "Return target card from your graveyard to your hand. If you return a nonland card to your hand this way, Vengeful Rebirth deals damage equal to that card's converted mana cost to target creature or player.\nRemove Vengeful Rebirth from the game.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a9f5cce0-fc4d-5b13-a782-5cd7587ade1f",
+            "name": "Violent Outburst",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)\nCreatures you control get +1/+0 until end of turn.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b71dc8cf-95c2-5ba0-818a-53eb6925162b",
+            "name": "Vithian Renegades",
+            "text": "When Vithian Renegades comes into play, destroy target artifact.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1706c3a6-5b31-5c3c-a7a6-6086aaca2e14",
+            "name": "Behemoth Sledge",
+            "text": "Equipped creature gets +2/+2 and has lifelink and trample.\nEquip {3}",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "59e0f8a3-0271-5e21-a252-f8a479d85cfb",
+            "name": "Captured Sunlight",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)\nYou gain 4 life.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b2c9407d-7890-55ed-90fc-917567c054e9",
+            "name": "Dauntless Escort",
+            "text": "Sacrifice Dauntless Escort: Creatures you control are indestructible this turn.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7630e262-02a5-5df5-a3ff-9e4d6d08d2f7",
+            "name": "Enlisted Wurm",
+            "text": "Cascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6c975c50-ddac-5f21-a6f4-e5cdb6991d9a",
+            "name": "Grizzled Leotau",
+            "text": "",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "17b348b7-0f90-5c55-afc0-b5ce751ada66",
+            "name": "Knight of New Alara",
+            "text": "Each other multicolored creature you control gets +1/+1 for each of its colors.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "26f2ec96-6c71-5b12-a3a3-8beb3b56020e",
+            "name": "Knotvine Paladin",
+            "text": "Whenever Knotvine Paladin attacks, it gets +1/+1 until end of turn for each untapped creature you control.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0f383a3f-c413-5f00-af35-dfd161cfc407",
+            "name": "Leonin Armorguard",
+            "text": "When Leonin Armorguard comes into play, creatures you control get +1/+1 until end of turn.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "05a2a90a-085d-5d11-8c0f-f1fa52e9a695",
+            "name": "Mycoid Shepherd",
+            "text": "Whenever Mycoid Shepherd or another creature you control with power 5 or greater is put into a graveyard from play, you may gain 5 life.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{G}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "05d6d9b6-96c8-571a-9dbb-1cbc18ae09f3",
+            "name": "Pale Recluse",
+            "text": "Reach (This can block creatures with flying.)\nForestcycling {2}, plainscycling {2} ({2}, Discard this card: Search your library for a Forest or Plains card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1a5d1058-a7c2-56a7-9bba-e129945ad15b",
+            "name": "Qasali Pridemage",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\n{1}, Sacrifice Qasali Pridemage: Destroy target artifact or enchantment.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8149e83e-8881-5560-afce-45cdcfd7281c",
+            "name": "Reborn Hope",
+            "text": "Return target multicolored card from your graveyard to your hand.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7a0094a0-d8b4-5799-a135-268f9200f98b",
+            "name": "Sigil Captain",
+            "text": "Whenever a creature comes into play under your control, if that creature is 1/1, put two +1/+1 counters on it.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{G}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "af341369-eed7-575f-ab7c-43dd6a2ed386",
+            "name": "Sigil of the Nayan Gods",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 for each creature you control.\nCycling {RW} ({RW}, Discard this card: Draw a card.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab220b48-3bfa-5e4d-bb5d-6d69d6765b13",
+            "name": "Sigiled Behemoth",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f7d9d3db-69a2-54ce-b69d-352e0c30a0f1",
+            "name": "Wildfield Borderpost",
+            "text": "You may pay {1} and return a basic land you control to its owner's hand rather than pay Wildfield Borderpost's mana cost.\nWildfield Borderpost comes into play tapped.\n{T}: Add {G} or {W} to your mana pool.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8cf1527f-f8b7-5c5a-851a-b682f7fd2686",
+            "name": "Identity Crisis",
+            "text": "Remove all cards in target player's hand and graveyard from the game.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{2}{W}{W}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "414fd82a-04f2-53da-b5f6-358f46f94450",
+            "name": "Necromancer's Covenant",
+            "text": "When Necromancer's Covenant comes into play, remove all creature cards in target player's graveyard from the game, then put a 2/2 black Zombie creature token into play for each card removed this way.\nZombies you control have lifelink.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{W}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c548969-c030-576b-af09-8728885ab21e",
+            "name": "Tainted Sigil",
+            "text": "{T}, Sacrifice Tainted Sigil: You gain life equal to the total life lost by all players this turn. (Damage causes loss of life.)",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b36af59d-5597-520a-a958-c4b1bd6c4fe4",
+            "name": "Vectis Dominator",
+            "text": "{T}: Tap target creature unless its controller pays 2 life.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8386f2a2-7f87-5db8-9d3f-6440ed826f5e",
+            "name": "Zealous Persecution",
+            "text": "Until end of turn, creatures you control get +1/+1 and creatures your opponents control get -1/-1.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "43149872-866a-51a8-800d-a3a7303bd051",
+            "name": "Cloven Casting",
+            "text": "Whenever you play a multicolored instant or sorcery spell, you may pay {1}. If you do, copy that spell. You may choose new targets for the copy.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f7b766bd-bd75-5d64-b975-ea7c538ac820",
+            "name": "Double Negative",
+            "text": "Counter up to two target spells.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U}{U}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28f19755-8cc9-5def-b90f-cf2b3ff4515d",
+            "name": "Magefire Wings",
+            "text": "Enchant creature\nEnchanted creature gets +2/+0 and has flying.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "53fa6e06-2aef-55e2-888e-991ef1dae055",
+            "name": "Skyclaw Thrash",
+            "text": "Whenever Skyclaw Thrash attacks, flip a coin. If you win the flip, Skyclaw Thrash gets +1/+1 and gains flying until end of turn.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{R}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6fd61cc7-9f32-5f5e-b371-bed650ce2c98",
+            "name": "Spellbound Dragon",
+            "text": "Flying\nWhenever Spellbound Dragon attacks, draw a card, then discard a card. Spellbound Dragon gets +X/+0 until end of turn, where X is the discarded card's converted mana cost.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bd9a7f82-541e-5a2d-9bb9-2617d52f6b45",
+            "name": "Lord of Extinction",
+            "text": "Lord of Extinction's power and toughness are each equal to the number of cards in all graveyards.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d48cbd22-7443-5b8d-bcd0-7d560958958b",
+            "name": "Maelstrom Pulse",
+            "text": "Destroy target nonland permanent and all other permanents with the same name as that permanent.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c142e32-5aa8-56e0-9b7b-73d8a146fb92",
+            "name": "Marrow Chomper",
+            "text": "Devour 2 (As this comes into play, you may sacrifice any number of creatures. This creature comes into play with twice that many +1/+1 counters on it.)\nWhen Marrow Chomper comes into play, you gain 2 life for each creature it devoured.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4692c0b7-4f00-5511-b2a9-1a552fbc686c",
+            "name": "Morbid Bloom",
+            "text": "Remove target creature card in a graveyard from the game, then put X 1/1 green Saproling creature tokens into play, where X is the removed card's toughness.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5b7fefe-c5c4-556c-b3b7-41d87fee0647",
+            "name": "Putrid Leech",
+            "text": "Pay 2 life: Putrid Leech gets +2/+2 until end of turn. Play this ability only once each turn.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8e39ab08-7028-5a0a-9645-e0e64a1a5148",
+            "name": "Cerodon Yearling",
+            "text": "Vigilance, haste",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b869023b-921c-5471-8489-4d2b2bbd85da",
+            "name": "Fight to the Death",
+            "text": "Destroy all blocking creatures and all blocked creatures.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6dc47332-8701-5274-ba71-4128466921a3",
+            "name": "Glory of Warfare",
+            "text": "As long as it's your turn, creatures you control get +2/+0.\nAs long as it's not your turn, creatures you control get +0/+2.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5dbb5c0f-16f6-593a-91b3-56c1fb0799da",
+            "name": "Intimidation Bolt",
+            "text": "Intimidation Bolt deals 3 damage to target creature. Other creatures can't attack this turn.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "64b23a0b-b9d4-5240-b354-b985c66cf04a",
+            "name": "Stun Sniper",
+            "text": "{1}, {T}: Stun Sniper deals 1 damage to target creature. Tap that creature.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0ffeeb3e-a514-50b8-ae7c-6da6c12eb55c",
+            "name": "Lorescale Coatl",
+            "text": "Whenever you draw a card, you may put a +1/+1 counter on Lorescale Coatl.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9eb3fe8e-d37d-558f-b6df-848f36da110e",
+            "name": "Nulltread Gargantuan",
+            "text": "When Nulltread Gargantuan comes into play, put a creature you control on top of its owner's library.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5ed9e023-d658-5506-8f98-e94a9af84812",
+            "name": "Sages of the Anima",
+            "text": "If you would draw a card, instead reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "378fa6e1-5590-5ecd-9cdc-82f493b1e30b",
+            "name": "Vedalken Heretic",
+            "text": "Whenever Vedalken Heretic deals damage to an opponent, you may draw a card.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "80d91515-e7af-5572-8970-250e3f568e3a",
+            "name": "Winged Coatl",
+            "text": "Flash\nFlying\nDeathtouch (Whenever this creature deals damage to a creature, destroy that creature.)",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7a64b3ad-237d-5e93-9f8e-bbaea92bfd71",
+            "name": "Enigma Sphinx",
+            "text": "Flying\nWhen Enigma Sphinx is put into your graveyard from play, put it into your library third from the top.\nCascade (When you play this spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{W}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ceedc6a5-a4e3-59c4-884d-d85076d8616d",
+            "name": "Esper Sojourners",
+            "text": "When you cycle Esper Sojourners or it's put into a graveyard from play, you may tap or untap target permanent.\nCycling {2}{U} ({2}{U}, Discard this card: Draw a card.)",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{W}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "525ae369-3389-593c-8125-01d32b560816",
+            "name": "Etherwrought Page",
+            "text": "At the beginning of your upkeep, choose one \u2014 You gain 2 life; or look at the top card of your library, then you may put that card into your graveyard; or each opponent loses 1 life.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{W}{U}{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "deddcbd4-7339-5831-98e3-bfa0af5a933e",
+            "name": "Sen Triplets",
+            "text": "At the beginning of your upkeep, choose target opponent. This turn, that player can't play spells or activated abilities and plays with his or her hand revealed. You can play cards from that player's hand this turn.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{W}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4a97bd0f-71a3-5d2f-91c6-786cea92ffd8",
+            "name": "Sphinx of the Steel Wind",
+            "text": "Flying, first strike, vigilance, lifelink, protection from red and from green",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{W}{U}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5ea81320-eb12-5452-baf0-b4314a884ff8",
+            "name": "Drastic Revelation",
+            "text": "Discard your hand. Draw seven cards, then discard three cards at random.",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{U}{B}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "66c99f1c-f0b9-5030-82c2-b4b887846fa1",
+            "name": "Grixis Sojourners",
+            "text": "When you cycle Grixis Sojourners or it's put into a graveyard from play, you may remove target card in a graveyard from the game.\nCycling {2}{B} ({2}{B}, Discard this card: Draw a card.)",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{U}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "93c79e90-353d-5aa8-a733-03b24bf1bd14",
+            "name": "Thraximundar",
+            "text": "Haste\nWhenever Thraximundar attacks, defending player sacrifices a creature.\nWhenever a player sacrifices a creature, you may put a +1/+1 counter on Thraximundar.",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{U}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "36180107-f73d-5491-9c78-4558000a4bcc",
+            "name": "Unscythe, Killer of Kings",
+            "text": "Equipped creature gets +3/+3 and has first strike.\nWhenever a creature dealt damage by equipped creature this turn is put into a graveyard, you may remove that card from the game. If you do, put a 2/2 black Zombie creature token into play.\nEquip {2}",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{U}{B}{B}{R}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2db5c43b-db34-557c-9e75-6a1f0b3e1e38",
+            "name": "Dragon Appeasement",
+            "text": "Skip your draw step.\nWhenever you sacrifice a creature, you may draw a card.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{B}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f56a477-a38e-5082-8d0b-a052ad270f54",
+            "name": "Jund Sojourners",
+            "text": "When you cycle Jund Sojourners or it's put into a graveyard from play, you may have it deal 1 damage to target creature or player.\nCycling {2}{R} ({2}{R}, Discard this card: Draw a card.)",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c8adb099-2652-5244-bc13-1a10a2ef3637",
+            "name": "Karrthus, Tyrant of Jund",
+            "text": "Flying, haste\nWhen Karrthus, Tyrant of Jund comes into play, gain control of all Dragons, then untap all Dragons.\nOther Dragon creatures you control have haste.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{B}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27d4105b-b02a-5e3a-9be6-1442e34f87ba",
+            "name": "Lavalanche",
+            "text": "Lavalanche deals X damage to target player and each creature he or she controls.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{B}{R}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d610e906-2c57-51ea-8f76-5bdf87f9fd76",
+            "name": "Madrush Cyclops",
+            "text": "Creatures you control have haste.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{B}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1448fcd6-401d-5ba4-a014-631a8a88041c",
+            "name": "Gloryscale Viashino",
+            "text": "Whenever you play a multicolored spell, Gloryscale Viashino gets +3/+3 until end of turn.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "14b2300a-b015-54d4-8cb1-e5d5f649b7f5",
+            "name": "Mayael's Aria",
+            "text": "At the beginning of your upkeep, put a +1/+1 counter on each creature you control if you control a creature with power 5 or greater. Then you gain 10 life if you control a creature with power 10 or greater. Then you win the game if you control a creature with power 20 or greater.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{R}{G}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ddb0a229-2d2d-59a6-8c4f-7bbc6de86dce",
+            "name": "Naya Sojourners",
+            "text": "When you cycle Naya Sojourners or it's put into a graveyard from play, you may put a +1/+1 counter on target creature.\nCycling {2}{G} ({2}{G}, Discard this card: Draw a card.)",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c26fa6c5-81da-599e-802c-1f42a5028828",
+            "name": "Retaliator Griffin",
+            "text": "Flying\nWhenever a source an opponent controls deals damage to you, you may put that many +1/+1 counters on Retaliator Griffin.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6a4ace05-7105-5d5b-a561-805d371ff386",
+            "name": "Uril, the Miststalker",
+            "text": "Uril, the Miststalker can't be the target of spells or abilities your opponents control.\nUril gets +2/+2 for each Aura attached to it.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "da070dce-a395-5be1-b389-8a32982ae5c8",
+            "name": "Bant Sojourners",
+            "text": "When you cycle Bant Sojourners or it's put into a graveyard from play, you may put a 1/1 white Soldier creature token into play.\nCycling {2}{W} ({2}{W}, Discard this card: Draw a card.)",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{G}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "578bd4d0-112d-5b3c-864e-df296a83e461",
+            "name": "Finest Hour",
+            "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nWhenever a creature you control attacks alone, if it's the first combat phase of the turn, untap that creature. After this phase, there is an additional combat phase.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{G}{W}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4db28cdf-f2be-5316-ab34-dcbaf335d3be",
+            "name": "Flurry of Wings",
+            "text": "Put X 1/1 white Bird Soldier creature tokens with flying into play, where X is the number of attacking creatures.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{G}{W}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2b09d1ec-4ba1-5765-81de-17d134724c01",
+            "name": "Jenara, Asura of War",
+            "text": "Flying\n{1}{W}: Put a +1/+1 counter on Jenara, Asura of War.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{G}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd8b252a-4f41-5abd-bc56-503c4ada4204",
+            "name": "Wargate",
+            "text": "Search your library for a permanent card with converted mana cost X or less, put it into play, then shuffle your library.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{G}{W}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea6a6ffb-d7e6-546b-8c29-2a404153bdc0",
+            "name": "Maelstrom Nexus",
+            "text": "The first spell you play each turn has cascade. (When you play your first spell, remove cards from the top of your library from the game until you remove a nonland card that costs less. You may play it without paying its mana cost. Put the removed cards on the bottom in a random order.)",
+            "colours": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{W}{U}{B}{R}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "mythic",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8994c60a-d4da-5fd5-9f73-6a3daa76497f",
+            "name": "Arsenal Thresher",
+            "text": "As Arsenal Thresher comes into play, you may reveal any number of other artifact cards from your hand. Arsenal Thresher comes into play with a +1/+1 counter on it for each card revealed this way.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W/B}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1bd70fc8-5715-54de-9e7f-bf0c663bf609",
+            "name": "Esper Stormblade",
+            "text": "As long as you control another multicolored permanent, Esper Stormblade gets +1/+1 and has flying.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W/B}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fed9edac-7a75-5a91-9781-9dd8331f9aa8",
+            "name": "Thopter Foundry",
+            "text": "{1}, Sacrifice a nontoken artifact: Put a 1/1 blue Thopter artifact creature token with flying into play. You gain 1 life.",
+            "colours": [
+                "B",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W/B}{U}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "be3e4139-85d8-5802-9f1e-ad06ccb8b910",
+            "name": "Grixis Grimblade",
+            "text": "As long as you control another multicolored permanent, Grixis Grimblade gets +1/+1 and has deathtouch. (Whenever it deals damage to a creature, destroy that creature.)",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U/R}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e0d7cb90-c354-5aca-8762-dd9c36c6e227",
+            "name": "Sewn-Eye Drake",
+            "text": "Flying, haste",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U/R}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "33fa641c-4195-5c55-a317-8a38ad060edd",
+            "name": "Slave of Bolas",
+            "text": "Gain control of target creature. Untap that creature. It gains haste until end of turn. Sacrifice it at end of turn.",
+            "colours": [
+                "B",
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "R",
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U/R}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1958a923-a7a4-541a-b3d0-fe090d292175",
+            "name": "Giant Ambush Beetle",
+            "text": "Haste\nWhen Giant Ambush Beetle comes into play, you may have target creature block it this turn if able.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B/G}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cef53ce6-83cc-5445-90fc-46f835baf27e",
+            "name": "Jund Hackblade",
+            "text": "As long as you control another multicolored permanent, Jund Hackblade gets +1/+1 and has haste.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B/G}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e09d571-eb38-5e44-b23d-46d817ea63be",
+            "name": "Sangrite Backlash",
+            "text": "Enchant creature\nEnchanted creature gets +3/-3.",
+            "colours": [
+                "B",
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B/G}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e5ea807-8675-5511-9206-b46af6a2741c",
+            "name": "Marisi's Twinclaws",
+            "text": "Double strike",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R/W}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e088c95d-7a75-5ffe-985f-58a936e4f4e7",
+            "name": "Naya Hushblade",
+            "text": "As long as you control another multicolored permanent, Naya Hushblade gets +1/+1 and has shroud. (It can't be the target of spells or abilities.)",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R/W}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "468da9c7-a72f-5fdc-8aa8-df6edc9e3b62",
+            "name": "Trace of Abundance",
+            "text": "Enchant land\nEnchanted land has shroud. (It can't be the target of spells or abilities.)\nWhenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool (in addition to the mana the land produces).",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R/W}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "442c0494-c204-52c2-ba85-340b7cc7ba0e",
+            "name": "Bant Sureblade",
+            "text": "As long as you control another multicolored permanent, Bant Sureblade gets +1/+1 and has first strike.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G/U}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1db0102-f0db-55b0-a976-11e09b8af829",
+            "name": "Crystallization",
+            "text": "Enchant creature\nEnchanted creature can't attack or block.\nWhen enchanted creature becomes the target of a spell or ability, remove that creature from the game.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G/U}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3d070d03-d43e-596d-a08a-e6dd793956c2",
+            "name": "Messenger Falcons",
+            "text": "Flying\nWhen Messenger Falcons comes into play, draw a card.",
+            "colours": [
+                "G",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G/U}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba9ae285-6acc-5b86-b278-e08a9343f03f",
+            "name": "Bird Soldier",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "f0c20d71-8d21-5252-abbe-0e52f758a157",
+            "name": "Lizard",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "ad66a158-b3c3-5194-98b2-a8b263cc9d00",
+            "name": "Dragon",
+            "text": "",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "80cadb0d-9c14-5cfa-a90f-76310cc9e4b2",
+            "name": "Zombie Wizard",
+            "text": "",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TARB",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
