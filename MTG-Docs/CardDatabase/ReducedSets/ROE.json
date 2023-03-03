@@ -1,0 +1,5469 @@
+{
+    "setCode": "ROE",
+    "setName": "Rise of the Eldrazi",
+    "cards": [
+        {
+            "id": "ceeeaa92-ff8e-5943-8842-3bb7efa6b673",
+            "name": "All Is Dust",
+            "text": "Each player sacrifices all colored permanents he or she controls.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Tribal",
+                "Sorcery"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6f2e877f-e72b-5254-b016-d178324e6a0a",
+            "name": "Artisan of Kozilek",
+            "text": "When you cast Artisan of Kozilek, you may return target creature card from your graveyard to the battlefield.\nAnnihilator 2 (Whenever this creature attacks, defending player sacrifices two permanents.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 9.0,
+            "manaCost": "{9}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0700782-7ba6-5ed1-858a-e04100a000b6",
+            "name": "Eldrazi Conscription",
+            "text": "Enchant creature\nEnchanted creature gets +10/+10 and has trample and annihilator 2. (Whenever it attacks, defending player sacrifices two permanents.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 8.0,
+            "manaCost": "{8}",
+            "types": [
+                "Tribal",
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "644a5c05-371f-507d-83a3-aa54c76f8436",
+            "name": "Emrakul, the Aeons Torn",
+            "text": "Emrakul, the Aeons Torn can't be countered.\nWhen you cast Emrakul, take an extra turn after this one.\nFlying, protection from colored spells, annihilator 6\nWhen Emrakul is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 15.0,
+            "manaCost": "{15}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "29f4faa8-a65e-5e61-8ef3-43707d1c72c2",
+            "name": "Hand of Emrakul",
+            "text": "You may sacrifice four Eldrazi Spawn rather than pay Hand of Emrakul's mana cost.\nAnnihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 9.0,
+            "manaCost": "{9}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5af77709-cb2e-5494-baf9-89ac2d6e95da",
+            "name": "Kozilek, Butcher of Truth",
+            "text": "When you cast Kozilek, Butcher of Truth, draw four cards.\nAnnihilator 4 (Whenever this creature attacks, defending player sacrifices four permanents.)\nWhen Kozilek is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 10.0,
+            "manaCost": "{10}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b5d65681-69ee-5068-b0fa-f34ffa85ad88",
+            "name": "It That Betrays",
+            "text": "Annihilator 2 (Whenever this creature attacks, defending player sacrifices two permanents.)\nWhenever an opponent sacrifices a nontoken permanent, put that card onto the battlefield under your control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 12.0,
+            "manaCost": "{12}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c047837-e79f-52bc-8d48-3938e4ddacaa",
+            "name": "Not of This World",
+            "text": "Counter target spell or ability that targets a permanent you control.\nNot of This World costs {7} less to cast if it targets a spell or ability that targets a creature you control with power 7 or greater.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Tribal",
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0858b6af-64a4-548c-a6c3-2c6164f68562",
+            "name": "Pathrazer of Ulamog",
+            "text": "Annihilator 3 (Whenever this creature attacks, defending player sacrifices three permanents.)\nPathrazer of Ulamog can't be blocked except by three or more creatures.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 11.0,
+            "manaCost": "{11}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c499f072-6654-50a2-89e1-5549266f11bc",
+            "name": "Skittering Invasion",
+            "text": "Put five 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Tribal",
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "841e58c4-8cc7-5f4c-a6b0-0177e3d48b08",
+            "name": "Spawnsire of Ulamog",
+            "text": "Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)\n{4}: Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"\n{2}0: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 10.0,
+            "manaCost": "{10}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02c5da97-edd3-56a7-8686-e5a92e51672e",
+            "name": "Ulamog, the Infinite Gyre",
+            "text": "When you cast Ulamog, the Infinite Gyre, destroy target permanent.\nAnnihilator 4 (Whenever this creature attacks, defending player sacrifices four permanents.)\nUlamog is indestructible.\nWhen Ulamog is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 11.0,
+            "manaCost": "{11}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e6d66504-1737-5eb1-9264-d12a9e8bea9e",
+            "name": "Ulamog's Crusher",
+            "text": "Annihilator 2 (Whenever this creature attacks, defending player sacrifices two permanents.)\nUlamog's Crusher attacks each turn if able.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 8.0,
+            "manaCost": "{8}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eaa2e6b5-33f1-5afb-8af0-b378160f6c1a",
+            "name": "Affa Guard Hound",
+            "text": "Flash\nWhen Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "04adfada-5fa1-504b-afe4-ae9e2f1881a6",
+            "name": "Caravan Escort",
+            "text": "Level up {2} ({2}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-4\n2/2\n\nLEVEL 5+\n5/5\nFirst strike",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "1c1f989e-7669-5c7d-ae6f-888c2f042daa",
+            "name": "Dawnglare Invoker",
+            "text": "Flying\n{8}: Tap all creatures target player controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9aa90a10-16f4-5564-adbd-5fb0fd2e37f7",
+            "name": "Deathless Angel",
+            "text": "Flying\n{W}{W}: Target creature is indestructible this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3de93dce-a2b5-5a85-8880-d6f81e2cc707",
+            "name": "Demystify",
+            "text": "Destroy target enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "20230f94-a434-599c-85d5-0554d8fb79d0",
+            "name": "Eland Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +0/+4.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "826cbf1f-0bc2-5fbd-922e-d0af8f9f5687",
+            "name": "Emerge Unscathed",
+            "text": "Target creature you control gains protection from the color of your choice until end of turn.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f40f60aa-45b4-57e4-b2ae-b75496012d1b",
+            "name": "Gideon Jura",
+            "text": "+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able.\n-2: Destroy target tapped creature.\n0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a0677cf6-118d-55a2-bf42-265f3c3694a7",
+            "name": "Glory Seeker",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "efe76751-4a89-5834-92c1-8685b1b19b94",
+            "name": "Guard Duty",
+            "text": "Enchant creature\nEnchanted creature has defender.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7108201e-8661-5f2f-a7e4-f407c048d395",
+            "name": "Harmless Assault",
+            "text": "Prevent all combat damage that would be dealt this turn by attacking creatures.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "080da8f4-975c-5298-aba8-ae17babfd401",
+            "name": "Hedron-Field Purists",
+            "text": "Level up {2}{W} ({2}{W}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-4\n1/4\nIf a source would deal damage to you or a creature you control, prevent 1 of that damage.\nLEVEL 5+\n2/5\nIf a source would deal damage to you or a creature you control, prevent 2 of that damage.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "888e0ae2-e190-51c2-8e0f-e87eb0309320",
+            "name": "Hyena Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 and has first strike.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8826dccd-4188-50f5-b4be-2b1dd5c46bb4",
+            "name": "Ikiral Outrider",
+            "text": "Level up {4} ({4}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-3\n2/6\nVigilance\nLEVEL 4+\n3/10\nVigilance",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "bf232a80-2961-5780-bc5a-faa82b1205c6",
+            "name": "Kabira Vindicator",
+            "text": "Level up {2}{W} ({2}{W}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-4\n3/6\nOther creatures you control get +1/+1.\nLEVEL 5+\n4/8\nOther creatures you control get +2/+2.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "e19e3d0f-bb66-5ac0-8609-f26ebb6d445f",
+            "name": "Knight of Cliffhaven",
+            "text": "Level up {3} ({3}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-3\n2/3\nFlying\nLEVEL 4+\n4/4\nFlying, vigilance",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "cd7d0aaa-4f23-5b25-aeae-f9c77be2f6a2",
+            "name": "Kor Line-Slinger",
+            "text": "{T}: Tap target creature with power 3 or less.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5d9d3bd2-7aa7-579e-94d0-e86a4332e2b4",
+            "name": "Kor Spiritdancer",
+            "text": "Kor Spiritdancer gets +2/+2 for each Aura attached to it.\nWhenever you cast an Aura spell, you may draw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c3ba2f9-8dd9-5fc0-a100-990a18659292",
+            "name": "Lightmine Field",
+            "text": "Whenever one or more creatures attack, Lightmine Field deals damage to each of those creatures equal to the number of attacking creatures.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2048b59f-351c-5fd3-a8f1-63ff60637f69",
+            "name": "Linvala, Keeper of Silence",
+            "text": "Flying\nActivated abilities of creatures your opponents control can't be activated.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0d25af92-1bd9-5bd3-ab95-821c0e6a809a",
+            "name": "Lone Missionary",
+            "text": "When Lone Missionary enters the battlefield, you gain 4 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "90e79abf-7e35-54a5-9b7e-106a03638ba0",
+            "name": "Luminous Wake",
+            "text": "Enchant creature\nWhenever enchanted creature attacks or blocks, you gain 4 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a63fbfdb-1e98-5fe7-a4bb-f7ff27378064",
+            "name": "Makindi Griffin",
+            "text": "Flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dc40e345-1fb2-51de-856e-499d480528fa",
+            "name": "Mammoth Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +3/+3 and has vigilance.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1f5508d2-e8bd-538d-8e78-a7fe635266ec",
+            "name": "Near-Death Experience",
+            "text": "At the beginning of your upkeep, if you have exactly 1 life, you win the game.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{W}{W}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e4163f8c-6b86-54d0-804b-95225e58a98d",
+            "name": "Nomads' Assembly",
+            "text": "Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b0ba5a24-8ef1-588c-a552-2732634750cb",
+            "name": "Oust",
+            "text": "Put target creature into its owner's library second from the top. Its controller gains 3 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab689654-26a9-5c8e-9d6f-9a960e2cb0f3",
+            "name": "Puncturing Light",
+            "text": "Destroy target attacking or blocking creature with power 3 or less.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5d44176f-6306-5f80-b796-e91d92167b29",
+            "name": "Repel the Darkness",
+            "text": "Tap up to two target creatures.\nDraw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3029b331-18fd-511c-8863-706f324f6b6b",
+            "name": "Smite",
+            "text": "Destroy target blocked creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6f016fc1-21ac-5382-a060-5996397df1a5",
+            "name": "Soul's Attendant",
+            "text": "Whenever another creature enters the battlefield, you may gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "118942c9-6602-5c1e-ab9e-f97dc0e2c9db",
+            "name": "Soulbound Guardians",
+            "text": "Defender, flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c85b7ce2-3ba6-5d32-8b2e-5bbc2c3ecc82",
+            "name": "Stalwart Shield-Bearers",
+            "text": "Defender\nOther creatures you control with defender get +0/+2.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "67367dca-2d31-5d5e-8f38-2bcfa3e47caf",
+            "name": "Student of Warfare",
+            "text": "Level up {W} ({W}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-6\n3/3\nFirst strike\nLEVEL 7+\n4/4\nDouble strike",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "d5475175-b171-5cef-8d2b-11b57352e28b",
+            "name": "Survival Cache",
+            "text": "You gain 2 life. Then if you have more life than an opponent, draw a card.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "559717cd-72b9-585d-8943-ff4512b37c0d",
+            "name": "Time of Heroes",
+            "text": "Each creature you control with a level counter on it gets +2/+2.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef98060a-60ed-50de-ae22-950fdf21152f",
+            "name": "Totem-Guide Hartebeest",
+            "text": "When Totem-Guide Hartebeest enters the battlefield, you may search your library for an Aura card, reveal it, put it into your hand, then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5199914a-6c45-5263-82b9-fa811584b15d",
+            "name": "Transcendent Master",
+            "text": "Level up {1} ({1}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 6-11\n6/6\nLifelink\nLEVEL 12+\n9/9\nLifelink\nTranscendent Master is indestructible.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "c27aa762-f53c-5fd5-b5ea-db33f5f8d31a",
+            "name": "Umbra Mystic",
+            "text": "Auras attached to permanents you control have totem armor. (If an enchanted permanent you control would be destroyed, instead remove all damage from it and destroy an Aura attached to it.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1d24cdaa-6da9-519b-b818-252af3935e99",
+            "name": "Wall of Omens",
+            "text": "Defender\nWhen Wall of Omens enters the battlefield, draw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8db3d175-201e-5ec7-b91a-3e0ce14a4820",
+            "name": "Aura Finesse",
+            "text": "Attach target Aura you control to target creature.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5e31c03a-7c6b-58ec-8354-4d063621f464",
+            "name": "Cast Through Time",
+            "text": "Instant and sorcery spells you control have rebound. (Exile the spell as it resolves if you cast it from your hand. At the beginning of your next upkeep, you may cast that card from exile without paying its mana cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{U}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ffbd1c75-65cc-5175-9130-7bcec50b0f67",
+            "name": "Champion's Drake",
+            "text": "Flying\nChampion's Drake gets +3/+3 as long as you control a creature with three or more level counters on it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "24fd524e-c6ca-560c-a94b-82ea273fb72e",
+            "name": "Coralhelm Commander",
+            "text": "Level up {1} ({1}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-3\n3/3\nFlying\nLEVEL 4+\n4/4\nFlying\nOther Merfolk creatures you control get +1/+1.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "85b0ef54-77e7-5fb5-bf98-d9d8062a7a72",
+            "name": "Crab Umbra",
+            "text": "Enchant creature\n{2}{U}: Untap enchanted creature.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27400ded-49ba-5290-a2fa-e886f2baa23c",
+            "name": "Deprive",
+            "text": "As an additional cost to cast Deprive, return a land you control to its owner's hand.\nCounter target spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2bd345d7-6fa7-56f8-9861-fc14eb3c1229",
+            "name": "Distortion Strike",
+            "text": "Target creature gets +1/+0 until end of turn and is unblockable this turn.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b50cb42e-16c6-5c11-b0a6-154b658e03d6",
+            "name": "Domestication",
+            "text": "Enchant creature\nYou control enchanted creature.\nAt the beginning of your end step, if enchanted creature's power is 4 or greater, sacrifice Domestication.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7ea99336-7f00-5b1b-953a-05ba55a8c6fd",
+            "name": "Dormant Gomazoa",
+            "text": "Flying\nDormant Gomazoa enters the battlefield tapped.\nDormant Gomazoa doesn't untap during your untap step.\nWhenever you become the target of a spell, you may untap Dormant Gomazoa.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "468cc1ae-4264-571e-ade8-ca359f459ccd",
+            "name": "Drake Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +3/+3 and has flying.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4898f809-5f39-50bc-8474-35fbbec7e167",
+            "name": "Echo Mage",
+            "text": "Level up {1}{U} ({1}{U}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-3\n2/4\n{U}{U}, {T}: Copy target instant or sorcery spell. You may choose new targets for the copy.\nLEVEL 4+\n2/5\n{U}{U}, {T}: Copy target instant or sorcery spell twice. You may choose new targets for the copies.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "b3336c47-c42f-5c14-994e-705bfff35868",
+            "name": "Eel Umbra",
+            "text": "Flash (You may cast this spell any time you could cast an instant.)\nEnchant creature\nEnchanted creature gets +1/+1.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ffe14e5f-5e65-5fd3-9f29-fa291ce7d390",
+            "name": "Enclave Cryptologist",
+            "text": "Level up {1}{U} ({1}{U}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n0/1\n{T}: Draw a card, then discard a card.\nLEVEL 3+\n0/1\n{T}: Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "b95cd3ac-9e14-51dc-9930-8480464e64b0",
+            "name": "Fleeting Distraction",
+            "text": "Target creature gets -1/-0 until end of turn.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6d3228c-ad04-56fb-861d-2577720b8ab8",
+            "name": "Frostwind Invoker",
+            "text": "Flying\n{8}: Creatures you control gain flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6c15804c-0d94-5f93-b37c-2440c10486b1",
+            "name": "Gravitational Shift",
+            "text": "Creatures with flying get +2/+0.\nCreatures without flying get -2/-0.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f58e406c-b010-5d2a-a00a-313b5122fcaa",
+            "name": "Guard Gomazoa",
+            "text": "Defender, flying\nPrevent all combat damage that would be dealt to Guard Gomazoa.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f05c33b1-f344-5ea4-936a-1b85e82f3b09",
+            "name": "Hada Spy Patrol",
+            "text": "Level up {2}{U} ({2}{U}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n2/2\nHada Spy Patrol is unblockable.\nLEVEL 3+\n3/3\nShroud\nHada Spy Patrol is unblockable.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "dd1dbf66-b43b-5d0b-a485-9a8a73f62027",
+            "name": "Halimar Wavewatch",
+            "text": "Level up {2} ({2}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-4\n0/6\n\nLEVEL 5+\n6/6\nIslandwalk",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "1f6d50b3-7cfd-518f-ad6b-46e4914b3c8d",
+            "name": "Jwari Scuttler",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a222f2f-906e-597a-aa28-8d8ee47b069e",
+            "name": "Lay Bare",
+            "text": "Counter target spell. Look at its controller's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d54a7f1c-9bd9-51fa-ba81-bc947048c4bd",
+            "name": "Lighthouse Chronologist",
+            "text": "Level up {U} ({U}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 4-6\n2/4\n\nLEVEL 7+\n3/5\nAt the beginning of each end step, if it's not your turn, take an extra turn after this one.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "4f51809c-9f24-5342-a3fe-4e833b680092",
+            "name": "Merfolk Observer",
+            "text": "When Merfolk Observer enters the battlefield, look at the top card of target player's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bf998952-3358-5352-ade7-8754c34d2c32",
+            "name": "Merfolk Skyscout",
+            "text": "Flying\nWhenever Merfolk Skyscout attacks or blocks, untap target permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a513dae-62ec-52e5-b486-5fd84abec5b0",
+            "name": "Mnemonic Wall",
+            "text": "Defender\nWhen Mnemonic Wall enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "477e0ae4-6441-5bf4-8ef8-bc5a6fb60751",
+            "name": "Narcolepsy",
+            "text": "Enchant creature\nAt the beginning of each upkeep, if enchanted creature is untapped, tap it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "21d4b1f0-0658-562c-8e09-68227fa24233",
+            "name": "Phantasmal Abomination",
+            "text": "Defender\nWhen Phantasmal Abomination becomes the target of a spell or ability, sacrifice it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3bfcf047-e615-5c2d-9472-29347e998291",
+            "name": "Reality Spasm",
+            "text": "Choose one \u2014 Tap X target permanents; or untap X target permanents.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1254d85-f424-57a7-81b4-d2f1b2f469a4",
+            "name": "Recurring Insight",
+            "text": "Draw cards equal to the number of cards in target opponent's hand.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b396c136-3377-50e5-a7ae-9edf1beec64f",
+            "name": "Regress",
+            "text": "Return target permanent to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "db15c2c2-9635-5c96-8768-c41657aec271",
+            "name": "Renegade Doppelganger",
+            "text": "Whenever another creature enters the battlefield under your control, you may have Renegade Doppelganger become a copy of that creature until end of turn. (If it does, it loses this ability for the rest of the turn.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "43482d97-1431-5c9b-80ab-4e6edf905ac8",
+            "name": "Sea Gate Oracle",
+            "text": "When Sea Gate Oracle enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "39f6d895-4f39-54d9-bc6b-5602f5af900d",
+            "name": "See Beyond",
+            "text": "Draw two cards, then shuffle a card from your hand into your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bea58510-a620-50d1-87ec-97c9f28c7103",
+            "name": "Shared Discovery",
+            "text": "As an additional cost to cast Shared Discovery, tap four untapped creatures you control.\nDraw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c684724c-48ff-52b1-89ba-ee8272997d12",
+            "name": "Skywatcher Adept",
+            "text": "Level up {3} ({3}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n2/2\nFlying\nLEVEL 3+\n4/2\nFlying",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "83212856-03ac-53d7-ad21-a9f77c141b53",
+            "name": "Sphinx of Magosi",
+            "text": "Flying\n{2}{U}: Draw a card, then put a +1/+1 counter on Sphinx of Magosi.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{U}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9192d5cd-abb3-5f0a-9263-7a78bfd813bc",
+            "name": "Surrakar Spellblade",
+            "text": "Whenever you cast an instant or sorcery spell, you may put a charge counter on Surrakar Spellblade.\nWhenever Surrakar Spellblade deals combat damage to a player, you may draw X cards, where X is the number of charge counters on it.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "49e82b1f-b3d1-5440-b1ee-cd05e3f74318",
+            "name": "Training Grounds",
+            "text": "Activated abilities of creatures you control cost up to {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ac67c7fd-c8bd-517e-8d9f-836b2e6b95aa",
+            "name": "Unified Will",
+            "text": "Counter target spell if you control more creatures than that spell's controller.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "84c25a3c-051a-5309-805f-7634208f2359",
+            "name": "Venerated Teacher",
+            "text": "When Venerated Teacher enters the battlefield, put two level counters on each creature you control with level up.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c6487c2-24c4-514c-927f-9dbe205e8385",
+            "name": "Arrogant Bloodlord",
+            "text": "Whenever Arrogant Bloodlord blocks or becomes blocked by a creature with power 1 or less, destroy Arrogant Bloodlord at end of combat.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "54c47d6d-fc4c-5f6d-87b9-ed8936778565",
+            "name": "Bala Ged Scorpion",
+            "text": "When Bala Ged Scorpion enters the battlefield, you may destroy target creature with power 1 or less.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bfc318a1-0396-5e27-acc0-6af7fe460fe4",
+            "name": "Baneful Omen",
+            "text": "At the beginning of your end step, you may reveal the top card of your library. If you do, each opponent loses life equal to that card's converted mana cost.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{B}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b1026154-2251-59f4-966b-ab1d0b967f89",
+            "name": "Bloodrite Invoker",
+            "text": "{8}: Target player loses 3 life and you gain 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "674b0da5-4ac6-5548-8bd9-dc95311a383f",
+            "name": "Bloodthrone Vampire",
+            "text": "Sacrifice a creature: Bloodthrone Vampire gets +2/+2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6aebd0ee-f1bc-5d84-9cea-66c81d315ecd",
+            "name": "Cadaver Imp",
+            "text": "Flying\nWhen Cadaver Imp enters the battlefield, you may return target creature card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0bd7b3d1-e596-5d31-8ffd-46c930e48a67",
+            "name": "Consume the Meek",
+            "text": "Destroy each creature with converted mana cost 3 or less. They can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "38c5da70-bde2-54cb-8539-fb237a728a26",
+            "name": "Consuming Vapors",
+            "text": "Target player sacrifices a creature. You gain life equal to that creature's toughness.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5ac95cfb-0700-512a-9087-136121d3dc83",
+            "name": "Contaminated Ground",
+            "text": "Enchant land\nEnchanted land is a Swamp.\nWhenever enchanted land becomes tapped, its controller loses 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "359c0f47-5d73-5cf1-a8b8-ef8db1cddf76",
+            "name": "Corpsehatch",
+            "text": "Destroy target nonblack creature. Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a14d259f-0865-50f0-a603-af653a5617b9",
+            "name": "Curse of Wizardry",
+            "text": "As Curse of Wizardry enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, that player loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "88b8fbaf-2a26-54ca-9296-6cc5552b2200",
+            "name": "Death Cultist",
+            "text": "Sacrifice Death Cultist: Target player loses 1 life and you gain 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9be799c9-85e9-544a-9930-1260cc409613",
+            "name": "Demonic Appetite",
+            "text": "Enchant creature you control\nEnchanted creature gets +3/+3.\nAt the beginning of your upkeep, sacrifice a creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e118bda5-c585-5ce6-993f-b87c56d665f0",
+            "name": "Drana, Kalastria Bloodchief",
+            "text": "Flying\n{X}{B}{B}: Target creature gets -0/-X until end of turn and Drana, Kalastria Bloodchief gets +X/+0 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3bfa8c34-70fe-5ee2-9db5-7ea3b35c4b7a",
+            "name": "Dread Drone",
+            "text": "When Dread Drone enters the battlefield, put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b4a2290b-8ab5-5114-84c4-fbd4b8d9fdce",
+            "name": "Escaped Null",
+            "text": "Lifelink\nWhenever Escaped Null blocks or becomes blocked, it gets +5/+0 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9098564a-1082-5cd2-8b73-d088fa874843",
+            "name": "Essence Feed",
+            "text": "Target player loses 3 life. You gain 3 life and put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b84af5b4-acb4-5389-865b-8dc602d638cf",
+            "name": "Gloomhunter",
+            "text": "Flying",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3a89c619-691a-5926-807d-3c538aa2409b",
+            "name": "Guul Draz Assassin",
+            "text": "Level up {1}{B} ({1}{B}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-3\n2/2\n{B}, {T}: Target creature gets -2/-2 until end of turn.\nLEVEL 4+\n4/4\n{B}, {T}: Target creature gets -4/-4 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "afd18131-6d0a-55da-ba45-c88c7534562c",
+            "name": "Hellcarver Demon",
+            "text": "Flying\nWhenever Hellcarver Demon deals combat damage to a player, sacrifice all other permanents you control and discard your hand. Exile the top six cards of your library. You may cast any number of nonland cards exiled this way without paying their mana costs.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03fd8773-3984-599d-bc1f-b53da722ce06",
+            "name": "Induce Despair",
+            "text": "As an additional cost to cast Induce Despair, reveal a creature card from your hand.\nTarget creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a14f1e62-e4b9-517b-89a9-9bcc0fa65610",
+            "name": "Inquisition of Kozilek",
+            "text": "Target player reveals his or her hand. You choose a nonland card from it with converted mana cost 3 or less. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d40a907b-2cbd-5483-89fb-418e44757d90",
+            "name": "Last Kiss",
+            "text": "Last Kiss deals 2 damage to target creature and you gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11d7ae93-b9c5-5e81-890a-5f6fc8884d0a",
+            "name": "Mortician Beetle",
+            "text": "Whenever a player sacrifices a creature, you may put a +1/+1 counter on Mortician Beetle.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "47e901f1-026f-5ca9-9403-49770c56eb77",
+            "name": "Nighthaze",
+            "text": "Target creature gains swampwalk until end of turn.\nDraw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bbd586c3-9668-56a8-8cee-9a9ebe483b38",
+            "name": "Nirkana Cutthroat",
+            "text": "Level up {2}{B} ({2}{B}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n4/3\nDeathtouch\nLEVEL 3+\n5/4\nFirst strike, deathtouch",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "aea6cdba-3769-5f27-8f50-dde173af054a",
+            "name": "Nirkana Revenant",
+            "text": "Whenever you tap a Swamp for mana, add {B} to your mana pool (in addition to the mana the land produces).\n{B}: Nirkana Revenant gets +1/+1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1a098c93-4d08-5215-acba-b7ef0245c43d",
+            "name": "Null Champion",
+            "text": "Level up {3} ({3}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-3\n4/2\n\nLEVEL 4+\n7/3\n{B}: Regenerate Null Champion.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "1471a0dd-b18d-5c1b-a848-3671e43e8082",
+            "name": "Pawn of Ulamog",
+            "text": "Whenever Pawn of Ulamog or another nontoken creature you control is put into a graveyard from the battlefield, you may put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a8dbf36c-4609-5d79-9161-139bebdb97ad",
+            "name": "Perish the Thought",
+            "text": "Target opponent reveals his or her hand. You choose a card from it. That player shuffles that card into his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1ed83589-59d7-525a-9564-e8cddafb5aa7",
+            "name": "Pestilence Demon",
+            "text": "Flying\n{B}: Pestilence Demon deals 1 damage to each creature and each player.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85066470-fc57-5bf4-8855-abd41df42110",
+            "name": "Repay in Kind",
+            "text": "Each player's life total becomes the lowest life total among all players.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85e5776c-8e33-5874-b70f-85e8a4b02321",
+            "name": "Shrivel",
+            "text": "All creatures get -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "66095e06-f2c4-5fa4-9d70-b1d05595ae08",
+            "name": "Skeletal Wurm",
+            "text": "{B}: Regenerate Skeletal Wurm.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{7}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eed220a5-98a1-5df7-835c-0fc56a571543",
+            "name": "Suffer the Past",
+            "text": "Exile X target cards from target player's graveyard. For each card exiled this way, that player loses 1 life and you gain 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2293ffd6-376b-57be-a6eb-7226d56661eb",
+            "name": "Thought Gorger",
+            "text": "Trample\nWhen Thought Gorger enters the battlefield, put a +1/+1 counter on it for each card in your hand. If you do, discard your hand.\nWhen Thought Gorger leaves the battlefield, draw a card for each +1/+1 counter on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef3f0e10-1d09-5ef1-9f6a-40f643a818bd",
+            "name": "Vendetta",
+            "text": "Destroy target nonblack creature. It can't be regenerated. You lose life equal to that creature's toughness.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6adf4227-85dc-5774-bb38-cfe4b0f53008",
+            "name": "Virulent Swipe",
+            "text": "Target creature gets +2/+0 and gains deathtouch until end of turn.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "925ad53b-623e-5b90-9c72-263011db74ca",
+            "name": "Zof Shade",
+            "text": "{2}{B}: Zof Shade gets +2/+2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7baba623-85cf-5357-bf9d-991f2582b87e",
+            "name": "Zulaport Enforcer",
+            "text": "Level up {4} ({4}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n3/3\n\nLEVEL 3+\n5/5\nZulaport Enforcer can't be blocked except by black creatures.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "cb384cf2-4571-5696-8531-32b99247d458",
+            "name": "Akoum Boulderfoot",
+            "text": "When Akoum Boulderfoot enters the battlefield, it deals 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "694cc0ef-7fcc-5214-98a5-fd192cb31c5e",
+            "name": "Battle Rampart",
+            "text": "Defender\n{T}: Target creature gains haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c78e3e2-b4f0-5510-bcd2-918fe4e16132",
+            "name": "Battle-Rattle Shaman",
+            "text": "At the beginning of combat on your turn, you may have target creature get +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce3d381c-bf67-58f0-bcc4-8062e4e769f1",
+            "name": "Brimstone Mage",
+            "text": "Level up {3}{R} ({3}{R}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-2\n2/3\n{T}: Brimstone Mage deals 1 damage to target creature or player.\nLEVEL 3+\n2/4\n{T}: Brimstone Mage deals 3 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "ffcb0745-08fd-50a7-b29e-892bda2e7253",
+            "name": "Brood Birthing",
+            "text": "If you control an Eldrazi Spawn, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\" Otherwise, put one of those tokens onto the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "92f87f72-df7c-525c-96ed-59927a6b8624",
+            "name": "Conquering Manticore",
+            "text": "Flying\nWhen Conquering Manticore enters the battlefield, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "717535ee-be5b-501c-97c6-3dc78ff693e0",
+            "name": "Devastating Summons",
+            "text": "As an additional cost to cast Devastating Summons, sacrifice X lands.\nPut two X/X red Elemental creature tokens onto the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "24d92dd0-2aa8-58c7-98b5-ffe9e1654225",
+            "name": "Disaster Radius",
+            "text": "As an additional cost to cast Disaster Radius, reveal a creature card from your hand.\nDisaster Radius deals X damage to each creature your opponents control, where X is the revealed card's converted mana cost.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b14b47fd-667f-52b3-ab40-64eb8f9c23ed",
+            "name": "Emrakul's Hatcher",
+            "text": "When Emrakul's Hatcher enters the battlefield, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b55ca80c-b582-5626-ba98-f0af7ad209b5",
+            "name": "Explosive Revelation",
+            "text": "Choose target creature or player. Reveal cards from the top of your library until you reveal a nonland card. Explosive Revelation deals damage equal to that card's converted mana cost to that creature or player. Put the nonland card into your hand and the rest on the bottom of your library in any order.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e94cd68-e02b-5728-905a-eebac88ecad3",
+            "name": "Fissure Vent",
+            "text": "Choose one or both \u2014 Destroy target artifact; and/or destroy target nonbasic land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c6a40375-dd7c-5086-916b-73f3e22ead81",
+            "name": "Flame Slash",
+            "text": "Flame Slash deals 4 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c1f03e3a-78ef-53ac-8a94-dea9eb867052",
+            "name": "Forked Bolt",
+            "text": "Forked Bolt deals 2 damage divided as you choose among one or two target creatures and/or players.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7bc403bc-663c-5d47-9243-d32989241f5f",
+            "name": "Goblin Arsonist",
+            "text": "When Goblin Arsonist is put into a graveyard from the battlefield, you may have it deal 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c8c23c66-0ef5-59ba-a0f6-858903912b21",
+            "name": "Goblin Tunneler",
+            "text": "{T}: Target creature with power 2 or less is unblockable this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2db71ef4-cfe4-570b-8389-1815974f9bd4",
+            "name": "Grotag Siege-Runner",
+            "text": "{R}, Sacrifice Grotag Siege-Runner: Destroy target creature with defender. Grotag Siege-Runner deals 2 damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ec52b5ce-4134-551b-b100-2b9fa23be33f",
+            "name": "Heat Ray",
+            "text": "Heat Ray deals X damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "155421d6-f41f-5035-93e3-891835f73dfd",
+            "name": "Hellion Eruption",
+            "text": "Sacrifice all creatures you control, then put that many 4/4 red Hellion creature tokens onto the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f0d677d-0547-5beb-918a-6c25bae3ccb6",
+            "name": "Kargan Dragonlord",
+            "text": "Level up {R} ({R}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 4-7\n4/4\nFlying\nLEVEL 8+\n8/8\nFlying, trample\n{R}: Kargan Dragonlord gets +1/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "60141b8d-150a-5dea-8c3a-7b2311823b15",
+            "name": "Kiln Fiend",
+            "text": "Whenever you cast an instant or sorcery spell, Kiln Fiend gets +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "41b7937a-3296-5d34-bf79-5479121ec8c1",
+            "name": "Lagac Lizard",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c96c863f-1672-568b-bb25-e60e0daac949",
+            "name": "Lavafume Invoker",
+            "text": "{8}: Creatures you control get +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f7d566c4-6822-51da-a2de-52a2485b429b",
+            "name": "Lord of Shatterskull Pass",
+            "text": "Level up {1}{R} ({1}{R}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-5\n6/6\n\nLEVEL 6+\n6/6\nWhenever Lord of Shatterskull Pass attacks, it deals 6 damage to each creature defending player controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "127384f1-9821-57f2-a565-9510a7e145fe",
+            "name": "Lust for War",
+            "text": "Enchant creature\nWhenever enchanted creature becomes tapped, Lust for War deals 3 damage to that creature's controller.\nEnchanted creature attacks each turn if able.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d2eb59d0-6c26-50e0-bd90-796b873baf86",
+            "name": "Magmaw",
+            "text": "{1}, Sacrifice a nonland permanent: Magmaw deals 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f88cf00f-705e-52c9-941a-dd5a80191723",
+            "name": "Ogre Sentry",
+            "text": "Defender",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7cf64a3d-b004-551c-bd4b-fdf0dcea495c",
+            "name": "Rage Nimbus",
+            "text": "Defender, flying\n{1}{R}: Target creature attacks this turn if able.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d6a525ae-38ff-5616-9f56-ed68f1a5e242",
+            "name": "Raid Bombardment",
+            "text": "Whenever a creature you control with power 2 or less attacks, Raid Bombardment deals 1 damage to defending player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "792a202b-6051-5af9-abd9-6c801fb75c4a",
+            "name": "Rapacious One",
+            "text": "Trample\nWhenever Rapacious One deals combat damage to a player, put that many 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2003ba06-2bbc-5ab9-9efb-d63bf80480d1",
+            "name": "Soulsurge Elemental",
+            "text": "First strike\nSoulsurge Elemental's power is equal to the number of creatures you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0cd56d0-4b3f-5716-b186-13cb2d2e1c56",
+            "name": "Spawning Breath",
+            "text": "Spawning Breath deals 1 damage to target creature or player. Put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "82526226-c84f-5167-8fd2-0c559b214e6c",
+            "name": "Splinter Twin",
+            "text": "Enchant creature\nEnchanted creature has \"{T}: Put a token that's a copy of this creature onto the battlefield. That token has haste. Exile it at the beginning of the next end step.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce859abe-90f7-5b33-9dc5-7fd1c56523f3",
+            "name": "Staggershock",
+            "text": "Staggershock deals 2 damage to target creature or player.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11c0f120-33dc-5b22-9a6b-e27c78ce603c",
+            "name": "Surreal Memoir",
+            "text": "Return an instant card at random from your graveyard to your hand.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c177efbe-173b-5ea0-b9d1-f4ea68a0a7af",
+            "name": "Traitorous Instinct",
+            "text": "Gain control of target creature until end of turn. Untap that creature. Until end of turn, it gets +2/+0 and gains haste.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6efa287c-a208-5870-9827-886bfa7fb84d",
+            "name": "Tuktuk the Explorer",
+            "text": "Haste\nWhen Tuktuk the Explorer is put into a graveyard from the battlefield, put a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned onto the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "adf94f4d-38a1-55fa-a321-66a7e7c66c25",
+            "name": "Valakut Fireboar",
+            "text": "Whenever Valakut Fireboar attacks, switch its power and toughness until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3761729b-0620-5f1b-8bbc-8e59b7bd6c50",
+            "name": "Vent Sentinel",
+            "text": "Defender\n{1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "549b9c8b-093c-588c-8552-c8f27cb59ef6",
+            "name": "World at War",
+            "text": "After the first postcombat main phase this turn, there's an additional combat phase followed by an additional main phase. At the beginning of that combat, untap all creatures that attacked this turn.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "252a5eb5-685b-5146-8812-8cd8e03bd4c0",
+            "name": "Wrap in Flames",
+            "text": "Wrap in Flames deals 1 damage to each of up to three target creatures. Those creatures can't block this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc7325d7-3b21-55c2-a3f1-55b8306d348a",
+            "name": "Ancient Stirrings",
+            "text": "Look at the top five cards of your library. You may reveal a colorless card from among them and put it into your hand. Then put the rest on the bottom of your library in any order. (Cards with no colored mana in their mana costs are colorless. Lands are also colorless.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b841832-1d52-5262-afb3-fb2c3bc0b558",
+            "name": "Aura Gnarlid",
+            "text": "Creatures with power less than Aura Gnarlid's power can't block it.\nAura Gnarlid gets +1/+1 for each Aura on the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d449c934-e2fe-519c-bd06-08c1fc1a5671",
+            "name": "Awakening Zone",
+            "text": "At the beginning of your upkeep, you may put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4a4558e9-5718-5e4b-99fc-9deecdc66400",
+            "name": "Bear Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +2/+2 and has \"Whenever this creature attacks, untap all lands you control.\"\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "90b78804-b91b-5f4a-8b47-e0931716c5d1",
+            "name": "Beastbreaker of Bala Ged",
+            "text": "Level up {2}{G} ({2}{G}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-3\n4/4\n\nLEVEL 4+\n6/6\nTrample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "260d9c28-ce51-5e2b-bf02-57f44171288d",
+            "name": "Boar Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +3/+3.\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d6efba25-b256-5444-8f96-468669670125",
+            "name": "Bramblesnap",
+            "text": "Trample\nTap an untapped creature you control: Bramblesnap gets +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b3403270-5f2c-5db1-84f5-5c18cf937720",
+            "name": "Broodwarden",
+            "text": "Eldrazi Spawn creatures you control get +2/+1.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "29ee7782-955f-5e0a-8739-029b18b90e73",
+            "name": "Daggerback Basilisk",
+            "text": "Deathtouch",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0b8a2ba-d0ac-55fc-9019-e4a046e73ca1",
+            "name": "Gelatinous Genesis",
+            "text": "Put X X/X green Ooze creature tokens onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{X}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d352ed1c-9e16-5b15-bdfa-b3af97e1fa03",
+            "name": "Gigantomancer",
+            "text": "{1}: Target creature you control becomes 7/7 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{7}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f45c1802-099f-5b1f-9f72-7bb452aa8f66",
+            "name": "Gravity Well",
+            "text": "Whenever a creature with flying attacks, it loses flying until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f076404a-1be2-5f0e-83d2-85e7b126b0f3",
+            "name": "Growth Spasm",
+            "text": "Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library. Put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "40bbb7e0-ac56-50a3-9fb6-ec2f4ab7cfcb",
+            "name": "Haze Frog",
+            "text": "Flash (You may cast this spell any time you could cast an instant.)\nWhen Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bf026018-e684-5bc8-a431-75f466adda57",
+            "name": "Irresistible Prey",
+            "text": "Target creature must be blocked this turn if able.\nDraw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f8113c31-297f-5158-9487-512efaf35813",
+            "name": "Jaddi Lifestrider",
+            "text": "When Jaddi Lifestrider enters the battlefield, you may tap any number of untapped creatures you control. You gain 2 life for each creature tapped this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5989bc5b-2c14-5977-ab5b-4a25cf624339",
+            "name": "Joraga Treespeaker",
+            "text": "Level up {1}{G} ({1}{G}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-4\n1/2\n{T}: Add {G}{G} to your mana pool.\nLEVEL 5+\n1/4\nElves you control have \"{T}: Add {G}{G} to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "3c413416-e9b1-5397-a673-8fb159b17bcc",
+            "name": "Kazandu Tuskcaller",
+            "text": "Level up {1}{G} ({1}{G}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 2-5\n1/1\n{T}: Put a 3/3 green Elephant creature token onto the battlefield.\nLEVEL 6+\n1/1\n{T}: Put two 3/3 green Elephant creature tokens onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "leveler",
+            "isToken": false
+        },
+        {
+            "id": "b277e6cf-7316-5625-bb6e-b4480717dbe6",
+            "name": "Khalni Hydra",
+            "text": "Khalni Hydra costs {G} less to cast for each green creature you control.\nTrample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{G}{G}{G}{G}{G}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11625c17-8191-5f61-a3bf-3cfec7a1a15a",
+            "name": "Kozilek's Predator",
+            "text": "When Kozilek's Predator enters the battlefield, put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "73a64c46-a6eb-5e16-ab03-90da5eb889a0",
+            "name": "Leaf Arrow",
+            "text": "Leaf Arrow deals 3 damage to target creature with flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e51fbc2d-a650-579f-84b8-81470aaf2560",
+            "name": "Living Destiny",
+            "text": "As an additional cost to cast Living Destiny, reveal a creature card from your hand.\nYou gain life equal to the revealed card's converted mana cost.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4cf09b2c-d34e-5a5a-8c80-97ef96cd9597",
+            "name": "Might of the Masses",
+            "text": "Target creature gets +1/+1 until end of turn for each creature you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3e3681ac-35a2-5de8-b706-12784247c377",
+            "name": "Momentous Fall",
+            "text": "As an additional cost to cast Momentous Fall, sacrifice a creature.\nYou draw cards equal to the sacrificed creature's power, then you gain life equal to its toughness.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d09c7994-6784-5286-b22e-562a300d25c8",
+            "name": "Mul Daya Channelers",
+            "text": "Play with the top card of your library revealed.\nAs long as the top card of your library is a creature card, Mul Daya Channelers gets +3/+3.\nAs long as the top card of your library is a land card, Mul Daya Channelers has \"{T}: Add two mana of any one color to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4261ba57-e778-5d8c-94d1-297ed8cf9be7",
+            "name": "Naturalize",
+            "text": "Destroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5d95329e-e4c7-51aa-a31d-e2b015e199ef",
+            "name": "Nema Siltlurker",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "29e16d30-174e-52a5-9509-82b4857c0d01",
+            "name": "Nest Invader",
+            "text": "When Nest Invader enters the battlefield, put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has \"Sacrifice this creature: Add {1} to your mana pool.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e3a5f2e1-7ac1-5e3e-83b4-7497c64233d3",
+            "name": "Ondu Giant",
+            "text": "When Ondu Giant enters the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "293e889f-0378-5ed2-a233-48930112f2ed",
+            "name": "Overgrown Battlement",
+            "text": "Defender\n{T}: Add {G} to your mana pool for each creature with defender you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bb0e2320-83b6-5a56-9d54-e1f03a556797",
+            "name": "Pelakka Wurm",
+            "text": "Trample\nWhen Pelakka Wurm enters the battlefield, you gain 7 life.\nWhen Pelakka Wurm is put into a graveyard from the battlefield, draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4e59eba0-4f0e-5b6a-91bd-9e854997aad7",
+            "name": "Prey's Vengeance",
+            "text": "Target creature gets +2/+2 until end of turn.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "78ec72a6-b643-5bb2-9b97-73ca7e2efccf",
+            "name": "Realms Uncharted",
+            "text": "Search your library for four land cards with different names and reveal them. An opponent chooses two of those cards. Put the chosen cards into your graveyard and the rest into your hand. Then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a7497c68-7ee6-565f-8b2c-78c390ec888d",
+            "name": "Snake Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 and has \"Whenever this creature deals damage to an opponent, you may draw a card.\"\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "afe206ff-cf0e-50f1-8832-9b0a441a1a4a",
+            "name": "Spider Umbra",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 and has reach. (It can block creatures with flying.)\nTotem armor (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c094f21c-35d5-53ea-a963-c83533e93357",
+            "name": "Sporecap Spider",
+            "text": "Reach (This creature can block creatures with flying.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5c8adfef-dd8b-5daa-8422-d622a116d608",
+            "name": "Stomper Cub",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d6ff481-216c-5e99-a54d-4a5747ea0924",
+            "name": "Tajuru Preserver",
+            "text": "Spells and abilities your opponents control can't cause you to sacrifice permanents.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "236cbb40-c946-55a3-8d01-5ea24c556c8c",
+            "name": "Vengevine",
+            "text": "Haste\nWhenever you cast a spell, if it's the second creature spell you cast this turn, you may return Vengevine from your graveyard to the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5ba157f7-dd80-58da-a5c5-38927a67f049",
+            "name": "Wildheart Invoker",
+            "text": "{8}: Target creature gets +5/+5 and gains trample until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8fc6ecd8-9901-519b-9565-f6ff548b03dc",
+            "name": "Sarkhan the Mad",
+            "text": "0: Reveal the top card of your library and put it into your hand. Sarkhan the Mad deals damage to himself equal to that card's converted mana cost.\n-2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield.\n-4: Each Dragon creature you control deals damage equal to its power to target player.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e19885e-a466-5c76-bf49-ee333cafcfbc",
+            "name": "Angelheart Vial",
+            "text": "Whenever you're dealt damage, you may put that many charge counters on Angelheart Vial.\n{2}, {T}, Remove four charge counters from Angelheart Vial: You gain 2 life and draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cddf42c0-8b90-5f7f-bd7b-6109d9972f36",
+            "name": "Dreamstone Hedron",
+            "text": "{T}: Add {3} to your mana pool.\n{3}, {T}, Sacrifice Dreamstone Hedron: Draw three cards.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab8027cc-6f14-5d6c-9894-faabfd03e56d",
+            "name": "Enatu Golem",
+            "text": "When Enatu Golem is put into a graveyard from the battlefield, you gain 4 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b86309ee-8922-567b-b84f-bb179e96d8a2",
+            "name": "Hedron Matrix",
+            "text": "Equipped creature gets +X/+X, where X is its converted mana cost.\nEquip {4}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3dcd4b30-e38a-5cbe-a58c-13eb582a107a",
+            "name": "Keening Stone",
+            "text": "{5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cd1a31e1-0f9c-597b-8f15-248e8c2a80c5",
+            "name": "Ogre's Cleaver",
+            "text": "Equipped creature gets +5/+0.\nEquip {5}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8f5d27a5-2a29-5b67-a28f-752fcc9e7e35",
+            "name": "Pennon Blade",
+            "text": "Equipped creature gets +1/+1 for each creature you control.\nEquip {4}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0d36f401-a08b-5e07-bdbf-b9ac51d115c3",
+            "name": "Prophetic Prism",
+            "text": "When Prophetic Prism enters the battlefield, draw a card.\n{1}, {T}: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "573efbcb-e5ad-5820-bcec-94651b5066df",
+            "name": "Reinforced Bulwark",
+            "text": "Defender\n{T}: Prevent the next 1 damage that would be dealt to you this turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "74aafdcd-1379-52a9-a987-8540dd828054",
+            "name": "Runed Servitor",
+            "text": "When Runed Servitor is put into a graveyard from the battlefield, each player draws a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "27f52867-06e3-50d0-8043-3a4a5deef695",
+            "name": "Sphinx-Bone Wand",
+            "text": "Whenever you cast an instant or sorcery spell, you may put a charge counter on Sphinx-Bone Wand. If you do, Sphinx-Bone Wand deals damage equal to the number of charge counters on it to target creature or player.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "12458f3e-2b0a-5724-9c40-d3cfd18a5e94",
+            "name": "Warmonger's Chariot",
+            "text": "Equipped creature gets +2/+2.\nAs long as equipped creature has defender, it can attack as though it didn't have defender.\nEquip {3}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9999b1ed-df21-5699-9a73-6367d6273c04",
+            "name": "Eldrazi Temple",
+            "text": "{T}: Add {1} to your mana pool.\n{T}: Add {2} to your mana pool. Spend this mana only to cast colorless Eldrazi spells or activate abilities of colorless Eldrazi.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "25231603-90bb-5a91-8f6e-e05389c26438",
+            "name": "Evolving Wilds",
+            "text": "{T}, Sacrifice Evolving Wilds: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6b063a0-815a-5105-9ddb-4f1acbb9e52d",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "414a8436-d86f-5b80-ba3d-0f9cbea4f21e",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa3851f7-56af-5ebf-9ffb-9fc5fd3d2345",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "13e78170-7ba8-5be1-b1f1-76c780aa68a5",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "35639b2e-3779-54c1-a887-c3b77e1dc51d",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "33f49aad-9755-5d7e-b005-6d3ff3d25452",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f87cfb5-46a6-56d0-ad52-2c2268a01bd7",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e095630-c7b4-5690-becb-c5b8db09212e",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b3ad9125-7358-5cac-b8cf-fdf9e9b2bd9f",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d4a8435a-c0f4-56c5-990e-b42dea233fd7",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fe9de957-e587-5bea-952c-049e2902dcc1",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ec7ae475-5c55-50fd-a224-76bce8668a3a",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5b9b39bc-22b0-5757-83bb-ab54fe2add7d",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba0b5086-fdb3-50f2-945c-15de60074be1",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9d98a217-174a-57c5-9931-0130b6cf061a",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5e834126-996b-5757-9ea9-ee22f2c5626e",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f65a752f-3712-57d5-a754-7b97f42675c9",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "74422852-01dd-59f0-9264-1984810e00a0",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "34a6cf7f-c1cc-55ce-93c0-189f95ec183f",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "51f2710a-8cd9-5b82-917a-b7b46f861047",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "ROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "946a7482-bf4a-5eab-8c8f-3b06b9ba413b",
+            "name": "Eldrazi Spawn",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "2858a0da-25df-526d-b946-74c309c4bc5d",
+            "name": "Eldrazi Spawn",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "72736a8e-7059-58e0-83df-1a88d355766b",
+            "name": "Eldrazi Spawn",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "f9482da1-1da5-5ed9-a322-f3b5031d8904",
+            "name": "Elemental",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "c2d9fa31-b2b6-5c1e-bbd9-65206fbb04aa",
+            "name": "Hellion",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "6e7758ec-e4bb-59fc-a314-6a52cc158724",
+            "name": "Ooze",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "8a2b5077-33e8-52c8-af65-28159fe2bc8f",
+            "name": "Tuktuk the Returned",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TROE",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
