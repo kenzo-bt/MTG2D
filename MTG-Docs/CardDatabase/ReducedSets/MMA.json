@@ -1,0 +1,5364 @@
+{
+    "setCode": "MMA",
+    "setName": "Modern Masters",
+    "cards": [
+        {
+            "id": "eb17f73c-21e5-54c8-bfac-1da5b59f55c7",
+            "name": "Adarkar Valkyrie",
+            "text": "Flying, vigilance\n{T}: When target creature other than Adarkar Valkyrie dies this turn, return that card to the battlefield under your control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4ce23e56-7fe7-5a14-9347-c31e1062367a",
+            "name": "Amrou Scout",
+            "text": "{4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01011f44-5656-5aa0-bfff-1dbade305c30",
+            "name": "Amrou Seekers",
+            "text": "Amrou Seekers can't be blocked except by artifact creatures and/or white creatures.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "32bc582a-ad16-5574-8a5b-fcdf5b78c1ea",
+            "name": "Angel's Grace",
+            "text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nYou can't lose the game this turn and your opponents can't win the game this turn. Until end of turn, damage that would reduce your life total to less than 1 reduces it to 1 instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fafcdce8-4f45-5e94-8ddd-b521b51b2ecc",
+            "name": "Auriok Salvagers",
+            "text": "{1}{W}: Return target artifact card with converted mana cost 1 or less from your graveyard to your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b839d665-58aa-59ca-9e51-3c0a755dd820",
+            "name": "Avian Changeling",
+            "text": "Changeling (This card is every creature type at all times.)\nFlying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "47a94eb8-2c86-5161-a63d-c9a0cfbef0ac",
+            "name": "Blinding Beam",
+            "text": "Choose one \u2014 Tap two target creatures; or creatures don't untap during target player's next untap step.\nEntwine {1} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "13a2f1b3-181a-5c9d-82e6-2c8483f517d4",
+            "name": "Bound in Silence",
+            "text": "Enchant creature\nEnchanted creature can't attack or block.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Tribal",
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "45ace07e-775c-5d44-958d-20442acf4065",
+            "name": "Cenn's Enlistment",
+            "text": "Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f931b623-5385-5e95-95af-dc8b403fb66f",
+            "name": "Cloudgoat Ranger",
+            "text": "When Cloudgoat Ranger enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.\nTap three untapped Kithkin you control: Cloudgoat Ranger gets +2/+0 and gains flying until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a4c54462-d0c2-5137-8bbd-3250d30e725f",
+            "name": "Court Homunculus",
+            "text": "Court Homunculus gets +1/+1 as long as you control another artifact.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "834dedd1-59ab-54af-88c1-b0e23f75a83c",
+            "name": "Dispeller's Capsule",
+            "text": "{2}{W}, {T}, Sacrifice Dispeller's Capsule: Destroy target artifact or enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "75dbbd57-df8e-52ca-a9cc-948bbc0b2ef7",
+            "name": "Elspeth, Knight-Errant",
+            "text": "+1: Put a 1/1 white Soldier creature token onto the battlefield.\n+1: Target creature gets +3/+3 and gains flying until end of turn.\n-8: You get an emblem with \"Artifacts, creatures, enchantments, and lands you control are indestructible.\"",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b1c54eb5-9e0e-59f0-89c3-75e3ccfcc159",
+            "name": "Ethersworn Canonist",
+            "text": "Each player who has cast a nonartifact spell this turn can't cast additional nonartifact spells.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e2ec13d-634f-5d86-b211-25d0f9b977ad",
+            "name": "Feudkiller's Verdict",
+            "text": "You gain 10 life. Then if you have more life than an opponent, put a 5/5 white Giant Warrior creature token onto the battlefield.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Tribal",
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc0c33ae-9e4b-5105-82eb-022b555121be",
+            "name": "Flickerwisp",
+            "text": "Flying\nWhen Flickerwisp enters the battlefield, exile another target permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a6961568-6987-5224-a054-28eaa7f91980",
+            "name": "Gleam of Resistance",
+            "text": "Creatures you control get +1/+2 until end of turn. Untap those creatures.\nBasic landcycling {1}{W} ({1}{W}, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "073a7490-0626-5809-bb03-3edde6a681f4",
+            "name": "Hillcomber Giant",
+            "text": "Mountainwalk",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "222edb9c-4a0b-5941-a16e-0df7110ad65f",
+            "name": "Ivory Giant",
+            "text": "When Ivory Giant enters the battlefield, tap all nonwhite creatures.\nSuspend 5\u2014{W} (Rather than cast this card from your hand, you may pay {W} and exile it with five time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4319155a-6f45-5470-8041-b0af5739b381",
+            "name": "Kataki, War's Wage",
+            "text": "All artifacts have \"At the beginning of your upkeep, sacrifice this artifact unless you pay {1}.\"",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8e3204ea-9c3c-527d-9748-80a347bedba4",
+            "name": "Kithkin Greatheart",
+            "text": "As long as you control a Giant, Kithkin Greatheart gets +1/+1 and has first strike.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0dd188f4-ff36-5bfa-b56f-9c32ab6bc006",
+            "name": "Meadowboon",
+            "text": "When Meadowboon leaves the battlefield, put a +1/+1 counter on each creature target player controls.\nEvoke {3}{W} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4f40d51a-70d5-5066-a561-623128e49e2e",
+            "name": "Otherworldly Journey",
+            "text": "Exile target creature. At the beginning of the next end step, return that card to the battlefield under its owner's control with a +1/+1 counter on it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c60314c-e1e7-5778-8b1a-79caac1dbadc",
+            "name": "Pallid Mycoderm",
+            "text": "At the beginning of your upkeep, put a spore counter on Pallid Mycoderm.\nRemove three spore counters from Pallid Mycoderm: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Each creature you control that's a Fungus or a Saproling gets +1/+1 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f851a8c9-4d07-5df7-82e2-d996ed2ad113",
+            "name": "Path to Exile",
+            "text": "Exile target creature. Its controller may search his or her library for a basic land card, put that card onto the battlefield tapped, then shuffle his or her library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4e709547-d634-547b-aafd-b25b776d90d7",
+            "name": "Reveillark",
+            "text": "Flying\nWhen Reveillark leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield.\nEvoke {5}{W} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5d7ed4d5-b30f-53b2-b238-65949b08de32",
+            "name": "Saltfield Recluse",
+            "text": "{T}: Target creature gets -2/-0 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c9f19214-5c4e-536d-a9b5-1da7d4c9abb2",
+            "name": "Sanctum Gargoyle",
+            "text": "Flying\nWhen Sanctum Gargoyle enters the battlefield, you may return target artifact card from your graveyard to your hand.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b382dc10-55bc-5652-8f35-ea59b533034b",
+            "name": "Sandsower",
+            "text": "Tap three untapped creatures you control: Tap target creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a05d7804-b057-5d6c-a91f-de4f46e5ef8f",
+            "name": "Stir the Pride",
+            "text": "Choose one \u2014 Creatures you control get +2/+2 until end of turn; or until end of turn, creatures you control gain \"Whenever this creature deals damage, you gain that much life.\"\nEntwine {1}{W} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b0505bec-a01f-510e-984a-dd79401a6ecc",
+            "name": "Stonehewer Giant",
+            "text": "Vigilance\n{1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4aa06d88-94ea-5c6c-ab53-df466223c254",
+            "name": "Terashi's Grasp",
+            "text": "Destroy target artifact or enchantment. You gain life equal to its converted mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "57287897-373a-55c3-8fde-fd19da35c99e",
+            "name": "Test of Faith",
+            "text": "Prevent the next 3 damage that would be dealt to target creature this turn, and put a +1/+1 counter on that creature for each 1 damage prevented this way.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "09e526e4-5ae2-5102-b9bd-aef7ff7514fa",
+            "name": "Veteran Armorer",
+            "text": "Other creatures you control get +0/+1.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "770207bc-1d65-5963-ae86-eee5a6a0eed7",
+            "name": "Yosei, the Morning Star",
+            "text": "Flying\nWhen Yosei, the Morning Star dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a122ff55-e315-53b6-a03e-227c78d92acb",
+            "name": "Aethersnipe",
+            "text": "When \u00c6thersnipe enters the battlefield, return target nonland permanent to its owner's hand.\nEvoke {1}{U}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1b51619-cec6-506d-a039-d029befa34b5",
+            "name": "Careful Consideration",
+            "text": "Target player draws four cards, then discards three cards. If you cast this spell during your main phase, instead that player draws four cards, then discards two cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "76d2c903-0833-5bd5-b09d-f83394439fc1",
+            "name": "Cryptic Command",
+            "text": "Choose two \u2014 Counter target spell; or return target permanent to its owner's hand; or tap all creatures your opponents control; or draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{1}{U}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28f09f85-1aa1-56c8-868e-85e0d753f6d5",
+            "name": "Dampen Thought",
+            "text": "Target player puts the top four cards of his or her library into his or her graveyard.\nSplice onto Arcane {1}{U} (As you cast an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11090008-9822-5dca-ab03-21970583f5b7",
+            "name": "Echoing Truth",
+            "text": "Return target nonland permanent and all other permanents with the same name as that permanent to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df87a6e8-779b-5625-8e1a-db419b0bf507",
+            "name": "Errant Ephemeron",
+            "text": "Flying\nSuspend 4\u2014{1}{U} (Rather than cast this card from your hand, you may pay {1}{U} and exile it with four time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "45f09ab6-9200-5c1d-954c-02d02914f103",
+            "name": "Erratic Mutation",
+            "text": "Choose target creature. Reveal cards from the top of your library until you reveal a nonland card. That creature gets +X/-X until end of turn, where X is that card's converted mana cost. Put all cards revealed this way on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "76bc1bf4-444e-5036-b9f6-b3baa78d0031",
+            "name": "Esperzoa",
+            "text": "Flying\nAt the beginning of your upkeep, return an artifact you control to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8f559bb4-367f-5691-aa5a-f99e7c2f05a5",
+            "name": "Etherium Sculptor",
+            "text": "Artifact spells you cast cost {1} less to cast.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bee5b3a6-be63-5f90-84a1-ee8924c203b3",
+            "name": "Faerie Mechanist",
+            "text": "Flying\nWhen Faerie Mechanist enters the battlefield, look at the top three cards of your library. You may reveal an artifact card from among them and put it into your hand. Put the rest on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b53385c6-f8af-5c39-8205-79275928a5ed",
+            "name": "Gifts Ungiven",
+            "text": "Search your library for up to four cards with different names and reveal them. Target opponent chooses two of those cards. Put the chosen cards into your graveyard and the rest into your hand. Then shuffle your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "87c48713-a9f5-5e32-9317-7fb0f3d9b8a1",
+            "name": "Glen Elendra Archmage",
+            "text": "Flying\n{U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell.\nPersist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d9e0682-cd6e-5249-a6a4-e71d3b5280f1",
+            "name": "Keiga, the Tide Star",
+            "text": "Flying\nWhen Keiga, the Tide Star dies, gain control of target creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8b65a938-8165-5c0a-a92b-22ab1255d78a",
+            "name": "Kira, Great Glass-Spinner",
+            "text": "Flying\nCreatures you control have \"Whenever this creature becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "49fbabcb-be56-5a4f-9e0a-cbed39243805",
+            "name": "Latchkey Faerie",
+            "text": "Flying\nProwl {2}{U} (You may cast this for its prowl cost if you dealt combat damage to a player this turn with a Faerie or Rogue.)\nWhen Latchkey Faerie enters the battlefield, if its prowl cost was paid, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "32bce47d-7a55-58a6-bcda-95c0ef072b16",
+            "name": "Logic Knot",
+            "text": "Delve (You may exile any number of cards from your graveyard as you cast this spell. It costs {1} less to cast for each card exiled this way.)\nCounter target spell unless its controller pays {X}.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aed22900-3e24-5545-b18b-fab7ebba3313",
+            "name": "Meloku the Clouded Mirror",
+            "text": "Flying\n{1}, Return a land you control to its owner's hand: Put a 1/1 blue Illusion creature token with flying onto the battlefield.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8f797c15-2a9e-518f-9bc9-196a9ec3eb00",
+            "name": "Mothdust Changeling",
+            "text": "Changeling (This card is every creature type at all times.)\nTap an untapped creature you control: Mothdust Changeling gains flying until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "662e50ed-faf2-5ca2-9bca-c0a6f96538ca",
+            "name": "Mulldrifter",
+            "text": "Flying\nWhen Mulldrifter enters the battlefield, draw two cards.\nEvoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df656d28-2840-586e-bdc6-04dacc114fc3",
+            "name": "Narcomoeba",
+            "text": "Flying\nWhen Narcomoeba is put into your graveyard from your library, you may put it onto the battlefield.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "78aa1aaf-1c98-5a0a-9442-dbad610f8580",
+            "name": "Pact of Negation",
+            "text": "Counter target spell.\nAt the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "86915d58-7dc4-5b9c-9c3a-8d6f89d27cb1",
+            "name": "Peer Through Depths",
+            "text": "Look at the top five cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "88ccd563-fb4c-5787-8142-e81450209179",
+            "name": "Perilous Research",
+            "text": "Draw two cards, then sacrifice a permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "09576448-6c81-5ace-a671-a35c85a0096e",
+            "name": "Pestermite",
+            "text": "Flash\nFlying\nWhen Pestermite enters the battlefield, you may tap or untap target permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1619fed2-35c4-58b0-a400-e25c7c2a5179",
+            "name": "Petals of Insight",
+            "text": "Look at the top three cards of your library. You may put those cards on the bottom of your library in any order. If you do, return Petals of Insight to its owner's hand. Otherwise, draw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ad859108-f820-5676-8e16-8dee55bbdb25",
+            "name": "Reach Through Mists",
+            "text": "Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f12aed20-d52d-54c1-85cd-6692a6d7bea2",
+            "name": "Riftwing Cloudskate",
+            "text": "Flying\nWhen Riftwing Cloudskate enters the battlefield, return target permanent to its owner's hand.\nSuspend 3\u2014{1}{U} (Rather than cast this card from your hand, you may pay {1}{U} and exile it with three time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a28f300-f5aa-5146-a49e-24c9e0915bea",
+            "name": "Scion of Oona",
+            "text": "Flash\nFlying\nOther Faerie creatures you control get +1/+1.\nOther Faeries you control have shroud.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "31b060aa-b63d-5afd-94df-02f45f5dd328",
+            "name": "Spell Snare",
+            "text": "Counter target spell with converted mana cost 2.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f68f3d1c-9e2b-5a9a-94da-a4dc5f1f2951",
+            "name": "Spellstutter Sprite",
+            "text": "Flash\nFlying\nWhen Spellstutter Sprite enters the battlefield, counter target spell with converted mana cost X or less, where X is the number of Faeries you control.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c08deceb-e515-538e-b694-a2a1578e40b9",
+            "name": "Take Possession",
+            "text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nEnchant permanent\nYou control enchanted permanent.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7fafe986-dba7-5ea8-a0dd-ab7dbc652e6f",
+            "name": "Thirst for Knowledge",
+            "text": "Draw three cards. Then discard two cards unless you discard an artifact card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aa821b91-35e7-5371-8edf-8bc66075a5bc",
+            "name": "Traumatic Visions",
+            "text": "Counter target spell.\nBasic landcycling {1}{U} ({1}{U}, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "73e12c4d-e03d-57f9-811d-48629be5b78d",
+            "name": "Vedalken Dismisser",
+            "text": "When Vedalken Dismisser enters the battlefield, put target creature on top of its owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f778c62-f4c3-5888-9eec-9c60fbebf497",
+            "name": "Vendilion Clique",
+            "text": "Flash\nFlying\nWhen Vendilion Clique enters the battlefield, look at target player's hand. You may choose a nonland card from it. If you do, that player reveals the chosen card, puts it on the bottom of his or her library, then draws a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f58b6851-c70d-55ec-a42e-9b60fa209cec",
+            "name": "Absorb Vis",
+            "text": "Target player loses 4 life and you gain 4 life.\nBasic landcycling {1}{B} ({1}{B}, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a7f991a9-b995-57b2-9192-8a072bac3209",
+            "name": "Auntie's Snitch",
+            "text": "Auntie's Snitch can't block.\nProwl {1}{B} (You may cast this for its prowl cost if you dealt combat damage to a player this turn with a Goblin or Rogue.)\nWhenever a Goblin or Rogue you control deals combat damage to a player, if Auntie's Snitch is in your graveyard, you may return Auntie's Snitch to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7374cf13-98b0-5532-a033-73f657b21e97",
+            "name": "Blightspeaker",
+            "text": "{T}: Target player loses 1 life.\n{4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9fb01731-8d11-5861-9ce2-dfb32095fc4a",
+            "name": "Bridge from Below",
+            "text": "Whenever a nontoken creature is put into your graveyard from the battlefield, if Bridge from Below is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield.\nWhen a creature is put into an opponent's graveyard from the battlefield, if Bridge from Below is in your graveyard, exile Bridge from Below.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{B}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1db67744-4595-53cd-b508-7dcb9a603190",
+            "name": "Dark Confidant",
+            "text": "At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "667d5cc0-e262-5ed2-bc2b-223fe58701d2",
+            "name": "Death Cloud",
+            "text": "Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{B}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cbba1a0a-2dd9-55dc-b9bc-8006f9086933",
+            "name": "Death Denied",
+            "text": "Return X target creature cards from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e4926009-0db5-55f4-a194-86c4da65d3db",
+            "name": "Death Rattle",
+            "text": "Delve (You may exile any number of cards from your graveyard as you cast this spell. It costs {1} less to cast for each card exiled this way.)\nDestroy target nongreen creature. It can't be regenerated.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b4ca7cc7-0378-57f2-a554-d7c633fa7eda",
+            "name": "Deepcavern Imp",
+            "text": "Flying, haste\nEcho\u2014\nDiscard a card. (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "61c7a278-59b9-5937-8042-dbf7367e709b",
+            "name": "Drag Down",
+            "text": "Domain \u2014 Target creature gets -1/-1 until end of turn for each basic land type among lands you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e8eca786-0d83-5574-ad44-0ed1f404fa27",
+            "name": "Dreamspoiler Witches",
+            "text": "Flying\nWhenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7b07c101-98fb-50f7-b5b8-e800ba73cfbd",
+            "name": "Earwig Squad",
+            "text": "Prowl {2}{B} (You may cast this for its prowl cost if you dealt combat damage to a player this turn with a Goblin or Rogue.)\nWhen Earwig Squad enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d44314e2-3f90-5317-980d-cfc7c6def138",
+            "name": "Executioner's Capsule",
+            "text": "{1}{B}, {T}, Sacrifice Executioner's Capsule: Destroy target nonblack creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "87388ac2-cc09-546f-84f8-29f7f909d8ef",
+            "name": "Extirpate",
+            "text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nChoose target card in a graveyard other than a basic land card. Search its owner's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3fc0b19d-a63f-513c-a48c-f937852e46e9",
+            "name": "Facevaulter",
+            "text": "{B}, Sacrifice a Goblin: Facevaulter gets +2/+2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2bd57741-2467-5c60-9298-bd02e7f2f42e",
+            "name": "Faerie Macabre",
+            "text": "Flying\nDiscard Faerie Macabre: Exile up to two target cards from graveyards.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ff9fdef1-17cb-571a-818b-21d702943367",
+            "name": "Festering Goblin",
+            "text": "When Festering Goblin dies, target creature gets -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "58ea9635-a9dd-583a-aa96-6a7b9c4d89af",
+            "name": "Horobi's Whisper",
+            "text": "If you control a Swamp, destroy target nonblack creature.\nSplice onto Arcane\u2014\nExile four cards from your graveyard. (As you cast an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "059e3a43-f0cf-5b74-8fe0-f20df29a6157",
+            "name": "Kokusho, the Evening Star",
+            "text": "Flying\nWhen Kokusho, the Evening Star dies, each opponent loses 5 life. You gain life equal to the life lost this way.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4c54a41b-7461-5144-b7b2-4a54e6e1ccc3",
+            "name": "Mad Auntie",
+            "text": "Other Goblin creatures you control get +1/+1.\n{T}: Regenerate another target Goblin.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4713dcda-3349-511e-9887-350d88e714d6",
+            "name": "Marsh Flitter",
+            "text": "Flying\nWhen Marsh Flitter enters the battlefield, put two 1/1 black Goblin Rogue creature tokens onto the battlefield.\nSacrifice a Goblin: Marsh Flitter becomes 3/3 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "004b3b84-db1d-5191-91d9-0b5844b8cf11",
+            "name": "Peppersmoke",
+            "text": "Target creature gets -1/-1 until end of turn. If you control a Faerie, draw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Tribal",
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b89be611-c214-5ab5-9928-3b673de32928",
+            "name": "Phthisis",
+            "text": "Destroy target creature. Its controller loses life equal to its power plus its toughness.\nSuspend 5\u2014{1}{B} (Rather than cast this card from your hand, you may pay {1}{B} and exile it with five time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{3}{B}{B}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "031421f7-65ac-54a2-b0ec-0dfc18cdc141",
+            "name": "Rathi Trapper",
+            "text": "{B}, {T}: Tap target creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a33f2e8-e9b3-5360-a3f9-2be629b52a68",
+            "name": "Raven's Crime",
+            "text": "Target player discards a card.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7ead80a0-36cc-5282-99a6-57ab852f5a89",
+            "name": "Skeletal Vampire",
+            "text": "Flying\nWhen Skeletal Vampire enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield.\n{3}{B}{B}, Sacrifice a Bat: Put two 1/1 black Bat creature tokens with flying onto the battlefield.\nSacrifice a Bat: Regenerate Skeletal Vampire.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2049040a-5d82-54c6-977b-8a8f407cbcaf",
+            "name": "Slaughter Pact",
+            "text": "Destroy target nonblack creature.\nAt the beginning of your next upkeep, pay {2}{B}. If you don't, you lose the game.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fc123fef-083a-5957-bd6d-63f0974f70b3",
+            "name": "Stinkweed Imp",
+            "text": "Flying\nWhenever Stinkweed Imp deals combat damage to a creature, destroy that creature.\nDredge 5 (If you would draw a card, instead you may put exactly five cards from the top of your library into your graveyard. If you do, return this card from your graveyard to your hand. Otherwise, draw a card.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "257361a5-6efe-5690-9739-85a29ef608a6",
+            "name": "Street Wraith",
+            "text": "Swampwalk\nCycling\u2014\nPay 2 life. (Pay 2 life, Discard this card: Draw a card.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "912300df-9050-5746-990d-390a51172b51",
+            "name": "Syphon Life",
+            "text": "Target player loses 2 life and you gain 2 life.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "38a33600-5ddc-5322-9cfc-bf094c5a0da1",
+            "name": "Thieving Sprite",
+            "text": "Flying\nWhen Thieving Sprite enters the battlefield, target player reveals X cards from his or her hand, where X is the number of Faeries you control. You choose one of those cards. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "785c1577-c08a-567a-a4b4-74f472a44411",
+            "name": "Tombstalker",
+            "text": "Flying\nDelve (You may exile any number of cards from your graveyard as you cast this spell. It costs {1} less to cast for each card exiled this way.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a1537f03-9ba3-5929-a7c8-93094ec3d6df",
+            "name": "Warren Pilferers",
+            "text": "When Warren Pilferers enters the battlefield, return target creature card from your graveyard to your hand. If that card is a Goblin card, Warren Pilferers gains haste until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b768caf-a6c5-5bfc-adac-c019f666110c",
+            "name": "Warren Weirding",
+            "text": "Target player sacrifices a creature. If a Goblin is sacrificed this way, that player puts two 1/1 black Goblin Rogue creature tokens onto the battlefield, and those tokens gain haste until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Tribal",
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d06290e5-4769-5e5b-a1e1-51b7a6ffcc1d",
+            "name": "Blind-Spot Giant",
+            "text": "Blind-Spot Giant can't attack or block unless you control another Giant.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "184de455-c0d9-5134-9075-9a09c65fe483",
+            "name": "Blood Moon",
+            "text": "Nonbasic lands are Mountains.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "839763b8-7185-5493-a24d-b95d02a06850",
+            "name": "Brute Force",
+            "text": "Target creature gets +3/+3 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "80c2d6d9-ca17-5bb1-ac66-9c608527e00d",
+            "name": "Countryside Crusher",
+            "text": "At the beginning of your upkeep, reveal the top card of your library. If it's a land card, put it into your graveyard and repeat this process.\nWhenever a land card is put into your graveyard from anywhere, put a +1/+1 counter on Countryside Crusher.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "049f4442-fba3-5e4e-bf48-8e7f20068181",
+            "name": "Crush Underfoot",
+            "text": "Choose a Giant creature you control. It deals damage equal to its power to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Tribal",
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4117174d-c04d-5d5f-b9b9-7890e884c11a",
+            "name": "Desperate Ritual",
+            "text": "Add {R}{R}{R} to your mana pool.\nSplice onto Arcane {1}{R} (As you cast an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "46cfc4cf-ff22-50a3-ab70-e3babb31c9f8",
+            "name": "Dragonstorm",
+            "text": "Search your library for a Dragon permanent card and put it onto the battlefield. Then shuffle your library.\nStorm (When you cast this spell, copy it for each spell cast before it this turn.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 9.0,
+            "manaCost": "{8}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6edb6b4-e23a-53e3-bf65-8a8552f7be51",
+            "name": "Empty the Warrens",
+            "text": "Put two 1/1 red Goblin creature tokens onto the battlefield.\nStorm (When you cast this spell, copy it for each spell cast before it this turn.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f90d39c1-d3a9-50aa-aed4-503a00360c5f",
+            "name": "Fiery Fall",
+            "text": "Fiery Fall deals 5 damage to target creature.\nBasic landcycling {1}{R} ({1}{R}, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "000a83dc-9ee4-528d-866d-2ca2063e718c",
+            "name": "Fury Charm",
+            "text": "Choose one \u2014 Destroy target artifact; or target creature gets +1/+1 and gains trample until end of turn; or remove two time counters from target permanent or suspended card.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "59edb354-18f7-536e-b189-3b4709038c52",
+            "name": "Glacial Ray",
+            "text": "Glacial Ray deals 2 damage to target creature or player.\nSplice onto Arcane {1}{R} (As you cast an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d8f8c47c-6bdf-51ff-9ace-f62c9dd7bdef",
+            "name": "Grapeshot",
+            "text": "Grapeshot deals 1 damage to target creature or player.\nStorm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5a9277bb-651e-5871-8042-da4bdaa8b9f3",
+            "name": "Greater Gargadon",
+            "text": "Suspend 10\u2014{R}\nSacrifice an artifact, creature, or land: Remove a time counter from Greater Gargadon. Activate this ability only if Greater Gargadon is suspended.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 10.0,
+            "manaCost": "{9}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b1f81661-995d-5768-b0e2-2e0a6c1ce443",
+            "name": "Grinning Ignus",
+            "text": "{R}, Return Grinning Ignus to its owner's hand: Add {2}{R} to your mana pool. Activate this ability only any time you could cast a sorcery.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aa923abe-e78c-528e-a35b-6bbbe9876b60",
+            "name": "Hammerheim Deadeye",
+            "text": "Echo {5}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\nWhen Hammerheim Deadeye enters the battlefield, destroy target creature with flying.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e0dbd8fc-ccc0-531b-afd3-0af32c27f64f",
+            "name": "Kiki-Jiki, Mirror Breaker",
+            "text": "Haste\n{T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{R}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a5c0300-7ba3-58b7-87fb-14d02fb57196",
+            "name": "Lava Spike",
+            "text": "Lava Spike deals 3 damage to target player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7fde22d1-63d9-50dd-ae6a-fc848c31dacf",
+            "name": "Mogg War Marshal",
+            "text": "Echo {1}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\nWhen Mogg War Marshal enters the battlefield or dies, put a 1/1 red Goblin creature token onto the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7585cd24-0661-5698-8c03-5462b53124d3",
+            "name": "Molten Disaster",
+            "text": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nIf Molten Disaster was kicked, it has split second. (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nMolten Disaster deals X damage to each creature without flying and each player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "535daefb-20e2-5df3-b9d7-3eea0ccdf314",
+            "name": "Pardic Dragon",
+            "text": "Flying\n{R}: Pardic Dragon gets +1/+0 until end of turn.\nSuspend 2\u2014{R}{R}\nWhenever an opponent casts a spell, if Pardic Dragon is suspended, that player may put a time counter on Pardic Dragon.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "893f164f-b791-5e18-81cd-3c36901c0516",
+            "name": "Pyromancer's Swath",
+            "text": "If an instant or sorcery source you control would deal damage to a creature or player, it deals that much damage plus 2 to that creature or player instead.\nAt the beginning of each end step, discard your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "88732e50-69b3-57a9-b4a5-1cbc948574fa",
+            "name": "Rift Bolt",
+            "text": "Rift Bolt deals 3 damage to target creature or player.\nSuspend 1\u2014{R} (Rather than cast this card from your hand, you may pay {R} and exile it with a time counter on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a2b8e1ac-ad12-5c98-918e-5e17c003c050",
+            "name": "Rift Elemental",
+            "text": "{1}{R}, Remove a time counter from a permanent you control or suspended card you own: Rift Elemental gets +2/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb65e460-438a-50a4-ba75-38392849944e",
+            "name": "Ryusei, the Falling Star",
+            "text": "Flying\nWhen Ryusei, the Falling Star dies, it deals 5 damage to each creature without flying.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "84c45e5a-5263-5135-92f5-761c9624df1c",
+            "name": "Shrapnel Blast",
+            "text": "As an additional cost to cast Shrapnel Blast, sacrifice an artifact.\nShrapnel Blast deals 5 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a200fe3-b555-5677-a988-ad10dac7907f",
+            "name": "Squee, Goblin Nabob",
+            "text": "At the beginning of your upkeep, you may return Squee, Goblin Nabob from your graveyard to your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3ad8b61f-93b4-5611-85a8-8f3a049ed43a",
+            "name": "Stingscourger",
+            "text": "Echo {3}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\nWhen Stingscourger enters the battlefield, return target creature an opponent controls to its owner's hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3b8cf4b-4e12-5cbd-9ba1-ae15f76ae231",
+            "name": "Stinkdrinker Daredevil",
+            "text": "Giant spells you cast cost {2} less to cast.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb9464c3-8963-5aae-a3e3-69709b845c12",
+            "name": "Sudden Shock",
+            "text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nSudden Shock deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5775de32-5115-52b2-813b-7563992e2694",
+            "name": "Tar Pitcher",
+            "text": "{T}, Sacrifice a Goblin: Tar Pitcher deals 2 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a60e2b14-3ca5-5c0d-bfa4-ee3a93bd953c",
+            "name": "Thundercloud Shaman",
+            "text": "When Thundercloud Shaman enters the battlefield, it deals damage equal to the number of Giants you control to each non-Giant creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eeb27f4c-8fb5-5806-ba7a-d07a37778336",
+            "name": "Thundering Giant",
+            "text": "Haste",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "db01d6ed-0d5c-5aab-936b-6f4938614691",
+            "name": "Torrent of Stone",
+            "text": "Torrent of Stone deals 4 damage to target creature.\nSplice onto Arcane\u2014\nSacrifice two Mountains. (As you cast an Arcane spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2731230b-3bc5-57f8-b41e-fb2c7f8236dd",
+            "name": "Tribal Flames",
+            "text": "Domain \u2014 Tribal Flames deals X damage to target creature or player, where X is the number of basic land types among lands you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "76cc6bab-2221-582d-bc09-e43398675f40",
+            "name": "War-Spike Changeling",
+            "text": "Changeling (This card is every creature type at all times.)\n{R}: War-Spike Changeling gains first strike until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f8822e3b-4d08-515c-9996-fcf7fdcb28f8",
+            "name": "Citanul Woodreaders",
+            "text": "Kicker {2}{G} (You may pay an additional {2}{G} as you cast this spell.)\nWhen Citanul Woodreaders enters the battlefield, if it was kicked, draw two cards.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce2b37c5-5aa8-5974-93c1-9f212f8da736",
+            "name": "Doubling Season",
+            "text": "If an effect would put one or more tokens onto the battlefield under your control, it puts twice that many of those tokens onto the battlefield instead.\nIf an effect would place one or more counters on a permanent you control, it places twice that many of those counters on that permanent instead.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1ba3f49c-ce11-56e0-9209-f285f5c059b8",
+            "name": "Durkwood Baloth",
+            "text": "Suspend 5\u2014{G} (Rather than cast this card from your hand, you may pay {G} and exile it with five time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d9db8c69-c632-5f20-ab73-f1152e669962",
+            "name": "Echoing Courage",
+            "text": "Target creature and all other creatures with the same name as that creature get +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5a79241-2063-5fa3-9bd9-c06862938432",
+            "name": "Eternal Witness",
+            "text": "When Eternal Witness enters the battlefield, you may return target card from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "384466f5-db22-54ac-aaea-c3aecab37384",
+            "name": "Giant Dustwasp",
+            "text": "Flying\nSuspend 4\u2014{1}{G} (Rather than cast this card from your hand, you may pay {1}{G} and exile it with four time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "71168119-be35-52d0-a10d-119887c1d6bf",
+            "name": "Greater Mossdog",
+            "text": "Dredge 3 (If you would draw a card, instead you may put exactly three cards from the top of your library into your graveyard. If you do, return this card from your graveyard to your hand. Otherwise, draw a card.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1585cf4-3805-56c3-b2dc-2093f498238a",
+            "name": "Hana Kami",
+            "text": "{1}{G}, Sacrifice Hana Kami: Return target Arcane card from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3afdfe8f-d280-52f4-9263-095b7a36ca77",
+            "name": "Imperiosaur",
+            "text": "Spend only mana produced by basic lands to cast Imperiosaur.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1a7b26c5-697f-5e2b-b08b-25a0e37d3218",
+            "name": "Incremental Growth",
+            "text": "Put a +1/+1 counter on target creature, two +1/+1 counters on another target creature, and three +1/+1 counters on a third target creature.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3540485b-d706-54fd-9d4d-5948c10aa6b1",
+            "name": "Jugan, the Rising Star",
+            "text": "Flying\nWhen Jugan, the Rising Star dies, you may distribute five +1/+1 counters among any number of target creatures.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d63db819-1d7d-5e20-a56e-23e731e28ceb",
+            "name": "Kodama's Reach",
+            "text": "Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped and the other into your hand. Then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "889c2d3f-27dc-5139-9194-8fd63e8d3036",
+            "name": "Krosan Grip",
+            "text": "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nDestroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "805ae955-3184-5ae0-83a8-fcc6863a50ed",
+            "name": "Life from the Loam",
+            "text": "Return up to three target land cards from your graveyard to your hand.\nDredge 3 (If you would draw a card, instead you may put exactly three cards from the top of your library into your graveyard. If you do, return this card from your graveyard to your hand. Otherwise, draw a card.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e5d2af6c-02aa-59e8-8415-0db675abc02f",
+            "name": "Masked Admirers",
+            "text": "When Masked Admirers enters the battlefield, draw a card.\nWhenever you cast a creature spell, you may pay {G}{G}. If you do, return Masked Admirers from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11b7ede1-e828-5f7f-aa0f-df0dabde8953",
+            "name": "Moldervine Cloak",
+            "text": "Enchant creature\nEnchanted creature gets +3/+3.\nDredge 2 (If you would draw a card, instead you may put exactly two cards from the top of your library into your graveyard. If you do, return this card from your graveyard to your hand. Otherwise, draw a card.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a712db83-4e81-5080-a2c8-4e0cc538e328",
+            "name": "Nantuko Shaman",
+            "text": "When Nantuko Shaman enters the battlefield, if you control no tapped lands, draw a card.\nSuspend 1\u2014{2}{G}{G} (Rather than cast this card from your hand, you may pay {2}{G}{G} and exile it with a time counter on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d3f615f8-07a7-53ed-87f5-dc3415274e61",
+            "name": "Penumbra Spider",
+            "text": "Reach\nWhen Penumbra Spider dies, put a 2/4 black Spider creature token with reach onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42177c55-1e63-59f2-865d-e66a6d557215",
+            "name": "Reach of Branches",
+            "text": "Put a 2/5 green Treefolk Shaman creature token onto the battlefield.\nWhenever a Forest enters the battlefield under your control, you may return Reach of Branches from your graveyard to your hand.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Tribal",
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "218040b4-a4aa-5ae8-8f11-910f41a84c93",
+            "name": "Riftsweeper",
+            "text": "When Riftsweeper enters the battlefield, choose target face-up exiled card. Its owner shuffles it into his or her library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e6397612-820c-5364-ad97-ca855640bd07",
+            "name": "Rude Awakening",
+            "text": "Choose one \u2014 Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands.\nEntwine {2}{G} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b9bdc89-568e-5e66-bcd6-1919105bd47d",
+            "name": "Search for Tomorrow",
+            "text": "Search your library for a basic land card and put it onto the battlefield. Then shuffle your library.\nSuspend 2\u2014{G} (Rather than cast this card from your hand, you may pay {G} and exile it with two time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2c889c8f-8e40-53e4-98a9-3c7411d5847b",
+            "name": "Sporesower Thallid",
+            "text": "At the beginning of your upkeep, put a spore counter on each Fungus you control.\nRemove three spore counters from Sporesower Thallid: Put a 1/1 green Saproling creature token onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3aed9ed-11f3-5727-bb2d-0729de974409",
+            "name": "Sporoloth Ancient",
+            "text": "At the beginning of your upkeep, put a spore counter on Sporoloth Ancient.\nCreatures you control have \"Remove two spore counters from this creature: Put a 1/1 green Saproling creature token onto the battlefield.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5a107fd-9ad7-5224-9022-06ee090d50dd",
+            "name": "Summoner's Pact",
+            "text": "Search your library for a green creature card, reveal it, and put it into your hand. Then shuffle your library.\nAt the beginning of your next upkeep, pay {2}{G}{G}. If you don't, you lose the game.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "00fc4df9-94bd-5c1f-ab5e-dbd04188e9f9",
+            "name": "Sylvan Bounty",
+            "text": "Target player gains 8 life.\nBasic landcycling {1}{G} ({1}{G}, Discard this card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba7ef1e5-642c-55e4-8391-983f4ef98bae",
+            "name": "Tarmogoyf",
+            "text": "Tarmogoyf's power is equal to the number of card types among cards in all graveyards and its toughness is equal to that number plus 1.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5f04253d-ffbe-5c48-b4ce-ebe4e7e9744a",
+            "name": "Thallid",
+            "text": "At the beginning of your upkeep, put a spore counter on Thallid.\nRemove three spore counters from Thallid: Put a 1/1 green Saproling creature token onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "94f7870f-3be1-5876-99c1-2208697dfd2b",
+            "name": "Thallid Germinator",
+            "text": "At the beginning of your upkeep, put a spore counter on Thallid Germinator.\nRemove three spore counters from Thallid Germinator: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Target creature gets +1/+1 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a7ec1219-0350-57a8-8e5f-b3c3cb47baa2",
+            "name": "Thallid Shell-Dweller",
+            "text": "Defender\nAt the beginning of your upkeep, put a spore counter on Thallid Shell-Dweller.\nRemove three spore counters from Thallid Shell-Dweller: Put a 1/1 green Saproling creature token onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3364ab1f-6b88-558a-8bc2-30d1b1401ff3",
+            "name": "Tooth and Nail",
+            "text": "Choose one \u2014 Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand onto the battlefield.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0f168065-1569-584f-8371-42ec60d54d47",
+            "name": "Tromp the Domains",
+            "text": "Domain \u2014 Until end of turn, creatures you control gain trample and get +1/+1 for each basic land type among lands you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8073a0c6-42b4-5f75-8517-6f87ce7c90cf",
+            "name": "Verdeloth the Ancient",
+            "text": "Kicker {X} (You may pay an additional {X} as you cast this spell.)\nSaproling creatures and other Treefolk creatures get +1/+1.\nWhen Verdeloth the Ancient enters the battlefield, if it was kicked, put X 1/1 green Saproling creature tokens onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a605817-1495-5fbd-a882-c18d96469893",
+            "name": "Walker of the Grove",
+            "text": "When Walker of the Grove leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield.\nEvoke {4}{G} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "467b717e-0207-577f-bf1b-d44e8fc98da0",
+            "name": "Woodfall Primus",
+            "text": "Trample\nWhen Woodfall Primus enters the battlefield, destroy target noncreature permanent.\nPersist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "68b3935f-96db-5717-ad94-0fe2b6b499dc",
+            "name": "Electrolyze",
+            "text": "Electrolyze deals 2 damage divided as you choose among one or two target creatures and/or players.\nDraw a card.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1ea5f7e0-1d0c-51d7-b6c9-beee97777282",
+            "name": "Grand Arbiter Augustin IV",
+            "text": "White spells you cast cost {1} less to cast.\nBlue spells you cast cost {1} less to cast.\nSpells your opponents cast cost {1} more to cast.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "271a80df-d4c1-599e-a6ac-6a4a3d61e054",
+            "name": "Jhoira of the Ghitu",
+            "text": "{2}, Exile a nonland card from your hand: Put four time counters on the exiled card. If it doesn't have suspend, it gains suspend. (At the beginning of your upkeep, remove a time counter from that card. When the last is removed, cast it without paying its mana cost. If it's a creature, it has haste.)",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "977fa373-00a4-5f87-98bb-9987cda039be",
+            "name": "Knight of the Reliquary",
+            "text": "Knight of the Reliquary gets +1/+1 for each land card in your graveyard.\n{T}, Sacrifice a Forest or Plains: Search your library for a land card, put it onto the battlefield, then shuffle your library.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3140c5d-3b07-5f53-b75d-70a24393647e",
+            "name": "Lightning Helix",
+            "text": "Lightning Helix deals 3 damage to target creature or player and you gain 3 life.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "51c22baa-7c3e-589a-b879-ab6e178cdc27",
+            "name": "Maelstrom Pulse",
+            "text": "Destroy target nonland permanent and all other permanents with the same name as that permanent.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bec3cb35-cc69-5077-b071-2eb3063d023c",
+            "name": "Mind Funeral",
+            "text": "Target opponent reveals cards from the top of his or her library until four land cards are revealed. That player puts all cards revealed this way into his or her graveyard.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6fb068b9-e7fc-5c78-a610-c217d177fc1e",
+            "name": "Progenitus",
+            "text": "Protection from everything\nIf Progenitus would be put into a graveyard from anywhere, reveal Progenitus and shuffle it into its owner's library instead.",
+            "colours": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 10.0,
+            "manaCost": "{W}{W}{U}{U}{B}{B}{R}{R}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "89759631-3cfe-50d4-8c07-20e36b49f1f9",
+            "name": "Sarkhan Vol",
+            "text": "+1: Creatures you control get +1/+1 and gain haste until end of turn.\n-2: Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.\n-6: Put five 4/4 red Dragon creature tokens with flying onto the battlefield.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c718f22f-5c40-5485-bf1e-5c5a30b07629",
+            "name": "Tidehollow Sculler",
+            "text": "When Tidehollow Sculler enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card.\nWhen Tidehollow Sculler leaves the battlefield, return the exiled card to its owner's hand.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{B}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8c921bc3-9ed0-5057-9ab3-7c95d979ac04",
+            "name": "Trygon Predator",
+            "text": "Flying\nWhenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef2b1908-680e-5cfe-a354-cfa260f74e8f",
+            "name": "Cold-Eyed Selkie",
+            "text": "Islandwalk\nWhenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G/U}{G/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a241193-9dd9-5c15-813d-83f212077a3c",
+            "name": "Demigod of Revenge",
+            "text": "Flying, haste\nWhen you cast Demigod of Revenge, return all cards named Demigod of Revenge from your graveyard to the battlefield.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{B/R}{B/R}{B/R}{B/R}{B/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1d7a805b-cc70-5c7c-81dd-7a84caa72ca8",
+            "name": "Divinity of Pride",
+            "text": "Flying, lifelink\nDivinity of Pride gets +4/+4 as long as you have 25 or more life.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{W/B}{W/B}{W/B}{W/B}{W/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a67cdc39-b259-54e8-be0f-ba7ac0033898",
+            "name": "Figure of Destiny",
+            "text": "{GU}: Figure of Destiny becomes a 2/2 Kithkin Spirit.\n{GU}{GU}{GU}: If Figure of Destiny is a Spirit, it becomes a 4/4 Kithkin Spirit Warrior.\n{GU}{GU}{GU}{GU}{GU}{GU}: If Figure of Destiny is a Warrior, it becomes an 8/8 Kithkin Spirit Warrior Avatar with flying and first strike.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4fa21274-628f-5d50-9dd1-ebe46e6c3606",
+            "name": "Kitchen Finks",
+            "text": "When Kitchen Finks enters the battlefield, you gain 2 life.\nPersist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G/W}{G/W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "326f27d7-ae9f-5e04-a791-f7da1a0ef6ae",
+            "name": "Manamorphose",
+            "text": "Add two mana in any combination of colors to your mana pool.\nDraw a card.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R/G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e08d3099-4023-561a-b670-af628f28234e",
+            "name": "Murderous Redcap",
+            "text": "When Murderous Redcap enters the battlefield, it deals damage equal to its power to target creature or player.\nPersist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B/R}{B/R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9c517825-19f5-5962-92b6-5b1213415022",
+            "name": "Oona, Queen of the Fae",
+            "text": "Flying\n{X}{UB}: Choose a color. Target opponent exiles the top X cards of his or her library. For each card of the chosen color exiled this way, put a 1/1 blue and black Faerie Rogue creature token with flying onto the battlefield.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{U/B}{U/B}{U/B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7f9bce74-3c9b-57a3-8563-c1fc9f86b6dd",
+            "name": "Plumeveil",
+            "text": "Flash\nDefender, flying",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{W/U}{W/U}{W/U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "66b8d585-717c-5947-8943-a5c5005d50ff",
+            "name": "Worm Harvest",
+            "text": "Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard.\nRetrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{2}{B/G}{B/G}{B/G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4e9211e8-1b47-56b9-a12b-f06b690ef481",
+            "name": "Aether Spellbomb",
+            "text": "{U}, Sacrifice \u00c6ther Spellbomb: Return target creature to its owner's hand.\n{1}, Sacrifice \u00c6ther Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9eb3f203-aebf-5196-b6a7-03d335d64b22",
+            "name": "Aether Vial",
+            "text": "At the beginning of your upkeep, you may put a charge counter on \u00c6ther Vial.\n{T}: You may put a creature card with converted mana cost equal to the number of charge counters on \u00c6ther Vial from your hand onto the battlefield.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1eb85ade-b31d-52ba-825a-37b2eaa50c7b",
+            "name": "Arcbound Ravager",
+            "text": "Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager.\nModular 1 (This enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "98255b51-d87e-5f6c-a0f7-d5802f851eb7",
+            "name": "Arcbound Stinger",
+            "text": "Flying\nModular 1 (This enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "768cf879-4e63-5237-9e68-ce479a67747b",
+            "name": "Arcbound Wanderer",
+            "text": "Modular\u2014\nSunburst (This enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "815ac2d3-5afd-5b0c-bbdc-a5244e9cf6f9",
+            "name": "Arcbound Worker",
+            "text": "Modular 1 (This enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d3e5e836-f896-548f-bfa5-38656ae0692e",
+            "name": "Bonesplitter",
+            "text": "Equipped creature gets +2/+0.\nEquip {1}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4af95686-b777-5bf3-bec3-9c3e2e7be572",
+            "name": "Chalice of the Void",
+            "text": "Chalice of the Void enters the battlefield with X charge counters on it.\nWhenever a player casts a spell with converted mana cost equal to the number of charge counters on Chalice of the Void, counter that spell.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "{X}{X}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4f26781c-cbed-527b-832a-5b5d29a563ad",
+            "name": "Engineered Explosives",
+            "text": "Sunburst (This enters the battlefield with a charge counter on it for each color of mana spent to cast it.)\n{2}, Sacrifice Engineered Explosives: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Engineered Explosives.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "{X}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "88fff6a8-e92e-5a99-8014-502f542e4654",
+            "name": "Epochrasite",
+            "text": "Epochrasite enters the battlefield with three +1/+1 counters on it if you didn't cast it from your hand.\nWhen Epochrasite dies, exile it with three time counters on it and it gains suspend. (At the beginning of your upkeep, remove a time counter. When the last is removed, cast this card without paying its mana cost. It has haste.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d310e9a1-9f4a-5d25-a3a3-7a769b5ae71d",
+            "name": "Etched Oracle",
+            "text": "Sunburst (This enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.)\n{1}, Remove four +1/+1 counters from Etched Oracle: Target player draws three cards.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4ff6f3d2-5f6f-525d-a729-7f8865b83f39",
+            "name": "Frogmite",
+            "text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "12f0a42a-f86f-506c-9bc0-5208e27b8c98",
+            "name": "Lotus Bloom",
+            "text": "Suspend 3\u2014{0} (Rather than cast this card from your hand, pay {0} and exile it with three time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost.)\n{T}, Sacrifice Lotus Bloom: Add three mana of any one color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "224d6ae8-8e75-5c0e-9bee-7d2773849c91",
+            "name": "Myr Enforcer",
+            "text": "Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3da99f8f-1d5a-5aae-b864-246ef733593f",
+            "name": "Myr Retriever",
+            "text": "When Myr Retriever dies, return another target artifact card from your graveyard to your hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "166b42e0-92e5-5e48-b0d5-37980fb65307",
+            "name": "Paradise Mantle",
+            "text": "Equipped creature has \"{T}: Add one mana of any color to your mana pool.\"\nEquip {1}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "efa0f967-6bf6-5a44-b84a-b390a1be4a5a",
+            "name": "Pyrite Spellbomb",
+            "text": "{R}, Sacrifice Pyrite Spellbomb: Pyrite Spellbomb deals 2 damage to target creature or player.\n{1}, Sacrifice Pyrite Spellbomb: Draw a card.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4e2836f0-c029-5788-9f34-5e9fc5b4065d",
+            "name": "Relic of Progenitus",
+            "text": "{T}: Target player exiles a card from his or her graveyard.\n{1}, Exile Relic of Progenitus: Exile all cards from all graveyards. Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6fc557a-0ba2-5b39-b9cb-cb1838d0b4a6",
+            "name": "Runed Stalactite",
+            "text": "Equipped creature gets +1/+1 and is every creature type.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d6a81240-9513-5710-8698-acc491770bd8",
+            "name": "Skyreach Manta",
+            "text": "Sunburst (This enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.)\nFlying",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1a7852b-37b9-5251-8eb2-9054d4395023",
+            "name": "Sword of Fire and Ice",
+            "text": "Equipped creature gets +2/+2 and has protection from red and from blue.\nWhenever equipped creature deals combat damage to a player, Sword of Fire and Ice deals 2 damage to target creature or player and you draw a card.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c99f51a6-26ff-5225-9d4f-19e3bf7d8c79",
+            "name": "Sword of Light and Shadow",
+            "text": "Equipped creature gets +2/+2 and has protection from white and from black.\nWhenever equipped creature deals combat damage to a player, you gain 3 life and you may return up to one target creature card from your graveyard to your hand.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b20fe602-b271-51fc-9095-b4647ecc9f2b",
+            "name": "Vedalken Shackles",
+            "text": "You may choose not to untap Vedalken Shackles during your untap step.\n{2}, {T}: Gain control of target creature with power less than or equal to the number of Islands you control for as long as Vedalken Shackles remains tapped.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1a6659e9-3070-508a-a16f-c7c4bda5f9c1",
+            "name": "Academy Ruins",
+            "text": "{T}: Add {1} to your mana pool.\n{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "638b73bb-c037-5328-9d42-888d70567d6f",
+            "name": "Blinkmoth Nexus",
+            "text": "{T}: Add {1} to your mana pool.\n{1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.\n{1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "165dbc21-3b94-551c-9c67-404d8609dc2d",
+            "name": "City of Brass",
+            "text": "Whenever City of Brass becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d3d1a17d-a243-56cd-a850-504c797a27a4",
+            "name": "Dakmor Salvage",
+            "text": "Dakmor Salvage enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nDredge 2 (If you would draw a card, instead you may put exactly two cards from the top of your library into your graveyard. If you do, return this card from your graveyard to your hand. Otherwise, draw a card.)",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d2a10e04-22b6-5771-8280-95040a26c948",
+            "name": "Glimmervoid",
+            "text": "At the beginning of the end step, if you control no artifacts, sacrifice Glimmervoid.\n{T}: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8bdad128-00f1-52cc-a275-a429c523fb72",
+            "name": "Terramorphic Expanse",
+            "text": "{T}, Sacrifice Terramorphic Expanse: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "92b08b42-8335-5c35-93a1-7e50aa4b73b9",
+            "name": "Vivid Crag",
+            "text": "Vivid Crag enters the battlefield tapped with two charge counters on it.\n{T}: Add {R} to your mana pool.\n{T}, Remove a charge counter from Vivid Crag: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ec60d494-a0da-5c3b-ab2e-937f7a69b5e6",
+            "name": "Vivid Creek",
+            "text": "Vivid Creek enters the battlefield tapped with two charge counters on it.\n{T}: Add {U} to your mana pool.\n{T}, Remove a charge counter from Vivid Creek: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ff1baa42-6024-5702-ac99-f3ffdea8269c",
+            "name": "Vivid Grove",
+            "text": "Vivid Grove enters the battlefield tapped with two charge counters on it.\n{T}: Add {G} to your mana pool.\n{T}, Remove a charge counter from Vivid Grove: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "719caa1a-cfb2-5e12-8a97-3996d522197f",
+            "name": "Vivid Marsh",
+            "text": "Vivid Marsh enters the battlefield tapped with two charge counters on it.\n{T}: Add {B} to your mana pool.\n{T}, Remove a charge counter from Vivid Marsh: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e3ebbc63-f7ad-53a0-b129-2425f5cef8d9",
+            "name": "Vivid Meadow",
+            "text": "Vivid Meadow enters the battlefield tapped with two charge counters on it.\n{T}: Add {W} to your mana pool.\n{T}, Remove a charge counter from Vivid Meadow: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "MMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "424eae52-6b3b-59f9-8a03-9a682fe7d85f",
+            "name": "Giant Warrior",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "c1353bba-95b5-5c2d-a138-6f9175747736",
+            "name": "Kithkin Soldier",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "e773321d-42e1-5116-8379-148e26427153",
+            "name": "Soldier",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "1a4acb2d-e5ef-57b0-9653-9c48f5458b9d",
+            "name": "Illusion",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "f1a551ec-bdba-5acc-a5ac-60b5b5f283e8",
+            "name": "Bat",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "377beef1-7cf9-5725-80e4-13f5a3502631",
+            "name": "Goblin Rogue",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "2b7c9afc-3e4e-5ae4-b148-4e5e9dbd471b",
+            "name": "Spider",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "60575e5a-881b-5fe6-aa4a-0ae0d8ccbd02",
+            "name": "Zombie",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "ea0db304-776f-556c-a0a5-eedcf6c6ad5b",
+            "name": "Dragon",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "32aa33fc-99b2-54ad-9990-fa9b874f2fff",
+            "name": "Goblin",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "25b6cf61-2957-59fc-b0bf-e268799eb338",
+            "name": "Elemental",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "68d70380-b934-5999-9ba5-acd59aadf216",
+            "name": "Saproling",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "5cf2b39f-2017-5f35-84c8-5ec778289e60",
+            "name": "Treefolk Shaman",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "6b5a3b83-2057-5f85-9676-8bb0633405e9",
+            "name": "Faerie Rogue",
+            "text": "",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "92a66c18-cf1c-5a7f-b0cb-5b6f049e653c",
+            "name": "Worm",
+            "text": "",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "2815b341-9e87-5933-b5f0-d8a2f238d311",
+            "name": "Elspeth, Knight-Errant Emblem",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Emblem"
+            ],
+            "rarity": "common",
+            "set": "TMMA",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
