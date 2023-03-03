@@ -1,0 +1,3367 @@
+{
+    "setCode": "MBS",
+    "setName": "Mirrodin Besieged",
+    "cards": [
+        {
+            "id": "c6e259b6-498f-5d1e-81d5-a67e9e2a075b",
+            "name": "Accorder Paladin",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "14d7ae7a-83b8-548e-b16b-f1990cde026b",
+            "name": "Ardent Recruit",
+            "text": "Metalcraft \u2014 Ardent Recruit gets +2/+2 as long as you control three or more artifacts.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6fb2027e-6261-565b-82d1-5d97f572657a",
+            "name": "Banishment Decree",
+            "text": "Put target artifact, creature, or enchantment on top of its owner's library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "780ab3a7-df81-548e-84d9-67e50c7a7b37",
+            "name": "Choking Fumes",
+            "text": "Put a -1/-1 counter on each attacking creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0fe79ebc-e7ad-52d6-8027-b3e2d6afc85b",
+            "name": "Divine Offering",
+            "text": "Destroy target artifact. You gain life equal to its converted mana cost.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3a5770d1-8e86-5a7b-a115-064c763e336b",
+            "name": "Frantic Salvage",
+            "text": "Put any number of target artifact cards from your graveyard on top of your library.\nDraw a card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "991c2a9b-404c-5e82-bb74-410be6afbda5",
+            "name": "Gore Vassal",
+            "text": "Sacrifice Gore Vassal: Put a -1/-1 counter on target creature. Then if that creature's toughness is 1 or greater, regenerate it.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e321f712-b409-5d7f-807d-b846ac85e6b5",
+            "name": "Hero of Bladehold",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)\nWhenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9fc0be95-26bf-595a-95b2-57e0ce41aad4",
+            "name": "Kemba's Legion",
+            "text": "Vigilance\nKemba's Legion can block an additional creature for each Equipment attached to Kemba's Legion.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "922a2e0f-6778-59ee-aec6-cf8d11140fa2",
+            "name": "Leonin Relic-Warder",
+            "text": "When Leonin Relic-Warder enters the battlefield, you may exile target artifact or enchantment.\nWhen Leonin Relic-Warder leaves the battlefield, return the exiled card to the battlefield under its owner's control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "465d569f-1b9e-5b12-9baf-543aff89f749",
+            "name": "Leonin Skyhunter",
+            "text": "Flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "858ed157-109c-5c38-8d1f-06c441c26512",
+            "name": "Loxodon Partisan",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c40afd05-ec34-5caf-9aa7-86fa9be75ab4",
+            "name": "Master's Call",
+            "text": "Put two 1/1 colorless Myr artifact creature tokens onto the battlefield.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b0a7a503-6420-52e7-9697-7967147216d3",
+            "name": "Mirran Crusader",
+            "text": "Double strike, protection from black and from green",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "073b8f73-3fa5-5600-b9e0-5391a65494eb",
+            "name": "Phyrexian Rebirth",
+            "text": "Destroy all creatures, then put an X/X colorless Horror artifact creature token onto the battlefield, where X is the number of creatures destroyed this way.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a88e514b-7413-58bd-8b86-d90944f1cbd9",
+            "name": "Priests of Norn",
+            "text": "Vigilance\nInfect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a7f3aaad-9f80-58d1-87a1-1619b627271d",
+            "name": "Tine Shrike",
+            "text": "Flying\nInfect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "66e9287c-8617-545c-8d7d-786f0f787645",
+            "name": "Victory's Herald",
+            "text": "Flying\nWhenever Victory's Herald attacks, attacking creatures gain flying and lifelink until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{W}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cae5ae9b-0e89-5751-8d16-eb35f4639b21",
+            "name": "White Sun's Zenith",
+            "text": "Put X 2/2 white Cat creature tokens onto the battlefield. Shuffle White Sun's Zenith into its owner's library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{W}{W}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "540948b9-6c76-5c82-a45f-435ff255f68e",
+            "name": "Blue Sun's Zenith",
+            "text": "Target player draws X cards. Shuffle Blue Sun's Zenith into its owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{X}{U}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f20d18b4-6f02-5948-b649-bcc93ba4edc8",
+            "name": "Consecrated Sphinx",
+            "text": "Flying\nWhenever an opponent draws a card, you may draw two cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d227b963-34b4-5e8d-ad5b-99c619636704",
+            "name": "Corrupted Conscience",
+            "text": "Enchant creature\nYou control enchanted creature.\nEnchanted creature has infect. (It deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9ba907d6-6013-578f-a3b3-db01fcb782e0",
+            "name": "Cryptoplasm",
+            "text": "At the beginning of your upkeep, you may have Cryptoplasm become a copy of another target creature. If you do, Cryptoplasm gains this ability.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c1403e31-b5e9-57dd-b80a-e39786ced0c2",
+            "name": "Distant Memories",
+            "text": "Search your library for a card, exile it, then shuffle your library. Any opponent may have you put that card into your hand. If no player does, you draw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f2c6d0e3-befa-53f4-8540-80c633bf4ea3",
+            "name": "Fuel for the Cause",
+            "text": "Counter target spell, then proliferate. (You choose any number of permanents and/or players with counters on them, then give each another counter of a kind already there.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "755e94ec-da81-5b2e-8352-67c3b762dc7e",
+            "name": "Mirran Spy",
+            "text": "Flying\nWhenever you cast an artifact spell, you may untap target creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "54cee391-fa58-5337-81b0-caf320b77dc4",
+            "name": "Mitotic Manipulation",
+            "text": "Look at the top seven cards of your library. You may put one of those cards onto the battlefield if it has the same name as a permanent. Put the rest on the bottom of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "53b70775-8f36-5326-bc88-a17cccc45b71",
+            "name": "Neurok Commando",
+            "text": "Shroud\nWhenever Neurok Commando deals combat damage to a player, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c723f0a0-7d1f-52cd-a83c-61f4fdca3381",
+            "name": "Oculus",
+            "text": "When Oculus is put into a graveyard from the battlefield, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b2423de-3900-5bde-b3b2-c916b6b4846a",
+            "name": "Quicksilver Geyser",
+            "text": "Return up to two target nonland permanents to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "18f1846d-a13c-5b40-92b3-9a7805517a62",
+            "name": "Serum Raker",
+            "text": "Flying\nWhen Serum Raker is put into a graveyard from the battlefield, each player discards a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "744158c6-3dba-51a4-afee-a4396a780538",
+            "name": "Spire Serpent",
+            "text": "Defender\nMetalcraft \u2014 As long as you control three or more artifacts, Spire Serpent gets +2/+2 and can attack as though it didn't have defender.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "888e02ba-8b8b-51cf-b6e4-57b413fff7bf",
+            "name": "Steel Sabotage",
+            "text": "Choose one \u2014 Counter target artifact spell; or return target artifact to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b6c66f9e-a854-58fa-a968-c91da24535d4",
+            "name": "Treasure Mage",
+            "text": "When Treasure Mage enters the battlefield, you may search your library for an artifact card with converted mana cost 6 or greater, reveal that card, and put it into your hand. If you do, shuffle your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a11ec13-0ec5-59c8-9fb9-ec7a607e93b1",
+            "name": "Turn the Tide",
+            "text": "Creatures your opponents control get -2/-0 until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2de0258e-d595-527d-b163-5eaa1283d296",
+            "name": "Vedalken Anatomist",
+            "text": "{2}{U}, {T}: Put a -1/-1 counter on target creature. You may tap or untap that creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b8fdd6e6-2c6c-523e-85e9-7e58d565870b",
+            "name": "Vedalken Infuser",
+            "text": "At the beginning of your upkeep, you may put a charge counter on target artifact.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9d48363b-3022-579a-8fb8-2b53e875dc73",
+            "name": "Vivisection",
+            "text": "As an additional cost to cast Vivisection, sacrifice a creature.\nDraw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c646a6ef-6de0-540a-a48b-82049555c577",
+            "name": "Black Sun's Zenith",
+            "text": "Put X -1/-1 counters on each creature. Shuffle Black Sun's Zenith into its owner's library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a6dd7462-64bf-5d42-a063-5c280d0d25d1",
+            "name": "Caustic Hound",
+            "text": "When Caustic Hound is put into a graveyard from the battlefield, each player loses 4 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83379d1f-299d-5a0e-9331-ac3cda192497",
+            "name": "Flensermite",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nLifelink (Damage dealt by this creature also causes you to gain that much life.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f42f27b9-71dd-56a4-ba5e-8abcd14bc12a",
+            "name": "Flesh-Eater Imp",
+            "text": "Flying\nInfect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nSacrifice a creature: Flesh-Eater Imp gets +1/+1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cba9b662-1710-5952-affc-f66cc1ac53d8",
+            "name": "Go for the Throat",
+            "text": "Destroy target nonartifact creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "24cc4504-9d0f-584c-bb65-3ea09c572ff4",
+            "name": "Gruesome Encore",
+            "text": "Put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. Exile it at the beginning of the next end step. If that creature would leave the battlefield, exile it instead of putting it anywhere else.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e0f16d8f-5ccf-50b7-905b-a0283506a293",
+            "name": "Horrifying Revelation",
+            "text": "Target player discards a card, then puts the top card of his or her library into his or her graveyard.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "92b62e2c-32ad-5792-be9b-06d84b22e229",
+            "name": "Massacre Wurm",
+            "text": "When Massacre Wurm enters the battlefield, creatures your opponents control get -2/-2 until end of turn.\nWhenever a creature an opponent controls is put into a graveyard from the battlefield, that player loses 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{3}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "63e533c1-fb45-55b8-af54-6eb37ed4bee6",
+            "name": "Morbid Plunder",
+            "text": "Return up to two target creature cards from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c799d4ce-8444-52bf-a936-f40344a43883",
+            "name": "Nested Ghoul",
+            "text": "Whenever a source deals damage to Nested Ghoul, put a 2/2 black Zombie creature token onto the battlefield.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d9f69074-8941-5315-b985-7d1106e45d1a",
+            "name": "Phyresis",
+            "text": "Enchant creature\nEnchanted creature has infect. (It deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea0d4fa2-26e3-58be-b808-351b801bf17f",
+            "name": "Phyrexian Crusader",
+            "text": "First strike, protection from red and from white\nInfect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ec0ee7c-9f5e-5093-9a9d-cbbc7eafe1b0",
+            "name": "Phyrexian Rager",
+            "text": "When Phyrexian Rager enters the battlefield, you draw a card and you lose 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b54d5be-3e44-52be-9659-8940671b8ebd",
+            "name": "Phyrexian Vatmother",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nAt the beginning of your upkeep, you get a poison counter.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "495bb943-0d08-5457-ac86-fd6a5746a7b1",
+            "name": "Sangromancer",
+            "text": "Flying\nWhenever a creature an opponent controls is put into a graveyard from the battlefield, you may gain 3 life.\nWhenever an opponent discards a card, you may gain 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5f3072f2-2f43-57b3-8975-44a1cd5c1ffc",
+            "name": "Scourge Servant",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d2d3c51-ad9c-55af-a016-381e3093ee57",
+            "name": "Septic Rats",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nWhenever Septic Rats attacks, if defending player is poisoned, it gets +1/+1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1a09a6c-890e-5841-8df3-32346faeae51",
+            "name": "Spread the Sickness",
+            "text": "Destroy target creature, then proliferate. (You choose any number of permanents and/or players with counters on them, then give each another counter of a kind already there.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "41b3044a-1fda-5d2d-a6cd-a1843e4b4750",
+            "name": "Virulent Wound",
+            "text": "Put a -1/-1 counter on target creature. When that creature is put into a graveyard this turn, its controller gets a poison counter.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a15e0db-7af2-59c5-a6e0-004504a07bdc",
+            "name": "Blisterstick Shaman",
+            "text": "When Blisterstick Shaman enters the battlefield, it deals 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9470bc79-9ead-5851-9b33-e949767944b2",
+            "name": "Burn the Impure",
+            "text": "Burn the Impure deals 3 damage to target creature. If that creature has infect, Burn the Impure deals 3 damage to that creature's controller.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f1b73c2f-0dfd-5eee-8e86-da5490b56813",
+            "name": "Concussive Bolt",
+            "text": "Concussive Bolt deals 4 damage to target player.\nMetalcraft \u2014 If you control three or more artifacts, creatures that player controls can't block this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "acda07e5-0235-59d3-9323-6c539a9a6819",
+            "name": "Crush",
+            "text": "Destroy target noncreature artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6abf881d-cf4b-5144-b1cb-d3b5d72e2a29",
+            "name": "Galvanoth",
+            "text": "At the beginning of your upkeep, you may look at the top card of your library. If it's an instant or sorcery card, you may cast it without paying its mana cost.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30141d2f-f9e5-5091-887b-c9e3c6252d57",
+            "name": "Gnathosaur",
+            "text": "Sacrifice an artifact: Gnathosaur gains trample until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f3b72539-aa3e-54c4-ac72-3a5d063bd965",
+            "name": "Goblin Wardriver",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "467eb10b-57b8-5b61-a91a-59288a9dea42",
+            "name": "Hellkite Igniter",
+            "text": "Flying, haste\n{1}{R}: Hellkite Igniter gets +X/+0 until end of turn, where X is the number of artifacts you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9f0dc611-43a5-53f7-8829-9a74fabf7675",
+            "name": "Hero of Oxid Ridge",
+            "text": "Haste\nBattle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)\nWhenever Hero of Oxid Ridge attacks, creatures with power 1 or less can't block this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4cea3d65-b73d-59e1-ba02-c0039db4a77f",
+            "name": "Into the Core",
+            "text": "Exile two target artifacts.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e7536336-92cb-5d6b-a686-bd1a4191b426",
+            "name": "Koth's Courier",
+            "text": "Forestwalk",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2b16661c-01f3-545f-ac05-f0a493c98239",
+            "name": "Kuldotha Flamefiend",
+            "text": "When Kuldotha Flamefiend enters the battlefield, you may sacrifice an artifact. If you do, Kuldotha Flamefiend deals 4 damage divided as you choose among any number of target creatures and/or players.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9da766ee-24f6-559c-842f-2a06741ae2a9",
+            "name": "Kuldotha Ringleader",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)\nKuldotha Ringleader attacks each turn if able.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6dbdc09-4bf2-5b46-8792-d1e54397b716",
+            "name": "Metallic Mastery",
+            "text": "Gain control of target artifact until end of turn. Untap that artifact. It gains haste until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "47a95386-5d6d-5420-b01a-2a65b85294a0",
+            "name": "Ogre Resister",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8feeea81-6d1a-53d0-bd7f-29611dc53162",
+            "name": "Rally the Forces",
+            "text": "Attacking creatures get +1/+0 and gain first strike until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e84cb8c-2bdc-5ed1-9c77-de663eb3c636",
+            "name": "Red Sun's Zenith",
+            "text": "Red Sun's Zenith deals X damage to target creature or player. If a creature dealt damage this way would be put into a graveyard this turn, exile it instead. Shuffle Red Sun's Zenith into its owner's library.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a4901b5f-a359-5d89-911a-37192d9f0607",
+            "name": "Slagstorm",
+            "text": "Choose one \u2014 Slagstorm deals 3 damage to each creature; or Slagstorm deals 3 damage to each player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "401ad583-530e-518e-9c2c-d4555974ee84",
+            "name": "Spiraling Duelist",
+            "text": "Metalcraft \u2014 Spiraling Duelist has double strike as long as you control three or more artifacts.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a41d050d-c7f3-5583-91ec-2d638e980d65",
+            "name": "Blightwidow",
+            "text": "Reach (This creature can block creatures with flying.)\nInfect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4819ce30-18ee-58fe-8217-191f55cc06c6",
+            "name": "Creeping Corrosion",
+            "text": "Destroy all artifacts.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c93160df-d260-5414-910a-9a69de8fa5c9",
+            "name": "Fangren Marauder",
+            "text": "Whenever an artifact is put into a graveyard from the battlefield, you may gain 5 life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9e9d599d-8b14-5187-9249-2afef50e3ed6",
+            "name": "Glissa's Courier",
+            "text": "Mountainwalk",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8a3a1680-762c-5b06-ac86-3b1dbb2b3bc3",
+            "name": "Green Sun's Zenith",
+            "text": "Search your library for a green creature card with converted mana cost X or less, put it onto the battlefield, then shuffle your library. Shuffle Green Sun's Zenith into its owner's library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6754ebf2-0cd1-5f7d-bf85-13702e7526e4",
+            "name": "Lead the Stampede",
+            "text": "Look at the top five cards of your library. You may reveal any number of creature cards from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e46fc639-21f8-5e58-807e-3b1c21ab3786",
+            "name": "Melira's Keepers",
+            "text": "Melira's Keepers can't have counters placed on it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3b95c925-4632-507f-ba39-3902ae4805b6",
+            "name": "Mirran Mettle",
+            "text": "Target creature gets +2/+2 until end of turn.\nMetalcraft \u2014 That creature gets +4/+4 until end of turn instead if you control three or more artifacts.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e5f15a00-36a9-5926-80af-ffe023fb6f47",
+            "name": "Phyrexian Hydra",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nIf damage would be dealt to Phyrexian Hydra, prevent that damage. Put a -1/-1 counter on Phyrexian Hydra for each 1 damage prevented this way.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6a68e7d9-fb42-5674-af16-5725f31dcfbc",
+            "name": "Pistus Strike",
+            "text": "Destroy target creature with flying. Its controller gets a poison counter.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fc6a5c69-36e5-5bd5-b2c4-8f5e645c6f3b",
+            "name": "Plaguemaw Beast",
+            "text": "{T}, Sacrifice a creature: Proliferate. (You choose any number of permanents and/or players with counters on them, then give each another counter of a kind already there.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "622670ab-28bc-5c0b-89b0-9b3290b74a3e",
+            "name": "Praetor's Counsel",
+            "text": "Return all cards from your graveyard to your hand. Exile Praetor's Counsel. You have no maximum hand size for the rest of the game.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{5}{G}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba6fab91-413f-5d9a-b6fe-37da6042f8ab",
+            "name": "Quilled Slagwurm",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{G}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea28e0c3-a1eb-5c92-a048-5cd44c0e4bdf",
+            "name": "Rot Wolf",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nWhenever a creature dealt damage by Rot Wolf this turn is put into a graveyard, you may draw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b800e27b-6886-5590-a7f2-2bf9cf0d7005",
+            "name": "Tangle Mantis",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01b9bdce-0e71-5b3b-9224-29e3a45c991d",
+            "name": "Thrun, the Last Troll",
+            "text": "Thrun, the Last Troll can't be countered.\nThrun can't be the target of spells or abilities your opponents control.\n{1}{G}: Regenerate Thrun.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f1db9818-202f-5af6-a67c-aa930fbe652c",
+            "name": "Unnatural Predation",
+            "text": "Target creature gets +1/+1 and gains trample until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "24c15f17-f091-5a6e-9a9e-d99fa8bd5c0a",
+            "name": "Viridian Corrupter",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nWhen Viridian Corrupter enters the battlefield, destroy target artifact.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2cc1026b-3dd1-5476-9b47-4c0b8b7a0eb1",
+            "name": "Viridian Emissary",
+            "text": "When Viridian Emissary is put into a graveyard from the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "deca8f5b-6828-5f8e-9b54-8888e1d689f3",
+            "name": "Glissa, the Traitor",
+            "text": "First strike, deathtouch\nWhenever a creature an opponent controls is put into a graveyard from the battlefield, you may return target artifact card from your graveyard to your hand.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{B}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b8f9c6a9-42c3-59a2-a037-50a8776ad5f5",
+            "name": "Tezzeret, Agent of Bolas",
+            "text": "+1: Look at the top five cards of your library. You may reveal an artifact card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\n-1: Target artifact becomes a 5/5 artifact creature.\n-4: Target player loses X life and you gain X life, where X is twice the number of artifacts you control.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc737241-cb41-574e-84e7-d034e5217ba4",
+            "name": "Bladed Sentinel",
+            "text": "{W}: Bladed Sentinel gains vigilance until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "83b13871-d088-5b31-a3af-270b38424039",
+            "name": "Blightsteel Colossus",
+            "text": "Trample, infect\nBlightsteel Colossus is indestructible.\nIf Blightsteel Colossus would be put into a graveyard from anywhere, reveal Blightsteel Colossus and shuffle it into its owner's library instead.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 12.0,
+            "manaCost": "{12}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f013d4b6-8744-537e-b0dc-300d228ab013",
+            "name": "Bonehoard",
+            "text": "Living weapon (When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this to it.)\nEquipped creature gets +X/+X, where X is the number of creature cards in all graveyards.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ab08087a-836d-5d8d-b701-3f20068b9e13",
+            "name": "Brass Squire",
+            "text": "{T}: Attach target Equipment you control to target creature you control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8e3253ab-a984-508b-a100-e86595da3dba",
+            "name": "Copper Carapace",
+            "text": "Equipped creature gets +2/+2 and can't block.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f9081998-9a10-5399-87b8-db1fba11d8cc",
+            "name": "Core Prowler",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nWhen Core Prowler is put into a graveyard from the battlefield, proliferate. (You choose any number of permanents and/or players with counters on them, then give each another counter of a kind already there.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "618dc4ac-b6c6-510d-9e7d-f6e281e419f3",
+            "name": "Darksteel Plate",
+            "text": "Darksteel Plate is indestructible.\nEquipped creature is indestructible.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "db31e7f8-e825-5ce3-b75e-f60b570fcd3e",
+            "name": "Decimator Web",
+            "text": "{4}, {T}: Target opponent loses 2 life, gets a poison counter, then puts the top six cards of his or her library into his or her graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e0cdf5b-2285-50bf-92cc-88efafc58884",
+            "name": "Dross Ripper",
+            "text": "{2}{B}: Dross Ripper gets +1/+1 until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7104146e-c5cb-557f-b2bf-94f602bd59c5",
+            "name": "Flayer Husk",
+            "text": "Living weapon (When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this to it.)\nEquipped creature gets +1/+1.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "45ab90f9-e2cd-51bf-9182-6a2b06d2347a",
+            "name": "Gust-Skimmer",
+            "text": "{U}: Gust-Skimmer gains flying until end of turn.",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "13280ead-e2b3-5621-8736-35865b2e8b27",
+            "name": "Hexplate Golem",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3a3d64d-187e-50ee-a9b5-2c5289371098",
+            "name": "Ichor Wellspring",
+            "text": "When Ichor Wellspring enters the battlefield or is put into a graveyard from the battlefield, draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dbb4f70f-3084-59b7-ada3-ce6d6c0660df",
+            "name": "Knowledge Pool",
+            "text": "Imprint \u2014 When Knowledge Pool enters the battlefield, each player exiles the top three cards of his or her library.\nWhenever a player casts a spell from his or her hand, that player exiles it. If the player does, he or she may cast another nonland card exiled with Knowledge Pool without paying that card's mana cost.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b178fa6e-3f1c-539c-92d2-b1672c21fbd5",
+            "name": "Lumengrid Gargoyle",
+            "text": "Flying",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb1d2d5c-2374-56be-90cb-fbbfbf7ebcbe",
+            "name": "Magnetic Mine",
+            "text": "Whenever another artifact is put into a graveyard from the battlefield, Magnetic Mine deals 2 damage to that artifact's controller.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8dfbf825-8018-50c2-bf35-ded05597ce8b",
+            "name": "Mirrorworks",
+            "text": "Whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. If you do, put a token that's a copy of that artifact onto the battlefield.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f16a163-d8fe-5130-93cf-74176bd5dd6f",
+            "name": "Mortarpod",
+            "text": "Living weapon (When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this to it.)\nEquipped creature gets +0/+1 and has \"Sacrifice this creature: This creature deals 1 damage to target creature or player.\"\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bc856aff-f8d8-5bfb-8b6c-3d7bb25394e1",
+            "name": "Myr Sire",
+            "text": "When Myr Sire is put into a graveyard from the battlefield, put a 1/1 colorless Myr artifact creature token onto the battlefield.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "685446ae-f6e3-52a5-b9b4-07e7a7068ec3",
+            "name": "Myr Turbine",
+            "text": "{T}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.\n{T}, Tap five untapped Myr you control: Search your library for a Myr creature card, put it onto the battlefield, then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9684e32f-0a83-5aeb-af19-cc217cf3157a",
+            "name": "Myr Welder",
+            "text": "Imprint \u2014 {T}: Exile target artifact card from a graveyard.\nMyr Welder has all activated abilities of all cards exiled with it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba0f14ba-1c80-5ca5-8122-3a8041bb54ea",
+            "name": "Peace Strider",
+            "text": "When Peace Strider enters the battlefield, you gain 3 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5de1a2fd-de8a-5c82-a417-fb6c8b40e6e1",
+            "name": "Phyrexian Digester",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c29bc973-cc0f-585e-ba78-59beb141f5d8",
+            "name": "Phyrexian Juggernaut",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\nPhyrexian Juggernaut attacks each turn if able.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "23c5d6b2-79b9-5e12-bc82-b53676de22b6",
+            "name": "Phyrexian Revoker",
+            "text": "As Phyrexian Revoker enters the battlefield, name a nonland card.\nActivated abilities of sources with the chosen name can't be activated.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "767f194d-2199-516b-98f9-6ee7f19fb728",
+            "name": "Pierce Strider",
+            "text": "When Pierce Strider enters the battlefield, target opponent loses 3 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "37083086-1079-5d9f-a396-64af892e6966",
+            "name": "Piston Sledge",
+            "text": "When Piston Sledge enters the battlefield, attach it to target creature you control.\nEquipped creature gets +3/+1.\nEquip\u2014\nSacrifice an artifact.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "20f88dbb-bd22-5f21-9df9-e6e95c20a1b5",
+            "name": "Plague Myr",
+            "text": "Infect (This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)\n{T}: Add {1} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce194166-35b9-5eb9-a91b-6400acc4869f",
+            "name": "Psychosis Crawler",
+            "text": "Psychosis Crawler's power and toughness are each equal to the number of cards in your hand.\nWhenever you draw a card, each opponent loses 1 life.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "22126eb2-3ae1-5dfd-8ee6-0e58e9e04939",
+            "name": "Razorfield Rhino",
+            "text": "Metalcraft \u2014 Razorfield Rhino gets +2/+2 as long as you control three or more artifacts.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e04093f9-d57f-50ea-a0bb-54b124d1a14c",
+            "name": "Rusted Slasher",
+            "text": "Sacrifice an artifact: Regenerate Rusted Slasher.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0495b6b4-2b4c-5927-8d99-e78e74eb30a3",
+            "name": "Shimmer Myr",
+            "text": "Flash\nYou may cast artifact cards as though they had flash.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6efb52c4-3c98-552b-8a38-fb1f43417b66",
+            "name": "Shriekhorn",
+            "text": "Shriekhorn enters the battlefield with three charge counters on it.\n{T}, Remove a charge counter from Shriekhorn: Target player puts the top two cards of his or her library into his or her graveyard.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ac4e9caf-42a9-5d68-9924-d6b38d09d871",
+            "name": "Signal Pest",
+            "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)\nSignal Pest can't be blocked except by creatures with flying or reach.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ecb24e70-7dc6-584f-9ff5-a86d580adc76",
+            "name": "Silverskin Armor",
+            "text": "Equipped creature gets +1/+1 and is an artifact in addition to its other types.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f33c7615-56df-56d1-94ba-a51bcc16c546",
+            "name": "Skinwing",
+            "text": "Living weapon (When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this to it.)\nEquipped creature gets +2/+2 and has flying.\nEquip {6}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f3c1745-2be0-5347-be4d-9855e9c62050",
+            "name": "Sphere of the Suns",
+            "text": "Sphere of the Suns enters the battlefield tapped and with three charge counters on it.\n{T}, Remove a charge counter from Sphere of the Suns: Add one mana of any color to your mana pool.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f1ef7511-9605-5138-adcb-fc9ec73c627b",
+            "name": "Spin Engine",
+            "text": "{R}: Target creature can't block Spin Engine this turn.",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6b9b11cb-fce3-5a52-94b3-8252dcc9f43b",
+            "name": "Spine of Ish Sah",
+            "text": "When Spine of Ish Sah enters the battlefield, destroy target permanent.\nWhen Spine of Ish Sah is put into a graveyard from the battlefield, return Spine of Ish Sah to its owner's hand.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 7.0,
+            "manaCost": "{7}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f75af259-d0e1-593e-80e1-ea5957f3a8ec",
+            "name": "Strandwalker",
+            "text": "Living weapon (When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this to it.)\nEquipped creature gets +2/+4 and has reach.\nEquip {4}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "73e9af3f-d3d4-5e5b-a02b-592077d738f3",
+            "name": "Sword of Feast and Famine",
+            "text": "Equipped creature gets +2/+2 and has protection from black and from green.\nWhenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0aa4f26-80a5-5a87-9781-cbee6833442e",
+            "name": "Tangle Hulk",
+            "text": "{2}{G}: Regenerate Tangle Hulk.",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{5}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b187f3ce-a666-54b8-859f-66be5cd7a0b8",
+            "name": "Thopter Assembly",
+            "text": "Flying\nAt the beginning of your upkeep, if you control no Thopters other than Thopter Assembly, return Thopter Assembly to its owner's hand and put five 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba2c7c77-00e2-5b7f-abfd-aa3cc9e60dd4",
+            "name": "Titan Forge",
+            "text": "{3}, {T}: Put a charge counter on Titan Forge.\n{T}, Remove three charge counters from Titan Forge: Put a 9/9 colorless Golem artifact creature token onto the battlefield.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b9645d2-5454-585e-8edc-65162a4c8957",
+            "name": "Training Drone",
+            "text": "Training Drone can't attack or block unless it's equipped.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28337c42-4fb1-581c-b829-f16197779c52",
+            "name": "Viridian Claw",
+            "text": "Equipped creature gets +1/+0 and has first strike.\nEquip {1}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85bade45-2337-50a0-88ae-9b9244372fc8",
+            "name": "Contested War Zone",
+            "text": "Whenever a creature deals combat damage to you, that creature's controller gains control of Contested War Zone.\n{T}: Add {1} to your mana pool.\n{1}, {T}: Attacking creatures get +1/+0 until end of turn.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ba201f1-3028-5530-815d-06016aadb10d",
+            "name": "Inkmoth Nexus",
+            "text": "{T}: Add {1} to your mana pool.\n{1}: Inkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. It's still a land. (It deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb10965b-21de-5338-b0f6-14199dab47d6",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03c15c6f-df43-5f7d-9420-a65897b215ab",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "162a0be6-c3d2-5bd0-8a29-83f662d447e3",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c996bb5-21ed-5d10-9c7c-5ee5beaa8daa",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd68d601-a412-51ce-afcc-d9399ee505a1",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b6117ab6-e976-5cb7-a2e2-6ed5e952c928",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b5ceafff-ebee-523d-a78d-f47edee9692d",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2b3deca9-48a1-5d9f-98b0-3d0f69864fd3",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "374414bd-e7c2-5639-8a79-90270840a03f",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c38dc173-1096-55f2-bbc2-475f847c5336",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "MBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4deea936-a240-5438-9385-a36f95b532d0",
+            "name": "Germ",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "65392510-3980-5122-a0e1-40f6e08304b6",
+            "name": "Zombie",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "739eae77-2810-5d5e-8c6b-203db53cdd3b",
+            "name": "Golem",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "6f296fb6-0425-553d-9744-e16a81199d28",
+            "name": "Horror",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "6bab41d8-75fc-5971-9e78-e24e3a03a8e2",
+            "name": "Thopter",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "0cda0fd0-632a-576b-be49-b41982770b3a",
+            "name": "Poison Counter",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Card"
+            ],
+            "rarity": "common",
+            "set": "TMBS",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
