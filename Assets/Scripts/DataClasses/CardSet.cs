@@ -47,7 +47,7 @@ public class CardSet
       {
         if (card.rarity == "rare" || card.rarity == "mythic")
         {
-          if (!card.isToken)
+          if (!card.isToken && !card.isBack)
           {
             allRares.Add(card);
           }
@@ -63,7 +63,7 @@ public class CardSet
       {
         if (card.rarity == "uncommon")
         {
-          if (!card.isToken)
+          if (!card.isToken && !card.isBack)
           {
             allUncommons.Add(card);
           }
@@ -79,7 +79,7 @@ public class CardSet
       {
         if (card.rarity == "common")
         {
-          if (!card.isBasicLand() && !card.isToken)
+          if (!card.isBasicLand() && !card.isToken && !card.isBack)
           {
             allCommons.Add(card);
           }
