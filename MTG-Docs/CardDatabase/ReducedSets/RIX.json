@@ -1,0 +1,4791 @@
+{
+    "setCode": "RIX",
+    "setName": "Rivals of Ixalan",
+    "cards": [
+        {
+            "id": "7cc3f061-5568-55ff-810c-6a0fa247959e",
+            "name": "Baffling End",
+            "text": "When Baffling End enters the battlefield, exile target creature an opponent controls with converted mana cost 3 or less.\nWhen Baffling End leaves the battlefield, target opponent creates a 3/3 green Dinosaur creature token with trample.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3156f0ba-53f3-579d-ba2d-829741f552c6",
+            "name": "Bishop of Binding",
+            "text": "When Bishop of Binding enters the battlefield, exile target creature an opponent controls until Bishop of Binding leaves the battlefield.\nWhenever Bishop of Binding attacks, target Vampire gets +X/+X until end of turn, where X is the power of the exiled card.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "99d6fc09-bab7-5ca4-8244-51811fc772e6",
+            "name": "Blazing Hope",
+            "text": "Exile target creature with power greater than or equal to your life total.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d47fc463-2114-5c1a-a92c-45fbfca77760",
+            "name": "Cleansing Ray",
+            "text": "Choose one \u2014\n\u2022 Destroy target Vampire.\n\u2022 Destroy target enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c09aee38-0a29-5a0f-a3eb-88e8541206a3",
+            "name": "Divine Verdict",
+            "text": "Destroy target attacking or blocking creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6fee20f-95be-5d58-9a1a-9b63c7452432",
+            "name": "Everdawn Champion",
+            "text": "Prevent all combat damage that would be dealt to Everdawn Champion.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d85ca0b2-54e2-5a3a-bb78-4b6ae306f914",
+            "name": "Exultant Skymarcher",
+            "text": "Flying",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7601b75a-c4ba-5ca6-847f-c8c5167be5b3",
+            "name": "Famished Paladin",
+            "text": "Famished Paladin doesn't untap during your untap step.\nWhenever you gain life, untap Famished Paladin.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "64a89f6c-59d6-5112-98f2-d7a15bbc7790",
+            "name": "Forerunner of the Legion",
+            "text": "When Forerunner of the Legion enters the battlefield, you may search your library for a Vampire card, reveal it, then shuffle your library and put that card on top of it.\nWhenever another Vampire enters the battlefield under your control, target creature gets +1/+1 until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "749e4fdb-7fda-5107-876d-ee4eab6213e1",
+            "name": "Imperial Ceratops",
+            "text": "Enrage \u2014 Whenever Imperial Ceratops is dealt damage, you gain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "571baaef-97f6-56b1-832c-b6115346bdf2",
+            "name": "Legion Conquistador",
+            "text": "When Legion Conquistador enters the battlefield, you may search your library for any number of cards named Legion Conquistador, reveal them, put them into your hand, then shuffle your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "845b5f40-974a-515b-a5b8-2cc7050c3a22",
+            "name": "Luminous Bonds",
+            "text": "Enchant creature\nEnchanted creature can't attack or block.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8cf30ca9-3b4d-5216-b811-1e47dc394e43",
+            "name": "Majestic Heliopterus",
+            "text": "Flying\nWhenever Majestic Heliopterus attacks, another target Dinosaur you control gains flying until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cbe44955-3cbe-5d4a-9e59-ebe7e55ee0b0",
+            "name": "Martyr of Dusk",
+            "text": "When Martyr of Dusk dies, create a 1/1 white Vampire creature token with lifelink.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a786a8c0-da1c-5099-9875-13d967a311ee",
+            "name": "Moment of Triumph",
+            "text": "Target creature gets +2/+2 until end of turn. You gain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b88257cf-72b5-55c4-a7ba-8db3e55be5a9",
+            "name": "Paladin of Atonement",
+            "text": "At the beginning of each upkeep, if you lost life last turn, put a +1/+1 counter on Paladin of Atonement.\nWhen Paladin of Atonement dies, you gain life equal to its toughness.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "72848888-20cb-5a1d-b34a-aead3c3c7159",
+            "name": "Pride of Conquerors",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nCreatures you control get +1/+1 until end of turn. If you have the city's blessing, those creatures get +2/+2 until end of turn instead.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "265eefca-faff-53f1-a69d-03aed2ab3a93",
+            "name": "Radiant Destiny",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAs Radiant Destiny enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +1/+1. As long as you have the city's blessing, they also have vigilance.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "94d19ceb-a343-580c-b3fb-1626b944f8a7",
+            "name": "Raptor Companion",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3089f919-a547-59bc-8077-0c6784cddbb4",
+            "name": "Sanguine Glorifier",
+            "text": "When Sanguine Glorifier enters the battlefield, put a +1/+1 counter on another target Vampire you control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "71207f09-164c-5aad-aeb3-7a06dc5833e7",
+            "name": "Skymarcher Aspirant",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nSkymarcher Aspirant has flying as long as you have the city's blessing.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aaa442e3-f5a9-5737-9659-5841c217a030",
+            "name": "Slaughter the Strong",
+            "text": "Each player chooses any number of creatures he or she controls with total power 4 or less, then sacrifices all other creatures he or she controls.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c2f77a4b-9c4f-5a3b-b001-2dc8b14bd6ef",
+            "name": "Snubhorn Sentry",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nSnubhorn Sentry gets +3/+0 as long as you have the city's blessing.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "92c4276c-530e-57d0-99a9-f8ddd1b1b12a",
+            "name": "Sphinx's Decree",
+            "text": "Each opponent can't cast instant or sorcery spells during that player's next turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6fdb1b70-ffc6-5ccd-aec7-badd4b01c6a3",
+            "name": "Squire's Devotion",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 and has lifelink.\nWhen Squire's Devotion enters the battlefield, create a 1/1 white Vampire creature token with lifelink.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "977b5947-86bf-553a-b2de-385ba3ebaf26",
+            "name": "Sun Sentinel",
+            "text": "Vigilance",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5c1b905d-d6fc-5efd-b3bb-79e7bf0d8a30",
+            "name": "Sun-Crested Pterodon",
+            "text": "Flying\nSun-Crested Pterodon has vigilance as long as you control another Dinosaur.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3ba6a1b1-a472-514c-90a6-906342bfac68",
+            "name": "Temple Altisaur",
+            "text": "If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "23a6192f-d543-5351-b47a-4c69f1e2c461",
+            "name": "Trapjaw Tyrant",
+            "text": "Enrage \u2014 Whenever Trapjaw Tyrant is dealt damage, exile target creature an opponent controls until Trapjaw Tyrant leaves the battlefield.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a3dec5d1-f5b7-5e45-afd3-811ea8775c12",
+            "name": "Zetalpa, Primal Dawn",
+            "text": "Flying, double strike, vigilance, trample, indestructible",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e0b3b9ae-7441-5663-8bf2-86e7cc9d3b27",
+            "name": "Admiral's Order",
+            "text": "Raid \u2014 If you attacked with a creature this turn, you may pay {U} rather than pay this spell's mana cost.\nCounter target spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "daab4fdd-b79f-5fe6-99a1-a155e372e1e5",
+            "name": "Aquatic Incursion",
+            "text": "When Aquatic Incursion enters the battlefield, create two 1/1 blue Merfolk creature tokens with hexproof. (They can't be the targets of spells or abilities your opponents control.)\n{3}{U}: Target Merfolk can't be blocked this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a33e369b-77da-5539-a7c0-fc5904b0a19e",
+            "name": "Crafty Cutpurse",
+            "text": "Flash\nWhen Crafty Cutpurse enters the battlefield, each token that would be created under an opponent's control this turn is created under your control instead.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eebc4ecf-5de1-5a58-8c7e-5c9b45eb139b",
+            "name": "Crashing Tide",
+            "text": "Crashing Tide has flash as long as you control a Merfolk.\nReturn target creature to its owner's hand.\nDraw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2013b972-5ae4-5ee9-9e1b-34ed8a6dbf83",
+            "name": "Curious Obsession",
+            "text": "Enchant creature\nEnchanted creature gets +1/+1 and has \"Whenever this creature deals combat damage to a player, you may draw a card.\"\nAt the beginning of your end step, if you didn't attack with a creature this turn, sacrifice Curious Obsession.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b588b45-7ccc-5ccf-9e4e-5bdfb5d19b09",
+            "name": "Deadeye Rig-Hauler",
+            "text": "Raid \u2014 When Deadeye Rig-Hauler enters the battlefield, if you attacked with a creature this turn, you may return target creature to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2cce85d1-f6df-5baf-a587-9477a8efe2b9",
+            "name": "Expel from Orazca",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nReturn target nonland permanent to its owner's hand. If you have the city's blessing, you may put that permanent on top of its owner's library instead.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7681078a-73cb-5659-844d-dad87dadcb8c",
+            "name": "Flood of Recollection",
+            "text": "Return target instant or sorcery card from your graveyard to your hand. Exile Flood of Recollection.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d3c20eee-bc3f-5d0a-b294-f27d4db24071",
+            "name": "Hornswoggle",
+            "text": "Counter target creature spell. You create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "56d5d9db-e138-5d6f-b367-1f77d0cde8da",
+            "name": "Induced Amnesia",
+            "text": "When Induced Amnesia enters the battlefield, target player exiles all cards from his or her hand face down, then draws that many cards.\nWhen Induced Amnesia is put into a graveyard from the battlefield, return the exiled cards to their owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d487d82b-4d7a-5e6b-b943-b4958bdbbf42",
+            "name": "Kitesail Corsair",
+            "text": "Kitesail Corsair has flying as long as it's attacking.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "05d0d71c-a2d8-5267-b0c0-920cc95d38f7",
+            "name": "Kumena's Awakening",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAt the beginning of your upkeep, each player draws a card. If you have the city's blessing, instead only you draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79a0f0d1-af9b-558a-852d-37c0fcaf1455",
+            "name": "Mist-Cloaked Herald",
+            "text": "Mist-Cloaked Herald can't be blocked.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d6b934a2-b92d-5040-b79d-29fbaa5c3db7",
+            "name": "Negate",
+            "text": "Counter target noncreature spell.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a83581bb-dbf4-5f5c-8d1e-be61a6d70bc3",
+            "name": "Nezahal, Primal Tide",
+            "text": "Nezahal, Primal Tide can't be countered.\nYou have no maximum hand size.\nWhenever an opponent casts a noncreature spell, draw a card.\nDiscard three cards: Exile Nezahal. Return it to the battlefield tapped under its owner's control at the beginning of the next end step.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "edf14f5c-0144-51bb-bb1e-317848a54a2a",
+            "name": "Release to the Wind",
+            "text": "Exile target nonland permanent. For as long as that card remains exiled, its owner may cast it without paying its mana cost.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85d2c10c-bc02-5cd2-80d3-c1c214d0cb09",
+            "name": "River Darter",
+            "text": "River Darter can't be blocked by Dinosaurs.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8cc14ebd-01f2-5a9e-b815-9a57b08ba3ce",
+            "name": "Riverwise Augur",
+            "text": "When Riverwise Augur enters the battlefield, draw three cards, then put two cards from your hand on top of your library in any order.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d273b78c-1188-5547-8fbc-a83f8d47a9c9",
+            "name": "Sailor of Means",
+            "text": "When Sailor of Means enters the battlefield, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3c27add8-ff8e-594e-bb41-dee05b616475",
+            "name": "Sea Legs",
+            "text": "Flash\nEnchant creature\nEnchanted creature gets +0/+2 as long as it's a Pirate. Otherwise, it gets -2/-0.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5c3774d3-6de1-52ae-9e7b-c075c0a6d2e9",
+            "name": "Seafloor Oracle",
+            "text": "Whenever a Merfolk you control deals combat damage to a player, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ccbf3896-c94e-5099-8de9-2411226420e2",
+            "name": "Secrets of the Golden City",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nDraw two cards. If you have the city's blessing, draw three cards instead.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79d168e7-df1d-5e81-a8e9-8039639e2902",
+            "name": "Silvergill Adept",
+            "text": "As an additional cost to cast Silvergill Adept, reveal a Merfolk card from your hand or pay {3}.\nWhen Silvergill Adept enters the battlefield, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb695018-56b9-53ba-b113-cd214d9df259",
+            "name": "Siren Reaver",
+            "text": "Raid \u2014 Siren Reaver costs {1} less to cast if you attacked with a creature this turn.\nFlying",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "be317768-3acc-5477-a51b-c1ef754499d3",
+            "name": "Slippery Scoundrel",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAs long as you have the city's blessing, Slippery Scoundrel has hexproof and can't be blocked.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ba2c7169-f34d-5da3-818e-3b90b7ca16ff",
+            "name": "Soul of the Rapids",
+            "text": "Flying\nHexproof (This creature can't be the target of spells or abilities your opponents control.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6e1b7fdd-2d8f-5bd7-89b7-2223f5173580",
+            "name": "Spire Winder",
+            "text": "Flying\nAscend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nSpire Winder gets +1/+1 as long as you have the city's blessing.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "10ef515f-7232-5516-b145-dc4e5642fcc9",
+            "name": "Sworn Guardian",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1b2fb9f1-1e79-57dc-90f7-1b08e553371f",
+            "name": "Timestream Navigator",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\n{2}{U}{U}, {T}, Put Timestream Navigator on the bottom of its owner's library: Take an extra turn after this one. Activate this ability only if you have the city's blessing.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "62f28b0f-1416-5a0f-a10a-cf673be58b80",
+            "name": "Warkite Marauder",
+            "text": "Flying\nWhenever Warkite Marauder attacks, target creature defending player controls loses all abilities and has base power and toughness 0/1 until end of turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "16ed8ce0-df99-5dff-9095-fb1b44093a76",
+            "name": "Waterknot",
+            "text": "Enchant creature\nWhen Waterknot enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d91f7cf-9aa3-5c11-930f-4afcbdea84a1",
+            "name": "Arterial Flow",
+            "text": "Each opponent discards two cards. If you control a Vampire, each opponent loses 2 life and you gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "338a81cf-45c8-5d37-934d-0794350cca2f",
+            "name": "Canal Monitor",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "913522e7-467d-52b3-93a0-3ef13fd1ece7",
+            "name": "Champion of Dusk",
+            "text": "When Champion of Dusk enters the battlefield, you draw X cards and you lose X life, where X is the number of Vampires you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ef67aad2-e01e-5981-9daa-f2b57778acef",
+            "name": "Dark Inquiry",
+            "text": "Target opponent reveals his or her hand. You choose a nonland card from it. That player discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8d69d6c6-47ac-5123-bb00-eb4f1a948ee8",
+            "name": "Dead Man's Chest",
+            "text": "Enchant creature an opponent controls\nWhen enchanted creature dies, exile cards equal to its power from the top of its owner's library. You may cast nonland cards from among them for as long as they remain exiled, and you may spend mana as though it were mana of any type to cast those spells.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9eae30fc-2d1b-58c0-adc2-3052e91795b5",
+            "name": "Dinosaur Hunter",
+            "text": "Whenever Dinosaur Hunter deals damage to a Dinosaur, destroy that creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b3fd718b-5782-54ed-b175-0c1e8e7abc8a",
+            "name": "Dire Fleet Poisoner",
+            "text": "Flash\nDeathtouch\nWhen Dire Fleet Poisoner enters the battlefield, target attacking Pirate you control gets +1/+1 and gains deathtouch until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e50e0698-eaac-5ca3-9cc6-5e6e5bc08c69",
+            "name": "Dusk Charger",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nDusk Charger gets +2/+2 as long as you have the city's blessing.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4914f55f-df2d-5f85-8659-a197117ff69c",
+            "name": "Dusk Legion Zealot",
+            "text": "When Dusk Legion Zealot enters the battlefield, you draw a card and you lose 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "abeb3431-0346-5115-a634-d87e65ce3ec8",
+            "name": "Fathom Fleet Boarder",
+            "text": "When Fathom Fleet Boarder enters the battlefield, you lose 2 life unless you control another Pirate.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dab2bb72-e065-590e-b3d0-88d7456044ce",
+            "name": "Forerunner of the Coalition",
+            "text": "When Forerunner of the Coalition enters the battlefield, you may search your library for a Pirate card, reveal it, then shuffle your library and put that card on top of it.\nWhenever another Pirate enters the battlefield under your control, each opponent loses 1 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5c7348c-80d9-52c6-8796-004d5ae3a12d",
+            "name": "Golden Demise",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAll creatures get -2/-2 until end of turn. If you have the city's blessing, instead only creatures your opponents control get -2/-2 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "64129b7a-ded5-5baa-9323-d7e4cdf677f7",
+            "name": "Grasping Scoundrel",
+            "text": "Grasping Scoundrel gets +1/+0 as long as it's attacking.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42002605-c387-5008-83a8-70d2eaec584a",
+            "name": "Gruesome Fate",
+            "text": "Each opponent loses 1 life for each creature you control.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b5db650-d052-5ced-8c78-aa4204b29204",
+            "name": "Impale",
+            "text": "Destroy target creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c92976c6-d234-52ff-ae5f-1cb5a52d4b13",
+            "name": "Mastermind's Acquisition",
+            "text": "Choose one \u2014\n\u2022 Search your library for a card, put it into your hand, then shuffle your library.\n\u2022 Choose a card you own from outside the game and put it into your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df56747e-b7e3-53c4-bf8d-5179f7992254",
+            "name": "Mausoleum Harpy",
+            "text": "Flying\nAscend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever another creature you control dies, if you have the city's blessing, put a +1/+1 counter on Mausoleum Harpy.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0574d7a9-c811-5710-b8bd-e4685fbe438c",
+            "name": "Moment of Craving",
+            "text": "Target creature gets -2/-2 until end of turn. You gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8db97b18-02e6-57e1-af5c-89eaebff0388",
+            "name": "Oathsworn Vampire",
+            "text": "Oathsworn Vampire enters the battlefield tapped.\nYou may cast Oathsworn Vampire from your graveyard if you gained life this turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "63e72c36-6219-5d77-89d3-84d4e32dbc23",
+            "name": "Pitiless Plunderer",
+            "text": "Whenever another creature you control dies, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "937d36d0-40e0-5be3-9d61-2218011bfe1a",
+            "name": "Ravenous Chupacabra",
+            "text": "When Ravenous Chupacabra enters the battlefield, destroy target creature an opponent controls.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "776dc1b4-5406-5041-b375-68751b08743e",
+            "name": "Reaver Ambush",
+            "text": "Exile target creature with power 3 or less.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c343c911-af2f-534e-80b6-60461370a90e",
+            "name": "Recover",
+            "text": "Return target creature card from your graveyard to your hand.\nDraw a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "77050f7e-2d28-5f9f-9030-4b0ebd688a7d",
+            "name": "Sadistic Skymarcher",
+            "text": "As an additional cost to cast Sadistic Skymarcher, reveal a Vampire card from your hand or pay {1}.\nFlying, lifelink",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "819b4448-aeea-50a1-ba0d-c7f97dacd779",
+            "name": "Tetzimoc, Primal Death",
+            "text": "Deathtouch\n{B}, Reveal Tetzimoc, Primal Death from your hand: Put a prey counter on target creature. Activate this ability only during your turn.\nWhen Tetzimoc enters the battlefield, destroy each creature your opponents control with a prey counter on it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c83db6a1-b03a-5426-8bdf-a1caf1a9809a",
+            "name": "Tomb Robber",
+            "text": "Menace\n{1}, Discard a card: Tomb Robber explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fb2e5522-233a-547f-b600-b81701a2a29e",
+            "name": "Twilight Prophet",
+            "text": "Flying\nAscend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAt the beginning of your upkeep, if you have the city's blessing, reveal the top card of your library and put it into your hand. Each opponent loses X life and you gain X life, where X is that card's converted mana cost.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8b2db8d5-fdd2-5cd0-97cf-0bf34cab8e1a",
+            "name": "Vampire Revenant",
+            "text": "Flying",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "25d88c53-0422-53fc-bcc2-c6ebc0e9fa89",
+            "name": "Vona's Hunger",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nEach opponent sacrifices a creature. If you have the city's blessing, instead each opponent sacrifices half the creatures he or she controls, rounded up.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f963e456-3974-5b3a-a4b8-7ace25a08013",
+            "name": "Voracious Vampire",
+            "text": "Menace\nWhen Voracious Vampire enters the battlefield, target Vampire you control gets +1/+1 and gains menace until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d35c83d3-edd6-5aab-9439-d31af3f36967",
+            "name": "Blood Sun",
+            "text": "When Blood Sun enters the battlefield, draw a card.\nAll lands lose all abilities except mana abilities.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "222ab458-ff55-54d2-97c3-098abbdea8b4",
+            "name": "Bombard",
+            "text": "Bombard deals 4 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3d710017-f4fc-5bdc-b06b-88d8dc4f7aa1",
+            "name": "Brass's Bounty",
+            "text": "For each land you control, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{6}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3bcfc59b-dc26-5f06-9c6b-5875f769de5a",
+            "name": "Brazen Freebooter",
+            "text": "When Brazen Freebooter enters the battlefield, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "99af8a0a-745f-5a04-852b-b86b193efc6f",
+            "name": "Buccaneer's Bravado",
+            "text": "Choose one \u2014\n\u2022 Target creature gets +1/+1 and gains first strike until end of turn.\n\u2022 Target Pirate gets +1/+1 and gains double strike until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fe5274fb-c694-523a-8bd7-5e8abe1b6836",
+            "name": "Charging Tuskodon",
+            "text": "Trample\nIf Charging Tuskodon would deal combat damage to a player, it deals double that damage to that player instead.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "edcfbec6-3518-5f3c-9ae5-38163d4432e4",
+            "name": "Daring Buccaneer",
+            "text": "As an additional cost to cast Daring Buccaneer, reveal a Pirate card from your hand or pay {2}.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30a726f0-ee3c-514b-9213-f4d11c084e1f",
+            "name": "Dire Fleet Daredevil",
+            "text": "First strike\nWhen Dire Fleet Daredevil enters the battlefield, exile target instant or sorcery card from an opponent's graveyard. You may cast that card this turn, and you may spend mana as though it were mana of any type to cast that spell. If that card would be put into a graveyard this turn, exile it instead.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ee67bb54-1048-52df-90da-1bc939eef340",
+            "name": "Etali, Primal Storm",
+            "text": "Whenever Etali, Primal Storm attacks, exile the top card of each player's library, then you may cast any number of nonland cards exiled this way without paying their mana costs.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6b74e330-691d-54cf-8cd8-77e0f07d5085",
+            "name": "Fanatical Firebrand",
+            "text": "Haste\n{T}, Sacrifice Fanatical Firebrand: It deals 1 damage to target creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e7ea1b86-3aab-5d4c-8b73-bdb4d49229f4",
+            "name": "Forerunner of the Empire",
+            "text": "When Forerunner of the Empire enters the battlefield, you may search your library for a Dinosaur card, reveal it, then shuffle your library and put that card on top of it.\nWhenever a Dinosaur enters the battlefield under your control, you may have Forerunner of the Empire deal 1 damage to each creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f173d647-5e2b-5310-b13b-de8af6ff27cf",
+            "name": "Form of the Dinosaur",
+            "text": "When Form of the Dinosaur enters the battlefield, your life total becomes 15.\nAt the beginning of your upkeep, Form of the Dinosaur deals 15 damage to target creature an opponent controls and that creature deals damage equal to its power to you.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d66e04bb-40d8-5558-9e22-15f312912b6d",
+            "name": "Frilled Deathspitter",
+            "text": "Enrage \u2014 Whenever Frilled Deathspitter is dealt damage, it deals 2 damage to target opponent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3ea142de-d40c-50c1-980e-8fb27a8f097f",
+            "name": "Goblin Trailblazer",
+            "text": "Menace",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c48e17e-8435-50a2-9919-df4e4f0f9135",
+            "name": "Mutiny",
+            "text": "Target creature an opponent controls deals damage equal to its power to another target creature that player controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01803680-5dab-5060-ad04-64ba34e83598",
+            "name": "Needletooth Raptor",
+            "text": "Enrage \u2014 Whenever Needletooth Raptor is dealt damage, it deals 5 damage to target creature an opponent controls.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "45135e6c-c7bc-5cd0-934d-f908cbe7e2a3",
+            "name": "Orazca Raptor",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f761a081-3f2f-54f3-9d2f-705682b5e268",
+            "name": "Pirate's Pillage",
+            "text": "As an additional cost to cast Pirate's Pillage, discard a card.\nDraw two cards and create two colorless Treasure artifact tokens with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "18d320b3-3b97-5cfc-959c-66e22911627b",
+            "name": "Reckless Rage",
+            "text": "Reckless Rage deals 4 damage to target creature you don't control and 2 damage to target creature you control.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "93797c70-fc1e-536d-94c5-ea6f89efd56e",
+            "name": "Rekindling Phoenix",
+            "text": "Flying\nWhen Rekindling Phoenix dies, create a 0/1 red Elemental creature token with \"At the beginning of your upkeep, sacrifice this creature and return target card named Rekindling Phoenix from your graveyard to the battlefield. It gains haste until end of turn.\"",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3171448a-6b1e-5d72-a2e3-1d8d7913198d",
+            "name": "See Red",
+            "text": "Enchant creature\nEnchanted creature gets +2/+1 and has first strike.\nAt the beginning of your end step, if you didn't attack with a creature this turn, sacrifice See Red.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "399928ff-a13d-59c2-b451-5ed8ada59ffa",
+            "name": "Shake the Foundations",
+            "text": "Shake the Foundations deals 1 damage to each creature without flying.\nDraw a card.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4346a32a-2274-5d16-8f4d-b97e2634642a",
+            "name": "Shatter",
+            "text": "Destroy target artifact.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ebd6b24e-5a71-5036-9a79-9d5793afd627",
+            "name": "Silverclad Ferocidons",
+            "text": "Enrage \u2014 Whenever Silverclad Ferocidons is dealt damage, each opponent sacrifices a permanent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e71a186-3bdb-5ae7-a075-7873c6cef9a6",
+            "name": "Stampeding Horncrest",
+            "text": "Stampeding Horncrest has haste as long as you control another Dinosaur.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2e305d44-3256-5b5b-b7b6-f7f85afb04a2",
+            "name": "Storm Fleet Swashbuckler",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nStorm Fleet Swashbuckler has double strike as long as you have the city's blessing.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e37a41e1-49db-521f-bbf2-42f3c2e97bd4",
+            "name": "Sun-Collared Raptor",
+            "text": "Trample\n{2}{R}: Sun-Collared Raptor gets +3/+0 until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3da35b7f-6125-5efa-972f-68c901ec8563",
+            "name": "Swaggering Corsair",
+            "text": "Raid \u2014 Swaggering Corsair enters the battlefield with a +1/+1 counter on it if you attacked with a creature this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b708f580-9823-5b59-8dd7-ccabfb051db0",
+            "name": "Tilonalli's Crown",
+            "text": "Enchant creature\nWhen Tilonalli's Crown enters the battlefield, it deals 1 damage to enchanted creature.\nEnchanted creature gets +3/+0 and has trample.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0dedf3ea-c2e1-58c8-bcd7-b82fdd05083b",
+            "name": "Tilonalli's Summoner",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever Tilonalli's Summoner attacks, you may pay {X}{R}. If you do, create X 1/1 red Elemental creature tokens that are tapped and attacking. At the beginning of the next end step, exile those tokens unless you have the city's blessing.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7b3a1afc-6200-5868-88ff-6b0df8b165d8",
+            "name": "Aggressive Urge",
+            "text": "Target creature gets +1/+1 until end of turn.\nDraw a card.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e3e31c01-dbe8-5473-b89a-c32aee9e5cff",
+            "name": "Cacophodon",
+            "text": "Enrage \u2014 Whenever Cacophodon is dealt damage, untap target permanent.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4125530b-29ef-5f5e-a4e0-f237bb804e20",
+            "name": "Cherished Hatchling",
+            "text": "When Cherished Hatchling dies, you may cast Dinosaur spells this turn as though they had flash, and whenever you cast a Dinosaur spell this turn, it gains \"When this creature enters the battlefield, you may have it fight another target creature.\"",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd3db5e3-54e5-55fd-998e-4e5905363bce",
+            "name": "Colossal Dreadmaw",
+            "text": "Trample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ced52be1-d9b8-578d-b73b-c57ee411c0b8",
+            "name": "Crested Herdcaller",
+            "text": "Trample\nWhen Crested Herdcaller enters the battlefield, create a 3/3 green Dinosaur creature token with trample.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0bdc85fb-5b13-55fb-bc62-28013a27a2af",
+            "name": "Deeproot Elite",
+            "text": "Whenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on target Merfolk you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2fa066de-0813-507c-be47-958667ac5c6f",
+            "name": "Enter the Unknown",
+            "text": "Target creature you control explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on the creature, then put the card back or put it into your graveyard.)\nYou may play an additional land this turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dbf1e48b-2aa0-5a42-aa84-e439e456c0d0",
+            "name": "Forerunner of the Heralds",
+            "text": "When Forerunner of the Heralds enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.\nWhenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on Forerunner of the Heralds.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81581621-27dd-50b5-83f4-7ad5248b5c3b",
+            "name": "Ghalta, Primal Hunger",
+            "text": "Ghalta, Primal Hunger costs {X} less to cast, where X is the total power of creatures you control.\nTrample",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 12.0,
+            "manaCost": "{10}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f03cdaa6-0c11-55f3-ba16-0db14c80cb1a",
+            "name": "Giltgrove Stalker",
+            "text": "Giltgrove Stalker can't be blocked by creatures with power 2 or less.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6162336c-2a08-5b38-9b83-a59d158b9e33",
+            "name": "Hardy Veteran",
+            "text": "As long as it's your turn, Hardy Veteran gets +0/+2.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3e86ab8e-4238-50d0-9149-d9bd37fd68f0",
+            "name": "Hunt the Weak",
+            "text": "Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control. (Each deals damage equal to its power to the other.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c7e6a529-ad40-5ad7-8e5d-b9c2392f430f",
+            "name": "Jade Bearer",
+            "text": "When Jade Bearer enters the battlefield, put a +1/+1 counter on another target Merfolk you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ee9428c9-443e-5ac3-bed5-5a22308b16d8",
+            "name": "Jadecraft Artisan",
+            "text": "When Jadecraft Artisan enters the battlefield, target creature gets +2/+2 until end of turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cbfeb7da-e30d-5b9e-9b8f-b59d93321401",
+            "name": "Jadelight Ranger",
+            "text": "When Jadelight Ranger enters the battlefield, it explores, then it explores again. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard. Then repeat this process.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b67ec0c9-af29-5b71-87f0-3d6cff7e601a",
+            "name": "Jungleborn Pioneer",
+            "text": "When Jungleborn Pioneer enters the battlefield, create a 1/1 blue Merfolk creature token with hexproof. (It can't be the target of spells or abilities your opponents control.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ffa78954-1122-5221-af63-31b9c5bc5d91",
+            "name": "Knight of the Stampede",
+            "text": "Dinosaur spells you cast cost {2} less to cast.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0926e139-730e-541d-9e76-a3cc20245f06",
+            "name": "Naturalize",
+            "text": "Destroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "016b5ac0-f8e3-593b-ac32-602f4658ce31",
+            "name": "Orazca Frillback",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "deac24ff-bf96-5f63-982a-72716deb1adb",
+            "name": "Overgrown Armasaur",
+            "text": "Enrage \u2014 Whenever Overgrown Armasaur is dealt damage, create a 1/1 green Saproling creature token.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c7a04b22-6096-5099-936b-71d0a5a93467",
+            "name": "Path of Discovery",
+            "text": "Whenever a creature enters the battlefield under your control, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on the creature, then put the card back or put it into your graveyard.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01db9ec9-12e4-5770-8bd0-ba11a95b5209",
+            "name": "Plummet",
+            "text": "Destroy target creature with flying.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "275430fa-1ed2-5a06-80ad-b0ab6dab81d7",
+            "name": "Polyraptor",
+            "text": "Enrage \u2014 Whenever Polyraptor is dealt damage, create a token that's a copy of Polyraptor.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce2dfafe-0cde-54bd-b7b7-284a313a3e2a",
+            "name": "Strength of the Pack",
+            "text": "Put two +1/+1 counters on each creature you control.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5242c5c3-f26a-5ad7-bfcf-67a2891b2001",
+            "name": "Swift Warden",
+            "text": "Flash\nWhen Swift Warden enters the battlefield, target Merfolk you control gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d1e5524f-526b-5596-963b-b5bbf0be5037",
+            "name": "Tendershoot Dryad",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAt the beginning of each upkeep, create a 1/1 green Saproling creature token.\nSaprolings you control get +2/+2 as long as you have the city's blessing.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9794bb4e-cc43-5416-9ebd-90d0ac9da127",
+            "name": "Thrashing Brontodon",
+            "text": "{1}, Sacrifice Thrashing Brontodon: Destroy target artifact or enchantment.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "612c1c3a-5c9e-5ca4-bd94-7229eb4b7c88",
+            "name": "Thunderherd Migration",
+            "text": "As an additional cost to cast Thunderherd Migration, reveal a Dinosaur card from your hand or pay {1}.\nSearch your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "19f97ee8-9e55-530f-b86d-ca7525625700",
+            "name": "Wayward Swordtooth",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nYou may play an additional land on each of your turns.\nWayward Swordtooth can't attack or block unless you have the city's blessing.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ecc4ad08-01f3-5a24-947d-19e9b93adf9b",
+            "name": "World Shaper",
+            "text": "Whenever World Shaper attacks, you may put the top three cards of your library into your graveyard.\nWhen World Shaper dies, put all land cards from your graveyard onto the battlefield tapped.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "92ebbe6a-d5fb-5c96-9a83-cc607673bdd4",
+            "name": "Angrath, the Flame-Chained",
+            "text": "+1: Each opponent discards a card and loses 2 life.\n\u22123: Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. Sacrifice it at the beginning of the next end step if it has converted mana cost 3 or less.\n\u22128: Each opponent loses life equal to the number of cards in his or her graveyard.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a549806d-f763-550a-8c12-6258166e6075",
+            "name": "Atzocan Seer",
+            "text": "{T}: Add one mana of any color to your mana pool.\nSacrifice Atzocan Seer: Return target Dinosaur card from your graveyard to your hand.",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6f13efa3-e0ee-5628-85b8-95932e3cc6c0",
+            "name": "Azor, the Lawbringer",
+            "text": "Flying\nWhen Azor, the Lawbringer enters the battlefield, each opponent can't cast instant or sorcery spells during that player's next turn.\nWhenever Azor attacks, you may pay {X}{W}{U}{U}. If you do, you gain X life and draw X cards.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{2}{W}{W}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "024c9e4d-bed7-5ecf-8cef-babb5c79e923",
+            "name": "Deadeye Brawler",
+            "text": "Deathtouch\nAscend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever Deadeye Brawler deals combat damage to a player, if you have the city's blessing, draw a card.",
+            "colours": [
+                "B",
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0a79cb65-ff26-5bf5-b4c5-220e84835371",
+            "name": "Dire Fleet Neckbreaker",
+            "text": "Attacking Pirates you control get +2/+0.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "618c125d-bc56-5b10-8afd-bc3294592d3d",
+            "name": "Elenda, the Dusk Rose",
+            "text": "Lifelink\nWhenever another creature dies, put a +1/+1 counter on Elenda, the Dusk Rose.\nWhen Elenda dies, create X 1/1 white Vampire creature tokens with lifelink, where X is Elenda's power.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5b69801-24de-5dcc-ad79-6a21cd2b12dc",
+            "name": "Hadana's Climb // Winged Temple of Orazca",
+            "text": "At the beginning of combat on your turn, put a +1/+1 counter on target creature you control. Then if that creature has three or more +1/+1 counters on it, transform Hadana's Climb.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "6e299ca2-d620-5fe6-9fc4-35d1305d318a",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "6e299ca2-d620-5fe6-9fc4-35d1305d318a",
+            "name": "Hadana's Climb // Winged Temple of Orazca",
+            "text": "(Transforms from Hadana's Climb.)\n{T}: Add one mana of any color to your mana pool.\n{1}{G}{U}, {T}: Target creature you control gains flying and gets +X/+X until end of turn, where X is its power.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "80f0d8bf-6ca9-5768-8bee-29051616f3c3",
+            "name": "Huatli, Radiant Champion",
+            "text": "+1: Put a loyalty counter on Huatli, Radiant Champion for each creature you control.\n\u22121: Target creature gets +X/+X until end of turn, where X is the number of creatures you control.\n\u22128: You get an emblem with \"Whenever a creature enters the battlefield under your control, you may draw a card.\"",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{W}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "88400e25-72b6-54b9-8e0d-40851b42bcdd",
+            "name": "Journey to Eternity // Atzal, Cave of Eternity",
+            "text": "Enchant creature you control\nWhen enchanted creature dies, return it to the battlefield under your control, then return Journey to Eternity to the battlefield transformed under your control.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "7664ab16-0936-560c-97ad-38da8f083349",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "7664ab16-0936-560c-97ad-38da8f083349",
+            "name": "Journey to Eternity // Atzal, Cave of Eternity",
+            "text": "(Transforms from Journey to Eternity.)\n{T}: Add one mana of any color to your mana pool.\n{3}{B}{G}, {T}: Return target creature card from your graveyard to the battlefield.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "0b03d1e9-4c22-5d0a-b45f-548ec32c0dc2",
+            "name": "Jungle Creeper",
+            "text": "{3}{B}{G}: Return Jungle Creeper from your graveyard to your hand.",
+            "colours": [
+                "B",
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "50dd34dc-b85f-5668-bb1e-583e9dff2721",
+            "name": "Kumena, Tyrant of Orazca",
+            "text": "Tap another untapped Merfolk you control: Kumena, Tyrant of Orazca can't be blocked this turn.\nTap three untapped Merfolk you control: Draw a card.\nTap five untapped Merfolk you control: Put a +1/+1 counter on each Merfolk you control.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "748c9b9d-fd0e-5c14-87db-501661fb334f",
+            "name": "Legion Lieutenant",
+            "text": "Other Vampires you control get +1/+1.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5b841a0b-80b8-5f61-bba1-4c6f1ff5dd05",
+            "name": "Merfolk Mistbinder",
+            "text": "Other Merfolk you control get +1/+1.",
+            "colours": [
+                "G",
+                "U"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7030cce5-cda0-52f4-a90b-7389387a3062",
+            "name": "Path of Mettle // Metzali, Tower of Triumph",
+            "text": "When Path of Mettle enters the battlefield, it deals 1 damage to each creature that doesn't have first strike, double strike, vigilance, or haste.\nWhenever you attack with at least two creatures that have first strike, double strike, vigilance, and/or haste, transform Path of Mettle.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "a632754f-2552-5c91-90d2-063175557774",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "a632754f-2552-5c91-90d2-063175557774",
+            "name": "Path of Mettle // Metzali, Tower of Triumph",
+            "text": "(Transforms from Path of Mettle.)\n{T}: Add one mana of any color to your mana pool.\n{1}{R}, {T}: Metzali, Tower of Triumph deals 2 damage to each opponent.\n{2}{W}, {T}: Choose a creature at random that attacked this turn. Destroy that creature.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "92584313-4011-514e-bc54-13723aada3a5",
+            "name": "Profane Procession // Tomb of the Dusk Rose",
+            "text": "{3}{W}{B}: Exile target creature. Then if there are three or more cards exiled with Profane Procession, transform it.",
+            "colours": [
+                "B",
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{B}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "0f7191ec-1143-5483-b44b-7ad31989968d",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "0f7191ec-1143-5483-b44b-7ad31989968d",
+            "name": "Profane Procession // Tomb of the Dusk Rose",
+            "text": "(Transforms from Profane Procession.)\n{T}: Add one mana of any color to your mana pool.\n{2}{W}{B}, {T}: Put a creature card exiled with this permanent onto the battlefield under your control.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "b578b9a0-f980-5d4f-b1a2-a597268e2456",
+            "name": "Protean Raider",
+            "text": "Raid \u2014 If you attacked with a creature this turn, you may have Protean Raider enter the battlefield as a copy of any creature on the battlefield.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "72f0e60a-b3b0-56ee-8c7c-a0f90ef569ae",
+            "name": "Raging Regisaur",
+            "text": "Whenever Raging Regisaur attacks, it deals 1 damage to target creature or player.",
+            "colours": [
+                "G",
+                "R"
+            ],
+            "colourIdentity": [
+                "G",
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cbba7335-c833-5313-b9dc-a2790d3c8fcb",
+            "name": "Relentless Raptor",
+            "text": "Vigilance\nRelentless Raptor attacks or blocks each combat if able.",
+            "colours": [
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "96ff7ee4-097f-58c6-80d8-a3dee32464c1",
+            "name": "Resplendent Griffin",
+            "text": "Flying\nAscend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nWhenever Resplendent Griffin attacks, if you have the city's blessing, put a +1/+1 counter on it.",
+            "colours": [
+                "U",
+                "W"
+            ],
+            "colourIdentity": [
+                "U",
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "44de3305-1657-5e19-b10b-7a4091287d42",
+            "name": "Siegehorn Ceratops",
+            "text": "Enrage \u2014 Whenever Siegehorn Ceratops is dealt damage, put two +1/+1 counters on it. (It must survive the damage to get the counters.)",
+            "colours": [
+                "G",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "81bb9071-b002-5cfa-b057-eac428e0f1fa",
+            "name": "Storm Fleet Sprinter",
+            "text": "Haste\nStorm Fleet Sprinter can't be blocked.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "334707ec-651b-5c1d-bf11-330cf58e3282",
+            "name": "Storm the Vault // Vault of Catlacan",
+            "text": "Whenever one or more creatures you control deal combat damage to a player, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"\nAt the beginning of your end step, if you control five or more artifacts, transform Storm the Vault.",
+            "colours": [
+                "R",
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "ae385080-8c4b-5dfd-9c1b-fda792310c20",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "ae385080-8c4b-5dfd-9c1b-fda792310c20",
+            "name": "Storm the Vault // Vault of Catlacan",
+            "text": "(Transforms from Storm the Vault.)\n{T}: Add one mana of any color to your mana pool.\n{T}: Add {U} to your mana pool for each artifact you control.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "ba3f6ea7-2699-552f-b11c-2041a03ce5d5",
+            "name": "Zacama, Primal Calamity",
+            "text": "Vigilance, reach, trample\nWhen Zacama, Primal Calamity enters the battlefield, if you cast it, untap all lands you control.\n{2}{R}: Zacama deals 3 damage to target creature.\n{2}{G}: Destroy target artifact or enchantment.\n{2}{W}: You gain 3 life.",
+            "colours": [
+                "G",
+                "R",
+                "W"
+            ],
+            "colourIdentity": [
+                "G",
+                "R",
+                "W"
+            ],
+            "manaValue": 9.0,
+            "manaCost": "{6}{R}{G}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c0cec6af-73e2-5677-a339-d778a13c4d70",
+            "name": "Awakened Amalgam",
+            "text": "Awakened Amalgam's power and toughness are each equal to the number of differently named lands you control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "84cabf87-ea4e-53e6-9f48-2bfe3d2f4216",
+            "name": "Azor's Gateway // Sanctum of the Sun",
+            "text": "{1}, {T}: Draw a card, then exile a card from your hand. If cards with five or more different converted mana costs are exiled with Azor's Gateway, you gain 5 life, untap Azor's Gateway, and transform it.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "d0b0fece-d4bd-5013-b718-df9d2db81d05",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "d0b0fece-d4bd-5013-b718-df9d2db81d05",
+            "name": "Azor's Gateway // Sanctum of the Sun",
+            "text": "(Transforms from Azor's Gateway.)\n{T}: Add X mana of any one color to your mana pool, where X is your life total.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "28dcfe92-70f7-559a-af25-9fd83d2e5ec0",
+            "name": "Captain's Hook",
+            "text": "Equipped creature gets +2/+0, has menace, and is a Pirate in addition to its other creature types.\nWhenever Captain's Hook becomes unattached from a permanent, destroy that permanent.\nEquip {1}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "507c36c2-9c37-58de-9ebf-445125b4f2df",
+            "name": "Gleaming Barrier",
+            "text": "Defender\nWhen Gleaming Barrier dies, create a colorless Treasure artifact token with \"{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.\"",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b9d63a33-71cc-5824-a614-b511480cf3c1",
+            "name": "Golden Guardian // Gold-Forge Garrison",
+            "text": "Defender\n{2}: Golden Guardian fights another target creature you control. When Golden Guardian dies this turn, return it to the battlefield transformed under your control.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "7cc06729-21e7-5cb0-822f-c88156a98eb4",
+            "isBack": false,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "7cc06729-21e7-5cb0-822f-c88156a98eb4",
+            "name": "Golden Guardian // Gold-Forge Garrison",
+            "text": "(Transforms from Golden Guardian.)\n{T}: Add two mana of any one color to your mana pool.\n{4}, {T}: Create a 4/4 colorless Golem artifact creature token.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": true,
+            "layout": "transform",
+            "isToken": false
+        },
+        {
+            "id": "ad1528f9-a4b4-58ea-955d-0f4cad3f3398",
+            "name": "The Immortal Sun",
+            "text": "Players can't activate planeswalkers' loyalty abilities.\nAt the beginning of your draw step, draw an additional card.\nSpells you cast cost {1} less to cast.\nCreatures you control get +1/+1.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 6.0,
+            "manaCost": "{6}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd962248-4199-565b-8dce-9a4b2b011348",
+            "name": "Orazca Relic",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\n{T}: Add {C} to your mana pool.\n{T}, Sacrifice Orazca Relic: You gain 3 life and draw a card. Activate this ability only if you have the city's blessing.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6906c333-1051-5710-8aee-f8b97f544938",
+            "name": "Silent Gravestone",
+            "text": "Cards in graveyards can't be the targets of spells or abilities.\n{4}, {T}: Exile Silent Gravestone and all cards from all graveyards. Draw a card.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5b67b730-8892-529d-98d2-a2e059b8825e",
+            "name": "Strider Harness",
+            "text": "Equipped creature gets +1/+1 and has haste.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2ce650b2-8b3a-59aa-abe1-7205ea7fba29",
+            "name": "Traveler's Amulet",
+            "text": "{1}, Sacrifice Traveler's Amulet: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 1.0,
+            "manaCost": "{1}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0b10bbf7-5ce1-5913-838c-67660bd87a0c",
+            "name": "Arch of Orazca",
+            "text": "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\n{T}: Add {C} to your mana pool.\n{5}, {T}: Draw a card. Activate this ability only if you have the city's blessing.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c13c66ee-1db9-5674-876b-11cc0fdb47ee",
+            "name": "Evolving Wilds",
+            "text": "{T}, Sacrifice Evolving Wilds: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9719235d-3592-549d-a96b-30dddba8acf8",
+            "name": "Forsaken Sanctuary",
+            "text": "Forsaken Sanctuary enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b06c36fe-a25b-593c-b776-f2b74ff9eb49",
+            "name": "Foul Orchard",
+            "text": "Foul Orchard enters the battlefield tapped.\n{T}: Add {B} or {G} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28f8f87d-ecb7-5bee-b444-6bb02d3fcc3b",
+            "name": "Highland Lake",
+            "text": "Highland Lake enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2411512a-1770-5702-91b3-ed1ee0885a72",
+            "name": "Stone Quarry",
+            "text": "Stone Quarry enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5cf45853-425e-5511-970e-9cdffe2d57b8",
+            "name": "Woodland Stream",
+            "text": "Woodland Stream enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "42d0ea18-a81d-591a-ac58-7923d0beb500",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a446efdc-27fc-5e7a-9c68-d8326396586e",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a6f143e5-b88a-5f3e-9259-68fc97ea0a5c",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fcc6374e-1f2e-5363-a0d9-797bb037bb08",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5a894232-5b7b-5d7c-a803-5cadd21c52e7",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aefe8769-bc31-51e4-89e7-dece664724f1",
+            "name": "Vraska, Scheming Gorgon",
+            "text": "+2: Creatures you control get +1/+0 until end of turn.\n\u22123: Destroy target creature.\n\u221210: Until end of turn, creatures you control gain deathtouch and \"Whenever this creature deals damage to an opponent, that player loses the game.\"",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7e5bef08-30ce-55a6-8a13-853f0309caf7",
+            "name": "Vampire Champion",
+            "text": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fad9f64b-d800-5982-9a31-87c2c80c6aae",
+            "name": "Vraska's Conquistador",
+            "text": "Whenever Vraska's Conquistador attacks or blocks, if you control a Vraska planeswalker, target opponent loses 2 life and you gain 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "194d8db7-67aa-5bc3-9695-fde4701a6cee",
+            "name": "Vraska's Scorn",
+            "text": "Target opponent loses 4 life. You may search your library and/or graveyard for a card named Vraska, Scheming Gorgon, reveal it, and put it into your hand. If you search your library this way, shuffle it.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8c5ddefb-ae09-50f0-883f-9a9ea7962fc7",
+            "name": "Angrath, Minotaur Pirate",
+            "text": "+2: Angrath, Minotaur Pirate deals 1 damage to target opponent and each creature that player controls.\n\u22123: Return target Pirate card from your graveyard to the battlefield.\n\u221211: Destroy all creatures target opponent controls. Angrath, Minotaur Pirate deals damage to that player equal to their total power.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{R}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e3daa823-204d-5ac3-84c3-70f7ea7bdc74",
+            "name": "Angrath's Ambusher",
+            "text": "Angrath's Ambusher gets +2/+0 as long as you control an Angrath planeswalker.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3b09bc67-eb02-5be2-b9bc-20000072995d",
+            "name": "Swab Goblin",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a6b382c7-4539-57c8-85df-0559c052d9d2",
+            "name": "Angrath's Fury",
+            "text": "Destroy target creature. Angrath's Fury deals 3 damage to target player. You may search your library and/or graveyard for a card named Angrath, Minotaur Pirate, reveal it, and put it into your hand. If you search your library this way, shuffle it.",
+            "colours": [
+                "B",
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "34f9410d-1167-5e7a-ad3b-3151909383cf",
+            "name": "Cinder Barrens",
+            "text": "Cinder Barrens enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "RIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ffe14eda-bdfb-5982-9749-71ceb4fad071",
+            "name": "Elemental",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "1a5ed6ee-d893-5407-9e68-78b5ccb46175",
+            "name": "Rivals of Ixalan Checklist",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Card"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "199f5634-c706-5103-84c8-9d3100ee5edc",
+            "name": "Elemental",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "001779ab-ab90-512e-9e9f-cd5bf1a39d4d",
+            "name": "Saproling",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "dbcdc2ad-8a30-56df-840b-e8db8edf53cc",
+            "name": "Golem",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "69216e15-1df0-5748-a037-172be13eeb25",
+            "name": "Huatli, Radiant Champion Emblem",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Emblem"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        },
+        {
+            "id": "ef50f1ce-9ec6-5f7c-a5b5-3bdc1097e5c6",
+            "name": "City's Blessing",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Card"
+            ],
+            "rarity": "common",
+            "set": "TRIX",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true
+        }
+    ]
+}
