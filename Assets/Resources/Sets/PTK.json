@@ -1,0 +1,3936 @@
+{
+    "setCode": "PTK",
+    "setName": "Portal Three Kingdoms",
+    "cards": [
+        {
+            "id": "c70cc38d-339d-5315-98c7-5353394d1033",
+            "name": "Alert Shu Infantry",
+            "text": "Attacking doesn't cause Alert Shu Infantry to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "781a8d6f-6d04-5cb5-9f84-6124db814269",
+            "name": "Eightfold Maze",
+            "text": "Play Eightfold Maze only after you're attacked, before you declare blockers.\nDestroy any one attacking creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6a1c3727-7ffb-5c3f-aae7-40f6adb62056",
+            "name": "Empty City Ruse",
+            "text": "Your opponent can't attack on his or her next turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2f4ea5a2-3dee-5b33-97c1-d3cea9422a44",
+            "name": "False Defeat",
+            "text": "Take any one creature card from your graveyard and put that creature into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2d4d4812-eca7-51f2-a83c-df4078a0bd21",
+            "name": "Flanking Troops",
+            "text": "When Flanking Troops attacks, you may tap any one creature. (Tapped creatures can't block.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "17e974ff-129e-5d7f-a901-0f2ac91c90b1",
+            "name": "Guan Yu, Sainted Warrior",
+            "text": "Horsemanship\nWhen Guan Yu is put into your graveyard from play, you may shuffle Guan Yu into your library.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "519cf3ab-5b48-59bb-a6e2-23c96a85eb12",
+            "name": "Guan Yu's 1,000-Li March",
+            "text": "Destroy all tapped creatures. (This includes your tapped creatures.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b8c02fd0-84d8-5229-9bf5-f07233f9d67e",
+            "name": "Huang Zhong, Shu General",
+            "text": "Huang Zhong can't be blocked by more than one creature each turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5be0c76f-f539-5dfa-a024-c3f171e9e15d",
+            "name": "Kongming, \"Sleeping Dragon\"",
+            "text": "All your other creatures get +1/+1 as long as Kongming is in play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "aa0f8d33-5a92-599e-8dee-6008afe83d59",
+            "name": "Kongming's Contraptions",
+            "text": "After you're attacked, before you declare blockers, you may tap Kongming's Contraptions to have it deal 2 damage to any one attacking creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ce8229dd-d7f2-54ec-8744-2c370001ff90",
+            "name": "Liu Bei, Lord of Shu",
+            "text": "Horsemanship\nAs long as you have Guan Yu and/or Zhang Fei in play, Liu Bei gets +2/+2.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6169dc5-4b7a-5a05-9a50-ce77ea7c15c2",
+            "name": "Loyal Retainers",
+            "text": "On your turn, before you attack you may put Loyal Retainers in your graveyard to take any one Legend card from your graveyard and put that creature into play.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7383a382-84fc-548f-8587-3e4fc4b77b8a",
+            "name": "Misfortune's Gain",
+            "text": "Destroy any one creature. That creature's owner gains 4 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5217a4fc-541a-559e-93ae-72c0f11295de",
+            "name": "Pang Tong, \"Young Phoenix\"",
+            "text": "On your turn, before you attack, you may tap Pang Tong to give any one creature +0/+2 until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0f56b784-08cf-53e4-8ed2-93f0a3ce37d2",
+            "name": "Peach Garden Oath",
+            "text": "For each creature you have in play, you gain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d6e1beee-f942-51ce-9144-86a6fe14123a",
+            "name": "Rally the Troops",
+            "text": "Play Rally the Troops only after you're attacked, before you declare blockers.\nUntap all your creatures.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd003cc1-79ea-5cf4-86cb-b22a76dee0b7",
+            "name": "Ravages of War",
+            "text": "Destroy all lands. (This includes your lands.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0c3ac77d-340d-5cf7-bab9-11d36642f8ed",
+            "name": "Riding Red Hare",
+            "text": "Any one creature gets +3/+3 and gains horsemanship until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "dcf287f6-078a-5e9d-8d17-1d25c2ae29db",
+            "name": "Shu Cavalry",
+            "text": "Horsemanship",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28e5e88c-ed16-5e37-9c1a-dd70ab4bebc9",
+            "name": "Shu Defender",
+            "text": "When Shu Defender blocks, it gets +0/+2 until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a428f582-0b2d-5577-ba2f-5e652c9217aa",
+            "name": "Shu Elite Companions",
+            "text": "Horsemanship",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b688038f-6a89-503a-a695-b1493f6ce25b",
+            "name": "Shu Elite Infantry",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c43d2a8f-6f88-5c71-b593-8d481d74071e",
+            "name": "Shu Farmer",
+            "text": "On your turn, before you attack, you may tap Shu Farmer to gain 1 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b41f4194-a321-5445-9c1f-54c4a229cedc",
+            "name": "Shu Foot Soldiers",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3f59565-b4e5-5d80-907c-5020bd87ca33",
+            "name": "Shu General",
+            "text": "Horsemanship\nAttacking doesn't cause Shu General to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8496a9f5-f7a7-594d-8d2b-efec5cdd642d",
+            "name": "Shu Grain Caravan",
+            "text": "When Shu Grain Caravan comes into play, you gain 2 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "84c2e875-0343-5be0-8c40-06c3d928ef8d",
+            "name": "Shu Soldier-Farmers",
+            "text": "When Shu Soldier-Farmers comes into play, you gain 4 life.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "429d8f59-4f0e-52f6-8316-6c029f9aaa5d",
+            "name": "Vengeance",
+            "text": "Destroy any one tapped creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "030d9c02-073b-52bb-9f8c-f2d3038f5e03",
+            "name": "Virtuous Charge",
+            "text": "All your creatures get +1/+1 until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5bdf7276-6c45-5787-87de-d06b34f59a00",
+            "name": "Volunteer Militia",
+            "text": "",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b3a5d52-3cf8-5ef6-8b6d-ea629518268b",
+            "name": "Warrior's Stand",
+            "text": "Play Warrior's Stand only after you're attacked, before you declare blockers.\nAll your creatures get +2/+2 until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c1449798-f08d-5d27-a073-af4ec827c855",
+            "name": "Zhang Fei, Fierce Warrior",
+            "text": "Horsemanship\nAttacking doesn't cause Zhang Fei to tap.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "91946740-2846-5b8b-b8b7-f112bad19290",
+            "name": "Zhao Zilong, Tiger General",
+            "text": "Horsemanship\nWhen Zhao Zilong blocks, it gets +1/+1 until the end of the turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "24fbd51f-0f3c-53ea-aac9-6ac502c7baff",
+            "name": "Balance of Power",
+            "text": "If you have fewer cards in your hand than your opponent does, you draw until you have the same number. (When you play Balance of Power it doesn't count as in your hand.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3c6ac177-8efe-5efb-92c3-1ce1b25e215b",
+            "name": "Borrowing 100,000 Arrows",
+            "text": "For each tapped creature your opponent has in play, you draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "30314223-eb68-5db4-9a37-48850e83a464",
+            "name": "Brilliant Plan",
+            "text": "Draw three cards.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5e7682c0-42e8-5749-ba08-5046715825ca",
+            "name": "Broken Dam",
+            "text": "Tap any one or two creatures without horsemanship. (Tapped creatures can't block.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79af494f-06c2-520c-97cd-0e54c10ed3d2",
+            "name": "Capture of Jingzhou",
+            "text": "You take another turn after this one.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85ed4573-25f5-50bb-9c06-5c5c0a390a08",
+            "name": "Champion's Victory",
+            "text": "Play Champion's Victory only after you're attacked, before you declare blockers.\nReturn any one attacking creature to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c5f4d7b-5834-5eba-b171-b1db2a5735a6",
+            "name": "Council of Advisors",
+            "text": "When Council of Advisors comes into play, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "85056678-6c67-5d26-b177-e74f2fec75a2",
+            "name": "Counterintelligence",
+            "text": "Return any one or two creatures to their owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fd6b2bbc-dace-52d8-98fe-c8b4b984245f",
+            "name": "Exhaustion",
+            "text": "At the beginning of your opponent's next turn, he or she skips untapping creatures and lands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "df74fa32-b524-52a4-8d5b-b07846af46c3",
+            "name": "Extinguish",
+            "text": "Play Extinguish only in response to another player playing a sorcery.\nThat sorcery has no effect, and that player puts it into his or her graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "56cc2b80-f49e-521b-ad50-270d8a6291fa",
+            "name": "Forced Retreat",
+            "text": "Return any one creature from play to the top of its owner's library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6bded0a1-5a83-5f68-b252-681e5de7ce1e",
+            "name": "Lady Sun",
+            "text": "On your turn, before you attack, you may tap Lady Sun to return it and any one other creature to their owners' hands.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c12e8ed9-4118-5e5e-b499-5ee8e94de24a",
+            "name": "Lu Meng, Wu General",
+            "text": "Horsemanship",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cefa3821-0268-5936-a558-cf4b2ff943b6",
+            "name": "Lu Su, Wu Advisor",
+            "text": "On your turn, before you attack, you may tap Lu Su to draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b5d585f3-32a2-5703-bebd-440e3be91780",
+            "name": "Lu Xun, Scholar General",
+            "text": "Horsemanship\nWhen Lu Xun successfully damages your opponent, you may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c5ba9f9e-2725-533e-9100-4b52b4c448da",
+            "name": "Mystic Denial",
+            "text": "Play Mystic Denial only in response to another player playing a creature or a sorcery. That card has no effect, and that player puts it into his or her graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb5e99c0-6bee-5b59-a8d2-66ccc09668f5",
+            "name": "Preemptive Strike",
+            "text": "Play Preemptive Strike only in response to another player playing a creature card.\nThat creature has no effect, and that player puts it into his or her graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cd5009f9-87c4-559c-a8b5-571794780ac4",
+            "name": "Red Cliffs Armada",
+            "text": "Red Cliffs Armada can't attack unless the defending player has an island in play.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f029413b-2d2a-5e6b-a7c9-95643d1c7683",
+            "name": "Sage's Knowledge",
+            "text": "Return any one sorcery card from your graveyard to your hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "938d621f-db7a-5e1c-9b48-f69c4e9aeb04",
+            "name": "Strategic Planning",
+            "text": "Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "75a802e3-7538-5e65-bd8a-4a09692bdb0a",
+            "name": "Straw Soldiers",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c3f11ece-154b-5598-a446-d03409b073df",
+            "name": "Sun Ce, Young Conquerer",
+            "text": "Horsemanship\nWhen Sun Ce comes into play, you may return any one creature from play to its owner's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a71cb10d-6d11-58b7-934f-448156036f89",
+            "name": "Sun Quan, Lord of Wu",
+            "text": "All your creatures gain horsemanship as long as Sun Quan is in play. (This includes Sun Quan.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f0eb8d93-0391-513e-83ad-4f3ee4cf5909",
+            "name": "Wu Admiral",
+            "text": "As long as your opponent has an island in play, Wu Admiral gets +1/+1.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6a9280b6-2956-5642-8e81-c02879ce5272",
+            "name": "Wu Elite Cavalry",
+            "text": "Horsemanship",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "484abf49-9192-5a71-b9c0-d0ba12157110",
+            "name": "Wu Infantry",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2a1a09e2-bf18-553f-879f-2afe33f645e5",
+            "name": "Wu Light Cavalry",
+            "text": "Horsemanship",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "93ed7a23-82f7-5eba-98a2-fc044f36930e",
+            "name": "Wu Longbowman",
+            "text": "On your turn, before you attack, you may tap Wu Longbowman to have it deal 1 damage to any one creature or player.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d5b3293d-cd53-57d6-82a7-a4b6ce115ba0",
+            "name": "Wu Scout",
+            "text": "Horsemanship\nWhen Wu Scout comes into play, look at your opponent's hand.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8dd467ed-b1e5-57c6-8e52-540726b1bf3a",
+            "name": "Wu Spy",
+            "text": "When Wu Spy comes into play, look at the top two cards of any player's library. Put one of them on the top of that player's library and the other in his or her graveyard.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "01972011-ea46-544c-a6d4-33877acb697e",
+            "name": "Wu Warship",
+            "text": "Wu Warship can't attack unless the defending player has an island in play.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8535386f-520e-5c5d-b4b3-8007f2b34e09",
+            "name": "Zhou Yu, Chief Commander",
+            "text": "Zhou Yu can't attack unless your opponent has an island in play.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "803a0851-06da-57ac-98fb-dde59f138a76",
+            "name": "Zhuge Jin, Wu Strategist",
+            "text": "On your turn, before you attack, you may tap Zhuge Jin to make any one creature unblockable this turn.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "28549153-dc56-5d84-9ea0-103c356f9561",
+            "name": "Ambition's Cost",
+            "text": "Draw three cards. You lose 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0176a59d-b4ba-5d13-9edb-24e95f5283d1",
+            "name": "Cao Cao, Lord of Wei",
+            "text": "On your turn, before you attack, you may tap Cao Cao to force your opponent to choose and discard two cards from his or her hand. (If your opponent has only one card, he or she discards it.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0bafd599-9c98-5457-87f0-b55bd00163f0",
+            "name": "Cao Ren, Wei Commander",
+            "text": "Horsemanship\nWhen Cao Ren comes into play, you lose 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "fa9e4f50-37ba-524d-b9fd-696689a9b112",
+            "name": "Coercion",
+            "text": "Look at your opponent's hand and choose a card from it. Your opponent discards that card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "880cf404-f7ca-5661-9f4d-8fcba7abc28c",
+            "name": "Corrupt Court Official",
+            "text": "When Corrupt Official comes into play, your opponent chooses and discards a card from his or her hand. (Ignore this effect if your opponent doesn't have any cards.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "76c93178-d55a-5f0e-b25c-e95361f0eb3e",
+            "name": "Cunning Advisor",
+            "text": "On your turn, before you attack, you may tap Cunning Advisor to force your opponent to choose and discard a card from his or her hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d4e58f6-faf8-55e3-a805-090fc9188dd1",
+            "name": "Deception",
+            "text": "Your opponent chooses and discards two cards from his or her hand. (If your opponent has only one card, he or she discards it.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d0affbb9-9c42-519a-8c5c-538f994bf260",
+            "name": "Desperate Charge",
+            "text": "All your creatures get +2/+0 until the end of the turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1195f32a-a1c4-594e-9154-2aa3d8fb56fd",
+            "name": "Famine",
+            "text": "Famine deals 3 damage to each creature and player. (This includes your creatures and you.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e351f4d2-fe0a-5e34-9746-771e1f4388cd",
+            "name": "Ghostly Visit",
+            "text": "Destroy any one creature that isn't black.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a96fdd10-7aee-5ea3-ba87-ba99be1b549b",
+            "name": "Imperial Edict",
+            "text": "Your opponent chooses one of his or her creatures. Destroy that creature.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79d1f5fb-ee62-5bc8-b6ea-52400714263c",
+            "name": "Imperial Seal",
+            "text": "Search your library for any one card. Shuffle your library and put that card on top of it. You lose 2 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "02588e8d-8e3a-5ace-ba23-a51b6d09ad31",
+            "name": "Overwhelming Forces",
+            "text": "Destroy all your opponent's creatures. you draw a card for each creature destroyed in this way.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d87a62c6-fb48-502c-9101-ff1a624e6bad",
+            "name": "Poison Arrow",
+            "text": "Destroy any one creature that isn't black. You gain 3 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "33ebc68a-b941-52f7-ba79-85288272551a",
+            "name": "Return to Battle",
+            "text": "Return any one creature card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f8116aa3-0d13-5473-8127-37995143d5d6",
+            "name": "Sima Yi, Wei Field Marshal",
+            "text": "Sima Yi has power equal to the number of swamp cards you have in play. (This includes both tapped and untapped swamp cards.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b7f5a3c1-d008-5ddc-8c79-4e4dbe780d4b",
+            "name": "Stolen Grain",
+            "text": "Stolen Grain deals 5 damage to your opponent. You gain 5 life.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ea114b43-7070-5252-a2c3-ef9e93503d23",
+            "name": "Stone Catapult",
+            "text": "On your turn, before you attack, you may tap Stone Catapult to destroy any one tapped creature that isn't black.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3209612e-055d-50fc-8706-30efec9ac184",
+            "name": "Wei Ambush Force",
+            "text": "When Wei Ambush Force attacks, it gets +2/+0 until the end of the turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "547b3eea-b531-55a9-a3bc-db3300adaf76",
+            "name": "Wei Assassins",
+            "text": "When Wei Assassins comes into play, your opponent chooses one of his or her creatures. Destroy that creature. (Ignore this effect if your opponent has no creatures in play.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "52708cdf-2e84-5f41-9ae7-886998333a22",
+            "name": "Wei Elite Companions",
+            "text": "Horsemanship",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "64568a6f-0708-5b54-9f0a-8cfc6745e8d2",
+            "name": "Wei Infantry",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "58c7ceaa-2c45-5a8b-9e09-74d1a4dbcfe2",
+            "name": "Wei Night Raiders",
+            "text": "Horsemanship\nWhen Wei Night Raiders successfully damages your opponent, he or she chooses and discards a card from his or her hand. (Ignore this effect if your opponent doesn't have any cards.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bdaba705-26fa-5428-a14f-1686aebc5744",
+            "name": "Wei Scout",
+            "text": "Horsemanship",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8cf06c52-5132-5102-9954-5e78c64c8111",
+            "name": "Wei Strike Force",
+            "text": "Horsemanship",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3163a015-f521-563d-8d9d-506df92b41de",
+            "name": "Xiahou Dun, the One-Eyed",
+            "text": "Horsemanship\nOn your turn, before you attack, you may put Xiahou Dun into your graveyard to return a black card from your graveyard to your hand.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "af810a66-5ff3-5615-866b-d2ea429a5232",
+            "name": "Xun Yu, Wei Advisor",
+            "text": "On your turn, before you attack, you may tap Xun Yu to give one of your creatures +2/+0 until the end of the turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cddb37c7-0a48-5b9d-94d1-321b6bd13be0",
+            "name": "Young Wei Recruits",
+            "text": "Young Wei Recruits can't block.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "437ba741-5494-5077-8c6a-95b9395caf50",
+            "name": "Zhang He, Wei General",
+            "text": "Horsemanship\nWhen Zhang He attacks, all your other creatures get +1/+0 until the end of the turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "77dfcd44-6ebb-5312-8818-d9b1cf3efd55",
+            "name": "Zhang Liao, Hero of Hefei",
+            "text": "When Zhang Liao successfully damages your opponent, he or she chooses and discard a card from his or her hand. (Ignore this effect if your opponent doesn't have any cards.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e7567865-e5fb-5256-99fd-327a1e005ce4",
+            "name": "Zodiac Pig",
+            "text": "Swampwalk (If defending player has a swamp in play, Zodiac Pig can't be blocked.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a83be79b-0a90-570b-bff4-46b95d38fe53",
+            "name": "Zodiac Rat",
+            "text": "Swampwalk (If defending player has a swamp in play, Zodiac Rat can't be blocked.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "276e2354-304b-523f-9a6d-bc67c6bd0c27",
+            "name": "Zodiac Snake",
+            "text": "Swampwalk (If defending player has a swamp in play, Zodiac Snake can't be blocked.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "33758738-ca23-5aa2-9c07-a48fd63939d1",
+            "name": "Barbarian General",
+            "text": "Horsemanship",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "719b88f2-fdc1-5ca2-aa15-e3b436a30776",
+            "name": "Barbarian Horde",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "38b02df8-69bf-5742-b881-72afeffed172",
+            "name": "Blaze",
+            "text": "Blaze deals X damage to any one creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "90cb37b6-c1d8-5903-86a5-c4e4de40fc7b",
+            "name": "Burning Fields",
+            "text": "Burning Fields deals 5 damage to your opponent.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "68501ed1-94c5-5cb0-ad14-36356707001c",
+            "name": "Burning of Xinye",
+            "text": "You destroy four of your lands and your opponent destroys four of his or her lands. Then Burning of Xinye deals 4 damage to each creature. (This includes your creatures.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "63b912d9-30e0-5860-9db2-90592396a13d",
+            "name": "Control of the Court",
+            "text": "Draw four cards and put them into your hand. Then discard three cards at random from your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e1a70b79-2441-55ce-bdd5-ad9a93f7e587",
+            "name": "Corrupt Eunuchs",
+            "text": "When Corrupt Eunuchs comes into play, it deals 2 damage to any one creature. (If you're the only one with creatures, deal the damage to one of them.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8b350151-a93d-5c9b-a807-2931edb120fe",
+            "name": "Desert Sandstorm",
+            "text": "Desert Sandstorm deals 1 damage to each creature. (This includes your creatures.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d9fb3856-addd-5ca1-9a27-9c6a09426d10",
+            "name": "Diaochan, Artful Beauty",
+            "text": "On your turn, before you attack, you may tap Diaochan to destroy any one creature. Then, your opponent destroys any one creature of his or her choice.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8ed16cc7-6668-5da9-9154-f4b60773ae97",
+            "name": "Dong Zhou, the Tyrant",
+            "text": "When Dong Zhou comes into play, choose one of your opponent's creatures. That creature deals damage to him or her equal to its power. (Ignore this effect if your opponent doesn't have any creatures in play.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e6bfaaa2-dc10-5496-a8fe-e4d117e112f5",
+            "name": "Eunuchs' Intrigues",
+            "text": "Your opponent chooses one of his or her creatures. Only that creature can block this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c8efc191-84ff-55dd-a07e-675461207ca3",
+            "name": "Fire Ambush",
+            "text": "Fire Ambush deals 3 damage to any one creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "03338dd9-fffb-51e5-8a32-9274dd7673e3",
+            "name": "Fire Bowman",
+            "text": "On your turn, before you attack, you may destroy Fire Bowman to have it deal 1 damage to any one creature or player.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8e71a983-531a-5b54-b697-47ec0aabe503",
+            "name": "Imperial Recruiter",
+            "text": "When Imperial Recruiter comes into play, search your library for a creature card with power no greater than 2, reveal that card, and put it into your hand. Shuffle your library afterward.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f56b0bda-3f05-55bc-b6ae-a1bc3ad36437",
+            "name": "Independent Troops",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "06b30f55-2632-5a19-a87d-1d6f501030f0",
+            "name": "Lu Bu, Master-at-Arms",
+            "text": "Horsemanship\nLu Bu is unaffected by summoning sickness.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{5}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "32cb68b3-fa51-5838-be53-56cbb2bec115",
+            "name": "Ma Chao, Western Warrior",
+            "text": "Horsemanship\nWhenever Ma Chao attacks and no other creatures do, Ma Chao can't be blocked.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3df53f2c-a86d-52a7-961e-116518c8d8e2",
+            "name": "Mountain Bandit",
+            "text": "Mountain Bandit is unaffected by summoning sickness.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "15cc12b2-3eda-5fd9-8d10-2e14d2485185",
+            "name": "Ravaging Horde",
+            "text": "When Ravaging Horde comes into play, destroy any one land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7d09ec3e-7d39-5038-8f26-7f43d1cea638",
+            "name": "Relentless Assault",
+            "text": "Untap all creatures that attacked this turn. You may declare an additional attack this turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2bbec8b2-0de8-52e9-a243-69920f869c9b",
+            "name": "Renegade Troops",
+            "text": "Renegade Troops is unaffected by summoning sickness.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9c5bdad2-85d7-5557-b08a-190c6557af14",
+            "name": "Rockslide Ambush",
+            "text": "Rockslide Ambush deals to any one creature damage equal to the number of mountain cards you have in play. (This includes both tapped and untapped mountain cards.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3791cca6-ed91-5dac-a6f9-acb56e61b4bb",
+            "name": "Rolling Earthquake",
+            "text": "Rolling Earthquake deals X damage to each player and each creature without horsemanship. (This includes you and your creatures without horsemanship.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{X}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bad3fdc3-326f-5a01-90b4-6357d6a464a0",
+            "name": "Stone Rain",
+            "text": "Destroy any one land.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cce8b731-6dd3-5811-9a4f-4ed41670047f",
+            "name": "Warrior's Oath",
+            "text": "Take another turn after this one. At the end of that turn, you lose the game. (You don't lose if you've already won.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{R}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b263322b-b6fb-5976-ac4a-7592bf95f2c7",
+            "name": "Yellow Scarves Cavalry",
+            "text": "Horsemanship\nYellow Scarves Cavalry can't block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bddd1c3e-e3e4-5d4c-829b-88fb10b8025f",
+            "name": "Yellow Scarves General",
+            "text": "Horsemanship\nYellow Scarves General can't block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "54438a3b-2052-5c3b-b566-39d1192bd48c",
+            "name": "Yellow Scarves Troops",
+            "text": "Yellow Scarves Troops can't block.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "89c90fc6-b343-5dc2-8036-38a58e633dfe",
+            "name": "Yuan Shao, the Indecisive",
+            "text": "Horsemanship\nEach of your creatures can't be blocked by more than one creature each turn as long as Yuan Shao is in play.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d0b7faaa-9940-5af2-a71e-e63acf3248f7",
+            "name": "Yuan Shao's Infantry",
+            "text": "Whenever Yuan Shao's Infantry attacks and no other creatures do, Yuan Shao's Infantry can't be blocked.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3879e971-4e75-5664-a431-b244dcaa2dfc",
+            "name": "Zodiac Dog",
+            "text": "Mountainwalk (If defending player has a mountain in play, Zodiac Dog can't be blocked.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "45515ae3-e32e-5f20-ad76-573125398107",
+            "name": "Zodiac Dragon",
+            "text": "If Zodiac Dragon is put into your graveyard, you may return Zodiac Dragon to your hand.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 9.0,
+            "manaCost": "{7}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f6cfe841-abc3-5eee-a4ab-ffe84b201689",
+            "name": "Zodiac Goat",
+            "text": "Mountainwalk (If defending player has a mountain in play, Zodiac Goat can't be blocked.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0f0a4ff2-f9fd-54fb-8af3-cb9fc9dcca7f",
+            "name": "Borrowing the East Wind",
+            "text": "Borrowing the East Wind deals X damage to each player and each creature with horsemanship. (This includes you and your creatures with horsemanship.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{X}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3bb416e9-79e3-5bd4-9a5a-76f96dae5c31",
+            "name": "False Mourning",
+            "text": "Take any one card from your graveyard and put that card on the top of your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "15a8f0ec-7112-5009-bf9f-163a736d2ba5",
+            "name": "Forest Bear",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3b4639d6-1c9a-5648-8f7c-f53624a7886b",
+            "name": "Heavy Fog",
+            "text": "Play Heavy Fog only after you're attacked, before you declare blockers.\nThis turn, all damage dealt to you by attacking creatures is reduced to 0.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3f1cf845-98f4-5abf-a517-ca8528cfe9ed",
+            "name": "Hua Tuo, Honored Physician",
+            "text": "On your turn, before you attack, you may tap Hua Tuo to put any one creature card from your graveyard on the top of your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "13d51e3f-b660-53b8-8184-c0673514be6f",
+            "name": "Hunting Cheetah",
+            "text": "When Hunting Cheetah successfully damages your opponent, you may search your library for a forest card, reveal that card, and put it into your hand. Shuffle your library afterward.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "eb3ae076-241e-52e6-9ef5-a186633a08e1",
+            "name": "Lady Zhurong, Warrior Queen",
+            "text": "Horsemanship",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2fbda095-87a1-5ee4-a87b-3a9c3d16d465",
+            "name": "Lone Wolf",
+            "text": "When Lone Wolf attacks and is blocked, you may have it deal its damage to the defending player instead of to the creatures blocking it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "35808f6c-d5ec-532a-a7c6-89736d1517a3",
+            "name": "Marshaling the Troops",
+            "text": "Tap any number of your creatures. You gain 4 life for each creature tapped this way. (Tapped creatures can't block.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1c2008ae-6f0a-5396-9eee-3b4378192128",
+            "name": "Meng Huo, Barbarian King",
+            "text": "All your other green creatures get +1/+1 as long as Meng Huo is in play.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "343fad84-43a5-51d0-88be-efe149f4d2eb",
+            "name": "Meng Huo's Horde",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ed4e9a4a-3e45-5e66-9f09-8ea39f8de36b",
+            "name": "Riding the Dilu Horse",
+            "text": "Any one creature gets +2/+2 and gains horsemanship.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1f37cc04-01db-57aa-96ff-1728f9207f19",
+            "name": "Slashing Tiger",
+            "text": "When Slashing Tiger attacks and is blocked, it gets +2/+2 until the end of the turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "5682cb75-ef16-5a53-bb7b-b36843ebfb0f",
+            "name": "Southern Elephant",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11eee547-45f2-55d8-a7d3-7227e3ca0440",
+            "name": "Spoils of Victory",
+            "text": "Search your library for a plains, island, swamp, mountain, or forest card and put that land into play. Shuffle your library afterward.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8830dfe3-371b-5763-ab14-cbedab2b4735",
+            "name": "Spring of Eternal Peace",
+            "text": "You gain 8 life.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "ae04be01-827e-5ed1-86eb-af0c3bbbd464",
+            "name": "Stalking Tiger",
+            "text": "Stalking Tiger can't be blocked by more than one creature each turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "d982995b-6daa-5758-a89f-eeb615c8112f",
+            "name": "Taoist Hermit",
+            "text": "Whenever your opponent chooses a creature in play, he or she can't choose Taoist Hermit.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "a5f9db41-3fd4-5cce-aba0-603e7958f642",
+            "name": "Taoist Mystic",
+            "text": "Taoist Mystic can't be blocked by creatures with horsemanship.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "db08ba19-fae8-59ba-95f1-abcbcee328fe",
+            "name": "Taunting Challenge",
+            "text": "Choose any one creature. This turn, all creatures able to block it do so.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cec6666d-6ebf-5b90-9e89-bfad2388de08",
+            "name": "Three Visits",
+            "text": "Search your library for a forest card and put that forest into play. Shuffle your library afterward.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e42b2dd5-284d-566c-bb64-75ae7c11a90a",
+            "name": "Trained Cheetah",
+            "text": "When Trained Cheetah attacks and is blocked, it gets +1/+1 until the end of the turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "3d8259ff-3ed9-5daa-885a-5f1656e7328f",
+            "name": "Trained Jackal",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1e08d1c4-d4b6-5d44-8e93-69dd7ec565ae",
+            "name": "Trip Wire",
+            "text": "Destroy any one creature with horsemanship.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c2daffe0-8be9-5e88-9011-8c2be34f0a56",
+            "name": "Wielding the Green Dragon",
+            "text": "Any one creature gets +4/+4 until the end of the turn.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "20a5de2a-5f50-54cd-b8ac-cab2bdb17309",
+            "name": "Wolf Pack",
+            "text": "When Wolf Pack attacks and is blocked, you may have it deal its damage to the defending player instead of to the creatures blocking it.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 8.0,
+            "manaCost": "{6}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "4b2f29a9-172a-5433-ad32-034c963f46fe",
+            "name": "Zodiac Horse",
+            "text": "Islandwalk (If defending player has an island in play, Zodiac Horse can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "9a1828e6-e633-5b65-bbe0-fdb05e0de545",
+            "name": "Zodiac Monkey",
+            "text": "Forestwalk (If defending player has a forest in play, Zodaic Monkey can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "6ddca5f3-8985-52c4-b225-63830103161c",
+            "name": "Zodiac Ox",
+            "text": "Swampwalk (If defending player has a swamp in play, Zodiac Ox can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e6febf2d-f151-5652-9007-f8eb598e89a2",
+            "name": "Zodiac Rabbit",
+            "text": "Forestwalk (If defending player has a forest in play, Zodiac Hare can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "bfab250a-ca54-51c4-b298-9cc15b529109",
+            "name": "Zodiac Rooster",
+            "text": "Plainswalk (If defending player has a plain in play, Zodiac Rooster can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "e7451974-fc76-5228-86d0-59b6d78d80c7",
+            "name": "Zodiac Tiger",
+            "text": "Forestwalk (If defending player has a forest in play, Zodiac Tiger can't be blocked.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cc18dc70-3fce-54cf-9f7d-303e1ff3121c",
+            "name": "Zuo Ci, the Mocking Sage",
+            "text": "Zuo Ci can't be blocked by creatures with horsemanship.\nWhenever your opponent chooses a creature in play, he or she can't choose Zuo Ci.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "026eba13-6231-5299-a9bb-338f2d9eeeaa",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "38d2c545-c12e-51d6-905c-72c6dfeb8d35",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "cbcdf426-581c-51d2-a423-ecd26644e0af",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "0570e88d-b393-55f5-98fa-7d6d59d27c9a",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "79fe06b6-215c-5f9c-9da2-64d71a164403",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "b9ed627f-4897-51ab-a058-1a50d29ba2bb",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "f9355027-2bfe-566b-b3b0-278dc216e9e6",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8321c0e2-fedc-507a-a63f-02d297ae095a",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "2ba89636-f5fa-5e3f-b69b-162a90e916ba",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "11ace9a8-8f8d-518b-9c97-eebefddc8fc2",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "7de09b0b-da1d-5b38-b050-f601819430d8",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "c837ad88-ca1a-515d-91b0-67a01ad8b44a",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "8b50c63b-8c84-5a66-947a-fbf7f87c3e82",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "04db31b4-d70e-578d-a044-4a695b8c8611",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        },
+        {
+            "id": "1d587a7b-e261-580b-b93c-e910cba1761f",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "PTK",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false
+        }
+    ]
+}

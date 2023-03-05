@@ -391,6 +391,17 @@ def write_starters():
     starters.content = json.dumps(request.json)
     return json.loads(starters.content)
 
+@app.route('/globals/proFeatured')
+def get_proFeatured():
+    proFeatured = Global.query.get(2)
+    return json.loads(proFeatured.content)
+
+@app.route('/globals/proFeatured', methods=['POST'])
+def write_proFeatured():
+    proFeatured = Global.query.get(2)
+    proFeatured.content = json.dumps(request.json)
+    return json.loads(proFeatured.content)
+
 ## All draft view ##
 
 @app.route('/drafts')

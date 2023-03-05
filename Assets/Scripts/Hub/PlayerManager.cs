@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
     public List<Decklist> starterDecks;
+    public List<Decklist> proFeaturedDecks;
     private string decksFilePath;
     private string collectionFilePath;
     public string serverUrl;
@@ -57,6 +58,7 @@ public class PlayerManager : MonoBehaviour
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
       readStarterDecks();
+      readProDecks();
 
       myID = -1;
       friendIDs = new List<int>();
@@ -156,6 +158,31 @@ public class PlayerManager : MonoBehaviour
           AllDecklists starters = new AllDecklists();
           starters = JsonUtility.FromJson<AllDecklists>(serverJson);
           starterDecks = new List<Decklist>(starters.decks);
+        }
+      }
+    }
+
+    public void readProDecks()
+    {
+      StartCoroutine(getProDecksFromServer());
+    }
+
+    private IEnumerator getProDecksFromServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "globals/proFeatured";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          AllDecklists proDecks = new AllDecklists();
+          proDecks = JsonUtility.FromJson<AllDecklists>(serverJson);
+          proFeaturedDecks = new List<Decklist>(proDecks.decks);
         }
       }
     }

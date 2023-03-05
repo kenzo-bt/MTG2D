@@ -9,6 +9,7 @@ public class DeckBrowser : MonoBehaviour
 
     public GameObject yourDecks;
     public GameObject starterDecksObject;
+    public GameObject proDecksObject;
     public GameObject deckDisplayPrefab;
     public GameObject starterDeckPrefab;
     // Start is called before the first frame update
@@ -45,6 +46,16 @@ public class DeckBrowser : MonoBehaviour
         display.setDisplayData(deck.name, deck.getCoverCard());
       }
       LayoutRebuilder.ForceRebuildLayoutImmediate(starterDecksObject.GetComponent<RectTransform>());
+
+      // Featured Pro decks
+      List<Decklist> proDecks = PlayerManager.Instance.proFeaturedDecks;
+      foreach (Decklist deck in proDecks)
+      {
+        GameObject deckDisplayInstance = Instantiate(starterDeckPrefab, proDecksObject.transform);
+        DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
+        display.setDisplayData(deck.name, deck.getCoverCard());
+      }
+      LayoutRebuilder.ForceRebuildLayoutImmediate(proDecksObject.GetComponent<RectTransform>());
     }
 
     // Add a deck

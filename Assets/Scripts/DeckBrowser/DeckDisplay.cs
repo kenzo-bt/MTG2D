@@ -102,15 +102,38 @@ public class DeckDisplay : MonoBehaviour
     // Copy starter deck
     public void copyStarterDeck()
     {
+      bool found = false;
       Decklist copy = new Decklist();
       List<Decklist> starterDecks = PlayerManager.Instance.starterDecks;
+      List<Decklist> proDecks = PlayerManager.Instance.proFeaturedDecks;
       foreach (Decklist deck in starterDecks)
       {
         if (deck.name == deckName)
         {
+          found = true;
           copy.name = deckName;
           copy.cards = new List<string>(deck.cards);
           copy.cardFrequencies = new List<int>(deck.cardFrequencies);
+          copy.sideboard = new List<string>(deck.sideboard);
+          copy.sideboardFrequencies = new List<int>(deck.sideboardFrequencies);
+          copy.coverId = deck.coverId;
+          break;
+        }
+      }
+      if (!found)
+      {
+        foreach (Decklist deck in proDecks)
+        {
+          if (deck.name == deckName)
+          {
+            copy.name = deckName;
+            copy.cards = new List<string>(deck.cards);
+            copy.cardFrequencies = new List<int>(deck.cardFrequencies);
+            copy.sideboard = new List<string>(deck.sideboard);
+            copy.sideboardFrequencies = new List<int>(deck.sideboardFrequencies);
+            copy.coverId = deck.coverId;
+            break;
+          }
         }
       }
       PlayerManager.Instance.allDecks.Add(copy);
