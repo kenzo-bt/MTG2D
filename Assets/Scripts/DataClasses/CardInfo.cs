@@ -19,6 +19,7 @@ public class CardInfo
     public bool isBack;
     public string layout;
     public bool isToken;
+    public List<string> finishes;
 
     public bool isBasicLand()
     {
