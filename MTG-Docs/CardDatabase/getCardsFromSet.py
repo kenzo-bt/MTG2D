@@ -92,7 +92,8 @@ for card in cards:
         "backId": backside,
         "isBack": isBack,
         "layout": layout,
-        "isToken": False
+        "isToken": False,
+        "finishes": card["finishes"]
     }
     outputSet["cards"].append(thisCard);
 
@@ -140,7 +141,8 @@ for token in tokens:
         "backId": "",
         "isBack": False,
         "layout": "",
-        "isToken": True
+        "isToken": True,
+        "finishes": token["finishes"]
     }
     outputSet["cards"].append(thisToken);
 

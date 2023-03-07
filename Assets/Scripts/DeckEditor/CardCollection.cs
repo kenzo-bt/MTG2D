@@ -211,6 +211,8 @@ public class CardCollection : MonoBehaviour
 
       filteredIds = new List<string>(filteredIds.FindAll(notToken));
 
+      filteredIds = new List<string>(filteredIds.FindAll(notFoil));
+
       // Go back to page one on the display
       currentPage = 0;
       // Update the display with the filtered cards
@@ -354,6 +356,11 @@ public class CardCollection : MonoBehaviour
     private static bool notToken(string id)
     {
       return !PlayerManager.Instance.getCardFromLookup(id).isToken;
+    }
+
+    private static bool notFoil(string id)
+    {
+      return PlayerManager.Instance.getCardFromLookup(id).finishes.Contains("nonfoil");
     }
 
     //// Receiving extra filters from Advanced filters
