@@ -55,7 +55,15 @@ public class DeckDisplay : MonoBehaviour
           if (deck.name == deckName)
           {
             PlayerManager.Instance.selectedDeck = deck;
-            break;
+            return;
+          }
+        }
+        foreach (Decklist deck in PlayerManager.Instance.proFeaturedDecks)
+        {
+          if (deck.name == deckName)
+          {
+            PlayerManager.Instance.selectedDeck = deck;
+            return;
           }
         }
       }
