@@ -1,0 +1,2630 @@
+{
+    "setCode": "UND",
+    "setName": "Unsanctioned",
+    "cards": [
+        {
+            "id": "e1b54271-89ea-5b05-ad7f-50a537c9e865",
+            "name": "Adorable Kitten",
+            "text": "When this creature enters the battlefield,\nroll a six-sided die. You gain life equal to the result.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "1ac5559b-5589-5dcc-8f5d-2d3ecb3b9e5c",
+            "name": "AWOL",
+            "text": "Exile target attacking creature. Then remove it from the game. Then put it into the absolutely-removed-from-the-freaking-game-forever zone.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "79ff343f-b8fc-5cb2-9df3-76c4cb0f0173",
+            "name": "Emcee",
+            "text": "Whenever another creature enters the battlefield, you may stand up and say in a deep, booming voice, \"Presenting . . . \" and that creature's name. If you do, put a +1/+1 counter on that creature.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "289af0ca-e261-5f02-8af0-ba257954bc7d",
+            "name": "Flavor Judge",
+            "text": "{T}: Choose target spell or ability that targets a permanent you control. Then ask a person outside the game if the story of what will happen makes sense. If they say no, sacrifice Flavor Judge and counter that spell or ability.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "7463f2a8-b9ba-534f-a315-f8aff14b0286",
+            "name": "Frankie Peanuts",
+            "text": "At the beginning of your upkeep, you may ask target player a yes-or-no question. If you do, that player answers the question truthfully and abides by that answer if able until end of turn.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "9e7dff50-8d34-5bda-a914-6ca08f3591e8",
+            "name": "GO TO JAIL",
+            "text": "When GO TO JAIL enters the battlefield, exile target creature an opponent controls until GO TO JAIL leaves the battlefield.\nAt the beginning of the upkeep of the exiled card's owner, that player rolls two six-sided dice. If they roll doubles, sacrifice GO TO JAIL.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "cd88f21d-3c1a-5ab6-90fd-4c11592e9989",
+            "name": "Humming-",
+            "text": "Flying\nWhenever you attack with two or more creatures,\nAugment {3}{W} ({3}{W}, Reveal this card from your hand: Combine it with target host. Augment only as a sorcery.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "augment",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "23036e2e-4a3c-506c-a4e6-3f26562ddf29",
+            "name": "Knight of the Hokey Pokey",
+            "text": "First strike\n{1}{W}, Do the Hokey Pokey: Prevent all damage a source of your choice would deal to Knight of the Hokey Pokey this turn. (To do the Hokey Pokey, choose an arm, a leg, or your whole self and put it in. Put it out. Put it in. Shake it all about. You do the Hokey Pokey Turn yourself around.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "76e70d5f-abd8-5cb4-8dd4-32da5fab6f61",
+            "name": "Look at Me, I'm R&D",
+            "text": "As Look at Me, I'm R&D comes into play, choose a number and a second number one higher or one lower than that number.\nAll instances of the first chosen number on permanents, spells, and cards in any zone are the second chosen number.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e048657a-fbb6-52d7-ae57-ddc578ba8ca0",
+            "name": "Look at Me, I'm the DCI",
+            "text": "Ban a card other than a basic land card for the rest of the match. (All cards with that name in any zone or sideboard are removed from the match.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{W}{W}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "461281bf-52c7-5cd3-bc88-2faaf6a53104",
+            "name": "Old Guard",
+            "text": "{W}, {T}: Tap target creature without reminder text. (Reminder text is any italicized text in parentheses that explains rules you already know.)",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{W}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "4b7faffc-7f75-56ad-8b7d-e44f02ffdce2",
+            "name": "Ordinary Pony",
+            "text": "When this creature enters the battlefield,\nyou may exile target non-Horse creature you control that wasn't put onto the battlefield with this ability this turn, then return it to the battlefield under its owner's control.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "b23e355d-5190-5db8-ad5a-5ff9d0fe9bea",
+            "name": "Staying Power",
+            "text": "\"Until end of turn\" and \"this turn\" effects don't end.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{W}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "ebed16ae-db40-50db-b83f-a202f5661acc",
+            "name": "Strutting Turkey",
+            "text": "When this creature enters the battlefield,\nexile target creature card with converted mana cost 2 or less from your graveyard. If it has augment, combine it with a host you control. Otherwise, put it onto the battlefield.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "08e4b1bc-e247-5850-9aee-d0415c22d6c0",
+            "name": "Syr Cadian, Knight Owl",
+            "text": "Knightlifelink (Damage dealt by Knights you control also causes you to gain that much life.)\n{W}: Syr Cadian, Knight Owl gains vigilance until end of turn. Activate this ability only from sunrise to sunset.\n{B}: Syr Cadian, Knight Owl gains flying until end of turn. Activate this ability only from sunset to sunrise.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "W"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{W}{W}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "119a7726-0291-5067-b85d-5fafa28ca0af",
+            "name": "Alexander Clamilton",
+            "text": "Whenever you cast a wordy spell, scry 2. (A spell is wordy if it has four or more lines of rules text.)\n{1}{R}, {T}: Choose target creature you don't control. Reveal the top card of your library. Alexander Clamilton gets +X/+0 until end of turn, where X is the number of lines of rules text of the revealed card. Alexander Clamilton fights that creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "R",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "44c3aebc-584a-5590-b3dc-296f645482a1",
+            "name": "Avatar of Me",
+            "text": "This spell costs {1} more to cast for each ten years you've been alive.\nAvatar of Me's power is equal to your height in feet and its toughness is equal to your American shoe size. Round to the nearest \u00bd.\nAvatar of Me is the color of your eyes.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "25463956-7fc1-5781-88cb-abba28a59ddd",
+            "name": "B.O.B. (Bevy of Beebles)",
+            "text": "As B.\nO.\nB. enters the battlefield, create four 1/1 blue Beeble creature tokens.\nThe number of loyalty counters on B.\nO.\nB. is equal to the number of Beebles you control. (Create or sacrifice Beebles whenever B.\nO.\nB. gains or loses loyalty.)\n+1: Up to X target Beebles can't be blocked this turn, where X is the number of cards in your hand.\n\u22121: Draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Planeswalker"
+            ],
+            "rarity": "mythic",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "306494e3-f2d7-5efb-9cd6-cff7fc2b7172",
+            "name": "Carnivorous Death-Parrot",
+            "text": "Flying\nAt the beginning of your upkeep, sacrifice Carnivorous Death-Parrot unless you say its flavor text.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "f006f1c0-36b1-5f98-a8d6-499cecb11f9c",
+            "name": "Cheatyface",
+            "text": "If Cheatyface is in your hand, you may sneak Cheatyface onto the battlefield. If an opponent catches you right away, that player may exile Cheatyface.\nFlying",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{U}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "c6c4bfd9-bcec-5267-867c-d93b66d3e8a6",
+            "name": "Chicken \u00e0 la King",
+            "text": "Whenever a 6 is rolled on a six-sided die, put a +1/+1 counter on each Bird. (You may roll dice only when instructed to.)\nTap an untapped Bird you control: Roll a six-sided die. (Like now.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6bfe9a93-7ff8-58e1-a68c-389f94605b6d",
+            "name": "Common Courtesy",
+            "text": "Whenever a player casts a spell without asking your permission while casting it, counter that spell.\nWhen a player asks you permission to cast a spell and you refuse, counter that spell and sacrifice Common Courtesy.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "efd1829b-27f5-58b8-b9a5-89494535da8d",
+            "name": "Johnny, Combo Player",
+            "text": "{4}: Search your library for a card, put that card into your hand, then shuffle your library.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "87b82b46-4ebb-5be2-b5a0-518e7e6fb429",
+            "name": "Magic Word",
+            "text": "Enchant creature\nAs Magic Word enters the battlefield, choose a word.\nWhisper the chosen word: Tap enchanted creature.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "7c903143-4f2e-5bfd-84c6-02ac9631e746",
+            "name": "Mer Man",
+            "text": "When this creature enters the battlefield,\nyou may draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6bbadd17-5f08-5055-9c25-9a7bf4c61356",
+            "name": "Richard Garfield, Ph.D.",
+            "text": "You may play cards as though they were other cards of your choice with the same mana cost. You can't choose the same card twice. (Mana cost includes color.)",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{U}{U}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "865c8147-f27b-5318-bd97-8488bbcd6e5f",
+            "name": "Rings a Bell",
+            "text": "As Rings a Bell enters the battlefield, choose a word with four or more letters.\nAfter you say the chosen word for the first time each turn, an opponent may ring or imitate a bell within five seconds. When no opponent does, draw a card.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{U}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "416c0488-d0c1-52e6-a644-5dd5680743fd",
+            "name": "Time Out",
+            "text": "Roll a six-sided die. Put target nonland permanent into its owner's library just beneath the top X cards of that library, where X is the result.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "dc550dcd-1405-5691-a5c3-c98e9128ccd8",
+            "name": "Topsy Turvy",
+            "text": "The phases of each player's turn are reversed. (The phases are, in reverse order, ending, postcombat main, combat, precombat main, and beginning.)\nAs long as there are more than two players in the game, the turn order is reversed.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "f1c3600a-ed9a-5f92-b96d-b2ddbda582d4",
+            "name": "Wall of Fortune",
+            "text": "Defender\nYou may tap an untapped Wall you control to have any player reroll a die that player rolled.",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{U}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6888bc2d-33b9-56da-b17a-c683032dc171",
+            "name": "Acornelia, Fashionable Filcher",
+            "text": "Whenever you cast a spell with a squirrel in its art, you get  (an acorn counter).\nWhenever a Squirrel you control enters the battlefield or dies, you get .\n{2}{B}, Pay X : Target creature gets -X/-X until end of turn.\n{G}, Pay X : Target creature gets +X/+X until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "7aab776d-ebfe-5665-8c9d-fec741ec7929",
+            "name": "Bat-",
+            "text": "Flying\nAt the beginning of each end step, if an opponent lost 3 or more life this turn,\nAugment {1}{B} ({1}{B}, Reveal this card from your hand: Combine it with target host. Augment only as a sorcery.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "augment",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e2fc4ff6-5816-50b8-b04a-4a9e3dd42ac7",
+            "name": "Booster Tutor",
+            "text": "Open a sealed Magic booster pack, reveal the cards, and put one of them into your hand. (Remove that card from your deck before beginning a new game.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e2b0c02e-a519-58eb-8653-dc1e6deee027",
+            "name": "Dirty Rat",
+            "text": "When this creature enters the battlefield,\ntarget opponent discards a card.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "c0a3fb00-3846-53d2-a0a1-6d70af42f85a",
+            "name": "Duh",
+            "text": "Destroy target creature with reminder text. (Reminder text is any italicized text in parentheses that explains rules you already know.)",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "371fdc8c-2d58-5898-b5a9-118a8ee67320",
+            "name": "Enter the Dungeon",
+            "text": "Players play a Magic subgame under the table, starting at 5 life and using their libraries as their decks. The winner searches their library for two cards, puts those cards into their hand, then shuffles their library.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{B}{B}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "4795e57f-dfd1-5a77-a580-9b28c2c4d0af",
+            "name": "Hoisted Hireling",
+            "text": "Hoisted Hireling has flying as long as it's being held above the battlefield.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "b996f0e6-1e5f-5e5c-a9c9-fe3786268491",
+            "name": "Infernal Spawn of Evil",
+            "text": "Flying, first strike\n{1}{B}, Reveal Infernal Spawn of Evil from your hand, Say \"It's coming\": Infernal Spawn of Evil deals 1 damage to target opponent or planeswalker. Activate this ability only during your upkeep and only once each turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 9.0,
+            "manaCost": "{6}{B}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "31e0ff52-217d-5955-bc9a-6991594cc041",
+            "name": "Infernal Spawn of Infernal Spawn of Evil",
+            "text": "Flying, first strike, trample\nOnce each turn, while you're searching your library, you may pay {1}{B}, reveal Infernal Spawn of Infernal Spawn of Evil from your library and say \"I'm coming, too\" If you do, Infernal Spawn of Infernal Spawn of Evil deals 2 damage to a player of your choice.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 10.0,
+            "manaCost": "{8}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "d3a41575-6a96-51c6-8836-ad9a49dbd9d8",
+            "name": "Infernius Spawnington III, Esq.",
+            "text": "Flying, first strike, trample, haste\nThis spell costs {3} less to cast for each card you've revealed this turn.\nWhen Infernius Spawnington III, Esq. enters the battlefield, you may say \"I'm here.\" If you do, it deals 3 damage to target player.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 11.0,
+            "manaCost": "{10}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "46d0c4d8-6c32-5b3c-8326-d56254f90818",
+            "name": "Inhumaniac",
+            "text": "At the beginning of your upkeep, roll a six-sided die. On a 3 or 4, put a +1/+1 counter on Inhumaniac. On a 5 or higher, put two +1/+1 counters on it. On a 1, remove all +1/+1 counters from Inhumaniac.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "9d2c59ac-f3fc-5718-8421-4f26dd5cdc3a",
+            "name": "Jumbo Imp",
+            "text": "Flying\nAs Jumbo Imp enters the battlefield, roll a six-sided die. Jumbo Imp enters the battlefield with a number of +1/+1 counters on it equal to the result.\nAt the beginning of your upkeep, roll a six-sided die and put a number of +1/+1 counters on Jumbo Imp equal to the result.\nAt the beginning of your end step, roll a six-sided die and remove a number of +1/+1 counters from Jumbo Imp equal to the result.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6764410c-2100-5058-9b2c-87f60b49c77a",
+            "name": "Poultrygeist",
+            "text": "Flying\nWhenever a creature dies, you may roll a six-sided die. If you roll a 1, sacrifice Poultrygeist. Otherwise, put a +1/+1 counter on Poultrygeist.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "289fcb55-c34a-5422-80cc-5b0bad05dd5f",
+            "name": "Skull Saucer",
+            "text": "Flying\nWhen Skull Saucer enters the battlefield, destroy target creature and put your head on the table. Sacrifice Skull Saucer when your head stops touching the table.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{B}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "fe2fd969-cb4b-5ac1-969d-8649142529db",
+            "name": "Snickering Squirrel",
+            "text": "You may tap Snickering Squirrel to increase the result of a die any player rolled by 1.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "467b454e-6b5a-5b38-86e1-2ed53987c68a",
+            "name": "Stinging Scorpion",
+            "text": "When this creature enters the battlefield,\ntarget creature an opponent controls gets -1/-1 until end of turn.",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{B}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "82448769-bbfe-5f3b-be44-c4b11f719060",
+            "name": "Abstract Iguanart",
+            "text": "Whenever you cast a spell, note the first letter of its artist's name. If that letter wasn't already noted, put a +1/+1 counter on Abstract Iguanart.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "547ee5c2-42ad-5ad6-81e2-770a6da73d84",
+            "name": "Blast from the Past",
+            "text": "Madness {R}, cycling {1}{R}, kicker {2}{R}, flashback {3}{R}, buyback {4}{R}\nBlast from the Past deals 2 damage to any target. If this spell was kicked, create a 1/1 red Goblin creature token.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "fbb867e7-afb4-5af1-9d27-8d71947284db",
+            "name": "Boomstacker",
+            "text": "As Boomstacker enters the battlefield and whenever it attacks, stack two dice on top of it. (All dice must be stacked vertically, one on top of another.)\nBoomstacker gets +1/+1 for each die in its stack.\nBoomstacker attacks each combat if able.\nWhen the stack falls, sacrifice Boomstacker.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "0f8c3b4a-a1a4-588a-8e3f-341340e99042",
+            "name": "Common Iguana",
+            "text": "When this creature enters the battlefield,\nyou may discard a card. If you do, draw a card.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "fcce5e54-4313-5631-98e0-b95f3039fb9f",
+            "name": "Goblin Haberdasher",
+            "text": "Menace (This creature can't be blocked except by two or more creatures.)\nOther creatures you control wearing hats in their art have menace.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "cf3476d9-292b-5377-ba72-9be334cad74d",
+            "name": "Goblin S.W.A.T. Team",
+            "text": "Say \"Goblin S.W.A.T. Team\": Put a +1/+1 counter on Goblin S.W.A.T. Team unless an opponent swats the table within five seconds. Activate this ability only once each turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "376ad6ae-ac1d-5014-932c-c236e780a02e",
+            "name": "Goblin Tutor",
+            "text": "Roll a six-sided die. If you roll a 1, Goblin Tutor has no effect. Otherwise, search your library for the indicated card, reveal it, put it into your hand, then shuffle your library.\n2 \u2014 A card named Goblin Tutor\n3 \u2014 An enchantment\n4 \u2014 An artifact\n5 \u2014 A creature\n6 \u2014 An instant or sorcery",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 1.0,
+            "manaCost": "{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "a06bc59c-e61c-50db-b60c-63d0966f7f92",
+            "name": "Infinity Elemental",
+            "text": "(This creature has INFINITE POWER.)",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{4}{R}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "f31460f6-91d6-5cb4-b9ef-b3074bfd8351",
+            "name": "Painiac",
+            "text": "At the beginning of your upkeep, roll a six-sided die. Painiac gets +X/+0 until end of turn, where X is the result.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "438dd605-f6d8-51f7-aef3-0b2bd1f44f0f",
+            "name": "Six-y Beast",
+            "text": "As Six-y Beast enters the battlefield, you secretly put six or fewer +1/+1 counters on it, then an opponent guesses the number of counters. If that player guesses right, sacrifice Six-y Beast after it enters the battlefield.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "952ba4d4-ef21-587f-b104-a4645d81c066",
+            "name": "Stet, Draconic Proofreader",
+            "text": "Flying\nWhenever Stet, Draconic Proofreader attacks, you may exile a card from your graveyard. When you do, Stet, Draconic Proofreader deals 4 damage to any target whose name begins with the same letter as the exiled card.\n{W}: Delete the first letter of target permanent or player's name until end of turn.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R",
+                "W"
+            ],
+            "manaValue": 6.0,
+            "manaCost": "{4}{R}{R}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "74955d47-80c6-5ffa-a18a-7acc518b2c1a",
+            "name": "Strategy, Schmategy",
+            "text": "Roll a six-sided die. Strategy, Schmategy has the indicated effect.\n1 \u2014 Do nothing.\n2 \u2014 Destroy all artifacts.\n3 \u2014 Destroy all lands.\n4 \u2014 Strategy, Schmategy deals 3 damage to each creature and each player.\n5 \u2014 Each player discards their hand and draws seven cards.\n6 \u2014 Repeat this process two more times.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{R}",
+            "types": [
+                "Sorcery"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "aed5ad42-e52f-5bb9-b21e-a2d1c6adb24e",
+            "name": "Super-Duper Death Ray",
+            "text": "Trample (This spell can deal excess damage to its target's controller.)\nSuper-Duper Death Ray deals 4 damage to target creature.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "87874c83-6b86-5b71-ae64-f02d102bb4db",
+            "name": "Yet Another Aether Vortex",
+            "text": "All creatures have haste.\nPlayers play with the top card of their libraries revealed.\nNoninstant, nonsorcery cards on top of a library are on the battlefield under their owner's control in addition to being in that library.",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{3}{R}{R}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "5d7b2689-007c-5f3c-9eae-b5d2f10823c4",
+            "name": "B-I-N-G-O",
+            "text": "Trample\nWhenever a player casts a spell, put a chip counter on its converted mana cost.\nB-I-N-G-O gets +9/+9 for each set of three numbers in a row with chip counters on them.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "44e9c9c0-88e9-532d-bac8-82d4ded43547",
+            "name": "Elvish Impersonators",
+            "text": "As Elvish Impersonators enters the battlefield, roll a six-sided die twice. Its base power becomes the first result and its base toughness becomes the second result.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "12c5ee36-0d50-5cca-8bbb-25e73b570bec",
+            "name": "Free-Range Chicken",
+            "text": "{1}{G}: Roll two six-sided dice. If both results are the same, Free-Range Chicken gets +X/+X until end of turn, where X is that result. If the total of those results is equal to any other total you have rolled this turn for this ability, sacrifice it. (For example, if you roll two 3s, it gets +3/+3. If you roll a 4 and a 2 for this ability later that turn, sacrifice it.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e91458f8-6495-55c7-82f0-498956cde217",
+            "name": "Growth Spurt",
+            "text": "Roll a six-sided die. Target creature gets +X/+X until end of turn, where X is the result.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "816efcf3-d1f2-524d-a1b5-aefa2654c09b",
+            "name": "Half-Squirrel, Half-",
+            "text": "Whenever a nontoken creature enters the battlefield,\nAugment {G} ({G}, Reveal this card from your hand: Combine it with target host. Augment only as a sorcery.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "augment",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "4b710611-4598-5bee-9499-78cdfb4a15c8",
+            "name": "Mother Kangaroo",
+            "text": "When this creature enters the battlefield,\nroll a six-sided die. Put a number of +1/+1 counters on this creature equal to the result.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 5.0,
+            "manaCost": "{4}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "17ccd14d-a756-5f95-a80d-6b423ae525b9",
+            "name": "Old Fogey",
+            "text": "Phasing, cumulative upkeep {1}, echo, fading 3, bands with other Dinosaurs, protection from Homarids, snow-covered plainswalk, flanking, rampage 2",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{G}{G}",
+            "types": [
+                "Summon"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "f8a6d3ab-7cd8-5877-85be-cdd6a20b6259",
+            "name": "Pippa, Duchess of Dice",
+            "text": "{2}{G}, {T}: Roll a six-sided die. It becomes a green Die creature token with power and toughness each equal to its result.\n{2}{U}, {T}: Reroll any die. (Activate this ability only any time it makes sense.)",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G",
+                "U"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "df55aede-0f2c-5ff0-ac6e-91d52cb23a9a",
+            "name": "Slaying Mantis",
+            "text": "Just a second (As long as this spell is on the stack, players can't move cards on the battlefield.)\nSlaying Mantis enters the battlefield by being thrown from a distance of at least three feet.\nWhen Slaying Mantis enters the battlefield, it fights each creature an opponent controls that it touched as it entered.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 7.0,
+            "manaCost": "{5}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "a7b21be3-20fa-507b-9743-c61ec81564b4",
+            "name": "Spirit of the Season",
+            "text": "When Spirit of the Season enters the battlefield, it gains haste if it's summer. Put a +1/+1 counter on it if it's autumn. You gain 5 life if it's winter. If it's spring, search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{1}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "03113fed-fb42-5e9b-bfa3-d56bcc915541",
+            "name": "Squirrel Farm",
+            "text": "{1}{G}: Reveal a card in your hand, covering the artist credit. Target opponent guesses the artist. If they guess wrong, create a 1/1 green Squirrel creature token.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 3.0,
+            "manaCost": "{2}{G}",
+            "types": [
+                "Enchantment"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "faf9bb72-f54c-5a66-80dc-e92a82b9184e",
+            "name": "Surgeon General Commander",
+            "text": "Whenever you augment, enchant, or mutate a creature you control, draw a card.\n{T}: Add {W}, {U}, {B}, {R}, or {G}.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{3}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "mythic",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "1414742d-55f5-5401-a792-a747eb9b9c67",
+            "name": "Timmy, Power Gamer",
+            "text": "{4}: You may put a creature card from your hand onto the battlefield.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 4.0,
+            "manaCost": "{2}{G}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "dfe8a94f-0182-5d76-abd8-a89eed68437f",
+            "name": "Wild Crocodile",
+            "text": "When this creature enters the battlefield,\nsearch your library for a basic land card, reveal it, put it into your hand, then shuffle your library.",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 2.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "host",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6eba118a-91ac-5734-a776-0fba67684a42",
+            "name": "Who // What // When // Where // Why",
+            "text": "Who\no\nXo\nW\nInstant\nTarget player gains X life.\n//\nWhat\no2o\nR\nInstant\nDestroy target artifact.\n//\nWhen\no2o\nU\nInstant\nCounter target creature spell.\n//\nWhere\no3o\nB\nInstant\nDestroy target land.\n//\nWhy\no1o\nG\nInstant\nDestroy target enchantment.",
+            "colours": [
+                "W"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 13.0,
+            "manaCost": "{X}{W}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "035da06a-c4fe-54c2-946d-66cd0481fa12",
+            "isBack": false,
+            "layout": "split",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "035da06a-c4fe-54c2-946d-66cd0481fa12",
+            "name": "Who // What // When // Where // Why",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 13.0,
+            "manaCost": "{2}{R}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": true,
+            "layout": "split",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "823b9f86-5d85-55bf-96a3-bab429a852aa",
+            "name": "Who // What // When // Where // Why",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 13.0,
+            "manaCost": "{2}{U}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "split",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e1b00e53-7b48-5bc6-842a-66839f08ca7d",
+            "name": "Who // What // When // Where // Why",
+            "text": "",
+            "colours": [
+                "B"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 13.0,
+            "manaCost": "{3}{B}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "split",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "5b138950-4f9a-56e0-a614-5d1627471b4e",
+            "name": "Who // What // When // Where // Why",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 13.0,
+            "manaCost": "{1}{G}",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "split",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "a0fdab50-c217-55ab-bf24-f13eafc88e54",
+            "name": "Bronze Calendar",
+            "text": "Spells you cast cost {1} less to cast.\nYou must speak in a voice other than your normal voice.\nWhen you speak in your normal voice, sacrifice Bronze Calendar.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "9d95e3d3-88ad-5458-977b-32abe0ebb8ba",
+            "name": "Entirely Normal Armchair",
+            "text": "During your turn, if Entirely Normal Armchair is in your hand, you may hide it on the battlefield.\n{0}: Return Entirely Normal Armchair to its owner's hand. Only any opponent may activate this ability and only if they see Entirely Normal Armchair.\n{2}, Sacrifice Entirely Normal Armchair: Destroy target attacking creature.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "76370db3-0da9-5295-b51e-3e99a54e2cdd",
+            "name": "Jack-in-the-Mox",
+            "text": "{T}: Roll a six-sided die. This ability has the indicated effect.\n1 \u2014 Sacrifice Jack-in-the-Mox and you lose 5 life.\n2 \u2014 Add {W}.\n3 \u2014 Add {U}.\n4 \u2014 Add {B}.\n5 \u2014 Add {R}.\n6 \u2014 Add {G}.",
+            "colours": [],
+            "colourIdentity": [
+                "B",
+                "G",
+                "R",
+                "U",
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "{0}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6d9047dc-3e2c-56fa-b55d-8091eea05b04",
+            "name": "Krark's Other Thumb",
+            "text": "If you would roll a die, instead roll two of those dice and ignore one of those results.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "uncommon",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "d56d93bc-1586-5d79-b536-970d4e64084b",
+            "name": "Paper Tiger",
+            "text": "Creatures named Rock Lobster can't attack or block.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "0e9565c3-ded7-5fa8-94cc-88f7e609f08a",
+            "name": "Pointy Finger of Doom",
+            "text": "{3}, {T}: Spin Pointy Finger of Doom in the middle of the table so that it rotates completely at least once, then destroy the closest permanent the finger points to.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "276de3e0-5f7f-54ac-a491-4f50ca5c2ba7",
+            "name": "Rock Lobster",
+            "text": "Creatures named Scissors Lizard can't attack or block.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "a1059b69-5c1a-5fd0-a056-264ad09cadf2",
+            "name": "Scissors Lizard",
+            "text": "Creatures named Paper Tiger can't attack or block.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 4.0,
+            "manaCost": "{4}",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "36b595c1-f6f0-5042-a812-27cfbc50a400",
+            "name": "Sword of Dungeons & Dragons",
+            "text": "Equipped creature gets +2/+2 and has protection from Rogues and from Clerics.\nWhenever equipped creature deals combat damage to a player, create a 4/4 gold Dragon creature token with flying and roll a d20 (a twenty-sided die). If you roll a 20, repeat this process.\nEquip {2}",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 3.0,
+            "manaCost": "{3}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "mythic",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "e8fc008f-3f26-55d5-845a-c6f823d6e724",
+            "name": "Water Gun Balloon Game",
+            "text": "As Water Gun Balloon Game enters the battlefield, each player puts a pop counter on \"0.\"\nWhenever a player casts a spell, move that player's pop counter up one.\nWhenever a player's pop counter hits \"5,\" that player creates a 5/5 pink Giant Teddy Bear creature token and resets all pop counters to \"0.\"",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 2.0,
+            "manaCost": "{2}",
+            "types": [
+                "Artifact"
+            ],
+            "rarity": "rare",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "dc0309c2-c4e7-5abc-9cfd-ca0287f73b3d",
+            "name": "Underdome",
+            "text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to pay silver-bordered costs.",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "df3a4387-62c5-5fcc-a675-1c5e04d6103b",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "19c6f196-f59b-5e2c-b412-a03c4795427e",
+            "name": "Plains",
+            "text": "W",
+            "colours": [],
+            "colourIdentity": [
+                "W"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil",
+                "foil"
+            ]
+        },
+        {
+            "id": "fd1d49da-582f-5633-81db-d2d8f76559fe",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "9f97a994-46a4-5cf8-a8ac-aad1ed82a819",
+            "name": "Island",
+            "text": "U",
+            "colours": [],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil",
+                "foil"
+            ]
+        },
+        {
+            "id": "9e9f8fa6-9754-5105-97d9-aa156b2e3c24",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "81ac82de-a2a6-5e60-946f-56ff32de6c55",
+            "name": "Swamp",
+            "text": "B",
+            "colours": [],
+            "colourIdentity": [
+                "B"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil",
+                "foil"
+            ]
+        },
+        {
+            "id": "675635e6-2801-552c-a45b-7aeaf20150e1",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6e450b23-72fb-5d1e-a68f-8fd4d0a6b119",
+            "name": "Mountain",
+            "text": "R",
+            "colours": [],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil",
+                "foil"
+            ]
+        },
+        {
+            "id": "2fd26ecb-9919-5468-a775-2ec526a2db0c",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "32bf6053-6ffb-5ab6-9b8d-0db1d38fa4e6",
+            "name": "Forest",
+            "text": "G",
+            "colours": [],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0.0,
+            "manaCost": "",
+            "types": [
+                "Land"
+            ],
+            "rarity": "common",
+            "set": "UND",
+            "backId": "",
+            "isBack": false,
+            "layout": "normal",
+            "isToken": false,
+            "finishes": [
+                "nonfoil",
+                "foil"
+            ]
+        },
+        {
+            "id": "fadc5bb5-e83e-5b93-96e6-7310294ea7a7",
+            "name": "Beeble",
+            "text": "",
+            "colours": [
+                "U"
+            ],
+            "colourIdentity": [
+                "U"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "5ba1754c-e73f-53bd-887c-702d23c189b8",
+            "name": "Goblin",
+            "text": "",
+            "colours": [
+                "R"
+            ],
+            "colourIdentity": [
+                "R"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "43508041-6dab-5759-858c-a3123188292d",
+            "name": "Squirrel",
+            "text": "",
+            "colours": [
+                "G"
+            ],
+            "colourIdentity": [
+                "G"
+            ],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "26d669dc-4e1b-5d56-bdad-22f9202d8b0a",
+            "name": "Dragon",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "6101c4b1-4dbe-5e69-99c7-ce9f45cb9390",
+            "name": "Giant Teddy Bear",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Token",
+                "Creature"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        },
+        {
+            "id": "1cd42be8-2df1-5c7f-9721-8c1bac440e48",
+            "name": "Acorn Stash",
+            "text": "",
+            "colours": [],
+            "colourIdentity": [],
+            "manaValue": 0,
+            "manaCost": "",
+            "types": [
+                "Card"
+            ],
+            "rarity": "common",
+            "set": "TUND",
+            "backId": "",
+            "isBack": false,
+            "layout": "",
+            "isToken": true,
+            "finishes": [
+                "nonfoil"
+            ]
+        }
+    ]
+}
