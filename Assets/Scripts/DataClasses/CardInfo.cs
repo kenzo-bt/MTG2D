@@ -29,4 +29,13 @@ public class CardInfo
       }
       return false;
     }
+
+    public bool hasBackSide()
+    {
+      if (layout != "adventure" && layout != "split" && backId != "" && backId != null)
+      {
+        return true;
+      }
+      return false;
+    }
 }

@@ -213,6 +213,8 @@ public class CardCollection : MonoBehaviour
 
       filteredIds = new List<string>(filteredIds.FindAll(notFoil));
 
+      filteredIds = new List<string>(filteredIds.FindAll(notAlchemy));
+
       // Go back to page one on the display
       currentPage = 0;
       // Update the display with the filtered cards
@@ -361,6 +363,11 @@ public class CardCollection : MonoBehaviour
     private static bool notFoil(string id)
     {
       return PlayerManager.Instance.getCardFromLookup(id).finishes.Contains("nonfoil");
+    }
+
+    private static bool notAlchemy(string id)
+    {
+      return PlayerManager.Instance.getCardFromLookup(id).name.Substring(0, 2) != "A-";
     }
 
     //// Receiving extra filters from Advanced filters

@@ -150,7 +150,7 @@ public class DeckListPanel : MonoBehaviour
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
       highlightCardObject.SetActive(true);
       highlightCardObject.GetComponent<WebCard>().texturizeCard(targetCard);
-      if (targetCard.layout != "split" && targetCard.backId != "" && targetCard.backId != null)
+      if (targetCard.hasBackSide())
       {
         CardInfo targetBackCard = PlayerManager.Instance.getCardFromLookup(targetCard.backId);
         highlightCardBackObject.SetActive(true);

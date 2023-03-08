@@ -23,7 +23,7 @@ public class BattlefieldArea : MonoBehaviour
       GameObject cardInstance = Instantiate(cardPrefab, transform);
       cardInstance.GetComponent<WebCard>().texturizeCard(card);
       cardInstance.GetComponent<BattlefieldCard>().player = player;
-      if (card.layout != "split" && card.backId != "" && card.backId != null)
+      if (card.hasBackSide())
       {
         cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
       }
