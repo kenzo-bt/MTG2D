@@ -19,6 +19,7 @@ public class CardCollection : MonoBehaviour
     private static List<string> searchKeywords;
     private static List<string> rarities;
     private static List<string> typeFilters;
+    private static List<string> supertypeFilters;
     private static List<string> setFilters;
     private bool onlyLands;
     private bool onlyMultiColoured;
@@ -40,6 +41,7 @@ public class CardCollection : MonoBehaviour
       searchKeywords = new List<string>();
       rarities = new List<string>();
       typeFilters = new List<string>();
+      supertypeFilters = new List<string>();
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
       if (PlayerManager.Instance.selectedDeck.isDraft)
@@ -209,6 +211,11 @@ public class CardCollection : MonoBehaviour
         filteredIds = new List<string>(filteredIds.FindAll(hasSelectedTypes));
       }
 
+      if (supertypeFilters.Count > 0)
+      {
+        filteredIds = new List<string>(filteredIds.FindAll(hasSelectedSupertypes));
+      }
+
       filteredIds = new List<string>(filteredIds.FindAll(notToken));
 
       filteredIds = new List<string>(filteredIds.FindAll(notFoil));
@@ -345,6 +352,19 @@ public class CardCollection : MonoBehaviour
       return false;
     }
 
+    private static bool hasSelectedSupertypes(string id)
+    {
+      CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      foreach (string type in targetCard.supertypes)
+      {
+        if (supertypeFilters.Contains(type))
+        {
+          return true;
+        }
+      }
+      return false;
+    }
+
     private static bool inSelectedSets(string id)
     {
       return setFilters.Contains(PlayerManager.Instance.getCardFromLookup(id).set);
@@ -367,7 +387,11 @@ public class CardCollection : MonoBehaviour
 
     private static bool notAlchemy(string id)
     {
-      return PlayerManager.Instance.getCardFromLookup(id).name.Substring(0, 2) != "A-";
+      if (PlayerManager.Instance.getCardFromLookup(id).name.Length > 1)
+      {
+        return PlayerManager.Instance.getCardFromLookup(id).name.Substring(0, 2) != "A-";
+      }
+      return true;
     }
 
     //// Receiving extra filters from Advanced filters
@@ -411,6 +435,15 @@ public class CardCollection : MonoBehaviour
       }
     }
 
+    public void addSupertypes(string typeString)
+    {
+      supertypeFilters = new List<string>();
+      if (typeString.Length > 0)
+      {
+        supertypeFilters = new List<string>(typeString.Split(','));
+      }
+    }
+
     public void addSets(string setString)
     {
       setFilters = new List<string>();
@@ -429,6 +462,7 @@ public class CardCollection : MonoBehaviour
       Debug.Log("Mana: [" + string.Join(",", manaFilters) + "]");
       Debug.Log("Rarities: [" + string.Join(",", rarities) + "]");
       Debug.Log("Types: [" + string.Join(",", typeFilters) + "]");
+      Debug.Log("Supertypes: [" + string.Join(",", typeFilters) + "]");
       Debug.Log("Keywords: [" + string.Join(",", searchKeywords) + "]");
     }
 }

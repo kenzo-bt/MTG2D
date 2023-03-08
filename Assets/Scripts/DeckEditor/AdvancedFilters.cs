@@ -14,6 +14,7 @@ public class AdvancedFilters : MonoBehaviour
     private List<int> manaFilters;
     private List<string> colours;
     private List<string> types;
+    private List<string> supertypes;
     private List<string> sets;
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class AdvancedFilters : MonoBehaviour
       manaFilters = new List<int>();
       colours = new List<string>();
       types = new List<string>();
+      supertypes = new List<string>();
       sets = new List<string>();
       hide();
     }
@@ -92,6 +94,17 @@ public class AdvancedFilters : MonoBehaviour
       }
     }
 
+    public void toggleSupertype(string type)
+    {
+      if (supertypes.Contains(type))
+      {
+        supertypes.Remove(type);
+      }
+      else {
+        supertypes.Add(type);
+      }
+    }
+
     public void toggleSet(string set)
     {
       if (sets.Contains(set))
@@ -110,6 +123,7 @@ public class AdvancedFilters : MonoBehaviour
       collection.addManaValues(string.Join(",", manaFilters));
       collection.addColours(string.Join(",", colours));
       collection.addTypes(string.Join(",", types));
+      collection.addSupertypes(string.Join(",", supertypes));
       collection.addSets(string.Join(",", sets));
       collection.filterCollection();
     }

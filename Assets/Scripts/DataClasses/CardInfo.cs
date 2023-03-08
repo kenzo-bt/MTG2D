@@ -13,6 +13,7 @@ public class CardInfo
     public int manaValue;
     public string manaCost;
     public List<string> types;
+    public List<string> supertypes;
     public string rarity;
     public string set;
     public string backId;
