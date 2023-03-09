@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class OppCardStack : MonoBehaviour
 {
   public GameObject browserObject;
   public GameObject cardPrefab;
+  public GameObject counterObject;
   public List<string> cards;
   public List<bool> cardsVisibility;
   private CardBrowser browser;
@@ -64,5 +66,19 @@ public class OppCardStack : MonoBehaviour
   public List<string> getStackIds()
   {
     return new List<string>(cards);
+  }
+
+  public void showNumCards()
+  {
+    counterObject.GetComponent<CanvasGroup>().alpha = 1;
+    counterObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    counterObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "" + cards.Count;
+  }
+
+  public void hideNumCards()
+  {
+    counterObject.GetComponent<CanvasGroup>().alpha = 0;
+    counterObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
+    counterObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "";
   }
 }
