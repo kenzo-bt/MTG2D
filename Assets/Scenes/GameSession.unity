@@ -8762,6 +8762,7 @@ GameObject:
   - component: {fileID: 1829966443}
   - component: {fileID: 1829966445}
   - component: {fileID: 1829966444}
+  - component: {fileID: 1829966446}
   m_Layer: 5
   m_Name: CoinImage
   m_TagString: Untagged
@@ -8827,6 +8828,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829966442}
   m_CullTransparentMesh: 1
+--- !u!225 &1829966446
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829966442}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1844370535
 GameObject:
   m_ObjectHideFlags: 0
@@ -9116,6 +9129,7 @@ MonoBehaviour:
     hash: 
     coinToss: 0
     tossTime: 
+    coinVisible: 0
   state:
     hand: []
     deck: []
@@ -9128,6 +9142,7 @@ MonoBehaviour:
     hash: 
     coinToss: 0
     tossTime: 
+    coinVisible: 0
 --- !u!1 &1887159390
 GameObject:
   m_ObjectHideFlags: 0
@@ -9497,6 +9512,7 @@ GameObject:
   - component: {fileID: 1944117046}
   - component: {fileID: 1944117048}
   - component: {fileID: 1944117047}
+  - component: {fileID: 1944117049}
   m_Layer: 5
   m_Name: CoinImage
   m_TagString: Untagged
@@ -9562,6 +9578,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944117045}
   m_CullTransparentMesh: 1
+--- !u!225 &1944117049
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944117045}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1961469599
 GameObject:
   m_ObjectHideFlags: 0
@@ -10009,6 +10037,7 @@ MonoBehaviour:
   log: 
   coinToss: 0
   tossTime: 
+  coinVisible: 0
 --- !u!114 &1996678667
 MonoBehaviour:
   m_ObjectHideFlags: 0

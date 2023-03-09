@@ -318,16 +318,37 @@ public class Opponent : MonoBehaviour
     {
       Image coin = coinToss.GetComponent<Image>();
       TMP_Text time = tossTime.GetComponent<TMP_Text>();
-      if (state.coinToss == 0) // Heads
+      if (state.coinVisible)
       {
-        Texture2D headTexture = Resources.Load("Images/coinHeads") as Texture2D;
-        coin.sprite = Sprite.Create(headTexture, new Rect(0, 0, headTexture.width, headTexture.height), new Vector2(0.5f, 0.5f));
+        if (state.coinToss == 0) // Heads
+        {
+          Texture2D headTexture = Resources.Load("Images/coinHeads") as Texture2D;
+          coin.sprite = Sprite.Create(headTexture, new Rect(0, 0, headTexture.width, headTexture.height), new Vector2(0.5f, 0.5f));
+        }
+        else if (state.coinToss == 1) // Tails
+        {
+          Texture2D tailTexture = Resources.Load("Images/coinTails") as Texture2D;
+          coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
+        }
+        time.text = state.tossTime;
+        showCoin();
       }
-      else if (state.coinToss == 1) // Tails
+      else
       {
-        Texture2D tailTexture = Resources.Load("Images/coinTails") as Texture2D;
-        coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
+        hideCoin();
       }
-      time.text = state.tossTime;
+    }
+
+    public void hideCoin()
+    {
+      coinToss.GetComponent<CanvasGroup>().alpha = 0;
+      coinToss.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      tossTime.GetComponent<TMP_Text>().text = "";
+    }
+
+    public void showCoin()
+    {
+      coinToss.GetComponent<CanvasGroup>().alpha = 1;
+      coinToss.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

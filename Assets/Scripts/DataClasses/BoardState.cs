@@ -16,6 +16,7 @@ public class BoardState
   public string hash;
   public int coinToss;
   public string tossTime;
+  public bool coinVisible;
 
   public void debugState()
   {

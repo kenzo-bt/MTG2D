@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     public string log;
     public int coinToss;
     public string tossTime;
+    public bool coinVisible;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +63,7 @@ public class Player : MonoBehaviour
       log = "";
       coinToss = 0;
       tossTime = "";
+      coinVisible = false;
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -149,6 +151,7 @@ public class Player : MonoBehaviour
       myState.life = lifeTotal;
       myState.coinToss = coinToss;
       myState.tossTime = tossTime;
+      myState.coinVisible = coinVisible;
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -418,6 +421,8 @@ public class Player : MonoBehaviour
         coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
       }
       time.text = tossTime;
+      coinVisible = true;
+      showCoin();
       StartCoroutine(disableCoinButtonTemporarily(3));
     }
 
@@ -426,5 +431,20 @@ public class Player : MonoBehaviour
       coinButton.GetComponent<Button>().interactable = false;
       yield return new WaitForSeconds(3);
       coinButton.GetComponent<Button>().interactable = true;
+      coinVisible = false;
+      hideCoin();
+    }
+
+    public void hideCoin()
+    {
+      coinImage.GetComponent<CanvasGroup>().alpha = 0;
+      coinImage.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      coinTime.GetComponent<TMP_Text>().text = "";
+    }
+
+    public void showCoin()
+    {
+      coinImage.GetComponent<CanvasGroup>().alpha = 1;
+      coinImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
