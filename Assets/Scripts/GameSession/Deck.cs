@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class Deck : MonoBehaviour, IPointerClickHandler
 {
     private CardStack stack;
+    public GameObject sideboardObject;
     public GameObject contextMenu;
 
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class Deck : MonoBehaviour, IPointerClickHandler
       stack.initializeStack();
       generateDeck();
       shuffleDeck();
+      loadSideboard();
     }
 
     private void generateDeck()
@@ -121,6 +123,21 @@ public class Deck : MonoBehaviour, IPointerClickHandler
         else
         {
           showContextMenu();
+        }
+      }
+    }
+
+    private void loadSideboard()
+    {
+      Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
+      CardStack sideboard = sideboardObject.GetComponent<CardStack>();
+      sideboard.initializeStack();
+
+      for (int i = 0; i < selectedDeck.sideboard.Count; i++)
+      {
+        for (int n = 0; n < selectedDeck.sideboardFrequencies[i]; n++)
+        {
+          sideboard.addCard(selectedDeck.sideboard[i], true);
         }
       }
     }

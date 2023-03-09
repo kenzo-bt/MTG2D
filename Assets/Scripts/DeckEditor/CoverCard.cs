@@ -26,10 +26,15 @@ public class CoverCard : MonoBehaviour
 
     public void updateDropdown()
     {
-      if (PlayerManager.Instance.selectedDeck.cards.Count > 0)
+      if (PlayerManager.Instance.selectedDeck.cards.Count > 0 || PlayerManager.Instance.selectedDeck.sideboard.Count > 0)
       {
         List<string> cardNames = new List<string>();
         foreach (string cardId in PlayerManager.Instance.selectedDeck.cards)
+        {
+          CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+          cardNames.Add(card.name);
+        }
+        foreach (string cardId in PlayerManager.Instance.selectedDeck.sideboard)
         {
           CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
           cardNames.Add(card.name);
@@ -60,6 +65,15 @@ public class CoverCard : MonoBehaviour
       string selectedName = coverDropdown.options[coverDropdown.value].text;
       string selectedId = "";
       foreach (string cardId in PlayerManager.Instance.selectedDeck.cards)
+      {
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+        if (card.name == selectedName)
+        {
+          selectedId = card.id;
+          break;
+        }
+      }
+      foreach (string cardId in PlayerManager.Instance.selectedDeck.sideboard)
       {
         CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
         if (card.name == selectedName)
