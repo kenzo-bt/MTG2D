@@ -17,6 +17,9 @@ public class BoardState
   public int coinToss;
   public string tossTime;
   public bool coinVisible;
+  public int diceRoll;
+  public string rollTime;
+  public bool diceVisible;
 
   public void debugState()
   {

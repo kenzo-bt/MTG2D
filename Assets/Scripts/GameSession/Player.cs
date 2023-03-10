@@ -22,6 +22,10 @@ public class Player : MonoBehaviour
     public GameObject coinImage;
     public GameObject coinTime;
     public GameObject coinButton;
+    public GameObject diceImage;
+    public GameObject diceText;
+    public GameObject diceTime;
+    public GameObject diceButton;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -41,6 +45,9 @@ public class Player : MonoBehaviour
     public int coinToss;
     public string tossTime;
     public bool coinVisible;
+    public int diceRoll;
+    public string rollTime;
+    public bool diceVisible;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +71,9 @@ public class Player : MonoBehaviour
       coinToss = 0;
       tossTime = "";
       coinVisible = false;
+      diceRoll = 0;
+      rollTime = "";
+      diceVisible = false;
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -152,6 +162,9 @@ public class Player : MonoBehaviour
       myState.coinToss = coinToss;
       myState.tossTime = tossTime;
       myState.coinVisible = coinVisible;
+      myState.diceRoll = diceRoll;
+      myState.rollTime = rollTime;
+      myState.diceVisible = diceVisible;
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -423,13 +436,13 @@ public class Player : MonoBehaviour
       time.text = tossTime;
       coinVisible = true;
       showCoin();
-      StartCoroutine(disableCoinButtonTemporarily(3));
+      StartCoroutine(disableCoinButtonTemporarily(5));
     }
 
     private IEnumerator disableCoinButtonTemporarily(int seconds)
     {
       coinButton.GetComponent<Button>().interactable = false;
-      yield return new WaitForSeconds(3);
+      yield return new WaitForSeconds(seconds);
       coinButton.GetComponent<Button>().interactable = true;
       coinVisible = false;
       hideCoin();
@@ -446,5 +459,39 @@ public class Player : MonoBehaviour
     {
       coinImage.GetComponent<CanvasGroup>().alpha = 1;
       coinImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void rollDice()
+    {
+      rollTime = DateTime.Now.ToLongTimeString();
+      diceTime.GetComponent<TMP_Text>().text = rollTime;
+      diceRoll = UnityEngine.Random.Range(1, 21);
+      diceText.GetComponent<TMP_Text>().text = "" + diceRoll;
+      diceVisible = true;
+      showDice();
+      StartCoroutine(disableDiceButtonTemporarily(5));
+    }
+
+    private IEnumerator disableDiceButtonTemporarily(int seconds)
+    {
+      diceButton.GetComponent<Button>().interactable = false;
+      yield return new WaitForSeconds(seconds);
+      diceButton.GetComponent<Button>().interactable = true;
+      diceVisible = false;
+      hideDice();
+    }
+
+    public void hideDice()
+    {
+      diceImage.GetComponent<CanvasGroup>().alpha = 0;
+      diceImage.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      diceTime.GetComponent<TMP_Text>().text = "";
+      diceText.GetComponent<TMP_Text>().text = "";
+    }
+
+    public void showDice()
+    {
+      diceImage.GetComponent<CanvasGroup>().alpha = 1;
+      diceImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

@@ -20,6 +20,9 @@ public class Opponent : MonoBehaviour
     public GameObject exileObject;
     public GameObject coinToss;
     public GameObject tossTime;
+    public GameObject diceImage;
+    public GameObject diceRoll;
+    public GameObject rollTime;
     private OppCardStack deck;
     private OppCardStack grave;
     private OppCardStack exile;
@@ -59,6 +62,7 @@ public class Opponent : MonoBehaviour
       updateStacks();
       updateLife();
       updateCoin();
+      updateDice();
     }
 
     public void updateHand()
@@ -350,5 +354,35 @@ public class Opponent : MonoBehaviour
     {
       coinToss.GetComponent<CanvasGroup>().alpha = 1;
       coinToss.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void updateDice()
+    {
+      if (state.diceVisible)
+      {
+        TMP_Text time = rollTime.GetComponent<TMP_Text>();
+        TMP_Text roll = diceRoll.GetComponent<TMP_Text>();
+        time.text = state.rollTime;
+        roll.text = "" + state.diceRoll;
+        showDice();
+      }
+      else
+      {
+        hideDice();
+      }
+    }
+
+    public void hideDice()
+    {
+      diceImage.GetComponent<CanvasGroup>().alpha = 0;
+      diceImage.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      rollTime.GetComponent<TMP_Text>().text = "";
+      diceRoll.GetComponent<TMP_Text>().text = "";
+    }
+
+    public void showDice()
+    {
+      diceImage.GetComponent<CanvasGroup>().alpha = 1;
+      diceImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
