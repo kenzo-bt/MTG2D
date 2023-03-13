@@ -21,6 +21,9 @@ public class CardInfo
     public string layout;
     public bool isToken;
     public List<string> finishes;
+    public string artist;
+    public string language;
+    public List<string> variations;
 
     public bool isBasicLand()
     {
@@ -34,6 +37,15 @@ public class CardInfo
     public bool hasBackSide()
     {
       if (layout != "adventure" && layout != "split" && backId != "" && backId != null)
+      {
+        return true;
+      }
+      return false;
+    }
+
+    public bool hasEnglishTranslation()
+    {
+      if (language != "English" && variations.Count != 0)
       {
         return true;
       }

@@ -73,6 +73,22 @@ public class WebCard : MonoBehaviour
       }
     }
 
+    IEnumerator fetchTranslationCardFromServer(string serverUrl, string cardId)
+    {
+      UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        saveImageToCache(cardTexture, cardId);
+      }
+    }
+
     // Apply texture to card
     public void texturizeCard(CardInfo card)
     {
@@ -120,6 +136,27 @@ public class WebCard : MonoBehaviour
           fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
           string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
           StartCoroutine(fetchBackCardFromServer(serverUrl, card.backId));
+        }
+      }
+      // Translation
+      if (card.hasEnglishTranslation())
+      {
+        CardInfo variation = PlayerManager.Instance.getCardFromLookup(card.variations[0]);
+        // Check if image already exists in cache
+        if (File.Exists(cachePath + variation.id + fileExtension))
+        {
+          Texture2D cardTexture = loadImageFromCache(variation.id);
+          fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        }
+        else // If not in cache, proceed to download from server
+        {
+          /*
+          // Set fallback image
+          Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+          fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+          */
+          string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
+          StartCoroutine(fetchTranslationCardFromServer(serverUrl, variation.id));
         }
       }
     }

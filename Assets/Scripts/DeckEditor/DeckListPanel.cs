@@ -148,6 +148,10 @@ public class DeckListPanel : MonoBehaviour
     public void highlightCard(string id)
     {
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
+      if (targetCard.hasEnglishTranslation())
+      {
+        targetCard = PlayerManager.Instance.getCardFromLookup(targetCard.variations[0]);
+      }
       highlightCardObject.SetActive(true);
       highlightCardObject.GetComponent<WebCard>().texturizeCard(targetCard);
       if (targetCard.hasBackSide())

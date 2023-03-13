@@ -78,6 +78,18 @@ for card in cards:
     except KeyError:
         backside = ""
 
+    artist = ""
+    try:
+        artist = card["artist"]
+    except KeyError:
+        artist = ""
+
+    variations = []
+    try:
+        variations = card["variations"]
+    except KeyError:
+        variations = []
+
     thisCard = {
         "id": card["uuid"],
         "name": card["name"],
@@ -94,7 +106,10 @@ for card in cards:
         "isBack": isBack,
         "layout": layout,
         "isToken": False,
-        "finishes": card["finishes"]
+        "finishes": card["finishes"],
+        "artist": artist,
+        "language": card["language"],
+        "variations": variations
     }
     outputSet["cards"].append(thisCard);
 
@@ -128,6 +143,12 @@ if len(tokens) > 0:
     if not os.path.exists(setTokenDirectory):
         os.makedirs(setTokenDirectory)
 for token in tokens:
+    artist = ""
+    try:
+        artist = token["artist"]
+    except KeyError:
+        artist = ""
+
     thisToken = {
         "id": token["uuid"],
         "name": token["name"],
@@ -144,7 +165,10 @@ for token in tokens:
         "isBack": False,
         "layout": "",
         "isToken": True,
-        "finishes": token["finishes"]
+        "finishes": token["finishes"],
+        "artist": artist,
+        "language": token["language"],
+        "variations": []
     }
     outputSet["cards"].append(thisToken);
 

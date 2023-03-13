@@ -28,6 +28,11 @@ public class OppBattlefieldCard : MonoBehaviour
       if (!hidden && !faceDown)
       {
         string id = GetComponent<WebCard>().cardId;
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
+        if (card.hasEnglishTranslation())
+        {
+          id = card.variations[0];
+        }
         player.GetComponent<Player>().showHighlightCard(id);
       }
     }
