@@ -331,12 +331,34 @@ public class CardCollection : MonoBehaviour
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(id);
       foreach (string keyword in searchKeywords)
       {
-        if (!targetCard.text.ToLower().Contains(keyword) && !targetCard.name.ToLower().Contains(keyword))
+        if (targetCard.text.ToLower().Contains(keyword))
         {
-          return false;
+          return true;
+        }
+        if (targetCard.name.ToLower().Contains(keyword))
+        {
+          return true;
+        }
+        if (targetCard.artist.ToLower().Contains(keyword))
+        {
+          return true;
+        }
+        foreach (string type in targetCard.types)
+        {
+          if (type.ToLower().Contains(keyword))
+          {
+            return true;
+          }
+        }
+        foreach (string subtype in targetCard.subtypes)
+        {
+          if (subtype.ToLower().Contains(keyword))
+          {
+            return true;
+          }
         }
       }
-      return true;
+      return false;
     }
 
     private static bool hasSelectedTypes(string id)
