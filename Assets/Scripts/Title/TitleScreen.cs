@@ -233,6 +233,9 @@ public class TitleScreen : MonoBehaviour
 
           // Remove any unfinished drafts
           PlayerManager.Instance.deletePlayerDrafts();
+
+          // Remove any unfinished FFA lobbies
+          PlayerManager.Instance.deletePlayerLobbies();
         }
       }
     }

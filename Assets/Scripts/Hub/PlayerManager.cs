@@ -31,6 +31,9 @@ public class PlayerManager : MonoBehaviour
     public bool loggedIn;
     public string role;
     public int draftHostID;
+    public int lobbyHostID;
+    public List<int> lobbyOpponents;
+    public List<Decklist> lobbyOpponentDecks;
 
     private void Awake()
     {
@@ -354,6 +357,28 @@ public class PlayerManager : MonoBehaviour
       else
       {
         // Debug.Log("Successfully deleted my drafts in server");
+      }
+      request.Dispose();
+    }
+
+    public void deletePlayerLobbies()
+    {
+      StartCoroutine(deletePlayerLobbiesInServer());
+    }
+
+    private IEnumerator deletePlayerLobbiesInServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "lobbies/" + PlayerManager.Instance.myID;
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbDELETE;
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        // Debug.Log("Successfully deleted my lobbies in server");
       }
       request.Dispose();
     }

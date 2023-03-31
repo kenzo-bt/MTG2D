@@ -24,9 +24,11 @@ public class WebCard : MonoBehaviour
     private Image fullMask;
     private Image fullImageBack;
     private Image fullMaskBack;
+    private FilterMode filterMode;
 
     void Awake()
     {
+      filterMode = FilterMode.Trilinear;
       cardImage = cardImageObject.GetComponent<Image>();
       maskImage = imageMaskObject.GetComponent<Image>();
       fullImage = fullImageObject.GetComponent<Image>();
@@ -50,7 +52,15 @@ public class WebCard : MonoBehaviour
       }
       else
       {
+        /*
+        var tempTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+        var cardTexture = new Texture2D(tempTexture.width, tempTexture.height);
+        cardTexture.filterMode = filterMode;
+        cardTexture.SetPixels(tempTexture.GetPixels());
+        cardTexture.Apply();
+        */
         Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
@@ -68,6 +78,7 @@ public class WebCard : MonoBehaviour
       else
       {
         Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
+        cardTexture.filterMode = filterMode;
         fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
@@ -84,6 +95,7 @@ public class WebCard : MonoBehaviour
       else
       {
         Texture2D cardTexture = ((DownloadHandlerTexture) request.downloadHandler).texture as Texture2D;
+        cardTexture.filterMode = filterMode;
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
@@ -110,6 +122,7 @@ public class WebCard : MonoBehaviour
       if (File.Exists(cachePath + cardId + fileExtension))
       {
         Texture2D cardTexture = loadImageFromCache(cardId);
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
@@ -117,6 +130,7 @@ public class WebCard : MonoBehaviour
       {
         // Set fallback image
         Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
@@ -128,11 +142,13 @@ public class WebCard : MonoBehaviour
         if (File.Exists(cachePath + card.backId + fileExtension))
         {
           Texture2D cardTexture = loadImageFromCache(card.backId);
+          cardTexture.filterMode = filterMode;
           fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         }
         else
         {
           Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+          cardTexture.filterMode = filterMode;
           fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
           string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
           StartCoroutine(fetchBackCardFromServer(serverUrl, card.backId));
@@ -146,6 +162,7 @@ public class WebCard : MonoBehaviour
         if (File.Exists(cachePath + variation.id + fileExtension))
         {
           Texture2D cardTexture = loadImageFromCache(variation.id);
+          cardTexture.filterMode = filterMode;
           fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         }
         else // If not in cache, proceed to download from server
@@ -168,6 +185,7 @@ public class WebCard : MonoBehaviour
       if (File.Exists(cachePath + cardId + fileExtension))
       {
         Texture2D cardTexture = loadImageFromCache(cardId);
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
@@ -175,6 +193,7 @@ public class WebCard : MonoBehaviour
       {
         // Set fallback image
         Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
@@ -188,6 +207,7 @@ public class WebCard : MonoBehaviour
       if (card.text.Contains("Morph"))
       {
         Texture2D cardTexture = Resources.Load("Images/WebCardDefault") as Texture2D;
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         return;
@@ -196,6 +216,7 @@ public class WebCard : MonoBehaviour
       if (File.Exists(cachePath + card.backId + fileExtension))
       {
         Texture2D cardTexture = loadImageFromCache(card.backId);
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       }
@@ -203,6 +224,7 @@ public class WebCard : MonoBehaviour
       {
         // Set fallback image
         Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
+        cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
@@ -246,6 +268,7 @@ public class WebCard : MonoBehaviour
     private void setOldBorder()
     {
       Texture2D cardTexture = Resources.Load("Images/OldBorder") as Texture2D;
+      cardTexture.filterMode = filterMode;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       fullMask.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       if (fullMaskBack)
@@ -258,6 +281,7 @@ public class WebCard : MonoBehaviour
     private void setNewBorder()
     {
       Texture2D cardTexture = Resources.Load("Images/NewBorder") as Texture2D;
+      cardTexture.filterMode = filterMode;
       maskImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       fullMask.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
       if (fullMaskBack)
@@ -328,6 +352,12 @@ public class WebCard : MonoBehaviour
     {
       bringToFront();
       transform.localPosition = new Vector3(transform.localPosition.x, 182f, transform.localPosition.z);
+    }
+
+    public void highlightInHandSmall()
+    {
+      bringToFront();
+      transform.localPosition = new Vector3(transform.localPosition.x, 100f, transform.localPosition.z);
     }
 
     public void unHighlightInHand()

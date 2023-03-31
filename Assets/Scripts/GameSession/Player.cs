@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
     private WebCard highlightCard;
     private WebCard highlightBackCard;
     private TMP_Text lifeCounter;
-    private GameState gameState;
     private Opponent opponent;
     private Hasher hasher;
     private int mulligans;
@@ -63,7 +62,6 @@ public class Player : MonoBehaviour
       highlightBackCard = highlightBackObject.GetComponent<WebCard>();
       lifeCounter = lifeObject.GetComponent<TMP_Text>();
       opponent = opponentObject.GetComponent<Opponent>();
-      gameState = gameStateObject.GetComponent<GameState>();
       mulligans = 0;
       initialHandSize = 7;
       lifeTotal = 20;
@@ -82,11 +80,18 @@ public class Player : MonoBehaviour
       battlefield.initializeBattlefield();
       grave.initializeStack();
       exile.initializeStack();
-      opponent.initializeOpponent();
+      // TODO remove this -> opponent.initializeOpponent();
       // Draw 7 cards (Involves hand and deck -> Player handles this)
       drawCards(initialHandSize);
       // Initialize game state
-      gameState.initializeState();
+      if (gameStateObject.GetComponent<GameState>() != null)
+      {
+        gameStateObject.GetComponent<GameState>().initializeState();
+      }
+      else
+      {
+        gameStateObject.GetComponent<GameStateFFA>().initializeState();
+      }
     }
 
     // Update is called once per frame
