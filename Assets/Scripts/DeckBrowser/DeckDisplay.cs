@@ -163,6 +163,7 @@ public class DeckDisplay : MonoBehaviour
     public void updateDeckInDisplay()
     {
       GameObject.Find("SelectPanel").GetComponent<SelectPanel>().updateSelectedDeck();
+      GameObject.Find("FreeForAllPanel").GetComponent<FreeForAllPanel>().updateSelectedDeck();
     }
 
     // Debug deck name

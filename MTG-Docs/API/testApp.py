@@ -56,6 +56,16 @@ class Draft(db.Model):
     def __repr__(self):
         return f"ID:{self.id} - HostId:{self.hostId}"
 
+class Lobby(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    hostId = db.Column(db.Integer, nullable=False)
+    hostName = db.Column(db.String(80))
+    players = db.Column(db.Text)
+    started = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f"ID:{self.id} - HostId:{self.hostId}"
+
 
 @app.route('/')
 def index():
@@ -489,3 +499,91 @@ def remove_draft_player(hostID, playerID):
         draft.players = json.dumps(players)
         db.session.commit()
     return {'players': json.loads(draft.players)}
+
+## All lobbies view ##
+
+@app.route('/lobbies')
+def get_lobbies():
+    lobbies = Lobby.query.all()
+
+    output = []
+    for lobby in lobbies:
+        lobby_data = {'id': lobby.id, 'hostId': lobby.hostId, 'hostName': lobby.hostName, 'players': json.loads(lobby.players), 'started': lobby.started}
+        output.append(lobby_data)
+
+    return {"lobbies" : output}
+
+@app.route('/lobbies', methods=['POST'])
+def add_lobby():
+    # Check if it already exists for this host, if so -> delete previous
+    prevLobby = Lobby.query.filter_by(hostId=request.json['hostId']).first()
+    if prevLobby is not None:
+        db.session.delete(prevLobby)
+        db.session.commit()
+    # Add new lobby
+    lobby = Lobby(hostId=request.json['hostId'], hostName=request.json['hostName'], players=json.dumps(request.json['players']), started=request.json['started'])
+    db.session.add(lobby)
+    db.session.commit()
+    return {'New lobby id': lobby.id, 'Host': lobby.hostId, 'HostName': lobby.hostName, 'Players': json.loads(lobby.players), 'Started': lobby.started}
+
+## Individual lobby view ##
+
+@app.route('/lobbies/<hostID>', methods=['GET'])
+def get_lobby(hostID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    return {'id': lobby.id, 'hostId': lobby.hostId, 'hostName': lobby.hostName, 'players': json.loads(lobby.players), 'started': lobby.started}
+
+@app.route('/lobbies/<hostID>', methods=['DELETE'])
+def delete_lobby(hostID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    db.session.delete(lobby)
+    db.session.commit()
+    return {"Successful lobby deletion": hostID}
+
+@app.route('/lobbies/<hostID>/start', methods=['POST'])
+def start_lobby(hostID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    lobby.started = 1
+    db.session.commit()
+    return {"Successfully started lobby": hostID}
+
+## Individual lobby player list ##
+
+@app.route('/lobbies/<hostID>/players', methods=['GET'])
+def get_lobby_players(hostID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    return {'players': json.loads(lobby.players)}
+
+@app.route('/lobbies/<hostID>/players/<playerID>', methods=['POST'])
+def add_lobby_player(hostID, playerID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    players = json.loads(lobby.players)
+    if len(players) >= 4:
+        return {"Error": "Lobby is already full"}
+    if int(playerID) not in players:
+        players.append(int(playerID))
+        lobby.players = json.dumps(players)
+        db.session.commit()
+    return {'players': json.loads(lobby.players)}
+
+@app.route('/lobbies/<hostID>/players/<playerID>', methods=['DELETE'])
+def remove_lobby_player(hostID, playerID):
+    lobby = Lobby.query.filter_by(hostId=hostID).first()
+    if lobby is None:
+        return {"Error": "Lobby not found"}
+    players = json.loads(lobby.players)
+    if int(playerID) in players:
+        players.remove(int(playerID))
+        lobby.players = json.dumps(players)
+        db.session.commit()
+    return {'players': json.loads(lobby.players)}

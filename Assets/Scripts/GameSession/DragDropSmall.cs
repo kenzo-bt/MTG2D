@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class DragDropSmall : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
     public GameObject player;
     Vector3 beginPosition;
@@ -35,8 +35,7 @@ public class DragDrop : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       bool cardVisibility = GetComponent<HandCard>().shown;
       float yPos = GetComponent<RectTransform>().localPosition.y;
-      float dropLimit = GetComponent<RectTransform>().rect.height > 250 ? 500f : 250f;
-      if (yPos > dropLimit)
+      if (yPos > 350f)
       {
         player.GetComponent<Player>().removeCardFromHand(transform.GetSiblingIndex());
         player.GetComponent<Player>().dropCardInBattlefield(card);

@@ -4,17 +4,19 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
+using TMPro;
 
-public class GameState : MonoBehaviour
+public class GameStateFFA : MonoBehaviour
 {
     public GameObject playerObject;
-    public GameObject opponentObject;
     private Player player;
-    private Opponent opponent;
-    private string lastOpponentHash;
     private string lastHash;
     private int playerID;
-    private int opponentID;
+    public List<GameObject> opponentObjects;
+    private List<int> opponentIds;
+    private List<string> lastOpponentHashes;
+    public GameObject playerName;
+    public List<GameObject> opponentNameObjects;
 
     // Start is called before the first frame update
     void Start()
@@ -31,21 +33,29 @@ public class GameState : MonoBehaviour
     public void initializeState()
     {
       lastHash = "";
-      lastOpponentHash = "";
       player = playerObject.GetComponent<Player>();
-      opponent = opponentObject.GetComponent<Opponent>();
-      opponent.initializeOpponent();
       playerID = PlayerManager.Instance.myID;
-      opponentID = PlayerManager.Instance.opponentID;
+      opponentIds = new List<int>(PlayerManager.Instance.lobbyOpponents);
+      lastOpponentHashes = new List<string>();
+      for (int i = 0; i < opponentIds.Count; i++)
+      {
+        lastOpponentHashes.Add("");
+        opponentObjects[i].GetComponent<Opponent>().initializeOpponent();
+      }
+      // Get names
+      StartCoroutine(fetchOpponentNamesFromServer());
       // Send state
       InvokeRepeating("sendState", 0.5f, 1f);
       // Start listening for changes in opponent state
-      InvokeRepeating("getOpponentState", 1.5f, 1f);
+      InvokeRepeating("getOpponentStates", 1.5f, 1f);
     }
 
-    public void getOpponentState()
+    public void getOpponentStates()
     {
-      StartCoroutine(getOpponentStateFromServer());
+      foreach (int oppId in opponentIds)
+      {
+        StartCoroutine(getOpponentStateFromServer(oppId));
+      }
     }
 
     public void sendState()
@@ -82,9 +92,10 @@ public class GameState : MonoBehaviour
       }
     }
 
-    IEnumerator getOpponentStateFromServer()
+    IEnumerator getOpponentStateFromServer(int opponentID)
     {
       // Get only hash first and compare to last hash. If different, fetch new state
+      int opponentIndex = opponentIds.IndexOf(opponentID);
       string url = PlayerManager.Instance.apiUrl + "users/" + opponentID + "/state/hash";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -96,7 +107,7 @@ public class GameState : MonoBehaviour
         else
         {
           string opponentHash = request.downloadHandler.text;
-          if (opponentHash != lastOpponentHash)
+          if (opponentHash != lastOpponentHashes[opponentIndex])
           {
             // Fetch new state
             url = PlayerManager.Instance.apiUrl + "users/" + opponentID + "/state";
@@ -112,6 +123,7 @@ public class GameState : MonoBehaviour
               {
                 string serverJson = stateRequest.downloadHandler.text;
                 BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
+                Opponent opponent = opponentObjects[opponentIndex].GetComponent<Opponent>();
                 opponent.prevState = opponent.state;
                 opponent.state = oppState;
                 opponent.state.debugState();
@@ -119,9 +131,38 @@ public class GameState : MonoBehaviour
               }
             }
             // Update lastOpponentHash
-            lastOpponentHash = opponentHash;
+            lastOpponentHashes[opponentIndex] = opponentHash;
           }
         }
+      }
+    }
+
+    private IEnumerator fetchOpponentNamesFromServer()
+    {
+      List<string> oppNames = new List<string>();
+      foreach (int playerID in PlayerManager.Instance.lobbyOpponents)
+      {
+        string url = PlayerManager.Instance.apiUrl + "users/" + playerID;
+        using (UnityWebRequest nameRequest = UnityWebRequest.Get(url))
+        {
+          yield return nameRequest.SendWebRequest();
+          if (nameRequest.result == UnityWebRequest.Result.ConnectionError || nameRequest.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(nameRequest.error);
+          }
+          else
+          {
+            string serverJson = nameRequest.downloadHandler.text;
+            User user = JsonUtility.FromJson<User>(serverJson);
+            oppNames.Add(user.username);
+          }
+        }
+      }
+      // Update names
+      playerName.GetComponent<TMP_Text>().text = PlayerManager.Instance.myName;
+      for (int i = 0; i < oppNames.Count; i++)
+      {
+        opponentNameObjects[i].GetComponent<TMP_Text>().text = oppNames[i];
       }
     }
 }
