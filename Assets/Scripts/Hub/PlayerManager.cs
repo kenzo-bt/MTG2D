@@ -45,8 +45,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      serverUrl = "http://myxos.live/MTG/";
-      apiUrl = "http://myxos.live/pythonAPI/";
+      serverUrl = "https://myxos.online/MTG/";
+      apiUrl = "https://myxos.online/pythonAPI/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
