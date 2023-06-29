@@ -738,10 +738,10 @@ RectTransform:
   - {fileID: 1876604088}
   - {fileID: 1996678668}
   - {fileID: 1442364103}
+  - {fileID: 369419182}
   - {fileID: 2128416390}
   - {fileID: 288632437}
   - {fileID: 1691154549}
-  - {fileID: 369419182}
   - {fileID: 614298392}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -923,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 922.5, y: 0}
+  m_AnchoredPosition: {x: -924.0001, y: -196.04996}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209348526
@@ -1593,7 +1593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5331843440330738948, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5331843440330738948, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1901,7 +1901,7 @@ RectTransform:
   - {fileID: 209348525}
   - {fileID: 1741815288}
   m_Father: {fileID: 142631251}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1930,9 +1930,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369419181}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!224 &390433663 stripped
 RectTransform:
@@ -3519,7 +3519,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 475, y: 0}
   m_SizeDelta: {x: 950, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &755833184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8557,7 +8557,7 @@ RectTransform:
   - {fileID: 717162999}
   - {fileID: 1982358559}
   m_Father: {fileID: 142631251}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8905,7 +8905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409.24994, y: -128.52}
+  m_AnchoredPosition: {x: -411.5001, y: -67.52501}
   m_SizeDelta: {x: 950, y: 332.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741815289
@@ -9529,6 +9529,7 @@ MonoBehaviour:
     creatures: []
     lands: []
     others: []
+    events: []
     life: 0
     hash: 
     coinToss: 0
@@ -9545,6 +9546,7 @@ MonoBehaviour:
     creatures: []
     lands: []
     others: []
+    events: []
     life: 0
     hash: 
     coinToss: 0
@@ -10455,6 +10457,7 @@ MonoBehaviour:
   diceRoll: 0
   rollTime: 
   diceVisible: 0
+  eventLog: []
 --- !u!114 &1996678667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11512,7 +11515,7 @@ RectTransform:
   - {fileID: 60315398}
   - {fileID: 1799709072}
   m_Father: {fileID: 142631251}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

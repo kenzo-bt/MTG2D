@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
     public int diceRoll;
     public string rollTime;
     public bool diceVisible;
+    public List<string> eventLog;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour
       diceRoll = 0;
       rollTime = "";
       diceVisible = false;
+      eventLog = new List<string>();
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -127,6 +129,7 @@ public class Player : MonoBehaviour
         hand.orderHand();
       }
       logMessage("You drew a card (" + card.name + ")");
+      registerEvent(PlayerManager.Instance.myName + " drew a card");
     }
 
     // Mulligan
@@ -142,6 +145,7 @@ public class Player : MonoBehaviour
         // Perform a mulligan
         drawCards(initialHandSize - mulligans);
         logMessage("You performed a mulligan (Drew " + (initialHandSize - mulligans) + ")");
+        registerEvent(PlayerManager.Instance.myName + " performed a mulligan (Drew " + (initialHandSize - mulligans) + ")");
       }
     }
 
@@ -150,6 +154,7 @@ public class Player : MonoBehaviour
     {
       deck.shuffleDeck();
       logMessage("You shuffled your deck");
+      registerEvent(PlayerManager.Instance.myName + " shuffled their deck");
     }
 
     // Produce board state as JSON string
@@ -170,6 +175,7 @@ public class Player : MonoBehaviour
       myState.diceRoll = diceRoll;
       myState.rollTime = rollTime;
       myState.diceVisible = diceVisible;
+      myState.events = new List<string>(eventLog);
       myState.hash = ""; // Standardize to avoid garbage values before hashing
       myState.hash = hasher.getHash(JsonUtility.ToJson(myState));
 
@@ -202,13 +208,15 @@ public class Player : MonoBehaviour
     {
       battlefield.addCard(card);
       logMessage("You dropped " + card.name + " to the battlefield");
+      registerEvent(PlayerManager.Instance.myName + " dropped " + card.name + " to the battlefield");
     }
 
     // Create a card in the battlefield (token)
     public void addCardToBattlefield(CardInfo card)
     {
       battlefield.addCard(card);
-      logMessage("You created a " + card.name + " token in the battlefield");
+      logMessage("You created a " + card.name + " token");
+      registerEvent(PlayerManager.Instance.myName + " created a " + card.name + " token");
     }
 
     // Move battlefield card from source to destination
@@ -246,6 +254,7 @@ public class Player : MonoBehaviour
       // Hide card highlight (OnPointerExit will not trigger when the card disappears from field)
       hideHighlightCard();
       logMessage("You moved " + targetCard.name + " from " + sourceArea + "to " + destination);
+      registerEvent(PlayerManager.Instance.myName + " moved " + targetCard.name + " from " + sourceArea + "to " + destination);
     }
 
     public void moveStackCard(string cardId, int index, string source, string destination)
@@ -293,7 +302,8 @@ public class Player : MonoBehaviour
         exile.addCard(cardId, true);
       }
       CardInfo targetCard = PlayerManager.Instance.getCardFromLookup(cardId);
-      logMessage("You moved " + targetCard.name + " from " + source + "to " + destination);
+      logMessage("You moved " + targetCard.name + " from " + source + " to " + destination);
+      registerEvent(PlayerManager.Instance.myName + " moved a card from their " + source + " into their " + destination);
     }
 
     // Show highlight card
@@ -348,6 +358,7 @@ public class Player : MonoBehaviour
     {
       lifeCounter.text = lifeTotal.ToString();
       logMessage("Life total changed to " + lifeTotal.ToString());
+      registerEvent(PlayerManager.Instance.myName + " changed life total to " + lifeTotal.ToString());
     }
 
     // show a card in hand to opponent
@@ -382,6 +393,7 @@ public class Player : MonoBehaviour
         grave.addCard(cardId, true);
       }
       logMessage("You milled " + numCards + " cards");
+      registerEvent(PlayerManager.Instance.myName + " milled " + numCards + " cards");
     }
 
     // Look at top X cards of library
@@ -399,6 +411,7 @@ public class Player : MonoBehaviour
       // Open the browser
       deckStack.showStack();
       logMessage("You looked at the top " + numCards + " cards of your deck");
+      registerEvent(PlayerManager.Instance.myName + " looked at the top " + numCards + " cards of their deck");
     }
 
     // Make whole deck stack visible. Open Browser. Shuffle after search.
@@ -413,6 +426,7 @@ public class Player : MonoBehaviour
       browserObject.GetComponent<CardBrowser>().shuffle = true;
       deckStack.showStack();
       logMessage("You searched your library for a card");
+      registerEvent(PlayerManager.Instance.myName + " is searching their library");
     }
 
     public void logMessage(string message)
@@ -420,6 +434,11 @@ public class Player : MonoBehaviour
       string time = DateTime.Now.ToLongTimeString();
       message = time + " - " + message;
       loggerObject.GetComponent<Logger>().addToLogger(message);
+    }
+
+    public void logOpponentEvent(string eventMessage)
+    {
+      loggerObject.GetComponent<Logger>().addToLogger(eventMessage);
     }
 
     public void tossCoin()
@@ -432,11 +451,15 @@ public class Player : MonoBehaviour
       {
         Texture2D headTexture = Resources.Load("Images/coinHeads") as Texture2D;
         coin.sprite = Sprite.Create(headTexture, new Rect(0, 0, headTexture.width, headTexture.height), new Vector2(0.5f, 0.5f));
+        logMessage("You tossed the coin. It landed on HEADS");
+        registerEvent(PlayerManager.Instance.myName + " tossed the coin. It landed on HEADS");
       }
       else if (coinToss == 1) // Tails
       {
         Texture2D tailTexture = Resources.Load("Images/coinTails") as Texture2D;
         coin.sprite = Sprite.Create(tailTexture, new Rect(0, 0, tailTexture.width, tailTexture.height), new Vector2(0.5f, 0.5f));
+        logMessage("You tossed the coin. It landed on TAILS");
+        registerEvent(PlayerManager.Instance.myName + " tossed the coin. It landed on TAILS");
       }
       time.text = tossTime;
       coinVisible = true;
@@ -475,6 +498,8 @@ public class Player : MonoBehaviour
       diceVisible = true;
       showDice();
       StartCoroutine(disableDiceButtonTemporarily(5));
+      logMessage("You rolled a " + diceRoll);
+      registerEvent(PlayerManager.Instance.myName + " rolled a " + diceRoll);
     }
 
     private IEnumerator disableDiceButtonTemporarily(int seconds)
@@ -498,5 +523,12 @@ public class Player : MonoBehaviour
     {
       diceImage.GetComponent<CanvasGroup>().alpha = 1;
       diceImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void registerEvent(string eventDescription)
+    {
+      string time = DateTime.Now.ToLongTimeString();
+      eventDescription = "<color=#FF8400>" + time + " - " + eventDescription + "</color>";
+      eventLog.Add(eventDescription);
     }
 }

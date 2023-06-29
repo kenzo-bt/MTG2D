@@ -29,6 +29,7 @@ public class Opponent : MonoBehaviour
     public BoardState prevState;
     public BoardState state;
     private TMP_Text life;
+    private int lastEventIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,7 @@ public class Opponent : MonoBehaviour
       deck.initializeStack();
       grave.initializeStack();
       exile.initializeStack();
+      lastEventIndex = -1;
     }
 
     public void updateBoard()
@@ -63,6 +65,7 @@ public class Opponent : MonoBehaviour
       updateLife();
       updateCoin();
       updateDice();
+      updateOpponentEvents();
     }
 
     public void updateHand()
@@ -384,5 +387,17 @@ public class Opponent : MonoBehaviour
     {
       diceImage.GetComponent<CanvasGroup>().alpha = 1;
       diceImage.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void updateOpponentEvents()
+    {
+      if ((state.events.Count - 1) > lastEventIndex)
+      {
+        for (int i = lastEventIndex + 1; i < state.events.Count; i++)
+        {
+          player.GetComponent<Player>().logOpponentEvent(state.events[i]);
+        }
+        lastEventIndex = state.events.Count - 1;
+      }
     }
 }

@@ -12,6 +12,7 @@ public class BoardState
   public List<string> creatures;
   public List<string> lands;
   public List<string> others;
+  public List<string> events;
   public int life;
   public string hash;
   public int coinToss;
