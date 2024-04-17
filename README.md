@@ -1,5 +1,5 @@
 # MTG2D
-Magic The Gathering simulator in 2D made in Unity
+Magic: The Gathering simulator in 2D made in Unity
 
 ## Current features
 
