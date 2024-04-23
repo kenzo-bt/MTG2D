@@ -17,7 +17,7 @@ class Card(db.Model):
     def __repr__(self):
         return f"{self.name} - {self.description}"
 
-class User(db.Model):
+class Player(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     state = db.Column(db.Text)
@@ -33,7 +33,7 @@ class User(db.Model):
         return f"ID:{self.id} - {self.username}"
 
 
-class Global(db.Model):
+class Globaldecks(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True, nullable=False)
     content = db.Column(db.Text)
@@ -107,7 +107,7 @@ def delete_card(id):
 
 @app.route('/users')
 def get_users():
-    users = User.query.all()
+    users = Player.query.all()
 
     output = []
     for user in users:
@@ -127,12 +127,12 @@ def add_user():
 
 @app.route('/users/<id>')
 def get_user(id):
-    user = User.query.get_or_404(id)
+    user = Player.query.get_or_404(id)
     return {"id": user.id, "username": user.username, "password": user.password}
 
 @app.route('/users/<id>', methods=['DELETE'])
 def delete_user(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     if user is None:
         return {"Error": "User not found"}
     db.session.delete(user)
@@ -141,35 +141,35 @@ def delete_user(id):
 
 @app.route('/users/<id>/name')
 def get_username(id):
-    user = User.query.get_or_404(id)
+    user = Player.query.get_or_404(id)
     return {"name": user.username}
 
 ### Board state ###
 
 @app.route('/users/<id>/state')
 def get_user_state(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.state is None:
         return {'hand': [], 'deck': [], 'grave': [], 'exile': [], 'creatures': [], 'lands': [], 'others': [], 'life': 0, 'hash': '', 'coinToss': 0, 'tossTime': ''}
     return json.loads(user.state)
 
 @app.route('/users/<id>/state', methods=['POST'])
 def write_user_state(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.state = json.dumps(request.json)
     db.session.commit()
     return {'username': user.username, 'newState': json.loads(user.state)}
 
 @app.route('/users/<id>/state', methods=['DELETE'])
 def delete_user_state(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.state = None
     db.session.commit()
     return {'Success': 'State successfully deleted.'}
 
 @app.route('/users/<id>/state/hash')
 def get_user_state_hash(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.state is None:
         return ''
     return json.loads(user.state)['hash']
@@ -178,14 +178,14 @@ def get_user_state_hash(id):
 
 @app.route('/users/<id>/friends')
 def get_user_friends(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.friends is None:
         return {'friends': []}
     return {'friends': json.loads(user.friends)}
 
 @app.route('/users/<id>/friends', methods=['POST'])
 def write_user_friends(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.friends = json.dumps(request.json['friends'])
     db.session.commit()
     return {'friends': json.loads(user.friends)}
@@ -194,14 +194,14 @@ def write_user_friends(id):
 
 @app.route('/users/<id>/decks')
 def get_user_decks(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.decks is None:
         return {'decks': []}
     return {'decks': json.loads(user.decks)}
 
 @app.route('/users/<id>/decks', methods=['POST'])
 def write_user_decks(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.decks = json.dumps(request.json['decks'])
     db.session.commit()
     return {'decks': json.loads(user.decks)}
@@ -210,14 +210,14 @@ def write_user_decks(id):
 
 @app.route('/users/<id>/activeDeck')
 def get_user_activeDeck(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.activeDeck is None:
         return {'name': '', 'cards': [], 'sideboard': [], 'cardFrequencies': [], 'sideboardFrequencies': [], 'coverId': '', 'isDraft': False}
     return json.loads(user.activeDeck)
 
 @app.route('/users/<id>/activeDeck', methods=['POST'])
 def write_user_activeDeck(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.activeDeck = json.dumps(request.json)
     db.session.commit()
     return json.loads(user.activeDeck)
@@ -226,28 +226,28 @@ def write_user_activeDeck(id):
 
 @app.route('/users/<id>/challenges')
 def get_user_challenges(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.challenges is None:
         return {'challenges': []}
     return {'challenges': json.loads(user.challenges)}
 
 @app.route('/users/<id>/challenges', methods=['POST'])
 def write_user_challenges(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.challenges = json.dumps(request.json['challenges'])
     db.session.commit()
     return {'challenges': json.loads(user.challenges)}
 
 @app.route('/users/<id>/challenges', methods=['DELETE'])
 def delete_user_challenges(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.challenges = "[]"
     db.session.commit()
     return {'challenges': json.loads(user.challenges)}
 
 @app.route('/users/<id>/challenges/<chId>')
 def get_user_challenge(id, chId):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     challenges = json.loads(user.challenges)
     for challenge in challenges:
         for key, value in challenge.items():
@@ -257,7 +257,7 @@ def get_user_challenge(id, chId):
 
 @app.route('/users/<id>/challenges/<chId>', methods=['POST'])
 def write_user_challenge(id, chId):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     incomingChallenge = request.json
     incomingValue = None
     for key, value in incomingChallenge.items():
@@ -282,7 +282,7 @@ def write_user_challenge(id, chId):
 
 @app.route('/users/<id>/challenges/<chId>', methods=['DELETE'])
 def delete_user_challenge(id, chId):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     allChallenges = json.loads(user.challenges if user.challenges != None else "[]")
     challengeFound = False
     for challenge in allChallenges[:]:
@@ -302,14 +302,14 @@ def delete_user_challenge(id, chId):
 
 @app.route('/users/<id>/draftPacks')
 def get_user_draftPacks(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.draftPacks is None:
         return {'draftPacks': []}
     return {'draftPacks': json.loads(user.draftPacks)}
 
 @app.route('/users/<id>/draftPacks', methods=['POST'])
 def write_user_draftPacks(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     user.draftPacks = json.dumps(request.json['draftPacks'])
     # Reset the player's draft queue
     if user.draftQueue is not None:
@@ -319,7 +319,7 @@ def write_user_draftPacks(id):
 
 @app.route('/users/<id>/draftPacks/<packNum>')
 def get_user_draftPacks_individual(id, packNum):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     packs = json.loads(user.draftPacks if user.draftPacks != None else "[]")
     if len(packs) >= (int(packNum) + 1):
         return packs[int(packNum)]
@@ -327,7 +327,7 @@ def get_user_draftPacks_individual(id, packNum):
 
 @app.route('/users/<id>/draftPacks/<packNum>', methods=['POST'])
 def write_user_draftPacks_individual(id, packNum):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     packs = json.loads(user.draftPacks if user.draftPacks != None else "[]")
     if len(packs) >= (int(packNum) + 1):
         packs[int(packNum)] = {'cards': request.json['cards']}
@@ -340,14 +340,14 @@ def write_user_draftPacks_individual(id, packNum):
 
 @app.route('/users/<id>/draftQueue')
 def get_user_draftQueue(id):
-    user =  User.query.get_or_404(id)
+    user =  Player.query.get_or_404(id)
     if user.draftQueue is None:
         return {'draftQueue': []}
     return {'draftQueue': json.loads(user.draftQueue)}
 
 @app.route('/users/<id>/draftQueue', methods=['POST'])
 def add_user_draftQueue(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
     pack = request.json
     queue.append(pack)
@@ -357,7 +357,7 @@ def add_user_draftQueue(id):
 
 @app.route('/users/<id>/draftQueue', methods=['DELETE'])
 def delete_user_draftQueue(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
     if len(queue) > 0:
         pack = queue.pop(0)
@@ -368,7 +368,7 @@ def delete_user_draftQueue(id):
 
 @app.route('/users/<id>/draftQueue/consume')
 def consume_user_draftQueue(id):
-    user = User.query.get(id)
+    user = Player.query.get(id)
     queue = json.loads(user.draftQueue if user.draftQueue != None else "[]")
     if len(queue) > 0:
         pack = queue.pop(0)
@@ -381,7 +381,7 @@ def consume_user_draftQueue(id):
 
 @app.route('/globals')
 def get_globals():
-    globals = Global.query.all()
+    globals = Globaldecks.query.all()
 
     output = []
     for entry in globals:
@@ -392,23 +392,23 @@ def get_globals():
 
 @app.route('/globals/starters')
 def get_starters():
-    starters = Global.query.get(1)
+    starters = Globaldecks.query.get(1)
     return json.loads(starters.content)
 
 @app.route('/globals/starters', methods=['POST'])
 def write_starters():
-    starters = Global.query.get(1)
+    starters = Globaldecks.query.get(1)
     starters.content = json.dumps(request.json)
     return json.loads(starters.content)
 
 @app.route('/globals/proFeatured')
 def get_proFeatured():
-    proFeatured = Global.query.get(2)
+    proFeatured = Globaldecks.query.get(2)
     return json.loads(proFeatured.content)
 
 @app.route('/globals/proFeatured', methods=['POST'])
 def write_proFeatured():
-    proFeatured = Global.query.get(2)
+    proFeatured = Globaldecks.query.get(2)
     proFeatured.content = json.dumps(request.json)
     return json.loads(proFeatured.content)
 
