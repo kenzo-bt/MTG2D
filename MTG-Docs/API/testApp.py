@@ -20,7 +20,7 @@ class Card(db.Model):
 class Player(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
-    state = db.Column(db.Text)
+    gamestate = db.Column(db.Text)
     password = db.Column(db.Text)
     friends = db.Column(db.Text)
     challenges = db.Column(db.Text)
@@ -149,30 +149,30 @@ def get_username(id):
 @app.route('/users/<id>/state')
 def get_user_state(id):
     user =  Player.query.get_or_404(id)
-    if user.state is None:
+    if user.gamestate is None:
         return {'hand': [], 'deck': [], 'grave': [], 'exile': [], 'creatures': [], 'lands': [], 'others': [], 'life': 0, 'hash': '', 'coinToss': 0, 'tossTime': ''}
-    return json.loads(user.state)
+    return json.loads(user.gamestate)
 
 @app.route('/users/<id>/state', methods=['POST'])
 def write_user_state(id):
     user = Player.query.get(id)
-    user.state = json.dumps(request.json)
+    user.gamestate = json.dumps(request.json)
     db.session.commit()
-    return {'username': user.username, 'newState': json.loads(user.state)}
+    return {'username': user.username, 'newState': json.loads(user.gamestate)}
 
 @app.route('/users/<id>/state', methods=['DELETE'])
 def delete_user_state(id):
     user = Player.query.get(id)
-    user.state = None
+    user.gamestate = None
     db.session.commit()
     return {'Success': 'State successfully deleted.'}
 
 @app.route('/users/<id>/state/hash')
 def get_user_state_hash(id):
     user =  Player.query.get_or_404(id)
-    if user.state is None:
+    if user.gamestate is None:
         return ''
-    return json.loads(user.state)['hash']
+    return json.loads(user.gamestate)['hash']
 
 ### User friends view ###
 
