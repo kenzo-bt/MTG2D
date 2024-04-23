@@ -40,15 +40,16 @@ public class WebCard : MonoBehaviour
       }
     }
 
-    IEnumerator fetchCardFromServer(string serverUrl, string cardId)
+    IEnumerator fetchCardFromServer(string cardId)
     {
-      UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
         Debug.Log("Failed to retrieve card with ID: " + cardId);
-        Debug.Log("ServerURL: " + serverUrl);
+        Debug.Log("URL: " + card.imageUrl);
       }
       else
       {
@@ -67,9 +68,10 @@ public class WebCard : MonoBehaviour
       }
     }
 
-    IEnumerator fetchBackCardFromServer(string serverUrl, string cardId)
+    IEnumerator fetchBackCardFromServer(string cardId)
     {
-      UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
@@ -84,9 +86,10 @@ public class WebCard : MonoBehaviour
       }
     }
 
-    IEnumerator fetchTranslationCardFromServer(string serverUrl, string cardId)
+    IEnumerator fetchTranslationCardFromServer(string cardId)
     {
-      UnityWebRequest request = UnityWebRequestTexture.GetTexture(serverUrl + cardId + fileExtension);
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
+      UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
@@ -133,8 +136,7 @@ public class WebCard : MonoBehaviour
         cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-        string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
-        StartCoroutine(fetchCardFromServer(serverUrl, cardId));
+        StartCoroutine(fetchCardFromServer(cardId));
       }
       // MDFC back side
       if (card.backId != "" && card.backId != null && fullImageBack)
@@ -150,8 +152,7 @@ public class WebCard : MonoBehaviour
           Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
           cardTexture.filterMode = filterMode;
           fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-          string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
-          StartCoroutine(fetchBackCardFromServer(serverUrl, card.backId));
+          StartCoroutine(fetchBackCardFromServer(card.backId));
         }
       }
       // Translation
@@ -172,8 +173,7 @@ public class WebCard : MonoBehaviour
           Texture2D cardTexture = Resources.Load("Images/cardFallback") as Texture2D;
           fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
           */
-          string serverUrl = PlayerManager.Instance.serverUrl + set + "/";
-          StartCoroutine(fetchTranslationCardFromServer(serverUrl, variation.id));
+          StartCoroutine(fetchTranslationCardFromServer(variation.id));
         }
       }
     }
@@ -196,8 +196,7 @@ public class WebCard : MonoBehaviour
         cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-        string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
-        StartCoroutine(fetchCardFromServer(serverUrl, cardId));
+        StartCoroutine(fetchCardFromServer(cardId));
       }
     }
 
@@ -227,8 +226,7 @@ public class WebCard : MonoBehaviour
         cardTexture.filterMode = filterMode;
         cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
-        string serverUrl = PlayerManager.Instance.serverUrl + card.set + "/";
-        StartCoroutine(fetchCardFromServer(serverUrl, card.backId));
+        StartCoroutine(fetchCardFromServer(card.backId));
       }
     }
 

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class DeckBrowser : MonoBehaviour
 {
-
     public GameObject yourDecks;
     public GameObject starterDecksObject;
     public GameObject proDecksObject;
