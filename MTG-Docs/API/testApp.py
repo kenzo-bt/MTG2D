@@ -69,11 +69,7 @@ class Lobby(db.Model):
 
     def __repr__(self):
         return f"ID:{self.id} - HostId:{self.hostId}"
-
-
-@app.route('/')
-def index():
-    return redirect("pythonAPI/index.html", code=302)
+        
 
 @app.route('/cards')
 def get_cards():
