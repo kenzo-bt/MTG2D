@@ -11,8 +11,8 @@ import time
 # Verify that the script is run with correct arguments
 if len(sys.argv) > 2:
     print("ERROR: Invalid number of arguments")
-    print("USAGE: python getCardsFromSet.py [-p | -t]")
-    print("Use the -p flag to download the card images and -t to download the token images")
+    print("USAGE: python getCardsFromSet.py [-p]")
+    print("Use the -p flag to download the card and token images locally")
     sys.exit()
 
 # Define input/output paths for JSON files
@@ -279,7 +279,6 @@ for setCode in includedSets:
     # Get tokens from set
     tokens = setInformation["tokens"]
     if len(tokens) > 0:
-        print("Tokens found in this set...")
         # If token directory doesnt exist, create it
         if not os.path.exists(setTokenDirectory):
             os.makedirs(setTokenDirectory)
@@ -323,7 +322,7 @@ for setCode in includedSets:
         }
         outputSet["cards"].append(thisToken);
 
-        if len(sys.argv) == 2 and sys.argv[1] == "-t":
+        if len(sys.argv) == 2 and sys.argv[1] == "-p":
             if not os.path.exists(setTokenDirectory + token["uuid"] + ".jpg"):
                 # Save image to the image output directory
                 image = requests.get(imageUrl)
