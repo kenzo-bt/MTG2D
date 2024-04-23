@@ -90,20 +90,13 @@ for card in cards:
     except KeyError:
         variations = []
 
-    # Get image URL from Scryfall API (https://scryfall.com/docs/api)
-    # ! IMPORTANT ! Using sleep method to stay compliant with Scryfall API request limits (Max 10 request per second)
+    imageSize = "normal"
     imageUrl = ""
-    scryfallResponse = requests.get('https://api.scryfall.com/cards/' + card["identifiers"]["scryfallId"])
-    time.sleep(0.1)
-    data = scryfallResponse.text
-    parse_json = json.loads(data)
-    try:
-        imageUrl = parse_json["image_uris"]["normal"]
-    except KeyError:
-        if card["side"] == "a":
-            imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
-        else:
-            imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
+    scryfallId = card["identifiers"]["scryfallId"]
+    if isBack:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+    else:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
 
     thisCard = {
         "id": card["uuid"],
@@ -152,18 +145,13 @@ for token in tokens:
     except KeyError:
         artist = ""
 
+    imageSize = "normal"
     imageUrl = ""
-    scryfallResponse = requests.get('https://api.scryfall.com/cards/' + token["identifiers"]["scryfallId"])
-    time.sleep(0.1)
-    data = scryfallResponse.text
-    parse_json = json.loads(data)
-    try:
-        imageUrl = parse_json["image_uris"]["normal"]
-    except KeyError:
-        if token["side"] == "a":
-            imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
-        else:
-            imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
+    scryfallId = token["identifiers"]["scryfallId"]
+    if isBack:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+    else:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
 
     thisToken = {
         "id": token["uuid"],
