@@ -66,6 +66,7 @@ public class WebCard : MonoBehaviour
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
+      yield return new WaitForSeconds(0.1);
     }
 
     IEnumerator fetchBackCardFromServer(string cardId)
@@ -84,6 +85,7 @@ public class WebCard : MonoBehaviour
         fullImageBack.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
+      yield return new WaitForSeconds(0.1);
     }
 
     IEnumerator fetchTranslationCardFromServer(string cardId)
@@ -102,6 +104,7 @@ public class WebCard : MonoBehaviour
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         saveImageToCache(cardTexture, cardId);
       }
+      yield return new WaitForSeconds(0.1);
     }
 
     // Apply texture to card
