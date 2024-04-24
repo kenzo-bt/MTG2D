@@ -90,8 +90,17 @@ for card in cards:
     except KeyError:
         variations = []
 
+    imageSize = "normal"
+    imageUrl = ""
+    scryfallId = card["identifiers"]["scryfallId"]
+    if isBack:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+    else:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+
     thisCard = {
         "id": card["uuid"],
+        "imageUrl": imageUrl,
         "name": card["name"],
         "text": text,
         "colours": card["colors"],
@@ -116,20 +125,6 @@ for card in cards:
 
     if len(sys.argv) == 3 and sys.argv[2] == "-p":
         if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
-            # Get image URL from Scryfall API (https://scryfall.com/docs/api)
-            # ! IMPORTANT ! Using sleep method to stay compliant with Scryfall API request limits (Max 10 request per second)
-            scryfallResponse = requests.get('https://api.scryfall.com/cards/' + card["identifiers"]["scryfallId"])
-            time.sleep(0.1)
-            data = scryfallResponse.text
-            parse_json = json.loads(data)
-            try:
-                imageUrl = parse_json["image_uris"]["normal"]
-            except KeyError:
-                if card["side"] == "a":
-                    imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
-                else:
-                    imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
-
             # Save image to the image output directory
             image = requests.get(imageUrl)
             file = open(setImageDirectory + card["uuid"] + ".jpg", "wb")
@@ -150,8 +145,17 @@ for token in tokens:
     except KeyError:
         artist = ""
 
+    imageSize = "normal"
+    imageUrl = ""
+    scryfallId = token["identifiers"]["scryfallId"]
+    if isBack:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+    else:
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+
     thisToken = {
         "id": token["uuid"],
+        "imageUrl": imageUrl,
         "name": token["name"],
         "text": "",
         "colours": token["colors"],
@@ -176,18 +180,6 @@ for token in tokens:
 
     if len(sys.argv) == 3 and sys.argv[2] == "-t":
         if not os.path.exists(setTokenDirectory + token["uuid"] + ".jpg"):
-            scryfallResponse = requests.get('https://api.scryfall.com/cards/' + token["identifiers"]["scryfallId"])
-            time.sleep(0.1)
-            data = scryfallResponse.text
-            parse_json = json.loads(data)
-            try:
-                imageUrl = parse_json["image_uris"]["normal"]
-            except KeyError:
-                if token["side"] == "a":
-                    imageUrl = parse_json["card_faces"][0]["image_uris"]["normal"]
-                else:
-                    imageUrl = parse_json["card_faces"][1]["image_uris"]["normal"]
-
             # Save image to the image output directory
             image = requests.get(imageUrl)
             file = open(setTokenDirectory + token["uuid"] + ".jpg", "wb")

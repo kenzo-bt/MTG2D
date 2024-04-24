@@ -6,6 +6,7 @@ using UnityEngine;
 public class CardInfo
 {
     public string id;
+    public string imageUrl;
     public string name;
     public string text;
     public List<string> colours;

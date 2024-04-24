@@ -19,7 +19,6 @@ public class PlayerManager : MonoBehaviour
     public List<Decklist> proFeaturedDecks;
     private string decksFilePath;
     private string collectionFilePath;
-    public string serverUrl;
     public string apiUrl;
     public string serverImageFileExtension;
     public int myID;
@@ -45,8 +44,7 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      serverUrl = "https://myxos.online/MTG/";
-      apiUrl = "https://myxos.online/pythonAPI/";
+      apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
