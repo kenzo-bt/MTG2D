@@ -12,6 +12,7 @@ public class FriendsPanel : MonoBehaviour
   public GameObject addOverlayObject;
   public GameObject panelObject;
   public GameObject expanderObject;
+  private Matchmaker matchmaker;
   private AddFriend addFriendOverlay;
   private float speed;
   private float showPanelY;
@@ -22,6 +23,7 @@ public class FriendsPanel : MonoBehaviour
   void Start()
   {
       addFriendOverlay = addOverlayObject.GetComponent<AddFriend>();
+      matchmaker = GetComponent<Matchmaker>();
       // Panel Movement
       speed = 500f;
       showPanelY = panelObject.transform.localPosition.y;
@@ -42,12 +44,18 @@ public class FriendsPanel : MonoBehaviour
   {
     targetPosition = new Vector3(0f, showPanelY, 0f);
     expanderObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+
+    // Start checking for incoming challenges
+    matchmaker.startChallengeChecking();
   }
 
   public void hidePanel()
   {
     targetPosition = new Vector3(0f, hidePanelY, 0f);
     expanderObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+
+    // Stop checking for challenges
+    matchmaker.stopChallengeChecking();
   }
 
   public void loadFriends()
@@ -81,7 +89,6 @@ public class FriendsPanel : MonoBehaviour
   public IEnumerator getFriendsFromServer()
   {
     FriendList allFriends = new FriendList();
-    AllUsers allUsers = new AllUsers();
     // Get ids
     string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/friends";
     using (UnityWebRequest request = UnityWebRequest.Get(url))
@@ -95,21 +102,6 @@ public class FriendsPanel : MonoBehaviour
       {
         string serverJson = request.downloadHandler.text;
         allFriends = JsonUtility.FromJson<FriendList>(serverJson);
-      }
-    }
-    // Get names
-    url = PlayerManager.Instance.apiUrl + "users";
-    using (UnityWebRequest request = UnityWebRequest.Get(url))
-    {
-      yield return request.SendWebRequest();
-      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-      {
-        Debug.Log(request.error);
-      }
-      else
-      {
-        string serverJson = request.downloadHandler.text;
-        allUsers = JsonUtility.FromJson<AllUsers>(serverJson);
       }
     }
     // Delete previous entries in list
@@ -128,15 +120,36 @@ public class FriendsPanel : MonoBehaviour
     // Generate local data and populate friend panel
     PlayerManager.Instance.friendIDs = new List<int>();
     PlayerManager.Instance.friendNames = new List<string>();
+    // Query for friends that have received a challenge from this user
+    FriendList friendsChallenged = new FriendList();
+    string sentChallengesUrl = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges/sent";
+    using (UnityWebRequest request = UnityWebRequest.Get(sentChallengesUrl))
+    {
+      yield return request.SendWebRequest();
+      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        string serverJson = request.downloadHandler.text;
+        friendsChallenged = JsonUtility.FromJson<FriendList>(serverJson);
+      }
+    }
     for (int i = 0; i < allFriends.friends.Count; i++)
     {
       int ID = allFriends.friends[i];
+      string friendName = allFriends.names[i];
       PlayerManager.Instance.friendIDs.Add(ID);
-      PlayerManager.Instance.friendNames.Add(allUsers.users[ID - 1].username);
+      PlayerManager.Instance.friendNames.Add(friendName);
       GameObject friendInstance = Instantiate(friendPrefab, friendList.transform);
-      friendInstance.GetComponent<FriendEntry>().setData(allUsers.users[ID - 1].username, ID);
+      friendInstance.GetComponent<FriendEntry>().setData(friendName, ID);
       friendInstance.GetComponent<FriendEntry>().setPanelObject(gameObject);
       // Check if challenge exists to turn them into sent entries
+      if (friendsChallenged.friends.Contains(ID)) {
+        friendInstance.GetComponent<FriendEntry>().turnToSent();
+      }
+      /* REMOVE
       url = PlayerManager.Instance.apiUrl + "users/" + ID + "/challenges/" + PlayerManager.Instance.myID;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -154,6 +167,7 @@ public class FriendsPanel : MonoBehaviour
           }
         }
       }
+      */
     }
     // Hide the overlay
     addFriendOverlay.hide();
@@ -220,6 +234,7 @@ public class FriendsPanel : MonoBehaviour
     string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/friends";
     FriendList newFriendList = new FriendList();
     newFriendList.friends = new List<int>(PlayerManager.Instance.friendIDs);
+    newFriendList.names = new List<string>();
     string newFriends = JsonUtility.ToJson(newFriendList);
     byte[] bytes = Encoding.UTF8.GetBytes(newFriends);
     UnityWebRequest request = new UnityWebRequest(url);
@@ -234,7 +249,7 @@ public class FriendsPanel : MonoBehaviour
     }
     else
     {
-      // Debug.Log("Friends list sent successfully to server");
+      Debug.Log("Friends list sent successfully to server");
     }
     // Dispose of the request to prevent memory leaks
     request.Dispose();

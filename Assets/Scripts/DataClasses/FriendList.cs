@@ -6,4 +6,5 @@ using UnityEngine;
 public class FriendList
 {
   public List<int> friends;
+  public List<string> names;
 }
