@@ -7,7 +7,6 @@ using UnityEngine.Networking;
 public class Matchmaker : MonoBehaviour
 {
     public GameObject playMenu;
-    // Once the user has logged in, we can ping the server every X seconds to check if we have open challenges (Idle)
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +23,15 @@ public class Matchmaker : MonoBehaviour
     {
       if (PlayerManager.Instance.myID != -1)
       {
-        InvokeRepeating("checkForChallenges", 0.5f, 2f);
+        InvokeRepeating("checkForChallenges", 1f, 3f);
+      }
+    }
+
+    public void stopChallengeChecking()
+    {
+      if (PlayerManager.Instance.myID != -1)
+      {
+        CancelInvoke("checkForChallenges");
       }
     }
 

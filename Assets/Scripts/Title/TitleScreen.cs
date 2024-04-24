@@ -225,9 +225,6 @@ public class TitleScreen : MonoBehaviour
             // Debug.Log("Deleted all challenges for this user...");
           }
 
-          // Start checking for incoming challenges
-          friendsPanelObject.GetComponent<Matchmaker>().startChallengeChecking();
-
           // Load player decks
           PlayerManager.Instance.loadPlayerDecks();
 
