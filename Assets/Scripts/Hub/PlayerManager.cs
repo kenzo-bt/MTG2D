@@ -67,6 +67,7 @@ public class PlayerManager : MonoBehaviour
       friendNames = new List<string>();
       loggedIn = false;
       role = "";
+      chooseGameStart = false;
     }
 
     // Load in card collection

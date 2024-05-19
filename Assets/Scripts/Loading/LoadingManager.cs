@@ -36,10 +36,12 @@ public class LoadingManager : MonoBehaviour
       StartCoroutine(deletePreviousState());
       if (myRole == "challenger")
       {
+        PlayerManager.Instance.chooseGameStart = true;
         InvokeRepeating("checkIfGuestReady", 3.0f, 3.0f);
       }
       else if (myRole == "guest")
       {
+        PlayerManager.Instance.chooseGameStart = false;
         StartCoroutine(setReadyAndWait());
       }
     }
