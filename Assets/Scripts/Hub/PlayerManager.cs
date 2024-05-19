@@ -59,8 +59,6 @@ public class PlayerManager : MonoBehaviour
       loadCollectedCards();
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
-      readStarterDecks();
-      readProDecks();
 
       myID = -1;
       friendIDs = new List<int>();
