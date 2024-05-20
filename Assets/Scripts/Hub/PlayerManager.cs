@@ -33,6 +33,7 @@ public class PlayerManager : MonoBehaviour
     public int lobbyHostID;
     public List<int> lobbyOpponents;
     public List<Decklist> lobbyOpponentDecks;
+    public DailyObjectives dailyObjectives;
 
     private void Awake()
     {
@@ -44,8 +45,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -380,5 +381,32 @@ public class PlayerManager : MonoBehaviour
         // Debug.Log("Successfully deleted my lobbies in server");
       }
       request.Dispose();
+    }
+
+    public void fetchPlayerObjectives()
+    {
+      StartCoroutine(fetchPlayerObjectivesFromServer());
+    }
+
+    private IEnumerator fetchPlayerObjectivesFromServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/dailies";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          dailyObjectives = new DailyObjectives();
+          dailyObjectives = JsonUtility.FromJson<DailyObjectives>(serverJson);
+          Debug.Log(dailyObjectives.date);
+          Debug.Log(dailyObjectives.objectives.Count);
+          Debug.Log(dailyObjectives.objectives[0]);
+        }
+      }
     }
 }

@@ -285,6 +285,9 @@ public class TitleScreen : MonoBehaviour
 
           // Remove any unfinished FFA lobbies
           PlayerManager.Instance.deletePlayerLobbies();
+
+          // Fetch the user's daily challenges
+          PlayerManager.Instance.fetchPlayerObjectives();
         }
       }
     }
