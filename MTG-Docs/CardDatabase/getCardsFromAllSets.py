@@ -161,7 +161,12 @@ includedSets = [
     "DMR",
     "ONE",
     "MOM",
-    "LTR"
+    "LTR",
+    "CMM",
+    "WOE",
+    "LCI",
+    "MKM",
+    "OTJ"
 ]
 
 setCounter = 1
