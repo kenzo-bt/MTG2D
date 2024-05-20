@@ -10,6 +10,7 @@ public class PlayMenu : MonoBehaviour
     public GameObject selectPanel;
     public GameObject deckBrowser;
     public GameObject opponentName;
+    public GameObject objectivesPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,7 @@ public class PlayMenu : MonoBehaviour
       opponentName.GetComponent<TMP_Text>().text = oppName;
       selectPanel.GetComponent<SelectPanel>().updateSelectedDeck();
       selectPanel.GetComponent<SelectPanel>().showPanel();
+      objectivesPanel.GetComponent<ObjectivesPanel>().hidePanel();
     }
 
     // Hide play menu
@@ -51,5 +53,6 @@ public class PlayMenu : MonoBehaviour
       playMenu.blocksRaycasts = false;
       selectPanel.GetComponent<SelectPanel>().hidePanel();
       deckBrowser.GetComponent<DeckBrowser>().hideBrowser();
+      objectivesPanel.GetComponent<ObjectivesPanel>().showPanel();
     }
 }

@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lobbyPanel: {fileID: 1273195710}
+  objectivesPanel: {fileID: 0}
 --- !u!225 &29947673
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1936,7 +1937,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 663769414}
         m_TargetAssemblyTypeName: MultiplayerMenu, Assembly-CSharp
-        m_MethodName: showPanel
+        m_MethodName: togglePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7141,6 +7142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lobbyPanel: {fileID: 1915772151}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &690239812
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,6 +9925,7 @@ MonoBehaviour:
   deckSelectCreateButton: {fileID: 754160113}
   deckBrowser: {fileID: 2124222743}
   deckDisplay: {fileID: 445368452}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!225 &919265752
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13172,6 +13175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectiveTrackerPrefab: {fileID: 293008737317717549, guid: 1b674a919c6360f4dab60f3b27cc4187, type: 3}
+  showPanelX: 0
+  hidePanelX: 0
 --- !u!1 &1195807867
 GameObject:
   m_ObjectHideFlags: 0
@@ -20831,6 +20836,7 @@ MonoBehaviour:
   capacityInput: {fileID: 1223343442}
   errorMessage: {fileID: 232571573}
   joinButton: {fileID: 2077256251}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &1860267591
 GameObject:
   m_ObjectHideFlags: 0
@@ -21954,6 +21960,7 @@ MonoBehaviour:
   selectPanel: {fileID: 1062261499}
   deckBrowser: {fileID: 1689399941}
   opponentName: {fileID: 690239812}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &1941166044 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}

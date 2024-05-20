@@ -18,6 +18,7 @@ public class FreeForAllPanel : MonoBehaviour
     public GameObject deckSelectCreateButton;
     public GameObject deckBrowser;
     public GameObject deckDisplay;
+    public GameObject objectivesPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,7 @@ public class FreeForAllPanel : MonoBehaviour
       cg.blocksRaycasts = false;
       closeDeckSelect();
       closeDeckBrowser();
+      objectivesPanel.GetComponent<ObjectivesPanel>().showPanel();
     }
 
     public void openDeckSelect()

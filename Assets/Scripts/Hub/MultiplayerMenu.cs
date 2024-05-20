@@ -10,6 +10,8 @@ public class MultiplayerMenu : MonoBehaviour
   private float hidePanelX;
   private Vector3 initialPosition;
   private Vector3 targetPosition;
+  public GameObject objectivesPanel;
+  private bool panelVisible;
 
   void Start()
   {
@@ -19,6 +21,7 @@ public class MultiplayerMenu : MonoBehaviour
     showPanelX = initialPosition.x - 400f;
     hidePanelX = initialPosition.x;
     targetPosition = lobbyPanel.transform.localPosition;
+    panelVisible = false;
   }
 
   void Update()
@@ -28,13 +31,29 @@ public class MultiplayerMenu : MonoBehaviour
     lobbyPanel.transform.localPosition = Vector3.MoveTowards(lobbyPanel.transform.localPosition, targetPosition, step);
   }
 
+  public void togglePanel()
+  {
+    if (panelVisible)
+    {
+      hidePanel();
+      objectivesPanel.GetComponent<ObjectivesPanel>().showPanel();
+    }
+    else
+    {
+      showPanel();
+      objectivesPanel.GetComponent<ObjectivesPanel>().hidePanel();
+    }
+  }
+
   public void showPanel()
   {
     targetPosition = new Vector3(showPanelX, 0f, 0f);
+    panelVisible = true;
   }
 
   public void hidePanel()
   {
     targetPosition = new Vector3(hidePanelX, 0f, 0f);
+    panelVisible = false;
   }
 }
