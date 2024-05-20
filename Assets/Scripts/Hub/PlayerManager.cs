@@ -33,6 +33,7 @@ public class PlayerManager : MonoBehaviour
     public int lobbyHostID;
     public List<int> lobbyOpponents;
     public List<Decklist> lobbyOpponentDecks;
+    public bool chooseGameStart;
 
     private void Awake()
     {
