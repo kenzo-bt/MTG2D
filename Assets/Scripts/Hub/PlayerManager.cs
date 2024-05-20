@@ -59,8 +59,6 @@ public class PlayerManager : MonoBehaviour
       loadCollectedCards();
 
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
-      readStarterDecks();
-      readProDecks();
 
       myID = -1;
       friendIDs = new List<int>();
@@ -78,8 +76,10 @@ public class PlayerManager : MonoBehaviour
       for (int i = 0; i < activeSets.Length; i++)
       {
         TextAsset setFile = Resources.Load("Sets/" + activeSets[i].Trim()) as TextAsset;
-        CardSet set = JsonUtility.FromJson<CardSet>(setFile.text);
-        cardCollection.Add(set);
+        if (activeSets[i].Trim() != "") {
+          CardSet set = JsonUtility.FromJson<CardSet>(setFile.text);
+          cardCollection.Add(set);
+        }
       }
     }
 

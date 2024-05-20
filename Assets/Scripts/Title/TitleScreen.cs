@@ -25,6 +25,8 @@ public class TitleScreen : MonoBehaviour
     private Hasher hasher;
     private string hashedPassword;
     private int userID;
+    private int connectedToServer;
+    private bool authenticating;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,10 +41,13 @@ public class TitleScreen : MonoBehaviour
         normalColor = new Color(1f, 1f, 1f, 1f);
         serverCommunicator = GetComponent<JsonNetworking>();
         hasher = GetComponent<Hasher>();
+        connectedToServer = -1;
+        authenticating = false;
         if (PlayerPrefs.HasKey("lastUser"))
         {
           username.text = PlayerPrefs.GetString("lastUser");
         }
+        StartCoroutine(PingServer());
         StartCoroutine(FadeTitleToFullAlpha(2f, title));
       }
       else {
@@ -58,6 +63,24 @@ public class TitleScreen : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public IEnumerator PingServer() {
+      string url = PlayerManager.Instance.apiUrl + "ping";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          connectedToServer = 0;
+        }
+        else {
+          if (request.responseCode == 200) {
+            connectedToServer = 1;
+          }
+        }
+      }
     }
 
     public IEnumerator FadeTitleToFullAlpha(float t, Image i)
@@ -98,6 +121,9 @@ public class TitleScreen : MonoBehaviour
 
     public void authenticate()
     {
+      if (authenticating) {
+        return;
+      }
       // Reset status message
       status.text = "";
 
@@ -114,12 +140,34 @@ public class TitleScreen : MonoBehaviour
         return;
       }
       hashedPassword = hasher.getHash(password.text);
+      authenticating = true;
       // Get the username list from the server
       StartCoroutine(authenticateWithServer());
     }
 
     IEnumerator authenticateWithServer()
     {
+      status.color = normalColor;
+      status.text = "Connecting to server";
+      int ellipsisCounter = 0;
+      string delayMessage = "";
+      while (connectedToServer == -1) {
+        yield return new WaitForSeconds(1);
+        string ellipsis = " ";
+        for (int i = 0; i < (ellipsisCounter % 3) + 1; i++) {
+          ellipsis += ".";
+        }
+        ellipsisCounter++;
+        if (ellipsisCounter > 6) {
+          delayMessage = "\n(This may take up to a minute)";
+        }
+        status.text = "Connecting to server" + ellipsis + delayMessage;
+      }
+      if (connectedToServer == 0) {
+        status.color = alertColor;
+        status.text = "Unable to connect to server\nConsider restarting the application";
+        yield break;
+      }
       string url = PlayerManager.Instance.apiUrl + "users";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -227,6 +275,10 @@ public class TitleScreen : MonoBehaviour
 
           // Load player decks
           PlayerManager.Instance.loadPlayerDecks();
+
+          // Load starter and pro decks
+          PlayerManager.Instance.readStarterDecks();
+          PlayerManager.Instance.readProDecks();
 
           // Remove any unfinished drafts
           PlayerManager.Instance.deletePlayerDrafts();
