@@ -36,18 +36,11 @@ public class ObjectiveTracker : MonoBehaviour
       progressTotalText.text = "of " + total;
       // Get symbol for corresponding objective types
       string typeSymbol = "";
-      if (objectiveType == "Lands") { typeSymbol = "L"; }
-      else if (objectiveType == "Creatures") { typeSymbol = "C"; }
+      if (objectiveType == "Land") { typeSymbol = "L"; }
+      else if (objectiveType == "Creature") { typeSymbol = "C"; }
       else { typeSymbol = "S"; }
-      // Get symbol for corresponding objective colour
-      string colourSymbol = "";
-      if (objectiveColour == "Green") { colourSymbol = "G"; }
-      else if (objectiveColour == "Red") { colourSymbol = "R"; }
-      else if (objectiveColour == "Blue") { colourSymbol = "B"; }
-      else if (objectiveColour == "White") { colourSymbol = "W"; }
-      else { colourSymbol = "K"; }
       // Set textures for colour/type images
-      Texture2D objectiveColourTexture = Resources.Load("Images/Symbols/" + colourSymbol + "-50") as Texture2D;
+      Texture2D objectiveColourTexture = Resources.Load("Images/Symbols/" + objectiveColour + "-50") as Texture2D;
       colourImage.sprite = Sprite.Create(objectiveColourTexture, new Rect(0, 0, objectiveColourTexture.width, objectiveColourTexture.height), new Vector2(0.5f, 0.5f));
       Texture2D objectiveTypeTexture = Resources.Load("Images/Symbols/" + typeSymbol + "-50") as Texture2D;
       typeImage.sprite = Sprite.Create(objectiveTypeTexture, new Rect(0, 0, objectiveTypeTexture.width, objectiveTypeTexture.height), new Vector2(0.5f, 0.5f));

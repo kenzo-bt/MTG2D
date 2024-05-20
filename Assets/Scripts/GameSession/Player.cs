@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -209,6 +211,53 @@ public class Player : MonoBehaviour
       battlefield.addCard(card);
       logMessage("You dropped " + card.name + " to the battlefield");
       registerEvent(PlayerManager.Instance.myName + " dropped " + card.name + " to the battlefield");
+      // Check if daily objectives should be updated
+      DailyObjectives dailies = PlayerManager.Instance.dailyObjectives;
+      string objectiveIndexes = "";
+      for (int i = 0; i < dailies.objectives.Count; i++)
+      {
+        Objective objective = dailies.objectives[i];
+        if (objective.progress >= objective.quantity) {
+          continue;
+        }
+        if (objective.target == "Instant/Sorcery")
+        {
+          if (card.types.Contains("Instant") || card.types.Contains("Sorcery"))
+          {
+            if (card.colours.Contains(objective.colour))
+            {
+              objectiveIndexes += ("" + i + " ");
+              objective.progress += 1;
+            }
+          }
+        }
+        else if (objective.target == "Land")
+        {
+          if (card.types.Contains("Land"))
+          {
+            if (card.colourIdentity.Contains(objective.colour))
+            {
+              objectiveIndexes += ("" + i + " ");
+              objective.progress += 1;
+            }
+          }
+        }
+        else {
+          if (card.types.Contains(objective.target))
+          {
+            if (card.colourIdentity.Contains(objective.colour))
+            {
+              objectiveIndexes += ("" + i + " ");
+              objective.progress += 1;
+            }
+          }
+        }
+      }
+      // Send objective indexes to server if any objectives need to be updated
+      if (objectiveIndexes != "") {
+        objectiveIndexes = objectiveIndexes.Trim();
+        StartCoroutine(progressDailyObjectives(objectiveIndexes));
+      }
     }
 
     // Create a card in the battlefield (token)
@@ -530,5 +579,29 @@ public class Player : MonoBehaviour
       string time = DateTime.Now.ToLongTimeString();
       eventDescription = "<color=#FF8400>" + time + " - " + eventDescription + "</color>";
       eventLog.Add(eventDescription);
+    }
+
+    private IEnumerator progressDailyObjectives(string indexes)
+    {
+      string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/dailies/update";
+      ObjectiveUpdate newObjectiveUpdate = new ObjectiveUpdate();
+      newObjectiveUpdate.indexes = indexes;
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(newObjectiveUpdate));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      // Debug the results
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Updated daily objectives in server: (" + indexes + ")");
+      }
+      // Dispose of the request to prevent memory leaks
+      request.Dispose();
     }
 }
