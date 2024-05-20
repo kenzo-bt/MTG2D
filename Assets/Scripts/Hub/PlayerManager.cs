@@ -34,6 +34,7 @@ public class PlayerManager : MonoBehaviour
     public List<int> lobbyOpponents;
     public List<Decklist> lobbyOpponentDecks;
     public DailyObjectives dailyObjectives;
+    public GameObject objectivesPanel;
 
     private void Awake()
     {
@@ -406,6 +407,7 @@ public class PlayerManager : MonoBehaviour
           Debug.Log(dailyObjectives.date);
           Debug.Log(dailyObjectives.objectives.Count);
           Debug.Log(dailyObjectives.objectives[0]);
+          objectivesPanel.GetComponent<ObjectivesPanel>().updateObjectives();
         }
       }
     }
