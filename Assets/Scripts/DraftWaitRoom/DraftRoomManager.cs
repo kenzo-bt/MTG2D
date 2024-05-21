@@ -59,7 +59,6 @@ public class DraftRoomManager : MonoBehaviour
           Debug.Log(request.error);
         }
         else {
-          Debug.Log("Successfully deleted draft room. Returning to Hub...");
           SceneManager.LoadScene("Hub");
         }
       }
@@ -74,7 +73,6 @@ public class DraftRoomManager : MonoBehaviour
           Debug.Log(request.error);
         }
         else {
-          Debug.Log("Successfully left draft room. Returning to Hub...");
           SceneManager.LoadScene("Hub");
         }
       }
@@ -101,7 +99,6 @@ public class DraftRoomManager : MonoBehaviour
           // Exit if the room has been deleted
           if (serverJson.Trim() == "{\"Error\":\"Draft not found\"}")
           {
-            Debug.Log("Draft room has been deleted! Returning to Hub...");
             SceneManager.LoadScene("Hub");
           }
           Draft draft = JsonUtility.FromJson<Draft>(serverJson);
@@ -238,10 +235,6 @@ public class DraftRoomManager : MonoBehaviour
         {
           Debug.Log(request.error);
         }
-        else
-        {
-          Debug.Log("Successfully updated draft packs for user with ID: " + id);
-        }
         request.Dispose();
       }
       // Set draft start flag in server
@@ -255,7 +248,6 @@ public class DraftRoomManager : MonoBehaviour
       }
       else
       {
-        Debug.Log("Successfully started the draft in the server.");
         SceneManager.LoadScene("DraftEditor");
       }
       startRequest.Dispose();

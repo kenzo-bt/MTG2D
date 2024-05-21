@@ -597,10 +597,6 @@ public class Player : MonoBehaviour
       {
         Debug.Log(request.error);
       }
-      else
-      {
-        Debug.Log("Updated daily objectives in server: (" + indexes + ")");
-      }
       // Dispose of the request to prevent memory leaks
       request.Dispose();
     }

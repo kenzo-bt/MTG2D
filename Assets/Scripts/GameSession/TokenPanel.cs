@@ -48,7 +48,6 @@ public class TokenPanel : MonoBehaviour
 
     public void filterSearch()
     {
-      Debug.Log("Tokens: " + tokenIds.Count);
       string searchText = searchObject.GetComponent<TMP_InputField>().text;
       searchKeywords = new List<string>(searchText.Split(','));
       if (searchText != "")

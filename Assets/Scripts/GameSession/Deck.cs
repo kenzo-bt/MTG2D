@@ -81,7 +81,6 @@ public class Deck : MonoBehaviour, IPointerClickHandler
       }
       else
       {
-        Debug.Log("CANT DRAW! Deck size is currently " + stack.cards.Count);
         return null;
       }
     }

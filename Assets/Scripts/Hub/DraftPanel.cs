@@ -149,7 +149,6 @@ public class DraftPanel : MonoBehaviour
       else
       {
         // Send to draft room
-        Debug.Log("Draft created successfully in server. Proceeding to draft room...");
         PlayerManager.Instance.draftHostID = PlayerManager.Instance.myID;
         SceneManager.LoadScene("DraftWaitRoom");
       }
@@ -243,7 +242,7 @@ public class DraftPanel : MonoBehaviour
           Draft draft = JsonUtility.FromJson<Draft>(serverJson);
           if (draft.players.Count >= draft.capacity)
           {
-            Debug.Log("Couldn't join " + draft.hostName + "\'s draft. Room is full.");
+            // Debug.Log("Couldn't join " + draft.hostName + "\'s draft. Room is full.");
           }
           else
           {
@@ -253,7 +252,7 @@ public class DraftPanel : MonoBehaviour
             }
             else
             {
-              Debug.Log("Couldn't join " + draft.hostName + "\'s draft. You are already in the room (?)");
+              // Debug.Log("Couldn't join " + draft.hostName + "\'s draft. You are already in the room (?)");
             }
           }
         }
@@ -274,7 +273,6 @@ public class DraftPanel : MonoBehaviour
       }
       else
       {
-        Debug.Log("Successfully entered draft room in server...");
         SceneManager.LoadScene("DraftWaitRoom");
       }
       request.Dispose();

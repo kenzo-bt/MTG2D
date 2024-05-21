@@ -61,7 +61,6 @@ public class StackCard : MonoBehaviour, IPointerClickHandler
       // Tell player to move me to a certain destination
       string cardId = GetComponent<WebCard>().cardId;
       int index = transform.GetSiblingIndex();
-      Debug.Log("Trying to move card from " + source + " to " + destination + ". Index -> " + index);
       player.GetComponent<Player>().moveStackCard(cardId, index, source, destination);
     }
 

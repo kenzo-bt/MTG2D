@@ -102,11 +102,9 @@ public class Matchmaker : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          Debug.Log(serverJson);
           // Add new challenge if not already in existence
           if (serverJson.Trim() == "{}")
           {
-            Debug.Log("Challenge did not previously exist.");
             Challenge newChallenge = new Challenge();
             newChallenge.challengerID = PlayerManager.Instance.myID;
             newChallenge.accepted = 0;
@@ -126,16 +124,12 @@ public class Matchmaker : MonoBehaviour
             }
             else
             {
-              Debug.Log("Challenge successfully sent and updated in server.");
               PlayerManager.Instance.opponentID = targetID;
 
               waitOnChallengee();
             }
             // Dispose of the request to prevent memory leaks
             postRequest.Dispose();
-          }
-          else {
-            Debug.Log("Challenge already exists on target player");
           }
         }
       }
@@ -167,7 +161,6 @@ public class Matchmaker : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           if (serverJson.Trim() == "{}") // User has delted your challenge request
           {
-            Debug.Log("Challenge no longer exists.");
             CancelInvoke("checkIfAccepted");
             // Turn friend entry back to the idle state
             GetComponent<FriendsPanel>().turnToIdle(PlayerManager.Instance.opponentID);
@@ -177,8 +170,6 @@ public class Matchmaker : MonoBehaviour
             Challenge myChallenge = JsonUtility.FromJson<Challenge>(serverJson);
             if (myChallenge.accepted == 1 || myChallenge.accepted == 2)
             {
-              Debug.Log("Opponent has accepted my challenge!");
-              Debug.Log("Opening play planel");
               PlayerManager.Instance.role = "challenger";
               // Hide friends panel
               GetComponent<FriendsPanel>().hidePanel();
@@ -187,10 +178,6 @@ public class Matchmaker : MonoBehaviour
               // Show play panel with opponent name
               playMenu.GetComponent<PlayMenu>().show();
               CancelInvoke("checkIfAccepted");
-            }
-            else
-            {
-              Debug.Log("Opponent has not yet accepted the challenge");
             }
           }
         }
@@ -218,13 +205,12 @@ public class Matchmaker : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           if (serverJson.Trim() == "{}")
           {
-            Debug.Log("Challenge from user with ID " + id + " was not found in your challenge list.");
+            // Debug.Log("Challenge from user with ID " + id + " was not found in your challenge list.");
           }
           else
           {
             Challenge opponentChallenge = JsonUtility.FromJson<Challenge>(serverJson);
             opponentChallenge.accepted = 1;
-            Debug.Log("Challenge was accepted.");
             // POST updated challenges to server
             url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges/" + id;
             string updatedChallenge = JsonUtility.ToJson(opponentChallenge);
@@ -241,7 +227,6 @@ public class Matchmaker : MonoBehaviour
             }
             else
             {
-              Debug.Log("Challenges updated in server.");
               // Hide friends panel
               GetComponent<FriendsPanel>().hidePanel();
               // Show play panel with opponent name
@@ -270,10 +255,6 @@ public class Matchmaker : MonoBehaviour
       if (deleteRequest.result == UnityWebRequest.Result.ConnectionError || deleteRequest.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(deleteRequest.error);
-      }
-      else
-      {
-        Debug.Log("Challenge successfully deleted");
       }
       // Stop searching for acceptance?
     }

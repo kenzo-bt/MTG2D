@@ -108,7 +108,6 @@ public class DraftCollection : MonoBehaviour
         if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
           Debug.Log(request.error);
-          Debug.Log("There was a connection or protocol error in consumePackFromQueue(). Retrying...");
           StartCoroutine(consumePackFromQueue());
         }
         else
@@ -124,9 +123,7 @@ public class DraftCollection : MonoBehaviour
           if (draftPack.cards.Count == 0)
           {
             statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for " + rightPlayerObject.GetComponent<TMP_Text>().text + " to pass a pack.";
-            Debug.Log("Queue was empty.");
             yield return new WaitForSeconds(5);
-            Debug.Log("Trying to fetch from queue again...");
             StartCoroutine(consumePackFromQueue());
           }
           else
@@ -355,7 +352,6 @@ public class DraftCollection : MonoBehaviour
       if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(postRequest.error);
-        Debug.Log("There was a connection or protocol error in sendPackToLeftPlayer(). Retrying...");
         StartCoroutine(sendPackToLeftPlayer());
       }
       else
@@ -418,10 +414,6 @@ public class DraftCollection : MonoBehaviour
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
-      }
-      else
-      {
-        Debug.Log("Successfully deleted draft in server");
       }
       request.Dispose();
     }

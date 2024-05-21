@@ -28,10 +28,6 @@ public class JsonNetworking : MonoBehaviour
       {
         Debug.Log(request.error);
       }
-      else
-      {
-        Debug.Log("JSON sent successfully to server");
-      }
       // Dispose of the request to prevent memory leaks
       request.Dispose();
     }

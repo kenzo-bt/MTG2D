@@ -36,15 +36,10 @@ public class FFALoadingManager : MonoBehaviour
     {
       Debug.Log(deleteRequest.error);
     }
-    else
-    {
-      Debug.Log("Previous state deleted.");
-    }
   }
 
   private IEnumerator fetchOpponentNamesFromServer()
   {
-    Debug.Log("LobbyOpponent count: " + PlayerManager.Instance.lobbyOpponents.Count);
     foreach (int playerID in PlayerManager.Instance.lobbyOpponents)
     {
       string url = PlayerManager.Instance.apiUrl + "users/" + playerID;
@@ -80,7 +75,6 @@ public class FFALoadingManager : MonoBehaviour
       {
         string serverJson = request.downloadHandler.text;
         opponentDecks.Add(JsonUtility.FromJson<Decklist>(serverJson));
-        // showOpponentDeck();
         opponentFetchIndex++;
         if (opponentFetchIndex < PlayerManager.Instance.lobbyOpponents.Count)
         {
@@ -88,12 +82,7 @@ public class FFALoadingManager : MonoBehaviour
         }
         else
         {
-          // Debug.Log("Successfully fetched all opponent decks from server");
           PlayerManager.Instance.lobbyOpponentDecks = new List<Decklist>(opponentDecks);
-          foreach (Decklist deck in PlayerManager.Instance.lobbyOpponentDecks)
-          {
-            Debug.Log(deck.name);
-          }
           updateDeckDisplays();
         }
       }

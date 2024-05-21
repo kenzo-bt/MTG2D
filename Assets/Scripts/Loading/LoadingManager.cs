@@ -60,10 +60,6 @@ public class LoadingManager : MonoBehaviour
       {
         Debug.Log(deleteRequest.error);
       }
-      else
-      {
-        Debug.Log("Previous state deleted.");
-      }
     }
 
     private void checkIfGuestReady()
@@ -87,7 +83,6 @@ public class LoadingManager : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           if (serverJson.Trim() == "{}") // User has delted your challenge request
           {
-            Debug.Log("Opponent has declined your challenge");
             CancelInvoke();
             status.text = "Opponent has declined your challenge\nReturning to hub...";
             yield return new WaitForSeconds(3);
@@ -98,7 +93,6 @@ public class LoadingManager : MonoBehaviour
             Challenge myChallenge = JsonUtility.FromJson<Challenge>(serverJson);
             if (myChallenge.accepted == 2)
             {
-              Debug.Log("Opponent is now on the loading screen...");
               // Change accept to 3 (POST)
               myChallenge.accepted = 3;
               string updatedChallenge = JsonUtility.ToJson(myChallenge);
@@ -115,17 +109,12 @@ public class LoadingManager : MonoBehaviour
               }
               else
               {
-                Debug.Log("Accepted flag set to 3...");
                 CancelInvoke();
                 // Proceed to game session...
                 enterGameSession();
               }
               // Dispose of the request to prevent memory leaks
               postRequest.Dispose();
-            }
-            else
-            {
-              Debug.Log("Opponent not yet in loading screen...");
             }
           }
         }
@@ -161,7 +150,6 @@ public class LoadingManager : MonoBehaviour
           }
           else
           {
-            Debug.Log("Accepted flag set to 2...");
             InvokeRepeating("waitForReadiness", 3.0f, 3.0f);
           }
           postRequest.Dispose();
@@ -194,10 +182,6 @@ public class LoadingManager : MonoBehaviour
             CancelInvoke();
             // Remove the challenge and proceed to game session
             StartCoroutine(removeChallengeAndEnterGame());
-          }
-          else
-          {
-            Debug.Log("Challenger is not ready yet.");
           }
         }
       }
@@ -264,10 +248,6 @@ public class LoadingManager : MonoBehaviour
       {
         Debug.Log(postRequest.error);
       }
-      else
-      {
-        Debug.Log("Selected deck successfully uploaded to server");
-      }
       postRequest.Dispose();
     }
 
@@ -286,7 +266,6 @@ public class LoadingManager : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           opponentDeck = JsonUtility.FromJson<Decklist>(serverJson);
           showOpponentDeck();
-          Debug.Log("Successfully fetched opponent deck from server");
         }
       }
     }

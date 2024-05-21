@@ -268,10 +268,6 @@ public class TitleScreen : MonoBehaviour
           {
             Debug.Log(deleteRequest.error);
           }
-          else
-          {
-            // Debug.Log("Deleted all challenges for this user...");
-          }
 
           // Load player decks
           PlayerManager.Instance.loadPlayerDecks();

@@ -50,7 +50,6 @@ public class SelectPanel : MonoBehaviour
       if (PlayerManager.Instance.selectedDeck.name != "")
       {
         Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
-        Debug.Log("Selected deck: " + selectedDeck.name);
         playButton.enable();
         deckDisplay.setDisplayData(selectedDeck.name, selectedDeck.getCoverCard());
         deckDisplayObject.SetActive(true);

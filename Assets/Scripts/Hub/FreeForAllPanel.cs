@@ -132,7 +132,6 @@ public class FreeForAllPanel : MonoBehaviour
       else
       {
         // Send to draft room
-        Debug.Log("Lobby created successfully in server. Proceeding to wait room...");
         PlayerManager.Instance.lobbyHostID = PlayerManager.Instance.myID;
         SceneManager.LoadScene("LobbyWaitRoom");
       }
@@ -228,7 +227,7 @@ public class FreeForAllPanel : MonoBehaviour
           Lobby lobby = JsonUtility.FromJson<Lobby>(serverJson);
           if (lobby.players.Count >= 4)
           {
-            Debug.Log("Couldn't join " +  lobby.hostName + "\'s lobby. Room is full.");
+            // Debug.Log("Couldn't join " +  lobby.hostName + "\'s lobby. Room is full.");
           }
           else
           {
@@ -238,7 +237,7 @@ public class FreeForAllPanel : MonoBehaviour
             }
             else
             {
-              Debug.Log("Couldn't join " + lobby.hostName + "\'s lobby. You are already in the room (?)");
+              // Debug.Log("Couldn't join " + lobby.hostName + "\'s lobby. You are already in the room (?)");
             }
           }
         }
@@ -259,7 +258,6 @@ public class FreeForAllPanel : MonoBehaviour
       }
       else
       {
-        Debug.Log("Successfully entered lobby room in server...");
         SceneManager.LoadScene("LobbyWaitRoom");
       }
       request.Dispose();

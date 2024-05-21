@@ -52,10 +52,6 @@ public class LobbyRoomManager : MonoBehaviour
       {
         Debug.Log(postRequest.error);
       }
-      else
-      {
-        Debug.Log("Selected deck successfully uploaded to server");
-      }
       postRequest.Dispose();
     }
 
@@ -78,7 +74,6 @@ public class LobbyRoomManager : MonoBehaviour
           Debug.Log(request.error);
         }
         else {
-          Debug.Log("Successfully deleted lobby. Returning to Hub...");
           SceneManager.LoadScene("Hub");
         }
       }
@@ -93,7 +88,6 @@ public class LobbyRoomManager : MonoBehaviour
           Debug.Log(request.error);
         }
         else {
-          Debug.Log("Successfully left lobby. Returning to Hub...");
           SceneManager.LoadScene("Hub");
         }
       }
@@ -120,7 +114,6 @@ public class LobbyRoomManager : MonoBehaviour
           // Exit if the room has been deleted
           if (serverJson.Trim() == "{\"Error\":\"Lobby not found\"}")
           {
-            Debug.Log("Lobby has been deleted! Returning to Hub...");
             SceneManager.LoadScene("Hub");
           }
           Lobby lobby = JsonUtility.FromJson<Lobby>(serverJson);
@@ -247,7 +240,6 @@ public class LobbyRoomManager : MonoBehaviour
       }
       else
       {
-        Debug.Log("Successfully started the lobby in the server.");
         SceneManager.LoadScene("FFALoading");
       }
       startRequest.Dispose();

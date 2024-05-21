@@ -96,7 +96,6 @@ public class DeckDisplay : MonoBehaviour
       {
         if (allDecks[i].name == deckName)
         {
-          Debug.Log("Removing deck: " + deckName);
           allDecks.RemoveAt(i);
           break;
         }

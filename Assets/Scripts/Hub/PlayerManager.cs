@@ -293,10 +293,6 @@ public class PlayerManager : MonoBehaviour
       {
         Debug.Log(request.error);
       }
-      else
-      {
-        // Debug.Log("Player decks successfully updated in server");
-      }
       request.Dispose();
     }
 
@@ -312,7 +308,6 @@ public class PlayerManager : MonoBehaviour
       {
 
       }
-      Debug.Log("Card not found in collection! (" + id + ")");
       return targetCard;
     }
 
@@ -355,10 +350,6 @@ public class PlayerManager : MonoBehaviour
       {
         Debug.Log(request.error);
       }
-      else
-      {
-        // Debug.Log("Successfully deleted my drafts in server");
-      }
       request.Dispose();
     }
 
@@ -376,10 +367,6 @@ public class PlayerManager : MonoBehaviour
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(request.error);
-      }
-      else
-      {
-        // Debug.Log("Successfully deleted my lobbies in server");
       }
       request.Dispose();
     }
@@ -404,9 +391,6 @@ public class PlayerManager : MonoBehaviour
           string serverJson = request.downloadHandler.text;
           dailyObjectives = new DailyObjectives();
           dailyObjectives = JsonUtility.FromJson<DailyObjectives>(serverJson);
-          Debug.Log(dailyObjectives.date);
-          Debug.Log(dailyObjectives.objectives.Count);
-          Debug.Log(dailyObjectives.objectives[0]);
           objectivesPanel.GetComponent<ObjectivesPanel>().updateObjectives();
         }
       }

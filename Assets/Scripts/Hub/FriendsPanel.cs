@@ -247,10 +247,6 @@ public class FriendsPanel : MonoBehaviour
     {
       Debug.Log(request.error);
     }
-    else
-    {
-      Debug.Log("Friends list sent successfully to server");
-    }
     // Dispose of the request to prevent memory leaks
     request.Dispose();
     // Rebuild the friends panel

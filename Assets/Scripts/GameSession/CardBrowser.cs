@@ -47,7 +47,6 @@ public class CardBrowser : MonoBehaviour
         StackCard card = carousel.transform.GetChild(cardIndex).gameObject.GetComponent<StackCard>();
         if (card != null && card.destination != "")
         {
-          Debug.Log("Move card: " + carousel.transform.GetChild(cardIndex).gameObject.GetComponent<WebCard>().cardName + " -> " + card.destination);
           card.moveCard(currentlyDisplaying);
           DestroyImmediate(carousel.transform.GetChild(cardIndex).gameObject);
         }
