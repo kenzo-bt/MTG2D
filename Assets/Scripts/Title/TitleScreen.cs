@@ -276,14 +276,17 @@ public class TitleScreen : MonoBehaviour
           PlayerManager.Instance.readStarterDecks();
           PlayerManager.Instance.readProDecks();
 
+          // Fetch the user's daily challenges
+          PlayerManager.Instance.fetchPlayerObjectives();
+
+          // Load the user's collected cards
+          PlayerManager.Instance.loadCollectedCards();
+
           // Remove any unfinished drafts
           PlayerManager.Instance.deletePlayerDrafts();
 
           // Remove any unfinished FFA lobbies
           PlayerManager.Instance.deletePlayerLobbies();
-
-          // Fetch the user's daily challenges
-          PlayerManager.Instance.fetchPlayerObjectives();
         }
       }
     }

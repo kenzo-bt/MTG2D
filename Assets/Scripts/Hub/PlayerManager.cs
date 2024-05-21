@@ -56,10 +56,6 @@ public class PlayerManager : MonoBehaviour
       cardLookup = new Dictionary<string, CardInfo>();
       createCardLookup();
 
-      collectedCards = new Dictionary<string, int>();
-      collectionFilePath = Application.persistentDataPath + "/userCards.txt";
-      loadCollectedCards();
-
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
 
       myID = -1;
@@ -97,8 +93,10 @@ public class PlayerManager : MonoBehaviour
     }
 
     // Read from textfile with cards collected by the user
-    private void loadCollectedCards()
+    public void loadCollectedCards()
     {
+      collectedCards = new Dictionary<string, int>();
+      collectionFilePath = Application.persistentDataPath + "/userCards-" + myID + ".txt";
       // If file doesnt exist, create a file in persistent data storage
       //// TODO: Here we can flag to give the user starter packs
       if (!System.IO.File.Exists(collectionFilePath))
@@ -125,13 +123,13 @@ public class PlayerManager : MonoBehaviour
 
           foreach (KeyValuePair<string, int> item in collectedCards)
           {
-            // Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
+            Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
           }
         }
       }
     }
 
-    private void saveCollectedCards()
+    public void saveCollectedCards()
     {
       string allCardsString = "";
       foreach (KeyValuePair<string, int> item in collectedCards)
