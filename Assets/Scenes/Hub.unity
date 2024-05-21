@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lobbyPanel: {fileID: 1273195710}
+  objectivesPanel: {fileID: 0}
 --- !u!225 &29947673
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1936,7 +1937,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 663769414}
         m_TargetAssemblyTypeName: MultiplayerMenu, Assembly-CSharp
-        m_MethodName: showPanel
+        m_MethodName: togglePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2017,7 +2018,7 @@ RectTransform:
   - {fileID: 225397550}
   - {fileID: 1853278526}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4026,7 +4027,7 @@ RectTransform:
   - {fileID: 1560894060}
   - {fileID: 821687017}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5059,7 +5060,7 @@ RectTransform:
   m_Children:
   - {fileID: 209415559}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7121,7 +7122,7 @@ RectTransform:
   m_Children:
   - {fileID: 1915772152}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7141,6 +7142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lobbyPanel: {fileID: 1915772151}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &690239812
 GameObject:
   m_ObjectHideFlags: 0
@@ -9895,7 +9897,7 @@ RectTransform:
   - {fileID: 1271334925}
   - {fileID: 29947671}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9923,6 +9925,7 @@ MonoBehaviour:
   deckSelectCreateButton: {fileID: 754160113}
   deckBrowser: {fileID: 2124222743}
   deckDisplay: {fileID: 445368452}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!225 &919265752
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13071,6 +13074,109 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5331843440330738948, guid: f3cae12df0b10354eae9787b26c052ed, type: 3}
   m_PrefabInstance: {fileID: 646705603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1186398095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186398096}
+  - component: {fileID: 1186398099}
+  - component: {fileID: 1186398098}
+  - component: {fileID: 1186398097}
+  - component: {fileID: 1186398100}
+  m_Layer: 5
+  m_Name: ObjectivesPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1186398096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186398095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1195807871}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1186398097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186398095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 1
+  m_VerticalFit: 1
+--- !u!114 &1186398098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186398095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 30
+    m_Top: 0
+    m_Bottom: 30
+  m_ChildAlignment: 5
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!222 &1186398099
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186398095}
+  m_CullTransparentMesh: 1
+--- !u!114 &1186398100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186398095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640f9ff9e98dc3448b40b6a9594cf03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveTrackerPrefab: {fileID: 293008737317717549, guid: 1b674a919c6360f4dab60f3b27cc4187, type: 3}
+  showPanelX: 0
+  hidePanelX: 0
 --- !u!1 &1195807867
 GameObject:
   m_ObjectHideFlags: 0
@@ -13165,6 +13271,7 @@ RectTransform:
   m_Children:
   - {fileID: 1175971257}
   - {fileID: 1171015073}
+  - {fileID: 1186398096}
   - {fileID: 663769413}
   - {fileID: 1937213018}
   - {fileID: 153598686}
@@ -17044,7 +17151,6 @@ MonoBehaviour:
   allDecks: []
   starterDecks: []
   proFeaturedDecks: []
-  serverUrl: 
   apiUrl: 
   serverImageFileExtension: 
   myID: 0
@@ -17059,6 +17165,10 @@ MonoBehaviour:
   lobbyHostID: 0
   lobbyOpponents: 
   lobbyOpponentDecks: []
+  dailyObjectives:
+    date: 
+    objectives: []
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &1551000116
 GameObject:
   m_ObjectHideFlags: 0
@@ -20648,7 +20758,7 @@ RectTransform:
   - {fileID: 1820910737}
   - {fileID: 1290000810}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20726,6 +20836,7 @@ MonoBehaviour:
   capacityInput: {fileID: 1223343442}
   errorMessage: {fileID: 232571573}
   joinButton: {fileID: 2077256251}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &1860267591
 GameObject:
   m_ObjectHideFlags: 0
@@ -21815,7 +21926,7 @@ RectTransform:
   - {fileID: 1689399942}
   - {fileID: 1178268366}
   m_Father: {fileID: 1195807871}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21849,6 +21960,7 @@ MonoBehaviour:
   selectPanel: {fileID: 1062261499}
   deckBrowser: {fileID: 1689399941}
   opponentName: {fileID: 690239812}
+  objectivesPanel: {fileID: 1186398095}
 --- !u!1 &1941166044 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}

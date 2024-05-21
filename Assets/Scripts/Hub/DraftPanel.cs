@@ -18,6 +18,7 @@ public class DraftPanel : MonoBehaviour
     public GameObject capacityInput;
     public GameObject errorMessage;
     public GameObject joinButton;
+    public GameObject objectivesPanel;
     private List<string> setCodes;
     private List<string> setNames;
     private int capacity;
@@ -51,6 +52,7 @@ public class DraftPanel : MonoBehaviour
       CanvasGroup cg = GetComponent<CanvasGroup>();
       cg.alpha = 0;
       cg.blocksRaycasts = false;
+      objectivesPanel.GetComponent<ObjectivesPanel>().showPanel();
     }
 
     public void openCreateOverlay()
