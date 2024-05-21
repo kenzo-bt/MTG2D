@@ -166,61 +166,24 @@ public class TitleScreen : MonoBehaviour
       if (connectedToServer == 0) {
         status.color = alertColor;
         status.text = "Unable to connect to server\nConsider restarting the application";
+        authenticating = false;
         yield break;
       }
-      string url = PlayerManager.Instance.apiUrl + "users";
+      string url = PlayerManager.Instance.apiUrl + "users/auth/" + username.text.ToLower();
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
-          Debug.Log(request.error);
-        }
-        else
-        {
-          string serverJson = request.downloadHandler.text;
-          AllUsers allUsers = JsonUtility.FromJson<AllUsers>(serverJson);
-          bool userFound = false;
-          string serverHashPassword = "";
-          foreach (User user in allUsers.users)
+          if (request.responseCode == 404)
           {
-            if (user.username.ToLower() == username.text.ToLower())
-            {
-              userFound = true;
-              serverHashPassword = user.password;
-              userID = user.id;
-              break;
-            }
-          }
-          if (userFound)
-          {
-            // User was found in the server
-            if (hashedPassword == serverHashPassword)
-            {
-              status.color = normalColor;
-              status.text = "Successfully authenticated\nLogging in...";
-              PlayerPrefs.SetString("lastUser", username.text);
-              PlayerManager.Instance.loggedIn = true;
-              PlayerManager.Instance.myName = username.text;
-              yield return new WaitForSeconds(3);
-              StartCoroutine(setUserID(username.text));
-              hideTitleScreen();
-            }
-            else
-            {
-              status.color = alertColor;
-              status.text = "Incorrect password";
-            }
-          }
-          else
-          {
-            // Create new user and send to server
+            // User not found in server
             User newUser = new User();
-            newUser.username = username.text;
+            newUser.username = username.text.ToLower();
             newUser.password = hashedPassword;
-            string serverUrl = PlayerManager.Instance.apiUrl + "users";
             string jsonUser = JsonUtility.ToJson(newUser);
-            serverCommunicator.sendJson(serverUrl, jsonUser);
+            string postUrl = PlayerManager.Instance.apiUrl + "users";
+            serverCommunicator.sendJson(postUrl, jsonUser);
             // Update status and hide title screen
             status.color = normalColor;
             status.text = "New user created\nLogging in...";
@@ -228,8 +191,38 @@ public class TitleScreen : MonoBehaviour
             PlayerManager.Instance.loggedIn = true;
             PlayerManager.Instance.myName = username.text;
             yield return new WaitForSeconds(3);
-            StartCoroutine(setUserID(username.text));
+            StartCoroutine(setUserID(username.text.ToLower()));
             hideTitleScreen();
+          }
+          else
+          {
+            Debug.Log(request.error);
+            status.color = alertColor;
+            status.text = "Unable to connect to server\nConsider restarting the application";
+            authenticating = false;
+          }
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          User user = JsonUtility.FromJson<User>(serverJson);
+          userID = user.id;
+          if (user.password == hashedPassword)
+          {
+            status.color = normalColor;
+            status.text = "Successfully authenticated\nLogging in...";
+            PlayerPrefs.SetString("lastUser", username.text);
+            PlayerManager.Instance.loggedIn = true;
+            PlayerManager.Instance.myName = username.text;
+            yield return new WaitForSeconds(3);
+            StartCoroutine(setUserID(username.text.ToLower()));
+            hideTitleScreen();
+          }
+          else
+          {
+            status.color = alertColor;
+            status.text = "Incorrect password";
+            authenticating = false;
           }
         }
       }
@@ -237,7 +230,7 @@ public class TitleScreen : MonoBehaviour
 
     IEnumerator setUserID(string username)
     {
-      string url = PlayerManager.Instance.apiUrl + "users";
+      string url = PlayerManager.Instance.apiUrl + "users/auth/" + username;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -248,16 +241,9 @@ public class TitleScreen : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          AllUsers allUsers = JsonUtility.FromJson<AllUsers>(serverJson);
-          foreach (User user in allUsers.users)
-          {
-            if (username == user.username)
-            {
-              PlayerManager.Instance.myID = user.id;
-              friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
-              break;
-            }
-          }
+          User user = JsonUtility.FromJson<User>(serverJson);
+          PlayerManager.Instance.myID = user.id;
+          friendsPanelObject.GetComponent<FriendsPanel>().loadFriends();
 
           // Delete all challenges for this user
           url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/challenges";
