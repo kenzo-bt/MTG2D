@@ -35,6 +35,8 @@ public class PlayerManager : MonoBehaviour
     public List<Decklist> lobbyOpponentDecks;
     public DailyObjectives dailyObjectives;
     public GameObject objectivesPanel;
+    public int lastCoinAmount;
+    public int lastGemAmount;
 
     private void Awake()
     {
@@ -63,6 +65,8 @@ public class PlayerManager : MonoBehaviour
       friendNames = new List<string>();
       loggedIn = false;
       role = "";
+      lastGemAmount = 0;
+      lastCoinAmount = 0;
     }
 
     // Load in card collection

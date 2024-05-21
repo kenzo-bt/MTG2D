@@ -14,6 +14,7 @@ public class TitleScreen : MonoBehaviour
     public GameObject statusObject;
     public GameObject objectGroup;
     public GameObject friendsPanelObject;
+    public GameObject currencyPanelObject;
     private TMP_InputField username;
     private TMP_InputField password;
     private TMP_Text status;
@@ -264,6 +265,9 @@ public class TitleScreen : MonoBehaviour
 
           // Fetch the user's daily challenges
           PlayerManager.Instance.fetchPlayerObjectives();
+
+          // Update the user's currencies
+          currencyPanelObject.GetComponent<CurrencyPanel>().setCurrency();
 
           // Load the user's collected cards
           PlayerManager.Instance.loadCollectedCards();

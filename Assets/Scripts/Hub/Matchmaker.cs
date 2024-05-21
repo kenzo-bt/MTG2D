@@ -10,7 +10,7 @@ public class Matchmaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      startChallengeChecking();
+      //startChallengeChecking();
     }
 
     // Update is called once per frame

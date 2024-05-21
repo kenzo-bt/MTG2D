@@ -15,6 +15,7 @@ public class GameState : MonoBehaviour
     private string lastHash;
     private int playerID;
     private int opponentID;
+    private bool sendingState;
 
     // Start is called before the first frame update
     void Start()
@@ -37,10 +38,11 @@ public class GameState : MonoBehaviour
       opponent.initializeOpponent();
       playerID = PlayerManager.Instance.myID;
       opponentID = PlayerManager.Instance.opponentID;
+      sendingState = false;
       // Send state
       InvokeRepeating("sendState", 0.5f, 1f);
       // Start listening for changes in opponent state
-      InvokeRepeating("getOpponentState", 1.5f, 1f);
+      InvokeRepeating("getOpponentState", 1.5f, 3f);
     }
 
     public void getOpponentState()
@@ -58,8 +60,9 @@ public class GameState : MonoBehaviour
       // Get JSON string and encode it as UTF8 bytes to send as POST body
       BoardState myState = player.getBoardState();
       // Compare to see if last hash is same as new hash
-      if (myState.hash != lastHash)
+      if (myState.hash != lastHash && !sendingState)
       {
+        sendingState = true;
         string state = JsonUtility.ToJson(myState);
         string url = PlayerManager.Instance.apiUrl + "users/" + playerID + "/state";
         // Send post request to update my state in the server
@@ -75,8 +78,11 @@ public class GameState : MonoBehaviour
         {
           Debug.Log(request.error);
         }
-        // Save the hash
-        lastHash = myState.hash;
+        else {
+          // Save the hash
+          lastHash = myState.hash;
+        }
+        sendingState = false;
         // Dispose of the request to prevent memory leaks
         request.Dispose();
       }
