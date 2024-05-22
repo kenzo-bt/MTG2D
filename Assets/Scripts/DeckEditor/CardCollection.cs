@@ -134,7 +134,12 @@ public class CardCollection : MonoBehaviour
             if (!card.isBack)
             {
               // Only add cards collected by the player
-              if (playerCollection.ContainsKey(card.id)) {
+              if (playerCollection.ContainsKey(card.id))
+              {
+                allCardIds.Add(card.id);
+              }
+              else if (card.isBasicLand())
+              {
                 allCardIds.Add(card.id);
               }
             }
