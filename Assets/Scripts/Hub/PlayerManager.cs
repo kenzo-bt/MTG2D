@@ -116,12 +116,15 @@ public class PlayerManager : MonoBehaviour
         {
           foreach (string line in fileContents.Split('\n'))
           {
-            // Format: ID Freq
-            string id = line.Split(" ")[0];
-            int freq = Int32.Parse(line.Split(" ")[1]);
-            if (id.Length > 2)
+            if (line.Trim() != "")
             {
-              collectedCards.Add(line.Split(" ")[0], freq);
+              // Format: ID Freq
+              string id = line.Split(" ")[0];
+              int freq = Int32.Parse(line.Split(" ")[1]);
+              if (id.Length > 2)
+              {
+                collectedCards.Add(line.Split(" ")[0], freq);
+              }
             }
           }
 
@@ -396,5 +399,24 @@ public class PlayerManager : MonoBehaviour
           objectivesPanel.GetComponent<ObjectivesPanel>().updateObjectives();
         }
       }
+    }
+
+    public IEnumerator addPlayerCurrenciesInServer(int coins, int gems)
+    {
+      string url = apiUrl + "users/" + myID + "/currency";
+      PlayerCurrencies currency = new PlayerCurrencies();
+      currency.coins = coins;
+      currency.gems = gems;
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(currency));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      request.Dispose();
     }
 }
