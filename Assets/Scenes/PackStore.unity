@@ -2614,6 +2614,7 @@ MonoBehaviour:
   cardContainer: {fileID: 1487430834}
   cardPrefab: {fileID: 2394192197915304873, guid: b45b61587c3ab504c95c8f0019d2181b, type: 3}
   currencyPanel: {fileID: 322668436789608746}
+  backToStoreButton: {fileID: 2136745246}
 --- !u!1 &1981190281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,7 +3300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_Name
-      value: AcceptButton
+      value: BackToStoreButton
       objectReference: {fileID: 0}
     - target: {fileID: 4845584143247722205, guid: ae3fa9290922a3b418079f3576357652, type: 3}
       propertyPath: m_text
@@ -3325,6 +3326,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4845584142076228358, guid: ae3fa9290922a3b418079f3576357652, type: 3}
   m_PrefabInstance: {fileID: 2136745244}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2136745246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4845584142076228359, guid: ae3fa9290922a3b418079f3576357652, type: 3}
+  m_PrefabInstance: {fileID: 2136745244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &2136745247
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136745246}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &2144720547
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ public class ConfirmationPanel : MonoBehaviour
       string[] parameters = encodedString.Split('-');
       boosterSetCode = parameters[0];
       gemCost = 1;
-      coinCost = 10;
+      coinCost = 50;
       if (parameters.Length > 1)
       {
         gemCost = Int32.Parse(parameters[1]);

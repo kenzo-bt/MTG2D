@@ -9,6 +9,7 @@ public class OpeningDisplay : MonoBehaviour
     public GameObject cardContainer;
     public GameObject cardPrefab;
     public GameObject currencyPanel;
+    public GameObject backToStoreButton;
     private string boosterSetCode;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class OpeningDisplay : MonoBehaviour
 
     private IEnumerator fadeToBlack()
     {
-      yield return blackFadeObject.GetComponent<ImageFade>().FadeToFullAlpha(2f);
+      yield return blackFadeObject.GetComponent<ImageFade>().FadeToFullAlpha(1f);
       yield return new WaitForSeconds(0.5f);
       canvasGroupingObject.GetComponent<CanvasGroup>().alpha = 1;
       canvasGroupingObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -34,9 +35,10 @@ public class OpeningDisplay : MonoBehaviour
     private IEnumerator fadeToZero()
     {
       yield return hideCardsAnimation();
-      yield return canvasGroupingObject.GetComponent<CanvasGroupFade>().FadeToZeroAlpha(2f);
-      yield return new WaitForSeconds(0.5f);
-      yield return blackFadeObject.GetComponent<ImageFade>().FadeToZeroAlpha(2f);
+      yield return new WaitForSeconds(1);
+      canvasGroupingObject.GetComponent<CanvasGroup>().alpha = 0;
+      canvasGroupingObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      yield return blackFadeObject.GetComponent<ImageFade>().FadeToZeroAlpha(1f);
       gameObject.SetActive(false);
     }
 
@@ -49,6 +51,8 @@ public class OpeningDisplay : MonoBehaviour
         GameObject cardObject = cardContainer.transform.GetChild(i).gameObject;
         yield return cardObject.GetComponent<CanvasGroupFade>().FadeToFullAlpha(0.5f);
       }
+      backToStoreButton.GetComponent<CanvasGroup>().alpha = 1;
+      backToStoreButton.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
     private IEnumerator hideCardsAnimation() {
@@ -131,6 +135,8 @@ public class OpeningDisplay : MonoBehaviour
     // Show / Hide overlay
     public void hide()
     {
+      backToStoreButton.GetComponent<CanvasGroup>().alpha = 0;
+      backToStoreButton.GetComponent<CanvasGroup>().blocksRaycasts = false;
       if (gameObject.activeSelf)
       {
         StartCoroutine(fadeToZero());

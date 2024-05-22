@@ -127,11 +127,6 @@ public class PlayerManager : MonoBehaviour
               }
             }
           }
-
-          foreach (KeyValuePair<string, int> item in collectedCards)
-          {
-            Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
-          }
         }
       }
     }
