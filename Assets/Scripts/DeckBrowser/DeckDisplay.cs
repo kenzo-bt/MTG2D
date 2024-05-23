@@ -18,7 +18,7 @@ public class DeckDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     // Awake is called on instantiation
     void Awake()
     {
-      displayType = "";
+      
     }
 
     // Update is called once per frame
