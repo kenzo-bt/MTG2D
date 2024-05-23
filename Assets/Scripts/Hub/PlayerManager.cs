@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      //apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "http://127.0.0.1:5000/";
       apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
