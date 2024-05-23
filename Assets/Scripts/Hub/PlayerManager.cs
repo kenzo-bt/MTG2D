@@ -35,6 +35,8 @@ public class PlayerManager : MonoBehaviour
     public List<Decklist> lobbyOpponentDecks;
     public DailyObjectives dailyObjectives;
     public GameObject objectivesPanel;
+    public int lastCoinAmount;
+    public int lastGemAmount;
 
     private void Awake()
     {
@@ -46,8 +48,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      apiUrl = "http://127.0.0.1:5000/";
-      // apiUrl = "https://mirariapi.onrender.com/";
+      //apiUrl = "http://127.0.0.1:5000/";
+      apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -56,10 +58,6 @@ public class PlayerManager : MonoBehaviour
       cardLookup = new Dictionary<string, CardInfo>();
       createCardLookup();
 
-      collectedCards = new Dictionary<string, int>();
-      collectionFilePath = Application.persistentDataPath + "/userCards.txt";
-      loadCollectedCards();
-
       decksFilePath = Application.persistentDataPath + "/userDecks.txt";
 
       myID = -1;
@@ -67,6 +65,8 @@ public class PlayerManager : MonoBehaviour
       friendNames = new List<string>();
       loggedIn = false;
       role = "";
+      lastGemAmount = 0;
+      lastCoinAmount = 0;
     }
 
     // Load in card collection
@@ -97,8 +97,10 @@ public class PlayerManager : MonoBehaviour
     }
 
     // Read from textfile with cards collected by the user
-    private void loadCollectedCards()
+    public void loadCollectedCards()
     {
+      collectedCards = new Dictionary<string, int>();
+      collectionFilePath = Application.persistentDataPath + "/userCards-" + myID + ".txt";
       // If file doesnt exist, create a file in persistent data storage
       //// TODO: Here we can flag to give the user starter packs
       if (!System.IO.File.Exists(collectionFilePath))
@@ -114,24 +116,22 @@ public class PlayerManager : MonoBehaviour
         {
           foreach (string line in fileContents.Split('\n'))
           {
-            // Format: ID Freq
-            string id = line.Split(" ")[0];
-            int freq = Int32.Parse(line.Split(" ")[1]);
-            if (id.Length > 2)
+            if (line.Trim() != "")
             {
-              collectedCards.Add(line.Split(" ")[0], freq);
+              // Format: ID Freq
+              string id = line.Split(" ")[0];
+              int freq = Int32.Parse(line.Split(" ")[1]);
+              if (id.Length > 2)
+              {
+                collectedCards.Add(line.Split(" ")[0], freq);
+              }
             }
-          }
-
-          foreach (KeyValuePair<string, int> item in collectedCards)
-          {
-            // Debug.Log("ID: " + item.Key + " / Freq: " + item.Value);
           }
         }
       }
     }
 
-    private void saveCollectedCards()
+    public void saveCollectedCards()
     {
       string allCardsString = "";
       foreach (KeyValuePair<string, int> item in collectedCards)
@@ -394,5 +394,24 @@ public class PlayerManager : MonoBehaviour
           objectivesPanel.GetComponent<ObjectivesPanel>().updateObjectives();
         }
       }
+    }
+
+    public IEnumerator addPlayerCurrenciesInServer(int coins, int gems)
+    {
+      string url = apiUrl + "users/" + myID + "/currency";
+      PlayerCurrencies currency = new PlayerCurrencies();
+      currency.coins = coins;
+      currency.gems = gems;
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(currency));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      request.Dispose();
     }
 }

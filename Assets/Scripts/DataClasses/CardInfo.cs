@@ -29,7 +29,7 @@ public class CardInfo
 
     public bool isBasicLand()
     {
-      if (name == "Plains" || name == "Swamp" || name == "Forest" || name == "Mountain" || name == "Island")
+      if (types.Contains("Land") && supertypes.Contains("Basic"))
       {
         return true;
       }

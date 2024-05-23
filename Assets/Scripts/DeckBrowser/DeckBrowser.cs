@@ -32,6 +32,7 @@ public class DeckBrowser : MonoBehaviour
       {
         GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
         DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
+        display.displayType = "edit";
         display.setDisplayData(deck.name, deck.getCoverCard());
       }
       LayoutRebuilder.ForceRebuildLayoutImmediate(yourDecks.GetComponent<RectTransform>());

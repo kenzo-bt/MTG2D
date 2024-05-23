@@ -54,7 +54,14 @@ public class CardCollection : MonoBehaviour
         */
       }
       else {
-        filteredIds = new List<string>(PlayerManager.Instance.selectedDeck.cards);
+        filteredIds = new List<string>();
+        Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
+        foreach (string cardId in PlayerManager.Instance.selectedDeck.cards) {
+          // Only add deck cards to initial view if player has collected them
+          if (playerCollection.ContainsKey(cardId)) {
+            filteredIds.Add(cardId);
+          }
+        }
       }
       updateCollectionDisplay();
     }
@@ -108,6 +115,7 @@ public class CardCollection : MonoBehaviour
     // Load all card ids in collection into the filteredIds list
     public void loadCollection()
     {
+      Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
       foreach (CardSet set in PlayerManager.Instance.cardCollection)
       {
         foreach (CardInfo card in set.cards)
@@ -125,7 +133,15 @@ public class CardCollection : MonoBehaviour
             // Dont include DFC backside
             if (!card.isBack)
             {
-              allCardIds.Add(card.id);
+              // Only add cards collected by the player
+              if (playerCollection.ContainsKey(card.id))
+              {
+                allCardIds.Add(card.id);
+              }
+              else if (card.isBasicLand())
+              {
+                allCardIds.Add(card.id);
+              }
             }
           }
         }

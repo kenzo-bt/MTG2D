@@ -76,6 +76,8 @@ public class Player : MonoBehaviour
       rollTime = "";
       diceVisible = false;
       eventLog = new List<string>();
+      // Claim participation coins from server
+      StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25, 0));
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand

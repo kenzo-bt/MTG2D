@@ -142,7 +142,7 @@ public class WebCard : MonoBehaviour
         StartCoroutine(fetchCardFromServer(cardId));
       }
       // MDFC back side
-      if (card.backId != "" && card.backId != null && fullImageBack)
+      if (card.backId != "" && card.backId != null && card.layout != "adventure" && fullImageBack)
       {
         if (File.Exists(cachePath + card.backId + fileExtension))
         {

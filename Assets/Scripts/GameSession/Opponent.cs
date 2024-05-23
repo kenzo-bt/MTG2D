@@ -30,6 +30,7 @@ public class Opponent : MonoBehaviour
     public BoardState state;
     private TMP_Text life;
     private int lastEventIndex;
+    private bool defeated;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,7 @@ public class Opponent : MonoBehaviour
       grave.initializeStack();
       exile.initializeStack();
       lastEventIndex = -1;
+      defeated = false;
     }
 
     public void updateBoard()
@@ -319,6 +321,11 @@ public class Opponent : MonoBehaviour
     public void updateLife()
     {
       life.text = state.life.ToString();
+      if (!defeated && state.life <= 0)
+      {
+        defeated = true;
+        StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(0, 1));
+      }
     }
 
     public void updateCoin()

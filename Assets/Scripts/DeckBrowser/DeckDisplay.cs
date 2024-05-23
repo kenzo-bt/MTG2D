@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using TMPro;
 
-public class DeckDisplay : MonoBehaviour
+public class DeckDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject displayText;
     public GameObject displayCard;
     public GameObject displayDialog;
     public string deckName;
+    public string displayType;
     public CardInfo coverCard;
 
     // Awake is called on instantiation
     void Awake()
     {
-
+      displayType = "";
     }
 
     // Update is called once per frame
@@ -169,5 +171,22 @@ public class DeckDisplay : MonoBehaviour
     public void debugDeckName()
     {
       Debug.Log(deckName);
+    }
+
+    public void OnPointerEnter(PointerEventData pointerEventData)
+    {
+      if (displayType == "edit")
+      {
+        showDialog();
+      }
+    }
+
+    //Detect when Cursor leaves the GameObject
+    public void OnPointerExit(PointerEventData pointerEventData)
+    {
+      if (displayType == "edit")
+      {
+        hideDialog();
+      }
     }
 }
