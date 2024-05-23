@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OpeningDisplay : MonoBehaviour
 {
@@ -49,10 +50,39 @@ public class OpeningDisplay : MonoBehaviour
       for (int i = 0; i < numInstances; i++)
       {
         GameObject cardObject = cardContainer.transform.GetChild(i).gameObject;
-        yield return cardObject.GetComponent<CanvasGroupFade>().FadeToFullAlpha(0.5f);
+        float fadeTime = 0.5f;
+        if (i == (numInstances - 1))
+        {
+          fadeTime = 1.5f;
+        }
+        else if (i >= (numInstances - 4))
+        {
+          fadeTime = 1f;
+        }
+        yield return cardObject.GetComponent<CanvasGroupFade>().FadeToFullAlpha(fadeTime);
+        StartCoroutine(cardObject.GetComponent<OpeningDisplayCard>().shrink(3f));
+        if (i == (numInstances - 2))
+        {
+          yield return new WaitForSeconds(1.0f);
+        }
+        else if (i >= (numInstances - 5))
+        {
+          yield return new WaitForSeconds(0.5f);
+        }
       }
       backToStoreButton.GetComponent<CanvasGroup>().alpha = 1;
       backToStoreButton.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    private IEnumerator reduceContainerSpacing(float time)
+    {
+      HorizontalLayoutGroup containerLayout = cardContainer.GetComponent<HorizontalLayoutGroup>();
+      float targetSpacing = -210f;
+      while (containerLayout.spacing > targetSpacing)
+      {
+          containerLayout.spacing = containerLayout.spacing - (Time.deltaTime / time);
+          yield return null;
+      }
     }
 
     private IEnumerator hideCardsAnimation() {
@@ -96,6 +126,11 @@ public class OpeningDisplay : MonoBehaviour
             CardInfo card = PlayerManager.Instance.getCardFromLookup(pack.cards[i]);
             // Instantiate the cards
             GameObject cardInstance = Instantiate(cardPrefab, cardContainer.transform);
+            // Set the target scale (smallest first) [1 -> 1.5]
+            float decrementStep = 0.5f / (pack.cards.Count - 1);
+            float targetScale = 1.5f - (decrementStep  * i);
+            cardInstance.GetComponent<OpeningDisplayCard>().targetScale = targetScale;
+            // TODO : Adhere to scryfall request limits (10/s)
             cardInstance.GetComponent<WebCard>().texturizeCard(PlayerManager.Instance.getCardFromLookup(card.id));
             // Determine duplicate credits
             if (playerCollection.ContainsKey(card.id))

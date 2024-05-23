@@ -9,6 +9,7 @@ public class OpeningDisplayCard : MonoBehaviour
     private GameObject displayCard;
     public GameObject duplicateCoinsObject;
     public GameObject duplicateCoinsText;
+    public float targetScale;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,17 @@ public class OpeningDisplayCard : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public IEnumerator shrink(float time)
+    {
+      RectTransform objectTransform = GetComponent<RectTransform>();
+      while (objectTransform.localScale.x > targetScale)
+      {
+          float newScaleValue = objectTransform.localScale.x - (Time.deltaTime / time);
+          objectTransform.localScale = new Vector3(newScaleValue, newScaleValue, newScaleValue);
+          yield return null;
+      }
     }
 
     public void showDuplicateCoins(int numCoins)
