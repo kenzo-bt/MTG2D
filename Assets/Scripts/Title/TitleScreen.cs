@@ -147,10 +147,10 @@ public class TitleScreen : MonoBehaviour
 
     IEnumerator authenticateWithServer()
     {
-      status.color = normalColor;
-      status.text = statusMessage;
       string statusMessage = "Connecting to server";
       string delayMessage = "";
+      status.color = normalColor;
+      status.text = statusMessage;
       int ellipsisCounter = 0;
       while (connectedToServer == -1) {
         yield return new WaitForSeconds(1);
