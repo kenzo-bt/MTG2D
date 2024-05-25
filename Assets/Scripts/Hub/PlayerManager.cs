@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      //apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "http://127.0.0.1:5000/";
       apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
@@ -67,6 +67,9 @@ public class PlayerManager : MonoBehaviour
       role = "";
       lastGemAmount = 0;
       lastCoinAmount = 0;
+
+      // Keep connection to server alive
+      StartCoroutine(keepConnectionAliveSignal());
     }
 
     // Load in card collection
@@ -371,12 +374,7 @@ public class PlayerManager : MonoBehaviour
       request.Dispose();
     }
 
-    public void fetchPlayerObjectives()
-    {
-      StartCoroutine(fetchPlayerObjectivesFromServer());
-    }
-
-    private IEnumerator fetchPlayerObjectivesFromServer()
+    public IEnumerator fetchPlayerObjectivesFromServer()
     {
       string url = PlayerManager.Instance.apiUrl + "users/" + PlayerManager.Instance.myID + "/dailies";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
@@ -413,5 +411,41 @@ public class PlayerManager : MonoBehaviour
         Debug.Log(request.error);
       }
       request.Dispose();
+    }
+
+    private IEnumerator keepConnectionAliveSignal()
+    {
+      yield return new WaitForSeconds(5f);
+      int failureCount = 0;
+      int maxFailures = 10;
+      while (failureCount < maxFailures)
+      {
+        string url = apiUrl + "ping";
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+          yield return request.SendWebRequest();
+          if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(request.error);
+            Debug.Log("Server Ping FAILED");
+            failureCount++;
+          }
+          yield return new WaitForSeconds(30f);
+        }
+      }
+    }
+
+    public IEnumerator deleteChallenges()
+    {
+      string url = apiUrl + "users/" + myID + "/challenges";
+      using (UnityWebRequest request = new UnityWebRequest(url))
+      {
+        request.method = UnityWebRequest.kHttpVerbDELETE;
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+      }
     }
 }

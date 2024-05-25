@@ -49,7 +49,11 @@ public class CardSet
         {
           if (!card.isToken && !card.isBack && card.finishes.Contains("nonfoil"))
           {
-            allRares.Add(card);
+            // Remove alchemy cards
+            if (card.name.Length > 1 && card.name.Substring(0, 2) != "A-")
+            {
+              allRares.Add(card);
+            }
           }
         }
       }
@@ -65,7 +69,11 @@ public class CardSet
         {
           if (!card.isToken && !card.isBack && card.finishes.Contains("nonfoil"))
           {
-            allUncommons.Add(card);
+            // Remove alchemy cards
+            if (card.name.Length > 1 && card.name.Substring(0, 2) != "A-")
+            {
+              allUncommons.Add(card);
+            }
           }
         }
       }
@@ -81,7 +89,11 @@ public class CardSet
         {
           if (!card.isBasicLand() && !card.isToken && !card.isBack && card.finishes.Contains("nonfoil"))
           {
-            allCommons.Add(card);
+            // Remove alchemy cards
+            if (card.name.Length > 1 && card.name.Substring(0, 2) != "A-")
+            {
+              allCommons.Add(card);
+            }
           }
         }
       }
