@@ -49,13 +49,13 @@ public class BattlefieldArea : MonoBehaviour
 
     public void untapAllCards()
     {
-      foreach (Transform child in this.gameObject.transform)
+      foreach (Transform child in transform)
       {
         BattlefieldCard card = child.gameObject.GetComponent<BattlefieldCard>();
         if (card.tapped)
         {
           card.tapCard();
         }
-      }	
-    }	
+      }
+    }
 }
