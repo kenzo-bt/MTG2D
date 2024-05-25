@@ -46,4 +46,16 @@ public class BattlefieldArea : MonoBehaviour
     {
       GetComponent<Container>().orderChildrenCenter();
     }
+
+    public void untapAllCards()
+    {
+      foreach (Transform child in this.gameObject.transform)
+      {
+        BattlefieldCard card = child.gameObject.GetComponent<BattlefieldCard>();
+        if (card.tapped)
+        {
+          card.tapCard();
+        }
+      }	
+    }	
 }
