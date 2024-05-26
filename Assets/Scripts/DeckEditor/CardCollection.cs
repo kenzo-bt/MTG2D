@@ -45,12 +45,7 @@ public class CardCollection : MonoBehaviour
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
-      if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEdit)
-      {
-        filteredIds = new List<string>();
-        
-      }
-      else if (PlayerManager.Instance.selectedDeck.isDraft || PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      if (PlayerManager.Instance.selectedDeck.isDraft || PlayerManager.Instance.selectedDeck.isTimeChallenge)
       {
         filteredIds = new List<string>();
         // Emulate clicking on the lands filter
