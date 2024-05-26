@@ -11,8 +11,10 @@ import time
 # Verify that the script is run with correct arguments
 if len(sys.argv) < 2 or len(sys.argv) > 3:
     print("ERROR: Invalid number of arguments")
-    print("USAGE: python getCardsFromSet.py <setCode> [-p]")
+    print("USAGE: python getCardsFromSet.py <setCode> [-p|t|u]")
     print("Use the -p flag to download the card images")
+    print("Use the -t flag to download the token images")
+    print("Use the -u flag to upload the card ids to the server")
     sys.exit()
 
 # Define input/output paths for JSON files
@@ -43,6 +45,9 @@ with open(setInputPath, encoding="utf8") as inputFile:
 # Get set information
 outputSet["setCode"] = setInformation["code"]
 outputSet["setName"] = setInformation["name"]
+
+# Gather all card ids in this set
+cardIds = []
 
 # Get cards from set
 cards = setInformation["cards"]
@@ -121,7 +126,10 @@ for card in cards:
         "language": card["language"],
         "variations": variations
     }
-    outputSet["cards"].append(thisCard);
+    outputSet["cards"].append(thisCard)
+
+    if not isBack:
+        cardIds.append(card["uuid"])
 
     if len(sys.argv) == 3 and sys.argv[2] == "-p":
         if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
@@ -176,7 +184,7 @@ for token in tokens:
         "language": token["language"],
         "variations": []
     }
-    outputSet["cards"].append(thisToken);
+    outputSet["cards"].append(thisToken)
 
     if len(sys.argv) == 3 and sys.argv[2] == "-t":
         if not os.path.exists(setTokenDirectory + token["uuid"] + ".jpg"):
@@ -185,6 +193,15 @@ for token in tokens:
             file = open(setTokenDirectory + token["uuid"] + ".jpg", "wb")
             file.write(image.content)
             file.close()
+
+# Send id list to API
+if len(sys.argv) == 3 and sys.argv[2] == "-u":
+    print("Sending to server...")
+    postUrl = 'http://127.0.0.1:5000'
+    postPayload = {'cardIds': cardIds}
+    postResponse = requests.post(postUrl + '/cards', json=postPayload)
+    print('Server response status code ' + str(postResponse.status_code))
+    sys.exit()
 
 # Encode outputSet into JSON format and write to output JSON file
 outputJSON = json.dumps(outputSet, indent=4)
