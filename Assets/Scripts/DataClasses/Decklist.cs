@@ -11,6 +11,11 @@ public class Decklist {
   public List<int> sideboardFrequencies;
   public string coverId;
   public bool isDraft;
+  public bool isTimeChallenge;
+  public string timeChallengeCardSet;
+  public List<string> timeChallengeCardColours;
+  public bool isTimeChallengeEdit;
+
 
   public string getDecklistString()
   {
@@ -115,6 +120,10 @@ public class Decklist {
     this.sideboardFrequencies = new List<int>();
     this.coverId = "";
     this.isDraft = false;
+    this.isTimeChallenge = false;
+    this.timeChallengeCardSet = string;
+    this.timeChallengeCardColours = new List<int>();
+    this.isTimeChallengeEdit = true;
   }
 
   // Copy constructor
@@ -126,6 +135,10 @@ public class Decklist {
     this.sideboardFrequencies = new List<int>(deckToCopy.sideboardFrequencies);
     this.coverId = deckToCopy.coverId;
     this.isDraft = deckToCopy.isDraft;
+    this.isTimeChallenge = deckToCopy.isTimeChallenge;
+    this.timeChallengeCardSet = deckToCopy.timeChallengeCardSet;
+    this.timeChallengeCardColours = new List<string>(deckToCopy.timeChallengeCardColours);
+    this.isTimeChallengeEdit = deckToCopy.isTimeChallengeEdit;
   }
 
   // Get selected card
