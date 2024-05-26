@@ -213,8 +213,8 @@ public class TitleScreen : MonoBehaviour
           yield return currencyPanelObject.GetComponent<CurrencyPanel>().fetchCurrenciesFromServer();
           yield return PlayerManager.Instance.fetchPlayerObjectivesFromServer();
           yield return PlayerManager.Instance.deleteChallenges();
+          yield return PlayerManager.Instance.fetchPlayerCollectionFromServer();
 
-          PlayerManager.Instance.loadCollectedCards();
           PlayerManager.Instance.loadPlayerDecks();
           PlayerManager.Instance.readStarterDecks();
           PlayerManager.Instance.readProDecks();

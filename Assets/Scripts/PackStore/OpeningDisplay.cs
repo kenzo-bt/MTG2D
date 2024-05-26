@@ -159,8 +159,9 @@ public class OpeningDisplay : MonoBehaviour
               playerCollection.Add(card.id, 1);
             }
           }
-          // Update collection in disk
-          PlayerManager.Instance.saveCollectedCards();
+          // Update collection in server
+          StartCoroutine(PlayerManager.Instance.addPackToPlayerCollectionInServer(pack));
+          // Update currency in server
           StartCoroutine(updateDuplicateCoins(duplicateCoins));
           break;
         }
