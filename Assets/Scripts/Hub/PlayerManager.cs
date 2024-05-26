@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     public List<CardSet> cardCollection;
     public Dictionary<string, CardInfo> cardLookup;
     public Dictionary<string, int> collectedCards;
+    public Dictionary<string> collectedCardsRemote;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
     public List<Decklist> starterDecks;
@@ -48,8 +49,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -451,6 +452,22 @@ public class PlayerManager : MonoBehaviour
 
     public IEnumerator fetchPlayerCollectionFromServer()
     {
+      string url = apiUrl + "player/" + myID + "/cards";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          Pack receivedCards = JsonUtility.FromJson<Pack>(serverJson);
+          collectedCardsRemote = receivedCards.cards;
+        }
+      }
       yield return new WaitForSeconds(1f);
+
     }
 }
