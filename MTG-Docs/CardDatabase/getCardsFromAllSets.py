@@ -11,8 +11,10 @@ import time
 # Verify that the script is run with correct arguments
 if len(sys.argv) > 2:
     print("ERROR: Invalid number of arguments")
-    print("USAGE: python getCardsFromSet.py [-p]")
+    print("USAGE: python getCardsFromSet.py [-p|t|u]")
     print("Use the -p flag to download the card and token images locally")
+    print("Use the -t flag to download the token images")
+    print("Use the -u flag to upload the card ids to the server")
     sys.exit()
 
 # Define input/output paths for JSON files
@@ -195,6 +197,9 @@ for setCode in includedSets:
     outputSet["setCode"] = setInformation["code"]
     outputSet["setName"] = setInformation["name"]
 
+    # Gather all card ids in this set
+    cardIds = []
+
     # Get cards from set
     cards = setInformation["cards"]
     for card in cards:
@@ -272,7 +277,10 @@ for setCode in includedSets:
             "language": card["language"],
             "variations": variations
         }
-        outputSet["cards"].append(thisCard);
+        outputSet["cards"].append(thisCard)
+
+        if not isBack:
+            cardIds.append(card["uuid"])
 
         if len(sys.argv) == 2 and sys.argv[1] == "-p":
             if not os.path.exists(setImageDirectory + card["uuid"] + ".jpg"):
@@ -336,9 +344,19 @@ for setCode in includedSets:
                 file.write(image.content)
                 file.close()
 
+    print("Completed set " + setCode + " [ " + str(setCounter) + " / " + str(len(includedSets)) + " ]")
+    setCounter += 1
+
+    # Send id list to API
+    if len(sys.argv) == 2 and sys.argv[1] == "-u":
+        print("Sending to server...")
+        postUrl = 'http://127.0.0.1:5000'
+        postPayload = {'cardIds': cardIds}
+        postResponse = requests.post(postUrl + '/cards', json=postPayload)
+        print('Server response status code ' + str(postResponse.status_code))
+        continue
+
     # Encode outputSet into JSON format and write to output JSON file
     outputJSON = json.dumps(outputSet, indent=4)
     with open(setOutputPath, "w") as outputFile:
         outputFile.write(outputJSON)
-    print("Completed set " + setCode + " [ " + str(setCounter) + " / " + str(len(includedSets)) + " ]")
-    setCounter += 1
