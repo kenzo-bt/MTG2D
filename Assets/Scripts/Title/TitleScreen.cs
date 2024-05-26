@@ -215,6 +215,7 @@ public class TitleScreen : MonoBehaviour
           yield return PlayerManager.Instance.deleteChallenges();
 
           PlayerManager.Instance.loadCollectedCards();
+          // StartCoroutine(PlayerManager.Instance.fetchPlayerCollectionFromServer());
           PlayerManager.Instance.loadPlayerDecks();
           PlayerManager.Instance.readStarterDecks();
           PlayerManager.Instance.readProDecks();

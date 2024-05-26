@@ -448,4 +448,9 @@ public class PlayerManager : MonoBehaviour
         }
       }
     }
+
+    public IEnumerator fetchPlayerCollectionFromServer()
+    {
+      yield return new WaitForSeconds(1f);
+    }
 }
