@@ -10,6 +10,7 @@ public class WebCard : MonoBehaviour
 {
     public string cardName;
     public string cardId;
+    public string displayType;
     private string cachePath;
     private string fileExtension;
     public GameObject cardImageObject;
@@ -142,7 +143,7 @@ public class WebCard : MonoBehaviour
         StartCoroutine(fetchCardFromServer(cardId));
       }
       // MDFC back side
-      if (card.backId != "" && card.backId != null && card.layout != "adventure" && fullImageBack)
+      if (displayType == "collection" && card.backId != "" && card.backId != null && card.layout != "adventure" && fullImageBack)
       {
         if (File.Exists(cachePath + card.backId + fileExtension))
         {
