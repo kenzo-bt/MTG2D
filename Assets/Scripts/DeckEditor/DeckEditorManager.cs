@@ -13,16 +13,22 @@ public class DeckEditorManager : MonoBehaviour
     void Start()
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
-      //if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
-      //{
-        StartCoroutine(timer.GetComponent<Timer>().startTimer());
-      //}
+      StartCoroutine(startTimer());
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    private IEnumerator startTimer()
+    {
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+      {
+        yield return timer.GetComponent<Timer>().startTimer();
+        saveDeck();
+      }
     }
 
     // Save deck changes
