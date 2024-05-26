@@ -143,7 +143,7 @@ public class WebCard : MonoBehaviour
         StartCoroutine(fetchCardFromServer(cardId));
       }
       // MDFC back side
-      if (displayType == "collection" && card.backId != "" && card.backId != null && card.layout != "adventure" && fullImageBack)
+      if (displayType == "collection" && card.hasBackSide() && fullImageBack)
       {
         if (File.Exists(cachePath + card.backId + fileExtension))
         {
@@ -160,7 +160,7 @@ public class WebCard : MonoBehaviour
         }
       }
       // Translation
-      if (card.hasEnglishTranslation())
+      if (displayType == "collection" && card.hasEnglishTranslation())
       {
         CardInfo variation = PlayerManager.Instance.getCardFromLookup(card.variations[0]);
         // Check if image already exists in cache

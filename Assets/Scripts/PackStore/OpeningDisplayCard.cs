@@ -7,6 +7,7 @@ using TMPro;
 public class OpeningDisplayCard : MonoBehaviour
 {
     private GameObject displayCard;
+    private GameObject displayCardBack;
     public GameObject duplicateCoinsObject;
     public GameObject duplicateCoinsText;
     public float targetScale;
@@ -43,12 +44,20 @@ public class OpeningDisplayCard : MonoBehaviour
       string cardId = GetComponent<WebCard>().cardId;
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       displayCard = GameObject.Find("OpeningDisplayCard");
+      displayCardBack = GameObject.Find("OpeningDisplayCardBack");
       displayCard.GetComponent<CanvasGroup>().alpha = 1;
       displayCard.GetComponent<WebCard>().texturizeCard(card);
+      if (card.hasBackSide())
+      {
+        CardInfo backCard = PlayerManager.Instance.getCardFromLookup(card.backId);
+        displayCardBack.GetComponent<CanvasGroup>().alpha = 1;
+        displayCardBack.GetComponent<WebCard>().texturizeCard(backCard);
+      }
     }
 
     public void hideCardInDisplay()
     {
       displayCard.GetComponent<CanvasGroup>().alpha = 0;
+      displayCardBack.GetComponent<CanvasGroup>().alpha = 0;
     }
 }
