@@ -13,7 +13,6 @@ public class PlayerManager : MonoBehaviour
     public List<CardSet> cardCollection;
     public Dictionary<string, CardInfo> cardLookup;
     public Dictionary<string, int> collectedCards;
-    public Dictionary<string> collectedCardsRemote;
     public Decklist selectedDeck;
     public List<Decklist> allDecks;
     public List<Decklist> starterDecks;
@@ -96,41 +95,6 @@ public class PlayerManager : MonoBehaviour
         foreach (CardInfo card in set.cards)
         {
           cardLookup.Add(card.id, card);
-        }
-      }
-    }
-
-    // Read from textfile with cards collected by the user
-    public void loadCollectedCards()
-    {
-      collectedCards = new Dictionary<string, int>();
-      collectionFilePath = Application.persistentDataPath + "/userCards-" + myID + ".txt";
-      // If file doesnt exist, create a file in persistent data storage
-      //// TODO: Here we can flag to give the user starter packs
-      if (!System.IO.File.Exists(collectionFilePath))
-      {
-        using (File.Create(collectionFilePath)) {}
-      }
-      else
-      {
-        // Load the collected cards into the dictionary
-        string fileContents = "";
-        fileContents = File.ReadAllText(collectionFilePath);
-        if (fileContents != "")
-        {
-          foreach (string line in fileContents.Split('\n'))
-          {
-            if (line.Trim() != "")
-            {
-              // Format: ID Freq
-              string id = line.Split(" ")[0];
-              int freq = Int32.Parse(line.Split(" ")[1]);
-              if (id.Length > 2)
-              {
-                collectedCards.Add(line.Split(" ")[0], freq);
-              }
-            }
-          }
         }
       }
     }
@@ -464,10 +428,36 @@ public class PlayerManager : MonoBehaviour
         {
           string serverJson = request.downloadHandler.text;
           Pack receivedCards = JsonUtility.FromJson<Pack>(serverJson);
-          collectedCardsRemote = receivedCards.cards;
+          collectedCards = new Dictionary<string, int>();
+          foreach (string cardId in receivedCards.cards)
+          {
+            collectedCards.Add(cardId, 1);
+          }
         }
       }
-      yield return new WaitForSeconds(1f);
+      foreach (KeyValuePair<string, int> item in collectedCards)
+      {
+        Debug.Log("Collected Card: " + item.Key);
+      }
+    }
 
+    public IEnumerator addPackToPlayerCollectionInServer(Pack pack)
+    {
+      string url = apiUrl + "player/" + myID + "/cards";
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(pack));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully added packed cards to collection in server");
+      }
+      request.Dispose();
     }
 }
