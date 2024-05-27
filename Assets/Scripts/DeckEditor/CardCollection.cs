@@ -44,7 +44,8 @@ public class CardCollection : MonoBehaviour
       supertypeFilters = new List<string>();
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
-      if (PlayerManager.Instance.selectedDeck.isDraft)
+
+      if (PlayerManager.Instance.selectedDeck.isDraft || PlayerManager.Instance.selectedDeck.isTimeChallenge)
       {
         filteredIds = new List<string>();
         // Emulate clicking on the lands filter
@@ -126,6 +127,24 @@ public class CardCollection : MonoBehaviour
             if (card.isBasicLand())
             {
               allCardIds.Add(card.id);
+            }
+          }
+          else if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+          {
+            // Only load cards from the selected card's set and colours
+            if (set.setCode == PlayerManager.Instance.selectedDeck.timeChallengeCardSet)
+            {
+              foreach (string colour in card.colourIdentity)
+              {
+                if (PlayerManager.Instance.selectedDeck.timeChallengeCardColours.Contains(colour))
+                {
+                  allCardIds.Add(card.id);
+                }
+              }
+            }
+            else
+            {
+              break;
             }
           }
           else

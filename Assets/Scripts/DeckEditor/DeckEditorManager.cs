@@ -7,12 +7,14 @@ public class DeckEditorManager : MonoBehaviour
 {
     private Decklist initialDeck;
     public GameObject exitPopup;
+    public GameObject timer;
     public GameObject timedChallengeOverlay;
 
     // Start is called before the first frame update
     void Start()
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
+      StartCoroutine(startTimer());
       /*
       if (initialDeck.isTimeChallenge)
       {
@@ -26,6 +28,15 @@ public class DeckEditorManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private IEnumerator startTimer()
+    {
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+      {
+        yield return timer.GetComponent<Timer>().startTimer();
+        saveDeck();
+      }
     }
 
     // Save deck changes
