@@ -53,9 +53,71 @@ public class Decklist {
     return total;
   }
 
+  private int getNumberOfRares()
+  {
+    int numberOfRares = 0;
+    for (int i = 0; i < cards.Count; i++)
+      {
+        if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "rare")
+        {
+          numberOfRares += cardFrequencies[i];
+        }                
+      }
+      return numberOfRares;
+  }
+
+  private int getNumberOfMythics()
+  {
+    int numberOfMythics = 0;
+    for (int i = 0; i < cards.Count; i++)
+    {
+      if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "mythic")
+      {
+        numberOfMythics += cardFrequencies[i];
+      }   
+    }
+    return numberOfMythics;
+  }
+
+  private int getNumberOfNonBasicLands()
+  {
+    int nonLandCards = 0;
+    for (int i = 0; i < cards.Count; i++)
+    {
+      if (!PlayerManager.Instance.getCardFromLookup(cards[i]).isBasicLand())
+      {
+        nonLandCards += cardFrequencies[i];
+      }
+    }
+    return nonLandCards;
+  }
+
   // Add card to deck
   public void addCard(string card)
   {
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+    if (getNumberOfNonBasicLands() >= 40)
+    {
+      return;
+    }
+    {
+      string cardRarity = PlayerManager.Instance.getCardFromLookup(card).rarity;
+      if (cardRarity == "rare")
+      {
+        if ((getNumberOfRares() + getNumberOfMythics()) > 5)
+        {
+          return;
+        }
+      }
+      if (cardRarity == "mythic")
+      {
+        if (getNumberOfMythics() > 2)
+        {
+          return;
+        }
+      }
+    }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
@@ -71,6 +133,16 @@ public class Decklist {
   // Remove card (Remove 1 instance of the passed card)
   public void removeCard(string card)
   {
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+  {
+    for (int i = 0; i < cards.Count; i++)
+    {
+      if (cards[i] == PlayerManager.Instance.timeChallengeSelectedRare && cardFrequencies[i] == 1)
+      {
+        return;
+      }
+    }
+  }
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
