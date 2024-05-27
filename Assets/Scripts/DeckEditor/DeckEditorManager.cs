@@ -8,12 +8,20 @@ public class DeckEditorManager : MonoBehaviour
     private Decklist initialDeck;
     public GameObject exitPopup;
     public GameObject timer;
+    public GameObject timedChallengeOverlay;
 
     // Start is called before the first frame update
     void Start()
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
       StartCoroutine(startTimer());
+      /*
+      if (initialDeck.isTimeChallenge)
+      {
+        timedChallengeOverlay.GetComponent<CanvasGroup>().alpha = 1f;
+        timedChallengeOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
+      }
+      */
     }
 
     // Update is called once per frame

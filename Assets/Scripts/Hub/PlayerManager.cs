@@ -31,13 +31,16 @@ public class PlayerManager : MonoBehaviour
     public string role;
     public int draftHostID;
     public int lobbyHostID;
+    public int timeChallengeHostID;
     public List<int> lobbyOpponents;
     public List<Decklist> lobbyOpponentDecks;
     public DailyObjectives dailyObjectives;
     public GameObject objectivesPanel;
     public int lastCoinAmount;
     public int lastGemAmount;
+    public List<string> timeChallengeRares;
     public string timeChallengeSelectedRare;
+    public string timeChallengeSetCode;
 
     private void Awake()
     {
