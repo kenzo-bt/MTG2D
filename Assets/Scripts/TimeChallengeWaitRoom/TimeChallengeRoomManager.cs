@@ -196,9 +196,14 @@ public class TimeChallengeRoomManager : MonoBehaviour
           {
             Debug.Log("TimeChallengeCard: " + cardId);
           }
-          // TODO: Create a new deck of time challenge type
-          // TODO: Set as active deck
-          // TODO: Move to deck editor
+          Decklist newDeck = new Decklist();
+          // TODO: Set relevant time challenge properties
+          //newDeck.isTimeChallenge = true;
+          //newDeck.timeChallengeCardSet = setCode;
+          //newDeck.isTimeChallengeEditable = true;
+          PlayerManager.Instance.allDecks.Add(newDeck);
+          PlayerManager.Instance.selectedDeck = newDeck;
+          SceneManager.LoadScene("DeckEditor");
         }
       }
     }

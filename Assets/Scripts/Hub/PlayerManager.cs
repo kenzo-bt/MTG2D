@@ -39,6 +39,7 @@ public class PlayerManager : MonoBehaviour
     public int lastCoinAmount;
     public int lastGemAmount;
     public List<string> timeChallengeRares;
+    public string timeChallengeSelectedRare;
     public string timeChallengeSetCode;
 
     private void Awake()

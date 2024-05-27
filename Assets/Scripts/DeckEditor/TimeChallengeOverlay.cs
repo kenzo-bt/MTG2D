@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class TimeChallengeOverlay : MonoBehaviour
 {
-    public GameObject cardObject1;
-    public GameObject cardObject2;
-    public GameObject cardObject3;
+    public GameObject[] cardObjects;
+    public GameObject decklistPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +21,22 @@ public class TimeChallengeOverlay : MonoBehaviour
 
     public void loadCards()
     {
-      CardInfo card1 = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.timeChallengeRares[0]);
-      cardObject1.GetComponent<WebCard>().texturizeCard(card1);
-      CardInfo card2 = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.timeChallengeRares[1]);
-      cardObject2.GetComponent<WebCard>().texturizeCard(card2);
-      CardInfo card3 = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.timeChallengeRares[2]);
-      cardObject3.GetComponent<WebCard>().texturizeCard(card3);
+      for (int i = 0; i < cardObjects.Length; i++)
+      {
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.timeChallengeRares[i]);
+        cardObjects[i].GetComponent<WebCard>().texturizeCard(card);
+      }
+    }
+
+    public void selectCard(int index)
+    {
+      string id = PlayerManager.Instance.getCardFromLookup(PlayerManager.Instance.timeChallengeRares[index]).id;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
+      PlayerManager.Instance.timeChallengeSelectedRare = id;
+      // PlayerManager.Instance.selectedDeck.cards[0] = id;
+      // PlayerManager.Instance.selectedDeck.cardFrequencies[0] = 1;
+      // PlayerManager.Instance.selectedDeck.timeChallengeCardColours = card.colourIdentity;
+      decklistPanel.GetComponent<DeckListPanel>().updatePanel();
+      StartCoroutine(GetComponent<CanvasGroupFade>().FadeToZeroAlpha(1f));
     }
 }

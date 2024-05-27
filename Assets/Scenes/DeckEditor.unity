@@ -2221,6 +2221,35 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
   m_PrefabInstance: {fileID: 90732770}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &90732773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90732772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 648618038}
+          m_TargetAssemblyTypeName: TimeChallengeOverlay, Assembly-CSharp
+          m_MethodName: selectCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 2
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &105569902 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3276726633943481997, guid: 7cf5f68f8ac6bc747916f3c38e06f08f, type: 3}
@@ -12349,9 +12378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9577e51e7861ba4fb00f182d8314e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardObject1: {fileID: 1484025436}
-  cardObject2: {fileID: 962892449}
-  cardObject3: {fileID: 90732772}
+  cardObjects:
+  - {fileID: 1484025436}
+  - {fileID: 962892449}
+  - {fileID: 90732772}
+  decklistPanel: {fileID: 2034659554}
 --- !u!225 &648618039
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12360,7 +12391,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648618036}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -18799,6 +18830,35 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2394192197915304873, guid: f21574dd85b8819409cc1a026b79bcba, type: 3}
   m_PrefabInstance: {fileID: 962892447}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &962892450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962892449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 648618038}
+          m_TargetAssemblyTypeName: TimeChallengeOverlay, Assembly-CSharp
+          m_MethodName: selectCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &964415491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29273,7 +29333,19 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 648618038}
+          m_TargetAssemblyTypeName: TimeChallengeOverlay, Assembly-CSharp
+          m_MethodName: selectCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 0
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1498751731
 GameObject:
   m_ObjectHideFlags: 0
