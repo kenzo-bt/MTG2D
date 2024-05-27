@@ -12,18 +12,18 @@ public class TimedDeckPanel : MonoBehaviour
     public GameObject entryList;
     public GameObject entryPrefab;
     public GameObject createOverlay;
+    public GameObject setDropbox;
+    public GameObject errorMessage;
     public GameObject joinButton;
-    public GameObject selectPanel;
-    public GameObject deckSelectJoinButton;
-    public GameObject deckSelectCreateButton;
-    public GameObject deckBrowser;
-    public GameObject deckDisplay;
     public GameObject objectivesPanel;
-
+    private List<string> setCodes;
+    private List<string> setNames;
+    private int dropdownIndex;
     // Start is called before the first frame update
     void Start()
     {
-
+      setCodes = new List<string>();
+      setNames = new List<string>();
     }
 
     // Update is called once per frame
@@ -45,130 +45,76 @@ public class TimedDeckPanel : MonoBehaviour
       CanvasGroup cg = GetComponent<CanvasGroup>();
       cg.alpha = 0;
       cg.blocksRaycasts = false;
-      closeDeckSelect();
-      closeDeckBrowser();
       objectivesPanel.GetComponent<ObjectivesPanel>().showPanel();
     }
 
-    public void openDeckSelect()
+    public void openCreateOverlay()
     {
-      selectPanel.GetComponent<CanvasGroup>().alpha = 1;
-      selectPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
-      if (PlayerManager.Instance.selectedDeck.cards.Count <= 0)
+      // Populate set dropbox
+      setNames = new List<string>();
+      setCodes = new List<string>();
+      foreach (CardSet set in PlayerManager.Instance.cardCollection)
       {
-        deckDisplay.SetActive(false);
+        setNames.Add(set.setName);
+        setCodes.Add(set.setCode);
       }
-      else
-      {
-        updateSelectedDeck();
-      }
-      selectPanel.GetComponent<MultiplayerMenu>().showPanel();
+      setDropbox.GetComponent<TMP_Dropdown>().ClearOptions();
+      setDropbox.GetComponent<TMP_Dropdown>().AddOptions(setNames);
+      setDropbox.GetComponent<TMP_Dropdown>().value = 0;
+
+      // Show overlay
+      createOverlay.GetComponent<CanvasGroup>().alpha = 1;
+      createOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
-    public void closeDeckSelect()
+    public void closeCreateOverlay()
     {
-      selectPanel.GetComponent<CanvasGroup>().alpha = 0;
-      selectPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
-      selectPanel.GetComponent<MultiplayerMenu>().hidePanel();
+      createOverlay.GetComponent<CanvasGroup>().alpha = 0;
+      createOverlay.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
-    public void deckSelectCreateMode()
+    public void createChallenge()
     {
-      deckSelectCreateButton.SetActive(true);
-      deckSelectJoinButton.SetActive(false);
-      openDeckSelect();
+      StartCoroutine(createTimeChallengeInServer());
     }
 
-    public void deckSelectJoinMode()
+    private IEnumerator createTimeChallengeInServer()
     {
-      deckSelectJoinButton.SetActive(true);
-      deckSelectCreateButton.SetActive(false);
-      openDeckSelect();
-    }
-
-    public void updateSelectedDeck()
-    {
-      Decklist selectedDeck = PlayerManager.Instance.selectedDeck;
-      CardInfo coverCard = PlayerManager.Instance.getCardFromLookup(selectedDeck.coverId);
-      deckDisplay.GetComponent<DeckDisplay>().setDisplayData(selectedDeck.name, coverCard);
-      deckDisplay.SetActive(true);
-    }
-
-    public void closeDeckBrowser()
-    {
-      deckBrowser.GetComponent<DeckBrowser>().hideBrowser();
-    }
-
-    public void createLobby()
-    {
-      if (PlayerManager.Instance.selectedDeck.cards.Count > 0)
-      {
-        StartCoroutine(createLobbyInServer());
-      }
-    }
-
-    public IEnumerator createLobbyInServer()
-    {
-      Lobby lobby = new Lobby();
-      lobby.hostId = PlayerManager.Instance.myID;
-      lobby.hostName = PlayerManager.Instance.myName;
-      lobby.players = new List<int>();
-      lobby.players.Add(lobby.hostId);
-      lobby.started = 0;
-      // Send to lobby to server
-      string lobbyJson = JsonUtility.ToJson(lobby);
-      byte[] bytes = Encoding.UTF8.GetBytes(lobbyJson);
-      string url = PlayerManager.Instance.apiUrl + "lobbies";
-      UnityWebRequest request = new UnityWebRequest(url);
-      request.method = UnityWebRequest.kHttpVerbPOST;
-      request.uploadHandler = new UploadHandlerRaw (bytes);
-      request.uploadHandler.contentType = "application/json";
-      yield return request.SendWebRequest();
-      // Debug the results
-      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-      {
-        Debug.Log(request.error);
-      }
-      else
-      {
-        // Send to draft room
-        PlayerManager.Instance.lobbyHostID = PlayerManager.Instance.myID;
-        SceneManager.LoadScene("LobbyWaitRoom");
-      }
-      // Dispose of the request to prevent memory leaks
-      request.Dispose();
-    }
-
-    public void refreshEntries()
-    {
-      deleteEntries();
-      StartCoroutine(fetchLobbiesFromServer());
-    }
-
-    public IEnumerator fetchLobbiesFromServer()
-    {
-      string url = PlayerManager.Instance.apiUrl + "lobbies";
+      dropdownIndex = setDropbox.GetComponent<TMP_Dropdown>().value;
+      string setCode = setCodes[dropdownIndex];
+      Debug.Log("Starting a timed challenge with: " + setCode);
+      string url = PlayerManager.Instance.apiUrl + "timechallenge/create/" + PlayerManager.Instance.myID + "/" + setCode;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
         {
           Debug.Log(request.error);
+          if (request.responseCode == 400)
+          {
+            string serverJson = request.downloadHandler.text;
+            GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(serverJson);
+            errorMessage.GetComponent<TMP_Text>().text = serverError.Error;
+          }
         }
         else
         {
-          string serverJson = request.downloadHandler.text;
-          AllLobbies allLobbies = JsonUtility.FromJson<AllLobbies>(serverJson);
-          foreach (Lobby lobby in allLobbies.lobbies)
-          {
-            int hostId = lobby.hostId;
-            string hostName = lobby.hostName;
-            string capacity = "" + lobby.players.Count + " / 4";
-            GameObject entry = Instantiate(entryPrefab, entryList.transform);
-            entry.GetComponent<LobbyListEntry>().setInfo(hostId, hostName, capacity);
-          }
+          PlayerManager.Instance.timeChallengeHostID = PlayerManager.Instance.myID;
+          SceneManager.LoadScene("TimeChallengeWaitRoom");
         }
       }
+    }
+
+    public void randomizeSet()
+    {
+      int randomIndex = UnityEngine.Random.Range(0, setCodes.Count);
+      setDropbox.GetComponent<TMP_Dropdown>().value = randomIndex;
+    }
+
+    public void refreshEntries()
+    {
+      deleteEntries();
+      StartCoroutine(fetchTimeChallengesFromServer());
     }
 
     public void deleteEntries()
@@ -180,40 +126,9 @@ public class TimedDeckPanel : MonoBehaviour
       }
     }
 
-    public void updateSelection()
+    public IEnumerator fetchTimeChallengesFromServer()
     {
-      bool lobbySelected = false;
-      foreach (Transform entry in entryList.transform)
-      {
-        if (entry.gameObject.GetComponent<LobbyListEntry>().selected)
-        {
-          lobbySelected = true;
-          PlayerManager.Instance.lobbyHostID = entry.gameObject.GetComponent<LobbyListEntry>().hostID;
-          break;
-        }
-      }
-      if (lobbySelected)
-      {
-        joinButton.SetActive(true);
-      }
-      else
-      {
-        joinButton.SetActive(false);
-      }
-    }
-
-    public void joinLobbyRoom()
-    {
-      if (PlayerManager.Instance.selectedDeck.cards.Count > 0)
-      {
-        StartCoroutine(sendLobbyJoinRequest());
-      }
-    }
-
-    public IEnumerator sendLobbyJoinRequest()
-    {
-      // Check if room has capacity
-      string url = PlayerManager.Instance.apiUrl + "lobbies/" + PlayerManager.Instance.lobbyHostID;
+      string url = PlayerManager.Instance.apiUrl + "timechallenges";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -224,42 +139,68 @@ public class TimedDeckPanel : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          Lobby lobby = JsonUtility.FromJson<Lobby>(serverJson);
-          if (lobby.players.Count >= 4)
+          AllTimeChallenges allChallenges = JsonUtility.FromJson<AllTimeChallenges>(serverJson);
+          Debug.Log("Found " + allChallenges.timeChallenges.Count + " challenges in server");
+          foreach (TimeChallenge challenge in allChallenges.timeChallenges)
           {
-            // Debug.Log("Couldn't join " +  lobby.hostName + "\'s lobby. Room is full.");
-          }
-          else
-          {
-            if (!lobby.players.Contains(PlayerManager.Instance.myID))
-            {
-              StartCoroutine(joinLobbyInServer());
-            }
-            else
-            {
-              // Debug.Log("Couldn't join " + lobby.hostName + "\'s lobby. You are already in the room (?)");
-            }
+            int hostId = challenge.id;
+            string hostName = challenge.hostName;
+            string setCode = challenge.set;
+            string playerNum = "" + challenge.players.Count;
+            GameObject entry = Instantiate(entryPrefab, entryList.transform);
+            entry.GetComponent<ChallengeListEntry>().setInfo(hostId, hostName, setCode, playerNum);
           }
         }
       }
     }
 
-    public IEnumerator joinLobbyInServer()
+    public void updateSelection()
     {
-      // Add yourself to lobby
-      string url = PlayerManager.Instance.apiUrl + "lobbies/" + PlayerManager.Instance.lobbyHostID + "/players/" + PlayerManager.Instance.myID;
-      UnityWebRequest request = new UnityWebRequest(url);
-      request.method = UnityWebRequest.kHttpVerbPOST;
-      yield return request.SendWebRequest();
-      // Debug the results
-      if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      bool challengeSelected = false;
+      foreach (Transform entry in entryList.transform)
       {
-        Debug.Log(request.error);
+        if (entry.gameObject.GetComponent<ChallengeListEntry>().selected)
+        {
+          challengeSelected = true;
+          PlayerManager.Instance.timeChallengeHostID = entry.gameObject.GetComponent<ChallengeListEntry>().hostID;
+          break;
+        }
+      }
+      if (challengeSelected)
+      {
+        joinButton.SetActive(true);
       }
       else
       {
-        SceneManager.LoadScene("LobbyWaitRoom");
+        joinButton.SetActive(false);
       }
-      request.Dispose();
+    }
+
+    public void joinChallengeRoom()
+    {
+      StartCoroutine(sendTimeChallengeJoinRequest());
+    }
+
+    public IEnumerator sendTimeChallengeJoinRequest()
+    {
+      string url = PlayerManager.Instance.apiUrl + "timechallenge/join/" + PlayerManager.Instance.timeChallengeHostID + "/" + PlayerManager.Instance.myID;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          if (request.responseCode == 400)
+          {
+            string serverJson = request.downloadHandler.text;
+            GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(serverJson);
+            Debug.Log(serverError.Error);
+          }
+        }
+        else
+        {
+          SceneManager.LoadScene("TimeChallengeWaitRoom");
+        }
+      }
     }
 }

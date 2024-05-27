@@ -31,12 +31,15 @@ public class PlayerManager : MonoBehaviour
     public string role;
     public int draftHostID;
     public int lobbyHostID;
+    public int timeChallengeHostID;
     public List<int> lobbyOpponents;
     public List<Decklist> lobbyOpponentDecks;
     public DailyObjectives dailyObjectives;
     public GameObject objectivesPanel;
     public int lastCoinAmount;
     public int lastGemAmount;
+    public List<string> timeChallengeRares;
+    public string timeChallengeSetCode;
 
     private void Awake()
     {
@@ -48,8 +51,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
