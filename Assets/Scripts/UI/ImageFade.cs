@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ImageFade : MonoBehaviour
 {
+    private IEnumerator fadeInAnimation;
+    private IEnumerator fadeOutAnimation;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +19,30 @@ public class ImageFade : MonoBehaviour
 
     }
 
+    public void fadeToFullAlphaFromEditor(float t)
+    {
+      if (fadeOutAnimation != null)
+      {
+        StopCoroutine(fadeOutAnimation);
+      }
+      fadeInAnimation = FadeToFullAlpha(t);
+      StartCoroutine(fadeInAnimation);
+    }
+
+    public void fadeToZeroAlphaFromEditor(float t)
+    {
+      if (fadeInAnimation != null)
+      {
+        StopCoroutine(fadeInAnimation);
+      }
+      fadeOutAnimation = FadeToZeroAlpha(t);
+      StartCoroutine(fadeOutAnimation);
+    }
+
     public IEnumerator FadeToFullAlpha(float t)
     {
       Image i = transform.gameObject.GetComponent<Image>();
-      i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
+      i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a);
       while (i.color.a < 1.0f)
       {
           i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / t));
@@ -31,7 +53,7 @@ public class ImageFade : MonoBehaviour
     public IEnumerator FadeToZeroAlpha(float t)
     {
       Image i = transform.gameObject.GetComponent<Image>();
-      i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+      i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a);
       while (i.color.a > 0.0f)
       {
           i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));

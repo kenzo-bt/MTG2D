@@ -277,6 +277,12 @@ public class LoadingManager : MonoBehaviour
       if (yourDeck.isDraft)
       {
         yourDraftStatus.SetActive(true);
+        yourDraftStatus.GetComponent<TMP_Text>().text = "[Draft]";
+      }
+      else if (yourDeck.isTimeChallenge)
+      {
+        yourDraftStatus.SetActive(true);
+        yourDraftStatus.GetComponent<TMP_Text>().text = "[TimedDeck]";
       }
     }
 
@@ -286,6 +292,12 @@ public class LoadingManager : MonoBehaviour
       if (opponentDeck.isDraft)
       {
         oppDraftStatus.SetActive(true);
+        oppDraftStatus.GetComponent<TMP_Text>().text = "[Draft]";
+      }
+      else if (opponentDeck.isTimeChallenge)
+      {
+        oppDraftStatus.SetActive(true);
+        oppDraftStatus.GetComponent<TMP_Text>().text = "[TimedDeck]";
       }
     }
 }
