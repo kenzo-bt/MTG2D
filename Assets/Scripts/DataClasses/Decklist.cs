@@ -103,20 +103,17 @@ public class Decklist {
         return;
       }
       string cardRarity = cardInfo.rarity;
-      if (cardRarity == "rare")
+      if (cardRarity == "rare" || cardRarity == "mythic")
       {
         if ((getNumberOfRares() + getNumberOfMythics()) >= 5)
         {
           return;
         }
-      }
-      if (cardRarity == "mythic")
-      {
-        if (getNumberOfMythics() >= 2)
+        if (cardRarity == "mythic" && getNumberOfMythics() >= 2)
         {
           return;
-        }
-      }
+        }
+      }
     }
 
     if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
