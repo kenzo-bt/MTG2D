@@ -9,16 +9,21 @@ public class DeckEditorManager : MonoBehaviour
     public GameObject exitPopup;
     public GameObject timer;
     public GameObject timedChallengeOverlay;
+    public GameObject backButton;
 
     // Start is called before the first frame update
     void Start()
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
-      StartCoroutine(startTimer());
       if (initialDeck.isTimeChallenge && initialDeck.isTimeChallengeEditable)
       {
+        if (backButton.activeSelf)
+        {
+          backButton.SetActive(false);
+        }
         timedChallengeOverlay.GetComponent<CanvasGroup>().alpha = 1f;
         timedChallengeOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        StartCoroutine(startTimer());
       }
     }
 
@@ -30,11 +35,9 @@ public class DeckEditorManager : MonoBehaviour
 
     private IEnumerator startTimer()
     {
-      if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
-      {
-        yield return timer.GetComponent<Timer>().startTimer();
-        saveDeck();
-      }
+      timer.SetActive(true);
+      yield return timer.GetComponent<Timer>().startTimer();
+      saveDeck();
     }
 
     // Save deck changes
@@ -116,4 +119,6 @@ public class DeckEditorManager : MonoBehaviour
       }
       SceneManager.LoadScene("DeckBrowser");
     }
+
+
 }
