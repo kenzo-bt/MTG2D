@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
 
     public IEnumerator startTimer()
     {
-      secondsRemaining = 40;
+      secondsRemaining = 900;
 
       while (secondsRemaining > 0)
       {
