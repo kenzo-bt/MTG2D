@@ -45,7 +45,7 @@ public class CardCollection : MonoBehaviour
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
-      if (PlayerManager.Instance.selectedDeck.isDraft || PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      if (PlayerManager.Instance.selectedDeck.isDraft)
       {
         filteredIds = new List<string>();
         // Emulate clicking on the lands filter
@@ -53,6 +53,10 @@ public class CardCollection : MonoBehaviour
         landFilter.GetComponent<IconFilter>().filterClicked();
         toggleLands();
         */
+      }
+      else if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+        
       }
       else {
         filteredIds = new List<string>();
@@ -139,6 +143,7 @@ public class CardCollection : MonoBehaviour
                 if (PlayerManager.Instance.selectedDeck.timeChallengeCardColours.Contains(colour))
                 {
                   allCardIds.Add(card.id);
+                  break;
                 }
               }
             }
@@ -165,6 +170,12 @@ public class CardCollection : MonoBehaviour
           }
         }
       }
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+        filteredIds = allCardIds;
+        updateCollectionDisplay();
+      }
+      Debug.Log("loaded cards " + allCardIds.Count);
     }
 
     // Browse to the next page of the collection

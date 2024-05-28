@@ -15,13 +15,11 @@ public class DeckEditorManager : MonoBehaviour
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
       StartCoroutine(startTimer());
-      /*
       if (initialDeck.isTimeChallenge)
       {
         timedChallengeOverlay.GetComponent<CanvasGroup>().alpha = 1f;
         timedChallengeOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
       }
-      */
     }
 
     // Update is called once per frame

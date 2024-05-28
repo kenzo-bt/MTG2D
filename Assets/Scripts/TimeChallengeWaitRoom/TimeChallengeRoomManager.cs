@@ -74,6 +74,7 @@ public class TimeChallengeRoomManager : MonoBehaviour
           if (setCode == "")
           {
             setCode = timeChallenge.set;
+            Debug.Log("time challenge setCode " + setCode);
           }
           // Update title
           if (hostName == "")
@@ -198,9 +199,11 @@ public class TimeChallengeRoomManager : MonoBehaviour
           }
           Decklist newDeck = new Decklist();
           // TODO: Set relevant time challenge properties
-          //newDeck.isTimeChallenge = true;
-          //newDeck.timeChallengeCardSet = setCode;
-          //newDeck.isTimeChallengeEditable = true;
+          newDeck.cards = new List<string>();
+          newDeck.cardFrequencies = new List<int>();
+          newDeck.isTimeChallenge = true;
+          newDeck.timeChallengeCardSet = setCode;
+          newDeck.isTimeChallengeEditable = true;
           PlayerManager.Instance.allDecks.Add(newDeck);
           PlayerManager.Instance.selectedDeck = newDeck;
           SceneManager.LoadScene("DeckEditor");
