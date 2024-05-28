@@ -116,7 +116,7 @@ public class TimeChallengeRoomManager : MonoBehaviour
       {
         if (set.setCode == setCode)
         {
-          List<CardInfo> allRares = set.getAllRares();
+          List<CardInfo> allRares = set.getAllRaresNoArtifacts();
           List<int> selectedIndexes = new List<int>();
           foreach (int playerId in playerIds)
           {
