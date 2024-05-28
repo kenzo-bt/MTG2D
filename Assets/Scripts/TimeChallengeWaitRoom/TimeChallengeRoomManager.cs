@@ -74,7 +74,6 @@ public class TimeChallengeRoomManager : MonoBehaviour
           if (setCode == "")
           {
             setCode = timeChallenge.set;
-            Debug.Log("time challenge setCode " + setCode);
           }
           // Update title
           if (hostName == "")
@@ -189,14 +188,9 @@ public class TimeChallengeRoomManager : MonoBehaviour
         }
         else
         {
-          Debug.Log(request.downloadHandler.text);
           Pack myRares = JsonUtility.FromJson<Pack>(request.downloadHandler.text);
           PlayerManager.Instance.timeChallengeRares = myRares.cards;
           PlayerManager.Instance.timeChallengeSetCode = setCode;
-          foreach (string cardId in myRares.cards)
-          {
-            Debug.Log("TimeChallengeCard: " + cardId);
-          }
           Decklist newDeck = new Decklist();
           // TODO: Set relevant time challenge properties
           newDeck.cards = new List<string>();
@@ -233,7 +227,6 @@ public class TimeChallengeRoomManager : MonoBehaviour
         }
         else
         {
-          Debug.Log("Exited timed challenge lobby");
           SceneManager.LoadScene("Hub");
         }
       }

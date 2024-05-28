@@ -439,10 +439,6 @@ public class PlayerManager : MonoBehaviour
           }
         }
       }
-      foreach (KeyValuePair<string, int> item in collectedCards)
-      {
-        Debug.Log("Collected Card: " + item.Key);
-      }
     }
 
     public IEnumerator addPackToPlayerCollectionInServer(Pack pack)

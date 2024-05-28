@@ -82,7 +82,6 @@ public class TimedDeckPanel : MonoBehaviour
     {
       dropdownIndex = setDropbox.GetComponent<TMP_Dropdown>().value;
       string setCode = setCodes[dropdownIndex];
-      Debug.Log("Starting a timed challenge with: " + setCode);
       string url = PlayerManager.Instance.apiUrl + "timechallenge/create/" + PlayerManager.Instance.myID + "/" + setCode;
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
@@ -140,7 +139,6 @@ public class TimedDeckPanel : MonoBehaviour
         {
           string serverJson = request.downloadHandler.text;
           AllTimeChallenges allChallenges = JsonUtility.FromJson<AllTimeChallenges>(serverJson);
-          Debug.Log("Found " + allChallenges.timeChallenges.Count + " challenges in server");
           foreach (TimeChallenge challenge in allChallenges.timeChallenges)
           {
             int hostId = challenge.id;

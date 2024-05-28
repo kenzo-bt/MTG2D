@@ -34,7 +34,7 @@ public class CardCollection : MonoBehaviour
       colourFilters = new List<string>();
       manaFilters = new List<int>();
       allCardIds = new List<string>();
-      loadCollection();
+      filteredIds = new List<string>();
       onlyLands = false;
       onlyMultiColoured = false;
       onlyColourless = false;
@@ -45,14 +45,14 @@ public class CardCollection : MonoBehaviour
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
 
+      if (!PlayerManager.Instance.selectedDeck.isTimeChallenge || (!PlayerManager.Instance.selectedDeck.isTimeChallengeEditable && PlayerManager.Instance.selectedDeck.isTimeChallenge))
+      {
+        loadCollection();
+      }
+
       if (PlayerManager.Instance.selectedDeck.isDraft)
       {
         filteredIds = new List<string>();
-        // Emulate clicking on the lands filter
-        /*
-        landFilter.GetComponent<IconFilter>().filterClicked();
-        toggleLands();
-        */
       }
       else if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
       {
@@ -185,7 +185,6 @@ public class CardCollection : MonoBehaviour
         filteredIds = allCardIds;
         updateCollectionDisplay();
       }
-      Debug.Log("loaded cards " + allCardIds.Count);
     }
 
     // Browse to the next page of the collection
