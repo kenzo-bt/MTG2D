@@ -11,6 +11,11 @@ public class Decklist {
   public List<int> sideboardFrequencies;
   public string coverId;
   public bool isDraft;
+  public bool isTimeChallenge;
+  public string timeChallengeCardSet;
+  public List<string> timeChallengeCardColours;
+  public bool isTimeChallengeEditable;
+
 
   public string getDecklistString()
   {
@@ -48,12 +53,90 @@ public class Decklist {
     return total;
   }
 
+  private int getNumberOfRares()
+  {
+    int numberOfRares = 0;
+    for (int i = 0; i < cards.Count; i++)
+      {
+        if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "rare")
+        {
+          numberOfRares += cardFrequencies[i];
+        }
+      }
+      return numberOfRares;
+  }
+
+  private int getNumberOfMythics()
+  {
+    int numberOfMythics = 0;
+    for (int i = 0; i < cards.Count; i++)
+    {
+      if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "mythic")
+      {
+        numberOfMythics += cardFrequencies[i];
+      }
+    }
+    return numberOfMythics;
+  }
+
+  private int getNumberOfNonBasicLandCards()
+  {
+    int nonLandCards = 0;
+    for (int i = 0; i < cards.Count; i++)
+    {
+      if (!PlayerManager.Instance.getCardFromLookup(cards[i]).isBasicLand())
+      {
+        nonLandCards += cardFrequencies[i];
+      }
+    }
+    return nonLandCards;
+  }
+
   // Add card to deck
   public void addCard(string card)
   {
+    CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+    {
+      if (getNumberOfNonBasicLandCards() >= 40)
+      {
+        return;
+      }
+      string cardRarity = cardInfo.rarity;
+      if (cardRarity == "rare")
+      {
+        if ((getNumberOfRares() + getNumberOfMythics()) >= 5)
+        {
+          return;
+        }
+      }
+      if (cardRarity == "mythic")
+      {
+        if (getNumberOfMythics() >= 2)
+        {
+          return;
+        }
+      }
+    }
+
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+    {
+      if (!cardInfo.isBasicLand())
+      {
+        return;
+      }
+    }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
+      if (!PlayerManager.Instance.getCardFromLookup(card).isBasicLand())
+      {
+        if (cardFrequencies[index] >= 4)
+        {
+          return;
+        }
+      }
       cardFrequencies[index] += 1;
     }
     else
@@ -66,6 +149,29 @@ public class Decklist {
   // Remove card (Remove 1 instance of the passed card)
   public void removeCard(string card)
   {
+    CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+    {
+      if (card == PlayerManager.Instance.timeChallengeSelectedRare)
+      {
+        for (int i = 0; i < cards.Count; i++)
+        {
+          if (cards[i] == PlayerManager.Instance.timeChallengeSelectedRare && cardFrequencies[i] == 1)
+          {
+            return;
+          }
+        }
+      }
+    }
+
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+    {
+      if (!cardInfo.isBasicLand())
+      {
+        return;
+      }
+    }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
@@ -115,6 +221,10 @@ public class Decklist {
     this.sideboardFrequencies = new List<int>();
     this.coverId = "";
     this.isDraft = false;
+    this.isTimeChallenge = false;
+    this.timeChallengeCardSet = "";
+    this.timeChallengeCardColours = new List<string>();
+    this.isTimeChallengeEditable = true;
   }
 
   // Copy constructor
@@ -126,6 +236,10 @@ public class Decklist {
     this.sideboardFrequencies = new List<int>(deckToCopy.sideboardFrequencies);
     this.coverId = deckToCopy.coverId;
     this.isDraft = deckToCopy.isDraft;
+    this.isTimeChallenge = deckToCopy.isTimeChallenge;
+    this.timeChallengeCardSet = deckToCopy.timeChallengeCardSet;
+    this.timeChallengeCardColours = new List<string>(deckToCopy.timeChallengeCardColours);
+    this.isTimeChallengeEditable = deckToCopy.isTimeChallengeEditable;
   }
 
   // Get selected card

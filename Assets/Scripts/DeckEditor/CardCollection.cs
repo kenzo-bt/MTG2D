@@ -34,7 +34,7 @@ public class CardCollection : MonoBehaviour
       colourFilters = new List<string>();
       manaFilters = new List<int>();
       allCardIds = new List<string>();
-      loadCollection();
+      filteredIds = new List<string>();
       onlyLands = false;
       onlyMultiColoured = false;
       onlyColourless = false;
@@ -44,14 +44,19 @@ public class CardCollection : MonoBehaviour
       supertypeFilters = new List<string>();
       setFilters = new List<string>();
       searchInputText = searchInputObject.GetComponent<TMP_InputField>().text;
+
+      if (!PlayerManager.Instance.selectedDeck.isTimeChallenge || (!PlayerManager.Instance.selectedDeck.isTimeChallengeEditable && PlayerManager.Instance.selectedDeck.isTimeChallenge))
+      {
+        loadCollection();
+      }
+
       if (PlayerManager.Instance.selectedDeck.isDraft)
       {
         filteredIds = new List<string>();
-        // Emulate clicking on the lands filter
-        /*
-        landFilter.GetComponent<IconFilter>().filterClicked();
-        toggleLands();
-        */
+      }
+      else if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+
       }
       else {
         filteredIds = new List<string>();
@@ -120,12 +125,41 @@ public class CardCollection : MonoBehaviour
       {
         foreach (CardInfo card in set.cards)
         {
-          if (PlayerManager.Instance.selectedDeck.isDraft)
+          if (PlayerManager.Instance.selectedDeck.isDraft || (!PlayerManager.Instance.selectedDeck.isTimeChallengeEditable && PlayerManager.Instance.selectedDeck.isTimeChallenge))
           {
             // Only include basic lands
             if (card.isBasicLand())
             {
               allCardIds.Add(card.id);
+            }
+          }
+          else if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+          {
+            // Only load cards from the selected card's set and colours
+            if (set.setCode == PlayerManager.Instance.selectedDeck.timeChallengeCardSet)
+            {
+              if (!card.isBack)
+              {
+                // Colourless
+                if ((card.colourIdentity.Count == 0) && (PlayerManager.Instance.selectedDeck.timeChallengeCardColours.Count == 0))
+                {
+                  allCardIds.Add(card.id);
+                  continue;
+                }
+                // Coloured
+                foreach (string colour in card.colourIdentity)
+                {
+                  if (PlayerManager.Instance.selectedDeck.timeChallengeCardColours.Contains(colour))
+                  {
+                    allCardIds.Add(card.id);
+                    break;
+                  }
+                }
+              }
+            }
+            else
+            {
+              break;
             }
           }
           else
@@ -145,6 +179,11 @@ public class CardCollection : MonoBehaviour
             }
           }
         }
+      }
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+        filteredIds = allCardIds;
+        updateCollectionDisplay();
       }
     }
 

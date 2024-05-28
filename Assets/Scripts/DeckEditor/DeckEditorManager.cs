@@ -7,11 +7,19 @@ public class DeckEditorManager : MonoBehaviour
 {
     private Decklist initialDeck;
     public GameObject exitPopup;
+    public GameObject timer;
+    public GameObject timedChallengeOverlay;
 
     // Start is called before the first frame update
     void Start()
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
+      StartCoroutine(startTimer());
+      if (initialDeck.isTimeChallenge && initialDeck.isTimeChallengeEditable)
+      {
+        timedChallengeOverlay.GetComponent<CanvasGroup>().alpha = 1f;
+        timedChallengeOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
+      }
     }
 
     // Update is called once per frame
@@ -20,9 +28,22 @@ public class DeckEditorManager : MonoBehaviour
 
     }
 
+    private IEnumerator startTimer()
+    {
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge && PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+      {
+        yield return timer.GetComponent<Timer>().startTimer();
+        saveDeck();
+      }
+    }
+
     // Save deck changes
     public void saveDeck()
     {
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+        PlayerManager.Instance.selectedDeck.isTimeChallengeEditable = false;
+      }
       PlayerManager.Instance.selectedDeck.name = getValidName(PlayerManager.Instance.selectedDeck.name);
       PlayerManager.Instance.savePlayerDecks();
       SceneManager.LoadScene("DeckBrowser");
