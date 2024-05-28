@@ -61,7 +61,7 @@ public class Decklist {
         if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "rare")
         {
           numberOfRares += cardFrequencies[i];
-        }                
+        }
       }
       return numberOfRares;
   }
@@ -74,12 +74,12 @@ public class Decklist {
       if (PlayerManager.Instance.getCardFromLookup(cards[i]).rarity == "mythic")
       {
         numberOfMythics += cardFrequencies[i];
-      }   
+      }
     }
     return numberOfMythics;
   }
 
-  private int getNumberOfNonBasicLands()
+  private int getNumberOfNonBasicLandCards()
   {
     int nonLandCards = 0;
     for (int i = 0; i < cards.Count; i++)
@@ -95,32 +95,48 @@ public class Decklist {
   // Add card to deck
   public void addCard(string card)
   {
+    CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
     if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
-    if (getNumberOfNonBasicLands() >= 40)
     {
-      return;
-    }
-    {
-      string cardRarity = PlayerManager.Instance.getCardFromLookup(card).rarity;
+      if (getNumberOfNonBasicLandCards() >= 40)
+      {
+        return;
+      }
+      string cardRarity = cardInfo.rarity;
       if (cardRarity == "rare")
       {
-        if ((getNumberOfRares() + getNumberOfMythics()) > 5)
+        if ((getNumberOfRares() + getNumberOfMythics()) >= 5)
         {
           return;
         }
       }
       if (cardRarity == "mythic")
       {
-        if (getNumberOfMythics() > 2)
+        if (getNumberOfMythics() >= 2)
         {
           return;
         }
       }
     }
 
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+    {
+      if (!cardInfo.isBasicLand())
+      {
+        return;
+      }
+    }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
+      if (!PlayerManager.Instance.getCardFromLookup(card).isBasicLand())
+      {
+        if (cardFrequencies[index] >= 4)
+        {
+          return;
+        }
+      }
       cardFrequencies[index] += 1;
     }
     else
@@ -133,16 +149,29 @@ public class Decklist {
   // Remove card (Remove 1 instance of the passed card)
   public void removeCard(string card)
   {
+    CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
     if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
-  {
-    for (int i = 0; i < cards.Count; i++)
     {
-      if (cards[i] == PlayerManager.Instance.timeChallengeSelectedRare && cardFrequencies[i] == 1)
+      if (card == PlayerManager.Instance.timeChallengeSelectedRare)
+      {
+        for (int i = 0; i < cards.Count; i++)
+        {
+          if (cards[i] == PlayerManager.Instance.timeChallengeSelectedRare && cardFrequencies[i] == 1)
+          {
+            return;
+          }
+        }
+      }
+    }
+
+    if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
+    {
+      if (!cardInfo.isBasicLand())
       {
         return;
       }
     }
-  }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);

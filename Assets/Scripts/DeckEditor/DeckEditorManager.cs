@@ -15,7 +15,7 @@ public class DeckEditorManager : MonoBehaviour
     {
       initialDeck = new Decklist(PlayerManager.Instance.selectedDeck);
       StartCoroutine(startTimer());
-      if (initialDeck.isTimeChallenge)
+      if (initialDeck.isTimeChallenge && initialDeck.isTimeChallengeEditable)
       {
         timedChallengeOverlay.GetComponent<CanvasGroup>().alpha = 1f;
         timedChallengeOverlay.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -40,6 +40,10 @@ public class DeckEditorManager : MonoBehaviour
     // Save deck changes
     public void saveDeck()
     {
+      if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
+      {
+        PlayerManager.Instance.selectedDeck.isTimeChallengeEditable = false;
+      }
       PlayerManager.Instance.selectedDeck.name = getValidName(PlayerManager.Instance.selectedDeck.name);
       PlayerManager.Instance.savePlayerDecks();
       SceneManager.LoadScene("DeckBrowser");
