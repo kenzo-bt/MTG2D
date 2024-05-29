@@ -7,6 +7,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TMP_Text timer;
+    private AudioSource timerAlarm;
     private int secondsRemaining;
     private Color mediumAlert;
     private Color highAlert;
@@ -14,6 +15,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timerAlarm = GetComponent<AudioSource>();
         timer.text = "";
         mediumAlert = new Color(1f, 0.9f, 0f, 1f);
         highAlert = new Color(1f, 0f, 0f, 1f);
@@ -35,6 +37,7 @@ public class Timer : MonoBehaviour
         if (secondsRemaining == 30)
         {
           StartCoroutine(flashTimer());
+          timerAlarm.Play(0);
         }
         if (secondsRemaining <= 60)
         {
