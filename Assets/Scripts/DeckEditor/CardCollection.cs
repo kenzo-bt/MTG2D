@@ -141,7 +141,7 @@ public class CardCollection : MonoBehaviour
               if (!card.isBack)
               {
                 // Colourless
-                if ((card.colourIdentity.Count == 0) && (PlayerManager.Instance.selectedDeck.timeChallengeCardColours.Count == 0))
+                if (card.colourIdentity.Count == 0)
                 {
                   allCardIds.Add(card.id);
                   continue;
