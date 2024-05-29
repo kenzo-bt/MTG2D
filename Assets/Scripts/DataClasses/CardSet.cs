@@ -99,4 +99,27 @@ public class CardSet
       }
       return allCommons;
     }
+    public List<CardInfo> getAllRaresNoArtifacts()
+    {
+      List<CardInfo> allRares = new List<CardInfo>();
+      foreach (CardInfo card in cards)
+      {
+        if (card.rarity == "rare" || card.rarity == "mythic")
+        {
+          if (!card.isToken && !card.isBack && card.finishes.Contains("nonfoil"))
+          {
+            // Remove alchemy cards
+            if (card.name.Length > 1 && card.name.Substring(0, 2) != "A-")
+            {
+              // Remove colourless cards
+              if (card.colourIdentity.Count > 0)
+              {
+                allRares.Add(card);
+              }
+            }
+          }
+        }
+      }
+      return allRares;
+    }
 }
