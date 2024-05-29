@@ -41,6 +41,7 @@ public class PlayerManager : MonoBehaviour
     public List<string> timeChallengeRares;
     public string timeChallengeSelectedRare;
     public string timeChallengeSetCode;
+    public int activeGameId;
 
     private void Awake()
     {
@@ -52,8 +53,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -71,6 +72,7 @@ public class PlayerManager : MonoBehaviour
       role = "";
       lastGemAmount = 0;
       lastCoinAmount = 0;
+      activeGameId = -1;
 
       // Keep connection to server alive
       StartCoroutine(keepConnectionAliveSignal());

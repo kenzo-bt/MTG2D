@@ -36,7 +36,8 @@ public class LoadingManager : MonoBehaviour
       StartCoroutine(deletePreviousState());
       if (myRole == "challenger")
       {
-        InvokeRepeating("checkIfGuestReady", 3.0f, 3.0f);
+        StartCoroutine(checkIfGuestReady());
+        // InvokeRepeating("checkIfGuestReady", 3.0f, 3.0f);
       }
       else if (myRole == "guest")
       {
@@ -62,9 +63,38 @@ public class LoadingManager : MonoBehaviour
       }
     }
 
-    private void checkIfGuestReady()
+    private IEnumerator checkIfGuestReady()
     {
-      StartCoroutine(checkGuestReadyInServer());
+      StartCoroutine(createActiveGameInServer());
+      while (true)
+      {
+        yield return new WaitForSeconds(3f);
+        yield return checkGuestReadyInServer();
+      }
+    }
+
+    private IEnumerator createActiveGameInServer()
+    {
+      string url = PlayerManager.Instance.apiUrl + "activegames/create";
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          string serverJson = request.downloadHandler.text;
+          GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(serverJson);
+          Debug.Log(serverError.Error);
+        }
+        else
+        {
+          // Server returns the id of the active game
+          string serverJson = request.downloadHandler.text;
+          Debug.Log(serverJson);
+          IntServerResponse responseData = JsonUtility.FromJson<IntServerResponse>(serverJson);
+          Debug.Log("Active game ID: " + responseData.intResponse);
+        }
+      }
     }
 
     IEnumerator checkGuestReadyInServer()
@@ -81,7 +111,7 @@ public class LoadingManager : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          if (serverJson.Trim() == "{}") // User has delted your challenge request
+          if (serverJson.Trim() == "{}") // User has deleted your challenge request
           {
             CancelInvoke();
             status.text = "Opponent has declined your challenge\nReturning to hub...";

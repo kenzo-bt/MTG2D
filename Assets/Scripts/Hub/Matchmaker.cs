@@ -125,7 +125,6 @@ public class Matchmaker : MonoBehaviour
             else
             {
               PlayerManager.Instance.opponentID = targetID;
-
               waitOnChallengee();
             }
             // Dispose of the request to prevent memory leaks
