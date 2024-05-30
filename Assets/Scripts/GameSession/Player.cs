@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
     public GameObject diceText;
     public GameObject diceTime;
     public GameObject diceButton;
+    public GameObject forfeitWarningScreen;
+    public GameObject winScreen;
+    public GameObject lossScreen;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -78,8 +82,7 @@ public class Player : MonoBehaviour
       rollTime = "";
       diceVisible = false;
       eventLog = new List<string>();
-      // Claim participation coins from server
-      StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25, 0));
+
       // Initialize your life counter in the UI
       updateLifeTotal();
       // Initialize your deck and hand
@@ -627,19 +630,23 @@ public class Player : MonoBehaviour
             ActiveGame activeGame = JsonUtility.FromJson<ActiveGame>(serverJson);
             if (activeGame.winner == "")
             {
-              // Keep going
-              Debug.Log("No winner declared...");
+              // No winner declared yet
             }
             else if (activeGame.winner == PlayerManager.Instance.opponentID.ToString())
             {
               // Show loss screen
-              Debug.Log("DEFEAT");
+              StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25, 0));
+              lossScreen.GetComponent<WinLossScreen>().setCoinAmount(25);
+              lossScreen.GetComponent<WinLossScreen>().showScreen();
               break;
             }
             else if (activeGame.winner == PlayerManager.Instance.myID.ToString())
             {
               // Show win screen
-              Debug.Log("VICTORY");
+              StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25, 1));
+              winScreen.GetComponent<WinLossScreen>().setGemAmount(1);
+              winScreen.GetComponent<WinLossScreen>().setCoinAmount(25);
+              winScreen.GetComponent<WinLossScreen>().showScreen();
               break;
             }
           }
@@ -651,9 +658,13 @@ public class Player : MonoBehaviour
 
     static bool WantsToQuit()
     {
-      Instance.StartCoroutine(Instance.handleRageQuit());
-      Debug.Log("Player prevented from quitting.");
-      return ReadyToQuit;
+      if (Instance != null && (SceneManager.GetActiveScene().name == "GameSession"))
+      {
+        Instance.StartCoroutine(Instance.handleRageQuit());
+        Debug.Log("Player prevented from quitting.");
+        return ReadyToQuit;
+      }
+      return true;
     }
 
     [RuntimeInitializeOnLoadMethod]
@@ -663,6 +674,13 @@ public class Player : MonoBehaviour
     }
 
     private IEnumerator handleRageQuit()
+    {
+      yield return forceExit();
+      ReadyToQuit = true;
+      Application.Quit();
+    }
+
+    private IEnumerator forceExit()
     {
       string gameId = PlayerManager.Instance.getActiveGameId();
       string url = PlayerManager.Instance.apiUrl + "activegames/" + gameId + "/forcedexit/" + PlayerManager.Instance.myID;
@@ -681,7 +699,65 @@ public class Player : MonoBehaviour
           Debug.Log("Match has been forfeited!");
         }
       }
-      ReadyToQuit = true;
-      Application.Quit();
+    }
+
+    public void backToHub()
+    {
+      // Called when clicking on the back to hub button before the match has ended
+      StartCoroutine(confirmValidExit());
+    }
+
+    private IEnumerator confirmValidExit()
+    {
+      string gameId = PlayerManager.Instance.getActiveGameId();
+      string url = PlayerManager.Instance.apiUrl + "activegames/" + gameId;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          string serverJson = request.downloadHandler.text;
+          GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(serverJson);
+          Debug.Log(serverError.Error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          ActiveGame activeGame = JsonUtility.FromJson<ActiveGame>(serverJson);
+          if (activeGame.winner == "")
+          {
+            // Show forfeit warning screen
+            showForfeitWarning();
+          }
+          else
+          {
+            SceneManager.LoadScene("Hub");
+          }
+        }
+      }
+    }
+
+    public void confirmForfeitExit()
+    {
+      StartCoroutine(confirmForfeitInServer());
+    }
+
+    public IEnumerator confirmForfeitInServer()
+    {
+      yield return forceExit();
+      SceneManager.LoadScene("Hub");
+    }
+
+    public void showForfeitWarning()
+    {
+      forfeitWarningScreen.GetComponent<CanvasGroup>().alpha = 1f;
+      forfeitWarningScreen.GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void hideForfeitWarning()
+    {
+      forfeitWarningScreen.GetComponent<CanvasGroup>().alpha = 0f;
+      forfeitWarningScreen.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
