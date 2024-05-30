@@ -9,6 +9,7 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
     public GameObject deckObject;
     public GameObject handObject;
     public GameObject battlefieldObject;
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      Instance = this;
       hasher = GetComponent<Hasher>();
       hand = handObject.GetComponent<Hand>();
       deck = deckObject.GetComponent<Deck>();
@@ -645,11 +647,41 @@ public class Player : MonoBehaviour
       }
     }
 
-    void OnApplicationQuit()
-    {
-      // This is a hook for any kind of app termination (E.g. Alt-f4)
-      // If the game is still undetermined -> Register forfeit
+    static bool ReadyToQuit = false;
 
-      // Debug.Log("Application ending after " + Time.time + " seconds");
+    static bool WantsToQuit()
+    {
+      Instance.StartCoroutine(Instance.handleRageQuit());
+      Debug.Log("Player prevented from quitting.");
+      return ReadyToQuit;
+    }
+
+    [RuntimeInitializeOnLoadMethod]
+    static void RunOnStart()
+    {
+      Application.wantsToQuit += WantsToQuit;
+    }
+
+    private IEnumerator handleRageQuit()
+    {
+      string gameId = PlayerManager.Instance.getActiveGameId();
+      string url = PlayerManager.Instance.apiUrl + "activegames/" + gameId + "/forcedexit/" + PlayerManager.Instance.myID;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          string serverJson = request.downloadHandler.text;
+          GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(serverJson);
+          Debug.Log(serverError.Error);
+        }
+        else
+        {
+          Debug.Log("Match has been forfeited!");
+        }
+      }
+      ReadyToQuit = true;
+      Application.Quit();
     }
 }
