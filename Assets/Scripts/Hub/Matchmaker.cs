@@ -125,7 +125,7 @@ public class Matchmaker : MonoBehaviour
             else
             {
               PlayerManager.Instance.opponentID = targetID;
-
+              yield return createActiveGame(PlayerManager.Instance.myID, targetID);
               waitOnChallengee();
             }
             // Dispose of the request to prevent memory leaks
@@ -133,6 +133,32 @@ public class Matchmaker : MonoBehaviour
           }
         }
       }
+    }
+
+    private IEnumerator createActiveGame(int hostId, int guestId)
+    {
+      ActiveGame activeGame = new ActiveGame();
+      activeGame.hostId = hostId;
+      activeGame.guestId = guestId;
+      activeGame.winner = "";
+      string url = PlayerManager.Instance.apiUrl + "activegames/create";
+      string activeGameJSON = JsonUtility.ToJson(activeGame);
+      byte[] bytes = Encoding.UTF8.GetBytes(activeGameJSON);
+      UnityWebRequest postRequest = new UnityWebRequest(url);
+      postRequest.method = UnityWebRequest.kHttpVerbPOST;
+      postRequest.uploadHandler = new UploadHandlerRaw (bytes);
+      postRequest.uploadHandler.contentType = "application/json";
+      yield return postRequest.SendWebRequest();
+      // Debug the results
+      if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(postRequest.error);
+      }
+      else
+      {
+        Debug.Log("Active game created in server");
+      }
+      postRequest.Dispose();
     }
 
     public void waitOnChallengee()

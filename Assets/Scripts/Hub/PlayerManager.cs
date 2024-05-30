@@ -52,8 +52,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -457,6 +457,43 @@ public class PlayerManager : MonoBehaviour
       else
       {
         Debug.Log("Successfully added packed cards to collection in server");
+      }
+      request.Dispose();
+    }
+
+    public IEnumerator registerWin()
+    {
+      int hostId = -1;
+      int guestId = -1;
+      if (role == "guest")
+      {
+        hostId = opponentID;
+        guestId = myID;
+      }
+      else
+      {
+        hostId = myID;
+        guestId = opponentID;
+      }
+      string gameId = "" + hostId + "-" + guestId;
+      string url = apiUrl + "activegames/" + gameId + "/winner";
+      ActiveGame activeGame = new ActiveGame();
+      activeGame.hostId = hostId;
+      activeGame.guestId = guestId;
+      activeGame.winner = "" + myID;
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(activeGame));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully registered win");
       }
       request.Dispose();
     }
