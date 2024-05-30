@@ -324,7 +324,7 @@ public class Opponent : MonoBehaviour
       if (!defeated && state.life <= 0)
       {
         defeated = true;
-        StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(0, 1));
+        StartCoroutine(PlayerManager.Instance.registerWin(PlayerManager.Instance.myID));
       }
     }
 
