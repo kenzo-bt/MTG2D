@@ -98,6 +98,8 @@ public class Player : MonoBehaviour
       {
         gameStateObject.GetComponent<GameStateFFA>().initializeState();
       }
+      // Start checking for game result
+      StartCoroutine(checkActiveGameResult());
     }
 
     // Update is called once per frame
@@ -601,5 +603,53 @@ public class Player : MonoBehaviour
       }
       // Dispose of the request to prevent memory leaks
       request.Dispose();
+    }
+
+    private IEnumerator checkActiveGameResult()
+    {
+      string gameId = PlayerManager.Instance.getActiveGameId();
+      while (true)
+      {
+        yield return new WaitForSeconds(3f);
+        string url = PlayerManager.Instance.apiUrl + "activegames/" + gameId;
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+          yield return request.SendWebRequest();
+          if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(request.error);
+          }
+          else
+          {
+            string serverJson = request.downloadHandler.text;
+            ActiveGame activeGame = JsonUtility.FromJson<ActiveGame>(serverJson);
+            if (activeGame.winner == "")
+            {
+              // Keep going
+              Debug.Log("No winner declared...");
+            }
+            else if (activeGame.winner == PlayerManager.Instance.opponentID.ToString())
+            {
+              // Show loss screen
+              Debug.Log("DEFEAT");
+              break;
+            }
+            else if (activeGame.winner == PlayerManager.Instance.myID.ToString())
+            {
+              // Show win screen
+              Debug.Log("VICTORY");
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    void OnApplicationQuit()
+    {
+      // This is a hook for any kind of app termination (E.g. Alt-f4)
+      // If the game is still undetermined -> Register forfeit
+
+      // Debug.Log("Application ending after " + Time.time + " seconds");
     }
 }

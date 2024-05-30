@@ -325,7 +325,7 @@ public class Opponent : MonoBehaviour
       {
         defeated = true;
         StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(0, 1));
-        StartCoroutine(PlayerManager.Instance.registerWin());
+        StartCoroutine(PlayerManager.Instance.registerWin(PlayerManager.Instance.myID));
       }
     }
 

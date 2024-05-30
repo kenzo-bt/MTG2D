@@ -461,7 +461,32 @@ public class PlayerManager : MonoBehaviour
       request.Dispose();
     }
 
-    public IEnumerator registerWin()
+    public IEnumerator registerWin(int winnerId)
+    {
+      string gameId = getActiveGameId();
+      string url = apiUrl + "activegames/" + gameId + "/winner";
+      ActiveGame activeGame = new ActiveGame();
+      activeGame.hostId = Int32.Parse(gameId.Split('-')[0]);
+      activeGame.guestId = Int32.Parse(gameId.Split('-')[1]);
+      activeGame.winner = "" + winnerId;
+      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(activeGame));
+      UnityWebRequest request = new UnityWebRequest(url);
+      request.method = UnityWebRequest.kHttpVerbPOST;
+      request.uploadHandler = new UploadHandlerRaw (bytes);
+      request.uploadHandler.contentType = "application/json";
+      yield return request.SendWebRequest();
+      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+      {
+        Debug.Log(request.error);
+      }
+      else
+      {
+        Debug.Log("Successfully registered game result");
+      }
+      request.Dispose();
+    }
+
+    public string getActiveGameId()
     {
       int hostId = -1;
       int guestId = -1;
@@ -476,25 +501,6 @@ public class PlayerManager : MonoBehaviour
         guestId = opponentID;
       }
       string gameId = "" + hostId + "-" + guestId;
-      string url = apiUrl + "activegames/" + gameId + "/winner";
-      ActiveGame activeGame = new ActiveGame();
-      activeGame.hostId = hostId;
-      activeGame.guestId = guestId;
-      activeGame.winner = "" + myID;
-      byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.ToJson(activeGame));
-      UnityWebRequest request = new UnityWebRequest(url);
-      request.method = UnityWebRequest.kHttpVerbPOST;
-      request.uploadHandler = new UploadHandlerRaw (bytes);
-      request.uploadHandler.contentType = "application/json";
-      yield return request.SendWebRequest();
-      if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-      {
-        Debug.Log(request.error);
-      }
-      else
-      {
-        Debug.Log("Successfully registered win");
-      }
-      request.Dispose();
+      return gameId;
     }
 }
