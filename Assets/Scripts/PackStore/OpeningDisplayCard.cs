@@ -46,7 +46,15 @@ public class OpeningDisplayCard : MonoBehaviour
       displayCard = GameObject.Find("OpeningDisplayCard");
       displayCardBack = GameObject.Find("OpeningDisplayCardBack");
       displayCard.GetComponent<CanvasGroup>().alpha = 1;
-      displayCard.GetComponent<WebCard>().texturizeCard(card);
+      if (card.hasEnglishTranslation())
+      {
+        CardInfo translatedCard = PlayerManager.Instance.getCardFromLookup(card.variations[0]);
+        displayCard.GetComponent<WebCard>().texturizeCard(translatedCard);
+      }
+      else
+      {
+        displayCard.GetComponent<WebCard>().texturizeCard(card);
+      }
       if (card.hasBackSide())
       {
         CardInfo backCard = PlayerManager.Instance.getCardFromLookup(card.backId);
