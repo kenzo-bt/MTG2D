@@ -54,6 +54,7 @@ public class TimeChallengeRoomManager : MonoBehaviour
             }
           }
           TimeChallenge timeChallenge = JsonUtility.FromJson<TimeChallenge>(request.downloadHandler.text);
+          PlayerManager.Instance.objectiveDeckId = timeChallenge.objectiveId;
           if (timeChallenge.started == true)
           {
             yield return moveToDeckEditor();
@@ -198,6 +199,7 @@ public class TimeChallengeRoomManager : MonoBehaviour
           newDeck.isTimeChallenge = true;
           newDeck.timeChallengeCardSet = setCode;
           newDeck.isTimeChallengeEditable = true;
+          newDeck.objectiveDeckId = PlayerManager.Instance.objectiveDeckId;
           PlayerManager.Instance.allDecks.Add(newDeck);
           PlayerManager.Instance.selectedDeck = newDeck;
           SceneManager.LoadScene("DeckEditor");

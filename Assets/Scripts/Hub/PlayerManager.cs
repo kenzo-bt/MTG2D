@@ -41,6 +41,7 @@ public class PlayerManager : MonoBehaviour
     public List<string> timeChallengeRares;
     public string timeChallengeSelectedRare;
     public string timeChallengeSetCode;
+    public int objectiveDeckId;
 
     private void Awake()
     {
@@ -71,6 +72,7 @@ public class PlayerManager : MonoBehaviour
       role = "";
       lastGemAmount = 0;
       lastCoinAmount = 0;
+      objectiveDeckId = -1;
 
       // Keep connection to server alive
       StartCoroutine(keepConnectionAliveSignal());

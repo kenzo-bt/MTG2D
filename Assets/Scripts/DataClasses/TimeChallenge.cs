@@ -10,4 +10,5 @@ public class TimeChallenge
   public string set;
   public List<TimeChallengePlayer> players;
   public bool started;
+  public int objectiveId;
 }
