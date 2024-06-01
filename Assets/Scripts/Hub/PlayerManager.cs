@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     public Dictionary<string, CardInfo> cardLookup;
     public Dictionary<string, int> collectedCards;
     public Decklist selectedDeck;
+    public Decklist opponentSelectedDeck;
     public List<Decklist> allDecks;
     public List<Decklist> starterDecks;
     public List<Decklist> proFeaturedDecks;
@@ -41,7 +42,7 @@ public class PlayerManager : MonoBehaviour
     public List<string> timeChallengeRares;
     public string timeChallengeSelectedRare;
     public string timeChallengeSetCode;
-    public int objectiveDeckId;
+    public int objectiveId;
 
     private void Awake()
     {
@@ -53,8 +54,8 @@ public class PlayerManager : MonoBehaviour
       Instance = this;
       DontDestroyOnLoad(gameObject);
 
-      // apiUrl = "http://127.0.0.1:5000/";
-      apiUrl = "https://mirariapi.onrender.com/";
+      apiUrl = "http://127.0.0.1:5000/";
+      // apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
 
       cardCollection = new List<CardSet>();
@@ -72,7 +73,7 @@ public class PlayerManager : MonoBehaviour
       role = "";
       lastGemAmount = 0;
       lastCoinAmount = 0;
-      objectiveDeckId = -1;
+      objectiveId = -1;
 
       // Keep connection to server alive
       StartCoroutine(keepConnectionAliveSignal());

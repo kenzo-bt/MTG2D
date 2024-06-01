@@ -55,6 +55,8 @@ public class Player : MonoBehaviour
     public string rollTime;
     public bool diceVisible;
     public List<string> eventLog;
+    public int extraGems;
+    public int extraCoins;
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +84,8 @@ public class Player : MonoBehaviour
       rollTime = "";
       diceVisible = false;
       eventLog = new List<string>();
+      extraGems = 0;
+      extraCoins = 0;
 
       // Initialize your life counter in the UI
       updateLifeTotal();
@@ -642,14 +646,36 @@ public class Player : MonoBehaviour
             }
             else if (activeGame.winner == PlayerManager.Instance.myID.ToString())
             {
+              // Register win for this objective
+              yield return registerObjectiveWin();
               // Show win screen
-              StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25, 1));
-              winScreen.GetComponent<WinLossScreen>().setGemAmount(1);
-              winScreen.GetComponent<WinLossScreen>().setCoinAmount(25);
+              StartCoroutine(PlayerManager.Instance.addPlayerCurrenciesInServer(25 + extraCoins, 1 + extraGems));
+              winScreen.GetComponent<WinLossScreen>().setGemAmount(1 + extraGems);
+              winScreen.GetComponent<WinLossScreen>().setCoinAmount(25 + extraCoins);
               winScreen.GetComponent<WinLossScreen>().showScreen();
               break;
             }
           }
+        }
+      }
+    }
+
+    private IEnumerator registerObjectiveWin()
+    {
+      string url = PlayerManager.Instance.apiUrl + "objective/win/" + PlayerManager.Instance.selectedDeck.objectiveDeckId + "/" + PlayerManager.Instance.opponentSelectedDeck.objectiveDeckId;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+        }
+        else
+        {
+          string serverJson = request.downloadHandler.text;
+          PlayerCurrencies extraCurrency = JsonUtility.FromJson<PlayerCurrencies>(serverJson);
+          extraGems += extraCurrency.gems;
+          extraCoins += extraCurrency.coins;
         }
       }
     }

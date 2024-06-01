@@ -265,6 +265,7 @@ public class LoadingManager : MonoBehaviour
         {
           string serverJson = request.downloadHandler.text;
           opponentDeck = JsonUtility.FromJson<Decklist>(serverJson);
+          PlayerManager.Instance.opponentSelectedDeck = opponentDeck;
           showOpponentDeck();
         }
       }

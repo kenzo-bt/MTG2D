@@ -18,6 +18,8 @@ public class TimeChallengeRoomManager : MonoBehaviour
     public string hostName;
     public string setName;
     public string setCode;
+    private int objectiveDeckId;
+    private bool startingChallenge;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,8 @@ public class TimeChallengeRoomManager : MonoBehaviour
       hostName = "";
       setName = "";
       setCode = "";
+      objectiveDeckId = -1;
+      startingChallenge = false;
       StartCoroutine(getRoomInfoFromServer());
     }
 
@@ -39,60 +43,63 @@ public class TimeChallengeRoomManager : MonoBehaviour
     {
       while (true)
       {
-        string url = PlayerManager.Instance.apiUrl + "timechallenge/" + PlayerManager.Instance.timeChallengeHostID;
-        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        if (!startingChallenge)
         {
-          yield return request.SendWebRequest();
-          if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+          string url = PlayerManager.Instance.apiUrl + "timechallenge/" + PlayerManager.Instance.timeChallengeHostID;
+          using (UnityWebRequest request = UnityWebRequest.Get(url))
           {
-            Debug.Log(request.error);
-            if (request.responseCode == 400)
+            yield return request.SendWebRequest();
+            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
             {
-              GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(request.downloadHandler.text);
-              Debug.Log(serverError.Error);
-              SceneManager.LoadScene("Hub");
+              Debug.Log(request.error);
+              if (request.responseCode == 400)
+              {
+                GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(request.downloadHandler.text);
+                Debug.Log(serverError.Error);
+                SceneManager.LoadScene("Hub");
+              }
             }
-          }
-          TimeChallenge timeChallenge = JsonUtility.FromJson<TimeChallenge>(request.downloadHandler.text);
-          PlayerManager.Instance.objectiveDeckId = timeChallenge.objectiveId;
-          if (timeChallenge.started == true)
-          {
-            yield return moveToDeckEditor();
-          }
-          if (PlayerManager.Instance.myID == PlayerManager.Instance.timeChallengeHostID)
-          {
-            if (!startChallengeButton.activeSelf)
+            TimeChallenge timeChallenge = JsonUtility.FromJson<TimeChallenge>(request.downloadHandler.text);
+            PlayerManager.Instance.objectiveId = timeChallenge.objectiveId;
+            if (timeChallenge.started == true)
             {
-              startChallengeButton.SetActive(true);
+              yield return moveToDeckEditor();
             }
-            statusMessageObject.GetComponent<TMP_Text>().text = "";
-          }
-          else
-          {
-            statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start challenge";
-          }
-          // Update set code
-          if (setCode == "")
-          {
-            setCode = timeChallenge.set;
-          }
-          // Update title
-          if (hostName == "")
-          {
-            hostName = timeChallenge.hostName;
-            roomTitleObject.GetComponent<TMP_Text>().text = hostName + "\'s Time Challenge Room";
-          }
-          // Populate room grid
-          if (playerIds.Count != timeChallenge.players.Count)
-          {
-            playerIds = new List<int>();
-            clearPlayerGrid();
-            foreach (TimeChallengePlayer player in timeChallenge.players)
+            if (PlayerManager.Instance.myID == PlayerManager.Instance.timeChallengeHostID)
             {
-              GameObject playerEntry = Instantiate(playerEntryPrefab, playerGridObject.transform);
-              playerEntry.GetComponent<DraftPlayerEntry>().setUsername(player.username);
-              playerEntry.GetComponent<DraftPlayerEntry>().setReady();
-              playerIds.Add(player.id);
+              if (!startChallengeButton.activeSelf)
+              {
+                startChallengeButton.SetActive(true);
+              }
+              statusMessageObject.GetComponent<TMP_Text>().text = "";
+            }
+            else
+            {
+              statusMessageObject.GetComponent<TMP_Text>().text = "Waiting for host to start challenge";
+            }
+            // Update set code
+            if (setCode == "")
+            {
+              setCode = timeChallenge.set;
+            }
+            // Update title
+            if (hostName == "")
+            {
+              hostName = timeChallenge.hostName;
+              roomTitleObject.GetComponent<TMP_Text>().text = hostName + "\'s Time Challenge Room";
+            }
+            // Populate room grid
+            if (playerIds.Count != timeChallenge.players.Count)
+            {
+              playerIds = new List<int>();
+              clearPlayerGrid();
+              foreach (TimeChallengePlayer player in timeChallenge.players)
+              {
+                GameObject playerEntry = Instantiate(playerEntryPrefab, playerGridObject.transform);
+                playerEntry.GetComponent<DraftPlayerEntry>().setUsername(player.username);
+                playerEntry.GetComponent<DraftPlayerEntry>().setReady();
+                playerIds.Add(player.id);
+              }
             }
           }
         }
@@ -111,6 +118,7 @@ public class TimeChallengeRoomManager : MonoBehaviour
 
     public void beginChallenge()
     {
+      startingChallenge = true;
       // Create card lists
       List<Pack> cardLists = new List<Pack>();
       foreach (CardSet set in PlayerManager.Instance.cardCollection)
@@ -189,20 +197,46 @@ public class TimeChallengeRoomManager : MonoBehaviour
         }
         else
         {
+          // Create objective deck entry in server
+          yield return registerObjectiveDeck();
+          // Initialize new deck and move to deck editor
           Pack myRares = JsonUtility.FromJson<Pack>(request.downloadHandler.text);
           PlayerManager.Instance.timeChallengeRares = myRares.cards;
           PlayerManager.Instance.timeChallengeSetCode = setCode;
           Decklist newDeck = new Decklist();
-          // TODO: Set relevant time challenge properties
           newDeck.cards = new List<string>();
           newDeck.cardFrequencies = new List<int>();
           newDeck.isTimeChallenge = true;
           newDeck.timeChallengeCardSet = setCode;
           newDeck.isTimeChallengeEditable = true;
-          newDeck.objectiveDeckId = PlayerManager.Instance.objectiveDeckId;
+          newDeck.objectiveId = PlayerManager.Instance.objectiveId;
+          newDeck.objectiveDeckId = objectiveDeckId;
           PlayerManager.Instance.allDecks.Add(newDeck);
           PlayerManager.Instance.selectedDeck = newDeck;
           SceneManager.LoadScene("DeckEditor");
+        }
+      }
+    }
+
+    private IEnumerator registerObjectiveDeck()
+    {
+      string url = PlayerManager.Instance.apiUrl + "objective/deck/" + PlayerManager.Instance.objectiveId;
+      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      {
+        yield return request.SendWebRequest();
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+          Debug.Log(request.error);
+          if (request.responseCode == 400)
+          {
+            GenericServerError serverError = JsonUtility.FromJson<GenericServerError>(request.downloadHandler.text);
+            Debug.Log(serverError.Error);
+          }
+        }
+        else
+        {
+          PlayObjectiveDeck objectiveDeckEntry = JsonUtility.FromJson<PlayObjectiveDeck>(request.downloadHandler.text);
+          objectiveDeckId = objectiveDeckEntry.id;
         }
       }
     }

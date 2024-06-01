@@ -15,8 +15,8 @@ public class Decklist {
   public string timeChallengeCardSet;
   public List<string> timeChallengeCardColours;
   public bool isTimeChallengeEditable;
+  public int objectiveId;
   public int objectiveDeckId;
-
 
   public string getDecklistString()
   {
@@ -223,6 +223,7 @@ public class Decklist {
     this.timeChallengeCardSet = "";
     this.timeChallengeCardColours = new List<string>();
     this.isTimeChallengeEditable = true;
+    this.objectiveId = -1;
     this.objectiveDeckId = -1;
   }
 
@@ -239,6 +240,7 @@ public class Decklist {
     this.timeChallengeCardSet = deckToCopy.timeChallengeCardSet;
     this.timeChallengeCardColours = new List<string>(deckToCopy.timeChallengeCardColours);
     this.isTimeChallengeEditable = deckToCopy.isTimeChallengeEditable;
+    this.objectiveId = deckToCopy.objectiveId;
     this.objectiveDeckId = deckToCopy.objectiveDeckId;
   }
 
