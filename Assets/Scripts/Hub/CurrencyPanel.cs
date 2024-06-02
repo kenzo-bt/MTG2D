@@ -87,6 +87,7 @@ public class CurrencyPanel : MonoBehaviour
           yield return null;
         }
       }
+      textObject.text = "" + updatedCurrency;
       if (currencyType == "gems")
       {
         PlayerManager.Instance.lastGemAmount = updatedCurrency;
