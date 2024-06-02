@@ -11,7 +11,10 @@ public class TimeChallengeOverlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      loadCards();
+      if (PlayerManager.Instance.timeChallengeRares.Count == 3)
+      {
+        loadCards();
+      }
     }
 
     // Update is called once per frame
