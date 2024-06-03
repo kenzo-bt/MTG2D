@@ -215,6 +215,14 @@ public class WebCard : MonoBehaviour
         fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
         return;
       }
+      else if (card.text.Contains("Disguise {"))
+      {
+        Texture2D cardTexture = Resources.Load("Images/DisguiseCardHelper") as Texture2D;
+        cardTexture.filterMode = filterMode;
+        cardImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        fullImage.sprite = Sprite.Create(cardTexture, new Rect(0, 0, cardTexture.width, cardTexture.height), new Vector2(0.5f, 0.5f));
+        return;
+      }
       // Check if image already exists in cache
       if (File.Exists(cachePath + card.backId + fileExtension))
       {

@@ -145,7 +145,7 @@ public class Opponent : MonoBehaviour
         {
           cardInstance.GetComponent<WebCard>().showBack();
           // Hide highlight if morph
-          if (cardInfo.text.Contains("Morph"))
+          if (cardInfo.text.Contains("Morph") || cardInfo.text.Contains("Disguise {"))
           {
             cardInstance.GetComponent<OppBattlefieldCard>().turnFaceDown();
           }

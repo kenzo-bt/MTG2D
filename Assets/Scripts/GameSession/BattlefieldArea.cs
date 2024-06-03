@@ -27,7 +27,7 @@ public class BattlefieldArea : MonoBehaviour
       {
         cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
       }
-      else if (card.text.Contains("Morph"))
+      else if (card.text.Contains("Morph") || card.text.Contains("Disguise {"))
       {
         cardInstance.GetComponent<BattlefieldCard>().enableFlipButton();
         cardInstance.GetComponent<BattlefieldCard>().flipCard();
