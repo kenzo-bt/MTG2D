@@ -25,21 +25,31 @@ public class OppBattlefieldCard : MonoBehaviour
 
     public void showInGameHighlight()
     {
+      string id = GetComponent<WebCard>().cardId;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
       if (!hidden && !faceDown)
       {
-        string id = GetComponent<WebCard>().cardId;
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
         if (card.hasEnglishTranslation())
         {
           id = card.variations[0];
         }
         player.GetComponent<Player>().showHighlightCard(id);
       }
+      if (faceDown && card.text.Contains("Disguise {"))
+      {
+        player.GetComponent<Player>().showHighlightCard("f5b1634e-a14b-51d6-a679-356f7f0ac60f");
+      }
     }
 
     public void hideInGameHighlight()
     {
+      string id = GetComponent<WebCard>().cardId;
+      CardInfo card = PlayerManager.Instance.getCardFromLookup(id);
       if (!hidden && !faceDown)
+      {
+        player.GetComponent<Player>().hideHighlightCard();
+      }
+      if (faceDown && card.text.Contains("Disguise {"))
       {
         player.GetComponent<Player>().hideHighlightCard();
       }
