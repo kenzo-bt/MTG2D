@@ -132,7 +132,34 @@ public class Decklist {
       {
         if (cardFrequencies[index] >= 4)
         {
-          return;
+          if (cardInfo.name == "Nazg\u00fbl")
+          {
+            // Count number of Nazgul (9 Max)
+            int nazgulCounter = 0;
+            for (int i = 0; i < cards.Count; i++)
+            {
+              CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
+              if (cardInformation.name == "Nazg\u00fbl")
+              {
+                nazgulCounter += cardFrequencies[i];
+              }
+            }
+            if (nazgulCounter >= 9)
+            {
+              return;
+            }
+          }
+          else if (cardInfo.name == "Seven Dwarves")
+          {
+            if (cardFrequencies[index] >= 7)
+            {
+              return;
+            }
+          }
+          else if (!cardInfo.text.Contains("A deck can have any number of cards named"))
+          {
+            return;
+          }
         }
       }
       cardFrequencies[index] += 1;
