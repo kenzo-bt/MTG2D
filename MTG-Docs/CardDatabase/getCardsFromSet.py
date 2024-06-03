@@ -194,6 +194,11 @@ for token in tokens:
             file.write(image.content)
             file.close()
 
+# Encode outputSet into JSON format and write to output JSON file
+outputJSON = json.dumps(outputSet, indent=4)
+with open(setOutputPath, "w") as outputFile:
+    outputFile.write(outputJSON)
+
 # Send id list to API
 if len(sys.argv) == 3 and sys.argv[2] == "-u":
     print("Sending to server...")
@@ -202,8 +207,3 @@ if len(sys.argv) == 3 and sys.argv[2] == "-u":
     postResponse = requests.post(postUrl + '/cards', json=postPayload)
     print('Server response status code ' + str(postResponse.status_code))
     sys.exit()
-
-# Encode outputSet into JSON format and write to output JSON file
-outputJSON = json.dumps(outputSet, indent=4)
-with open(setOutputPath, "w") as outputFile:
-    outputFile.write(outputJSON)
