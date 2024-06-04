@@ -506,4 +506,66 @@ public class PlayerManager : MonoBehaviour
       string gameId = "" + hostId + "-" + guestId;
       return gameId;
     }
+
+    public Pack getColourPack(string colour) // Colours: R | G | W | B (Black) | U (Blue)
+    {
+      Pack colourPack = new Pack();
+      colourPack.cards = new List<string>();
+      // Generate 14 random indexes from cardSets
+      List<int> setIndexes = new List<int>();
+      for (int i = 0; i < 14; i++)
+      {
+        int randomIndex = UnityEngine.Random.Range(0, cardCollection.Count);
+        setIndexes.Add(randomIndex);
+      }
+      // Get a card from each set of the specified colour and rarity
+      for (int i = 0; i < setIndexes.Count; i++)
+      {
+        CardSet set = cardCollection[setIndexes[i]];
+        if (i == 0) // Rare
+        {
+          List<CardInfo> allRares = set.getAllRares();
+          List<CardInfo> colourRares = new List<CardInfo>();
+          foreach (CardInfo card in allRares)
+          {
+            if (card.colours.Contains(colour))
+            {
+              colourRares.Add(card);
+            }
+          }
+          int randomRareIndex = UnityEngine.Random.Range(0, colourRares.Count);
+          colourPack.cards.Add(colourRares[randomRareIndex].id);
+        }
+        else if (i < 4) // Uncommon
+        {
+          List<CardInfo> allUncommons = set.getAllUncommons();
+          List<CardInfo> colourUncommons = new List<CardInfo>();
+          foreach (CardInfo card in allUncommons)
+          {
+            if (card.colours.Contains(colour))
+            {
+              colourUncommons.Add(card);
+            }
+          }
+          int randomUncommonIndex = UnityEngine.Random.Range(0, colourUncommons.Count);
+          colourPack.cards.Add(colourUncommons[randomUncommonIndex].id);
+        }
+        else // Common
+        {
+          List<CardInfo> allCommons = set.getAllCommons();
+          List<CardInfo> colourCommons = new List<CardInfo>();
+          foreach (CardInfo card in allCommons)
+          {
+            if (card.colours.Contains(colour))
+            {
+              colourCommons.Add(card);
+            }
+          }
+          int randomCommonIndex = UnityEngine.Random.Range(0, colourCommons.Count);
+          colourPack.cards.Add(colourCommons[randomCommonIndex].id);
+        }
+      }
+      // Return the pack
+      return colourPack;
+    }
 }
