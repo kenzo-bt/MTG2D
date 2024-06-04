@@ -49,12 +49,26 @@ public class ConfirmationPanel : MonoBehaviour
     {
       // Determine full set name
       string expansionName = "";
-      foreach (CardSet set in PlayerManager.Instance.cardCollection)
+      if (boosterSetCode.Contains("Colour_"))
       {
-        if (set.setCode == boosterSetCode)
+        string colour = "";
+        string colourCode = boosterSetCode.Split("_")[1];
+        if (colourCode == "B") { colour = "Black"; }
+        if (colourCode == "R") { colour = "Red"; }
+        if (colourCode == "G") { colour = "Green"; }
+        if (colourCode == "U") { colour = "Blue"; }
+        if (colourCode == "W") { colour = "White"; }
+        expansionName = "Colour booster: " + colour;
+      }
+      else
+      {
+        foreach (CardSet set in PlayerManager.Instance.cardCollection)
         {
-          expansionName = set.setName;
-          break;
+          if (set.setCode == boosterSetCode)
+          {
+            expansionName = set.setName;
+            break;
+          }
         }
       }
       boosterNameObject.GetComponent<TMP_Text>().text = expansionName;
@@ -101,8 +115,14 @@ public class ConfirmationPanel : MonoBehaviour
           // Refresh currencies
           currencyPanelObject.GetComponent<CurrencyPanel>().setCurrency();
           // Open pack
-          openingDisplayObject.GetComponent<OpeningDisplay>().openPack(boosterSetCode);
-
+          if (boosterSetCode.Contains("Colour_"))
+          {
+            openingDisplayObject.GetComponent<OpeningDisplay>().openColourPack(boosterSetCode.Split("_")[1]);
+          }
+          else
+          {
+            openingDisplayObject.GetComponent<OpeningDisplay>().openPack(boosterSetCode);
+          }
         }
       }
     }
