@@ -168,6 +168,7 @@ includedSets = [
     "CMM",
     "WOE",
     "LCI",
+    "PIP",
     "MKM",
     "OTJ"
 ]
@@ -250,7 +251,10 @@ for setCode in includedSets:
         imageUrl = ""
         scryfallId = card["identifiers"]["scryfallId"]
         if isBack:
-            imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+            if layout == "meld":
+                imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+            else:
+                imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
         else:
             imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
 
@@ -347,6 +351,11 @@ for setCode in includedSets:
     print("Completed set " + setCode + " [ " + str(setCounter) + " / " + str(len(includedSets)) + " ]")
     setCounter += 1
 
+    # Encode outputSet into JSON format and write to output JSON file
+    outputJSON = json.dumps(outputSet, indent=4)
+    with open(setOutputPath, "w") as outputFile:
+        outputFile.write(outputJSON)
+
     # Send id list to API
     if len(sys.argv) == 2 and sys.argv[1] == "-u":
         print("Sending to server...")
@@ -355,8 +364,3 @@ for setCode in includedSets:
         postResponse = requests.post(postUrl + '/cards', json=postPayload)
         print('Server response status code ' + str(postResponse.status_code))
         continue
-
-    # Encode outputSet into JSON format and write to output JSON file
-    outputJSON = json.dumps(outputSet, indent=4)
-    with open(setOutputPath, "w") as outputFile:
-        outputFile.write(outputJSON)
