@@ -99,7 +99,10 @@ for card in cards:
     imageUrl = ""
     scryfallId = card["identifiers"]["scryfallId"]
     if isBack:
-        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+        if layout == "meld":
+            imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+        else:
+            imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
     else:
         imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
 
