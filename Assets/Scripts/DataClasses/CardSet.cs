@@ -99,6 +99,7 @@ public class CardSet
       }
       return allCommons;
     }
+
     public List<CardInfo> getAllRaresNoArtifacts()
     {
       List<CardInfo> allRares = new List<CardInfo>();
@@ -121,5 +122,48 @@ public class CardSet
         }
       }
       return allRares;
+    }
+
+    public List<CardInfo> getAllOfRarityAndColour(string rarity, string colour)
+    {
+      if (rarity == "rare")
+      {
+        List<CardInfo> rarityList = getAllRares();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
+      else if (rarity == "uncommon")
+      {
+        List<CardInfo> rarityList = getAllUncommons();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
+      else
+      {
+        List<CardInfo> rarityList = getAllCommons();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
     }
 }
