@@ -524,45 +524,39 @@ public class PlayerManager : MonoBehaviour
         CardSet set = cardCollection[setIndexes[i]];
         if (i == 0) // Rare
         {
-          List<CardInfo> allRares = set.getAllRares();
-          List<CardInfo> colourRares = new List<CardInfo>();
-          foreach (CardInfo card in allRares)
+          List<CardInfo> allColourRares = set.getAllOfRarityAndColour("rare", colour);
+          while (allColourRares.Count == 0)
           {
-            if (card.colours.Contains(colour))
-            {
-              colourRares.Add(card);
-            }
+            int newSetIndex = UnityEngine.Random.Range(0, cardCollection.Count);
+            set = cardCollection[newSetIndex];
+            allColourRares = set.getAllOfRarityAndColour("rare", colour);
           }
-          int randomRareIndex = UnityEngine.Random.Range(0, colourRares.Count);
-          colourPack.cards.Add(colourRares[randomRareIndex].id);
+          int randomRareIndex = UnityEngine.Random.Range(0, allColourRares.Count);
+          colourPack.cards.Add(allColourRares[randomRareIndex].id);
         }
         else if (i < 4) // Uncommon
         {
-          List<CardInfo> allUncommons = set.getAllUncommons();
-          List<CardInfo> colourUncommons = new List<CardInfo>();
-          foreach (CardInfo card in allUncommons)
+          List<CardInfo> allColourUncommons = set.getAllOfRarityAndColour("uncommon", colour);
+          while (allColourUncommons.Count == 0)
           {
-            if (card.colours.Contains(colour))
-            {
-              colourUncommons.Add(card);
-            }
+            int newSetIndex = UnityEngine.Random.Range(0, cardCollection.Count);
+            set = cardCollection[newSetIndex];
+            allColourUncommons = set.getAllOfRarityAndColour("uncommon", colour);
           }
-          int randomUncommonIndex = UnityEngine.Random.Range(0, colourUncommons.Count);
-          colourPack.cards.Add(colourUncommons[randomUncommonIndex].id);
+          int randomUncommonIndex = UnityEngine.Random.Range(0, allColourUncommons.Count);
+          colourPack.cards.Add(allColourUncommons[randomUncommonIndex].id);
         }
         else // Common
         {
-          List<CardInfo> allCommons = set.getAllCommons();
-          List<CardInfo> colourCommons = new List<CardInfo>();
-          foreach (CardInfo card in allCommons)
+          List<CardInfo> allColourCommons = set.getAllOfRarityAndColour("common", colour);
+          while (allColourCommons.Count == 0)
           {
-            if (card.colours.Contains(colour))
-            {
-              colourCommons.Add(card);
-            }
+            int newSetIndex = UnityEngine.Random.Range(0, cardCollection.Count);
+            set = cardCollection[newSetIndex];
+            allColourCommons = set.getAllOfRarityAndColour("common", colour);
           }
-          int randomCommonIndex = UnityEngine.Random.Range(0, colourCommons.Count);
-          colourPack.cards.Add(colourCommons[randomCommonIndex].id);
+          int randomCommonIndex = UnityEngine.Random.Range(0, allColourCommons.Count);
+          colourPack.cards.Add(allColourCommons[randomCommonIndex].id);
         }
       }
       // Return the pack

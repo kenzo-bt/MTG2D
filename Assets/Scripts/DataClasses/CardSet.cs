@@ -23,19 +23,27 @@ public class CardSet
       List<string> pack = new List<string>();
       // Add 1 rare or mythic rare
       List<CardInfo> rares = getAllRares();
-
-      pack.Add(rares[UnityEngine.Random.Range(0, rares.Count)].id);
+      if (rares.Count != 0)
+      {
+        pack.Add(rares[UnityEngine.Random.Range(0, rares.Count)].id);
+      }
       // Add 3 uncommons
       List<CardInfo> uncommons = getAllUncommons();
       for (int i = 0; i < 3; i++)
       {
-        pack.Add(uncommons[UnityEngine.Random.Range(0, uncommons.Count)].id);
+        if (uncommons.Count != 0)
+        {
+          pack.Add(uncommons[UnityEngine.Random.Range(0, uncommons.Count)].id);
+        }
       }
       // Add 10 random commons
       List<CardInfo> commons = getAllCommons();
       for (int i = 0; i < 10; i++)
       {
-        pack.Add(commons[UnityEngine.Random.Range(0, commons.Count)].id);
+        if (commons.Count != 0)
+        {
+          pack.Add(commons[UnityEngine.Random.Range(0, commons.Count)].id);
+        }
       }
       return pack;
     }
@@ -99,6 +107,7 @@ public class CardSet
       }
       return allCommons;
     }
+
     public List<CardInfo> getAllRaresNoArtifacts()
     {
       List<CardInfo> allRares = new List<CardInfo>();
@@ -121,5 +130,48 @@ public class CardSet
         }
       }
       return allRares;
+    }
+
+    public List<CardInfo> getAllOfRarityAndColour(string rarity, string colour)
+    {
+      if (rarity == "rare")
+      {
+        List<CardInfo> rarityList = getAllRares();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
+      else if (rarity == "uncommon")
+      {
+        List<CardInfo> rarityList = getAllUncommons();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
+      else
+      {
+        List<CardInfo> rarityList = getAllCommons();
+        List<CardInfo> colourList = new List<CardInfo>();
+        foreach (CardInfo card in rarityList)
+        {
+          if (card.colours.Contains(colour))
+          {
+            colourList.Add(card);
+          }
+        }
+        return colourList;
+      }
     }
 }
