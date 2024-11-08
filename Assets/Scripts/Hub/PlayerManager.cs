@@ -562,4 +562,30 @@ public class PlayerManager : MonoBehaviour
       // Return the pack
       return colourPack;
     }
+
+    public Pack getLegendaryPack()
+    {
+      Pack legendaryPack = new Pack();
+      legendaryPack.cards = new List<string>();
+      List<int> emptySets = new List<int>();
+      while (legendaryPack.cards.Count < 3) {
+        // Select a set at random
+        int randomIndex = UnityEngine.Random.Range(0, cardCollection.Count);
+        if (!emptySets.Contains(randomIndex)) {
+          CardSet set = cardCollection[randomIndex];
+          // Query all legendaries in set
+          List<CardInfo> allLegendaries = set.getAllLegendaries();
+          if (allLegendaries.Count > 0) {
+            // Select a card at random
+            int randomLegendaryIndex = UnityEngine.Random.Range(0, allLegendaries.Count);
+            legendaryPack.cards.Add(allLegendaries[randomLegendaryIndex].id);
+          }
+          else
+          {
+            emptySets.Add(randomIndex);
+          }
+        }
+      }
+      return legendaryPack;
+    }
 }

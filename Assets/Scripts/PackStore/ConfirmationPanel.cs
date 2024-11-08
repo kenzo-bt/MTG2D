@@ -15,9 +15,11 @@ public class ConfirmationPanel : MonoBehaviour
     public GameObject errorTextObject;
     public GameObject currencyPanelObject;
     public GameObject openingDisplayObject;
+    public GameObject containsTextObject;
     private string boosterSetCode;
     private int gemCost;
     private int coinCost;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,8 @@ public class ConfirmationPanel : MonoBehaviour
 
     private void setBooster()
     {
+      // Reset pack description text
+      containsTextObject.GetComponent<TMP_Text>().text = "•  Rare/Mythic ( x 1 )\n•  Uncommon ( x 3 )\n•  Common ( x 10 )";
       // Determine full set name
       string expansionName = "";
       if (boosterSetCode.Contains("Colour_"))
@@ -59,6 +63,17 @@ public class ConfirmationPanel : MonoBehaviour
         if (colourCode == "U") { colour = "Blue"; }
         if (colourCode == "W") { colour = "White"; }
         expansionName = "Colour booster: " + colour;
+      }
+      else if (boosterSetCode.Contains("Special_"))
+      {
+        string specialName = "";
+        string specialCode = boosterSetCode.Split("_")[1];
+        if (specialCode == "LG")
+        {
+          specialName = "Legendary ";
+          containsTextObject.GetComponent<TMP_Text>().text = "•  Legendary ( x 3 )";
+        }
+        expansionName = specialName + "Booster";
       }
       else
       {
@@ -118,6 +133,14 @@ public class ConfirmationPanel : MonoBehaviour
           if (boosterSetCode.Contains("Colour_"))
           {
             openingDisplayObject.GetComponent<OpeningDisplay>().openColourPack(boosterSetCode.Split("_")[1]);
+          }
+          else if (boosterSetCode.Contains("Special_"))
+          {
+            string specialBoosterCode = boosterSetCode.Split("_")[1];
+            if (specialBoosterCode == "LG")
+            {
+              openingDisplayObject.GetComponent<OpeningDisplay>().openLegendaryPack();
+            }
           }
           else
           {

@@ -174,4 +174,16 @@ public class CardSet
         return colourList;
       }
     }
+
+    public List<CardInfo> getAllLegendaries()
+    {
+      List<CardInfo> allLegendaries = new List<CardInfo>();
+      foreach (CardInfo card in cards)
+      {
+        if (card.supertypes.Contains("Legendary")) {
+          allLegendaries.Add(card);
+        }
+      }
+      return allLegendaries;
+    }
 }
