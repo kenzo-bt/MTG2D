@@ -104,6 +104,8 @@ public class OpeningDisplay : MonoBehaviour
     }
 
     public void openPack(string setCode) {
+      cardContainer.GetComponent<HorizontalLayoutGroup>().childAlignment = TextAnchor.MiddleRight;
+      cardContainer.GetComponent<HorizontalLayoutGroup>().spacing = -200;
       boosterSetCode = setCode;
       show();
       // Cleanup
@@ -170,6 +172,8 @@ public class OpeningDisplay : MonoBehaviour
 
     public void openColourPack(string colour)
     {
+      cardContainer.GetComponent<HorizontalLayoutGroup>().childAlignment = TextAnchor.MiddleRight;
+      cardContainer.GetComponent<HorizontalLayoutGroup>().spacing = -200;
       show();
       // Cleanup
       int numInstances = cardContainer.transform.childCount;
@@ -189,6 +193,63 @@ public class OpeningDisplay : MonoBehaviour
         // Set the target scale (smallest first) [1 -> 1.5]
         float decrementStep = 0.5f / (pack.cards.Count - 1);
         float targetScale = 1.5f - (decrementStep  * i);
+        cardInstance.GetComponent<OpeningDisplayCard>().targetScale = targetScale;
+        // TODO : Adhere to scryfall request limits (10/s)
+        cardInstance.GetComponent<WebCard>().texturizeCard(PlayerManager.Instance.getCardFromLookup(card.id));
+        // Determine duplicate credits
+        if (playerCollection.ContainsKey(card.id))
+        {
+          int numCoins = 0;
+          if (card.rarity == "common")
+          {
+            numCoins = 1;
+            duplicateCoins += 1;
+          }
+          else if (card.rarity == "uncommon")
+          {
+            numCoins = 5;
+            duplicateCoins += 5;
+          }
+          else
+          {
+            numCoins = 10;
+            duplicateCoins += 10;
+          }
+          cardInstance.GetComponent<OpeningDisplayCard>().showDuplicateCoins(numCoins);
+        }
+        else
+        {
+          // Add to collection
+          playerCollection.Add(card.id, 1);
+        }
+      }
+      // Update collection in server
+      StartCoroutine(PlayerManager.Instance.addPackToPlayerCollectionInServer(pack));
+      // Update currency in server
+      StartCoroutine(updateDuplicateCoins(duplicateCoins));
+    }
+
+    public void openLegendaryPack()
+    {
+      cardContainer.GetComponent<HorizontalLayoutGroup>().childAlignment = TextAnchor.MiddleCenter;
+      cardContainer.GetComponent<HorizontalLayoutGroup>().spacing = 200;
+      show();
+      // Cleanup
+      int numInstances = cardContainer.transform.childCount;
+      for (int i = 0; i < numInstances; i++)
+      {
+        DestroyImmediate(cardContainer.transform.GetChild(0).gameObject);
+      }
+      // Open pack
+      Pack pack = PlayerManager.Instance.getLegendaryPack();
+      Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
+      int duplicateCoins = 0;
+      for (int i = (pack.cards.Count - 1); i >= 0; i--)
+      {
+        CardInfo card = PlayerManager.Instance.getCardFromLookup(pack.cards[i]);
+        // Instantiate the cards
+        GameObject cardInstance = Instantiate(cardPrefab, cardContainer.transform);
+        float targetScale = 1.4f;
         cardInstance.GetComponent<OpeningDisplayCard>().targetScale = targetScale;
         // TODO : Adhere to scryfall request limits (10/s)
         cardInstance.GetComponent<WebCard>().texturizeCard(PlayerManager.Instance.getCardFromLookup(card.id));
