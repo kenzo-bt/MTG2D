@@ -163,9 +163,19 @@ public class Decklist {
           return;
         }
       }
-      else if (cards.Contains(card) && cardFrequencies[cards.IndexOf(card)] >= 4)
+      else if (!cardInfo.text.Contains("A deck can have any number of cards named"))
       {
-        if (!cardInfo.text.Contains("A deck can have any number of cards named"))
+        // Prevent alternate art versions of cards from pushing the frequency beyond 4
+        int nameCounter = 0;
+        for (int i = 0; i < cards.Count; i++)
+        {
+          CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
+          if (cardInformation.name == cardInfo.name)
+          {
+            nameCounter += cardFrequencies[i];
+          }
+        }
+        if (nameCounter >= 4)
         {
           return;
         }
