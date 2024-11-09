@@ -180,10 +180,29 @@ public class CardSet
       List<CardInfo> allLegendaries = new List<CardInfo>();
       foreach (CardInfo card in cards)
       {
-        if (card.supertypes.Contains("Legendary")) {
+        if (card.supertypes.Contains("Legendary"))
+        {
           allLegendaries.Add(card);
         }
       }
       return allLegendaries;
+    }
+
+    public List<CardInfo> getAllAlternateArts()
+    {
+      List<CardInfo> allAlternateArts = new List<CardInfo>();
+      List<string> addedCardIds = new List<string>();
+      foreach (CardInfo card in cards)
+      {
+        if (!card.isBasicLand() && !addedCardIds.Contains(card.id) && card.variations.Count != 0)
+        {
+          foreach(string variation in card.variations)
+          {
+            addedCardIds.Add(variation);
+            allAlternateArts.Add(PlayerManager.Instance.getCardFromLookup(variation));
+          }
+        }
+      }
+      return allAlternateArts;
     }
 }

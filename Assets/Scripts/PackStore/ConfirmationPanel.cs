@@ -73,6 +73,11 @@ public class ConfirmationPanel : MonoBehaviour
           specialName = "Legendary ";
           containsTextObject.GetComponent<TMP_Text>().text = "•  Legendary ( x 3 )";
         }
+        else if (specialCode == "AA")
+        {
+          specialName = "Alternate Art ";
+          containsTextObject.GetComponent<TMP_Text>().text = "•  Alternate art card ( x 3 )";
+        }
         expansionName = specialName + "Booster";
       }
       else
@@ -140,6 +145,10 @@ public class ConfirmationPanel : MonoBehaviour
             if (specialBoosterCode == "LG")
             {
               openingDisplayObject.GetComponent<OpeningDisplay>().openLegendaryPack();
+            }
+            else if (specialBoosterCode == "AA")
+            {
+              openingDisplayObject.GetComponent<OpeningDisplay>().openArtPack();
             }
           }
           else

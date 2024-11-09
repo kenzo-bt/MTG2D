@@ -588,4 +588,39 @@ public class PlayerManager : MonoBehaviour
       }
       return legendaryPack;
     }
+
+    public Pack getArtPack()
+    {
+      Pack artPack = new Pack();
+      artPack.cards = new List<string>();
+      List<int> emptySets = new List<int>();
+      while (artPack.cards.Count < 3) {
+        // Select a set at random from Throne of Eldraine (ELD) forward
+        int eldraineIndex = 0;
+        for (int i = 0; i < cardCollection.Count; i++)
+        {
+          if (cardCollection[i].setCode == "ELD")
+          {
+            eldraineIndex = i;
+            break;
+          }
+        }
+        int randomIndex = UnityEngine.Random.Range(eldraineIndex, cardCollection.Count);
+        if (!emptySets.Contains(randomIndex)) {
+          CardSet set = cardCollection[randomIndex];
+          // Query all legendaries in set
+          List<CardInfo> allAlternateArts = set.getAllAlternateArts();
+          if (allAlternateArts.Count > 0) {
+            // Select a card at random
+            int randomAlternateArtIndex = UnityEngine.Random.Range(0, allAlternateArts.Count);
+            artPack.cards.Add(allAlternateArts[randomAlternateArtIndex].id);
+          }
+          else
+          {
+            emptySets.Add(randomIndex);
+          }
+        }
+      }
+      return artPack;
+    }
 }
