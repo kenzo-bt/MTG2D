@@ -97,6 +97,7 @@ public class Decklist {
   public void addCard(string card)
   {
     CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(card);
+    // Timed deck challenge. Max 40 cards / Max 2 mythics and 5 rare/mythics combined
     if (PlayerManager.Instance.selectedDeck.isTimeChallenge)
     {
       if (getNumberOfNonBasicLandCards() >= 40)
@@ -117,6 +118,7 @@ public class Decklist {
       }
     }
 
+    // Timed deck challenge editor. Only allows basic lands to be added.
     if (PlayerManager.Instance.selectedDeck.isTimeChallenge && !PlayerManager.Instance.selectedDeck.isTimeChallengeEditable)
     {
       if (!cardInfo.isBasicLand())
@@ -125,43 +127,64 @@ public class Decklist {
       }
     }
 
+    if (!PlayerManager.Instance.getCardFromLookup(card).isBasicLand())
+    {
+      if (cardInfo.name == "Nazg\u00fbl")
+      {
+        // Count number of Nazgul (9 Max)
+        int nazgulCounter = 0;
+        for (int i = 0; i < cards.Count; i++)
+        {
+          CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
+          if (cardInformation.name == "Nazg\u00fbl")
+          {
+            nazgulCounter += cardFrequencies[i];
+          }
+        }
+        if (nazgulCounter >= 9)
+        {
+          return;
+        }
+      }
+      else if (cardInfo.name == "Seven Dwarves")
+      {
+        // Count number of Seven Dwarves (7 Max)
+        int dwarfCounter = 0;
+        for (int i = 0; i < cards.Count; i++)
+        {
+          CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
+          if (cardInformation.name == "Seven Dwarves")
+          {
+            dwarfCounter += cardFrequencies[i];
+          }
+        }
+        if (dwarfCounter >= 7)
+        {
+          return;
+        }
+      }
+      else if (!cardInfo.text.Contains("A deck can have any number of cards named"))
+      {
+        // Prevent alternate art versions of cards from pushing the frequency beyond 4
+        int nameCounter = 0;
+        for (int i = 0; i < cards.Count; i++)
+        {
+          CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
+          if (cardInformation.name == cardInfo.name)
+          {
+            nameCounter += cardFrequencies[i];
+          }
+        }
+        if (nameCounter >= 4)
+        {
+          return;
+        }
+      }
+    }
+
     if (cards.Contains(card))
     {
       int index = cards.IndexOf(card);
-      if (!PlayerManager.Instance.getCardFromLookup(card).isBasicLand())
-      {
-        if (cardFrequencies[index] >= 4)
-        {
-          if (cardInfo.name == "Nazg\u00fbl")
-          {
-            // Count number of Nazgul (9 Max)
-            int nazgulCounter = 0;
-            for (int i = 0; i < cards.Count; i++)
-            {
-              CardInfo cardInformation = PlayerManager.Instance.getCardFromLookup(cards[i]);
-              if (cardInformation.name == "Nazg\u00fbl")
-              {
-                nazgulCounter += cardFrequencies[i];
-              }
-            }
-            if (nazgulCounter >= 9)
-            {
-              return;
-            }
-          }
-          else if (cardInfo.name == "Seven Dwarves")
-          {
-            if (cardFrequencies[index] >= 7)
-            {
-              return;
-            }
-          }
-          else if (!cardInfo.text.Contains("A deck can have any number of cards named"))
-          {
-            return;
-          }
-        }
-      }
       cardFrequencies[index] += 1;
     }
     else
