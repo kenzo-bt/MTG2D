@@ -205,7 +205,8 @@ with open(setOutputPath, "w") as outputFile:
 # Send id list to API
 if len(sys.argv) == 3 and sys.argv[2] == "-u":
     print("Sending to server...")
-    postUrl = 'https://mirariapi.onrender.com'
+    # postUrl = 'https://mirariapi.onrender.com'
+    postUrl = 'http://127.0.0.1:5000'
     postPayload = {'cardIds': cardIds}
     postResponse = requests.post(postUrl + '/cards', json=postPayload)
     print('Server response status code ' + str(postResponse.status_code))

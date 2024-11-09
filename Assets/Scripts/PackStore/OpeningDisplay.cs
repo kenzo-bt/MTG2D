@@ -272,7 +272,7 @@ public class OpeningDisplay : MonoBehaviour
       StartCoroutine(updateDuplicateCoins(duplicateCoins));
     }
 
-    public void openArtPack()
+    public void openSecretLairPack()
     {
       cardContainer.GetComponent<HorizontalLayoutGroup>().childAlignment = TextAnchor.MiddleCenter;
       cardContainer.GetComponent<HorizontalLayoutGroup>().spacing = 200;
@@ -284,35 +284,44 @@ public class OpeningDisplay : MonoBehaviour
         DestroyImmediate(cardContainer.transform.GetChild(0).gameObject);
       }
       // Open pack
-      Pack pack = PlayerManager.Instance.getArtPack();
-      Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
-      int duplicateCoins = 0;
-      for (int i = (pack.cards.Count - 1); i >= 0; i--)
+      foreach (CardSet set in PlayerManager.Instance.cardCollection)
       {
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(pack.cards[i]);
-        // Instantiate the cards
-        GameObject cardInstance = Instantiate(cardPrefab, cardContainer.transform);
-        float targetScale = 1.4f;
-        cardInstance.GetComponent<OpeningDisplayCard>().targetScale = targetScale;
-        // TODO : Adhere to scryfall request limits (10/s)
-        cardInstance.GetComponent<WebCard>().texturizeCard(PlayerManager.Instance.getCardFromLookup(card.id));
-        // Determine duplicate credits
-        if (playerCollection.ContainsKey(card.id))
+        if (set.setCode == "SLD")
         {
-          int numCoins = 50;
-          duplicateCoins += 50;
-          cardInstance.GetComponent<OpeningDisplayCard>().showDuplicateCoins(numCoins);
-        }
-        else
-        {
-          // Add to collection
-          playerCollection.Add(card.id, 1);
+          Pack pack = new Pack();
+          pack.cards = new List<string>(set.getPack());
+          Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
+          int duplicateCoins = 0;
+          for (int i = (pack.cards.Count - 1); i >= 0; i--)
+          {
+            CardInfo card = PlayerManager.Instance.getCardFromLookup(pack.cards[i]);
+            // Instantiate the cards
+            GameObject cardInstance = Instantiate(cardPrefab, cardContainer.transform);
+            // Set the target scale
+            float targetScale = 1.4f;
+            cardInstance.GetComponent<OpeningDisplayCard>().targetScale = targetScale;
+            // TODO : Adhere to scryfall request limits (10/s)
+            cardInstance.GetComponent<WebCard>().texturizeCard(PlayerManager.Instance.getCardFromLookup(card.id));
+            // Determine duplicate credits
+            if (playerCollection.ContainsKey(card.id))
+            {
+              int numCoins = 50;
+              duplicateCoins += 50;
+              cardInstance.GetComponent<OpeningDisplayCard>().showDuplicateCoins(numCoins);
+            }
+            else
+            {
+              // Add to collection
+              playerCollection.Add(card.id, 1);
+            }
+          }
+          // Update collection in server
+          StartCoroutine(PlayerManager.Instance.addPackToPlayerCollectionInServer(pack));
+          // Update currency in server
+          StartCoroutine(updateDuplicateCoins(duplicateCoins));
+          break;
         }
       }
-      // Update collection in server
-      StartCoroutine(PlayerManager.Instance.addPackToPlayerCollectionInServer(pack));
-      // Update currency in server
-      StartCoroutine(updateDuplicateCoins(duplicateCoins));
     }
 
     // Show / Hide overlay

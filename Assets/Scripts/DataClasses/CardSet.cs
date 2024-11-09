@@ -21,6 +21,25 @@ public class CardSet
     public List<string> getPack()
     {
       List<string> pack = new List<string>();
+      // Secret lair special 3 card pack
+      if (setCode == "SLD")
+      {
+        // Add 3 random cards
+        List<int> selectedIndexes = new List<int>();
+        while (pack.Count < 3)
+        {
+          int randomIndex = UnityEngine.Random.Range(0, cards.Count);
+          if (!selectedIndexes.Contains(randomIndex))
+          {
+            selectedIndexes.Add(randomIndex);
+            if (!cards[randomIndex].isBasicLand())
+            {
+              pack.Add(cards[randomIndex].id);
+            }
+          }
+        }
+        return pack;
+      }
       // Add 1 rare or mythic rare
       List<CardInfo> rares = getAllRares();
       if (rares.Count != 0)
