@@ -73,6 +73,11 @@ public class ConfirmationPanel : MonoBehaviour
           specialName = "Legendary ";
           containsTextObject.GetComponent<TMP_Text>().text = "•  Legendary ( x 3 )";
         }
+        else if (specialCode == "SL")
+        {
+          specialName = "Secret Lair ";
+          containsTextObject.GetComponent<TMP_Text>().text = "•  Secret Lair card ( x 3 )";
+        }
         expansionName = specialName + "Booster";
       }
       else
@@ -140,6 +145,10 @@ public class ConfirmationPanel : MonoBehaviour
             if (specialBoosterCode == "LG")
             {
               openingDisplayObject.GetComponent<OpeningDisplay>().openLegendaryPack();
+            }
+            else if (specialBoosterCode == "SL")
+            {
+              openingDisplayObject.GetComponent<OpeningDisplay>().openSecretLairPack();
             }
           }
           else

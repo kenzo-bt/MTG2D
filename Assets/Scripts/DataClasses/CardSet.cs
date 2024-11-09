@@ -21,6 +21,25 @@ public class CardSet
     public List<string> getPack()
     {
       List<string> pack = new List<string>();
+      // Secret lair special 3 card pack
+      if (setCode == "SLD")
+      {
+        // Add 3 random cards
+        List<int> selectedIndexes = new List<int>();
+        while (pack.Count < 3)
+        {
+          int randomIndex = UnityEngine.Random.Range(0, cards.Count);
+          if (!selectedIndexes.Contains(randomIndex))
+          {
+            selectedIndexes.Add(randomIndex);
+            if (!cards[randomIndex].isBasicLand())
+            {
+              pack.Add(cards[randomIndex].id);
+            }
+          }
+        }
+        return pack;
+      }
       // Add 1 rare or mythic rare
       List<CardInfo> rares = getAllRares();
       if (rares.Count != 0)
@@ -180,10 +199,29 @@ public class CardSet
       List<CardInfo> allLegendaries = new List<CardInfo>();
       foreach (CardInfo card in cards)
       {
-        if (card.supertypes.Contains("Legendary")) {
+        if (card.supertypes.Contains("Legendary"))
+        {
           allLegendaries.Add(card);
         }
       }
       return allLegendaries;
+    }
+
+    public List<CardInfo> getAllAlternateArts()
+    {
+      List<CardInfo> allAlternateArts = new List<CardInfo>();
+      List<string> addedCardIds = new List<string>();
+      foreach (CardInfo card in cards)
+      {
+        if (!card.isBasicLand() && !addedCardIds.Contains(card.id) && card.variations.Count != 0)
+        {
+          foreach(string variation in card.variations)
+          {
+            addedCardIds.Add(variation);
+            allAlternateArts.Add(PlayerManager.Instance.getCardFromLookup(variation));
+          }
+        }
+      }
+      return allAlternateArts;
     }
 }
