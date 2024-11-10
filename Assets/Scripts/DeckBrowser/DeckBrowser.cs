@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class DeckBrowser : MonoBehaviour
 {
@@ -11,6 +13,11 @@ public class DeckBrowser : MonoBehaviour
     public GameObject proDecksObject;
     public GameObject deckDisplayPrefab;
     public GameObject starterDeckPrefab;
+    public GameObject deckImportDialogObject;
+    public GameObject deckImportInputObject;
+    public GameObject importErrorTextObject;
+    private TMP_InputField deckInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,5 +85,126 @@ public class DeckBrowser : MonoBehaviour
     }
     public void hideBrowser(){
       gameObject.SetActive(false);
+    }
+
+    // Toggle visibility of deck importer dialog
+    public void toggleImporterVisibility()
+    {
+      if (deckImportDialogObject.GetComponent<CanvasGroup>().alpha == 0)
+      {
+        deckImportDialogObject.GetComponent<CanvasGroup>().alpha = 1;
+        deckImportDialogObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
+      }
+      else
+      {
+        deckImportDialogObject.GetComponent<CanvasGroup>().alpha = 0;
+        deckImportDialogObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
+      }
+    }
+
+    // Process the inputted text
+    public void processDeckImportText()
+    {
+      importErrorTextObject.GetComponent<TMP_Text>().text = "";
+      deckInput = deckImportInputObject.GetComponent<TMP_InputField>();
+      string[] inputLines = deckInput.text.Split('\n');
+      List<string> cardIds = new List<string>();
+      List<int> cardFrequencies = new List<int>();
+      if (inputLines.Length > 1)
+      {
+        bool importError = false;
+        for (int i = 0; i < inputLines.Length; i++)
+        {
+          // Skip the first line: "Deck"
+          if (i == 0)
+          {
+            continue;
+          }
+          // Parse the card line if not empty
+          if (inputLines[i].Trim() != "")
+          {
+            string[] lineData = inputLines[i].Split("(");
+            string freqAndName = lineData[0];
+            string setAndSerial = lineData[1];
+            int freqAndNameSeparator = freqAndName.IndexOf(" ");
+            int frequency = Int32.Parse(freqAndName.Split(" ")[0]);
+            string name = freqAndName.Substring(freqAndNameSeparator).Trim();
+            string setCode = setAndSerial.Split(")")[0];
+            // Debug.Log($"Card: {name} {setCode} x{frequency}");
+
+            // Fix differing set codes
+            switch(setCode)
+            {
+              case "DAR":
+                setCode = "DOM";
+                break;
+              default:
+                break;
+            }
+
+            // TODO: Find the card Id and add it to the list
+            bool setFound = false;
+            foreach (CardSet set in PlayerManager.Instance.cardCollection)
+            {
+              if (setCode == set.setCode)
+              {
+                bool cardFound = false;
+                // Find the card ID
+                foreach (CardInfo card in set.cards)
+                {
+                  string cardName = card.name;
+                  if (cardName.Contains(" // "))
+                  {
+                    cardName = cardName.Split(" // ")[0];
+                  }
+                  if (name == cardName)
+                  {
+                    // Add the ID to the list
+                    cardIds.Add(card.id);
+                    cardFound = true;
+                    break;
+                  }
+                }
+                if (!cardFound)
+                {
+                  importError = true;
+                  setImportErrorText($"Card '{name}' not found in set {setCode}");
+                }
+                setFound = true;
+                break;
+              }
+            }
+            if (!setFound)
+            {
+              importError = true;
+              setImportErrorText($"Set '{setCode}' not found");
+              break;
+            }
+            // Add the frequency
+            cardFrequencies.Add(frequency);
+          }
+        }
+        if (!importError)
+        {
+          // Create the deck object and open the editor
+          Decklist importedDeck = new Decklist();
+          importedDeck.cards = cardIds;
+          importedDeck.cardFrequencies = cardFrequencies;
+          importedDeck.coverId = cardIds[0];
+          // TODO: Add the cards to the decklist
+          PlayerManager.Instance.allDecks.Add(importedDeck);
+          PlayerManager.Instance.selectedDeck = importedDeck;
+          SceneManager.LoadScene("DeckEditor");
+        }
+      }
+      else
+      {
+        setImportErrorText("Wrong format");
+      }
+    }
+
+    public void setImportErrorText(string errorText)
+    {
+      importErrorTextObject.GetComponent<TMP_Text>().text = $"Error: {errorText}";
     }
 }
