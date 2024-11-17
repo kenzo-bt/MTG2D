@@ -67,6 +67,12 @@ public class CardSet
       return pack;
     }
 
+    public string getRandomCard()
+    {
+      int randomIndex = UnityEngine.Random.Range(0, cards.Count);
+      return cards[randomIndex].id;
+    }
+
     public List<CardInfo> getAllRares()
     {
       List<CardInfo> allRares = new List<CardInfo>();

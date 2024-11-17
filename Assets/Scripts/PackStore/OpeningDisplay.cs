@@ -121,6 +121,24 @@ public class OpeningDisplay : MonoBehaviour
         {
           Pack pack = new Pack();
           pack.cards = new List<string>(set.getPack());
+          // OTJ - Replace common with Big Score card - 33% chance
+          if (set.setCode == "OTJ")
+          {
+            int roll = UnityEngine.Random.Range(0, 3);
+            Debug.Log("Roll: " + roll);
+            if (roll == 2)
+            {
+              pack.cards.RemoveAt(pack.cards.Count - 1);
+              foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
+              {
+                if (cardSet.setCode == "BIG")
+                {
+                  pack.cards.Add(cardSet.getRandomCard());
+                  break;
+                }
+              }
+            }
+          }
           Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
           int duplicateCoins = 0;
           for (int i = (pack.cards.Count - 1); i >= 0; i--)
