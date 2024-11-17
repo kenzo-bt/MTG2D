@@ -125,15 +125,13 @@ public class OpeningDisplay : MonoBehaviour
           if (set.setCode == "OTJ")
           {
             int roll = UnityEngine.Random.Range(0, 3);
-            Debug.Log("Roll: " + roll);
             if (roll == 2)
             {
-              pack.cards.RemoveAt(pack.cards.Count - 1);
               foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
               {
                 if (cardSet.setCode == "BIG")
                 {
-                  pack.cards.Add(cardSet.getRandomCard());
+                  pack.cards[4] = cardSet.getRandomCard();
                   break;
                 }
               }

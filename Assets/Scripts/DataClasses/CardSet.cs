@@ -69,8 +69,18 @@ public class CardSet
 
     public string getRandomCard()
     {
-      int randomIndex = UnityEngine.Random.Range(0, cards.Count);
-      return cards[randomIndex].id;
+      bool nonTokenSelected = false;
+      string randomCardId = "";
+      while (!nonTokenSelected)
+      {
+        CardInfo randomCard = cards[UnityEngine.Random.Range(0, cards.Count)];
+        if (!randomCard.isToken)
+        {
+          randomCardId = randomCard.id;
+          nonTokenSelected = true;
+        }
+      }
+      return randomCardId;
     }
 
     public List<CardInfo> getAllRares()
