@@ -16,6 +16,7 @@ public class ConfirmationPanel : MonoBehaviour
     public GameObject currencyPanelObject;
     public GameObject openingDisplayObject;
     public GameObject containsTextObject;
+    public GameObject loadingScreenObject;
     private string boosterSetCode;
     private int gemCost;
     private int coinCost;
@@ -104,12 +105,14 @@ public class ConfirmationPanel : MonoBehaviour
     public void purchaseWithCoins()
     {
       errorTextObject.GetComponent<TMP_Text>().text = "";
+      loadingScreenObject.GetComponent<LoadingScreen>().show();
       StartCoroutine(requestBoosterPurchase("coins", coinCost));
     }
 
     public void purchaseWithGems()
     {
       errorTextObject.GetComponent<TMP_Text>().text = "";
+      loadingScreenObject.GetComponent<LoadingScreen>().show();
       StartCoroutine(requestBoosterPurchase("gems", gemCost));
     }
 
@@ -157,6 +160,7 @@ public class ConfirmationPanel : MonoBehaviour
           }
         }
       }
+      loadingScreenObject.GetComponent<LoadingScreen>().hide();
     }
 
     // Show / Hide overlay
