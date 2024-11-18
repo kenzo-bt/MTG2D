@@ -142,13 +142,13 @@ public class DeckBrowser : MonoBehaviour
                 break;
             }
 
-            // TODO: Find the card Id and add it to the list
+            // Find the card Id and add it to the list
             bool setFound = false;
+            bool cardFound = false;
             foreach (CardSet set in PlayerManager.Instance.cardCollection)
             {
               if (setCode == set.setCode)
               {
-                bool cardFound = false;
                 // Find the card ID
                 foreach (CardInfo card in set.cards)
                 {
@@ -159,29 +159,32 @@ public class DeckBrowser : MonoBehaviour
                   }
                   if (name == cardName)
                   {
-                    // Add the ID to the list
+                    // Add the ID and frequency to the list
                     cardIds.Add(card.id);
+                    cardFrequencies.Add(frequency);
                     cardFound = true;
                     break;
                   }
-                }
-                if (!cardFound)
-                {
-                  importError = true;
-                  setImportErrorText($"Card '{name}' not found in set {setCode}");
                 }
                 setFound = true;
                 break;
               }
             }
-            if (!setFound)
+            if (!setFound || !cardFound)
             {
-              importError = true;
-              setImportErrorText($"Set '{setCode}' not found");
-              break;
+              string fallbackCardId = findFallbackCard(name);
+              if (fallbackCardId != "")
+              {
+                // Add the ID and frequency to the list
+                cardIds.Add(fallbackCardId);
+                cardFrequencies.Add(frequency);
+              }
+              else
+              {
+                importError = true;
+                setImportErrorText($"Card '{name}' not found");
+              }
             }
-            // Add the frequency
-            cardFrequencies.Add(frequency);
           }
         }
         if (!importError)
@@ -206,5 +209,25 @@ public class DeckBrowser : MonoBehaviour
     public void setImportErrorText(string errorText)
     {
       importErrorTextObject.GetComponent<TMP_Text>().text = $"Error: {errorText}";
+    }
+
+    private string findFallbackCard(string name)
+    {
+      foreach (CardSet set in PlayerManager.Instance.cardCollection)
+      {
+        foreach (CardInfo card in set.cards)
+        {
+          string cardName = card.name;
+          if (cardName.Contains(" // "))
+          {
+            cardName = cardName.Split(" // ")[0];
+          }
+          if (name == cardName)
+          {
+            return card.id;
+          }
+        }
+      }
+      return "";
     }
 }
