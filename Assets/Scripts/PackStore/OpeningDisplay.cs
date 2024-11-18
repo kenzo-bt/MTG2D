@@ -137,6 +137,21 @@ public class OpeningDisplay : MonoBehaviour
               }
             }
           }
+          else if (set.setCode == "STX")
+          {
+            int roll = UnityEngine.Random.Range(0, 2);
+            if (roll == 1)
+            {
+              foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
+              {
+                if (cardSet.setCode == "STA")
+                {
+                  pack.cards[4] = cardSet.getRandomCard();
+                  break;
+                }
+              }
+            }
+          }
           Dictionary<string, int> playerCollection = PlayerManager.Instance.collectedCards;
           int duplicateCoins = 0;
           for (int i = (pack.cards.Count - 1); i >= 0; i--)
