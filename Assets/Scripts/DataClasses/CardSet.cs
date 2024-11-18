@@ -32,7 +32,7 @@ public class CardSet
           if (!selectedIndexes.Contains(randomIndex))
           {
             selectedIndexes.Add(randomIndex);
-            if (!cards[randomIndex].isBasicLand())
+            if (!cards[randomIndex].isBasicLand() && !cards[randomIndex].isToken && !cards[randomIndex].isBack)
             {
               pack.Add(cards[randomIndex].id);
             }
@@ -74,7 +74,7 @@ public class CardSet
       while (!nonTokenSelected)
       {
         CardInfo randomCard = cards[UnityEngine.Random.Range(0, cards.Count)];
-        if (!randomCard.isToken)
+        if (!randomCard.isToken && !randomCard.isBack)
         {
           randomCardId = randomCard.id;
           nonTokenSelected = true;
@@ -215,7 +215,7 @@ public class CardSet
       List<CardInfo> allLegendaries = new List<CardInfo>();
       foreach (CardInfo card in cards)
       {
-        if (card.supertypes.Contains("Legendary"))
+        if (card.supertypes.Contains("Legendary") && !card.isToken && !card.isBack)
         {
           allLegendaries.Add(card);
         }
