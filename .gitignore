@@ -79,4 +79,8 @@ crashlytics-build.properties
 /MTG-Docs/SetSymbols/
 /MTG-Docs/Boosters/
 /MTG-Docs/API/
-/MTG-Docs/Launcher/
+/MTG-Docs/Launcher/*
+
+# Exceptions
+!/MTG-Docs/Launcher/mirari_launcher.py
+!/MTG-Docs/Launcher/mirari.ico
