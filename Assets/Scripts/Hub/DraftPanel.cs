@@ -277,4 +277,12 @@ public class DraftPanel : MonoBehaviour
       }
       request.Dispose();
     }
+
+    public void propagateFirstPick()
+    {
+      // Get the value of the first dropdown and propagate to the other two
+      int selection = setDropbox1.GetComponent<TMP_Dropdown>().value;
+      setDropbox2.GetComponent<TMP_Dropdown>().value = selection;
+      setDropbox3.GetComponent<TMP_Dropdown>().value = selection;
+    }
 }
