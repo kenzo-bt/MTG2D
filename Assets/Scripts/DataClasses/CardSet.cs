@@ -132,6 +132,14 @@ public class CardSet
         {
           if (!card.isBasicLand() && !card.isToken && !card.isBack && card.finishes.Contains("nonfoil"))
           {
+            if (setCode == "WHO")
+            {
+              if (card.layout != "planar")
+              {
+                allCommons.Add(card);
+              }
+              continue;
+            }
             // Remove alchemy cards
             if (card.name.Length > 1 && card.name.Substring(0, 2) != "A-")
             {
