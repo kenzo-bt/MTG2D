@@ -15,4 +15,5 @@ public class Draft
   public string setName;
   public List<int> players;
   public int started;
+  public List<DraftPacks> cpu;
 }
