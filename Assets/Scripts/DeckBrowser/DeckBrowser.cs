@@ -107,17 +107,26 @@ public class DeckBrowser : MonoBehaviour
     {
       importErrorTextObject.GetComponent<TMP_Text>().text = "";
       deckInput = deckImportInputObject.GetComponent<TMP_InputField>();
-      string[] inputLines = deckInput.text.Split('\n');
+      List<string> inputLines = new List<string>(deckInput.text.Split('\n'));
       List<string> cardIds = new List<string>();
       List<int> cardFrequencies = new List<int>();
-      if (inputLines.Length > 1)
+      List<string> sideboardIds = new List<string>();
+      List<int> sideboardFrequencies = new List<int>();
+
+      if (inputLines.Count > 1)
       {
         bool importError = false;
-        for (int i = 0; i < inputLines.Length; i++)
+        bool sideboard = false;
+        for (int i = 0; i < inputLines.Count; i++)
         {
           // Skip the first line: "Deck"
           if (i == 0)
           {
+            continue;
+          }
+          if (inputLines[i].Trim() == "Sideboard")
+          {
+            sideboard = true;
             continue;
           }
           // Parse the card line if not empty
@@ -160,8 +169,16 @@ public class DeckBrowser : MonoBehaviour
                   if (name == cardName)
                   {
                     // Add the ID and frequency to the list
-                    cardIds.Add(card.id);
-                    cardFrequencies.Add(frequency);
+                    if (sideboard)
+                    {
+                      sideboardIds.Add(card.id);
+                      sideboardFrequencies.Add(frequency);
+                    }
+                    else
+                    {
+                      cardIds.Add(card.id);
+                      cardFrequencies.Add(frequency);
+                    }
                     cardFound = true;
                     break;
                   }
@@ -176,8 +193,16 @@ public class DeckBrowser : MonoBehaviour
               if (fallbackCardId != "")
               {
                 // Add the ID and frequency to the list
-                cardIds.Add(fallbackCardId);
-                cardFrequencies.Add(frequency);
+                if (sideboard)
+                {
+                  sideboardIds.Add(fallbackCardId);
+                  sideboardFrequencies.Add(frequency);
+                }
+                else
+                {
+                  cardIds.Add(fallbackCardId);
+                  cardFrequencies.Add(frequency);
+                }
               }
               else
               {
@@ -193,8 +218,12 @@ public class DeckBrowser : MonoBehaviour
           Decklist importedDeck = new Decklist();
           importedDeck.cards = cardIds;
           importedDeck.cardFrequencies = cardFrequencies;
+          if (sideboardIds.Count > 0)
+          {
+            importedDeck.sideboard = sideboardIds;
+            importedDeck.sideboardFrequencies = sideboardFrequencies;
+          }
           importedDeck.coverId = cardIds[0];
-          // TODO: Add the cards to the decklist
           PlayerManager.Instance.allDecks.Add(importedDeck);
           PlayerManager.Instance.selectedDeck = importedDeck;
           SceneManager.LoadScene("DeckEditor");
