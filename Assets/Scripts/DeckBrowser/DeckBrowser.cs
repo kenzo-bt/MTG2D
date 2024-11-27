@@ -120,7 +120,7 @@ public class DeckBrowser : MonoBehaviour
         for (int i = 0; i < inputLines.Count; i++)
         {
           // Skip the first line: "Deck"
-          if (i == 0)
+          if (inputLines[i].Trim() == "Deck" || inputLines[i].Trim() == "Commander")
           {
             continue;
           }
