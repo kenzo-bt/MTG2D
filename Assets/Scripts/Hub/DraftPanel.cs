@@ -95,7 +95,7 @@ public class DraftPanel : MonoBehaviour
         dropdownIndex1 = setDropbox1.GetComponent<TMP_Dropdown>().value;
         dropdownIndex2 = setDropbox2.GetComponent<TMP_Dropdown>().value;
         dropdownIndex3 = setDropbox3.GetComponent<TMP_Dropdown>().value;
-        if (capacity >= 0)
+        if (capacity >= 1)
         {
           errorMessage.GetComponent<TMP_Text>().text = "";
           StartCoroutine(createDraftInServer());
@@ -132,6 +132,35 @@ public class DraftPanel : MonoBehaviour
       myDraft.players = new List<int>();
       myDraft.players.Add(myDraft.hostId);
       myDraft.started = 0;
+      // Generate CPU packs
+      List<string> selectedSetCodes = new List<string>();
+      selectedSetCodes.Add(myDraft.set1);
+      selectedSetCodes.Add(myDraft.set2);
+      selectedSetCodes.Add(myDraft.set3);
+      List<CardSet> draftSets = new List<CardSet>();
+      foreach (string setCode in selectedSetCodes)
+      {
+        foreach (CardSet set in PlayerManager.Instance.cardCollection)
+        {
+          if (set.setCode == setCode)
+          {
+            draftSets.Add(set);
+          }
+        }
+      }
+      myDraft.cpu = new List<DraftPacks>();
+      for (int i = 0; i < (8 - capacity); i++)
+      {
+        DraftPacks cpuPacks = new DraftPacks();
+        cpuPacks.draftPacks = new List<Pack>();
+        foreach (CardSet draftSet in draftSets)
+        {
+          Pack pack = new Pack();
+          pack.cards = new List<string>(draftSet.getPack());
+          cpuPacks.draftPacks.Add(pack);
+        }
+        myDraft.cpu.Add(cpuPacks);
+      }
       // Send to draft to server
       string draftJson = JsonUtility.ToJson(myDraft);
       byte[] bytes = Encoding.UTF8.GetBytes(draftJson);
@@ -276,5 +305,13 @@ public class DraftPanel : MonoBehaviour
         SceneManager.LoadScene("DraftWaitRoom");
       }
       request.Dispose();
+    }
+
+    public void propagateFirstPick()
+    {
+      // Get the value of the first dropdown and propagate to the other two
+      int selection = setDropbox1.GetComponent<TMP_Dropdown>().value;
+      setDropbox2.GetComponent<TMP_Dropdown>().value = selection;
+      setDropbox3.GetComponent<TMP_Dropdown>().value = selection;
     }
 }

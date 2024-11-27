@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,12 @@ public class DraftCollection : MonoBehaviour
     private int selectedIndex;
     private int pickNum;
     private int packNum;
+    private bool passToCpu;
+    private bool receiveFromCpu;
+    private List<DraftPacks> cpuPacks;
+    private List<string> cpuPreferences;
+    private List<Pack>[] cpuPacksLinear;
+    private List<string> cpuOutList;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +58,14 @@ public class DraftCollection : MonoBehaviour
       selectedIndex = -1;
       packNum = 1;
       pickNum = 1;
+      passToCpu = false;
+      receiveFromCpu = false;
+      cpuPreferences = new List<string>();
+      cpuPacksLinear = new List<Pack>[3];
+      cpuPacksLinear[0] = new List<Pack>();
+      cpuPacksLinear[1] = new List<Pack>();
+      cpuPacksLinear[2] = new List<Pack>();
+      cpuOutList = new List<string>();
       // Determine left and right players
       StartCoroutine(fetchDraftPlayers());
       // Get all 3 initial packs
@@ -154,10 +169,32 @@ public class DraftCollection : MonoBehaviour
           {
             if (playerIds[i] == PlayerManager.Instance.myID)
             {
-              leftPlayerId = (i > 0) ? playerIds[i - 1] : playerIds[playerIds.Count - 1];
-              rightPlayerId = (i < (playerIds.Count - 1)) ? playerIds[i + 1] : playerIds[0];
+              // Determine left player ID
+              if (i > 0)
+              {
+                leftPlayerId = playerIds[i - 1];
+              }
+              else
+              {
+                leftPlayerId = playerIds[playerIds.Count - 1];
+                passToCpu = true;
+              }
+              // Determine right player ID
+              if (i < (playerIds.Count - 1))
+              {
+                rightPlayerId = playerIds[i + 1];
+              }
+              else
+              {
+                rightPlayerId = playerIds[0];
+                receiveFromCpu = true;
+              }
               break;
             }
+          }
+          if (passToCpu)
+          {
+            StartCoroutine(getCpuPacksFromServer());
           }
           StartCoroutine(initializeLeftPlayerName());
           StartCoroutine(initializeRightPlayerName());
@@ -165,9 +202,9 @@ public class DraftCollection : MonoBehaviour
       }
     }
 
-    public IEnumerator initializeLeftPlayerName()
+    public IEnumerator getCpuPacksFromServer()
     {
-      string url = PlayerManager.Instance.apiUrl + "users/" + leftPlayerId;
+      string url = PlayerManager.Instance.apiUrl + "drafts/" + PlayerManager.Instance.draftHostID + "/cpu";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
         yield return request.SendWebRequest();
@@ -178,27 +215,72 @@ public class DraftCollection : MonoBehaviour
         else
         {
           string serverJson = request.downloadHandler.text;
-          User user = JsonUtility.FromJson<User>(serverJson);
-          leftPlayerObject.GetComponent<TMP_Text>().text = user.username;
+          AllDraftPacks allCpuPacks = JsonUtility.FromJson<AllDraftPacks>(serverJson);
+          cpuPacks = new List<DraftPacks>(allCpuPacks.draftPacks);
+          // Determine each CPU pick preference
+          foreach (DraftPacks cpu in cpuPacks)
+          {
+            Pack firstPack = cpu.draftPacks[0];
+            CardInfo firstCard = PlayerManager.Instance.getCardFromLookup(firstPack.cards[0]);
+            string preferences = String.Join("-", firstCard.colourIdentity);
+            cpuPreferences.Add(preferences);
+            // Populate cpu packs arrays
+            cpuPacksLinear[0].Add(cpu.draftPacks[0]);
+            cpuPacksLinear[1].Add(cpu.draftPacks[1]);
+            cpuPacksLinear[2].Add(cpu.draftPacks[2]);
+          }
+        }
+      }
+    }
+
+    public IEnumerator initializeLeftPlayerName()
+    {
+      if (passToCpu)
+      {
+        leftPlayerObject.GetComponent<TMP_Text>().text = "CPU";
+      }
+      else
+      {
+        string url = PlayerManager.Instance.apiUrl + "users/" + leftPlayerId;
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+          yield return request.SendWebRequest();
+          if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(request.error);
+          }
+          else
+          {
+            string serverJson = request.downloadHandler.text;
+            User user = JsonUtility.FromJson<User>(serverJson);
+            leftPlayerObject.GetComponent<TMP_Text>().text = user.username;
+          }
         }
       }
     }
 
     public IEnumerator initializeRightPlayerName()
     {
-      string url = PlayerManager.Instance.apiUrl + "users/" + rightPlayerId;
-      using (UnityWebRequest request = UnityWebRequest.Get(url))
+      if (receiveFromCpu)
       {
-        yield return request.SendWebRequest();
-        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        rightPlayerObject.GetComponent<TMP_Text>().text = "CPU";
+      }
+      else
+      {
+        string url = PlayerManager.Instance.apiUrl + "users/" + rightPlayerId;
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
         {
-          Debug.Log(request.error);
-        }
-        else
-        {
-          string serverJson = request.downloadHandler.text;
-          User user = JsonUtility.FromJson<User>(serverJson);
-          rightPlayerObject.GetComponent<TMP_Text>().text = user.username;
+          yield return request.SendWebRequest();
+          if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+          {
+            Debug.Log(request.error);
+          }
+          else
+          {
+            string serverJson = request.downloadHandler.text;
+            User user = JsonUtility.FromJson<User>(serverJson);
+            rightPlayerObject.GetComponent<TMP_Text>().text = user.username;
+          }
         }
       }
     }
@@ -333,6 +415,13 @@ public class DraftCollection : MonoBehaviour
       {
         pickNum++;
         updatePickIndicator();
+        if (passToCpu)
+        {
+          Pack cpuInPack = new Pack();
+          cpuInPack.cards = new List<string>(cardIds);
+          Pack cpuOutPack = simulateCpuPicks(cpuInPack);
+          cpuOutList = new List<string>(cpuOutPack.cards);
+        }
         StartCoroutine(sendPackToLeftPlayer());
       }
     }
@@ -341,6 +430,10 @@ public class DraftCollection : MonoBehaviour
     {
       Pack packToSend = new Pack();
       packToSend.cards = new List<string>(cardIds);
+      if (passToCpu)
+      {
+        packToSend.cards = new List<string>(cpuOutList);
+      }
       string packJson = JsonUtility.ToJson(packToSend);
       string postUrl = PlayerManager.Instance.apiUrl + "users/" + leftPlayerId + "/draftQueue";
       byte[] bytes = Encoding.UTF8.GetBytes(packJson);
@@ -352,6 +445,7 @@ public class DraftCollection : MonoBehaviour
       if(postRequest.result == UnityWebRequest.Result.ConnectionError || postRequest.result == UnityWebRequest.Result.ProtocolError)
       {
         Debug.Log(postRequest.error);
+
         StartCoroutine(sendPackToLeftPlayer());
       }
       else
@@ -359,6 +453,66 @@ public class DraftCollection : MonoBehaviour
         fetchDraftPack();
       }
       postRequest.Dispose();
+    }
+
+    private Pack simulateCpuPicks(Pack inPack)
+    {
+      // Iterate over rows
+      for (int i = 0; i < cpuPacksLinear.Length; i++)
+      {
+        if (cpuPacksLinear[i][0].cards.Count > 1)
+        {
+          // Iterate over all packs in row
+          for (int n = 0; n < cpuPacksLinear[i].Count; n++)
+          {
+            // Remove a card based on preference if available
+            List<string> preferences = new List<string>(cpuPreferences[n].Split("-"));
+            // Iterate over all cards in this pack
+            bool cardRemoved = false;
+            for (int x = 0; x < cpuPacksLinear[i][n].cards.Count; x++)
+            {
+              CardInfo card = PlayerManager.Instance.getCardFromLookup(cpuPacksLinear[i][n].cards[x]);
+              foreach (string preference in preferences)
+              {
+                if (card.colourIdentity.Contains(preference))
+                {
+                  cpuPacksLinear[i][n].cards.RemoveAt(x);
+                  cardRemoved = true;
+                  break;
+                }
+              }
+              if (cardRemoved)
+              {
+                break;
+              }
+            }
+            if (!cardRemoved)
+            {
+              int randomIndex = UnityEngine.Random.Range(0, cpuPacksLinear[i][n].cards.Count);
+              cpuPacksLinear[i][n].cards.RemoveAt(randomIndex);
+            }
+          }
+          // Insert incoming pack into row
+          Pack incomingPack = new Pack();
+          incomingPack.cards = new List<string>(inPack.cards.ToArray());
+          cpuPacksLinear[i].Insert(0, incomingPack);
+          // Select outgoing pack and remove it from list
+          Pack outPack = new Pack();
+          outPack.cards = new List<string>(cpuPacksLinear[i][cpuPacksLinear[i].Count - 1].cards.ToArray());
+          cpuPacksLinear[i].RemoveAt(cpuPacksLinear[i].Count - 1);
+          List<int> packSizes = new List<int>();
+          foreach (Pack rowPack in cpuPacksLinear[i])
+          {
+            packSizes.Add(rowPack.cards.Count);
+          }
+          Debug.Log("Row " + (i + 1) + ": [" + String.Join(", ", packSizes) + "]");
+          return outPack;
+        }
+      }
+      Debug.Log("Error: We reached the empty pack in simulation");
+      Pack emptyPack = new Pack();
+      emptyPack.cards = new List<string>();
+      return emptyPack;
     }
 
     // Save deck changes

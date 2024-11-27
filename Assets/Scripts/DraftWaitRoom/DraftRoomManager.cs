@@ -212,6 +212,7 @@ public class DraftRoomManager : MonoBehaviour
           }
         }
       }
+      // Generate player packs
       foreach (int id in playerIds)
       {
         DraftPacks playerDraftPacks = new DraftPacks();

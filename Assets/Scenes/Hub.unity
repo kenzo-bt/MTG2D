@@ -20823,6 +20823,22 @@ MonoBehaviour:
     timeChallengeCardSet: 
     timeChallengeCardColours: []
     isTimeChallengeEditable: 1
+    objectiveId: -1
+    objectiveDeckId: -1
+  opponentSelectedDeck:
+    name: 
+    cards: []
+    sideboard: []
+    cardFrequencies: 
+    sideboardFrequencies: 
+    coverId: 
+    isDraft: 0
+    isTimeChallenge: 0
+    timeChallengeCardSet: 
+    timeChallengeCardColours: []
+    isTimeChallengeEditable: 1
+    objectiveId: -1
+    objectiveDeckId: -1
   allDecks: []
   starterDecks: []
   proFeaturedDecks: []
@@ -20847,6 +20863,10 @@ MonoBehaviour:
   objectivesPanel: {fileID: 1186398095}
   lastCoinAmount: 0
   lastGemAmount: 0
+  timeChallengeRares: []
+  timeChallengeSelectedRare: 
+  timeChallengeSetCode: 
+  objectiveId: 0
 --- !u!1 &1551000116
 GameObject:
   m_ObjectHideFlags: 0
@@ -23286,6 +23306,9 @@ MonoBehaviour:
   proDecksObject: {fileID: 1969878942}
   deckDisplayPrefab: {fileID: 3720854164323507538, guid: cabe406b93cf10140bf52b80be1f5d32, type: 3}
   starterDeckPrefab: {fileID: 3720854164323507538, guid: cabe406b93cf10140bf52b80be1f5d32, type: 3}
+  deckImportDialogObject: {fileID: 0}
+  deckImportInputObject: {fileID: 0}
+  importErrorTextObject: {fileID: 0}
 --- !u!1 &1706322741
 GameObject:
   m_ObjectHideFlags: 0
@@ -27374,7 +27397,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856520739}
+        m_TargetAssemblyTypeName: DraftPanel, Assembly-CSharp
+        m_MethodName: propagateFirstPick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1957344604
 MonoBehaviour:
@@ -29051,6 +29086,9 @@ MonoBehaviour:
   proDecksObject: {fileID: 910597058}
   deckDisplayPrefab: {fileID: 3720854164323507538, guid: cabe406b93cf10140bf52b80be1f5d32, type: 3}
   starterDeckPrefab: {fileID: 3720854164323507538, guid: cabe406b93cf10140bf52b80be1f5d32, type: 3}
+  deckImportDialogObject: {fileID: 0}
+  deckImportInputObject: {fileID: 0}
+  importErrorTextObject: {fileID: 0}
 --- !u!114 &2124222746
 MonoBehaviour:
   m_ObjectHideFlags: 0
