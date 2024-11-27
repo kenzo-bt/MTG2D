@@ -95,7 +95,7 @@ public class DraftPanel : MonoBehaviour
         dropdownIndex1 = setDropbox1.GetComponent<TMP_Dropdown>().value;
         dropdownIndex2 = setDropbox2.GetComponent<TMP_Dropdown>().value;
         dropdownIndex3 = setDropbox3.GetComponent<TMP_Dropdown>().value;
-        if (capacity >= 0)
+        if (capacity >= 1)
         {
           errorMessage.GetComponent<TMP_Text>().text = "";
           StartCoroutine(createDraftInServer());
