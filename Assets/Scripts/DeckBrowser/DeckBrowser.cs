@@ -141,6 +141,12 @@ public class DeckBrowser : MonoBehaviour
             string setCode = setAndSerial.Split(")")[0];
             // Debug.Log($"Card: {name} {setCode} x{frequency}");
 
+            // Remove second name in dual cards
+            if (name.Contains(" // "))
+            {
+              name = name.Split(" // ")[0];
+            }
+
             // Fix differing set codes
             switch(setCode)
             {
