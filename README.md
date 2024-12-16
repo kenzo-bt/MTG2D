@@ -9,7 +9,8 @@ Magic: The Gathering simulator in 2D made in Unity
 - Analog game mechanics and interacting with the battlefield
 - Networked play
 - Online multiplayer draft system
-- Collection system and pack opening
+- Collection system
+- Pack store and in-game currency system
 
 ## How the card data was gathered
 
