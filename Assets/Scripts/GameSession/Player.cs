@@ -134,16 +134,16 @@ public class Player : MonoBehaviour
     }
 
     // Draw a card from deck and place in hand
-    public void drawCard()
+    public void drawCard(string mode)
     {
-      CardInfo card = deck.drawCard();
+      CardInfo card = deck.drawCard(mode);
       if (card != null)
       {
         hand.addCard(card);
         // Order hand
         hand.orderHand();
       }
-      logMessage("You drew a card (" + card.name + ")");
+      logMessage("You drew a card (" + card.name + ") " + mode);
       registerEvent(PlayerManager.Instance.myName + " drew a card");
     }
 
