@@ -36,6 +36,15 @@ public class CardInfo
       return false;
     }
 
+    public bool isLand()
+    {
+        if (types.Contains("Land") && !types.Contains("Creature"))
+        {
+            return true;
+        }
+        return false;
+    }
+
     public bool hasBackSide()
     {
       if (layout != "adventure" && layout != "split" && backId != "" && backId != null)

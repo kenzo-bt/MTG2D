@@ -70,13 +70,43 @@ public class Deck : MonoBehaviour, IPointerClickHandler
     }
 
     // Draws a card from deck, returns the CardInfo
-    public CardInfo drawCard()
+    public CardInfo drawCard(string mode = "")
     {
+      CardInfo card = null;
       if (stack.cards.Count > 0)
       {
-        string cardId = stack.cards[stack.cards.Count - 1];
-        CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
-        stack.removeCard(stack.cards.Count - 1);
+        switch (mode)
+        {
+          case "NL":
+            for (int i = stack.cards.Count - 1; i >= 0; i--)
+            {
+              card = PlayerManager.Instance.getCardFromLookup(stack.cards[i]);
+              if (!card.isLand())
+              {
+                stack.removeCard(i);
+                return card;
+              }
+            }
+            card = null;
+            break;
+          case "L":
+            for (int i = stack.cards.Count - 1; i >= 0; i--)
+            {
+              card = PlayerManager.Instance.getCardFromLookup(stack.cards[i]);
+              if (card.isLand())
+              {
+                stack.removeCard(i);
+                return card;
+              }
+            }
+            card = null;
+            break;
+          default:
+            string cardId = stack.cards[stack.cards.Count - 1];
+            card = PlayerManager.Instance.getCardFromLookup(cardId);
+            stack.removeCard(stack.cards.Count - 1);
+            break;
+        } 
         return card;
       }
       else
