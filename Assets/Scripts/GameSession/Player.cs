@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     public GameObject forfeitWarningScreen;
     public GameObject winScreen;
     public GameObject lossScreen;
+    public GameObject mulliganButton;
     private Hand hand;
     private Deck deck;
     private Battlefield battlefield;
@@ -106,6 +107,11 @@ public class Player : MonoBehaviour
       else
       {
         gameStateObject.GetComponent<GameStateFFA>().initializeState();
+      }
+      // Activate the mulligan button if disabled
+      if (!mulliganButton.activeSelf)
+      {
+        mulliganButton.SetActive(true);
       }
       // Start checking for game result
       StartCoroutine(checkActiveGameResult());
@@ -221,6 +227,11 @@ public class Player : MonoBehaviour
     // Move card to the battlefield
     public void dropCardInBattlefield(CardInfo card)
     {
+      // Deactivate the mulligan button once player plays a card
+      if (mulliganButton.activeSelf)
+      {
+        mulliganButton.SetActive(false);
+      }
       battlefield.addCard(card);
       logMessage("You dropped " + card.name + " to the battlefield");
       registerEvent(PlayerManager.Instance.myName + " dropped " + card.name + " to the battlefield");

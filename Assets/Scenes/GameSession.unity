@@ -8789,6 +8789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3092f78c84168dd4894bfce0934cc343, type: 3}
+--- !u!1 &1298644046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3354217110938647247, guid: 3092f78c84168dd4894bfce0934cc343, type: 3}
+  m_PrefabInstance: {fileID: 1298644045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1309422794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14150,6 +14155,7 @@ MonoBehaviour:
   forfeitWarningScreen: {fileID: 14966961}
   winScreen: {fileID: 1918284729}
   lossScreen: {fileID: 1023261325}
+  mulliganButton: {fileID: 1298644046}
   initialHandSize: 0
   log: 
   coinToss: 0
