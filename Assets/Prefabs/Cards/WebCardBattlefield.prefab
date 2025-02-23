@@ -358,6 +358,7 @@ MonoBehaviour:
   tapped: 0
   flipped: 0
   flipped180: 0
+  counterAmount: 0
 --- !u!114 &4400250701448164746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &833699569601954918
 RectTransform:
   m_ObjectHideFlags: 0

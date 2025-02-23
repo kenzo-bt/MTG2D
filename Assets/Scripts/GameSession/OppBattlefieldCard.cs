@@ -72,9 +72,10 @@ public class OppBattlefieldCard : MonoBehaviour
       hidden = true;
     }
 
-    public void showCounterTracker()
+    public void showCounters(int counterAmount)
     {
       counterTracker.SetActive(true);
+      counterTracker.GetComponent<CounterTracker>().setCounterValue(counterAmount);
     }
 
     public void turnFaceDown()

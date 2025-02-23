@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -132,6 +133,7 @@ public class Opponent : MonoBehaviour
         bool isTapped = card.Contains("--T");
         bool isFlipped = card.Contains("--F");
         bool isFlipped180 = card.Contains("--F180");
+        bool hasCounters = card.Contains("--%");
         string onlyCard = card.Split("--")[0];
         GameObject cardInstance = Instantiate(battlefieldCardPrefab, creatureArea.transform);
         CardInfo cardInfo = PlayerManager.Instance.getCardFromLookup(onlyCard);
@@ -153,6 +155,20 @@ public class Opponent : MonoBehaviour
         if (isFlipped180)
         {
           cardInstance.GetComponent<OppBattlefieldCard>().flip180();
+        }
+        if (hasCounters)
+        {
+          try
+          {
+            int startingIndex = card.IndexOf("--%") + 3;
+            Debug.Log(card.Substring(startingIndex));
+            int counterAmount = Int32.Parse(card.Substring(startingIndex));
+            cardInstance.GetComponent<OppBattlefieldCard>().showCounters(counterAmount);
+          }
+          catch (Exception e)
+          {
+            Debug.Log(e.Message);
+          }
         }
       }
       creatureArea.GetComponent<Container>().orderChildrenCenter();

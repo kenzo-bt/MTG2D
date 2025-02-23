@@ -10,7 +10,7 @@ public class CounterTracker : MonoBehaviour
     private TMP_Text counterText;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         counterText = counterTextObject.GetComponent<TMP_Text>();
         counterText.text = "0";
@@ -38,5 +38,18 @@ public class CounterTracker : MonoBehaviour
     public void setCounterValue(int value)
     {
       counterText.text = value.ToString();
+    }
+
+    public int getCounterValue()
+    {
+      try
+      {
+        return Int32.Parse(counterText.text);
+      }
+      catch (Exception e)
+      {
+        Debug.Log(e.Message);
+        return 0;
+      }
     }
 }
