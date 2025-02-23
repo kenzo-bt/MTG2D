@@ -7,6 +7,7 @@ public class OppBattlefieldCard : MonoBehaviour
     public GameObject player;
     public GameObject hideLayer;
     public GameObject cardImage;
+    public GameObject counterTracker;
     public bool hidden;
     public bool faceDown;
 
@@ -69,6 +70,11 @@ public class OppBattlefieldCard : MonoBehaviour
     {
       hideLayer.GetComponent<CanvasGroup>().alpha = 1f;
       hidden = true;
+    }
+
+    public void showCounterTracker()
+    {
+      counterTracker.SetActive(true);
     }
 
     public void turnFaceDown()

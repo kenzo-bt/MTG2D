@@ -9,6 +9,7 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public GameObject contextMenu;
     public GameObject flipButton;
     public GameObject cardImage;
+    public GameObject counterTracker;
     public bool tapped;
     public bool flipped;
     public bool flipped180;
@@ -34,6 +35,19 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public void hideContextMenu()
     {
       contextMenu.SetActive(false);
+    }
+
+    public void toggleCounterTracker()
+    {
+      if (counterTracker.activeSelf)
+      {
+        counterTracker.SetActive(false);
+      }
+      else
+      {
+        counterTracker.SetActive(true);
+      }
+      hideContextMenu();
     }
 
     public void moveCard(string destination)
