@@ -698,7 +698,6 @@ public class Player : MonoBehaviour
       if (Instance != null && (SceneManager.GetActiveScene().name == "GameSession"))
       {
         Instance.StartCoroutine(Instance.handleRageQuit());
-        Debug.Log("Player prevented from quitting.");
         return ReadyToQuit;
       }
       return true;

@@ -120,7 +120,6 @@ public class GameState : MonoBehaviour
                 BoardState oppState = JsonUtility.FromJson<BoardState>(serverJson);
                 opponent.prevState = opponent.state;
                 opponent.state = oppState;
-                opponent.state.debugState();
                 opponent.updateBoard();
               }
             }

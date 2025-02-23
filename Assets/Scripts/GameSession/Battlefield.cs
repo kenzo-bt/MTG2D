@@ -94,6 +94,10 @@ public class Battlefield : MonoBehaviour
         {
           cardId += "--F180";
         }
+        if (card.getCounterAmount() != 0)
+        {
+          cardId += ("--%" + card.getCounterAmount().ToString());
+        }
         allCreatures.Add(cardId);
       }
       return allCreatures;
@@ -119,6 +123,10 @@ public class Battlefield : MonoBehaviour
         {
           cardId += "--F180";
         }
+        if (card.getCounterAmount() != 0)
+        {
+          cardId += ("--%" + card.getCounterAmount().ToString());
+        }
         allLands.Add(cardId);
       }
       return allLands;
@@ -143,6 +151,10 @@ public class Battlefield : MonoBehaviour
         if (card.flipped180)
         {
           cardId += "--F180";
+        }
+        if (card.getCounterAmount() != 0)
+        {
+          cardId += ("--%" + card.getCounterAmount().ToString());
         }
         allOthers.Add(cardId);
       }

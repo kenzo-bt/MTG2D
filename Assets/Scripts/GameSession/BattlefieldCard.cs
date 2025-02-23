@@ -9,9 +9,11 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public GameObject contextMenu;
     public GameObject flipButton;
     public GameObject cardImage;
+    public GameObject counterTracker;
     public bool tapped;
     public bool flipped;
     public bool flipped180;
+    public bool counterAmount;
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,6 +36,19 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public void hideContextMenu()
     {
       contextMenu.SetActive(false);
+    }
+
+    public void toggleCounterTracker()
+    {
+      if (counterTracker.activeSelf)
+      {
+        counterTracker.SetActive(false);
+      }
+      else
+      {
+        counterTracker.SetActive(true);
+      }
+      hideContextMenu();
     }
 
     public void moveCard(string destination)
@@ -132,5 +147,17 @@ public class BattlefieldCard : MonoBehaviour, IPointerClickHandler
     public void enableFlipButton()
     {
       flipButton.SetActive(true);
+    }
+
+    public int getCounterAmount()
+    {
+      if (counterTracker.activeSelf)
+      {
+        return counterTracker.GetComponent<CounterTracker>().getCounterValue();
+      }
+      else
+      {
+        return 0;
+      }
     }
 }
