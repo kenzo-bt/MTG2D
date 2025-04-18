@@ -175,7 +175,7 @@ public class Decklist {
             nameCounter += cardFrequencies[i];
           }
         }
-        if (nameCounter >= 4)
+        if (nameCounter >= 4 && !PlayerManager.Instance.selectedDeck.isDraft)
         {
           return;
         }
