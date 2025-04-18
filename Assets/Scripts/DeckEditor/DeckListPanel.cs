@@ -14,10 +14,12 @@ public class DeckListPanel : MonoBehaviour
     public GameObject highlightCardObject;
     public GameObject highlightCardBackObject;
     public GameObject coverCardObject;
+    public GameObject typeCounterObject;
     private TMP_InputField deckNameInput;
     private TMP_Text cardCountText;
     private ManaCurveDisplay manaCurve;
     private CoverCard coverCard;
+    private TypeCounter typeCounter;
     public bool sideboardActive;
 
     // Start is called before the first frame update
@@ -28,6 +30,10 @@ public class DeckListPanel : MonoBehaviour
       cardCountText = cardCount.GetComponent<TMP_Text>();
       manaCurve = manaCurveObject.GetComponent<ManaCurveDisplay>();
       coverCard = coverCardObject.GetComponent<CoverCard>();
+      if (typeCounterObject)
+      {
+        typeCounter = typeCounterObject.GetComponent<TypeCounter>();
+      }
       sideboardActive = false;
 
       initializePanel();
@@ -46,6 +52,10 @@ public class DeckListPanel : MonoBehaviour
       cardCountText.text = "Cards: " + deck.getNumCards();
       populateCardList();
       manaCurve.updateManaCurve(deck);
+      if (typeCounter)
+      {
+        typeCounter.updateCounts(deck);
+      }
     }
 
     public void updatePanel()
@@ -61,6 +71,10 @@ public class DeckListPanel : MonoBehaviour
       populateCardList();
       manaCurve.updateManaCurve(deck);
       coverCard.updateDropdown();
+      if (typeCounter)
+      {
+        typeCounter.updateCounts(deck);
+      }
     }
 
     // populate the cardList with the selected deck
