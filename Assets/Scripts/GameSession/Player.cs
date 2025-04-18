@@ -149,8 +149,9 @@ public class Player : MonoBehaviour
         // Order hand
         hand.orderHand();
       }
-      logMessage("You drew a card (" + card.name + ") " + mode);
-      registerEvent(PlayerManager.Instance.myName + " drew a card");
+      string modeString = (mode != "" ? (" [" + mode + "]") : "");
+      logMessage("You drew a card (" + card.name + ")" + modeString);
+      registerEvent(PlayerManager.Instance.myName + " drew a card" + modeString;
     }
 
     // Mulligan
