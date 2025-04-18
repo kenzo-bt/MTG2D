@@ -151,7 +151,7 @@ public class Player : MonoBehaviour
       }
       string modeString = (mode != "" ? (" [" + mode + "]") : "");
       logMessage("You drew a card (" + card.name + ")" + modeString);
-      registerEvent(PlayerManager.Instance.myName + " drew a card" + modeString;
+      registerEvent(PlayerManager.Instance.myName + " drew a card" + modeString);
     }
 
     // Mulligan
