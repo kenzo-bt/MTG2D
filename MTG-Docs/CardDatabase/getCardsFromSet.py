@@ -100,11 +100,11 @@ for card in cards:
     scryfallId = card["identifiers"]["scryfallId"]
     if isBack:
         if layout == "meld":
-            imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+            imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg?1"
         else:
-            imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+            imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg?1"
     else:
-        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg?1"
 
     thisCard = {
         "id": card["uuid"],
@@ -160,9 +160,9 @@ for token in tokens:
     imageUrl = ""
     scryfallId = token["identifiers"]["scryfallId"]
     if isBack:
-        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/back/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg?1"
     else:
-        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg"
+        imageUrl = "https://cards.scryfall.io/" + imageSize + "/front/" + scryfallId[0] + "/" + scryfallId[1] + "/" + scryfallId + ".jpg?1"
 
     thisToken = {
         "id": token["uuid"],
