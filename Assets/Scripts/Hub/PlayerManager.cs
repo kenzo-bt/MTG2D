@@ -43,6 +43,7 @@ public class PlayerManager : MonoBehaviour
     public string timeChallengeSelectedRare;
     public string timeChallengeSetCode;
     public int objectiveId;
+    public List<string> unlockedUsers;
 
     private void Awake()
     {
@@ -57,6 +58,8 @@ public class PlayerManager : MonoBehaviour
       // apiUrl = "http://127.0.0.1:5000/";
       apiUrl = "https://mirariapi.onrender.com/";
       serverImageFileExtension = ".jpg";
+
+      unlockedUsers = new List<string> {"myxos_cmd", "monchips_cmd"};
 
       cardCollection = new List<CardSet>();
       loadCardCollection();
@@ -108,12 +111,14 @@ public class PlayerManager : MonoBehaviour
 
     public void saveCollectedCards()
     {
-      string allCardsString = "";
-      foreach (KeyValuePair<string, int> item in collectedCards)
-      {
-        allCardsString += (item.Key + " " + item.Value + "\n");
+      if (!unlockedUsers.Contains(myName)) {
+        string allCardsString = "";
+        foreach (KeyValuePair<string, int> item in collectedCards)
+        {
+          allCardsString += (item.Key + " " + item.Value + "\n");
+        }
+        File.WriteAllText(collectionFilePath, allCardsString);
       }
-      File.WriteAllText(collectionFilePath, allCardsString);
     }
 
     public void readStarterDecks()
@@ -423,6 +428,14 @@ public class PlayerManager : MonoBehaviour
 
     public IEnumerator fetchPlayerCollectionFromServer()
     {
+      // If user is unlocked then just set collection to all cords.
+      if (unlockedUsers.Contains(myName)) {
+        collectedCards = new Dictionary<string, int>();
+        foreach (KeyValuePair<string, CardInfo> card in cardLookup) {
+          collectedCards.Add(card.Key, 1);
+        }
+        yield break;
+      }
       string url = apiUrl + "player/" + myID + "/cards";
       using (UnityWebRequest request = UnityWebRequest.Get(url))
       {
