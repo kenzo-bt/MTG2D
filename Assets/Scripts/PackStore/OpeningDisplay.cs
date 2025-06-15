@@ -121,9 +121,10 @@ public class OpeningDisplay : MonoBehaviour
         {
           Pack pack = new Pack();
           pack.cards = new List<string>(set.getPack());
-          // OTJ - Replace common with Big Score card - 33% chance
+          // Special packs with chance of guest set.
           if (set.setCode == "OTJ")
           {
+            // OTJ - Replace common with Big Score card - 33% chance
             int roll = UnityEngine.Random.Range(0, 3);
             if (roll == 2)
             {
@@ -139,12 +140,29 @@ public class OpeningDisplay : MonoBehaviour
           }
           else if (set.setCode == "STX")
           {
+            // STX - Replace common with Mystical Archive card - 50% chance
             int roll = UnityEngine.Random.Range(0, 2);
             if (roll == 1)
             {
               foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
               {
                 if (cardSet.setCode == "STA")
+                {
+                  pack.cards[4] = cardSet.getRandomCard();
+                  break;
+                }
+              }
+            }
+          }
+          else if (set.setCode == "FIN")
+          {
+            // FIN - Replace common with Final Fantasy Commander card - 50% chance
+            int roll = UnityEngine.Random.Range(0, 2);
+            if (roll == 1)
+            {
+              foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
+              {
+                if (cardSet.setCode == "FIC")
                 {
                   pack.cards[4] = cardSet.getRandomCard();
                   break;
