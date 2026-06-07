@@ -110,9 +110,17 @@ public class AdvancedFilters : MonoBehaviour
       if (sets.Contains(set))
       {
         sets.Remove(set);
+        if (set == "SOS")
+        {
+          sets.Remove("SOA");
+        }
       }
       else {
         sets.Add(set);
+        if (set == "SOS")
+        {
+          sets.Add("SOA");
+        }
       }
     }
 
