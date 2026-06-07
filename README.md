@@ -15,7 +15,7 @@ Magic: The Gathering simulator in 2D made in Unity
 ## How the card data was gathered
 
 - Set information was obtained through MTG-JSON (https://mtgjson.com/)
-- Card images were downloaded using the Scryfall API (https://scryfall.com/docs/api)
+- Card images are fetched using the Scryfall API (https://scryfall.com/docs/api)
 
 ## Screenshots
 
