@@ -32,7 +32,12 @@ public class CardSet
           if (!selectedIndexes.Contains(randomIndex))
           {
             selectedIndexes.Add(randomIndex);
-            if (!cards[randomIndex].isBasicLand() && !cards[randomIndex].isToken && !cards[randomIndex].isBack)
+            if (
+              !cards[randomIndex].isBasicLand() &&
+              !cards[randomIndex].isToken &&
+              !cards[randomIndex].isBack &&
+              cards[randomIndex].finishes.Contains("nonfoil")
+            )
             {
               pack.Add(cards[randomIndex].id);
             }
@@ -74,7 +79,11 @@ public class CardSet
       while (!nonTokenSelected)
       {
         CardInfo randomCard = cards[UnityEngine.Random.Range(0, cards.Count)];
-        if (!randomCard.isToken && !randomCard.isBack)
+        if (
+          !randomCard.isToken &&
+          !randomCard.isBack &&
+          randomCard.finishes.Contains("nonfoil")
+        )
         {
           randomCardId = randomCard.id;
           nonTokenSelected = true;

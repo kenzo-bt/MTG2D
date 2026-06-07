@@ -47,7 +47,8 @@ public class CardInfo
 
     public bool hasBackSide()
     {
-      if (layout != "adventure" && layout != "split" && backId != "" && backId != null)
+      List<string> noBackLayouts = new List<string> { "adventure", "split", "prepare" };
+      if (!noBackLayouts.Contains(layout) && backId != "" && backId != null)
       {
         return true;
       }

@@ -37,9 +37,15 @@ public class DeckBrowser : MonoBehaviour
       List<Decklist> allDecks = PlayerManager.Instance.allDecks;
       foreach (Decklist deck in allDecks)
       {
-        GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
-        DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
-        display.setDisplayData(deck.name, deck.getCoverCard());
+        if (deck.getCoverCard().id == null)
+        {
+          Debug.Log("cover card is null");
+        }
+        else {
+          GameObject deckDisplayInstance = Instantiate(deckDisplayPrefab, yourDecks.transform);
+          DeckDisplay display = deckDisplayInstance.GetComponent<DeckDisplay>();
+          display.setDisplayData(deck.name, deck.getCoverCard());
+        }
       }
       LayoutRebuilder.ForceRebuildLayoutImmediate(yourDecks.GetComponent<RectTransform>());
 

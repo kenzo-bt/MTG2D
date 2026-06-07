@@ -137,6 +137,7 @@ public class OpeningDisplay : MonoBehaviour
               }
             }
           }
+          // Strixhaven mystical archive
           else if (set.setCode == "STX")
           {
             int roll = UnityEngine.Random.Range(0, 2);
@@ -145,6 +146,22 @@ public class OpeningDisplay : MonoBehaviour
               foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
               {
                 if (cardSet.setCode == "STA")
+                {
+                  pack.cards[4] = cardSet.getRandomCard();
+                  break;
+                }
+              }
+            }
+          }
+          // Secrets of Strixhaven mystical archive
+          else if (set.setCode == "SOS")
+          {
+            int roll = UnityEngine.Random.Range(0, 2);
+            if (roll == 1)
+            {
+              foreach (CardSet cardSet in PlayerManager.Instance.cardCollection)
+              {
+                if (cardSet.setCode == "SOA")
                 {
                   pack.cards[4] = cardSet.getRandomCard();
                   break;
