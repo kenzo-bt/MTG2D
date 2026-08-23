@@ -45,6 +45,7 @@ public class WebCard : MonoBehaviour
     {
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
+      request.SetRequestHeader("User-Agent", "MTG2D/1.0");
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
@@ -74,6 +75,7 @@ public class WebCard : MonoBehaviour
     {
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
+      request.SetRequestHeader("User-Agent", "MTG2D/1.0");
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
@@ -93,6 +95,7 @@ public class WebCard : MonoBehaviour
     {
       CardInfo card = PlayerManager.Instance.getCardFromLookup(cardId);
       UnityWebRequest request = UnityWebRequestTexture.GetTexture(card.imageUrl);
+      request.SetRequestHeader("User-Agent", "MTG2D/1.0");
       yield return request.SendWebRequest();
       if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
       {
